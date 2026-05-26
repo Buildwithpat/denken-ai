@@ -10,6 +10,11 @@ import { razorpayWebhookHandler } from './controllers/webhookController';
 
 const app = express();
 
+// Tell Express to trust the first proxy hop (Render's load balancer).
+// Without this, req.ip is the proxy's IP / an IPv6-mapped address on every
+// request — breaking rate limiting and triggering ERR_ERL_KEY_GEN_IPV6.
+app.set('trust proxy', 1);
+
 // ── Security headers ──────────────────────────────────────────────────────────
 app.use((_req: Request, res: Response, next) => {
   res.setHeader('X-Content-Type-Options', 'nosniff');

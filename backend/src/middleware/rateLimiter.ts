@@ -62,8 +62,12 @@ export const aiEndpointRateLimiter = rateLimit({
   legacyHeaders:   false,
   handler:         rateLimitHandler,
   keyGenerator:    (req) => {
-    // Key by IP + userId if authenticated (prevents sharing IP exploits)
+    // Strip IPv6-mapped IPv4 prefix (e.g. "::ffff:1.2.3.4" → "1.2.3.4") so
+    // express-rate-limit does not emit ERR_ERL_KEY_GEN_IPV6. With trust proxy
+    // set correctly this rarely appears, but normalize defensively.
+    const raw    = req.ip ?? 'unknown';
+    const ip     = raw.replace(/^::ffff:(\d+\.\d+\.\d+\.\d+)$/, '$1');
     const userId = (req as { user?: { userId?: string } }).user?.userId ?? '';
-    return `${req.ip ?? 'unknown'}:${userId}`;
+    return `${ip}|${userId}`;
   },
 });

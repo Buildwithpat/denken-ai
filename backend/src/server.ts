@@ -36,8 +36,8 @@ function fetchPublicIp(): Promise<void> {
 }
 
 const startServer = async () => {
-  // Prefetch public IP so Atlas IP-whitelist diagnostics can show it
-  await fetchPublicIp();
+  // Fire IP fetch in background — non-critical diagnostic, must not delay startup.
+  void fetchPublicIp();
 
   await connectDB();
 
