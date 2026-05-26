@@ -25,24 +25,33 @@ app.use((_req: Request, res: Response, next) => {
 });
 
 // ── CORS ──────────────────────────────────────────────────────────────────────
-const ALLOWED_ORIGINS = process.env.ALLOWED_ORIGINS
+const ALLOWED_ORIGINS: string[] = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(',').map((o) => o.trim())
-  : ['http://localhost:3000', 'http://localhost:3001'];
+  : [
+      'http://localhost:3000',
+      'http://localhost:3001',
+      'https://denken-ai.vercel.app',
+    ];
 
-app.use(cors({
+const corsOptions: cors.CorsOptions = {
   origin: (origin, cb) => {
     // Allow requests with no Origin header (server-to-server, health checks)
     if (!origin || ALLOWED_ORIGINS.includes(origin)) {
       cb(null, true);
     } else {
-      cb(null, false); // Silently deny unknown origins (not an error)
+      cb(new Error(`CORS: origin '${origin}' not allowed`));
     }
   },
   methods:         ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders:  ['Content-Type', 'Authorization'],
   credentials:     true,
   maxAge:          86400, // Pre-flight cache: 24h
-}));
+};
+
+// Respond to all OPTIONS preflight requests before any other middleware
+// (rate limiter, auth, etc.) so browsers never get a non-CORS preflight response.
+app.options('*', cors(corsOptions));
+app.use(cors(corsOptions));
 
 // ── Global rate limiter ───────────────────────────────────────────────────────
 app.use(globalRateLimiter);
