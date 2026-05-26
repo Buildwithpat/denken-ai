@@ -78,7 +78,9 @@
       "Bash(node -e \"const ts = require\\('typescript'\\); const prog = ts.createProgram\\(['src/controllers/explanationController.ts'], {noEmit: true, strict: true}\\); const diags = prog.emit\\(\\).diagnostics; ts.getPreEmitDiagnostics\\(prog\\).forEach\\(d => console.log\\(d.file?.fileName, d.start, ts.flattenDiagnosticMessageText\\(d.messageText, '\\\\n'\\)\\)\\)\")",
       "Bash(Select-Object -ExpandProperty Name)",
       "Bash(Sort-Object)",
-      "Bash(node *)"
+      "Bash(node *)",
+      "PowerShell(npm install *)",
+      "PowerShell(npm run *)"
     ]
   }
 }
