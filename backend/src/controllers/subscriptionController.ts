@@ -127,12 +127,26 @@ export async function createOrderHandler(req: AuthRequest, res: Response): Promi
       keyId: env.RAZORPAY_KEY_ID,
     });
   } catch (err) {
+    // Razorpay SDK throws plain objects, not Error instances — serialise fully.
+    const rzpErr = err as { statusCode?: number; error?: { code?: string; description?: string } };
+    const detail  = rzpErr?.error?.description ?? (err instanceof Error ? err.message : String(err));
+    const code    = rzpErr?.error?.code ?? 'UNKNOWN';
+    const status  = rzpErr?.statusCode;
+
     logger.error('[subscription] Razorpay order creation failed', {
-      userId: req.user!.userId,
+      userId:     req.user!.userId,
       planId,
-      error:  (err as Error).message,
+      statusCode: status,
+      errorCode:  code,
+      detail,
     });
-    res.status(500).json({ error: 'Failed to create payment order.' });
+
+    if (status === 401 || code === 'BAD_REQUEST_ERROR' && detail?.toLowerCase().includes('auth')) {
+      res.status(500).json({ error: 'Payment gateway credentials are not configured correctly. Contact support.' });
+      return;
+    }
+
+    res.status(500).json({ error: 'Failed to create payment order. Please try again.' });
   }
 }
 

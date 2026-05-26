@@ -2,6 +2,12 @@ import Razorpay from 'razorpay';
 import type { Orders } from 'razorpay/dist/types/orders';
 import { env } from '../config/env';
 
+// Emit a startup diagnostic so Render logs immediately show credential state.
+const _keyPresent    = Boolean(env.RAZORPAY_KEY_ID);
+const _secretPresent = Boolean(env.RAZORPAY_KEY_SECRET);
+const _keyPrefix     = env.RAZORPAY_KEY_ID ? env.RAZORPAY_KEY_ID.slice(0, 14) + '…' : '(not set)';
+console.info(`[razorpay] key_id=${_keyPrefix}  key_present=${_keyPresent}  secret_present=${_secretPresent}`);
+
 let _instance: Razorpay | null = null;
 
 export function getRazorpay(): Razorpay {
