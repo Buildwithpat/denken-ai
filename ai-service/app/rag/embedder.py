@@ -1,25 +1,17 @@
 """
 Local embedding generation using sentence-transformers.
 
-Default model: all-MiniLM-L6-v2
-  - 22 MB on disk, 384-dimensional vectors
-  - Runs entirely on CPU, ~10 ms per sentence
+The sentence-transformers import is deferred inside _get_model() so that
+importing this module costs zero RAM when the package isn't installed.
 
-The model is loaded once and cached for the process lifetime via lru_cache.
+When sentence-transformers is not available (lite deployment mode):
+  - embed_texts() raises RuntimeError — caught by pipeline.py's try/except
+  - embed_query() raises RuntimeError — never reached because retriever
+    short-circuits on collection_count() == 0
+  - embedding_dim() returns 0 — used by the status endpoint only
 
-Swap point: to use Gemini text embeddings instead, set
-  EMBEDDING_PROVIDER=gemini in .env and implement `_embed_with_gemini()`.
-
-  # async def _embed_with_gemini(texts: list[str]) -> list[list[float]]:
-  #     import google.generativeai as genai
-  #     from app.config import settings
-  #     genai.configure(api_key=settings.gemini_api_key)
-  #     result = genai.embed_content(
-  #         model="models/text-embedding-004",
-  #         content=texts,
-  #         task_type="retrieval_document",
-  #     )
-  #     return result["embedding"]
+Swap point: to use Gemini embeddings instead, implement _embed_with_gemini()
+and route through it by setting EMBEDDING_PROVIDER=gemini in .env.
 """
 from __future__ import annotations
 
@@ -32,6 +24,14 @@ if TYPE_CHECKING:
     from sentence_transformers import SentenceTransformer
 
 
+def _is_st_available() -> bool:
+    try:
+        import sentence_transformers  # noqa: F401
+        return True
+    except ImportError:
+        return False
+
+
 @lru_cache(maxsize=1)
 def _get_model() -> "SentenceTransformer":
     from sentence_transformers import SentenceTransformer  # deferred — heavy import
@@ -41,12 +41,14 @@ def _get_model() -> "SentenceTransformer":
 def embed_texts(texts: list[str]) -> list[list[float]]:
     """
     Embed a batch of text strings.
-    Returns a list of float vectors, one per input string.
-    Batch size 32 balances memory and throughput on CPU.
+    Raises RuntimeError when sentence-transformers is not installed.
+    Callers (pipeline.py) catch this via the existing except Exception block.
     """
-    # --- swap point ---
-    # if settings.embedding_provider == "gemini":
-    #     return _embed_with_gemini(texts)
+    if not _is_st_available():
+        raise RuntimeError(
+            "sentence-transformers not installed — embeddings unavailable in lite mode. "
+            "Install requirements.txt to enable full RAG."
+        )
     model   = _get_model()
     vectors = model.encode(texts, batch_size=32, show_progress_bar=False, normalize_embeddings=True)
     return [v.tolist() for v in vectors]
@@ -58,5 +60,10 @@ def embed_query(query: str) -> list[float]:
 
 
 def embedding_dim() -> int:
-    """Return the vector dimension of the current model."""
+    """
+    Return the vector dimension of the current model.
+    Returns 0 when sentence-transformers is not installed (safe for status endpoint).
+    """
+    if not _is_st_available():
+        return 0
     return _get_model().get_sentence_embedding_dimension()  # type: ignore[return-value]

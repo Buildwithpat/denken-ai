@@ -93,7 +93,7 @@ def status_endpoint() -> CollectionStatus:
         persist_dir=settings.chroma_persist_dir,
         total_chunks=collection_count(),
         embedding_model=settings.embedding_model,
-        embedding_dim=embedding_dim(),
+        embedding_dim=embedding_dim(),  # returns 0 when ST not installed
     )
 
 

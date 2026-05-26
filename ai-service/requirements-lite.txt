@@ -1,0 +1,20 @@
+# ── MVP deployment subset — Render free tier (512 MB RAM limit) ──────────────
+#
+# Heavy ML packages (sentence-transformers, torch, chromadb, easyocr, pymupdf)
+# are intentionally excluded. The service runs in Gemini-only mode:
+#   - Gemini API handles all generation
+#   - RAG endpoints return "unavailable" gracefully
+#   - Ingestion endpoints are disabled
+#
+# To re-enable full RAG stack, switch Render to use requirements.txt instead.
+# ─────────────────────────────────────────────────────────────────────────────
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+google-generativeai>=0.5.0
+python-dotenv>=1.0.0
+httpx>=0.27.0
+redis>=5.0.0

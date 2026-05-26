@@ -8,10 +8,7 @@ from __future__ import annotations
 
 import json
 import textwrap
-from typing import Optional
-
-import chromadb
-from sentence_transformers import SentenceTransformer
+from typing import Optional, Any
 
 from app.config    import settings
 from app.schemas.questions import (
@@ -19,16 +16,17 @@ from app.schemas.questions import (
     QuestionEmbedRequest, QuestionEmbedResponse,
 )
 
-# ── ChromaDB client ───────────────────────────────────────────────────────────
+# ── ChromaDB client (lazy — not imported until first embed call) ──────────────
 
-_chroma_client: Optional[chromadb.PersistentClient] = None
-_embed_model:   Optional[SentenceTransformer]       = None
-_questions_collection = None
+_chroma_client: Optional[Any] = None
+_embed_model:   Optional[Any] = None
+_questions_collection: Optional[Any] = None
 
 
 def _get_chroma():
     global _chroma_client, _questions_collection
     if _chroma_client is None:
+        import chromadb  # deferred — not available in lite mode
         _chroma_client = chromadb.PersistentClient(path=settings.chroma_persist_dir)
     if _questions_collection is None:
         _questions_collection = _chroma_client.get_or_create_collection(
@@ -41,6 +39,7 @@ def _get_chroma():
 def _get_embed_model():
     global _embed_model
     if _embed_model is None:
+        from sentence_transformers import SentenceTransformer  # deferred — not available in lite mode
         _embed_model = SentenceTransformer(settings.embedding_model)
     return _embed_model
 

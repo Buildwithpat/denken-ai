@@ -1,48 +1,56 @@
 """
 ChromaDB persistence layer.
 
-Collection metadata schema (flat dict — ChromaDB requirement):
-  exam                 str   "JEE_MAIN" | "NEET" | "CBSE"
-  subject              str   "Physics" | "Chemistry" | ...
-  unit                 str   "" if None
-  chapter              str   "Laws of Motion"
-  topic                str   "" if None
-  chunk_type           str   ChunkType.value
-  source               str   "textbook" | "generated" | ...
-  difficulty           str   "" if None
-  has_diagram          str   "true" | "false"   (ChromaDB stores str, not bool)
-  diagram_type         str   "" if None
-  diagram_description  str   "" if None
-  keywords_csv         str   comma-separated keyword list
+All chromadb imports are deferred inside functions so that importing this
+module is free (no RAM cost) when ChromaDB is not installed. This lets the
+service start cleanly on Render free-tier with requirements-lite.txt.
 
-Embeddings: 384-dim cosine-normalised float32 (all-MiniLM-L6-v2).
-Similarity metric: cosine (hnsw:space = cosine).
+To re-enable full vector-store support: install chromadb and its deps.
+The code path is identical — no other changes needed.
 """
 from __future__ import annotations
 
 from functools import lru_cache
 from typing import Optional
 
-import chromadb
-from chromadb.config import Settings as ChromaSettings
-
 from app.config import settings
 from app.rag.models import Chunk, ChunkMetadata
 
 
 # ---------------------------------------------------------------------------
-# Client / collection
+# Availability sentinel — checked once, cached forever
+# ---------------------------------------------------------------------------
+
+_CHROMA_AVAILABLE: Optional[bool] = None
+
+
+def _is_chroma_available() -> bool:
+    global _CHROMA_AVAILABLE
+    if _CHROMA_AVAILABLE is None:
+        try:
+            import chromadb  # noqa: F401
+            _CHROMA_AVAILABLE = True
+        except ImportError:
+            _CHROMA_AVAILABLE = False
+    return _CHROMA_AVAILABLE
+
+
+# ---------------------------------------------------------------------------
+# Client / collection (lazy — only instantiated on first real call)
 # ---------------------------------------------------------------------------
 
 @lru_cache(maxsize=1)
-def _get_client() -> chromadb.PersistentClient:
+def _get_client():  # type: ignore[return]
+    import chromadb
+    from chromadb.config import Settings as ChromaSettings
     return chromadb.PersistentClient(
         path=settings.chroma_persist_dir,
         settings=ChromaSettings(anonymized_telemetry=False),
     )
 
 
-def _get_collection() -> chromadb.Collection:
+def _get_collection():  # type: ignore[return]
+    import chromadb
     return _get_client().get_or_create_collection(
         name=settings.chroma_collection,
         metadata={"hnsw:space": "cosine"},
@@ -54,7 +62,6 @@ def _get_collection() -> chromadb.Collection:
 # ---------------------------------------------------------------------------
 
 def _meta_to_chroma(meta: ChunkMetadata) -> dict[str, str]:
-    """Flatten ChunkMetadata → ChromaDB-compatible flat str dict."""
     return {
         "exam":                meta.exam,
         "subject":             meta.subject,
@@ -72,7 +79,6 @@ def _meta_to_chroma(meta: ChunkMetadata) -> dict[str, str]:
 
 
 def _chroma_to_meta_dict(raw: dict) -> dict:
-    """Rehydrate a ChromaDB metadata dict into the shape retriever expects."""
     return {
         "exam":                raw.get("exam", ""),
         "subject":             raw.get("subject", ""),
@@ -94,10 +100,8 @@ def _chroma_to_meta_dict(raw: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 def upsert_chunks(chunks: list[Chunk], embeddings: list[list[float]]) -> int:
-    """
-    Upsert chunks + pre-computed embeddings into ChromaDB.
-    Returns the number of chunks stored.
-    """
+    if not _is_chroma_available():
+        raise RuntimeError("ChromaDB not installed — RAG ingestion unavailable in lite mode.")
     if not chunks:
         return 0
     col = _get_collection()
@@ -111,7 +115,8 @@ def upsert_chunks(chunks: list[Chunk], embeddings: list[list[float]]) -> int:
 
 
 def delete_by_chapter(exam: str, subject: str, chapter: str) -> int:
-    """Delete all chunks for a given chapter (used before re-ingestion)."""
+    if not _is_chroma_available():
+        return 0
     col = _get_collection()
     results = col.get(
         where={"$and": [
@@ -132,8 +137,13 @@ def delete_by_chapter(exam: str, subject: str, chapter: str) -> int:
 # ---------------------------------------------------------------------------
 
 def collection_count() -> int:
-    """Total number of chunks currently stored."""
-    return _get_collection().count()
+    """Returns 0 when ChromaDB is not installed — safe to call always."""
+    if not _is_chroma_available():
+        return 0
+    try:
+        return _get_collection().count()
+    except Exception:
+        return 0
 
 
 def query_collection(
@@ -141,10 +151,8 @@ def query_collection(
     n_results:       int,
     where:           Optional[dict] = None,
 ) -> dict:
-    """
-    Raw ChromaDB query. Returns the native response dict with
-    keys: ids, documents, metadatas, distances.
-    """
+    if not _is_chroma_available():
+        return {"ids": [[]], "documents": [[]], "metadatas": [[]], "distances": [[]]}
     col = _get_collection()
     kwargs: dict = {
         "query_embeddings": [query_embedding],
@@ -165,18 +173,16 @@ def get_chunks(
     limit:  int = 50,
     offset: int = 0,
 ) -> list[dict]:
-    """
-    Fetch raw chunk records (id + document + metadata) for admin inspection.
-    Returns a list of dicts with keys: id, content, metadata.
-    """
+    if not _is_chroma_available():
+        return []
     col = _get_collection()
     kwargs: dict = {"include": ["documents", "metadatas"]}
     if where:
         kwargs["where"] = where
 
     results = col.get(**kwargs)
-    ids  = results.get("ids", [])
-    docs = results.get("documents", [])
+    ids   = results.get("ids", [])
+    docs  = results.get("documents", [])
     metas = results.get("metadatas", [])
 
     records = [
@@ -187,10 +193,11 @@ def get_chunks(
 
 
 def get_chunk_by_id(chunk_id: str) -> Optional[dict]:
-    """Fetch a single chunk by its UUID. Returns None if not found."""
+    if not _is_chroma_available():
+        return None
     col = _get_collection()
     results = col.get(ids=[chunk_id], include=["documents", "metadatas"])
-    ids  = results.get("ids", [])
+    ids = results.get("ids", [])
     if not ids:
         return None
     return {
@@ -201,10 +208,8 @@ def get_chunk_by_id(chunk_id: str) -> Optional[dict]:
 
 
 def get_all_metadata(where: Optional[dict] = None) -> list[dict]:
-    """
-    Fetch metadata for all matching chunks (no document content).
-    Used by quality metrics and evaluator to avoid large document payloads.
-    """
+    if not _is_chroma_available():
+        return []
     col = _get_collection()
     kwargs: dict = {"include": ["metadatas"]}
     if where:
