@@ -6,7 +6,7 @@ import { ChevronDown } from 'lucide-react';
 import { useOnboarding } from '@/context/OnboardingContext';
 import OnboardingShell from '@/components/onboarding/OnboardingShell';
 
-const TARGET_YEARS = ['2025', '2026', '2027', '2028'];
+const TARGET_YEARS = ['2027', '2028', '2029'];
 const CLASSES      = ['Class 11', 'Class 12', 'Dropper', 'Other'];
 const PREP_LEVELS  = ['Just Starting', 'Intermediate', 'Advanced'];
 
