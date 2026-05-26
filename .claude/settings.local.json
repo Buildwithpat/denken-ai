@@ -80,7 +80,8 @@
       "Bash(Sort-Object)",
       "Bash(node *)",
       "PowerShell(npm install *)",
-      "PowerShell(npm run *)"
+      "PowerShell(npm run *)",
+      "Bash(npm run *)"
     ]
   }
 }
