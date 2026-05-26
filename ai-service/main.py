@@ -1,10 +1,4 @@
-"""
-Entry point — run with:
-    python main.py
-or:
-    uvicorn app.main:app --reload --port 8000
-"""
-
+from app.main import app
 import uvicorn
 
 if __name__ == "__main__":
