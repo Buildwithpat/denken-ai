@@ -1,0 +1,214 @@
+{
+  "chapterId": "chem_chemical_bonding_012",
+  "fileName": "chemical_bonding.json",
+  "chapterName": "Chemical Bonding",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "chemical-bonding",
+    "hybridization",
+    "molecular-orbital-theory",
+    "vsepr-theory",
+    "dipole-moment",
+    "bond-parameters"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_bond_001",
+      "conceptName": "Ionic Bond",
+      "description": "Bond formed by transfer of electrons.",
+      "formulaType": "ionic-bond-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bond_001_f1",
+          "name": "Lattice Energy Relation",
+          "equation": "Lattice Energy ∝ (Q1Q2/r)",
+          "latex": "\\text{Lattice Energy}\\propto\\frac{Q_1Q_2}{r}",
+          "meaning": "Lattice energy depends on ionic charges and distance.",
+          "applications": ["Ionic compound stability", "Born-Haber cycle"]
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bond_002",
+      "conceptName": "Covalent Bond",
+      "description": "Bond formed by sharing of electrons.",
+      "formulaType": "covalent-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bond_002_f1",
+          "name": "Bond Order",
+          "equation": "Bond Order = (Nb - Na)/2",
+          "latex": "\\text{Bond Order}=\\frac{N_b-N_a}{2}",
+          "meaning": "Difference between bonding and antibonding electrons."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bond_003",
+      "conceptName": "Formal Charge",
+      "description": "Charge assigned to atom in Lewis structure.",
+      "formulaType": "formal-charge-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bond_003_f1",
+          "name": "Formal Charge",
+          "equation": "FC = V - L - (S/2)",
+          "latex": "FC=V-L-\\frac{S}{2}",
+          "meaning": "Calculation of formal charge on atom."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bond_004",
+      "conceptName": "Dipole Moment",
+      "description": "Measure of polarity of molecule.",
+      "formulaType": "dipole-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bond_004_f1",
+          "name": "Dipole Moment",
+          "equation": "μ = q × d",
+          "latex": "\\mu=q\\times d",
+          "meaning": "Product of charge and separation distance."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bond_005",
+      "conceptName": "VSEPR Theory",
+      "description": "Prediction of molecular shapes.",
+      "formulaType": "geometry-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bond_005_f1",
+          "name": "Steric Number",
+          "equation": "SN = Bond Pairs + Lone Pairs",
+          "latex": "SN=\\text{Bond Pairs}+\\text{Lone Pairs}",
+          "meaning": "Determines geometry and hybridization."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bond_006",
+      "conceptName": "Hybridization",
+      "description": "Mixing of atomic orbitals.",
+      "formulaType": "hybridization-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bond_006_f1",
+          "name": "sp Hybridization",
+          "equation": "Steric Number = 2",
+          "latex": "SN=2",
+          "meaning": "Linear geometry."
+        },
+        {
+          "formulaId": "chem_bond_006_f2",
+          "name": "sp² Hybridization",
+          "equation": "Steric Number = 3",
+          "latex": "SN=3",
+          "meaning": "Trigonal planar geometry."
+        },
+        {
+          "formulaId": "chem_bond_006_f3",
+          "name": "sp³ Hybridization",
+          "equation": "Steric Number = 4",
+          "latex": "SN=4",
+          "meaning": "Tetrahedral geometry."
+        },
+        {
+          "formulaId": "chem_bond_006_f4",
+          "name": "sp³d Hybridization",
+          "equation": "Steric Number = 5",
+          "latex": "SN=5",
+          "meaning": "Trigonal bipyramidal geometry."
+        },
+        {
+          "formulaId": "chem_bond_006_f5",
+          "name": "sp³d² Hybridization",
+          "equation": "Steric Number = 6",
+          "latex": "SN=6",
+          "meaning": "Octahedral geometry."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bond_007",
+      "conceptName": "Molecular Orbital Theory",
+      "description": "Combination of atomic orbitals into molecular orbitals.",
+      "formulaType": "mo-theory-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bond_007_f1",
+          "name": "Bond Order in MOT",
+          "equation": "Bond Order = (Nb - Na)/2",
+          "latex": "\\text{Bond Order}=\\frac{N_b-N_a}{2}",
+          "meaning": "Determines stability of molecule."
+        },
+        {
+          "formulaId": "chem_bond_007_f2",
+          "name": "Magnetic Nature Rule",
+          "equation": "Unpaired electrons → Paramagnetic",
+          "latex": "\\text{Unpaired electrons}\\rightarrow\\text{Paramagnetic}",
+          "meaning": "Determines magnetic behavior."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bond_008",
+      "conceptName": "Bond Parameters",
+      "description": "Characteristics of chemical bonds.",
+      "formulaType": "bond-parameter-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bond_008_f1",
+          "name": "Bond Energy Relation",
+          "equation": "Higher bond order → Higher bond energy",
+          "latex": "\\text{Higher bond order}\\rightarrow\\text{Higher bond energy}",
+          "meaning": "Bond strength increases with bond order."
+        },
+        {
+          "formulaId": "chem_bond_008_f2",
+          "name": "Bond Length Relation",
+          "equation": "Higher bond order → Smaller bond length",
+          "latex": "\\text{Higher bond order}\\rightarrow\\text{Smaller bond length}",
+          "meaning": "Bond length decreases with bond order."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Ionic bonds are generally stronger than van der Waals forces.",
+    "Lone pairs distort molecular geometry.",
+    "Higher bond order means greater stability.",
+    "Paramagnetic molecules contain unpaired electrons."
+  ],
+  "commonMistakes": [
+    "Wrong hybridization assignment",
+    "Incorrect bond order calculation",
+    "Confusing molecular shape and electron geometry",
+    "Ignoring lone pair repulsion"
+  ],
+  "jeeAdvancedFocus": [
+    "MOT bond order calculations",
+    "Hybridization and geometry",
+    "Formal charge problems",
+    "Dipole moment comparisons"
+  ],
+  "neetFocus": [
+    "VSEPR theory",
+    "Hybridization",
+    "Bond polarity",
+    "Molecular orbital theory"
+  ],
+  "keywords": [
+    "chemical bonding",
+    "hybridization",
+    "VSEPR theory",
+    "molecular orbital theory",
+    "bond order",
+    "dipole moment",
+    "formal charge",
+    "bond parameters"
+  ]
+}

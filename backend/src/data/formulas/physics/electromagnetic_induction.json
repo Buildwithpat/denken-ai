@@ -1,0 +1,298 @@
+{
+  "chapterId": "physics_electromagnetic_induction_020",
+  "fileName": "electromagnetic_induction.json",
+  "chapterName": "Electromagnetic Induction",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "electromagnetic-induction",
+    "faraday-law",
+    "lenz-law",
+    "mutual-induction",
+    "self-induction",
+    "eddy-currents"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_emi_001",
+      "conceptName": "Magnetic Flux",
+      "description": "Magnetic field passing through a surface.",
+      "formulaType": "flux-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emi_001_f1",
+          "name": "Magnetic Flux",
+          "equation": "Φ = BA cosθ",
+          "latex": "\\Phi=BA\\cos\\theta",
+          "meaning": "Magnetic flux through a surface.",
+          "variables": {
+            "Φ": {
+              "meaning": "Magnetic flux",
+              "unit": "Wb"
+            },
+            "B": {
+              "meaning": "Magnetic field",
+              "unit": "T"
+            },
+            "A": {
+              "meaning": "Area",
+              "unit": "m²"
+            },
+            "θ": {
+              "meaning": "Angle between B and normal to area",
+              "unit": "rad"
+            }
+          },
+          "applications": ["Electromagnetic induction", "Transformer analysis"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emi_002",
+      "conceptName": "Faraday's Laws of Electromagnetic Induction",
+      "description": "Induced EMF due to changing magnetic flux.",
+      "formulaType": "faraday-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emi_002_f1",
+          "name": "Faraday's Law",
+          "equation": "E = -dΦ/dt",
+          "latex": "E=-\\frac{d\\Phi}{dt}",
+          "meaning": "Induced EMF equals rate of change of magnetic flux."
+        },
+        {
+          "formulaId": "phy_emi_002_f2",
+          "name": "EMF in Coil of N Turns",
+          "equation": "E = -N(dΦ/dt)",
+          "latex": "E=-N\\frac{d\\Phi}{dt}",
+          "meaning": "Induced EMF in multi-turn coil."
+        },
+        {
+          "formulaId": "phy_emi_002_f3",
+          "name": "Average Induced EMF",
+          "equation": "Eavg = -ΔΦ/Δt",
+          "latex": "E_{avg}=-\\frac{\\Delta\\Phi}{\\Delta t}",
+          "meaning": "Average induced EMF over time interval."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emi_003",
+      "conceptName": "Motional EMF",
+      "description": "EMF induced due to motion of conductor in magnetic field.",
+      "formulaType": "motional-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emi_003_f1",
+          "name": "Motional EMF",
+          "equation": "E = Blv",
+          "latex": "E=Blv",
+          "meaning": "Induced EMF in moving conductor."
+        },
+        {
+          "formulaId": "phy_emi_003_f2",
+          "name": "Force on Moving Rod",
+          "equation": "F = BIl",
+          "latex": "F=BIl",
+          "meaning": "Magnetic force on current carrying rod."
+        },
+        {
+          "formulaId": "phy_emi_003_f3",
+          "name": "Current in Moving Rod",
+          "equation": "I = Blv/R",
+          "latex": "I=\\frac{Blv}{R}",
+          "meaning": "Current induced in moving conductor circuit."
+        },
+        {
+          "formulaId": "phy_emi_003_f4",
+          "name": "Power Dissipation",
+          "equation": "P = B²l²v²/R",
+          "latex": "P=\\frac{B^2l^2v^2}{R}",
+          "meaning": "Power dissipated due to induced current."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emi_004",
+      "conceptName": "Lenz's Law",
+      "description": "Direction of induced current opposes the cause producing it.",
+      "formulaType": "lenz-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emi_004_f1",
+          "name": "Lenz Law Sign",
+          "equation": "Negative sign in E = -dΦ/dt",
+          "latex": "E=-\\frac{d\\Phi}{dt}",
+          "meaning": "Induced EMF opposes change in flux."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emi_005",
+      "conceptName": "Self Induction",
+      "description": "Induction of EMF in same coil due to change in its own current.",
+      "formulaType": "self-induction-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emi_005_f1",
+          "name": "Self Induced EMF",
+          "equation": "E = -L(di/dt)",
+          "latex": "E=-L\\frac{di}{dt}",
+          "meaning": "Induced EMF in inductor."
+        },
+        {
+          "formulaId": "phy_emi_005_f2",
+          "name": "Self Inductance",
+          "equation": "L = NΦ/I",
+          "latex": "L=\\frac{N\\Phi}{I}",
+          "meaning": "Coefficient of self inductance."
+        },
+        {
+          "formulaId": "phy_emi_005_f3",
+          "name": "Energy Stored in Inductor",
+          "equation": "U = (1/2)LI²",
+          "latex": "U=\\frac{1}{2}LI^2",
+          "meaning": "Magnetic energy stored in inductor."
+        },
+        {
+          "formulaId": "phy_emi_005_f4",
+          "name": "Energy Density",
+          "equation": "u = B²/2μ₀",
+          "latex": "u=\\frac{B^2}{2\\mu_0}",
+          "meaning": "Magnetic energy per unit volume."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emi_006",
+      "conceptName": "Mutual Induction",
+      "description": "Induction of EMF in one coil due to changing current in another coil.",
+      "formulaType": "mutual-induction-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emi_006_f1",
+          "name": "Mutual Induced EMF",
+          "equation": "E = -M(di/dt)",
+          "latex": "E=-M\\frac{di}{dt}",
+          "meaning": "Induced EMF due to mutual induction."
+        },
+        {
+          "formulaId": "phy_emi_006_f2",
+          "name": "Mutual Inductance",
+          "equation": "M = N₂Φ₂₁/I₁",
+          "latex": "M=\\frac{N_2\\Phi_{21}}{I_1}",
+          "meaning": "Coefficient of mutual inductance."
+        },
+        {
+          "formulaId": "phy_emi_006_f3",
+          "name": "Relation Between M and L",
+          "equation": "M = k√(L₁L₂)",
+          "latex": "M=k\\sqrt{L_1L_2}",
+          "meaning": "Mutual inductance relation."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emi_007",
+      "conceptName": "Growth and Decay of Current in LR Circuit",
+      "description": "Current variation in inductive circuits.",
+      "formulaType": "lr-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emi_007_f1",
+          "name": "Current Growth",
+          "equation": "I = I₀(1 - e^(-Rt/L))",
+          "latex": "I=I_0\\left(1-e^{-Rt/L}\\right)",
+          "meaning": "Growth of current in LR circuit."
+        },
+        {
+          "formulaId": "phy_emi_007_f2",
+          "name": "Current Decay",
+          "equation": "I = I₀e^(-Rt/L)",
+          "latex": "I=I_0e^{-Rt/L}",
+          "meaning": "Decay of current in LR circuit."
+        },
+        {
+          "formulaId": "phy_emi_007_f3",
+          "name": "Time Constant",
+          "equation": "τ = L/R",
+          "latex": "\\tau=\\frac{L}{R}",
+          "meaning": "Time constant of LR circuit."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emi_008",
+      "conceptName": "AC Generator",
+      "description": "Device converting mechanical energy into electrical energy.",
+      "formulaType": "generator-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emi_008_f1",
+          "name": "Instantaneous EMF",
+          "equation": "E = NBAω sin(ωt)",
+          "latex": "E=NBA\\omega\\sin(\\omega t)",
+          "meaning": "Instantaneous EMF generated in AC generator."
+        },
+        {
+          "formulaId": "phy_emi_008_f2",
+          "name": "Maximum EMF",
+          "equation": "E₀ = NBAω",
+          "latex": "E_0=NBA\\omega",
+          "meaning": "Peak EMF generated."
+        },
+        {
+          "formulaId": "phy_emi_008_f3",
+          "name": "Frequency of Generator",
+          "equation": "f = ω/2π",
+          "latex": "f=\\frac{\\omega}{2\\pi}",
+          "meaning": "Frequency of generated AC."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emi_009",
+      "conceptName": "Eddy Currents",
+      "description": "Circulating currents induced in conductors.",
+      "formulaType": "eddy-current-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emi_009_f1",
+          "name": "Power Loss due to Eddy Currents",
+          "equation": "P ∝ B²f²",
+          "latex": "P\\propto B^2f^2",
+          "meaning": "Eddy current power loss relation."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Induced EMF exists only when magnetic flux changes.",
+    "Lenz's law is based on conservation of energy.",
+    "Self inductance opposes change in current.",
+    "Inductor stores energy in magnetic field."
+  ],
+  "commonMistakes": [
+    "Ignoring negative sign in Faraday law",
+    "Wrong direction of induced current",
+    "Confusing self and mutual induction",
+    "Using incorrect flux angle"
+  ],
+  "jeeAdvancedFocus": [
+    "Motional EMF problems",
+    "LR transient circuits",
+    "Mutual induction derivations",
+    "Energy stored in magnetic field"
+  ],
+  "neetFocus": ["Faraday law", "Lenz law", "Self induction", "AC generator"],
+  "keywords": [
+    "electromagnetic induction",
+    "faraday law",
+    "lenz law",
+    "self induction",
+    "mutual induction",
+    "motional emf",
+    "eddy currents",
+    "ac generator"
+  ]
+}

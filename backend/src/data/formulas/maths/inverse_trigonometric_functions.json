@@ -1,0 +1,261 @@
+{
+  "chapterId": "math_inverse_trigonometric_functions_027",
+  "fileName": "inverse_trigonometric_functions.json",
+  "chapterName": "Inverse Trigonometric Functions",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "inverse-trigonometric-functions",
+    "trigonometry",
+    "principal-value",
+    "identities",
+    "inverse-functions"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_itf_001",
+      "conceptName": "Basic Definitions",
+      "description": "Definitions of inverse trigonometric functions.",
+      "formulaType": "inverse-trig-definition-formula",
+      "formulas": [
+        {
+          "formulaId": "math_itf_001_f1",
+          "name": "Inverse Sine",
+          "equation": "y = sin⁻¹x ⇔ x = siny",
+          "latex": "y=\\sin^{-1}x\\iff x=\\sin y",
+          "meaning": "Definition of inverse sine function.",
+          "applications": ["Trigonometric equations", "Calculus"]
+        },
+        {
+          "formulaId": "math_itf_001_f2",
+          "name": "Inverse Cosine",
+          "equation": "y = cos⁻¹x ⇔ x = cosy",
+          "latex": "y=\\cos^{-1}x\\iff x=\\cos y",
+          "meaning": "Definition of inverse cosine."
+        },
+        {
+          "formulaId": "math_itf_001_f3",
+          "name": "Inverse Tangent",
+          "equation": "y = tan⁻¹x ⇔ x = tany",
+          "latex": "y=\\tan^{-1}x\\iff x=\\tan y",
+          "meaning": "Definition of inverse tangent."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_itf_002",
+      "conceptName": "Domains and Ranges",
+      "description": "Principal value branches of inverse trigonometric functions.",
+      "formulaType": "domain-range-formula",
+      "formulas": [
+        {
+          "formulaId": "math_itf_002_f1",
+          "name": "Range of sin⁻¹x",
+          "equation": "[-π/2, π/2]",
+          "latex": "\\left[-\\frac\\pi2,\\frac\\pi2\\right]",
+          "meaning": "Principal value range of inverse sine."
+        },
+        {
+          "formulaId": "math_itf_002_f2",
+          "name": "Range of cos⁻¹x",
+          "equation": "[0, π]",
+          "latex": "\\left[0,\\pi\\right]",
+          "meaning": "Principal value range of inverse cosine."
+        },
+        {
+          "formulaId": "math_itf_002_f3",
+          "name": "Range of tan⁻¹x",
+          "equation": "(-π/2, π/2)",
+          "latex": "\\left(-\\frac\\pi2,\\frac\\pi2\\right)",
+          "meaning": "Principal value range of inverse tangent."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_itf_003",
+      "conceptName": "Basic Identities",
+      "description": "Important inverse trigonometric identities.",
+      "formulaType": "inverse-trig-identity-formula",
+      "formulas": [
+        {
+          "formulaId": "math_itf_003_f1",
+          "name": "sin⁻¹x + cos⁻¹x",
+          "equation": "sin⁻¹x + cos⁻¹x = π/2",
+          "latex": "\\sin^{-1}x+\\cos^{-1}x=\\frac\\pi2",
+          "meaning": "Fundamental identity."
+        },
+        {
+          "formulaId": "math_itf_003_f2",
+          "name": "tan⁻¹x + cot⁻¹x",
+          "equation": "tan⁻¹x + cot⁻¹x = π/2",
+          "latex": "\\tan^{-1}x+\\cot^{-1}x=\\frac\\pi2",
+          "meaning": "Inverse tangent-cotangent identity."
+        },
+        {
+          "formulaId": "math_itf_003_f3",
+          "name": "sec⁻¹x + cosec⁻¹x",
+          "equation": "sec⁻¹x + cosec⁻¹x = π/2",
+          "latex": "\\sec^{-1}x+\\csc^{-1}x=\\frac\\pi2",
+          "meaning": "Inverse secant-cosecant identity."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_itf_004",
+      "conceptName": "Transformation Formulas",
+      "description": "Relations involving negative arguments.",
+      "formulaType": "transformation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_itf_004_f1",
+          "name": "sin⁻¹(-x)",
+          "equation": "sin⁻¹(-x) = -sin⁻¹x",
+          "latex": "\\sin^{-1}(-x)=-\\sin^{-1}x",
+          "meaning": "Odd function property."
+        },
+        {
+          "formulaId": "math_itf_004_f2",
+          "name": "cos⁻¹(-x)",
+          "equation": "cos⁻¹(-x) = π - cos⁻¹x",
+          "latex": "\\cos^{-1}(-x)=\\pi-\\cos^{-1}x",
+          "meaning": "Transformation identity."
+        },
+        {
+          "formulaId": "math_itf_004_f3",
+          "name": "tan⁻¹(-x)",
+          "equation": "tan⁻¹(-x) = -tan⁻¹x",
+          "latex": "\\tan^{-1}(-x)=-\\tan^{-1}x",
+          "meaning": "Odd function property."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_itf_005",
+      "conceptName": "Compound Angle Identities",
+      "description": "Addition and subtraction identities.",
+      "formulaType": "compound-angle-formula",
+      "formulas": [
+        {
+          "formulaId": "math_itf_005_f1",
+          "name": "tan⁻¹x + tan⁻¹y",
+          "equation": "tan⁻¹x + tan⁻¹y = tan⁻¹[(x+y)/(1-xy)]",
+          "latex": "\\tan^{-1}x+\\tan^{-1}y=\\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)",
+          "meaning": "Addition formula for inverse tangent."
+        },
+        {
+          "formulaId": "math_itf_005_f2",
+          "name": "tan⁻¹x - tan⁻¹y",
+          "equation": "tan⁻¹x - tan⁻¹y = tan⁻¹[(x-y)/(1+xy)]",
+          "latex": "\\tan^{-1}x-\\tan^{-1}y=\\tan^{-1}\\left(\\frac{x-y}{1+xy}\\right)",
+          "meaning": "Subtraction formula."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_itf_006",
+      "conceptName": "Conversion Identities",
+      "description": "Relations between inverse trigonometric functions.",
+      "formulaType": "conversion-formula",
+      "formulas": [
+        {
+          "formulaId": "math_itf_006_f1",
+          "name": "tan⁻¹x in terms of sin⁻¹x",
+          "equation": "tan⁻¹x = sin⁻¹[x/√(1+x²)]",
+          "latex": "\\tan^{-1}x=\\sin^{-1}\\left(\\frac{x}{\\sqrt{1+x^2}}\\right)",
+          "meaning": "Conversion identity."
+        },
+        {
+          "formulaId": "math_itf_006_f2",
+          "name": "tan⁻¹x in terms of cos⁻¹x",
+          "equation": "tan⁻¹x = cos⁻¹[1/√(1+x²)]",
+          "latex": "\\tan^{-1}x=\\cos^{-1}\\left(\\frac1{\\sqrt{1+x^2}}\\right)",
+          "meaning": "Another conversion identity."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_itf_007",
+      "conceptName": "Principal Values",
+      "description": "Important principal value results.",
+      "formulaType": "principal-value-formula",
+      "formulas": [
+        {
+          "formulaId": "math_itf_007_f1",
+          "name": "sin(sin⁻¹x)",
+          "equation": "sin(sin⁻¹x) = x",
+          "latex": "\\sin(\\sin^{-1}x)=x",
+          "meaning": "Inverse function property."
+        },
+        {
+          "formulaId": "math_itf_007_f2",
+          "name": "cos(cos⁻¹x)",
+          "equation": "cos(cos⁻¹x) = x",
+          "latex": "\\cos(\\cos^{-1}x)=x",
+          "meaning": "Inverse cosine property."
+        },
+        {
+          "formulaId": "math_itf_007_f3",
+          "name": "tan(tan⁻¹x)",
+          "equation": "tan(tan⁻¹x) = x",
+          "latex": "\\tan(\\tan^{-1}x)=x",
+          "meaning": "Inverse tangent property."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_itf_008",
+      "conceptName": "Derivative Formulas",
+      "description": "Differentiation formulas of inverse trigonometric functions.",
+      "formulaType": "derivative-formula",
+      "formulas": [
+        {
+          "formulaId": "math_itf_008_f1",
+          "name": "Derivative of sin⁻¹x",
+          "equation": "d/dx(sin⁻¹x) = 1/√(1-x²)",
+          "latex": "\\frac{d}{dx}(\\sin^{-1}x)=\\frac1{\\sqrt{1-x^2}}",
+          "meaning": "Derivative formula."
+        },
+        {
+          "formulaId": "math_itf_008_f2",
+          "name": "Derivative of cos⁻¹x",
+          "equation": "d/dx(cos⁻¹x) = -1/√(1-x²)",
+          "latex": "\\frac{d}{dx}(\\cos^{-1}x)=-\\frac1{\\sqrt{1-x^2}}",
+          "meaning": "Derivative formula."
+        },
+        {
+          "formulaId": "math_itf_008_f3",
+          "name": "Derivative of tan⁻¹x",
+          "equation": "d/dx(tan⁻¹x) = 1/(1+x²)",
+          "latex": "\\frac{d}{dx}(\\tan^{-1}x)=\\frac1{1+x^2}",
+          "meaning": "Derivative formula."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Principal value branches are very important.",
+    "Inverse trigonometric functions are many-to-one restricted functions.",
+    "tan⁻¹x identities are heavily used in JEE.",
+    "Always check domain and range while simplifying."
+  ],
+  "commonMistakes": [
+    "Ignoring principal value ranges",
+    "Wrong sign in transformation identities",
+    "Using incorrect tan⁻¹ addition formulas",
+    "Confusing inverse with reciprocal"
+  ],
+  "jeeAdvancedFocus": [
+    "Principal value problems",
+    "Advanced inverse trig identities",
+    "Compound angle transformations",
+    "Calculus involving inverse trigonometric functions"
+  ],
+  "keywords": [
+    "inverse trigonometric functions",
+    "principal value",
+    "inverse sine",
+    "inverse cosine",
+    "inverse tangent",
+    "trigonometry"
+  ]
+}

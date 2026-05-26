@@ -1,0 +1,312 @@
+{
+  "chapterId": "physics_modern_physics_022",
+  "fileName": "modern_physics.json",
+  "chapterName": "Modern Physics",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "modern-physics",
+    "photoelectric-effect",
+    "atomic-physics",
+    "nuclear-physics",
+    "radioactivity",
+    "de-broglie"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_mod_001",
+      "conceptName": "Photoelectric Effect",
+      "description": "Emission of electrons from metal surface due to incident light.",
+      "formulaType": "photoelectric-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mod_001_f1",
+          "name": "Einstein Photoelectric Equation",
+          "equation": "hν = ϕ + KEmax",
+          "latex": "h\\nu=\\phi+KE_{max}",
+          "meaning": "Energy conservation in photoelectric effect.",
+          "variables": {
+            "h": {
+              "meaning": "Planck constant",
+              "unit": "J·s"
+            },
+            "ν": {
+              "meaning": "Frequency of incident light",
+              "unit": "Hz"
+            },
+            "ϕ": {
+              "meaning": "Work function",
+              "unit": "J"
+            },
+            "KEmax": {
+              "meaning": "Maximum kinetic energy",
+              "unit": "J"
+            }
+          },
+          "applications": [
+            "Photoelectric emission",
+            "Stopping potential problems"
+          ]
+        },
+        {
+          "formulaId": "phy_mod_001_f2",
+          "name": "Maximum Kinetic Energy",
+          "equation": "KEmax = (1/2)mv²",
+          "latex": "KE_{max}=\\frac{1}{2}mv^2",
+          "meaning": "Maximum kinetic energy of emitted electron."
+        },
+        {
+          "formulaId": "phy_mod_001_f3",
+          "name": "Stopping Potential Relation",
+          "equation": "KEmax = eV₀",
+          "latex": "KE_{max}=eV_0",
+          "meaning": "Relation between stopping potential and kinetic energy."
+        },
+        {
+          "formulaId": "phy_mod_001_f4",
+          "name": "Threshold Frequency",
+          "equation": "ν₀ = ϕ/h",
+          "latex": "\\nu_0=\\frac{\\phi}{h}",
+          "meaning": "Minimum frequency needed for emission."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mod_002",
+      "conceptName": "de Broglie Hypothesis",
+      "description": "Wave nature associated with moving particles.",
+      "formulaType": "matter-wave-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mod_002_f1",
+          "name": "de Broglie Wavelength",
+          "equation": "λ = h/p",
+          "latex": "\\lambda=\\frac{h}{p}",
+          "meaning": "Wavelength associated with particle."
+        },
+        {
+          "formulaId": "phy_mod_002_f2",
+          "name": "de Broglie Relation",
+          "equation": "λ = h/mv",
+          "latex": "\\lambda=\\frac{h}{mv}",
+          "meaning": "Matter wave wavelength in terms of mass and velocity."
+        },
+        {
+          "formulaId": "phy_mod_002_f3",
+          "name": "Electron Wavelength",
+          "equation": "λ = 12.27/√V Å",
+          "latex": "\\lambda=\\frac{12.27}{\\sqrt{V}}\\,\\AA",
+          "meaning": "Wavelength of electron accelerated by potential V."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mod_003",
+      "conceptName": "Bohr Model of Atom",
+      "description": "Quantized model for hydrogen atom.",
+      "formulaType": "bohr-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mod_003_f1",
+          "name": "Radius of nth Orbit",
+          "equation": "rn = n²a₀",
+          "latex": "r_n=n^2a_0",
+          "meaning": "Radius of nth Bohr orbit."
+        },
+        {
+          "formulaId": "phy_mod_003_f2",
+          "name": "Energy of nth Orbit",
+          "equation": "En = -13.6/n² eV",
+          "latex": "E_n=-\\frac{13.6}{n^2}\\,eV",
+          "meaning": "Energy of electron in nth orbit."
+        },
+        {
+          "formulaId": "phy_mod_003_f3",
+          "name": "Angular Momentum Quantization",
+          "equation": "mvr = nh/2π",
+          "latex": "mvr=\\frac{nh}{2\\pi}",
+          "meaning": "Quantization condition in Bohr model."
+        },
+        {
+          "formulaId": "phy_mod_003_f4",
+          "name": "Velocity in nth Orbit",
+          "equation": "vn = v₀/n",
+          "latex": "v_n=\\frac{v_0}{n}",
+          "meaning": "Electron velocity in nth orbit."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mod_004",
+      "conceptName": "Hydrogen Spectrum",
+      "description": "Spectral lines emitted by hydrogen atom.",
+      "formulaType": "spectrum-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mod_004_f1",
+          "name": "Rydberg Formula",
+          "equation": "1/λ = R(1/n₁² - 1/n₂²)",
+          "latex": "\\frac{1}{\\lambda}=R\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right)",
+          "meaning": "Wavelength of spectral lines."
+        },
+        {
+          "formulaId": "phy_mod_004_f2",
+          "name": "Photon Energy",
+          "equation": "E = hν = hc/λ",
+          "latex": "E=h\\nu=\\frac{hc}{\\lambda}",
+          "meaning": "Energy of emitted or absorbed photon."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mod_005",
+      "conceptName": "X-Rays",
+      "description": "Production and properties of X-rays.",
+      "formulaType": "xray-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mod_005_f1",
+          "name": "Duane-Hunt Law",
+          "equation": "λmin = hc/eV",
+          "latex": "\\lambda_{min}=\\frac{hc}{eV}",
+          "meaning": "Minimum wavelength of X-rays."
+        },
+        {
+          "formulaId": "phy_mod_005_f2",
+          "name": "Bragg's Law",
+          "equation": "2d sinθ = nλ",
+          "latex": "2d\\sin\\theta=n\\lambda",
+          "meaning": "Condition for X-ray diffraction."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mod_006",
+      "conceptName": "Radioactivity",
+      "description": "Spontaneous decay of unstable nuclei.",
+      "formulaType": "radioactivity-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mod_006_f1",
+          "name": "Radioactive Decay Law",
+          "equation": "N = N₀e^(-λt)",
+          "latex": "N=N_0e^{-\\lambda t}",
+          "meaning": "Variation of undecayed nuclei with time."
+        },
+        {
+          "formulaId": "phy_mod_006_f2",
+          "name": "Activity",
+          "equation": "A = λN",
+          "latex": "A=\\lambda N",
+          "meaning": "Rate of radioactive disintegration."
+        },
+        {
+          "formulaId": "phy_mod_006_f3",
+          "name": "Half Life",
+          "equation": "T₁/₂ = 0.693/λ",
+          "latex": "T_{1/2}=\\frac{0.693}{\\lambda}",
+          "meaning": "Time for half nuclei to decay."
+        },
+        {
+          "formulaId": "phy_mod_006_f4",
+          "name": "Mean Life",
+          "equation": "τ = 1/λ",
+          "latex": "\\tau=\\frac{1}{\\lambda}",
+          "meaning": "Average lifetime of radioactive nucleus."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mod_007",
+      "conceptName": "Nuclear Physics",
+      "description": "Properties and reactions of atomic nuclei.",
+      "formulaType": "nuclear-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mod_007_f1",
+          "name": "Mass-Energy Relation",
+          "equation": "E = mc²",
+          "latex": "E=mc^2",
+          "meaning": "Conversion between mass and energy."
+        },
+        {
+          "formulaId": "phy_mod_007_f2",
+          "name": "Binding Energy",
+          "equation": "BE = Δmc²",
+          "latex": "BE=\\Delta mc^2",
+          "meaning": "Energy required to separate nucleus."
+        },
+        {
+          "formulaId": "phy_mod_007_f3",
+          "name": "Binding Energy Per Nucleon",
+          "equation": "BE/A",
+          "latex": "\\frac{BE}{A}",
+          "meaning": "Average binding energy per nucleon."
+        },
+        {
+          "formulaId": "phy_mod_007_f4",
+          "name": "Q-Value of Nuclear Reaction",
+          "equation": "Q = (mi - mf)c²",
+          "latex": "Q=(m_i-m_f)c^2",
+          "meaning": "Energy released or absorbed in nuclear reaction."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mod_008",
+      "conceptName": "Semiconductor Basics",
+      "description": "Basic semiconductor relations.",
+      "formulaType": "semiconductor-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mod_008_f1",
+          "name": "Drift Current",
+          "equation": "I = nAeVd",
+          "latex": "I=nAeV_d",
+          "meaning": "Current due to drift of charge carriers."
+        },
+        {
+          "formulaId": "phy_mod_008_f2",
+          "name": "Conductivity",
+          "equation": "σ = neμ",
+          "latex": "\\sigma=ne\\mu",
+          "meaning": "Conductivity of semiconductor."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Photoelectric effect proves particle nature of light.",
+    "de Broglie hypothesis proves wave nature of matter.",
+    "Binding energy determines nuclear stability.",
+    "Radioactive decay is independent of external conditions."
+  ],
+  "commonMistakes": [
+    "Using wrong sign in Bohr energy levels",
+    "Confusing half life and mean life",
+    "Ignoring units in de Broglie wavelength",
+    "Wrong application of Einstein photoelectric equation"
+  ],
+  "jeeAdvancedFocus": [
+    "Bohr model derivations",
+    "Nuclear binding energy",
+    "Radioactive decay numericals",
+    "Matter wave applications"
+  ],
+  "neetFocus": [
+    "Photoelectric effect",
+    "Bohr atom",
+    "Radioactivity",
+    "Nuclear energy"
+  ],
+  "keywords": [
+    "modern physics",
+    "photoelectric effect",
+    "bohr model",
+    "radioactivity",
+    "de broglie wavelength",
+    "binding energy",
+    "hydrogen spectrum",
+    "nuclear physics"
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "chapterId": "chem_gaseous_state_003",
+  "fileName": "gaseous_state.json",
+  "chapterName": "Gaseous State",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "gaseous-state",
+    "gas-laws",
+    "kinetic-theory",
+    "ideal-gas",
+    "real-gases",
+    "graham-law"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_gas_001",
+      "conceptName": "Basic Gas Laws",
+      "description": "Fundamental laws governing gaseous behavior.",
+      "formulaType": "gas-law-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_gas_001_f1",
+          "name": "Boyle's Law",
+          "equation": "P₁V₁ = P₂V₂",
+          "latex": "P_1V_1=P_2V_2",
+          "meaning": "Pressure is inversely proportional to volume at constant temperature.",
+          "applications": [
+            "Compression of gases",
+            "Pressure-volume calculations"
+          ]
+        },
+        {
+          "formulaId": "chem_gas_001_f2",
+          "name": "Charles Law",
+          "equation": "V₁/T₁ = V₂/T₂",
+          "latex": "\\frac{V_1}{T_1}=\\frac{V_2}{T_2}",
+          "meaning": "Volume is directly proportional to temperature at constant pressure."
+        },
+        {
+          "formulaId": "chem_gas_001_f3",
+          "name": "Gay-Lussac Law",
+          "equation": "P₁/T₁ = P₂/T₂",
+          "latex": "\\frac{P_1}{T_1}=\\frac{P_2}{T_2}",
+          "meaning": "Pressure is directly proportional to temperature at constant volume."
+        },
+        {
+          "formulaId": "chem_gas_001_f4",
+          "name": "Avogadro Law",
+          "equation": "V₁/n₁ = V₂/n₂",
+          "latex": "\\frac{V_1}{n_1}=\\frac{V_2}{n_2}",
+          "meaning": "Equal volumes of gases contain equal number of molecules."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_gas_002",
+      "conceptName": "Ideal Gas Equation",
+      "description": "Equation relating pressure, volume and temperature.",
+      "formulaType": "ideal-gas-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_gas_002_f1",
+          "name": "Ideal Gas Equation",
+          "equation": "PV = nRT",
+          "latex": "PV=nRT",
+          "meaning": "Equation of state for ideal gas.",
+          "variables": {
+            "P": {
+              "meaning": "Pressure",
+              "unit": "atm"
+            },
+            "V": {
+              "meaning": "Volume",
+              "unit": "L"
+            },
+            "n": {
+              "meaning": "Number of moles",
+              "unit": "mol"
+            },
+            "R": {
+              "meaning": "Gas constant",
+              "unit": "L·atm·mol⁻¹·K⁻¹"
+            },
+            "T": {
+              "meaning": "Temperature",
+              "unit": "K"
+            }
+          }
+        },
+        {
+          "formulaId": "chem_gas_002_f2",
+          "name": "Combined Gas Equation",
+          "equation": "P₁V₁/T₁ = P₂V₂/T₂",
+          "latex": "\\frac{P_1V_1}{T_1}=\\frac{P_2V_2}{T_2}",
+          "meaning": "Combined relation for gases."
+        },
+        {
+          "formulaId": "chem_gas_002_f3",
+          "name": "Density of Gas",
+          "equation": "d = PM/RT",
+          "latex": "d=\\frac{PM}{RT}",
+          "meaning": "Density relation for ideal gases."
+        },
+        {
+          "formulaId": "chem_gas_002_f4",
+          "name": "Molar Mass",
+          "equation": "M = dRT/P",
+          "latex": "M=\\frac{dRT}{P}",
+          "meaning": "Calculation of molar mass from gas density."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_gas_003",
+      "conceptName": "Dalton's Law of Partial Pressure",
+      "description": "Pressure relations in gas mixtures.",
+      "formulaType": "partial-pressure-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_gas_003_f1",
+          "name": "Dalton's Law",
+          "equation": "Ptotal = P₁ + P₂ + P₃ + ...",
+          "latex": "P_{total}=P_1+P_2+P_3+...",
+          "meaning": "Total pressure equals sum of partial pressures."
+        },
+        {
+          "formulaId": "chem_gas_003_f2",
+          "name": "Partial Pressure",
+          "equation": "Pi = XiPtotal",
+          "latex": "P_i=X_iP_{total}",
+          "meaning": "Partial pressure relation."
+        },
+        {
+          "formulaId": "chem_gas_003_f3",
+          "name": "Mole Fraction",
+          "equation": "Xi = ni/ntotal",
+          "latex": "X_i=\\frac{n_i}{n_{total}}",
+          "meaning": "Mole fraction of component."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_gas_004",
+      "conceptName": "Kinetic Theory of Gases",
+      "description": "Microscopic explanation of gas behavior.",
+      "formulaType": "kinetic-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_gas_004_f1",
+          "name": "Pressure Equation",
+          "equation": "PV = (1/3)mn(c²)",
+          "latex": "PV=\\frac{1}{3}mnc^2",
+          "meaning": "Pressure due to molecular collisions."
+        },
+        {
+          "formulaId": "chem_gas_004_f2",
+          "name": "Average Kinetic Energy",
+          "equation": "KE = (3/2)kT",
+          "latex": "KE=\\frac{3}{2}kT",
+          "meaning": "Average kinetic energy per molecule."
+        },
+        {
+          "formulaId": "chem_gas_004_f3",
+          "name": "Root Mean Square Velocity",
+          "equation": "urms = √(3RT/M)",
+          "latex": "u_{rms}=\\sqrt{\\frac{3RT}{M}}",
+          "meaning": "RMS velocity of gas molecules."
+        },
+        {
+          "formulaId": "chem_gas_004_f4",
+          "name": "Average Velocity",
+          "equation": "uavg = √(8RT/πM)",
+          "latex": "u_{avg}=\\sqrt{\\frac{8RT}{\\pi M}}",
+          "meaning": "Average velocity of gas molecules."
+        },
+        {
+          "formulaId": "chem_gas_004_f5",
+          "name": "Most Probable Velocity",
+          "equation": "ump = √(2RT/M)",
+          "latex": "u_{mp}=\\sqrt{\\frac{2RT}{M}}",
+          "meaning": "Most probable velocity."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_gas_005",
+      "conceptName": "Graham's Law of Diffusion",
+      "description": "Rate of diffusion of gases.",
+      "formulaType": "diffusion-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_gas_005_f1",
+          "name": "Graham's Law",
+          "equation": "r₁/r₂ = √(M₂/M₁)",
+          "latex": "\\frac{r_1}{r_2}=\\sqrt{\\frac{M_2}{M_1}}",
+          "meaning": "Rate of diffusion inversely proportional to square root of molar mass."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_gas_006",
+      "conceptName": "Real Gases",
+      "description": "Behavior of non-ideal gases.",
+      "formulaType": "real-gas-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_gas_006_f1",
+          "name": "Van der Waals Equation",
+          "equation": "(P + an²/V²)(V - nb) = nRT",
+          "latex": "\\left(P+\\frac{an^2}{V^2}\\right)(V-nb)=nRT",
+          "meaning": "Corrected equation for real gases."
+        },
+        {
+          "formulaId": "chem_gas_006_f2",
+          "name": "Compressibility Factor",
+          "equation": "Z = PV/nRT",
+          "latex": "Z=\\frac{PV}{nRT}",
+          "meaning": "Measure of deviation from ideal behavior."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_gas_007",
+      "conceptName": "Mean Free Path",
+      "description": "Average distance traveled between collisions.",
+      "formulaType": "collision-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_gas_007_f1",
+          "name": "Mean Free Path",
+          "equation": "λ = 1/(√2πd²n)",
+          "latex": "\\lambda=\\frac{1}{\\sqrt{2}\\pi d^2n}",
+          "meaning": "Average distance between molecular collisions."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Ideal gases obey gas laws at low pressure and high temperature.",
+    "Real gases deviate due to intermolecular forces and finite volume.",
+    "Temperature in gas equations must always be in Kelvin.",
+    "RMS velocity depends inversely on molar mass."
+  ],
+  "commonMistakes": [
+    "Using Celsius instead of Kelvin",
+    "Confusing RMS and average velocity",
+    "Ignoring unit consistency in gas constant",
+    "Wrong mole fraction calculation"
+  ],
+  "jeeAdvancedFocus": [
+    "Van der Waals equation",
+    "Gas mixture numericals",
+    "Kinetic theory derivations",
+    "Velocity distribution problems"
+  ],
+  "neetFocus": [
+    "Gas laws",
+    "Ideal gas equation",
+    "Graham law",
+    "Kinetic theory basics"
+  ],
+  "keywords": [
+    "gaseous state",
+    "ideal gas",
+    "kinetic theory",
+    "gas laws",
+    "real gases",
+    "graham law",
+    "partial pressure",
+    "van der waals equation"
+  ]
+}

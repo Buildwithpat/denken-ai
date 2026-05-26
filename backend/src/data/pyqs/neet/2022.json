@@ -1,0 +1,577 @@
+{
+  "questions": [
+    {
+      "questionId": "NEET2022_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Units and Measurements",
+      "topic": "Dimensions",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Plane angle and solid angle have",
+      "options": {
+        "A": "Both units and dimensions",
+        "B": "Units but no dimensions",
+        "C": "Dimensions but no units",
+        "D": "No units and no dimensions"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Electrostatics",
+      "topic": "Electric Flux",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Dimension [M L² T−3 A−1] belongs to",
+      "options": {
+        "A": "Electric permittivity",
+        "B": "Magnetic flux",
+        "C": "Self induction",
+        "D": "Magnetic permeability"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Motion in a Straight Line",
+      "topic": "Graphs",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Ratio of distance travelled by freely falling body in nth second and (n−1)th second is",
+      "options": {
+        "A": "1:3",
+        "B": "2:3",
+        "C": "1:4",
+        "D": "3:5"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Motion in a Straight Line",
+      "topic": "Velocity Time Graph",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Displacement-time graph of moving particle makes angle 45° with x-axis. Ratio of speed to velocity is",
+      "options": {
+        "A": "1:√2",
+        "B": "√2:1",
+        "C": "1:2",
+        "D": "1:1"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "System of Particles and Rotational Motion",
+      "topic": "Momentum Conservation",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "A shell explodes into three fragments with masses in ratio 2:2:1. If fragments fly with speed v perpendicular to each other, speed of third fragment is",
+      "options": {
+        "A": "3√2v",
+        "B": "v",
+        "C": "√2v",
+        "D": "2√2v"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Work Energy and Power",
+      "topic": "Power",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Electric lift carries load of 1000 kg with upward acceleration. Frictional force is 500 N. Minimum power developed by motor to lift in 1 s is",
+      "options": {
+        "A": "23500 W",
+        "B": "24000 W",
+        "C": "20000 W",
+        "D": "34500 W"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "System of Particles and Rotational Motion",
+      "topic": "Angular Momentum",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Angular speed of flywheel changes from 1200 rpm to 300 rpm in 16 seconds. Angular acceleration is",
+      "options": {
+        "A": "40π",
+        "B": "2π",
+        "C": "4π",
+        "D": "12π"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "System of Particles and Rotational Motion",
+      "topic": "Moment of Inertia",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Ratio of radius of gyration of thin uniform disc about axis through centre normal to plane and diameter is",
+      "options": {
+        "A": "1:√2",
+        "B": "2:1",
+        "C": "√2:1",
+        "D": "4:1"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "System of Particles and Rotational Motion",
+      "topic": "Centre of Mass",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Two objects of masses 10 kg and 20 kg are connected to two ends of rigid rod 10 m long. Distance of centre of mass from 10 kg mass is",
+      "options": {
+        "A": "5 m",
+        "B": "3 m",
+        "C": "20/3 m",
+        "D": "10 m"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Gravitation",
+      "topic": "Gravitational Field",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Body of mass m experiences gravitational force 5 N. Potential at that point is −10 J/kg. Magnitude of gravitational field intensity is",
+      "options": {
+        "A": "150 N/kg",
+        "B": "0.05 N/kg",
+        "C": "50 N/kg",
+        "D": "5 N/kg"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2022
+    },
+
+    {
+      "questionId": "NEET2022_CHEM_1",
+      "questionNumber": 1,
+      "subject": "Chemistry",
+      "chapter": "Some Basic Concepts of Chemistry",
+      "topic": "Molarity",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "What mass of 95% pure CaCO3 is required to neutralize 50 mL of 0.4 M HCl solution?",
+      "options": {
+        "A": "9.50 g",
+        "B": "1.25 g",
+        "C": "1.32 g",
+        "D": "3.66 g"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_CHEM_2",
+      "questionNumber": 2,
+      "subject": "Chemistry",
+      "chapter": "Structure of Atom",
+      "topic": "Quantum Numbers",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Identify incorrect statement.",
+      "options": {
+        "A": "Shapes of d,p and f orbitals are similar",
+        "B": "All five d orbitals differ in orientation",
+        "C": "All three 4d orbitals have shapes similar to 3d orbitals",
+        "D": "m value fixes orbital energy in atom"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_CHEM_3",
+      "questionNumber": 3,
+      "subject": "Chemistry",
+      "chapter": "Classification of Elements",
+      "topic": "Periodic Table",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "IUPAC name of element with atomic number 119 is",
+      "options": {
+        "A": "Ununennium",
+        "B": "Unununium",
+        "C": "Unnilennium",
+        "D": "Ununununium"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_CHEM_4",
+      "questionNumber": 4,
+      "subject": "Chemistry",
+      "chapter": "Chemical Bonding",
+      "topic": "Bond Angle",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Among following which molecule has maximum lone pair-bond pair repulsion?",
+      "options": {
+        "A": "XeF2",
+        "B": "ClF3",
+        "C": "IF5",
+        "D": "SF4"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_CHEM_5",
+      "questionNumber": 5,
+      "subject": "Chemistry",
+      "chapter": "Thermodynamics",
+      "topic": "PV Curve",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Which PV curve represents maximum work done?",
+      "options": {
+        "A": "Graph A",
+        "B": "Graph B",
+        "C": "Graph C",
+        "D": "Graph D"
+      },
+      "correctAnswer": "A",
+      "diagramRequired": true,
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_CHEM_6",
+      "questionNumber": 6,
+      "subject": "Chemistry",
+      "chapter": "Equilibrium",
+      "topic": "pH",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "pH of solution containing 50 mL each of 0.10 M sodium acetate and 0.01 M acetic acid is",
+      "options": {
+        "A": "5.37",
+        "B": "4.37",
+        "C": "5.87",
+        "D": "5.17"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_CHEM_7",
+      "questionNumber": 7,
+      "subject": "Chemistry",
+      "chapter": "Redox Reactions",
+      "topic": "Reducing Agent",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Strongest reducing agent among alkali metals is",
+      "options": {
+        "A": "Lithium",
+        "B": "Sodium",
+        "C": "Potassium",
+        "D": "Cesium"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_CHEM_8",
+      "questionNumber": 8,
+      "subject": "Chemistry",
+      "chapter": "Hydrogen",
+      "topic": "Isotopes",
+      "difficulty": "easy",
+      "questionType": "match_list",
+      "questionText": "Match hydrides with nature.",
+      "options": {
+        "A": "MgH2",
+        "B": "BeH2",
+        "C": "LiH",
+        "D": "HF"
+      },
+      "correctAnswer": "A-ii,B-i,C-iv,D-iii",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_CHEM_9",
+      "questionNumber": 9,
+      "subject": "Chemistry",
+      "chapter": "s Block Elements",
+      "topic": "Alkali Metals",
+      "difficulty": "medium",
+      "questionType": "match_list",
+      "questionText": "Match alkali metals with uses.",
+      "options": {
+        "A": "Li",
+        "B": "Na",
+        "C": "K",
+        "D": "Cs"
+      },
+      "correctAnswer": "A-ii,B-iii,C-i,D-iv",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_CHEM_10",
+      "questionNumber": 10,
+      "subject": "Chemistry",
+      "chapter": "p Block Elements",
+      "topic": "Carbon Allotropes",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Choose correct statement.",
+      "options": {
+        "A": "Diamond and graphite are lubricants",
+        "B": "Diamond and graphite have dimensional network",
+        "C": "Diamond is covalent and graphite ionic",
+        "D": "Diamond is sp3 hybridized and graphite is sp2 hybridized"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2022
+    },
+
+    {
+      "questionId": "NEET2022_BIO_1",
+      "questionNumber": 1,
+      "subject": "Biology",
+      "chapter": "Plant Kingdom",
+      "topic": "Algae",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which of the following is incorrectly matched?",
+      "options": {
+        "A": "Volvox - Starch",
+        "B": "Ectocarpus - Fucoxanthin",
+        "C": "Ulothrix - Mannitol",
+        "D": "Porphyra - Floridean starch"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_BIO_2",
+      "questionNumber": 2,
+      "subject": "Biology",
+      "chapter": "Plant Kingdom",
+      "topic": "Classification",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Hydrocolloid carrageen is obtained from",
+      "options": {
+        "A": "Phaeophyceae only",
+        "B": "Chlorophyceae and Phaeophyceae",
+        "C": "Rhodophyceae and Phaeophyceae",
+        "D": "Rhodophyceae only"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_BIO_3",
+      "questionNumber": 3,
+      "subject": "Biology",
+      "chapter": "Morphology of Flowering Plants",
+      "topic": "Leaf",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which flowering plant shows vexillary aestivation and diadelphous stamens?",
+      "options": {
+        "A": "Solanum nigrum",
+        "B": "Colchicum autumnale",
+        "C": "Pisum sativum",
+        "D": "Allium cepa"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_BIO_4",
+      "questionNumber": 4,
+      "subject": "Biology",
+      "chapter": "Morphology of Flowering Plants",
+      "topic": "Root Modification",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Identify correct statement.",
+      "options": {
+        "A": "Tendrils modified into pointed hard thorns in Bougainvillea",
+        "B": "Axillary buds modified into spirally coiled tendrils in cucumber",
+        "C": "Stem flattened in Opuntia modified to perform photosynthesis",
+        "D": "Rhizophora shows vertically upward growing roots"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_BIO_5",
+      "questionNumber": 5,
+      "subject": "Biology",
+      "chapter": "Morphology of Flowering Plants",
+      "topic": "Economic Botany",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Flowers are zygomorphic in",
+      "options": {
+        "A": "Mustard",
+        "B": "Tulip",
+        "C": "Cassia",
+        "D": "Datura"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_BIO_6",
+      "questionNumber": 6,
+      "subject": "Biology",
+      "chapter": "Anatomy of Flowering Plants",
+      "topic": "Plant Anatomy",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Read statements about vascular bundles and identify correct one.",
+      "options": {
+        "A": "In roots xylem and phloem are arranged in alternate manner",
+        "B": "Conjoint closed vascular bundles do not possess cambium",
+        "C": "In open vascular bundles cambium present between xylem and phloem",
+        "D": "Dicotyledonous stem possesses conjoint vascular bundles"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_BIO_7",
+      "questionNumber": 7,
+      "subject": "Biology",
+      "chapter": "Anatomy of Flowering Plants",
+      "topic": "Secondary Growth",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Old trees are greater part of secondary xylem due to",
+      "options": {
+        "A": "Secretion of secondary metabolites",
+        "B": "Deposition of organic compounds",
+        "C": "Deposition of suberin and aromatic substances",
+        "D": "Deposition of tannins and resins"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_BIO_8",
+      "questionNumber": 8,
+      "subject": "Biology",
+      "chapter": "Biomolecules",
+      "topic": "Insects",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Exoskeleton of arthropods is composed of",
+      "options": {
+        "A": "Glucosamine",
+        "B": "Cutin",
+        "C": "Cellulose",
+        "D": "Chitin"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_BIO_9",
+      "questionNumber": 9,
+      "subject": "Biology",
+      "chapter": "Cell Cycle and Cell Division",
+      "topic": "Mitosis",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Which event occurs during mitotic cell division?",
+      "options": {
+        "A": "Coiling and condensation of chromatids",
+        "B": "Spindle fibres attach to kinetochores",
+        "C": "Movement of centrioles towards poles",
+        "D": "Pairing of homologous chromosomes"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2022
+    },
+    {
+      "questionId": "NEET2022_BIO_10",
+      "questionNumber": 10,
+      "subject": "Biology",
+      "chapter": "Transport in Plants",
+      "topic": "Apoplast Pathway",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Which event is not observed during apoplastic pathway?",
+      "options": {
+        "A": "Movement does not involve crossing cell membrane",
+        "B": "Movement occurs through intercellular spaces",
+        "C": "Movement does not involve cytoplasmic streaming",
+        "D": "Movement aided by plasmodesmata"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2022
+    }
+  ]
+}

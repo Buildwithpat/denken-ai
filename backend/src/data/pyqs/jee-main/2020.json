@@ -1,0 +1,582 @@
+{
+  "questions": [
+    {
+      "questionId": "JM2020S1_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Units and Dimensions",
+      "topic": "Dimensional Analysis",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "The dimension of stopping potential in photoelectric effect in units of Planck’s constant h, speed of light c, gravitational constant G and ampere A is",
+      "options": {
+        "A": "hG^(1/3)c^(-2/3)A^(-1)",
+        "B": "h^(1/3)c^(1/3)G^(4/3)A^(-1)",
+        "C": "h^(-2/3)c^(-1/3)G^(4/3)A",
+        "D": "h^(2)Gc^(1/3)A^(-1)"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Oscillations",
+      "topic": "Spring Mass System",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A particle of mass m is fixed to one end of a light spring having force constant k and unstretched length l. The other end is fixed. The system rotates in gravity free space with angular speed ω. Stretch in spring is",
+      "options": {
+        "A": "mlω²/(k−ωm)",
+        "B": "mlω²/(k−mω²)",
+        "C": "mlω²/(k+mω²)",
+        "D": "mlω²/(k+mω)"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Center of Mass",
+      "topic": "Lamina COM",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "The coordinates of centre of mass of a uniform flag shaped lamina of mass 4 kg shown in figure are",
+      "options": {
+        "A": "(1.25 m,1.50 m)",
+        "B": "(0.75 m,1.75 m)",
+        "C": "(0.75 m,0.75 m)",
+        "D": "(1 m,1.75 m)"
+      },
+      "correctAnswer": "B",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Rotational Motion",
+      "topic": "Angular Momentum",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "A uniform rod of mass M=4m and length l is pivoted about its centre. A mass m moving with velocity v making angle π/4 to the rod collides with one end and sticks to it. Angular speed after collision is",
+      "options": {
+        "A": "(3√2v)/(7l)",
+        "B": "(3v)/(7l)",
+        "C": "(3√2v)/(4l)",
+        "D": "(4v)/(7l)"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "Gravitation",
+      "topic": "Gravitational Field",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Two solid spheres of radii R1=1 m and R2=2 m with masses M1 and M2 have gravitational field graphs shown. Value of M1/M2 is",
+      "options": {
+        "A": "2/3",
+        "B": "1/6",
+        "C": "1/2",
+        "D": "1/3"
+      },
+      "correctAnswer": "B",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Thermal Properties of Matter",
+      "topic": "Density Variation",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A leak proof cylinder of length 1 m floats vertically in water at 0°C such that height above surface is 20 cm. At 4°C height above surface becomes 21 cm. Density of water at 4°C relative to density at 0°C is",
+      "options": {
+        "A": "1.26",
+        "B": "1.04",
+        "C": "1.01",
+        "D": "1.03"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "Mechanical Properties of Fluids",
+      "topic": "Buoyancy",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "A solid sphere of radius R has density distribution ρ(r)=ρ₀(1−r²/R²). Minimum density of liquid in which it floats is",
+      "options": {
+        "A": "ρ₀/3",
+        "B": "4ρ₀/5",
+        "C": "2ρ₀/5",
+        "D": "2ρ₀/3"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "Thermodynamics",
+      "topic": "PV Diagrams",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A thermodynamic cycle is shown on V-T diagram. The corresponding P-V diagram is",
+      "options": {
+        "A": "Diagram 1",
+        "B": "Diagram 2",
+        "C": "Diagram 3",
+        "D": "Diagram 4"
+      },
+      "correctAnswer": "A",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "Kinetic Theory of Gases",
+      "topic": "Mean Free Path",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "The plot depicting behavior of mean free time τ for molecules of ideal gas as function of temperature T is",
+      "options": {
+        "A": "Graph 1",
+        "B": "Graph 2",
+        "C": "Graph 3",
+        "D": "Graph 4"
+      },
+      "correctAnswer": "C",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Electrostatics",
+      "topic": "Electric Field",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Three charged particles A,B,C with charges −4q, 2q and −2q are placed on circumference of circle radius d. Electric field at centre O is",
+      "options": {
+        "A": "√3q/(πε₀d²)",
+        "B": "2√3q/(πε₀d²)",
+        "C": "√3q/(4πε₀d²)",
+        "D": "3√3q/(4πε₀d²)"
+      },
+      "correctAnswer": "A",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+
+    {
+      "questionId": "JM2020S1_CHEM_1",
+      "questionNumber": 11,
+      "subject": "Chemistry",
+      "chapter": "Atomic Structure",
+      "topic": "Ionization Energy",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "The first ionization energies of Na, Mg, Al and Si respectively are",
+      "options": {
+        "A": "496,737,577,786",
+        "B": "496,577,737,786",
+        "C": "786,737,577,496",
+        "D": "496,577,786,737"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_CHEM_2",
+      "questionNumber": 12,
+      "subject": "Chemistry",
+      "chapter": "Coordination Compounds",
+      "topic": "Isomerism",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "The complex that can show fac and mer isomerism is",
+      "options": {
+        "A": "[Co(NH3)4Cl2]+",
+        "B": "[Pt(NH3)2Cl2]",
+        "C": "[CoCl2(en)2]",
+        "D": "[Co(NH3)3(NO2)3]"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_CHEM_3",
+      "questionNumber": 13,
+      "subject": "Chemistry",
+      "chapter": "Chemical Kinetics",
+      "topic": "Activation Energy",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Rate of biochemical reaction becomes 10⁶ times faster with enzyme. Change in activation energy is",
+      "options": {
+        "A": "−6(2.303)RT",
+        "B": "−6RT",
+        "C": "+6(2.303)RT",
+        "D": "+6RT"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_CHEM_4",
+      "questionNumber": 14,
+      "subject": "Chemistry",
+      "chapter": "Surface Chemistry",
+      "topic": "Hardy Schulze Rule",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "According to Hardy-Schulze rule, flocculation values for ferric hydroxide sol are in order",
+      "options": {
+        "A": "K3[Fe(CN)6] < K2CrO4 < KBr = KNO3 = AlCl3",
+        "B": "K3[Fe(CN)6] < K2CrO4 < AlCl3 < KBr < KNO3",
+        "C": "AlCl3 > K3[Fe(CN)6] > K2CrO4 > KBr = KNO3",
+        "D": "K3[Fe(CN)6] > AlCl3 > K2CrO4 > KBr > KNO3"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_CHEM_5",
+      "questionNumber": 15,
+      "subject": "Chemistry",
+      "chapter": "p Block Elements",
+      "topic": "Sulphur Compounds",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "The number of S-O bonds in S2O8²⁻ and S-S bonds in rhombic sulphur respectively are",
+      "options": {
+        "A": "4 and 6",
+        "B": "8 and 8",
+        "C": "3 and 6",
+        "D": "4 and 8"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_CHEM_6",
+      "questionNumber": 16,
+      "subject": "Chemistry",
+      "chapter": "Hydrocarbons",
+      "topic": "Dehydrohalogenation",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Decreasing order of reactivity towards dehydrohalogenation reaction is",
+      "options": {
+        "A": "D>B>C>A",
+        "B": "B>D>A>C",
+        "C": "B>D>C>A",
+        "D": "B>A>D>C"
+      },
+      "correctAnswer": "A",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_CHEM_7",
+      "questionNumber": 17,
+      "subject": "Chemistry",
+      "chapter": "Alcohols Phenols and Ethers",
+      "topic": "Bond Length",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Increasing order of C−OH bond length among methanol, phenol and p-ethoxyphenol is",
+      "options": {
+        "A": "methanol < p-ethoxyphenol < phenol",
+        "B": "phenol < methanol < p-ethoxyphenol",
+        "C": "phenol < p-ethoxyphenol < methanol",
+        "D": "methanol < phenol < p-ethoxyphenol"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_CHEM_8",
+      "questionNumber": 18,
+      "subject": "Chemistry",
+      "chapter": "Environmental Chemistry",
+      "topic": "Greenhouse Gases",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Among given gases, gases causing greenhouse effect are",
+      "options": {
+        "A": "CO2,H2O,CFCs,O2",
+        "B": "CO2,H2O,CFCs,O3",
+        "C": "CO2,O2",
+        "D": "CO2,CFCs,O2,O3"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_CHEM_9",
+      "questionNumber": 19,
+      "subject": "Chemistry",
+      "chapter": "Chemical Bonding",
+      "topic": "Intermolecular Forces",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Predominant intermolecular forces present in ethyl acetate are",
+      "options": {
+        "A": "London dispersion and dipole-dipole",
+        "B": "Hydrogen bonding and London dispersion",
+        "C": "Dipole-dipole and hydrogen bonding",
+        "D": "London dispersion, dipole-dipole and hydrogen bonding"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_CHEM_10",
+      "questionNumber": 20,
+      "subject": "Chemistry",
+      "chapter": "Carbohydrates",
+      "topic": "Glucose",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which statement is not true for glucose?",
+      "options": {
+        "A": "Glucose exists in α and β crystalline forms",
+        "B": "Glucose gives Schiff’s test for aldehyde",
+        "C": "Glucose reacts with hydroxylamine to form oxime",
+        "D": "Pentaacetate of glucose does not react with hydroxylamine"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+
+    {
+      "questionId": "JM2020S1_MATH_1",
+      "questionNumber": 21,
+      "subject": "Mathematics",
+      "chapter": "Complex Numbers",
+      "topic": "Conjugate Roots",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "If equation x²+bx+45=0 has conjugate complex roots satisfying |z+1|=2√10 then",
+      "options": {
+        "A": "b²−b=30",
+        "B": "b²+b=72",
+        "C": "b²−b=42",
+        "D": "b²+b=12"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_MATH_2",
+      "questionNumber": 22,
+      "subject": "Mathematics",
+      "chapter": "Functions",
+      "topic": "Arithmetic Progression",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "If f(x)=2^(1+x)+2^(1−x) and f(x),3^x+3^(−x) are in AP for all x then minimum value of f(x) is",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "0",
+        "D": "4"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_MATH_3",
+      "questionNumber": 23,
+      "subject": "Mathematics",
+      "chapter": "Permutations and Combinations",
+      "topic": "Binomial Coefficients",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "If a,b,c are greatest values of 19Cp,20Cq and 21Cr respectively then",
+      "options": {
+        "A": "a/11=b/22=c/21",
+        "B": "a/10=b/11=c/21",
+        "C": "a/11=b/22=c/42",
+        "D": "a/10=b/11=c/42"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_MATH_4",
+      "questionNumber": 24,
+      "subject": "Mathematics",
+      "chapter": "Coordinate Geometry",
+      "topic": "Area of Triangle",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Points A(1,-1), B(0,2), P(x,y) have area ΔPAB=5 and P lies on line 3x+y−4λ=0. Value of λ is",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "1",
+        "D": "-3"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_MATH_5",
+      "questionNumber": 25,
+      "subject": "Mathematics",
+      "chapter": "Parabola",
+      "topic": "Locus",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Locus of point dividing line joining (0,-1) and a point on parabola x²=4y internally in ratio 1:2 is",
+      "options": {
+        "A": "9x²−12y=8",
+        "B": "9x²−3y=2",
+        "C": "x²−3y=2",
+        "D": "4x²−3y=2"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_MATH_6",
+      "questionNumber": 26,
+      "subject": "Mathematics",
+      "chapter": "Limits",
+      "topic": "Exponential Limits",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "lim x→0 [(3x²+2)/(7x²+2)]^(1/x²) equals",
+      "options": {
+        "A": "1/e",
+        "B": "1/e²",
+        "C": "e²",
+        "D": "e"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_MATH_7",
+      "questionNumber": 27,
+      "subject": "Mathematics",
+      "chapter": "Mathematical Reasoning",
+      "topic": "Tautology",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which of following is a tautology?",
+      "options": {
+        "A": "(p∧(p→q))→q",
+        "B": "q→(p∧(p→q))",
+        "C": "p∧(p∨q)",
+        "D": "p∨(p∧q)"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_MATH_8",
+      "questionNumber": 28,
+      "subject": "Mathematics",
+      "chapter": "Matrices",
+      "topic": "Matrix Count",
+      "difficulty": "hard",
+      "questionType": "integer_type",
+      "questionText": "Number of all 3×3 matrices with entries from set {-1,0,1} such that sum of diagonal elements of AAT is 3",
+      "options": {
+        "A": "672",
+        "B": "512",
+        "C": "729",
+        "D": "243"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_MATH_9",
+      "questionNumber": 29,
+      "subject": "Mathematics",
+      "chapter": "Probability",
+      "topic": "Independent Events",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "If A and B are independent events with P(A)=1/3 and P(B)=1/6 then",
+      "options": {
+        "A": "P(A/B)=2/3",
+        "B": "P(A'+B)=5/9",
+        "C": "P(A'B')=1/3",
+        "D": "P(A(A∪B))=1/4"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    },
+    {
+      "questionId": "JM2020S1_MATH_10",
+      "questionNumber": 30,
+      "subject": "Mathematics",
+      "chapter": "3D Geometry",
+      "topic": "Shortest Distance",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Shortest distance between lines (x−3)/3=(y−8)/−1=(z−3)/1 and (x+3)/−3=(y+7)/2=(z−6)/4 is",
+      "options": {
+        "A": "2√30",
+        "B": "7",
+        "C": "3√30",
+        "D": "3"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2020
+    }
+  ]
+}

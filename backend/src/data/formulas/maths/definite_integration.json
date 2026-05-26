@@ -1,0 +1,218 @@
+{
+  "chapterId": "math_definite_integration_010",
+  "fileName": "definite_integration.json",
+  "chapterName": "Definite Integration",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "definite-integration",
+    "integration",
+    "area-under-curve",
+    "properties-of-definite-integrals",
+    "calculus"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_defint_001",
+      "conceptName": "Definition of Definite Integral",
+      "description": "Integral evaluated between limits.",
+      "formulaType": "definite-integral-formula",
+      "formulas": [
+        {
+          "formulaId": "math_defint_001_f1",
+          "name": "Basic Definite Integral",
+          "equation": "∫ₐᵇ f(x)dx = F(b) - F(a)",
+          "latex": "\\int_a^b f(x)dx=F(b)-F(a)",
+          "meaning": "Fundamental evaluation formula.",
+          "applications": ["Area calculation", "Physics"]
+        }
+      ]
+    },
+    {
+      "conceptId": "math_defint_002",
+      "conceptName": "Fundamental Theorem",
+      "description": "Relationship between differentiation and integration.",
+      "formulaType": "fundamental-theorem-formula",
+      "formulas": [
+        {
+          "formulaId": "math_defint_002_f1",
+          "name": "Fundamental Theorem of Calculus",
+          "equation": "d/dx [∫ₐˣ f(t)dt] = f(x)",
+          "latex": "\\frac{d}{dx}\\left[\\int_a^x f(t)dt\\right]=f(x)",
+          "meaning": "Derivative of integral function."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_defint_003",
+      "conceptName": "Properties of Definite Integrals",
+      "description": "Important properties used in evaluation.",
+      "formulaType": "properties-formula",
+      "formulas": [
+        {
+          "formulaId": "math_defint_003_f1",
+          "name": "Zero Interval Property",
+          "equation": "∫ₐᵃ f(x)dx = 0",
+          "latex": "\\int_a^a f(x)dx=0",
+          "meaning": "Integral over zero interval is zero."
+        },
+        {
+          "formulaId": "math_defint_003_f2",
+          "name": "Reversal Property",
+          "equation": "∫ₐᵇ f(x)dx = -∫ᵇₐ f(x)dx",
+          "latex": "\\int_a^b f(x)dx=-\\int_b^a f(x)dx",
+          "meaning": "Changing limits changes sign."
+        },
+        {
+          "formulaId": "math_defint_003_f3",
+          "name": "Additivity Property",
+          "equation": "∫ₐᵇ f(x)dx + ∫ᵇᶜ f(x)dx = ∫ₐᶜ f(x)dx",
+          "latex": "\\int_a^b f(x)dx+\\int_b^c f(x)dx=\\int_a^c f(x)dx",
+          "meaning": "Integral over adjacent intervals."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_defint_004",
+      "conceptName": "Symmetry Properties",
+      "description": "Properties involving symmetry of functions.",
+      "formulaType": "symmetry-formula",
+      "formulas": [
+        {
+          "formulaId": "math_defint_004_f1",
+          "name": "Even Function Property",
+          "equation": "∫₋ₐᵃ f(x)dx = 2∫₀ᵃ f(x)dx",
+          "latex": "\\int_{-a}^a f(x)dx=2\\int_0^a f(x)dx",
+          "meaning": "Property for even functions."
+        },
+        {
+          "formulaId": "math_defint_004_f2",
+          "name": "Odd Function Property",
+          "equation": "∫₋ₐᵃ f(x)dx = 0",
+          "latex": "\\int_{-a}^a f(x)dx=0",
+          "meaning": "Property for odd functions."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_defint_005",
+      "conceptName": "Special Properties",
+      "description": "Useful transformations of definite integrals.",
+      "formulaType": "special-properties-formula",
+      "formulas": [
+        {
+          "formulaId": "math_defint_005_f1",
+          "name": "Property Using Limits",
+          "equation": "∫₀ᵃ f(x)dx = ∫₀ᵃ f(a-x)dx",
+          "latex": "\\int_0^a f(x)dx=\\int_0^a f(a-x)dx",
+          "meaning": "Important substitution property."
+        },
+        {
+          "formulaId": "math_defint_005_f2",
+          "name": "Combined Property",
+          "equation": "∫₀ᵃ f(x)dx = 1/2 ∫₀ᵃ [f(x)+f(a-x)]dx",
+          "latex": "\\int_0^a f(x)dx=\\frac12\\int_0^a[f(x)+f(a-x)]dx",
+          "meaning": "Useful symmetry transformation."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_defint_006",
+      "conceptName": "Area Under Curve",
+      "description": "Application of definite integrals in area calculation.",
+      "formulaType": "area-formula",
+      "formulas": [
+        {
+          "formulaId": "math_defint_006_f1",
+          "name": "Area Under Curve",
+          "equation": "Area = ∫ₐᵇ ydx",
+          "latex": "\\text{Area}=\\int_a^b ydx",
+          "meaning": "Area between curve and x-axis."
+        },
+        {
+          "formulaId": "math_defint_006_f2",
+          "name": "Area Between Curves",
+          "equation": "Area = ∫ₐᵇ (f(x)-g(x))dx",
+          "latex": "\\text{Area}=\\int_a^b(f(x)-g(x))dx",
+          "meaning": "Area enclosed by two curves."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_defint_007",
+      "conceptName": "Mean Value Theorem",
+      "description": "Average value of function over interval.",
+      "formulaType": "mean-value-formula",
+      "formulas": [
+        {
+          "formulaId": "math_defint_007_f1",
+          "name": "Mean Value Theorem",
+          "equation": "∫ₐᵇ f(x)dx = f(c)(b-a)",
+          "latex": "\\int_a^b f(x)dx=f(c)(b-a)",
+          "meaning": "Average value theorem for integrals."
+        },
+        {
+          "formulaId": "math_defint_007_f2",
+          "name": "Average Value Formula",
+          "equation": "f_avg = (1/(b-a))∫ₐᵇ f(x)dx",
+          "latex": "f_{avg}=\\frac1{b-a}\\int_a^b f(x)dx",
+          "meaning": "Average value of function."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_defint_008",
+      "conceptName": "Definite Integral of Trigonometric Functions",
+      "description": "Special trigonometric definite integrals.",
+      "formulaType": "trigonometric-definite-formula",
+      "formulas": [
+        {
+          "formulaId": "math_defint_008_f1",
+          "name": "Integral of sinx",
+          "equation": "∫₀ᵖⁱ sinxdx = 2",
+          "latex": "\\int_0^\\pi \\sin xdx=2",
+          "meaning": "Standard trigonometric definite integral."
+        },
+        {
+          "formulaId": "math_defint_008_f2",
+          "name": "Integral of cosx",
+          "equation": "∫₀ᵖⁱ cosxdx = 0",
+          "latex": "\\int_0^\\pi \\cos xdx=0",
+          "meaning": "Integral of cosine over symmetric interval."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Definite integral gives numerical value.",
+    "Limits are important in sign and value.",
+    "Symmetry properties simplify calculations.",
+    "Area below x-axis is taken negative."
+  ],
+  "commonMistakes": [
+    "Wrong substitution of limits",
+    "Ignoring sign changes",
+    "Incorrect use of symmetry properties",
+    "Confusing indefinite and definite integrals"
+  ],
+  "jeeAdvancedFocus": [
+    "Advanced property-based integrations",
+    "Area between curves",
+    "Symmetry-based problems",
+    "Mean value theorem applications"
+  ],
+  "neetFocus": [
+    "Basic properties",
+    "Area under curve",
+    "Fundamental theorem",
+    "Standard evaluations"
+  ],
+  "keywords": [
+    "definite integration",
+    "area under curve",
+    "properties of integrals",
+    "mean value theorem",
+    "calculus",
+    "integration"
+  ]
+}

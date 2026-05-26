@@ -1,0 +1,229 @@
+{
+  "chapterId": "chem_chemical_equilibrium_005",
+  "fileName": "chemical_equilibrium.json",
+  "chapterName": "Chemical Equilibrium",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "chemical-equilibrium",
+    "equilibrium-constant",
+    "le-chatelier-principle",
+    "reaction-quotient",
+    "gibbs-energy",
+    "equilibrium"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_eq_001",
+      "conceptName": "Law of Mass Action",
+      "description": "Relation between concentration and reaction rate.",
+      "formulaType": "mass-action-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_eq_001_f1",
+          "name": "Equilibrium Constant",
+          "equation": "Kc = [C]^c[D]^d / [A]^a[B]^b",
+          "latex": "K_c=\\frac{[C]^c[D]^d}{[A]^a[B]^b}",
+          "meaning": "Equilibrium constant in terms of concentration.",
+          "variables": {
+            "Kc": {
+              "meaning": "Equilibrium constant",
+              "unit": "depends on reaction"
+            }
+          },
+          "applications": [
+            "Equilibrium calculations",
+            "Reaction direction prediction"
+          ]
+        },
+        {
+          "formulaId": "chem_eq_001_f2",
+          "name": "Equilibrium Constant in Pressure",
+          "equation": "Kp = (PC)^c(PD)^d / (PA)^a(PB)^b",
+          "latex": "K_p=\\frac{(P_C)^c(P_D)^d}{(P_A)^a(P_B)^b}",
+          "meaning": "Equilibrium constant in terms of partial pressure."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_eq_002",
+      "conceptName": "Relation Between Kp and Kc",
+      "description": "Conversion between pressure and concentration equilibrium constants.",
+      "formulaType": "kp-kc-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_eq_002_f1",
+          "name": "Kp and Kc Relation",
+          "equation": "Kp = Kc(RT)^Δn",
+          "latex": "K_p=K_c(RT)^{\\Delta n}",
+          "meaning": "Relation between Kp and Kc."
+        },
+        {
+          "formulaId": "chem_eq_002_f2",
+          "name": "Change in Moles",
+          "equation": "Δn = np(gas) - nr(gas)",
+          "latex": "\\Delta n=n_p(\\text{gas})-n_r(\\text{gas})",
+          "meaning": "Difference in gaseous moles."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_eq_003",
+      "conceptName": "Reaction Quotient",
+      "description": "Predicts direction of reaction.",
+      "formulaType": "reaction-quotient-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_eq_003_f1",
+          "name": "Reaction Quotient",
+          "equation": "Qc = [C]^c[D]^d / [A]^a[B]^b",
+          "latex": "Q_c=\\frac{[C]^c[D]^d}{[A]^a[B]^b}",
+          "meaning": "Reaction quotient at any instant."
+        },
+        {
+          "formulaId": "chem_eq_003_f2",
+          "name": "Direction Condition",
+          "equation": "Qc < Kc → forward reaction",
+          "latex": "Q_c<K_c\\rightarrow\\text{forward reaction}",
+          "meaning": "Predicts direction toward equilibrium."
+        },
+        {
+          "formulaId": "chem_eq_003_f3",
+          "name": "Reverse Direction Condition",
+          "equation": "Qc > Kc → backward reaction",
+          "latex": "Q_c>K_c\\rightarrow\\text{backward reaction}",
+          "meaning": "Reaction proceeds backward."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_eq_004",
+      "conceptName": "Degree of Dissociation",
+      "description": "Extent of dissociation of substances.",
+      "formulaType": "dissociation-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_eq_004_f1",
+          "name": "Degree of Dissociation",
+          "equation": "α = Dissociated moles / Initial moles",
+          "latex": "\\alpha=\\frac{\\text{Dissociated moles}}{\\text{Initial moles}}",
+          "meaning": "Fraction of substance dissociated."
+        },
+        {
+          "formulaId": "chem_eq_004_f2",
+          "name": "Van't Hoff Factor",
+          "equation": "i = 1 + (n - 1)α",
+          "latex": "i=1+(n-1)\\alpha",
+          "meaning": "Relation between van't Hoff factor and dissociation."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_eq_005",
+      "conceptName": "Le Chatelier Principle",
+      "description": "Effect of external changes on equilibrium.",
+      "formulaType": "le-chatelier-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_eq_005_f1",
+          "name": "Temperature Effect",
+          "equation": "Increase in temperature favors endothermic reaction",
+          "latex": "\\text{Increase in temperature favors endothermic reaction}",
+          "meaning": "Effect of temperature on equilibrium."
+        },
+        {
+          "formulaId": "chem_eq_005_f2",
+          "name": "Pressure Effect",
+          "equation": "Increase in pressure favors side with fewer gaseous moles",
+          "latex": "\\text{Increase in pressure favors side with fewer gaseous moles}",
+          "meaning": "Effect of pressure on equilibrium."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_eq_006",
+      "conceptName": "Equilibrium Constant Properties",
+      "description": "Properties and manipulation of equilibrium constants.",
+      "formulaType": "equilibrium-property-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_eq_006_f1",
+          "name": "Reverse Reaction",
+          "equation": "Kreverse = 1/Kforward",
+          "latex": "K_{reverse}=\\frac{1}{K_{forward}}",
+          "meaning": "Equilibrium constant for reverse reaction."
+        },
+        {
+          "formulaId": "chem_eq_006_f2",
+          "name": "Multiplication of Reactions",
+          "equation": "Ktotal = K₁ × K₂",
+          "latex": "K_{total}=K_1\\times K_2",
+          "meaning": "Combined equilibrium constant."
+        },
+        {
+          "formulaId": "chem_eq_006_f3",
+          "name": "Reaction Multiplication by n",
+          "equation": "Knew = K^n",
+          "latex": "K_{new}=K^n",
+          "meaning": "Equilibrium constant after multiplying equation."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_eq_007",
+      "conceptName": "Gibbs Energy and Equilibrium",
+      "description": "Relation between free energy and equilibrium.",
+      "formulaType": "gibbs-equilibrium-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_eq_007_f1",
+          "name": "Free Energy Relation",
+          "equation": "ΔG° = -RT lnK",
+          "latex": "\\Delta G^\\circ=-RT\\ln K",
+          "meaning": "Relation between equilibrium constant and Gibbs energy."
+        },
+        {
+          "formulaId": "chem_eq_007_f2",
+          "name": "Alternative Form",
+          "equation": "ΔG° = -2.303RT logK",
+          "latex": "\\Delta G^\\circ=-2.303RT\\log K",
+          "meaning": "Free energy relation using logarithm base 10."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Equilibrium is dynamic in nature.",
+    "Catalyst does not change equilibrium constant.",
+    "K depends only on temperature.",
+    "Pure solids and liquids are not included in equilibrium expressions."
+  ],
+  "commonMistakes": [
+    "Including solids/liquids in Kc expression",
+    "Wrong Δn calculation",
+    "Confusing Q and K",
+    "Incorrect application of Le Chatelier principle"
+  ],
+  "jeeAdvancedFocus": [
+    "Complex equilibrium calculations",
+    "Kp and Kc conversions",
+    "Reaction quotient problems",
+    "Degree of dissociation numericals"
+  ],
+  "neetFocus": [
+    "Law of mass action",
+    "Le Chatelier principle",
+    "Equilibrium constant",
+    "Direction of reaction"
+  ],
+  "keywords": [
+    "chemical equilibrium",
+    "equilibrium constant",
+    "reaction quotient",
+    "le chatelier principle",
+    "kp and kc",
+    "degree of dissociation",
+    "gibbs energy",
+    "mass action"
+  ]
+}

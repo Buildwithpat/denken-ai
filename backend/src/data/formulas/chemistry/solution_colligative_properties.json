@@ -1,0 +1,263 @@
+{
+  "chapterId": "chem_solution_colligative_properties_008",
+  "fileName": "solution_colligative_properties.json",
+  "chapterName": "Solution & Colligative Properties",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "solutions",
+    "colligative-properties",
+    "raoults-law",
+    "osmotic-pressure",
+    "elevation-boiling-point",
+    "depression-freezing-point"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_sol_001",
+      "conceptName": "Concentration Terms",
+      "description": "Methods of expressing concentration of solutions.",
+      "formulaType": "concentration-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sol_001_f1",
+          "name": "Molarity",
+          "equation": "M = n/V",
+          "latex": "M=\\frac{n}{V}",
+          "meaning": "Moles of solute per litre of solution.",
+          "variables": {
+            "M": {
+              "meaning": "Molarity",
+              "unit": "mol/L"
+            },
+            "n": {
+              "meaning": "Number of moles",
+              "unit": "mol"
+            },
+            "V": {
+              "meaning": "Volume of solution",
+              "unit": "L"
+            }
+          },
+          "applications": ["Solution preparation", "Concentration calculations"]
+        },
+        {
+          "formulaId": "chem_sol_001_f2",
+          "name": "Molality",
+          "equation": "m = n/W",
+          "latex": "m=\\frac{n}{W}",
+          "meaning": "Moles of solute per kg of solvent."
+        },
+        {
+          "formulaId": "chem_sol_001_f3",
+          "name": "Mole Fraction",
+          "equation": "χA = nA/ntotal",
+          "latex": "\\chi_A=\\frac{n_A}{n_{total}}",
+          "meaning": "Ratio of moles of component to total moles."
+        },
+        {
+          "formulaId": "chem_sol_001_f4",
+          "name": "Mass Percentage",
+          "equation": "% by mass = (Mass of solute/Mass of solution) × 100",
+          "latex": "\\%\\text{ by mass}=\\left(\\frac{\\text{Mass of solute}}{\\text{Mass of solution}}\\right)\\times100",
+          "meaning": "Mass percentage concentration."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sol_002",
+      "conceptName": "Raoult's Law",
+      "description": "Relation between vapor pressure and mole fraction.",
+      "formulaType": "raoult-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sol_002_f1",
+          "name": "Raoult's Law",
+          "equation": "PA = P°AχA",
+          "latex": "P_A=P_A^\\circ\\chi_A",
+          "meaning": "Partial vapor pressure relation."
+        },
+        {
+          "formulaId": "chem_sol_002_f2",
+          "name": "Relative Lowering of Vapor Pressure",
+          "equation": "(P° - P)/P° = χsolute",
+          "latex": "\\frac{P^\\circ-P}{P^\\circ}=\\chi_{solute}",
+          "meaning": "Relative lowering in vapor pressure."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sol_003",
+      "conceptName": "Ideal and Non-Ideal Solutions",
+      "description": "Behavior of real solutions.",
+      "formulaType": "solution-behavior-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sol_003_f1",
+          "name": "Ideal Solution Condition",
+          "equation": "ΔHmix = 0",
+          "latex": "\\Delta H_{mix}=0",
+          "meaning": "No enthalpy change on mixing."
+        },
+        {
+          "formulaId": "chem_sol_003_f2",
+          "name": "Volume Change Condition",
+          "equation": "ΔVmix = 0",
+          "latex": "\\Delta V_{mix}=0",
+          "meaning": "No volume change on mixing."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sol_004",
+      "conceptName": "Elevation of Boiling Point",
+      "description": "Increase in boiling point due to solute addition.",
+      "formulaType": "boiling-point-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sol_004_f1",
+          "name": "Elevation in Boiling Point",
+          "equation": "ΔTb = Kbm",
+          "latex": "\\Delta T_b=K_bm",
+          "meaning": "Elevation proportional to molality."
+        },
+        {
+          "formulaId": "chem_sol_004_f2",
+          "name": "Boiling Point Relation",
+          "equation": "Tb = T°b + ΔTb",
+          "latex": "T_b=T_b^\\circ+\\Delta T_b",
+          "meaning": "Boiling point of solution."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sol_005",
+      "conceptName": "Depression of Freezing Point",
+      "description": "Decrease in freezing point due to solute addition.",
+      "formulaType": "freezing-point-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sol_005_f1",
+          "name": "Depression in Freezing Point",
+          "equation": "ΔTf = Kfm",
+          "latex": "\\Delta T_f=K_fm",
+          "meaning": "Depression proportional to molality."
+        },
+        {
+          "formulaId": "chem_sol_005_f2",
+          "name": "Freezing Point Relation",
+          "equation": "Tf = T°f - ΔTf",
+          "latex": "T_f=T_f^\\circ-\\Delta T_f",
+          "meaning": "Freezing point of solution."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sol_006",
+      "conceptName": "Osmotic Pressure",
+      "description": "Pressure required to stop osmosis.",
+      "formulaType": "osmotic-pressure-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sol_006_f1",
+          "name": "Osmotic Pressure",
+          "equation": "π = CRT",
+          "latex": "\\pi=CRT",
+          "meaning": "Relation for osmotic pressure."
+        },
+        {
+          "formulaId": "chem_sol_006_f2",
+          "name": "Alternative Osmotic Pressure Formula",
+          "equation": "π = nRT/V",
+          "latex": "\\pi=\\frac{nRT}{V}",
+          "meaning": "Osmotic pressure using moles."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sol_007",
+      "conceptName": "Van't Hoff Factor",
+      "description": "Accounts for association or dissociation of solutes.",
+      "formulaType": "vant-hoff-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sol_007_f1",
+          "name": "Van't Hoff Factor",
+          "equation": "i = Observed colligative property/Calculated colligative property",
+          "latex": "i=\\frac{\\text{Observed colligative property}}{\\text{Calculated colligative property}}",
+          "meaning": "Correction factor for colligative properties."
+        },
+        {
+          "formulaId": "chem_sol_007_f2",
+          "name": "Colligative Property with Van't Hoff Factor",
+          "equation": "ΔTb = iKbm",
+          "latex": "\\Delta T_b=iK_bm",
+          "meaning": "Boiling point elevation considering dissociation."
+        },
+        {
+          "formulaId": "chem_sol_007_f3",
+          "name": "Freezing Point with Van't Hoff Factor",
+          "equation": "ΔTf = iKfm",
+          "latex": "\\Delta T_f=iK_fm",
+          "meaning": "Freezing point depression considering dissociation."
+        },
+        {
+          "formulaId": "chem_sol_007_f4",
+          "name": "Osmotic Pressure with Van't Hoff Factor",
+          "equation": "π = iCRT",
+          "latex": "\\pi=iCRT",
+          "meaning": "Corrected osmotic pressure."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sol_008",
+      "conceptName": "Abnormal Molar Mass",
+      "description": "Effect of association and dissociation.",
+      "formulaType": "molar-mass-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sol_008_f1",
+          "name": "Molar Mass Relation",
+          "equation": "Observed molar mass = Normal molar mass/i",
+          "latex": "\\text{Observed molar mass}=\\frac{\\text{Normal molar mass}}{i}",
+          "meaning": "Correction in molar mass due to association or dissociation."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Colligative properties depend only on number of solute particles.",
+    "Molality is temperature independent.",
+    "Raoult's law is obeyed by ideal solutions.",
+    "Van't Hoff factor corrects abnormal colligative properties."
+  ],
+  "commonMistakes": [
+    "Confusing molarity and molality",
+    "Ignoring van't Hoff factor",
+    "Using wrong units in osmotic pressure",
+    "Incorrect mole fraction calculation"
+  ],
+  "jeeAdvancedFocus": [
+    "Colligative property numericals",
+    "Van't Hoff factor problems",
+    "Raoult's law derivations",
+    "Abnormal molar mass calculations"
+  ],
+  "neetFocus": [
+    "Raoult's law",
+    "Osmotic pressure",
+    "Boiling point elevation",
+    "Freezing point depression"
+  ],
+  "keywords": [
+    "solutions",
+    "colligative properties",
+    "raoults law",
+    "osmotic pressure",
+    "van't hoff factor",
+    "boiling point elevation",
+    "freezing point depression",
+    "mole fraction"
+  ]
+}

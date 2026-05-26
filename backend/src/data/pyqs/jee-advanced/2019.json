@@ -1,0 +1,533 @@
+{
+  "questions": [
+    {
+      "questionId": "JADV2019_P1_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Gravitation",
+      "topic": "Gravitational Force Inside Sphere",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Consider a spherical gaseous cloud of mass density ρ(r) in free space where r is radial distance from its center. The gaseous cloud is made of particles of equal mass m moving in circular orbits about the common center with same kinetic energy K. The force acting on the particles is their mutual gravitational force. If ρ(r) is constant in time, the particle number density n(r)=ρ(r)/m is",
+      "options": {
+        "A": "N/(a²r²+m²a⁶)",
+        "B": "K/(a²r²+m²a⁶)",
+        "C": "3K/(a²r²+m²a⁶)",
+        "D": "K/(6π²m⁴a⁶)"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_P1_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Electrostatics",
+      "topic": "Potential Due to Charged Shell",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "A thin spherical insulating shell of radius R carries uniformly distributed charge such that potential at surface is V₀. A small hole of area α4πR² (α<<1) is made on shell. Which option(s) is/are correct?",
+      "options": {
+        "A": "Potential at centre reduces by 2αV₀",
+        "B": "Magnitude of electric field at centre becomes αV₀/2R",
+        "C": "Ratio of potential at centre to that at point at distance R/2 is (1−α)/(1−α/2)",
+        "D": "Potential at point on axis at distance R/2 reduces by αV₀/2"
+      },
+      "correctAnswer": "A,B",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_P1_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Current Electricity",
+      "topic": "Heating Effect",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A current carrying wire heats a metal rod. The wire provides constant power P to the rod. Rod is enclosed in insulated box and observed temperature variation is T(t)=T₀(1+βt¹/²). Heat capacity of metal is",
+      "options": {
+        "A": "4PT(T−T₀)²/β²T₀²",
+        "B": "βPT(T−T₀)²/t²",
+        "C": "4PT(T−T₀)²/t²",
+        "D": "4P(T−T₀)/β²T₀"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_P1_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Nuclear Physics",
+      "topic": "Radioactive Decay",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "In radioactive sample, 40K decays either to stable 40Ca with decay constant 4.5×10⁻¹⁰ per year or into stable 40Ar with decay constant 0.5×10⁻¹⁰ per year. Ratio of 40Ca nuclei to 40Ar nuclei produced after 10⁹ years is",
+      "options": {
+        "A": "1.15",
+        "B": "9.2",
+        "C": "2.3",
+        "D": "4.6"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_P1_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "Mechanical Properties of Fluids",
+      "topic": "Capillarity",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "A cylindrical capillary tube has lower and upper halves made of different materials with contact angles 0° and 60°. Choose correct statement(s).",
+      "options": {
+        "A": "Correction in capillary rise due to meniscus weight differs in both cases",
+        "B": "In case II, if joint is 5 cm above water level, height is 3.75 cm",
+        "C": "In case I, if joint is 8 cm above water level, height is 7.5 cm",
+        "D": "In case I, if joint is 5 cm above water level, final height exceeds 8.75 cm"
+      },
+      "correctAnswer": "A,C",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_P1_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Electromagnetic Induction",
+      "topic": "Motional EMF",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "A conducting parabolic wire initially y=x²/L moves with velocity V=V₀î in magnetic field B=B₀(1+(x/L)^β)k̂. Potential difference between ends is analysed. Correct options are",
+      "options": {
+        "A": "|Δϕ|=(3/2)B₀V₀L for β=0",
+        "B": "|Δϕ|=(3/4)B₀V₀L for β=2",
+        "C": "Same result if wire replaced by straight line y=x",
+        "D": "|Δϕ| proportional to projection length on y-axis"
+      },
+      "correctAnswer": "B,D",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_P1_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "Capacitance",
+      "topic": "RC Circuits",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "In given RC circuit initially capacitors are uncharged and keys S1,S2 are open. Choose correct statements.",
+      "options": {
+        "A": "At t=0 current is 25 mA",
+        "B": "Voltage across C1 after long time is 4V",
+        "C": "After charging then closing S2, current between P and Q is 0.2A",
+        "D": "After charging then disconnecting battery, voltage between P and Q becomes 10V"
+      },
+      "correctAnswer": "A,C",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_P1_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "Electrostatics",
+      "topic": "Electric Flux",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "A charged shell of radius R carries total charge Q. Flux through closed cylindrical surface of height h and radius r is analysed. Choose correct option(s).",
+      "options": {
+        "A": "If h>2R and r>R then flux=Q/ε₀",
+        "B": "If h<8R/5 and r=3R/5 then flux=0",
+        "C": "If h>2R and r=3R/5 then flux=Q/5ε₀",
+        "D": "If h>2R and r=4R/5 then flux=Q/5ε₀"
+      },
+      "correctAnswer": "A,C",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_P1_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "Thermodynamics",
+      "topic": "Thermodynamic Cycles",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "An ideal gas undergoes cycle in V-T diagram. Correct statements are",
+      "options": {
+        "A": "Work done in cycle is RT₀/2",
+        "B": "Cycle exhibits only isochoric and isobaric processes",
+        "C": "|Q12|/|Q23| = 8/13",
+        "D": "|Q12|/|Q34| = 1/2"
+      },
+      "correctAnswer": "B,C",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_P1_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Ray Optics",
+      "topic": "Lens Maker Formula",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "A convex lens is made of two materials with refractive indices n1 and n2. Radius of curvature of both surfaces is same. Choose correct option(s).",
+      "options": {
+        "A": "|Δf/f| < |Δn/n|",
+        "B": "For n=1.5, Δn=10⁻³ and f=20 cm, Δf=0.02 cm",
+        "C": "If Δn/n→0 then Δf/f→0",
+        "D": "Relation remains unchanged if surfaces become concave"
+      },
+      "correctAnswer": "A,C",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+
+    {
+      "questionId": "JADV2019_CHEM_1",
+      "questionNumber": 1,
+      "subject": "Chemistry",
+      "chapter": "d and f Block",
+      "topic": "Chromium Compounds",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Green colour produced in borax bead test of chromium(III) salt is due to",
+      "options": {
+        "A": "Cr(BO₂)₃",
+        "B": "Cr₃(BO₃)₂",
+        "C": "Cr₂O₃",
+        "D": "CrB"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_CHEM_2",
+      "questionNumber": 2,
+      "subject": "Chemistry",
+      "chapter": "Metallurgy",
+      "topic": "Ore Identification",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Calamine, malachite, magnetite and cryolite respectively are",
+      "options": {
+        "A": "ZnSO₄, CuCO₃, Fe₃O₄, AlF₃",
+        "B": "ZnCO₃, CuCO₃, Fe₃O₄, Na₃AlF₆",
+        "C": "ZnCO₃, CuCO₃Cu(OH)₂, Fe₃O₄, Na₃AlF₆",
+        "D": "ZnCO₃, Cu₂CO₃, Fe₂O₃, Na₃AlF₆"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_CHEM_3",
+      "questionNumber": 3,
+      "subject": "Chemistry",
+      "chapter": "Surface Chemistry",
+      "topic": "CMC",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Variation of molar conductivity with concentration for sodium stearate solution is shown. Correct graph identifying CMC is",
+      "options": {
+        "A": "Graph A",
+        "B": "Graph B",
+        "C": "Graph C",
+        "D": "Graph D"
+      },
+      "correctAnswer": "A",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_CHEM_4",
+      "questionNumber": 4,
+      "subject": "Chemistry",
+      "chapter": "Carboxylic Acids",
+      "topic": "Acidic Strength",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Correct order of acidic strength of given carboxylic acids I, II, III and IV is",
+      "options": {
+        "A": "III > II > I > IV",
+        "B": "II > III > IV > I",
+        "C": "I > III > II > IV",
+        "D": "II > I > IV > III"
+      },
+      "correctAnswer": "D",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_CHEM_5",
+      "questionNumber": 5,
+      "subject": "Chemistry",
+      "chapter": "Coordination Compounds",
+      "topic": "Valence Bond Theory",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "An iron chloride Q undergoes reactions giving X,Y,Z. X is paramagnetic. Choose correct statements.",
+      "options": {
+        "A": "Central atom in X is sp³ hybridized",
+        "B": "There is coordinate bond in Y",
+        "C": "Oxidation state of central atom in Z is +2",
+        "D": "Central atom in Z has lone pair"
+      },
+      "correctAnswer": "B,C",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_CHEM_6",
+      "questionNumber": 6,
+      "subject": "Chemistry",
+      "chapter": "d and f Block",
+      "topic": "Manganese Compounds",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "Fusion of MnO₂ with KOH in presence of O₂ gives X. Alkaline solution gives Y and acidification gives Z. Choose correct statements.",
+      "options": {
+        "A": "Aqueous solution Y undergoes disproportionation",
+        "B": "Both Y and Z are coloured and tetrahedral",
+        "C": "Y is diamagnetic but Z paramagnetic",
+        "D": "π-bonding exists between O-p and Mn-d orbitals"
+      },
+      "correctAnswer": "A,D",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_CHEM_7",
+      "questionNumber": 7,
+      "subject": "Chemistry",
+      "chapter": "Thermodynamics",
+      "topic": "Standard Enthalpy",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "Choose reaction(s) for which standard enthalpy equals standard enthalpy of formation.",
+      "options": {
+        "A": "2H₂(g)+O₂(g)→2H₂O(l)",
+        "B": "2C(s)+3H₂(g)→C₂H₆(g)",
+        "C": "½O₂(g)→O(g)",
+        "D": "S(s)+O₂(g)→SO₂(g)"
+      },
+      "correctAnswer": "B,D",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_CHEM_8",
+      "questionNumber": 8,
+      "subject": "Chemistry",
+      "chapter": "Kinetic Theory",
+      "topic": "Gas Speeds",
+      "difficulty": "easy",
+      "questionType": "multiple_correct",
+      "questionText": "Choose correct statements regarding rms speed and average translational kinetic energy.",
+      "options": {
+        "A": "u_rms doubles if temperature quadruples",
+        "B": "u_avg doubles if temperature quadruples",
+        "C": "Average KE independent of molecular mass",
+        "D": "u_rms inversely proportional to √mass"
+      },
+      "correctAnswer": "A,C,D",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_CHEM_9",
+      "questionNumber": 9,
+      "subject": "Chemistry",
+      "chapter": "Chemical Bonding",
+      "topic": "Dipole Moment",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "Identify sets in which all molecules possess permanent dipole moment.",
+      "options": {
+        "A": "BCl₃, CO₂, BCl₃, CHCl₃",
+        "B": "NO₂, NH₃, POCl₃, CHCl₃",
+        "C": "BF₃, OF₂, SF₄, XeF₄",
+        "D": "SO₂, C₂H₅Cl, H₂Se, BrF₃"
+      },
+      "correctAnswer": "B,D",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_CHEM_10",
+      "questionNumber": 10,
+      "subject": "Chemistry",
+      "chapter": "Nuclear Chemistry",
+      "topic": "Radioactive Decay",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "In given decay sequence involving uranium isotopes, identify correct statements.",
+      "options": {
+        "A": "X₁ deflects towards negative plate",
+        "B": "X₂ is β⁻",
+        "C": "X₃ is γ-ray",
+        "D": "Z is isotope of uranium"
+      },
+      "correctAnswer": "A,B,D",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+
+    {
+      "questionId": "JADV2019_MATH_1",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "chapter": "Complex Numbers",
+      "topic": "Argument",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Let S be set of all complex numbers z satisfying |z−2+i|≤√5. If z₀ is such that |(1/z₀−1)/(iz−1)| maximum for z∈S, principal argument of (4−z₀−ż₀)/(ż₀−z₀+2i) is",
+      "options": {
+        "A": "-π/2",
+        "B": "π/4",
+        "C": "π/2",
+        "D": "3π/4"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_MATH_2",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "chapter": "Matrices",
+      "topic": "Eigenvalues",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Given matrix M involving trigonometric entries. If α* and β* are minimum values satisfying conditions, then α*+β* equals",
+      "options": {
+        "A": "37/16",
+        "B": "31/16",
+        "C": "29/16",
+        "D": "17/16"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_MATH_3",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "chapter": "Circle",
+      "topic": "Chord Midpoint",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A line y=mx+1 intersects circle (x−3)²+(y+2)²=25 at P,Q. If midpoint of PQ has x-coordinate 1/2 then",
+      "options": {
+        "A": "-3≤m<-1",
+        "B": "2≤m<4",
+        "C": "4≤m<6",
+        "D": "6≤m<8"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_MATH_4",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "chapter": "Area Under Curve",
+      "topic": "Definite Integration",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Area of region {(x,y):xy≤8,1≤y≤x²} is",
+      "options": {
+        "A": "16log₂2−14/3",
+        "B": "8log₂2−14/3",
+        "C": "16log₂2−6",
+        "D": "8log₂2−7/3"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_MATH_5",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "chapter": "Sequences and Series",
+      "topic": "Recurrence Relations",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "Let α and β be roots of x²−x−1=0. Sequences a_n and b_n are defined recursively. Choose correct statements.",
+      "options": {
+        "A": "a₁+a₂+...+a_n=a_(n+2)−1",
+        "B": "Σ(a_n/10ⁿ)=10/89",
+        "C": "b_n=αⁿ+βⁿ",
+        "D": "Σ(b_n/10ⁿ)=8/89"
+      },
+      "correctAnswer": "A,C,D",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2019_MATH_6",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "chapter": "Matrices",
+      "topic": "Adjoint Matrix",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "Matrix M and adj M are given. Choose correct statements.",
+      "options": {
+        "A": "a+b=3",
+        "B": "(adjM)⁻¹ + adjM⁻¹ = −M",
+        "C": "det(adjM²)=81",
+        "D": "If M(α β γ)^T=(1 2 1)^T then α−β+γ=3"
+      },
+      "correctAnswer": "A,C",
+      "exam": "JEE_ADVANCED",
+      "year": 2019,
+      "paper": 1
+    }
+  ]
+}

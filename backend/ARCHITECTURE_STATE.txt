@@ -1,0 +1,1071 @@
+================================================================================
+DENKEN AI — ARCHITECTURE STATE
+Last updated: 2026-05-26 (PYQ Grounding Phase)
+Purpose: Permanent technical memory and development reference.
+         Covers backend, ai-service, and frontend in full implementation detail.
+         Written from direct code inspection, not guesswork.
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+1. SYSTEM OVERVIEW
+────────────────────────────────────────────────────────────────────────────────
+
+Three-tier architecture:
+  Frontend   → Next.js (App Router) — src/app/(dashboard)/**
+  Backend    → Node.js / Express + TypeScript — src/
+  AI Service → FastAPI / Python — app/
+
+Communication:
+  Frontend ↔ Backend:  REST over HTTP (JWT Bearer auth)
+  Backend  ↔ AI:       Backend calls FastAPI at AI_SERVICE_URL (default: localhost:8000)
+                        5-second timeout; all calls return null on failure (graceful degradation)
+  Python   ↔ MongoDB:  NEVER. Python has no DB access. Express assembles all context per-request.
+  Python   ↔ ChromaDB: Direct (PersistentClient). ChromaDB lives inside ai-service/chroma_db/
+  Backend  ↔ Redis:    ioredis singleton (lib/redis.ts). All Redis ops fail-open (platform
+                        runs without Redis, just without caching/queuing).
+
+Tech stack:
+  Backend: Express 4, Mongoose 8, TypeScript, JWT (jsonwebtoken), bcrypt, dotenv, Razorpay,
+           ioredis, BullMQ, Winston
+  Frontend: Next.js (App Router), Tailwind CSS, Lucide Icons, React Context, Framer Motion
+  AI: FastAPI, Pydantic v2, ChromaDB, sentence-transformers (all-MiniLM-L6-v2, 384-dim),
+      google-generativeai (Gemini), pydantic-settings, redis (async)
+
+Startup requirements:
+  1. initFormulaLoader() called at app.ts startup — loads all formula JSON into memory
+  2. MongoDB connected before any request
+  3. ai-service running separately (uvicorn app.main:app)
+  4. For AI responses: AI_PROVIDER=gemini + GEMINI_API_KEY in ai-service/.env
+  5. For formula embeddings: POST /api/mentor/ingest-formulas must be called once per subject
+  6. Redis optional: docker compose up -d redis (caching + BullMQ queues degrade gracefully)
+  7. GEMINI_API_KEY in backend/.env for PYQ-grounded question generation (Node.js direct call)
+     Without it, system falls back to template-based generation — no crash.
+
+Environment (backend/.env required fields):
+  JWT_SECRET, MONGO_URI, AI_SERVICE_URL, PORT
+  Optional: REDIS_URL, RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET, RAZORPAY_WEBHOOK_SECRET,
+            NODE_ENV, DEV_MODE, GEMINI_API_KEY
+
+────────────────────────────────────────────────────────────────────────────────
+2. MONGODB MODELS
+────────────────────────────────────────────────────────────────────────────────
+
+User (models/User.ts)
+  Fields: name, email, passwordHash, mobileNumber, avatar?, targetExam (jee|neet|cbse|custom),
+          selectedSubjects[], targetYear?, onboardingComplete,
+          plan (free|pro), subscriptionStatus (none|active|expired|cancelled|grace_period),
+          testsUsed, revisionsUsed, subscriptionEndsAt, subscriptionStartedAt,
+          currentStreak (int, default 0), longestStreak (int, default 0),
+          lastActivityDate (Date|null, default null)
+  Indexes: email (unique)
+  Note: subscription snapshot is denormalized on User for fast entitlement reads.
+        Streak fields updated by streakUtils.updateStreak() after test submit and revision access.
+
+Test (models/Test.ts)
+  Fields: userId, exam (CBSE|JEE_MAIN|JEE_ADVANCED|NEET), subjects[], chapters?,
+          difficulty (easy|medium|hard|mixed), mode (normal|rapid|pyq|mistake|smart),
+          questionCount, duration, marking{correct, wrong}, cbseClass (11|12|both)?,
+          questions[] (embedded, no _id)
+  Question fields: id (string uuid), subject, topic, topicType (chapter|unit),
+                   difficulty, type (mcq|numerical), question, options[]?,
+                   correctOption (A|B|C|D)?, answer (number)?, marks
+  Indexes: {userId:1, createdAt:-1}
+
+Result (models/Result.ts)
+  Fields: userId, testId, answers[] (no _id), totalScore, correctCount, wrongCount,
+          unattemptedCount, timeTaken, subjectWise[]
+  Answer fields: questionId, selectedOption?, numericalValue?, isMarked, isCorrect, marksAwarded
+  SubjectSummary fields: subject, correct, wrong, unattempted, score
+  Indexes: {userId:1, createdAt:-1}, {testId:1}
+  Timestamps: yes (createdAt, updatedAt)
+
+MistakePattern (models/MistakePattern.ts)
+  Fields: userId, topic, subject, totalMistakes, recentMistakes (last 30d),
+          consecutiveWrong (unbroken streak), mistakeCounts{conceptual, careless, formula,
+          timePressure, weakRetention, guessing, repeated}, dominantType (MistakeType),
+          linkedFormulaChapterSlug|null, linkedSubjectSlug|null, lastMistakeAt, insight
+  Indexes: {userId:1, topic:1} unique, {userId:1, lastMistakeAt:-1}, {userId:1, totalMistakes:-1},
+           {userId:1, consecutiveWrong:-1, totalMistakes:-1}
+  Timestamps: yes (updatedAt used for sorting)
+
+MentorSession (models/MentorSession.ts)
+  Fields: userId, messages[] (rolling 20 kept via $slice), identifiedWeaknesses[],
+          totalInteractions, lastActiveAt, preferredDepth
+  Message fields: role (user|assistant), content, intent, chapter|null, subject|null, createdAt
+  Weakness fields: topic, subject, mistakeType, firstSeenAt, lastSeenAt, occurrences, aiInsight
+  Indexes: {userId:1} unique, {userId:1, lastActiveAt:-1}
+
+QuestionBank (models/QuestionBank.ts)
+  Additional indexes added: {isActive:1, exams:1, subject:1, chapter:1, difficulty:1, qualityScore:-1},
+                             {isEmbedded:1, updatedAt:-1}
+
+────────────────────────────────────────────────────────────────────────────────
+3. CORE MATH — FORMULAS AND SCORING
+────────────────────────────────────────────────────────────────────────────────
+
+All pure math lives in lib/studyUtils.ts (no Mongoose, no side effects).
+
+Ebbinghaus Retention:
+  retentionScore = 100 × exp(−ln2 / halfLife × daysSinceSeen)
+  halfLifeForAccuracy:
+    accuracy ≥ 90%  → halfLife = 21 days
+    accuracy ≥ 75%  → halfLife = 14 days
+    accuracy ≥ 60%  → halfLife =  7 days
+    accuracy ≥ 40%  → halfLife =  3 days
+    else            → halfLife =  1 day
+
+Mastery Score (per topic):
+  masteryScore = accuracy × 0.6 + retentionScore × 0.4
+  (accuracy = percent correct on all attempts to that topic)
+
+Forgetting Factor:
+  forgettingFactor = 1 − retentionScore / 100
+  (0 = fully retained, 1 = fully forgotten)
+
+Adaptive Topic Weight (topicWeightService.ts):
+  rawWeight = errorRate×0.35 + forgettingFactor×0.30 + recencyScore×0.20
+              + (1 − masteryScore/100)×0.15 + trendPenalty×0.10
+  weight = clamp(rawWeight, 0.05, 1.0)
+  recencyScore: 1.0 if wrong in last 2 results; else max(0, 1 − daysSince/21)
+  trendPenalty: max(0, −subjectTrend/50)   [subjectTrend = avg(last3) − avg(prior3)]
+
+Study Phase (studyPhaseFor, from daysToExam):
+  daysToExam > 120  → foundation
+  daysToExam > 60   → consolidation
+  daysToExam > 30   → intensive
+  daysToExam > 15   → revision
+  daysToExam > 0    → final
+  daysToExam ≤ 0    → post-exam
+
+Exam Calendar (EXAM_MONTH_DAY):
+  jee / jee_main:     May 1
+  jee_advanced:       May 20
+  neet:               May 5
+  cbse:               March 1
+  Year: targetYear if set; else auto-compute from current month
+
+Burnout Risk (burnoutRiskFor, active days in last 14):
+  ≥ 11 → high | ≥ 8 → moderate | ≥ 5 → low | else → none
+
+Phase Daily Minutes (PHASE_DAILY_MIN):
+  foundation: 180 | consolidation: 210 | intensive: 270 | revision: 300
+  final: 240 | post-exam: 60
+
+Readiness Score (readinessService.ts):
+  subjectScore = accuracy×0.40 + retentionHealth×0.30 + trendScore×100×0.15 + consistencyScore×0.15
+  overall = avg(subjectScores) + min(10, streakDays) + burnoutPenalty
+  burnoutPenalty: none→0, low→-2, moderate→-8, high→-15
+
+Revision Priority Score (revisionService.ts):
+  priorityScore = errorRate×0.55 + recencyBoost×0.30 + retentionDecayFactor×0.15
+
+Roadmap ROI Score (roadmapEngine.ts):
+  roiScore = examWeightage×0.40 + masteryGap×0.30 + forgettingFactor×0.20 + hasMistakes×0.10
+  masteryGap = (100 − masteryScore) / 100
+  hasMistakes = 0 or 1
+
+Mistake Analysis Smart Revision Priority (mistakeAnalysisService.ts):
+  score = totalMistakes×0.5 + recentMistakes×0.3 + recencyBoost + streakBonus
+  recencyBoost: ≤1d→1.0, ≤7d→0.6, else→0.2
+  streakBonus: consecutiveWrong≥3→0.5, ≥2→0.2, else→0
+
+────────────────────────────────────────────────────────────────────────────────
+4. BACKEND SERVICES
+────────────────────────────────────────────────────────────────────────────────
+
+topicWeightService.ts — computeTopicWeights(userId)
+  Redis cache: key tw:{userId}, TTL 5min. Serialized as plain object (Map→Object.fromEntries),
+  deserialized with new Map(Object.entries(cached)).
+  1. Check Redis cache — return immediately on hit
+  2. Load all Results newest-first
+  3. Batch-load Tests for those results
+  4. Compute subjectTrend per subject (avg last3 − avg prior3, needs ≥6 data points)
+  5. Build per-topic stats: wrongCount, totalAttempted, recentWrong (idx < 2), lastSeenAt
+  6. For each topic: compute Ebbinghaus retention, masteryScore, forgettingFactor,
+     recencyScore, trendPenalty, rawWeight → TopicWeight
+  7. Write result to Redis cache (fire-and-forget)
+  Returns: Map<topic, TopicWeight>
+  WARNING: This is the most expensive call (loads all results + tests). Never call redundantly.
+           It is called by: plannerService, adaptiveTestService, roadmapService, analyticsService,
+           readinessService (inline), revisionService (inline)
+
+TopicWeight shape:
+  { subject, accuracy, wrongCount, totalAttempted, errorRate, recentWrong, subjectTrend,
+    daysSinceLastSeen, weight, suggestedDifficulty, retentionScore, masteryScore, forgettingFactor }
+
+streakUtils.ts — updateStreak(userId)
+  Updates User.currentStreak, longestStreak, lastActivityDate.
+  Logic: lastActivityDate === today → no-op (already recorded).
+         lastActivityDate === yesterday → streak++.
+         older or null → streak = 1.
+  longestStreak = max(existing, newStreak).
+  Called fire-and-forget after test submission (resultService) and revision access (revisionController).
+  A "preparation day" includes both tests and revision sessions.
+
+resultService.ts — gradeAndSave(userId, testId, timeTaken, answers)
+  1. Load Test, verify ownership
+  2. Build O(1) answerMap from submitted answers
+  3. Grade MCQ (exact option match) and numerical (exact number match) separately
+  4. Apply marking scheme (test.marking.correct / .wrong); unattempted = no penalty
+  5. Persist Result to MongoDB
+  6. void invalidateUserCache(userId) — busts Redis cache for tw, roadmap, practice recs
+  7. void updateStreak(userId) — fire-and-forget streak update
+  8. void enqueueAnalyticsJob({type:'update-mistake-patterns'}) — BullMQ queue
+  9. void enqueueAnalyticsJob({type:'update-question-performance'}) — BullMQ queue
+  Returns: GradedResult (id, testId, totalScore, correct/wrong/unattempted, accuracy, subjectWise)
+
+testGenerator.ts — generateTest(req: GenerateTestRequest)
+  Inputs: exam, subjects, chapters?, difficulty, questionCount?, cbseClass?, topicWeights?, adaptiveMode?
+  1. Get config from EXAM_CONFIG (maxQuestions, duration, marking)
+  2. Load topicPool from syllabusLoader
+  3. Allocate questions per subject (NEET: Biology gets 50%; others: equal)
+  4. Per subject: if topicWeights provided → weightedDistribute; else → equal distribute
+  5. AdaptiveMode boosting:
+     weak-topic:   masteryScore < 50 → weight ×2, else ×0.5
+     revision:     forgettingFactor > 0.5 → weight ×2, else ×0.6
+     surprise:     all weights → DEFAULT_WEIGHT (0.3, equal)
+     balanced-mock / exam-adaptive: weights as-is
+  6. JEE exams: ~20% numerical questions per topic slot
+  7. Per slot: fillSlotFromBank() → bank first; if remaining > 0 → generateFallbackQuestions()
+     (was: generateQuestions() template directly; now: Gemini-grounded → template only if Gemini fails)
+  8. Shuffle all questions before returning
+  Returns: GeneratedTest (questions are embedded in Test document when saved)
+
+  generateFallbackQuestions(exam, subject, topic, topicType, difficulty, type, count, marks)
+  → calls generateGroundedQuestions() from geminiQuestionGenerator.ts
+  → logs source: 'gemini-grounded' | 'template-fallback' + pyqsInjected count
+  → returns Question[] compatible with existing pipeline
+
+mistakeAnalysisService.ts — updateMistakePatterns(userId, resultId)
+  Classification rules (per wrong answered question):
+    consecutiveWrong ≥ 3          → 'repeated'
+    qType === 'numerical'         → 'formula'
+    isMarked (flagged + wrong)    → 'guessing'
+    timePressured                 → 'time-pressure'  (timeTaken < 60% of allowed)
+    difficulty=easy + acc ≥ 65%  → 'careless'
+    difficulty=medium + acc < 50% → 'weak-retention'
+    else                          → 'conceptual'
+  Runs as fire-and-forget. Batch-upserts MistakePattern per topic.
+  Resets consecutiveWrong to 0 for topics answered correctly.
+  Links formula chapter via findChapterByName if not already linked.
+
+analyticsService.ts — getUserAnalytics(userId, full = true)
+  Fetches results + User model (for streak data) in parallel.
+  overview now includes: testsTaken, avgAccuracy, bestAccuracy, currentStreak, longestStreak.
+  currentStreak: prefers User.currentStreak (counts tests + revisions); falls back to
+                 computing from result dates only if User doc unavailable.
+  longestStreak: from User.longestStreak.
+  Full plan computes: overview, trends (last 10 results), subjects with trend delta,
+  weakTopics (top 10, masteryScore ASC), strengths (acc ≥ 75% + attempted ≥ 3, top 8),
+  questionTypes breakdown, activity (90d), recommendations, revisionRoadmap,
+  calls aiServiceClient.analyzePerformance()
+  Free plan: overview, trends (last 3 only), subjects, activity, lastTest only
+  computeSubjectTrends: needs ≥ 6 data points; returns avg(last3) − avg(prior3)
+
+analyticsController.ts — trackEventHandler (POST /analytics/event)
+  Receives product analytics events from frontend. Logs structured product_event to Winston.
+  Always returns 204 — never fails the client. Fire-and-forget from frontend perspective.
+  Events: onboarding_complete, first_test_started, trial_test_exhausted,
+          trial_revision_exhausted, upgrade_modal_shown, prep_insight_gate_shown,
+          checkout_started, subscription_activated, feature_gated, etc.
+
+revisionService.ts — getUserRevision(userId, full = true)
+  priorityScore = errorRate×0.55 + recencyBoost×0.30 + retentionDecayFactor×0.15
+  recentWrong = wrong in most recent 2 results
+  Free: top 3 queue items
+  Full: full queue + mistakeLog (top 20 by recency) + AI revision plan
+  plan mode: accuracy < 40 → concept (50min), < 60 → drill (40min), else → practice (25min)
+  PYQ Grounding: before AI revision call, groups top-7 topics by subject →
+    getMultiChapterPYQs() → formats 5 examples → passes pyq_context to generateRevision()
+    If PYQ retrieval fails, falls back to existing behavior (non-fatal).
+
+readinessService.ts — getReadinessReport(userId)
+  Outputs: overall (0-100), confidence band, subjects[], percentile estimate,
+           weaknessForecast[], plannerFeedback, studyPhase, burnoutRisk, streakDays
+  Percentile: piecewise linear interpolation on PERCENTILE_MAPS (jee/neet/cbse)
+  WeaknessForecast: topics with errorRate > 0.40 and ≥ 2 attempts;
+                    projects Ebbinghaus retention to exam day
+  PlannerFeedback: adjustedDailyMin = clamp(baseDailyMin + readinessAdj - burnoutAdj, 60, 360)
+  Integrated by plannerService to adjust daily session targets
+
+plannerService.ts — getWeekPlan(userId)
+  Builds a 7-day study plan. Also exposes getDayPlan() and getPlannerSummary().
+  [unchanged from previous state]
+
+adaptivePracticeService.ts — session management (Redis-backed)
+  Sessions stored in Redis (key practice:session:{sessionId}, TTL 10min), not in-process Map.
+  loadSession / saveSession / deleteSession are async Redis helpers.
+  submitPracticeAnswer() and getPracticeSessionSummary() are async.
+  getPracticeRecommendations() caches results with TTL.PRACTICE_RECS.
+
+roadmapService.ts — getExamRoadmap(userId, exam)
+  Redis cache: key roadmap:{userId}:{exam}, TTL 15min.
+  Parallel: computeTopicWeights + MistakePattern.find
+  buildSubjectTracks → computes progress and phases
+  syllabusProgress = (mastered + in-progress×0.5) / total × 100
+  [full logic unchanged]
+
+mentorService.ts — mentorChat(userId, message, chapter, subject, exam, intent)
+  buildStudentContext → aiServiceClient.mentorChat(req, userId)
+  Graceful fallback: if AI service is down, returns structured fallback response
+  saveToSession (fire-and-forget): appends user+assistant messages to MentorSession
+  getSession(userId): returns messages[], identifiedWeaknesses[], totalInteractions
+  PYQ Grounding: when chapter+subject known, buildGroundingContext() retrieves 3 PYQ examples
+    and passes pyq_context + syllabus_context to MentorChatRequest. Non-fatal on failure.
+
+────────────────────────────────────────────────────────────────────────────────
+5. PYQ GROUNDING PIPELINE (added in PYQ grounding phase)
+────────────────────────────────────────────────────────────────────────────────
+
+PURPOSE: PYQ datasets act as academic grounding/reference intelligence for all
+Gemini generation. Gemini sees real exam style/depth/wording patterns before
+generating questions, notes, mentor explanations, or revision plans.
+
+DATA SOURCE:
+  backend/src/data/pyqs/
+    jee-main/   2019.json … 2024.json (JEE Main PYQs)
+    jee-advanced/ 2019.json … 2024.json (JEE Advanced PYQs)
+    neet/       2021.json … 2025.json (NEET PYQs)
+  Each file: { questions: [{ questionId, subject, chapter, topic, difficulty,
+               questionType, questionText, options{A,B,C,D}, correctAnswer, exam, year }] }
+  Diagram-required questions are EXCLUDED from grounding (cannot be prompt-represented).
+
+lib/pyqRetrieval.ts — PYQ Retrieval Library
+  In-memory index: examFolder → subjectLower → chapterLower → PYQSlim[]
+  PYQSlim: { exam, year, subject, chapter, topic, difficulty, type, text(≤350chars), options? }
+  correctAnswer is NEVER included in PYQSlim — prevents Gemini from memorising answers.
+  Lazy-loads per file on first access; idempotent (loadedFiles set).
+  getRepresentativePYQs(exam, subject, chapter, topic?, limit=4) → PYQRetrievalResult
+    Matching priority: exact chapter → fuzzy chapter (chapterSimilarity score ≥ 30) → subject-level
+    selectVaried(): distributes across easy/medium/hard buckets for diversity
+  getMultiChapterPYQs(exam, subject, chapters[], perChapter=2) → aggregated
+    Cap: 6 chapters max to prevent token budget overflow.
+  formatPYQsForPrompt(pyqs[]): formats as labeled blocks with header + text + options
+  All retrieval logged via logger.debug with matched chapter and count.
+
+lib/groundingContext.ts — Grounding Context Builder
+  buildGroundingContext(params: GroundingParams) → GroundingContext (async)
+    Combines: PYQ examples (via pyqRetrieval) + formula snippets (via formulaLoader)
+              + syllabus units (via syllabusLoader) + exam style note
+    GroundingContext: { pyqExamples, pyqText, formulaSnippets, syllabusUnits,
+                       examStyleNote, debugLog: GroundingDebugLog }
+    GroundingDebugLog: { buildTimeMs, pyqsFound, pyqsSelected, pyqSources[], formulasFound,
+                         formulasUsed, syllabusMatched, syllabusUnits[] }
+  serializeForPrompt(ctx) → compact text block injected before Gemini task instruction
+    Format: === EXAM STYLE === | === KEY FORMULAS === | === SYLLABUS CONTEXT ===
+            | === REPRESENTATIVE PYQ EXAMPLES (style reference — do NOT copy) ===
+  buildMultiChapterGrounding(exam, subject, chapters[], pyqPerChapter) → combinedContext
+    For full mock generation spanning multiple chapters.
+
+  EXAM STYLE NOTES (injected into every prompt):
+    JEE_MAIN:     Single correct MCQ + NAT. Balanced conceptual+numerical. 30/50/20 split.
+    JEE_ADVANCED: Multi-correct, paragraph-sets, integer type. Deep multi-step. 10/45/45 split.
+    NEET:         Single correct MCQ only. NCERT-grounded. Speed-focused. 40/45/15 split.
+
+services/geminiQuestionGenerator.ts — Gemini-Powered Question Generator
+  Uses @google/generative-ai SDK (gemini-1.5-flash, temp=0.7, topP=0.9, maxTokens=4096)
+  Lazy-initialised from GEMINI_API_KEY env variable.
+  generateGroundedQuestions(params: GeminiGenParams) → GeminiGenResult
+    1. buildGroundingContext() with pyqLimit=min(4,count+1)
+    2. serializeForPrompt() → groundingText
+    3. computeDifficultySlots(count, exam, difficulty) → exam-specific difficulty distribution
+    4. buildGenerationPrompt() → full Gemini prompt with grounding + task + JSON schema
+    5. Call model.generateContent() with 25s timeout (Promise.race)
+    6. parseGeminiResponse() → filters valid questions (type/options/correctOption checks)
+    7. hydrateQuestion() → Question objects with UUID, conceptTags, formulaTags, subtopic
+    8. If count > valid questions: pad remainder with template generator
+  Falls back to templateFallback() on: missing API key, Gemini error, 0 valid questions parsed
+  GeminiGenResult.source: 'gemini-grounded' | 'template-fallback'
+  GeminiGenResult.debugLog: { exam, subject, topic, requestedCount, generatedCount, source,
+                               groundingDebug, promptTokensEst, latencyMs, error? }
+  Generated questions include: conceptTags[], formulaTags[], subtopic — enriched metadata
+    that template-generated questions lack. These enable better explanation caching.
+
+INTEGRATION INTO SERVICES:
+  testGenerator.ts: fallback path (bank miss) → generateFallbackQuestions() → Gemini generator
+    (was: direct template call; now: Gemini → template fallback)
+  notesService.ts: buildGroundingContext() before aiServiceClient.generateNotes()
+    Passes pyq_context + syllabus_context. Logs pyqsInjected + pyqSources.
+  mentorService.ts: buildGroundingContext() when chapter+subject known before aiServiceClient.mentorChat()
+    Passes pyq_context + syllabus_context on MentorChatRequest. Non-fatal if fails.
+  revisionService.ts: getMultiChapterPYQs() before aiServiceClient.generateRevision()
+    Passes pyq_context with 5 most relevant examples across top revision topics.
+
+AI SERVICE CLIENT EXTENSIONS (all optional, backward-compatible):
+  AiNotesRequest:       + pyq_context?: string | syllabus_context?: string[]
+  AiRevisionRequest:    + pyq_context?: string
+  MentorChatRequest:    + pyq_context?: string | syllabus_context?: string[]
+  ConceptGuidanceRequest: + pyq_context?: string
+  Python service ignores unknown fields if not updated — no breakage.
+  When Python service is updated to consume these, grounding becomes end-to-end.
+
+DEV/DEBUG ENDPOINTS (DEV_MODE=true only):
+  POST /api/dev/grounded-generate
+    Body: { exam, subject, chapter, topic?, type?, count?, difficulty?, showPrompt? }
+    Returns: { groundingDebug, pyqsRetrieved, pyqRetrievalLog, generationSource,
+               generationDebug, questions[], promptPreview? }
+    Use: inspect exactly which PYQs/formulas were injected + see generated questions.
+  POST /api/dev/grounded-full-test
+    Body: { exam, subjects?, chapters?, questionCount?, difficulty? }
+    Returns: { test, sourceBreakdown{fromBank,geminiGrounded,templateFallback}, latencyMs, questions[] }
+    Use: end-to-end test of the grounded mock generation pipeline.
+
+TOKEN BUDGET DISCIPLINE:
+  pyqLimit default: 4 questions per chapter (≤ 1400 chars each)
+  formulaLimit default: 8 formula strings
+  PYQ text: truncated to 350 chars per question, options 120 chars each
+  Target: ~800–1200 additional tokens per generation request for grounding context
+
+────────────────────────────────────────────────────────────────────────────────
+6. INFRASTRUCTURE LAYER (added in production hardening phase)
+────────────────────────────────────────────────────────────────────────────────
+
+lib/redis.ts — Redis singleton
+  getRedis(): Redis | null — returns ioredis instance or null if REDIS_URL not set
+  closeRedis(): Promise<void> — for graceful shutdown
+  Config: maxRetriesPerRequest:3, lazyConnect:true, enableOfflineQueue:false, commandTimeout:2000
+
+lib/cache.ts — Typed Redis cache helpers
+  TTL constants: TOPIC_WEIGHTS(5min), ROADMAP(15min), PRACTICE_RECS(5min),
+                 PRACTICE_SESSION(10min), EXPLANATION(24h), MENTOR_RESPONSE(30min),
+                 AI_USAGE_COUNTER(25h), CIRCUIT_BREAKER(60s)
+  Functions: cacheGet<T>, cacheSet<T>, cacheDel, cacheDelPattern (SCAN-based),
+             cacheIncr, cacheGetCount
+  CacheKey builders: topicWeights, roadmap, practiceRecs, practiceSession,
+                     explanation, mentorResponse, aiUsage, circuitBreaker
+  invalidateUserCache(userId): busts tw:*, roadmap:*, practice:recs:* — called after every submit
+
+lib/queue.ts — BullMQ job queues
+  Three queues: analytics-queue, embeddings-queue, roadmap-queue
+  enqueueAnalyticsJob(data): types update-mistake-patterns, update-question-performance,
+                              refresh-topic-weights. Inline fallback when Redis unavailable.
+  enqueueEmbeddingJob(data): ingest-formulas. Drops silently if no Redis.
+  enqueueRoadmapRefresh(userId, exam): jobId deduplication prevents duplicate roadmap rebuilds.
+  closeQueues(): graceful drain for shutdown.
+
+workers/analyticsWorker.ts — BullMQ worker for analytics queue
+  startAnalyticsWorker(): Worker | null (null if Redis unavailable)
+  Handles: update-mistake-patterns, update-question-performance, refresh-topic-weights
+  Retry: 3 attempts, exponential backoff from 1s. removeOnComplete:100, removeOnFail:50.
+
+workers/embeddingWorker.ts — BullMQ worker for embeddings queue
+  startEmbeddingWorker(): Worker | null
+  Handles: ingest-formulas. Concurrency: 2.
+
+lib/aiTracker.ts — AI usage tracking and cost observability
+  trackAICall(rec: AICallRecord): logs to Winston + increments Redis daily counters
+  Token estimation: ~4 chars/token
+  Cost reference: Gemini 1.5 Flash $0.000075/$0.0003 per 1K input/output tokens
+  Daily counters: ai:usage:{userId}:{yyyymmdd}:{endpoint}, TTL 25h
+  isWithinQuota(userId, endpoint, isPro): checks total + per-endpoint limits
+  FREE_QUOTA: totalPerDay:20, mentorPerDay:5, practicePerDay:10
+  PRO_QUOTA:  totalPerDay:200, mentorPerDay:100, practicePerDay:150
+  getDailyUsage(userId): returns {total, mentor, practice}
+
+lib/circuitBreaker.ts — Redis-backed circuit breaker
+  States: CLOSED (normal) → OPEN (failing) → HALF_OPEN (probe)
+  isCircuitOpen(endpoint), recordSuccess(endpoint), recordFailure(endpoint)
+  Threshold: 5 consecutive failures opens circuit. 60s before probe attempt.
+  State shared across multiple backend instances via Redis.
+
+lib/streakUtils.ts — Preparation consistency tracking
+  updateStreak(userId): async, updates User.currentStreak, longestStreak, lastActivityDate.
+  Called fire-and-forget after test submission and revision access.
+
+lib/logger.ts — Winston structured logger
+  logger singleton; serviceLogger(service) child factory.
+  Dev: colorized printf format. Prod: JSON lines.
+
+lib/aiServiceClient.ts — Typed HTTP client for Python AI service
+  Internal postWithRetry: cache check → circuit breaker → HTTP → retry (MAX_RETRIES=2,
+  backoff 500ms/1000ms) → trackAICall.
+  All public methods accept userId as second arg (default 'system').
+  mentorChat caches by hash(userId+msg+intent+subject), TTL 30min.
+  generateConceptGuidance caches by mastery bucket (nearest 10), TTL 30min.
+  generateExplanation caches by stableId+style, TTL 24h.
+
+middleware/rateLimiter.ts — Rate limiting
+  globalRateLimiter: 120 req/min per IP; skips /health and /
+  authRateLimiter: 20 req/15min per IP; applied to /auth/signup and /auth/login
+
+middleware/aiQuota.ts — Per-user AI quota enforcement
+  aiQuotaGuard(endpoint): middleware using isWithinQuota; fail-open on Redis down.
+  Applied to: POST /mentor/chat, POST /adaptive-practice/session
+  Returns 429 with code:'AI_QUOTA_EXCEEDED' when over limit.
+
+middleware/usageGuard.ts — Free trial enforcement
+  enforceTestLimit(): 1 test lifetime for free users; increments User.testsUsed atomically.
+  enforceRevisionLimit(): 1 revision lifetime for free users; increments User.revisionsUsed.
+  Applied to: POST /test/generate, GET /revision
+
+scripts/ensureIndexes.ts — Index migration
+  Runs model.syncIndexes() for all models.
+  Run: npx ts-node src/scripts/ensureIndexes.ts
+
+server.ts — Graceful shutdown
+  SIGTERM/SIGINT handlers: closeRedis() + closeQueues() + mongoose.disconnect()
+  Workers started on boot: startAnalyticsWorker(), startEmbeddingWorker()
+
+────────────────────────────────────────────────────────────────────────────────
+6. AI SERVICE (Python FastAPI)
+────────────────────────────────────────────────────────────────────────────────
+
+app/config.py — Settings (pydantic-settings)
+  ai_provider: "mock" | "gemini" | "openrouter"  (default: "mock")
+  gemini_api_key, gemini_model: "gemini-1.5-flash"
+  openrouter_api_key, openrouter_model, openrouter_base_url
+  chroma_persist_dir: "./chroma_db"
+  chroma_collection: "denken_notes"
+  embedding_model: "all-MiniLM-L6-v2"
+  redis_url: "" (optional), cache_ttl_mentor: 1800s, cache_ttl_explanation: 86400s
+  cors_origins: ["http://localhost:3000", "http://localhost:5000"]
+
+app/lib/cache.py — Async Redis cache helpers
+  Async Redis client with asyncio.Lock() for safe init.
+  cache_get(key), cache_set(key, value, ttl_sec)
+  Key builders: mentor_cache_key, guidance_cache_key, explanation_cache_key
+  close() for graceful shutdown.
+
+app/lib/timing.py — TimingMiddleware (BaseHTTPMiddleware)
+  Logs every request with method, path, status, duration_ms.
+
+app/lib/logger.py — Structured logger
+  JsonFormatter for production JSON logs. get_logger(name) returns child of denken_ai root.
+
+app/main.py — lifespan context manager
+  Redis warmup on startup, close on shutdown. TimingMiddleware registered.
+  Health endpoint checks Redis connectivity. Version 0.3.0.
+
+app/routers/mentor.py — /mentor/* endpoints
+  All handlers are async def. Caches responses in Redis (skips study-plan intent, mock responses).
+  Uses mentor_cache_key + settings.cache_ttl_mentor.
+
+app/routers/adaptive.py — /adaptive/* endpoints
+  All handlers are async def. /adaptive/concept-guidance caches by mastery bucket (nearest 10).
+  Uses guidance_cache_key + settings.cache_ttl_mentor.
+
+app/rag/store.py — ChromaDB persistence layer
+  Collection: "denken_notes", metric: cosine, 384-dim float32
+  [unchanged]
+
+app/rag/ranker.py — Re-ranking and hybrid scoring
+  [unchanged from previous state]
+
+app/rag/retriever.py — retrieve(query, ...)
+  [unchanged from previous state]
+
+app/services/mentor_service.py — AI Mentor
+  [unchanged from previous state]
+
+────────────────────────────────────────────────────────────────────────────────
+7. FORMULA LOADER (lib/formulaLoader.ts)
+────────────────────────────────────────────────────────────────────────────────
+
+Loads all JSON files from backend/src/data/formulas/{subject}/ at startup.
+Cache: Map<subjectSlug, Map<chapterSlug, FormulaChapterRaw>>
+initFormulaLoader(): idempotent, logs count on completion. MUST be called at app startup.
+
+[Full FormulaChapterRaw shape and public API unchanged from previous state]
+
+Public API:
+  getSubjects, getChapters, getChapter, findChapterByName, searchFormulas, extractFormulaStrings
+
+────────────────────────────────────────────────────────────────────────────────
+8. AUTH / MIDDLEWARE
+────────────────────────────────────────────────────────────────────────────────
+
+middleware/auth.ts
+  protect(req, res, next): verifies Bearer JWT → populates req.user (TokenPayload)
+  AuthRequest extends Request: user? (TokenPayload), entitlements? (Entitlements)
+  CRITICAL: TokenPayload uses userId field NOT id
+            All controllers must use req.user?.userId — NOT req.user?.id
+
+middleware/attachEntitlements.ts
+  Reads req.user → looks up User → builds Entitlements → req.entitlements
+  Entitlements: {plan, status, features, testsLimit, revisionsLimit, testsUsed, revisionsUsed,
+                 subscriptionEndsAt, subscriptionStartedAt, remainingDays, billingCycleDays}
+
+middleware/aiQuota.ts
+  aiQuotaGuard(endpoint): fail-open on Redis down; 429 code:'AI_QUOTA_EXCEEDED' when over limit.
+  Uses AuthRequest type (req.user, req.entitlements).
+
+Route auth pattern (all non-public routes):
+  router.use(protect as RequestHandler);
+  router.use(attachEntitlements());
+
+────────────────────────────────────────────────────────────────────────────────
+9. API ROUTES (backend/src/routes/index.ts)
+────────────────────────────────────────────────────────────────────────────────
+
+/api/auth              → authRouter        (login, signup, complete-onboarding — no auth guard)
+                          authRateLimiter applied to /signup and /login
+/api/test              → testRouter        (generate, submit, recommend, syllabus)
+                          enforceTestLimit() on POST /generate
+/api/analytics         → analyticsRouter
+/api/revision          → revisionRouter    enforceRevisionLimit() on GET /
+/api/notes             → notesRouter
+/api/planner           → plannerRouter
+/api/readiness         → readinessRouter
+/api/subscription      → subscriptionRouter (Razorpay create-order, verify, webhook)
+/api/access            → accessRouter
+/api/ocr               → ocrRouter
+/api/dev               → devRouter         (DEV_MODE=true only)
+/api/formula           → formulaRouter
+/api/mistakes          → mistakeRouter
+/api/roadmap           → roadmapRouter
+/api/mentor            → mentorRouter      aiQuotaGuard on POST /chat
+/api/question-bank     → questionBankRouter
+/api/explanation       → explanationRouter
+/api/adaptive-practice → adaptivePracticeRouter  aiQuotaGuard on POST /session
+
+Key API contracts:
+  GET  /api/analytics                     → AnalyticsData (includes currentStreak, longestStreak)
+  POST /api/analytics/event               → 204 (product analytics tracking, always succeeds)
+  GET  /api/planner/week                  → WeekPlan {summary, days[7], generatedAt}
+  GET  /api/planner/day                   → DayPlan (today only)
+  GET  /api/planner/summary               → PlannerSummary
+  GET  /api/test/recommend                → AdaptiveRecommendationResponse
+  POST /api/test/generate                 → {testId, questions[], ...GeneratedTest}
+  POST /api/test/submit                   → {result: GradedResult}
+  GET  /api/test/syllabus?exam=JEE_MAIN   → {exam, subjects[]}
+  GET  /api/mistakes/patterns             → {patterns: MistakePatternSummary[]}
+  GET  /api/mistakes/revision-queue       → {queue: RevisionQueueItem[]}
+  GET  /api/roadmap?exam=JEE_MAIN         → RoadmapResponse
+  POST /api/mentor/chat                   → MentorResponse
+  GET  /api/mentor/session                → {messages[], identifiedWeaknesses[], totalInteractions}
+  GET  /api/access                        → AccessData {entitlements, usage, features, upgradeUrl}
+  GET  /api/readiness                     → ReadinessReport
+  POST /api/adaptive-practice/session     → AdaptiveSession
+  POST /api/adaptive-practice/session/:id/answer → AnswerResult
+  GET  /api/adaptive-practice/session/:id/summary → SessionSummary
+
+────────────────────────────────────────────────────────────────────────────────
+10. SUBSCRIPTION SYSTEM
+────────────────────────────────────────────────────────────────────────────────
+
+Plans: 'free' | 'pro'
+SubscriptionStatus: 'none' | 'active' | 'expired' | 'cancelled' | 'grace_period'
+
+Pricing: ₹449/month, ₹1,287 for 3 months (₹429/mo), ₹2,514 for 6 months (₹419/mo)
+Plan IDs: 'monthly', 'quarter', 'biannual'
+
+User model stores denormalized snapshot: plan, subscriptionStatus, testsUsed, revisionsUsed,
+subscriptionEndsAt, subscriptionStartedAt.
+
+Free trial: 1 test lifetime + 1 revision lifetime. After exhaustion:
+  → PrepInsightGate modal (personalized conversion surface) replaces generic PremiumLock overlay.
+  → Backend returns 429 {code:'FREE_LIMIT_REACHED', limit, used, plan, status, upgradeUrl}.
+
+Payment processor: Razorpay
+  POST /api/subscription/create-order → {orderId, amount, currency, planId, keyId}
+  POST /api/subscription/verify       → Entitlements (activates subscription)
+  Webhook: RAZORPAY_WEBHOOK_SECRET signature verified.
+
+Entitlements built per-request by attachEntitlements() middleware:
+  Includes: remainingDays, billingCycleDays (for grace period countdown display).
+
+AccessContext (frontend): isPro, testsExhausted, revisionsExhausted, canUseFeature(f), refresh()
+  GET /api/access → {entitlements, usage, features, upgradeUrl}
+
+Grace period: status === 'grace_period' → GracePeriodBanner shown in dashboard.
+              status === 'expired' → GracePeriodBanner shown with "Subscription expired" copy.
+
+────────────────────────────────────────────────────────────────────────────────
+11. FRONTEND ARCHITECTURE
+────────────────────────────────────────────────────────────────────────────────
+
+Directory: frontend/src/
+  app/(dashboard)/      — protected routes (sidebar layout)
+  app/login/            — login page
+  app/onboarding/       — onboarding flow
+  app/pricing/          — pricing / subscription page
+  components/           — shared UI components
+  context/              — React Context providers
+  lib/                  — API clients and utilities
+
+Root layout (app/layout.tsx):
+  body: NO overflow-hidden (removed — was breaking landing page scroll).
+  Dashboard layout (app/(dashboard)/layout.tsx) applies h-screen + overflow-hidden on its
+  own wrapper div, so dashboard scroll is self-contained.
+
+Context providers:
+  AuthContext:          isAuthenticated, user, login(), logout()
+  OnboardingContext:    data (name, email, avatar, examType, examName, subjects), set(), reset()
+  SidebarContext:       isOpen, open(), close()
+  AccessContext:        access, isLoading, isPro, testsExhausted, revisionsExhausted,
+                        canUseFeature(f), refresh()
+  DenBotContext, CommandPaletteContext: UI state for chat widget and command palette
+
+API client pattern (lib/api.ts):
+  api.get<T>(path, {auth: true})   — adds Authorization: Bearer <token>
+  api.post<T>(path, body, {auth: true})
+  NEVER use authFetch — it is not exported from lib/auth.ts
+
+Product analytics (lib/trackEvent.ts):
+  trackEvent(event: ProductEvent, properties?): fire-and-forget → POST /api/analytics/event
+  Never throws. 16 typed ProductEvent values cover the full conversion funnel.
+  Called at: onboarding_complete (summary page), checkout_started (pricing page + PrepInsightGate),
+             subscription_activated (pricing page after verify), trial_test_exhausted,
+             trial_revision_exhausted, prep_insight_gate_shown, grace_period_banner_shown,
+             renewal_started.
+
+Sidebar (components/Sidebar.tsx):
+  BASE_NAV: Dashboard, Tests, Revision, Analysis, Focus Areas, Roadmap, AI Mentor, DenkenStudio
+  "Practice" link REMOVED (was stretching sidebar on shorter screens).
+  Exam Mode (GraduationCap, /exam) injected between Tests and Revision for jee/neet users.
+  Nav item sizing: py-2.5, text-[14px], icon 17px — compact but readable without scroll.
+  Logout: shows confirmation modal → clearAuth() + logout() + window.location.replace('/')
+
+Upgrade / conversion components (components/upgrade/):
+  PrepInsightGate.tsx   — Intelligent premium conversion surface. Replaces generic PremiumLock
+                          overlay on tests and revision pages when trial is exhausted.
+                          Shows: weak topics preview, roadmap phase, accuracy + streak stats,
+                          AI mentor teaser, and 3-plan pricing (₹449/₹1,287/₹2,514).
+                          Deep-links to /pricing?plan=X. Fires prep_insight_gate_shown event.
+  GracePeriodBanner.tsx — Amber banner for grace_period and expired subscription states.
+                          Fires grace_period_banner_shown and renewal_started events.
+                          Integrated into dashboard page above activation banner.
+  UpgradeBanner.tsx     — Simple inline banner for feature-gated sections within pages.
+  UpgradeModal.tsx      — Generic modal (still used for MODE_GATED / FEATURE_GATED codes).
+  PremiumLock.tsx       — Blur overlay wrapper (still used for some sections; tests/revision
+                          pages now use PrepInsightGate + notice bar instead).
+
+Dashboard widgets (components/dashboard/):
+  ConsistencyCard.tsx   — Shows currentStreak, longestStreak, total sessions. Motivational copy
+                          adapts by streak length. Skeleton loading state.
+                          Placed in right column of dashboard grid.
+  ExamCountdown.tsx     — Days-to-exam countdown with timeline progress bar.
+  ActivityHeatmap.tsx   — 90-day activity grid.
+  PrepOverviewChart, FocusAreas, LastActivity, QuickActions — existing widgets.
+
+Dashboard page (app/(dashboard)/dashboard/page.tsx):
+  Renders: GracePeriodBanner, activation banner (new users), grid layout.
+  Right column now includes ConsistencyCard between ExamCountdown and ActivityHeatmap.
+
+Tests page (app/(dashboard)/tests/page.tsx):
+  When testsExhausted: shows notice bar + PrepInsightGate modal (not PremiumLock blur).
+  Tracks trial_test_exhausted on subject card click while blocked.
+  Subject cards and quick test section visually dimmed (opacity-50 pointer-events-none).
+
+Revision page (app/(dashboard)/revision/page.tsx):
+  When revisionsExhausted: same pattern — notice bar + PrepInsightGate modal.
+  Tracks trial_revision_exhausted event.
+
+Pricing page (app/pricing/page.tsx):
+  Reads ?plan= query param → highlights that plan card (from PrepInsightGate deep-link).
+  Fires checkout_started before opening Razorpay checkout.
+  Fires subscription_activated after successful verifyPayment().
+
+Frontend API clients (lib/):
+  analyticsApi.ts:    fetchAnalytics() → AnalyticsData
+                      AnalyticsOverview now includes longestStreak field.
+  trackEvent.ts:      Product analytics event tracker (fire-and-forget)
+  subscriptionApi.ts: createOrder, verifyPayment, getSubscription, getSubscriptionHistory,
+                      cancelSubscription, renewSubscription
+  mentorApi.ts, roadmapApi.ts, mistakeApi.ts, plannerApi.ts, revisionApi.ts, practiceApi.ts
+
+────────────────────────────────────────────────────────────────────────────────
+12. DOCKER COMPOSE
+────────────────────────────────────────────────────────────────────────────────
+
+docker-compose.yml (project root):
+  redis:      Always-on service. Port 6379. maxmemory 256mb allkeys-lru.
+              Health check: redis-cli ping.
+  mongodb:    Profile "full" only. Port 27017.
+  ai-service: Profile "full" only. Port 8000. Depends on redis.
+  backend:    Profile "full" only. Port 5000. Depends on redis.
+  frontend:   Profile "full" only. Port 3000.
+
+Usage:
+  docker compose up -d redis          # Local dev (recommended — just Redis)
+  docker compose --profile full up    # Full stack in containers
+
+────────────────────────────────────────────────────────────────────────────────
+13. DATA FLOW — KEY REQUEST PATHS
+────────────────────────────────────────────────────────────────────────────────
+
+Test Generation:
+  Frontend → POST /api/test/generate
+  → globalRateLimiter → protect → attachEntitlements → enforceTestLimit
+  → validateGenerateBody → computeTopicWeights (Redis cache) → generateTest
+  → Test.create → return {testId, questions[]}
+
+Test Submission:
+  Frontend → POST /api/test/submit {testId, timeTaken, answers[]}
+  → gradeAndSave → Test.findById → grade MCQ/numerical → Result.create
+  → void invalidateUserCache → void updateStreak (fire-and-forget)
+  → void enqueueAnalyticsJob (mistake-patterns + question-performance)
+  → return GradedResult
+
+Mentor Chat:
+  Frontend → POST /api/mentor/chat {message, chapter?, subject?, exam?, intent?}
+  → aiQuotaGuard → mentorChatHandler → buildStudentContext
+  → aiServiceClient.mentorChat (Redis cache check → circuit breaker → Python /mentor/chat)
+  → Python: detect_intent → retrieve ChromaDB → Redis cache check → Gemini OR mock
+  → Express: void saveToSession → return MentorResponse
+
+Revision Access:
+  Frontend → GET /api/revision
+  → protect → attachEntitlements → enforceRevisionLimit
+  → getUserRevision → void updateStreak (fire-and-forget)
+  → return RevisionData
+
+Product Analytics Event:
+  Frontend → POST /api/analytics/event {event, properties}
+  → protect → trackEventHandler → logger.info('product_event') → 204
+
+Upgrade Flow:
+  User hits trial limit → PrepInsightGate modal shown → user picks plan
+  → trackEvent('checkout_started') → router.push('/pricing?plan=X')
+  → Pricing page highlights selected plan → handleBuyPlan
+  → trackEvent('checkout_started') → createOrder → Razorpay checkout
+  → verifyPayment → trackEvent('subscription_activated') → redirect /dashboard
+
+────────────────────────────────────────────────────────────────────────────────
+14. KNOWN ENGINEERING RULES AND INVARIANTS
+────────────────────────────────────────────────────────────────────────────────
+
+1. req.user?.userId — ALL controllers use this field. req.user?.id does not exist.
+   TokenPayload: {userId, email, plan, ...}. Forgetting this causes silent undefined auth.
+
+2. computeTopicWeights() is expensive. Results are now Redis-cached (5min TTL).
+   Still avoid calling redundantly in the same request.
+
+3. updateMistakePatterns() and updateStreak() must always be fire-and-forget (void).
+   Never block request response with these calls.
+
+4. formulaLoader must be initialised via initFormulaLoader() before any formula API call.
+
+5. Python never reads MongoDB. Express assembles StudentContextPayload per AI call.
+
+6. api.get/api.post from lib/api.ts is the ONLY frontend API client pattern.
+   Do NOT use authFetch — it is not exported from lib/auth.ts.
+
+7. All Redis operations must fail-open. The platform must work without Redis.
+   Never let Redis errors surface as user-facing 5xx responses.
+
+8. ChromaDB returns distances (not similarities). Convert: score = 1.0 − distance.
+
+9. MentorSession.messages uses $slice: -20 to keep rolling window. Never manually trim.
+
+10. BullMQ inline fallback: enqueueAnalyticsJob falls back to inline sync execution
+    when Redis is unavailable, so analytics never silently drop.
+
+11. Map serialization for Redis: serialize as Object.fromEntries(), deserialize with
+    new Map(Object.entries(cached)). Never JSON.stringify a Map directly.
+
+12. Mastery bucket for explanation cache: Math.floor(mastery / 10) * 10 — students
+    with similar mastery share cached explanations.
+
+13. Streak tracking: lastActivityDate stored as Date (no time component compared).
+    A day boundary is YYYY-MM-DD string comparison (ISO slice). Covers tests + revisions.
+
+14. body has NO overflow-hidden in root layout. Dashboard self-contains its scroll
+    via h-screen + overflow-hidden on its own wrapper. Don't add overflow-hidden to body.
+
+15. PrepInsightGate fires prep_insight_gate_shown on mount via useEffect. Always wrap
+    in AnimatePresence for smooth enter/exit animation.
+
+16. PYQ grounding context is assembled synchronously from in-memory index — never blocks.
+    Only geminiQuestionGenerator.generateGroundedQuestions() is async (network call to Gemini).
+    All grounding calls are non-fatal: always fall back gracefully, never throw.
+
+17. correctAnswer is NEVER exposed in PYQSlim objects used for grounding. The model sees
+    question text + options only — style/depth reference, not memorised answers.
+
+18. GEMINI_API_KEY in backend/.env is for direct Node.js → Gemini calls (question generation).
+    Python ai-service has its own GEMINI_API_KEY — they are independent keys.
+    Both must be set if both paths are used.
+
+19. Exam personality in prompts: JEE_ADVANCED uses dense conceptual phrasing, NEET uses
+    direct NCERT-register, JEE_MAIN uses balanced register. Always include exam name in
+    generation prompts — Gemini style adapts noticeably to this context.
+
+20. /api/dev/grounded-generate and /api/dev/grounded-full-test require DEV_MODE=true.
+    These endpoints are the primary quality-verification flow for grounded generation.
+    showPrompt:true in grounded-generate returns the full Gemini prompt for inspection.
+
+────────────────────────────────────────────────────────────────────────────────
+15. CURRENT ENGINEERING GAPS
+────────────────────────────────────────────────────────────────────────────────
+
+1. computeTopicWeights called multiple times per complex request (planner calls
+   readinessService, adaptiveTestService, and roadmapService each of which may call it).
+   Redis cache mitigates this in practice but a proper fix is to pass precomputed
+   Map<string, TopicWeight> through service call chains.
+
+2. Roadmap data only covers JEE_MAIN. No weightage file for NEET or CBSE chapters.
+
+3. questionGenerator.ts still exists as template fallback for when Gemini is unavailable.
+   Gemini-grounded generation (geminiQuestionGenerator.ts) is now the primary fallback path.
+   Quality gap remains: template questions are generic; Gemini quality depends on GEMINI_API_KEY.
+
+4. Formula embeddings are not auto-seeded. POST /api/mentor/ingest-formulas must be
+   called manually per subject to seed ChromaDB.
+
+5. AI provider is "mock" by default. Must set AI_PROVIDER=gemini + GEMINI_API_KEY.
+
+6. MentorSession identifiedWeaknesses[] is populated but never automatically updated
+   from Gemini responses. Update path from Python to Express not implemented.
+
+7. No test for duplicate topic-to-chapter fuzzy matching edge cases in roadmapEngine.
+
+8. Percentile estimates in readinessService are heuristic approximations, not real data.
+
+9. ai-service has no authentication. Firewall from external access in production.
+
+10. Product analytics events are logged to Winston only — no aggregation dashboard or
+    database storage yet. Events are ephemeral log lines.
+
+────────────────────────────────────────────────────────────────────────────────
+16. STABLE SYSTEMS (safe to extend without regression risk)
+────────────────────────────────────────────────────────────────────────────────
+
+- pyqRetrieval: read-only, in-memory indexed, deterministic retrieval
+- groundingContext: assembles from deterministic sources (PYQ + formula + syllabus)
+- geminiQuestionGenerator: falls back to templates gracefully — safe to extend
+- formulaLoader: read-only, cached, deterministic
+- studyUtils: pure functions, no side effects
+- mistakeAnalysisService: fire-and-forget, self-contained upsert logic
+- topicWeightService: pure computation from DB reads, no writes (+ Redis cache)
+- lib/cache.ts: all ops null-safe, fail-open
+- lib/streakUtils.ts: isolated atomic DB update, fire-and-forget safe
+- ChromaDB store layer: upsert-safe, delete-by-chapter for replace
+- RAG ranker: stateless, pure scoring function
+- testGenerator: stateless, pure function given inputs
+- gradeAndSave: deterministic grading logic
+- PrepInsightGate, ConsistencyCard, GracePeriodBanner: UI components, no side effects
+- trackEvent: fire-and-forget, never throws
+
+────────────────────────────────────────────────────────────────────────────────
+17. FILE TREE — KEY FILES BY LAYER
+────────────────────────────────────────────────────────────────────────────────
+
+backend/src/
+  config/env.ts                       — env validation, exports `env` const
+  lib/
+    studyUtils.ts                     — Ebbinghaus, phase, burnout, streak (pure)
+    formulaLoader.ts                  — formula JSON cache + search + fuzzy match
+    aiServiceClient.ts                — typed HTTP client (cache + circuit breaker + retry)
+    syllabusLoader.ts                 — loads exam syllabus topic pools
+    pyqRetrieval.ts                   — PYQ in-memory index + retrieval (getRepresentativePYQs, formatPYQsForPrompt)
+    groundingContext.ts               — GroundingContext builder + serializeForPrompt()
+    redis.ts                          — ioredis singleton (getRedis, closeRedis)
+    cache.ts                          — typed Redis helpers (cacheGet/Set/Del, CacheKey, TTL)
+    queue.ts                          — BullMQ queue helpers (enqueue*, closeQueues)
+    aiTracker.ts                      — AI call logging + daily quota counters
+    circuitBreaker.ts                 — Redis-backed circuit breaker
+    logger.ts                         — Winston logger (serviceLogger factory)
+    streakUtils.ts                    — updateStreak() (fire-and-forget)
+    entitlements.ts                   — computeEntitlements(), resolveStatus()
+  middleware/
+    auth.ts                           — protect() + AuthRequest type
+    attachEntitlements.ts             — builds req.entitlements per request
+    aiQuota.ts                        — aiQuotaGuard(endpoint) middleware
+    rateLimiter.ts                    — globalRateLimiter, authRateLimiter
+    usageGuard.ts                     — enforceTestLimit(), enforceRevisionLimit()
+    logger.ts                         — Winston request logging middleware
+  models/
+    User.ts                           — includes currentStreak, longestStreak, lastActivityDate
+    Test.ts, Result.ts
+    MistakePattern.ts, MentorSession.ts, QuestionBank.ts
+  services/
+    topicWeightService.ts             — computeTopicWeights() [Redis-cached]
+    resultService.ts                  — gradeAndSave() [streak + cache invalidation]
+    testGenerator.ts                  — generateTest() [bank-first → Gemini-grounded → template]
+    geminiQuestionGenerator.ts        — generateGroundedQuestions() [PYQ+formula grounded Gemini gen]
+    mistakeAnalysisService.ts         — updateMistakePatterns(), analyseTestMistakes()
+    analyticsService.ts               — getUserAnalytics() [includes longestStreak]
+    revisionService.ts                — getUserRevision()
+    readinessService.ts               — getReadinessReport()
+    plannerService.ts                 — getWeekPlan(), getDayPlan(), getPlannerSummary()
+    adaptivePracticeService.ts        — Redis-backed sessions
+    roadmapEngine.ts                  — buildSubjectTracks() [JEE_MAIN only]
+    roadmapService.ts                 — getExamRoadmap() [Redis-cached]
+    mentorService.ts                  — mentorChat(), buildStudentContext(), getSession()
+    subscriptionService.ts            — loadUserSnapshot(), syncExpiredStatus()
+  controllers/
+    analyticsController.ts            — getAnalyticsHandler, trackEventHandler
+    revisionController.ts             — getRevisionHandler [calls updateStreak]
+    devController.ts                  — personas + groundedGenerateDebugHandler + groundedFullTestDebugHandler
+    accessController.ts               — getAccessHandler
+    testController.ts, plannerController.ts, readinessController.ts
+    mistakeController.ts, roadmapController.ts, mentorController.ts
+    adaptivePracticeController.ts, subscriptionController.ts
+  workers/
+    analyticsWorker.ts                — BullMQ analytics queue consumer
+    embeddingWorker.ts                — BullMQ embeddings queue consumer
+  routes/
+    index.ts                          — mounts all routers at /api/*
+    analytics.ts                      — GET / + POST /event
+    adaptivePractice.ts               — aiQuotaGuard on POST /session
+    mentor.ts                         — aiQuotaGuard on POST /chat
+  scripts/
+    ensureIndexes.ts                  — run once to sync all MongoDB indexes
+  data/
+    weightage/jee-main.json           — 54 JEE Main chapters with examWeightage %
+    formulas/{subject}/*.json         — formula chapter dataset
+    pyqs/jee-main/2019-2024.json      — JEE Main PYQs (6 years)
+    pyqs/jee-advanced/2019-2024.json  — JEE Advanced PYQs (6 years)
+    pyqs/neet/2021-2025.json          — NEET PYQs (5 years)
+
+ai-service/app/
+  config.py                           — Settings (pydantic-settings) including redis_url
+  main.py                             — FastAPI lifespan, TimingMiddleware, version 0.3.0
+  lib/
+    cache.py                          — async Redis cache (cache_get, cache_set, key builders)
+    logger.py                         — get_logger(name) JSON structured logger
+    timing.py                         — TimingMiddleware (request duration logging)
+  rag/
+    store.py, embedder.py, retriever.py, ranker.py, context_builder.py, pipeline.py, models.py
+  services/
+    mentor_service.py, notes_service.py, revision_service.py, performance_service.py
+  routers/
+    mentor.py (async, Redis-cached), adaptive.py (async, Redis-cached)
+    retrieval.py, notes.py, revision.py, performance.py, admin.py, debug.py
+  ingestion/
+    formula_ingester.py
+
+frontend/src/
+  app/
+    layout.tsx                        — body WITHOUT overflow-hidden
+    page.tsx                          — landing page (scrollable)
+    (dashboard)/
+      layout.tsx                      — h-screen overflow-hidden wrapper (self-contained scroll)
+      dashboard/page.tsx              — GracePeriodBanner + ConsistencyCard integrated
+      tests/page.tsx                  — PrepInsightGate replaces PremiumLock on trial exhaustion
+      revision/page.tsx               — PrepInsightGate replaces PremiumLock on trial exhaustion
+      mentor/, roadmap/, planner/, denkenstudio/, analysis/, focus/, profile/
+    pricing/page.tsx                  — ?plan= query param, checkout_started + subscription_activated
+    onboarding/summary/page.tsx       — trackEvent('onboarding_complete')
+  components/
+    Sidebar.tsx                       — Practice removed; compact sizing (py-2.5 / text-14px)
+    upgrade/
+      PrepInsightGate.tsx             — Personalized conversion surface (primary upgrade flow)
+      GracePeriodBanner.tsx           — Grace period / expired subscription banner
+      UpgradeBanner.tsx               — Simple inline feature-gated section banner
+      UpgradeModal.tsx                — Generic modal (MODE_GATED / FEATURE_GATED codes)
+      PremiumLock.tsx                 — Blur overlay (still used in some sections)
+    dashboard/
+      ConsistencyCard.tsx             — Streak + longestStreak + session count widget
+      ExamCountdown.tsx, ActivityHeatmap.tsx, PrepOverviewChart.tsx
+      FocusAreas.tsx, LastActivity.tsx, QuickActions.tsx
+    billing/BillingCard.tsx           — Subscription history, cancel, grace period notice
+  context/
+    AuthContext.tsx, OnboardingContext.tsx, SidebarContext.tsx
+    AccessContext.tsx                  — isPro, testsExhausted, revisionsExhausted, canUseFeature
+    DenBotContext.tsx, CommandPaletteContext.tsx
+  lib/
+    api.ts                            — base API client (api.get, api.post)
+    auth.ts                           — token storage
+    trackEvent.ts                     — product analytics event tracker (fire-and-forget)
+    subscriptionApi.ts                — createOrder, verifyPayment, getSubscription, etc.
+    analyticsApi.ts                   — fetchAnalytics(), AnalyticsOverview (+ longestStreak)
+    gateError.ts                      — GateEvent, parseGateEvent, GateCode types
+    mentorApi.ts, roadmapApi.ts, mistakeApi.ts, plannerApi.ts, revisionApi.ts, practiceApi.ts
+
+docker-compose.yml                    — redis (always-on), others under "full" profile
+
+================================================================================
+END OF ARCHITECTURE STATE
+================================================================================

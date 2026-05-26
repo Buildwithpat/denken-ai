@@ -1,0 +1,322 @@
+{
+  "chapterId": "physics_waves_012",
+  "fileName": "waves.json",
+  "chapterName": "Waves",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "waves",
+    "wave-motion",
+    "sound-waves",
+    "stationary-waves",
+    "doppler-effect",
+    "superposition"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_wave_001",
+      "conceptName": "Basic Wave Parameters",
+      "description": "Fundamental quantities associated with wave motion.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wave_001_f1",
+          "name": "Wave Speed",
+          "equation": "v = fλ",
+          "latex": "v=f\\lambda",
+          "meaning": "Wave velocity relation.",
+          "variables": {
+            "v": {
+              "meaning": "Wave speed",
+              "unit": "m/s"
+            },
+            "f": {
+              "meaning": "Frequency",
+              "unit": "Hz"
+            },
+            "λ": {
+              "meaning": "Wavelength",
+              "unit": "m"
+            }
+          },
+          "applications": [
+            "Sound waves",
+            "Electromagnetic waves",
+            "String waves"
+          ],
+          "commonMistakes": [
+            "Confusing frequency with angular frequency",
+            "Using wrong wavelength units"
+          ]
+        },
+        {
+          "formulaId": "phy_wave_001_f2",
+          "name": "Angular Frequency",
+          "equation": "ω = 2πf",
+          "latex": "\\omega=2\\pi f",
+          "meaning": "Angular frequency relation."
+        },
+        {
+          "formulaId": "phy_wave_001_f3",
+          "name": "Wave Number",
+          "equation": "k = 2π/λ",
+          "latex": "k=\\frac{2\\pi}{\\lambda}",
+          "meaning": "Spatial frequency of wave."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wave_002",
+      "conceptName": "Wave Equation",
+      "description": "Mathematical representation of travelling waves.",
+      "formulaType": "wave-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wave_002_f1",
+          "name": "Progressive Wave Equation",
+          "equation": "y = A sin(kx - ωt + φ)",
+          "latex": "y=A\\sin(kx-\\omega t+\\phi)",
+          "meaning": "Equation of wave traveling in positive x-direction.",
+          "applications": [
+            "Wave propagation",
+            "String vibrations",
+            "Oscillation analysis"
+          ]
+        },
+        {
+          "formulaId": "phy_wave_002_f2",
+          "name": "Wave Moving in Negative Direction",
+          "equation": "y = A sin(kx + ωt + φ)",
+          "latex": "y=A\\sin(kx+\\omega t+\\phi)",
+          "meaning": "Wave traveling in negative x-direction."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wave_003",
+      "conceptName": "Speed of Waves",
+      "description": "Wave speed in different media.",
+      "formulaType": "speed-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wave_003_f1",
+          "name": "Wave Speed on String",
+          "equation": "v = √(T/μ)",
+          "latex": "v=\\sqrt{\\frac{T}{\\mu}}",
+          "meaning": "Velocity of transverse wave on stretched string.",
+          "variables": {
+            "T": {
+              "meaning": "Tension in string",
+              "unit": "N"
+            },
+            "μ": {
+              "meaning": "Mass per unit length",
+              "unit": "kg/m"
+            }
+          }
+        },
+        {
+          "formulaId": "phy_wave_003_f2",
+          "name": "Speed of Sound in Gas",
+          "equation": "v = √(γP/ρ)",
+          "latex": "v=\\sqrt{\\frac{\\gamma P}{\\rho}}",
+          "meaning": "Speed of sound in gaseous medium."
+        },
+        {
+          "formulaId": "phy_wave_003_f3",
+          "name": "Newton's Formula",
+          "equation": "v = √(P/ρ)",
+          "latex": "v=\\sqrt{\\frac{P}{\\rho}}",
+          "meaning": "Approximate speed of sound formula."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wave_004",
+      "conceptName": "Superposition Principle",
+      "description": "Resultant displacement due to overlapping waves.",
+      "formulaType": "superposition-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wave_004_f1",
+          "name": "Resultant Amplitude",
+          "equation": "A = √(A₁² + A₂² + 2A₁A₂cosφ)",
+          "latex": "A=\\sqrt{A_1^2+A_2^2+2A_1A_2\\cos\\phi}",
+          "meaning": "Amplitude after superposition of two waves."
+        },
+        {
+          "formulaId": "phy_wave_004_f2",
+          "name": "Intensity Relation",
+          "equation": "I ∝ A²",
+          "latex": "I\\propto A^2",
+          "meaning": "Wave intensity proportional to square of amplitude."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wave_005",
+      "conceptName": "Stationary Waves",
+      "description": "Waves formed due to interference of identical waves.",
+      "formulaType": "stationary-wave-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wave_005_f1",
+          "name": "Stationary Wave Equation",
+          "equation": "y = 2A sin(kx) cos(ωt)",
+          "latex": "y=2A\\sin(kx)\\cos(\\omega t)",
+          "meaning": "Equation of standing wave."
+        },
+        {
+          "formulaId": "phy_wave_005_f2",
+          "name": "Distance Between Consecutive Nodes",
+          "equation": "d = λ/2",
+          "latex": "d=\\frac{\\lambda}{2}",
+          "meaning": "Distance between adjacent nodes or antinodes."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wave_006",
+      "conceptName": "String Vibrations",
+      "description": "Frequency relations for vibrating strings.",
+      "formulaType": "harmonic-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wave_006_f1",
+          "name": "Fundamental Frequency",
+          "equation": "f = v/2L",
+          "latex": "f=\\frac{v}{2L}",
+          "meaning": "Fundamental frequency of stretched string."
+        },
+        {
+          "formulaId": "phy_wave_006_f2",
+          "name": "nth Harmonic Frequency",
+          "equation": "fn = nv/2L",
+          "latex": "f_n=\\frac{nv}{2L}",
+          "meaning": "Frequency of nth harmonic."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wave_007",
+      "conceptName": "Open and Closed Pipes",
+      "description": "Standing waves in air columns.",
+      "formulaType": "pipe-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wave_007_f1",
+          "name": "Open Pipe Fundamental Frequency",
+          "equation": "f = v/2L",
+          "latex": "f=\\frac{v}{2L}",
+          "meaning": "Fundamental frequency in open organ pipe."
+        },
+        {
+          "formulaId": "phy_wave_007_f2",
+          "name": "Closed Pipe Fundamental Frequency",
+          "equation": "f = v/4L",
+          "latex": "f=\\frac{v}{4L}",
+          "meaning": "Fundamental frequency in closed organ pipe."
+        },
+        {
+          "formulaId": "phy_wave_007_f3",
+          "name": "Closed Pipe Harmonics",
+          "equation": "fn = nv/4L",
+          "latex": "f_n=\\frac{nv}{4L}",
+          "meaning": "Only odd harmonics exist in closed pipes.",
+          "conditions": ["n = 1,3,5..."]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wave_008",
+      "conceptName": "Doppler Effect",
+      "description": "Apparent change in frequency due to relative motion.",
+      "formulaType": "doppler-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wave_008_f1",
+          "name": "Doppler Effect Formula",
+          "equation": "f' = f[(v ± vo)/(v ∓ vs)]",
+          "latex": "f'=f\\left(\\frac{v\\pm v_o}{v\\mp v_s}\\right)",
+          "meaning": "Observed frequency due to relative motion.",
+          "variables": {
+            "f'": {
+              "meaning": "Observed frequency",
+              "unit": "Hz"
+            },
+            "f": {
+              "meaning": "Actual frequency",
+              "unit": "Hz"
+            },
+            "v": {
+              "meaning": "Speed of sound",
+              "unit": "m/s"
+            },
+            "vo": {
+              "meaning": "Observer velocity",
+              "unit": "m/s"
+            },
+            "vs": {
+              "meaning": "Source velocity",
+              "unit": "m/s"
+            }
+          },
+          "applications": ["Radar systems", "Astronomy", "Medical ultrasound"],
+          "commonMistakes": [
+            "Wrong sign convention",
+            "Confusing observer and source velocity"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wave_009",
+      "conceptName": "Beats",
+      "description": "Variation in intensity due to interference of close frequencies.",
+      "formulaType": "beats-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wave_009_f1",
+          "name": "Beat Frequency",
+          "equation": "fb = |f₁ - f₂|",
+          "latex": "f_b=|f_1-f_2|",
+          "meaning": "Frequency of beats produced."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Mechanical waves require medium for propagation.",
+    "Frequency remains constant during wave propagation.",
+    "Wave carries energy but not matter.",
+    "Standing waves do not transfer net energy."
+  ],
+  "commonMistakes": [
+    "Using wrong Doppler signs",
+    "Confusing stationary and progressive waves",
+    "Ignoring harmonic conditions",
+    "Wrong wavelength calculations"
+  ],
+  "jeeAdvancedFocus": [
+    "Wave equations",
+    "Doppler effect",
+    "Standing wave analysis",
+    "String and pipe harmonics"
+  ],
+  "neetFocus": [
+    "Wave speed relation",
+    "Doppler effect basics",
+    "Standing waves",
+    "Sound waves"
+  ],
+  "keywords": [
+    "waves",
+    "sound waves",
+    "doppler effect",
+    "stationary waves",
+    "harmonics",
+    "beats",
+    "wave equation",
+    "wave speed"
+  ]
+}

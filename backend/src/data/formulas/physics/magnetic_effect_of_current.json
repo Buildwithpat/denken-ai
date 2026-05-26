@@ -1,0 +1,287 @@
+{
+  "chapterId": "physics_magnetic_effect_of_current_019",
+  "fileName": "magnetic_effect_of_current.json",
+  "chapterName": "Magnetic Effect of Current",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "magnetic-effect-of-current",
+    "biot-savart-law",
+    "ampere-law",
+    "lorentz-force",
+    "moving-charge",
+    "magnetic-field"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_mag_001",
+      "conceptName": "Magnetic Force on Moving Charge",
+      "description": "Force experienced by moving charge in magnetic field.",
+      "formulaType": "force-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mag_001_f1",
+          "name": "Lorentz Force",
+          "equation": "F = q(v × B)",
+          "latex": "F=q(v\\times B)",
+          "meaning": "Magnetic force on moving charge.",
+          "variables": {
+            "F": {
+              "meaning": "Magnetic force",
+              "unit": "N"
+            },
+            "q": {
+              "meaning": "Charge",
+              "unit": "C"
+            },
+            "v": {
+              "meaning": "Velocity of charge",
+              "unit": "m/s"
+            },
+            "B": {
+              "meaning": "Magnetic field",
+              "unit": "T"
+            }
+          },
+          "applications": ["Cyclotron motion", "Charged particle motion"]
+        },
+        {
+          "formulaId": "phy_mag_001_f2",
+          "name": "Magnitude of Magnetic Force",
+          "equation": "F = qvB sinθ",
+          "latex": "F=qvB\\sin\\theta",
+          "meaning": "Magnitude of magnetic force."
+        },
+        {
+          "formulaId": "phy_mag_001_f3",
+          "name": "Radius of Circular Path",
+          "equation": "r = mv/qB",
+          "latex": "r=\\frac{mv}{qB}",
+          "meaning": "Radius of charged particle trajectory."
+        },
+        {
+          "formulaId": "phy_mag_001_f4",
+          "name": "Time Period of Circular Motion",
+          "equation": "T = 2πm/qB",
+          "latex": "T=\\frac{2\\pi m}{qB}",
+          "meaning": "Time period of circular motion in magnetic field."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mag_002",
+      "conceptName": "Force on Current Carrying Conductor",
+      "description": "Magnetic force on conductor carrying current.",
+      "formulaType": "current-force-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mag_002_f1",
+          "name": "Force on Conductor",
+          "equation": "F = I(L × B)",
+          "latex": "F=I(L\\times B)",
+          "meaning": "Magnetic force on current carrying conductor."
+        },
+        {
+          "formulaId": "phy_mag_002_f2",
+          "name": "Magnitude of Force",
+          "equation": "F = BIL sinθ",
+          "latex": "F=BIL\\sin\\theta",
+          "meaning": "Magnitude of force on conductor."
+        },
+        {
+          "formulaId": "phy_mag_002_f3",
+          "name": "Force Between Parallel Wires",
+          "equation": "F/L = μ₀I₁I₂/2πd",
+          "latex": "\\frac{F}{L}=\\frac{\\mu_0I_1I_2}{2\\pi d}",
+          "meaning": "Force per unit length between parallel currents."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mag_003",
+      "conceptName": "Biot-Savart Law",
+      "description": "Magnetic field produced by current element.",
+      "formulaType": "biot-savart-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mag_003_f1",
+          "name": "Biot-Savart Law",
+          "equation": "dB = μ₀Idl sinθ/4πr²",
+          "latex": "dB=\\frac{\\mu_0Idl\\sin\\theta}{4\\pi r^2}",
+          "meaning": "Magnetic field due to small current element."
+        },
+        {
+          "formulaId": "phy_mag_003_f2",
+          "name": "Field at Centre of Circular Loop",
+          "equation": "B = μ₀I/2R",
+          "latex": "B=\\frac{\\mu_0I}{2R}",
+          "meaning": "Magnetic field at center of current loop."
+        },
+        {
+          "formulaId": "phy_mag_003_f3",
+          "name": "Field on Axis of Circular Loop",
+          "equation": "B = μ₀IR²/2(R²+x²)³ᐟ²",
+          "latex": "B=\\frac{\\mu_0IR^2}{2(R^2+x^2)^{3/2}}",
+          "meaning": "Magnetic field on axis of loop."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mag_004",
+      "conceptName": "Ampere's Circuital Law",
+      "description": "Relation between magnetic field and current.",
+      "formulaType": "ampere-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mag_004_f1",
+          "name": "Ampere's Law",
+          "equation": "∮B·dl = μ₀I",
+          "latex": "\\oint B\\cdot dl=\\mu_0I",
+          "meaning": "Line integral of magnetic field around closed path."
+        },
+        {
+          "formulaId": "phy_mag_004_f2",
+          "name": "Field Due to Long Straight Wire",
+          "equation": "B = μ₀I/2πr",
+          "latex": "B=\\frac{\\mu_0I}{2\\pi r}",
+          "meaning": "Magnetic field around straight conductor."
+        },
+        {
+          "formulaId": "phy_mag_004_f3",
+          "name": "Field Inside Solenoid",
+          "equation": "B = μ₀nI",
+          "latex": "B=\\mu_0nI",
+          "meaning": "Magnetic field inside long solenoid."
+        },
+        {
+          "formulaId": "phy_mag_004_f4",
+          "name": "Field Inside Toroid",
+          "equation": "B = μ₀NI/2πr",
+          "latex": "B=\\frac{\\mu_0NI}{2\\pi r}",
+          "meaning": "Magnetic field inside toroid."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mag_005",
+      "conceptName": "Torque on Current Loop",
+      "description": "Torque experienced by current loop in magnetic field.",
+      "formulaType": "torque-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mag_005_f1",
+          "name": "Torque on Current Loop",
+          "equation": "τ = nBIA sinθ",
+          "latex": "\\tau=nBIA\\sin\\theta",
+          "meaning": "Torque on current carrying loop."
+        },
+        {
+          "formulaId": "phy_mag_005_f2",
+          "name": "Magnetic Dipole Moment",
+          "equation": "M = nIA",
+          "latex": "M=nIA",
+          "meaning": "Magnetic dipole moment of coil."
+        },
+        {
+          "formulaId": "phy_mag_005_f3",
+          "name": "Torque using Magnetic Moment",
+          "equation": "τ = MB sinθ",
+          "latex": "\\tau=MB\\sin\\theta",
+          "meaning": "Torque on magnetic dipole."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mag_006",
+      "conceptName": "Motion of Charged Particle",
+      "description": "Trajectory of charged particles in magnetic field.",
+      "formulaType": "motion-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mag_006_f1",
+          "name": "Cyclotron Frequency",
+          "equation": "f = qB/2πm",
+          "latex": "f=\\frac{qB}{2\\pi m}",
+          "meaning": "Frequency of charged particle rotation."
+        },
+        {
+          "formulaId": "phy_mag_006_f2",
+          "name": "Cyclotron Angular Frequency",
+          "equation": "ω = qB/m",
+          "latex": "\\omega=\\frac{qB}{m}",
+          "meaning": "Angular frequency of cyclotron motion."
+        },
+        {
+          "formulaId": "phy_mag_006_f3",
+          "name": "Pitch of Helical Path",
+          "equation": "p = v∥T",
+          "latex": "p=v_{\\parallel}T",
+          "meaning": "Pitch of helical trajectory."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_mag_007",
+      "conceptName": "Moving Coil Galvanometer",
+      "description": "Instrument for detecting small currents.",
+      "formulaType": "galvanometer-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_mag_007_f1",
+          "name": "Deflecting Torque",
+          "equation": "τ = nBIA",
+          "latex": "\\tau=nBIA",
+          "meaning": "Torque acting on galvanometer coil."
+        },
+        {
+          "formulaId": "phy_mag_007_f2",
+          "name": "Current Sensitivity",
+          "equation": "Si = θ/I = nBA/k",
+          "latex": "S_i=\\frac{\\theta}{I}=\\frac{nBA}{k}",
+          "meaning": "Current sensitivity of galvanometer."
+        },
+        {
+          "formulaId": "phy_mag_007_f3",
+          "name": "Voltage Sensitivity",
+          "equation": "Sv = θ/V = nBA/kG",
+          "latex": "S_v=\\frac{\\theta}{V}=\\frac{nBA}{kG}",
+          "meaning": "Voltage sensitivity of galvanometer."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Magnetic force is always perpendicular to velocity.",
+    "Magnetic field lines form closed loops.",
+    "Parallel currents attract while antiparallel currents repel.",
+    "No work is done by magnetic force."
+  ],
+  "commonMistakes": [
+    "Using wrong direction in cross product",
+    "Confusing electric and magnetic force formulas",
+    "Ignoring angle in magnetic force",
+    "Wrong right-hand rule application"
+  ],
+  "jeeAdvancedFocus": [
+    "Charged particle motion",
+    "Magnetic field derivations",
+    "Current loop torque",
+    "Cyclotron problems"
+  ],
+  "neetFocus": [
+    "Lorentz force",
+    "Biot-Savart law",
+    "Ampere law",
+    "Force on conductor"
+  ],
+  "keywords": [
+    "magnetic effect of current",
+    "magnetic field",
+    "lorentz force",
+    "biot savart law",
+    "ampere law",
+    "cyclotron",
+    "galvanometer",
+    "current carrying conductor"
+  ]
+}

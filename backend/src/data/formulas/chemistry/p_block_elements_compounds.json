@@ -1,0 +1,243 @@
+{
+  "chapterId": "chem_p_block_elements_016",
+  "fileName": "p_block_elements.json",
+  "chapterName": "p-Block Elements",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "p-block-elements",
+    "group-13",
+    "group-14",
+    "group-15",
+    "group-16",
+    "group-17",
+    "group-18"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_pblock_001",
+      "conceptName": "Group 13 Elements",
+      "description": "Properties and compounds of boron family.",
+      "formulaType": "group13-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_pblock_001_f1",
+          "name": "Diborane Hydrolysis",
+          "equation": "B₂H₆ + 6H₂O → 2H₃BO₃ + 6H₂",
+          "latex": "B_2H_6+6H_2O\\rightarrow2H_3BO_3+6H_2",
+          "meaning": "Hydrolysis reaction of diborane.",
+          "applications": ["Boron chemistry", "Preparation reactions"]
+        },
+        {
+          "formulaId": "chem_pblock_001_f2",
+          "name": "Borax Bead Formation",
+          "equation": "Na₂B₄O₇·10H₂O → 2NaBO₂ + B₂O₃ + 10H₂O",
+          "latex": "Na_2B_4O_7\\cdot10H_2O\\rightarrow2NaBO_2+B_2O_3+10H_2O",
+          "meaning": "Borax decomposition on heating."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_pblock_002",
+      "conceptName": "Group 14 Elements",
+      "description": "Properties of carbon family.",
+      "formulaType": "group14-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_pblock_002_f1",
+          "name": "Catenation Trend",
+          "equation": "C > Si > Ge > Sn > Pb",
+          "latex": "C>Si>Ge>Sn>Pb",
+          "meaning": "Decreasing tendency of catenation down the group."
+        },
+        {
+          "formulaId": "chem_pblock_002_f2",
+          "name": "Lead Oxidation State Stability",
+          "equation": "+2 oxidation state more stable for Pb",
+          "latex": "+2\\text{ oxidation state more stable for Pb}",
+          "meaning": "Due to inert pair effect."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_pblock_003",
+      "conceptName": "Group 15 Elements",
+      "description": "Properties and reactions of nitrogen family.",
+      "formulaType": "group15-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_pblock_003_f1",
+          "name": "Ammonia Preparation",
+          "equation": "N₂ + 3H₂ ⇌ 2NH₃",
+          "latex": "N_2+3H_2\\rightleftharpoons2NH_3",
+          "meaning": "Haber process for ammonia synthesis."
+        },
+        {
+          "formulaId": "chem_pblock_003_f2",
+          "name": "Nitric Acid Formation",
+          "equation": "4NO₂ + O₂ + 2H₂O → 4HNO₃",
+          "latex": "4NO_2+O_2+2H_2O\\rightarrow4HNO_3",
+          "meaning": "Formation of nitric acid."
+        },
+        {
+          "formulaId": "chem_pblock_003_f3",
+          "name": "Basicity Order of Hydrides",
+          "equation": "NH₃ > PH₃ > AsH₃ > SbH₃",
+          "latex": "NH_3>PH_3>AsH_3>SbH_3",
+          "meaning": "Basic strength decreases down the group."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_pblock_004",
+      "conceptName": "Group 16 Elements",
+      "description": "Properties of oxygen family.",
+      "formulaType": "group16-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_pblock_004_f1",
+          "name": "Ozone Formation",
+          "equation": "3O₂ → 2O₃",
+          "latex": "3O_2\\rightarrow2O_3",
+          "meaning": "Formation of ozone from oxygen."
+        },
+        {
+          "formulaId": "chem_pblock_004_f2",
+          "name": "Sulphuric Acid Contact Process",
+          "equation": "2SO₂ + O₂ ⇌ 2SO₃",
+          "latex": "2SO_2+O_2\\rightleftharpoons2SO_3",
+          "meaning": "Key reaction in contact process."
+        },
+        {
+          "formulaId": "chem_pblock_004_f3",
+          "name": "Acidic Strength of Hydrides",
+          "equation": "H₂O < H₂S < H₂Se < H₂Te",
+          "latex": "H_2O<H_2S<H_2Se<H_2Te",
+          "meaning": "Acidic character increases down the group."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_pblock_005",
+      "conceptName": "Group 17 Elements",
+      "description": "Properties and reactions of halogens.",
+      "formulaType": "group17-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_pblock_005_f1",
+          "name": "Chlorine Preparation",
+          "equation": "MnO₂ + 4HCl → MnCl₂ + Cl₂ + 2H₂O",
+          "latex": "MnO_2+4HCl\\rightarrow MnCl_2+Cl_2+2H_2O",
+          "meaning": "Laboratory preparation of chlorine."
+        },
+        {
+          "formulaId": "chem_pblock_005_f2",
+          "name": "Bleaching Powder Formation",
+          "equation": "Ca(OH)₂ + Cl₂ → CaOCl₂ + H₂O",
+          "latex": "Ca(OH)_2+Cl_2\\rightarrow CaOCl_2+H_2O",
+          "meaning": "Preparation of bleaching powder."
+        },
+        {
+          "formulaId": "chem_pblock_005_f3",
+          "name": "Oxidizing Power Trend",
+          "equation": "F₂ > Cl₂ > Br₂ > I₂",
+          "latex": "F_2>Cl_2>Br_2>I_2",
+          "meaning": "Oxidizing strength decreases down the group."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_pblock_006",
+      "conceptName": "Group 18 Elements",
+      "description": "Properties of noble gases.",
+      "formulaType": "group18-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_pblock_006_f1",
+          "name": "Xenon Fluoride Formation",
+          "equation": "Xe + F₂ → XeF₂",
+          "latex": "Xe+F_2\\rightarrow XeF_2",
+          "meaning": "Formation of noble gas compounds."
+        },
+        {
+          "formulaId": "chem_pblock_006_f2",
+          "name": "Inertness Principle",
+          "equation": "ns²np⁶ configuration → high stability",
+          "latex": "ns^2np^6\\text{ configuration}\\rightarrow\\text{high stability}",
+          "meaning": "Reason for low reactivity of noble gases."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_pblock_007",
+      "conceptName": "Inert Pair Effect",
+      "description": "Reluctance of s-electrons to participate in bonding.",
+      "formulaType": "inert-pair-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_pblock_007_f1",
+          "name": "Oxidation State Stability",
+          "equation": "Lower oxidation state becomes more stable down the group",
+          "latex": "\\text{Lower oxidation state becomes more stable down the group}",
+          "meaning": "Due to inert pair effect."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_pblock_008",
+      "conceptName": "Hydrides and Oxides Trends",
+      "description": "Variation in properties of hydrides and oxides.",
+      "formulaType": "trend-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_pblock_008_f1",
+          "name": "Hydride Stability Trend",
+          "equation": "Stability decreases down the group",
+          "latex": "\\text{Stability decreases down the group}",
+          "meaning": "Due to weakening E-H bond."
+        },
+        {
+          "formulaId": "chem_pblock_008_f2",
+          "name": "Acidic Nature of Oxides",
+          "equation": "Non-metal oxides are acidic",
+          "latex": "\\text{Non-metal oxides are acidic}",
+          "meaning": "Characteristic property of non-metal oxides."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Inert pair effect becomes significant in heavier p-block elements.",
+    "Halogens are strong oxidizing agents.",
+    "Noble gases are mostly inert due to stable electronic configuration.",
+    "Acidic character of hydrides generally increases down the group."
+  ],
+  "commonMistakes": [
+    "Confusing oxidizing and reducing power trends",
+    "Incorrect oxidation state assignment",
+    "Wrong acidic/basic trend interpretation",
+    "Ignoring inert pair effect"
+  ],
+  "jeeAdvancedFocus": [
+    "Anomalous behavior of first elements",
+    "Inert pair effect",
+    "Industrial processes",
+    "Oxidation state stability"
+  ],
+  "neetFocus": [
+    "Important compounds",
+    "Group trends",
+    "Industrial preparation reactions",
+    "Properties of halogens and noble gases"
+  ],
+  "keywords": [
+    "p-block elements",
+    "halogens",
+    "noble gases",
+    "inert pair effect",
+    "haber process",
+    "contact process",
+    "bleaching powder",
+    "ozone"
+  ]
+}

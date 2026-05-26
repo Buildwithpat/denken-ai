@@ -1,0 +1,576 @@
+{
+  "questions": [
+    {
+      "questionId": "JM2019_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Units and Dimensions",
+      "topic": "Error Analysis",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "In the density measurement of a cube, the mass and edge length are measured as (10.00 ± 0.10) kg and (0.10 ± 0.01) m respectively. The error in the measurement of density is",
+      "options": {
+        "A": "0.31",
+        "B": "0.10",
+        "C": "0.07",
+        "D": "0.01"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Motion in One Dimension",
+      "topic": "Momentum",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A ball is thrown vertically up from the ground. The correct momentum-height diagram is",
+      "options": {
+        "A": "Diagram 1",
+        "B": "Diagram 2",
+        "C": "Diagram 3",
+        "D": "Diagram 4"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Motion in Two Dimensions",
+      "topic": "Relative Velocity",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "The stream of a river is flowing with speed 2 km h⁻¹. A swimmer can swim at speed 4 km h⁻¹. The direction of swimmer to cross river straight is",
+      "options": {
+        "A": "150°",
+        "B": "90°",
+        "C": "120°",
+        "D": "60°"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Work Power Energy",
+      "topic": "Work Done",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A uniform cable of mass M and length L is placed on a horizontal surface such that its 1/n part is hanging below edge. Work done to lift hanging part is",
+      "options": {
+        "A": "MgL/2n²",
+        "B": "MgL/n²",
+        "C": "nMgL",
+        "D": "2MgL/n²"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "Center of Mass and Collision",
+      "topic": "Elastic Collision",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A body of mass 2 kg makes an elastic collision with another body at rest and continues in same direction with one fourth speed. Mass of second body is",
+      "options": {
+        "A": "1.8 kg",
+        "B": "1.2 kg",
+        "C": "1.0 kg",
+        "D": "1.5 kg"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Rotational Motion",
+      "topic": "Torque",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A stationary disc is free to rotate about its axis. Its kinetic energy varies as kθ². Angular acceleration is",
+      "options": {
+        "A": "2k/I",
+        "B": "k/2I",
+        "C": "k/4I",
+        "D": "k/I"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "Rotational Motion",
+      "topic": "Rolling Motion",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Ring, cylinder and sphere roll up an incline with same speed. Ratio of maximum heights climbed is",
+      "options": {
+        "A": "2:3:4",
+        "B": "20:15:14",
+        "C": "4:3:2",
+        "D": "14:15:20"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "Gravitation",
+      "topic": "Gravitational Field",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A solid sphere of mass M and radius a is surrounded by concentric shell thickness 2a and mass 2M. Gravitational field at 3a is",
+      "options": {
+        "A": "GM/9a²",
+        "B": "GM/3a²",
+        "C": "2GM/3a²",
+        "D": "2GM/9a²"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "Mechanical Properties of Fluids",
+      "topic": "Capillarity",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "If M mass of water rises in capillary tube radius r, then mass rising in tube radius 2r is",
+      "options": {
+        "A": "4M",
+        "B": "2M",
+        "C": "M",
+        "D": "M/2"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Thermodynamics",
+      "topic": "Heat and Internal Energy",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "For two thermodynamic processes A and B, relation between heat absorbed and internal energy change is",
+      "options": {
+        "A": "ΔQA<ΔQB;ΔUA<ΔUB",
+        "B": "ΔQA=ΔQB;ΔUA=ΔUB",
+        "C": "ΔQA>ΔQB;ΔUA=ΔUB",
+        "D": "ΔQA>ΔQB;ΔUA>ΔUB"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+
+    {
+      "questionId": "JM2019_CHEM_1",
+      "questionNumber": 11,
+      "subject": "Chemistry",
+      "chapter": "Atomic Structure",
+      "topic": "Quantum Numbers",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Maximum number of electrons having principal quantum number n=4 is",
+      "options": {
+        "A": "16",
+        "B": "32",
+        "C": "18",
+        "D": "8"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_CHEM_2",
+      "questionNumber": 12,
+      "subject": "Chemistry",
+      "chapter": "Chemical Bonding",
+      "topic": "Hybridisation",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Hybridisation and geometry of XeF4 are",
+      "options": {
+        "A": "sp³d², square planar",
+        "B": "sp³d, trigonal bipyramidal",
+        "C": "sp³, tetrahedral",
+        "D": "dsp², square planar"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_CHEM_3",
+      "questionNumber": 13,
+      "subject": "Chemistry",
+      "chapter": "Thermodynamics",
+      "topic": "Enthalpy",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "For an exothermic reaction, correct statement is",
+      "options": {
+        "A": "ΔH>0",
+        "B": "ΔH<0",
+        "C": "ΔG>0",
+        "D": "Entropy always decreases"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_CHEM_4",
+      "questionNumber": 14,
+      "subject": "Chemistry",
+      "chapter": "Equilibrium",
+      "topic": "Le Chatelier Principle",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Increase in pressure favors reaction with",
+      "options": {
+        "A": "More gaseous moles",
+        "B": "Less gaseous moles",
+        "C": "Equal gaseous moles",
+        "D": "No gases"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_CHEM_5",
+      "questionNumber": 15,
+      "subject": "Chemistry",
+      "chapter": "Electrochemistry",
+      "topic": "Electrochemical Cell",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "EMF of Daniell cell under standard conditions is",
+      "options": {
+        "A": "0.34 V",
+        "B": "1.10 V",
+        "C": "1.50 V",
+        "D": "2.20 V"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_CHEM_6",
+      "questionNumber": 16,
+      "subject": "Chemistry",
+      "chapter": "Coordination Compounds",
+      "topic": "Ligands",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which ligand is ambidentate?",
+      "options": {
+        "A": "NH3",
+        "B": "H2O",
+        "C": "NO2⁻",
+        "D": "en"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_CHEM_7",
+      "questionNumber": 17,
+      "subject": "Chemistry",
+      "chapter": "Haloalkanes and Haloarenes",
+      "topic": "SN1 Reaction",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Tertiary alkyl halides favor",
+      "options": {
+        "A": "SN2",
+        "B": "SN1",
+        "C": "E2 only",
+        "D": "No reaction"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_CHEM_8",
+      "questionNumber": 18,
+      "subject": "Chemistry",
+      "chapter": "Alcohols Phenols and Ethers",
+      "topic": "Acidity",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Phenol is more acidic than ethanol because",
+      "options": {
+        "A": "Phenoxide ion is resonance stabilized",
+        "B": "Phenol has hydrogen bonding",
+        "C": "Phenol has higher molar mass",
+        "D": "Ethanol is volatile"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_CHEM_9",
+      "questionNumber": 19,
+      "subject": "Chemistry",
+      "chapter": "Biomolecules",
+      "topic": "Proteins",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Proteins are polymers of",
+      "options": {
+        "A": "Glucose",
+        "B": "Fatty acids",
+        "C": "Amino acids",
+        "D": "Nucleotides"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_CHEM_10",
+      "questionNumber": 20,
+      "subject": "Chemistry",
+      "chapter": "Polymers",
+      "topic": "Synthetic Polymers",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Nylon-6,6 is formed by condensation of",
+      "options": {
+        "A": "Ethylene glycol and terephthalic acid",
+        "B": "Hexamethylene diamine and adipic acid",
+        "C": "Caprolactam only",
+        "D": "Styrene"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+
+    {
+      "questionId": "JM2019_MATH_1",
+      "questionNumber": 21,
+      "subject": "Mathematics",
+      "chapter": "Relations and Functions",
+      "topic": "Functions",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "If f(x)=x²+1, then f(2) equals",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "5",
+        "D": "4"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_MATH_2",
+      "questionNumber": 22,
+      "subject": "Mathematics",
+      "chapter": "Quadratic Equations",
+      "topic": "Roots of Equation",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Roots of x²−5x+6=0 are",
+      "options": {
+        "A": "2,3",
+        "B": "1,6",
+        "C": "-2,-3",
+        "D": "0,6"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_MATH_3",
+      "questionNumber": 23,
+      "subject": "Mathematics",
+      "chapter": "Matrices",
+      "topic": "Determinants",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "If determinant of matrix [[a,b],[c,d]] is zero then",
+      "options": {
+        "A": "ad−bc=0",
+        "B": "ab−cd=0",
+        "C": "ac−bd=0",
+        "D": "a+b+c+d=0"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_MATH_4",
+      "questionNumber": 24,
+      "subject": "Mathematics",
+      "chapter": "Limits and Derivatives",
+      "topic": "Differentiation",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Derivative of sinx is",
+      "options": {
+        "A": "cosx",
+        "B": "-cosx",
+        "C": "sinx",
+        "D": "-sinx"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_MATH_5",
+      "questionNumber": 25,
+      "subject": "Mathematics",
+      "chapter": "Application of Derivatives",
+      "topic": "Maxima Minima",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Maximum value of sinx is",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "π"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_MATH_6",
+      "questionNumber": 26,
+      "subject": "Mathematics",
+      "chapter": "Integrals",
+      "topic": "Indefinite Integration",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "∫x²dx equals",
+      "options": {
+        "A": "x³/3 + C",
+        "B": "2x + C",
+        "C": "x²/2 + C",
+        "D": "3x² + C"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_MATH_7",
+      "questionNumber": 27,
+      "subject": "Mathematics",
+      "chapter": "Coordinate Geometry",
+      "topic": "Straight Line",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Slope of line y=2x+3 is",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "-2",
+        "D": "1"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_MATH_8",
+      "questionNumber": 28,
+      "subject": "Mathematics",
+      "chapter": "Probability",
+      "topic": "Basic Probability",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Probability of getting head in fair coin toss is",
+      "options": {
+        "A": "0",
+        "B": "1/4",
+        "C": "1/2",
+        "D": "1"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_MATH_9",
+      "questionNumber": 29,
+      "subject": "Mathematics",
+      "chapter": "Complex Numbers",
+      "topic": "Imaginary Unit",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Value of i² is",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "i",
+        "D": "0"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    },
+    {
+      "questionId": "JM2019_MATH_10",
+      "questionNumber": 30,
+      "subject": "Mathematics",
+      "chapter": "Vectors",
+      "topic": "Dot Product",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Dot product of perpendicular vectors is",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "0",
+        "D": "Infinity"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2019
+    }
+  ]
+}

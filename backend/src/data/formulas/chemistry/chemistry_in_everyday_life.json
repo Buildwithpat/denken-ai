@@ -1,0 +1,270 @@
+{
+  "chapterId": "chem_everyday_life_029",
+  "fileName": "chemistry_in_everyday_life.json",
+  "chapterName": "Chemistry in Everyday Life",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "NEET"],
+  "tags": [
+    "chemistry-in-everyday-life",
+    "drugs",
+    "medicines",
+    "detergents",
+    "soaps",
+    "food-chemistry"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_everyday_001",
+      "conceptName": "Drugs and Medicines",
+      "description": "Chemical substances used for diagnosis, treatment and prevention of diseases.",
+      "formulaType": "drug-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_everyday_001_f1",
+          "name": "Aspirin Formula",
+          "equation": "C₉H₈O₄",
+          "latex": "C_9H_8O_4",
+          "meaning": "Chemical formula of aspirin.",
+          "applications": ["Pain relief", "Antipyretic medicine"]
+        },
+        {
+          "formulaId": "chem_everyday_001_f2",
+          "name": "Paracetamol Formula",
+          "equation": "C₈H₉NO₂",
+          "latex": "C_8H_9NO_2",
+          "meaning": "Chemical formula of paracetamol."
+        },
+        {
+          "formulaId": "chem_everyday_001_f3",
+          "name": "Penicillin Structure",
+          "equation": "β-lactam antibiotic",
+          "latex": "\\beta\\text{-lactam antibiotic}",
+          "meaning": "Important antibiotic structure."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_everyday_002",
+      "conceptName": "Classification of Drugs",
+      "description": "Different categories of medicinal drugs.",
+      "formulaType": "classification-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_everyday_002_f1",
+          "name": "Antacids",
+          "equation": "Mg(OH)₂, NaHCO₃",
+          "latex": "Mg(OH)_2,\\ NaHCO_3",
+          "meaning": "Neutralize excess stomach acid."
+        },
+        {
+          "formulaId": "chem_everyday_002_f2",
+          "name": "Antibiotics",
+          "equation": "Kill or inhibit microorganisms",
+          "latex": "\\text{Kill or inhibit microorganisms}",
+          "meaning": "Drugs used against bacterial infections."
+        },
+        {
+          "formulaId": "chem_everyday_002_f3",
+          "name": "Tranquilizers",
+          "equation": "Reduce mental stress and anxiety",
+          "latex": "\\text{Reduce mental stress and anxiety}",
+          "meaning": "Drugs acting on nervous system."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_everyday_003",
+      "conceptName": "Antiseptics and Disinfectants",
+      "description": "Chemicals used to control microorganisms.",
+      "formulaType": "antiseptic-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_everyday_003_f1",
+          "name": "Phenol Formula",
+          "equation": "C₆H₅OH",
+          "latex": "C_6H_5OH",
+          "meaning": "Used as disinfectant."
+        },
+        {
+          "formulaId": "chem_everyday_003_f2",
+          "name": "Dettol Composition",
+          "equation": "Chloroxylenol",
+          "latex": "\\text{Chloroxylenol}",
+          "meaning": "Active antiseptic component in Dettol."
+        },
+        {
+          "formulaId": "chem_everyday_003_f3",
+          "name": "Tincture of Iodine",
+          "equation": "I₂ dissolved in alcohol-water mixture",
+          "latex": "I_2\\text{ dissolved in alcohol-water mixture}",
+          "meaning": "Common antiseptic solution."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_everyday_004",
+      "conceptName": "Soaps",
+      "description": "Sodium or potassium salts of fatty acids.",
+      "formulaType": "soap-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_everyday_004_f1",
+          "name": "Soap Formation",
+          "equation": "Fat/Oil + NaOH → Soap + Glycerol",
+          "latex": "\\text{Fat/Oil}+NaOH\\rightarrow\\text{Soap}+\\text{Glycerol}",
+          "meaning": "Saponification reaction."
+        },
+        {
+          "formulaId": "chem_everyday_004_f2",
+          "name": "Micelle Formation",
+          "equation": "Soap molecules aggregate into micelles",
+          "latex": "\\text{Soap molecules aggregate into micelles}",
+          "meaning": "Cleaning action of soaps."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_everyday_005",
+      "conceptName": "Detergents",
+      "description": "Synthetic cleansing agents.",
+      "formulaType": "detergent-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_everyday_005_f1",
+          "name": "Anionic Detergent",
+          "equation": "RSO₃⁻Na⁺",
+          "latex": "RSO_3^-Na^+",
+          "meaning": "General formula of anionic detergent."
+        },
+        {
+          "formulaId": "chem_everyday_005_f2",
+          "name": "Cationic Detergent",
+          "equation": "R₄N⁺Cl⁻",
+          "latex": "R_4N^+Cl^-",
+          "meaning": "General formula of cationic detergent."
+        },
+        {
+          "formulaId": "chem_everyday_005_f3",
+          "name": "Advantage over Soap",
+          "equation": "Detergents work in hard water",
+          "latex": "\\text{Detergents work in hard water}",
+          "meaning": "Detergents do not form scum."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_everyday_006",
+      "conceptName": "Food Chemistry",
+      "description": "Chemicals used in food preservation and enhancement.",
+      "formulaType": "food-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_everyday_006_f1",
+          "name": "Sodium Benzoate",
+          "equation": "C₆H₅COONa",
+          "latex": "C_6H_5COONa",
+          "meaning": "Food preservative."
+        },
+        {
+          "formulaId": "chem_everyday_006_f2",
+          "name": "Artificial Sweetener Saccharin",
+          "equation": "C₇H₅NO₃S",
+          "latex": "C_7H_5NO_3S",
+          "meaning": "Artificial sweetening agent."
+        },
+        {
+          "formulaId": "chem_everyday_006_f3",
+          "name": "Aspartame Formula",
+          "equation": "C₁₄H₁₈N₂O₅",
+          "latex": "C_{14}H_{18}N_2O_5",
+          "meaning": "Low calorie artificial sweetener."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_everyday_007",
+      "conceptName": "Cleansing Action",
+      "description": "Mechanism of cleaning by soaps and detergents.",
+      "formulaType": "cleansing-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_everyday_007_f1",
+          "name": "Hydrophobic Tail",
+          "equation": "Non-polar hydrocarbon chain dissolves grease",
+          "latex": "\\text{Non-polar hydrocarbon chain dissolves grease}",
+          "meaning": "Tail interacts with oily dirt."
+        },
+        {
+          "formulaId": "chem_everyday_007_f2",
+          "name": "Hydrophilic Head",
+          "equation": "Polar ionic head interacts with water",
+          "latex": "\\text{Polar ionic head interacts with water}",
+          "meaning": "Head dissolves in water."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_everyday_008",
+      "conceptName": "Important Drug Terms",
+      "description": "Terminology used in medicinal chemistry.",
+      "formulaType": "drug-terms-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_everyday_008_f1",
+          "name": "Analgesics",
+          "equation": "Pain relieving drugs",
+          "latex": "\\text{Pain relieving drugs}",
+          "meaning": "Drugs used to reduce pain."
+        },
+        {
+          "formulaId": "chem_everyday_008_f2",
+          "name": "Antipyretics",
+          "equation": "Fever reducing drugs",
+          "latex": "\\text{Fever reducing drugs}",
+          "meaning": "Drugs used to lower body temperature."
+        },
+        {
+          "formulaId": "chem_everyday_008_f3",
+          "name": "Antihistamines",
+          "equation": "Block histamine action",
+          "latex": "\\text{Block histamine action}",
+          "meaning": "Used against allergies."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Soaps are ineffective in hard water due to scum formation.",
+    "Detergents work effectively in both soft and hard water.",
+    "Antibiotics selectively kill microorganisms.",
+    "Artificial sweeteners are used as sugar substitutes."
+  ],
+  "commonMistakes": [
+    "Confusing antiseptics and disinfectants",
+    "Mixing soap and detergent properties",
+    "Incorrect drug classification",
+    "Ignoring cleansing mechanism of soaps"
+  ],
+  "jeeAdvancedFocus": [
+    "Drug classifications",
+    "Soap and detergent chemistry",
+    "Artificial sweeteners",
+    "Medicinal compounds"
+  ],
+  "neetFocus": [
+    "Important medicines",
+    "Antibiotics and antiseptics",
+    "Soaps and detergents",
+    "Food preservatives"
+  ],
+  "keywords": [
+    "chemistry in everyday life",
+    "drugs",
+    "soaps",
+    "detergents",
+    "antibiotics",
+    "antiseptics",
+    "food preservatives",
+    "sweeteners"
+  ]
+}

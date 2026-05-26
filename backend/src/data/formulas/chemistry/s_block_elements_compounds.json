@@ -1,0 +1,228 @@
+{
+  "chapterId": "chem_s_block_elements_compounds_015",
+  "fileName": "s_block_elements_compounds.json",
+  "chapterName": "s-Block Elements & Compounds",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "s-block-elements",
+    "alkali-metals",
+    "alkaline-earth-metals",
+    "hardness-of-water",
+    "solvay-process",
+    "important-compounds"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_sblock_001",
+      "conceptName": "Alkali Metals",
+      "description": "Properties and reactions of Group 1 elements.",
+      "formulaType": "alkali-metal-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sblock_001_f1",
+          "name": "Reaction with Water",
+          "equation": "2M + 2H₂O → 2MOH + H₂",
+          "latex": "2M+2H_2O\\rightarrow2MOH+H_2",
+          "meaning": "Alkali metals react vigorously with water.",
+          "applications": ["Hydroxide preparation", "Reactivity trend analysis"]
+        },
+        {
+          "formulaId": "chem_sblock_001_f2",
+          "name": "Reaction with Oxygen",
+          "equation": "4Li + O₂ → 2Li₂O",
+          "latex": "4Li+O_2\\rightarrow2Li_2O",
+          "meaning": "Formation of oxide by lithium."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sblock_002",
+      "conceptName": "Alkaline Earth Metals",
+      "description": "Properties and reactions of Group 2 elements.",
+      "formulaType": "alkaline-earth-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sblock_002_f1",
+          "name": "Reaction with Water",
+          "equation": "M + 2H₂O → M(OH)₂ + H₂",
+          "latex": "M+2H_2O\\rightarrow M(OH)_2+H_2",
+          "meaning": "Reaction of alkaline earth metals with water."
+        },
+        {
+          "formulaId": "chem_sblock_002_f2",
+          "name": "Thermal Stability Trend",
+          "equation": "Thermal stability increases down the group",
+          "latex": "\\text{Thermal stability increases down the group}",
+          "meaning": "Due to decrease in polarizing power."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sblock_003",
+      "conceptName": "Diagonal Relationship",
+      "description": "Similarity between Li-Mg and Be-Al.",
+      "formulaType": "diagonal-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sblock_003_f1",
+          "name": "Diagonal Similarity Principle",
+          "equation": "Similar charge/radius ratio → Similar properties",
+          "latex": "\\text{Similar charge/radius ratio}\\rightarrow\\text{Similar properties}",
+          "meaning": "Basis of diagonal relationship."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sblock_004",
+      "conceptName": "Hardness of Water",
+      "description": "Presence of dissolved calcium and magnesium salts.",
+      "formulaType": "hardness-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sblock_004_f1",
+          "name": "Temporary Hardness Removal",
+          "equation": "Ca(HCO₃)₂ → CaCO₃ + CO₂ + H₂O",
+          "latex": "Ca(HCO_3)_2\\rightarrow CaCO_3+CO_2+H_2O",
+          "meaning": "Removal of temporary hardness by boiling."
+        },
+        {
+          "formulaId": "chem_sblock_004_f2",
+          "name": "Permanent Hardness Removal",
+          "equation": "CaSO₄ + Na₂CO₃ → CaCO₃ + Na₂SO₄",
+          "latex": "CaSO_4+Na_2CO_3\\rightarrow CaCO_3+Na_2SO_4",
+          "meaning": "Removal of permanent hardness using washing soda."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sblock_005",
+      "conceptName": "Important Compounds of Sodium",
+      "description": "Industrial compounds of sodium.",
+      "formulaType": "sodium-compound-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sblock_005_f1",
+          "name": "Solvay Process Reaction",
+          "equation": "NaCl + NH₃ + CO₂ + H₂O → NaHCO₃ + NH₄Cl",
+          "latex": "NaCl+NH_3+CO_2+H_2O\\rightarrow NaHCO_3+NH_4Cl",
+          "meaning": "Formation of sodium bicarbonate."
+        },
+        {
+          "formulaId": "chem_sblock_005_f2",
+          "name": "Baking Soda Decomposition",
+          "equation": "2NaHCO₃ → Na₂CO₃ + CO₂ + H₂O",
+          "latex": "2NaHCO_3\\rightarrow Na_2CO_3+CO_2+H_2O",
+          "meaning": "Thermal decomposition of baking soda."
+        },
+        {
+          "formulaId": "chem_sblock_005_f3",
+          "name": "Caustic Soda Formation",
+          "equation": "2NaCl + 2H₂O → 2NaOH + Cl₂ + H₂",
+          "latex": "2NaCl+2H_2O\\rightarrow2NaOH+Cl_2+H_2",
+          "meaning": "Electrolysis of brine."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sblock_006",
+      "conceptName": "Important Compounds of Calcium",
+      "description": "Industrially important calcium compounds.",
+      "formulaType": "calcium-compound-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sblock_006_f1",
+          "name": "Quick Lime Formation",
+          "equation": "CaCO₃ → CaO + CO₂",
+          "latex": "CaCO_3\\rightarrow CaO+CO_2",
+          "meaning": "Preparation of quick lime."
+        },
+        {
+          "formulaId": "chem_sblock_006_f2",
+          "name": "Slaked Lime Formation",
+          "equation": "CaO + H₂O → Ca(OH)₂",
+          "latex": "CaO+H_2O\\rightarrow Ca(OH)_2",
+          "meaning": "Preparation of slaked lime."
+        },
+        {
+          "formulaId": "chem_sblock_006_f3",
+          "name": "Plaster of Paris Formation",
+          "equation": "CaSO₄·2H₂O → CaSO₄·½H₂O + 3/2H₂O",
+          "latex": "CaSO_4\\cdot2H_2O\\rightarrow CaSO_4\\cdot\\frac{1}{2}H_2O+\\frac{3}{2}H_2O",
+          "meaning": "Preparation of plaster of Paris."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sblock_007",
+      "conceptName": "Biological Importance",
+      "description": "Importance of sodium, potassium, calcium and magnesium.",
+      "formulaType": "biological-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sblock_007_f1",
+          "name": "Calcium in Bones",
+          "equation": "Ca₁₀(PO₄)₆(OH)₂",
+          "latex": "Ca_{10}(PO_4)_6(OH)_2",
+          "meaning": "Hydroxyapatite composition in bones and teeth."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sblock_008",
+      "conceptName": "Flame Colors",
+      "description": "Characteristic flame colors of s-block elements.",
+      "formulaType": "flame-test-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sblock_008_f1",
+          "name": "Sodium Flame Color",
+          "equation": "Na → Golden yellow flame",
+          "latex": "Na\\rightarrow\\text{Golden yellow flame}",
+          "meaning": "Characteristic flame color of sodium."
+        },
+        {
+          "formulaId": "chem_sblock_008_f2",
+          "name": "Potassium Flame Color",
+          "equation": "K → Violet flame",
+          "latex": "K\\rightarrow\\text{Violet flame}",
+          "meaning": "Characteristic flame color of potassium."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Alkali metals are highly reactive and soft.",
+    "Lithium shows anomalous behavior.",
+    "Hardness of water is due to Ca²⁺ and Mg²⁺ ions.",
+    "s-Block elements are strong reducing agents."
+  ],
+  "commonMistakes": [
+    "Confusing temporary and permanent hardness",
+    "Wrong flame color identification",
+    "Incorrect decomposition reactions",
+    "Ignoring diagonal relationship trends"
+  ],
+  "jeeAdvancedFocus": [
+    "Solvay process",
+    "Anomalous properties of lithium",
+    "Diagonal relationship",
+    "Hardness of water numericals"
+  ],
+  "neetFocus": [
+    "Important compounds",
+    "Hardness of water",
+    "Flame colors",
+    "Group trends"
+  ],
+  "keywords": [
+    "s-block elements",
+    "alkali metals",
+    "alkaline earth metals",
+    "hardness of water",
+    "solvay process",
+    "plaster of paris",
+    "washing soda",
+    "flame test"
+  ]
+}

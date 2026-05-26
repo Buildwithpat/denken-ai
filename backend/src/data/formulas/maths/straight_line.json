@@ -1,0 +1,239 @@
+{
+  "chapterId": "math_straight_line_018",
+  "fileName": "straight_line.json",
+  "chapterName": "Straight Line",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "straight-line",
+    "coordinate-geometry",
+    "slope",
+    "distance",
+    "intercepts"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_line_001",
+      "conceptName": "Slope of Line",
+      "description": "Measure of inclination of a line.",
+      "formulaType": "slope-formula",
+      "formulas": [
+        {
+          "formulaId": "math_line_001_f1",
+          "name": "Slope Formula",
+          "equation": "m = (y₂-y₁)/(x₂-x₁)",
+          "latex": "m=\\frac{y_2-y_1}{x_2-x_1}",
+          "meaning": "Slope between two points.",
+          "applications": ["Coordinate geometry", "Line equations"]
+        },
+        {
+          "formulaId": "math_line_001_f2",
+          "name": "Slope with Inclination",
+          "equation": "m = tanθ",
+          "latex": "m=\\tan\\theta",
+          "meaning": "Slope related to angle of inclination."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_line_002",
+      "conceptName": "Equation of Straight Line",
+      "description": "Different forms of line equations.",
+      "formulaType": "line-equation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_line_002_f1",
+          "name": "Slope-Intercept Form",
+          "equation": "y = mx + c",
+          "latex": "y=mx+c",
+          "meaning": "Equation using slope and y-intercept."
+        },
+        {
+          "formulaId": "math_line_002_f2",
+          "name": "Point-Slope Form",
+          "equation": "y-y₁ = m(x-x₁)",
+          "latex": "y-y_1=m(x-x_1)",
+          "meaning": "Equation through point with slope."
+        },
+        {
+          "formulaId": "math_line_002_f3",
+          "name": "Two Point Form",
+          "equation": "y-y₁ = [(y₂-y₁)/(x₂-x₁)](x-x₁)",
+          "latex": "y-y_1=\\frac{y_2-y_1}{x_2-x_1}(x-x_1)",
+          "meaning": "Equation through two points."
+        },
+        {
+          "formulaId": "math_line_002_f4",
+          "name": "Intercept Form",
+          "equation": "x/a + y/b = 1",
+          "latex": "\\frac{x}{a}+\\frac{y}{b}=1",
+          "meaning": "Equation using intercepts."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_line_003",
+      "conceptName": "General Form of Line",
+      "description": "Standard representation of line.",
+      "formulaType": "general-line-formula",
+      "formulas": [
+        {
+          "formulaId": "math_line_003_f1",
+          "name": "General Equation",
+          "equation": "Ax + By + C = 0",
+          "latex": "Ax+By+C=0",
+          "meaning": "General form of straight line."
+        },
+        {
+          "formulaId": "math_line_003_f2",
+          "name": "Slope from General Form",
+          "equation": "m = -A/B",
+          "latex": "m=-\\frac{A}{B}",
+          "meaning": "Slope from general equation."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_line_004",
+      "conceptName": "Angle Between Two Lines",
+      "description": "Formula for angle between lines.",
+      "formulaType": "angle-formula",
+      "formulas": [
+        {
+          "formulaId": "math_line_004_f1",
+          "name": "Angle Between Lines",
+          "equation": "tanθ = |(m₂-m₁)/(1+m₁m₂)|",
+          "latex": "\\tan\\theta=\\left|\\frac{m_2-m_1}{1+m_1m_2}\\right|",
+          "meaning": "Angle between two lines."
+        },
+        {
+          "formulaId": "math_line_004_f2",
+          "name": "Parallel Lines Condition",
+          "equation": "m₁ = m₂",
+          "latex": "m_1=m_2",
+          "meaning": "Condition for parallel lines."
+        },
+        {
+          "formulaId": "math_line_004_f3",
+          "name": "Perpendicular Lines Condition",
+          "equation": "m₁m₂ = -1",
+          "latex": "m_1m_2=-1",
+          "meaning": "Condition for perpendicular lines."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_line_005",
+      "conceptName": "Distance Formula",
+      "description": "Distance related formulas in coordinate geometry.",
+      "formulaType": "distance-formula",
+      "formulas": [
+        {
+          "formulaId": "math_line_005_f1",
+          "name": "Distance Between Two Points",
+          "equation": "d = √[(x₂-x₁)²+(y₂-y₁)²]",
+          "latex": "d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}",
+          "meaning": "Distance between two coordinates."
+        },
+        {
+          "formulaId": "math_line_005_f2",
+          "name": "Distance of Point from Line",
+          "equation": "d = |Ax₁+By₁+C|/√(A²+B²)",
+          "latex": "d=\\frac{|Ax_1+By_1+C|}{\\sqrt{A^2+B^2}}",
+          "meaning": "Perpendicular distance from point to line."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_line_006",
+      "conceptName": "Section Formula",
+      "description": "Division of line segment.",
+      "formulaType": "section-formula",
+      "formulas": [
+        {
+          "formulaId": "math_line_006_f1",
+          "name": "Internal Division",
+          "equation": "((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n))",
+          "latex": "\\left(\\frac{mx_2+nx_1}{m+n},\\frac{my_2+ny_1}{m+n}\\right)",
+          "meaning": "Point dividing line internally."
+        },
+        {
+          "formulaId": "math_line_006_f2",
+          "name": "Midpoint Formula",
+          "equation": "((x₁+x₂)/2 , (y₁+y₂)/2)",
+          "latex": "\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)",
+          "meaning": "Coordinates of midpoint."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_line_007",
+      "conceptName": "Area of Triangle",
+      "description": "Coordinate geometry area formula.",
+      "formulaType": "triangle-area-formula",
+      "formulas": [
+        {
+          "formulaId": "math_line_007_f1",
+          "name": "Area of Triangle",
+          "equation": "Area = 1/2 |x₁(y₂-y₃)+x₂(y₃-y₁)+x₃(y₁-y₂)|",
+          "latex": "\\text{Area}=\\frac12\\left|x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)\\right|",
+          "meaning": "Area using coordinates."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_line_008",
+      "conceptName": "Family of Lines",
+      "description": "Equations representing family of lines.",
+      "formulaType": "family-line-formula",
+      "formulas": [
+        {
+          "formulaId": "math_line_008_f1",
+          "name": "Family of Parallel Lines",
+          "equation": "Ax + By + λ = 0",
+          "latex": "Ax+By+\\lambda=0",
+          "meaning": "Family of parallel lines."
+        },
+        {
+          "formulaId": "math_line_008_f2",
+          "name": "Family Through Intersection",
+          "equation": "L₁ + λL₂ = 0",
+          "latex": "L_1+\\lambda L_2=0",
+          "meaning": "Family passing through intersection point."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Slope determines inclination of line.",
+    "Parallel lines have equal slopes.",
+    "Perpendicular lines satisfy m₁m₂ = -1.",
+    "Distance formula is derived from Pythagoras theorem."
+  ],
+  "commonMistakes": [
+    "Wrong slope calculation",
+    "Sign mistakes in distance formula",
+    "Incorrect perpendicular condition",
+    "Errors in section formula"
+  ],
+  "jeeAdvancedFocus": [
+    "Family of lines",
+    "Advanced coordinate geometry",
+    "Distance optimization",
+    "Angle between lines problems"
+  ],
+  "neetFocus": [
+    "Slope formulas",
+    "Equation of line",
+    "Distance formula",
+    "Section formula"
+  ],
+  "keywords": [
+    "straight line",
+    "slope",
+    "distance formula",
+    "coordinate geometry",
+    "section formula",
+    "line equation"
+  ]
+}

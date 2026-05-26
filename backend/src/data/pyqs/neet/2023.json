@@ -1,0 +1,576 @@
+{
+  "questions": [
+    {
+      "questionId": "NEET2023_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Units and Measurements",
+      "topic": "Dimensional Analysis",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "The dimensional formula of impulse is",
+      "options": {
+        "A": "[MLT−1]",
+        "B": "[ML2T−2]",
+        "C": "[MLT−2]",
+        "D": "[ML−1T−1]"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Kinematics",
+      "topic": "Projectile Motion",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "The horizontal range of a projectile becomes maximum when angle of projection is",
+      "options": {
+        "A": "30°",
+        "B": "45°",
+        "C": "60°",
+        "D": "90°"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Laws of Motion",
+      "topic": "Friction",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Coefficient of friction depends upon",
+      "options": {
+        "A": "Area of contact",
+        "B": "Nature of surfaces",
+        "C": "Mass of object",
+        "D": "Velocity"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Work Energy and Power",
+      "topic": "Kinetic Energy",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Kinetic energy of a body becomes four times when momentum becomes",
+      "options": {
+        "A": "Twice",
+        "B": "Four times",
+        "C": "Half",
+        "D": "Square root times"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "System of Particles and Rotational Motion",
+      "topic": "Moment of Inertia",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Moment of inertia of a ring about its diameter is",
+      "options": {
+        "A": "MR²",
+        "B": "MR²/2",
+        "C": "2MR²",
+        "D": "MR²/4"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Gravitation",
+      "topic": "Escape Velocity",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Escape velocity from earth surface depends on",
+      "options": {
+        "A": "Mass of object",
+        "B": "Radius and mass of earth",
+        "C": "Density of air",
+        "D": "Shape of object"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "Oscillations",
+      "topic": "Simple Harmonic Motion",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Time period of simple pendulum increases when",
+      "options": {
+        "A": "Length increases",
+        "B": "Mass increases",
+        "C": "Amplitude decreases",
+        "D": "Velocity increases"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "Current Electricity",
+      "topic": "Ohm's Law",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "SI unit of resistance is",
+      "options": {
+        "A": "Volt",
+        "B": "Ampere",
+        "C": "Ohm",
+        "D": "Watt"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "Magnetic Effects of Current",
+      "topic": "Moving Charge in Magnetic Field",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Force on moving charge in magnetic field is maximum when angle between velocity and magnetic field is",
+      "options": {
+        "A": "0°",
+        "B": "30°",
+        "C": "45°",
+        "D": "90°"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Ray Optics",
+      "topic": "Lens Formula",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Power of a convex lens is positive because",
+      "options": {
+        "A": "Focal length is positive",
+        "B": "Image is virtual",
+        "C": "Image is inverted",
+        "D": "Lens is thick"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2023
+    },
+
+    {
+      "questionId": "NEET2023_CHEM_1",
+      "questionNumber": 1,
+      "subject": "Chemistry",
+      "chapter": "Chemical Thermodynamics",
+      "topic": "Enthalpy",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Enthalpy is a",
+      "options": {
+        "A": "Path function",
+        "B": "State function",
+        "C": "Intensive property only",
+        "D": "Vector quantity"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_CHEM_2",
+      "questionNumber": 2,
+      "subject": "Chemistry",
+      "chapter": "Structure of Atom",
+      "topic": "Bohr Model",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Maximum number of electrons in L shell is",
+      "options": {
+        "A": "2",
+        "B": "8",
+        "C": "18",
+        "D": "32"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_CHEM_3",
+      "questionNumber": 3,
+      "subject": "Chemistry",
+      "chapter": "Periodic Classification",
+      "topic": "Periodic Trends",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Ionization enthalpy generally increases across a period due to",
+      "options": {
+        "A": "Increase in atomic size",
+        "B": "Decrease in nuclear charge",
+        "C": "Increase in effective nuclear charge",
+        "D": "Increase in shielding effect"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_CHEM_4",
+      "questionNumber": 4,
+      "subject": "Chemistry",
+      "chapter": "Chemical Bonding",
+      "topic": "Hybridization",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Hybridization of carbon in methane is",
+      "options": {
+        "A": "sp",
+        "B": "sp2",
+        "C": "sp3",
+        "D": "dsp2"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_CHEM_5",
+      "questionNumber": 5,
+      "subject": "Chemistry",
+      "chapter": "Equilibrium",
+      "topic": "Le Chatelier Principle",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Increase in pressure favours reaction having",
+      "options": {
+        "A": "More gaseous moles",
+        "B": "Less gaseous moles",
+        "C": "Equal gaseous moles",
+        "D": "No gases"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_CHEM_6",
+      "questionNumber": 6,
+      "subject": "Chemistry",
+      "chapter": "Redox Reactions",
+      "topic": "Oxidation Number",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Oxidation number of oxygen in H2O2 is",
+      "options": {
+        "A": "-2",
+        "B": "-1",
+        "C": "+1",
+        "D": "0"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_CHEM_7",
+      "questionNumber": 7,
+      "subject": "Chemistry",
+      "chapter": "Organic Chemistry",
+      "topic": "IUPAC Nomenclature",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Functional group of aldehyde is",
+      "options": {
+        "A": "-OH",
+        "B": "-COOH",
+        "C": "-CHO",
+        "D": "-CO-"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_CHEM_8",
+      "questionNumber": 8,
+      "subject": "Chemistry",
+      "chapter": "Hydrocarbons",
+      "topic": "Aromaticity",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Benzene shows aromatic character due to",
+      "options": {
+        "A": "Localized electrons",
+        "B": "Delocalized π electrons",
+        "C": "sp hybridization",
+        "D": "Presence of oxygen"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_CHEM_9",
+      "questionNumber": 9,
+      "subject": "Chemistry",
+      "chapter": "Biomolecules",
+      "topic": "Proteins",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Proteins are polymers of",
+      "options": {
+        "A": "Glucose",
+        "B": "Nucleotides",
+        "C": "Amino acids",
+        "D": "Fatty acids"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_CHEM_10",
+      "questionNumber": 10,
+      "subject": "Chemistry",
+      "chapter": "Chemistry in Everyday Life",
+      "topic": "Drugs",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Aspirin is chemically known as",
+      "options": {
+        "A": "Acetylsalicylic acid",
+        "B": "Paracetamol",
+        "C": "Ibuprofen",
+        "D": "Penicillin"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2023
+    },
+
+    {
+      "questionId": "NEET2023_BIO_1",
+      "questionNumber": 1,
+      "subject": "Biology",
+      "chapter": "Plant Kingdom",
+      "topic": "Bryophytes",
+      "difficulty": "easy",
+      "questionType": "assertion_reason",
+      "questionText": "Assertion A: The first stage of gametophyte in moss life cycle is protonema stage. Reason R: Protonema develops directly from spores produced in capsule.",
+      "options": {
+        "A": "A incorrect, R correct",
+        "B": "Both correct and R explains A",
+        "C": "Both correct but R does not explain A",
+        "D": "A correct, R incorrect"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_BIO_2",
+      "questionNumber": 2,
+      "subject": "Biology",
+      "chapter": "Plant Kingdom",
+      "topic": "Pteridophytes",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Identify heterosporous pteridophytes.",
+      "options": {
+        "A": "Equisetum and Salvinia",
+        "B": "Lycopodium and Selaginella",
+        "C": "Selaginella and Salvinia",
+        "D": "Psilotum and Salvinia"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_BIO_3",
+      "questionNumber": 3,
+      "subject": "Biology",
+      "chapter": "Morphology of Flowering Plants",
+      "topic": "Floral Characters",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Characteristic specific to Fabaceae family is",
+      "options": {
+        "A": "Epiphyllous and dithecous anthers",
+        "B": "Diadelphous and dithecous anthers",
+        "C": "Polyadelphous and epipetalous stamens",
+        "D": "Monoadelphous and monothecous anthers"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_BIO_4",
+      "questionNumber": 4,
+      "subject": "Biology",
+      "chapter": "Morphology of Flowering Plants",
+      "topic": "Placentation",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Axile placentation is observed in",
+      "options": {
+        "A": "China rose, Petunia and Lemon",
+        "B": "Mustard, Cucumber and Primrose",
+        "C": "China rose, Beans and Lupin",
+        "D": "Tomato, Dianthus and Pea"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_BIO_5",
+      "questionNumber": 5,
+      "subject": "Biology",
+      "chapter": "Anatomy of Flowering Plants",
+      "topic": "Xylem",
+      "difficulty": "medium",
+      "questionType": "statement_based",
+      "questionText": "Statement I: Endarch and exarch terms describe position of secondary xylem. Statement II: Exarch condition is common in roots.",
+      "options": {
+        "A": "Statement I incorrect but II true",
+        "B": "Both true",
+        "C": "Both false",
+        "D": "I true but II false"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_BIO_6",
+      "questionNumber": 6,
+      "subject": "Biology",
+      "chapter": "Anatomy of Flowering Plants",
+      "topic": "Secondary Growth",
+      "difficulty": "medium",
+      "questionType": "assertion_reason",
+      "questionText": "Assertion A: Late wood has fewer xylary elements with narrow vessels. Reason R: Cambium is less active in winters.",
+      "options": {
+        "A": "A false, R true",
+        "B": "Both true and R explains A",
+        "C": "Both true but R does not explain A",
+        "D": "A true, R false"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_BIO_7",
+      "questionNumber": 7,
+      "subject": "Biology",
+      "chapter": "Biomolecules",
+      "topic": "Carbohydrates",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Cellulose does not form blue colour with iodine because",
+      "options": {
+        "A": "It breaks down with iodine",
+        "B": "It is a disaccharide",
+        "C": "It is helical",
+        "D": "It does not contain complex helices"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_BIO_8",
+      "questionNumber": 8,
+      "subject": "Biology",
+      "chapter": "Cell Cycle and Cell Division",
+      "topic": "Cell Cycle",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "DNA replication in eukaryotes occurs in",
+      "options": {
+        "A": "G2 phase",
+        "B": "M phase",
+        "C": "S phase",
+        "D": "G1 phase"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_BIO_9",
+      "questionNumber": 9,
+      "subject": "Biology",
+      "chapter": "Cell Cycle and Cell Division",
+      "topic": "Meiosis",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Division of centromere occurs during",
+      "options": {
+        "A": "Telophase",
+        "B": "Metaphase I",
+        "C": "Metaphase II",
+        "D": "Anaphase II"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2023
+    },
+    {
+      "questionId": "NEET2023_BIO_10",
+      "questionNumber": 10,
+      "subject": "Biology",
+      "chapter": "Cell Cycle and Cell Division",
+      "topic": "Crossing Over",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Recombination nodules appear during which substage of Prophase I?",
+      "options": {
+        "A": "Diakinesis",
+        "B": "Pachytene",
+        "C": "Zygotene",
+        "D": "Diplotene"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2023
+    }
+  ]
+}

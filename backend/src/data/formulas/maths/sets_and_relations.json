@@ -1,0 +1,269 @@
+{
+  "chapterId": "math_sets_and_relations_025",
+  "fileName": "sets_and_relations.json",
+  "chapterName": "Sets and Relations",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "sets",
+    "relations",
+    "functions",
+    "venn-diagram",
+    "cartesian-product"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_set_001",
+      "conceptName": "Basic Set Concepts",
+      "description": "Fundamental definitions related to sets.",
+      "formulaType": "basic-set-formula",
+      "formulas": [
+        {
+          "formulaId": "math_set_001_f1",
+          "name": "Roster Form",
+          "equation": "A = {1,2,3}",
+          "latex": "A=\\{1,2,3\\}",
+          "meaning": "Representation of set by listing elements.",
+          "applications": ["Set representation", "Classification"]
+        },
+        {
+          "formulaId": "math_set_001_f2",
+          "name": "Set Builder Form",
+          "equation": "A = {x : condition}",
+          "latex": "A=\\{x:\\text{condition}\\}",
+          "meaning": "Representation using defining property."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_set_002",
+      "conceptName": "Types of Sets",
+      "description": "Different classifications of sets.",
+      "formulaType": "types-set-formula",
+      "formulas": [
+        {
+          "formulaId": "math_set_002_f1",
+          "name": "Empty Set",
+          "equation": "∅",
+          "latex": "\\emptyset",
+          "meaning": "Set with no elements."
+        },
+        {
+          "formulaId": "math_set_002_f2",
+          "name": "Subset Relation",
+          "equation": "A ⊆ B",
+          "latex": "A\\subseteq B",
+          "meaning": "Every element of A belongs to B."
+        },
+        {
+          "formulaId": "math_set_002_f3",
+          "name": "Proper Subset",
+          "equation": "A ⊂ B",
+          "latex": "A\\subset B",
+          "meaning": "A is subset but not equal to B."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_set_003",
+      "conceptName": "Operations on Sets",
+      "description": "Basic operations involving sets.",
+      "formulaType": "set-operation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_set_003_f1",
+          "name": "Union of Sets",
+          "equation": "A ∪ B",
+          "latex": "A\\cup B",
+          "meaning": "Elements belonging to A or B."
+        },
+        {
+          "formulaId": "math_set_003_f2",
+          "name": "Intersection of Sets",
+          "equation": "A ∩ B",
+          "latex": "A\\cap B",
+          "meaning": "Common elements of A and B."
+        },
+        {
+          "formulaId": "math_set_003_f3",
+          "name": "Difference of Sets",
+          "equation": "A - B",
+          "latex": "A-B",
+          "meaning": "Elements in A but not in B."
+        },
+        {
+          "formulaId": "math_set_003_f4",
+          "name": "Complement of Set",
+          "equation": "A'",
+          "latex": "A'",
+          "meaning": "Elements not belonging to A."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_set_004",
+      "conceptName": "Set Identities",
+      "description": "Important algebraic identities of sets.",
+      "formulaType": "set-identity-formula",
+      "formulas": [
+        {
+          "formulaId": "math_set_004_f1",
+          "name": "Commutative Law",
+          "equation": "A ∪ B = B ∪ A",
+          "latex": "A\\cup B=B\\cup A",
+          "meaning": "Union is commutative."
+        },
+        {
+          "formulaId": "math_set_004_f2",
+          "name": "Associative Law",
+          "equation": "(A ∪ B) ∪ C = A ∪ (B ∪ C)",
+          "latex": "(A\\cup B)\\cup C=A\\cup(B\\cup C)",
+          "meaning": "Associative property of union."
+        },
+        {
+          "formulaId": "math_set_004_f3",
+          "name": "De Morgan's Law",
+          "equation": "(A ∪ B)' = A' ∩ B'",
+          "latex": "(A\\cup B)'=A'\\cap B'",
+          "meaning": "Complement of union."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_set_005",
+      "conceptName": "Cardinality of Sets",
+      "description": "Number of elements in sets.",
+      "formulaType": "cardinality-formula",
+      "formulas": [
+        {
+          "formulaId": "math_set_005_f1",
+          "name": "Union Formula",
+          "equation": "n(A∪B)=n(A)+n(B)-n(A∩B)",
+          "latex": "n(A\\cup B)=n(A)+n(B)-n(A\\cap B)",
+          "meaning": "Counting elements in union."
+        },
+        {
+          "formulaId": "math_set_005_f2",
+          "name": "Three Set Formula",
+          "equation": "n(A∪B∪C)=n(A)+n(B)+n(C)-n(A∩B)-n(B∩C)-n(C∩A)+n(A∩B∩C)",
+          "latex": "n(A\\cup B\\cup C)=n(A)+n(B)+n(C)-n(A\\cap B)-n(B\\cap C)-n(C\\cap A)+n(A\\cap B\\cap C)",
+          "meaning": "Inclusion-exclusion principle."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_set_006",
+      "conceptName": "Cartesian Product",
+      "description": "Product of two sets.",
+      "formulaType": "cartesian-product-formula",
+      "formulas": [
+        {
+          "formulaId": "math_set_006_f1",
+          "name": "Cartesian Product",
+          "equation": "A × B = {(a,b): a∈A, b∈B}",
+          "latex": "A\\times B=\\{(a,b):a\\in A,b\\in B\\}",
+          "meaning": "Ordered pairs from two sets."
+        },
+        {
+          "formulaId": "math_set_006_f2",
+          "name": "Number of Elements",
+          "equation": "n(A×B)=n(A)n(B)",
+          "latex": "n(A\\times B)=n(A)n(B)",
+          "meaning": "Cardinality of cartesian product."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_set_007",
+      "conceptName": "Relations",
+      "description": "Relationship between elements of sets.",
+      "formulaType": "relation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_set_007_f1",
+          "name": "Relation Definition",
+          "equation": "R ⊆ A × B",
+          "latex": "R\\subseteq A\\times B",
+          "meaning": "Relation as subset of cartesian product."
+        },
+        {
+          "formulaId": "math_set_007_f2",
+          "name": "Total Relations",
+          "equation": "2ⁿ²",
+          "latex": "2^{n^2}",
+          "meaning": "Number of relations in set with n elements."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_set_008",
+      "conceptName": "Types of Relations",
+      "description": "Properties of relations.",
+      "formulaType": "relation-properties-formula",
+      "formulas": [
+        {
+          "formulaId": "math_set_008_f1",
+          "name": "Reflexive Relation",
+          "equation": "(a,a) ∈ R",
+          "latex": "(a,a)\\in R",
+          "meaning": "Every element related to itself."
+        },
+        {
+          "formulaId": "math_set_008_f2",
+          "name": "Symmetric Relation",
+          "equation": "(a,b)∈R ⇒ (b,a)∈R",
+          "latex": "(a,b)\\in R\\Rightarrow(b,a)\\in R",
+          "meaning": "Relation symmetric property."
+        },
+        {
+          "formulaId": "math_set_008_f3",
+          "name": "Transitive Relation",
+          "equation": "(a,b),(b,c)∈R ⇒ (a,c)∈R",
+          "latex": "(a,b),(b,c)\\in R\\Rightarrow(a,c)\\in R",
+          "meaning": "Transitive property."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_set_009",
+      "conceptName": "Equivalence Relation",
+      "description": "Special type of relation.",
+      "formulaType": "equivalence-formula",
+      "formulas": [
+        {
+          "formulaId": "math_set_009_f1",
+          "name": "Equivalence Relation",
+          "equation": "Reflexive + Symmetric + Transitive",
+          "latex": "\\text{Reflexive + Symmetric + Transitive}",
+          "meaning": "Conditions for equivalence relation."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Subset allows equality while proper subset does not.",
+    "Cartesian product produces ordered pairs.",
+    "Relations are subsets of cartesian products.",
+    "Equivalence relation must satisfy all three properties."
+  ],
+  "commonMistakes": [
+    "Confusing subset and proper subset",
+    "Wrong use of De Morgan's laws",
+    "Mistakes in counting relations",
+    "Ignoring ordered pair sequence"
+  ],
+  "jeeAdvancedFocus": [
+    "Equivalence relations",
+    "Advanced set identities",
+    "Cartesian product problems",
+    "Relation property proofs"
+  ],
+  "keywords": [
+    "sets",
+    "relations",
+    "venn diagram",
+    "cartesian product",
+    "subset",
+    "equivalence relation"
+  ]
+}

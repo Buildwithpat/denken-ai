@@ -1,0 +1,260 @@
+{
+  "chapterId": "math_fundamental_of_mathematics_011",
+  "fileName": "fundamental_of_mathematics.json",
+  "chapterName": "Fundamental of Mathematics",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": ["fundamentals", "mathematics", "algebra", "logarithm", "modulus"],
+  "concepts": [
+    {
+      "conceptId": "math_fund_001",
+      "conceptName": "Basic Algebraic Identities",
+      "description": "Important algebraic formulas.",
+      "formulaType": "algebraic-identity-formula",
+      "formulas": [
+        {
+          "formulaId": "math_fund_001_f1",
+          "name": "Square of Sum",
+          "equation": "(a+b)² = a² + 2ab + b²",
+          "latex": "(a+b)^2=a^2+2ab+b^2",
+          "meaning": "Expansion of square of sum."
+        },
+        {
+          "formulaId": "math_fund_001_f2",
+          "name": "Square of Difference",
+          "equation": "(a-b)² = a² - 2ab + b²",
+          "latex": "(a-b)^2=a^2-2ab+b^2",
+          "meaning": "Expansion of square of difference."
+        },
+        {
+          "formulaId": "math_fund_001_f3",
+          "name": "Difference of Squares",
+          "equation": "a²-b² = (a-b)(a+b)",
+          "latex": "a^2-b^2=(a-b)(a+b)",
+          "meaning": "Factorization identity."
+        },
+        {
+          "formulaId": "math_fund_001_f4",
+          "name": "Cube of Sum",
+          "equation": "(a+b)³ = a³+3a²b+3ab²+b³",
+          "latex": "(a+b)^3=a^3+3a^2b+3ab^2+b^3",
+          "meaning": "Expansion of cube of sum."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_fund_002",
+      "conceptName": "Indices and Exponents",
+      "description": "Laws of exponents.",
+      "formulaType": "indices-formula",
+      "formulas": [
+        {
+          "formulaId": "math_fund_002_f1",
+          "name": "Product Rule",
+          "equation": "aᵐ·aⁿ = aᵐ⁺ⁿ",
+          "latex": "a^m\\cdot a^n=a^{m+n}",
+          "meaning": "Addition of exponents."
+        },
+        {
+          "formulaId": "math_fund_002_f2",
+          "name": "Quotient Rule",
+          "equation": "aᵐ/aⁿ = aᵐ⁻ⁿ",
+          "latex": "\\frac{a^m}{a^n}=a^{m-n}",
+          "meaning": "Subtraction of exponents."
+        },
+        {
+          "formulaId": "math_fund_002_f3",
+          "name": "Power Rule",
+          "equation": "(aᵐ)ⁿ = aᵐⁿ",
+          "latex": "(a^m)^n=a^{mn}",
+          "meaning": "Power raised to power."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_fund_003",
+      "conceptName": "Logarithms",
+      "description": "Important logarithmic identities.",
+      "formulaType": "logarithm-formula",
+      "formulas": [
+        {
+          "formulaId": "math_fund_003_f1",
+          "name": "Product Law",
+          "equation": "logₐ(mn) = logₐm + logₐn",
+          "latex": "\\log_a(mn)=\\log_am+\\log_an",
+          "meaning": "Logarithm of product."
+        },
+        {
+          "formulaId": "math_fund_003_f2",
+          "name": "Quotient Law",
+          "equation": "logₐ(m/n) = logₐm - logₐn",
+          "latex": "\\log_a\\left(\\frac{m}{n}\\right)=\\log_am-\\log_an",
+          "meaning": "Logarithm of quotient."
+        },
+        {
+          "formulaId": "math_fund_003_f3",
+          "name": "Power Law",
+          "equation": "logₐ(mⁿ) = nlogₐm",
+          "latex": "\\log_a(m^n)=n\\log_am",
+          "meaning": "Exponent becomes multiplier."
+        },
+        {
+          "formulaId": "math_fund_003_f4",
+          "name": "Change of Base Formula",
+          "equation": "logₐb = logcb/logca",
+          "latex": "\\log_ab=\\frac{\\log_cb}{\\log_ca}",
+          "meaning": "Changing logarithm base."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_fund_004",
+      "conceptName": "Modulus Function",
+      "description": "Properties of absolute value.",
+      "formulaType": "modulus-formula",
+      "formulas": [
+        {
+          "formulaId": "math_fund_004_f1",
+          "name": "Definition of Modulus",
+          "equation": "|x| = x if x≥0, -x if x<0",
+          "latex": "|x|=\\begin{cases}x,&x\\ge0\\\\-x,&x<0\\end{cases}",
+          "meaning": "Piecewise definition of modulus."
+        },
+        {
+          "formulaId": "math_fund_004_f2",
+          "name": "Modulus Property",
+          "equation": "|ab| = |a||b|",
+          "latex": "|ab|=|a||b|",
+          "meaning": "Product property of modulus."
+        },
+        {
+          "formulaId": "math_fund_004_f3",
+          "name": "Triangle Inequality",
+          "equation": "|a+b| ≤ |a| + |b|",
+          "latex": "|a+b|\\le|a|+|b|",
+          "meaning": "Important modulus inequality."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_fund_005",
+      "conceptName": "Inequalities",
+      "description": "Basic inequality formulas.",
+      "formulaType": "inequality-formula",
+      "formulas": [
+        {
+          "formulaId": "math_fund_005_f1",
+          "name": "AM ≥ GM",
+          "equation": "(a+b)/2 ≥ √ab",
+          "latex": "\\frac{a+b}{2}\\ge\\sqrt{ab}",
+          "meaning": "Arithmetic mean greater than geometric mean."
+        },
+        {
+          "formulaId": "math_fund_005_f2",
+          "name": "Equality Condition",
+          "equation": "a = b",
+          "latex": "a=b",
+          "meaning": "Equality holds in AM-GM."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_fund_006",
+      "conceptName": "Sets",
+      "description": "Basic set formulas.",
+      "formulaType": "set-formula",
+      "formulas": [
+        {
+          "formulaId": "math_fund_006_f1",
+          "name": "Union Formula",
+          "equation": "n(A∪B) = n(A)+n(B)-n(A∩B)",
+          "latex": "n(A\\cup B)=n(A)+n(B)-n(A\\cap B)",
+          "meaning": "Formula for union of sets."
+        },
+        {
+          "formulaId": "math_fund_006_f2",
+          "name": "Complement Formula",
+          "equation": "A∪A' = U",
+          "latex": "A\\cup A'=U",
+          "meaning": "Union with complement gives universal set."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_fund_007",
+      "conceptName": "Functions",
+      "description": "Important function concepts.",
+      "formulaType": "function-formula",
+      "formulas": [
+        {
+          "formulaId": "math_fund_007_f1",
+          "name": "Composite Function",
+          "equation": "(f∘g)(x) = f(g(x))",
+          "latex": "(f\\circ g)(x)=f(g(x))",
+          "meaning": "Composition of functions."
+        },
+        {
+          "formulaId": "math_fund_007_f2",
+          "name": "Inverse Function",
+          "equation": "f(f⁻¹(x)) = x",
+          "latex": "f(f^{-1}(x))=x",
+          "meaning": "Property of inverse function."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_fund_008",
+      "conceptName": "Complex Numbers Basics",
+      "description": "Basic formulas of complex numbers.",
+      "formulaType": "complex-number-formula",
+      "formulas": [
+        {
+          "formulaId": "math_fund_008_f1",
+          "name": "Imaginary Unit",
+          "equation": "i² = -1",
+          "latex": "i^2=-1",
+          "meaning": "Fundamental property of imaginary unit."
+        },
+        {
+          "formulaId": "math_fund_008_f2",
+          "name": "Modulus of Complex Number",
+          "equation": "|z| = √(a²+b²)",
+          "latex": "|z|=\\sqrt{a^2+b^2}",
+          "meaning": "Magnitude of complex number."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Algebraic identities are frequently used in simplification.",
+    "Logarithm laws are valid only for positive values.",
+    "AM ≥ GM holds for non-negative numbers.",
+    "Modulus always gives non-negative result."
+  ],
+  "commonMistakes": [
+    "Wrong logarithm manipulation",
+    "Ignoring modulus sign conditions",
+    "Errors in exponent rules",
+    "Incorrect inequality application"
+  ],
+  "jeeAdvancedFocus": [
+    "Advanced inequalities",
+    "Functional identities",
+    "Modulus equations",
+    "Complex algebra simplification"
+  ],
+  "neetFocus": [
+    "Basic algebraic identities",
+    "Logarithm laws",
+    "Modulus basics",
+    "Set formulas"
+  ],
+  "keywords": [
+    "fundamental mathematics",
+    "algebra",
+    "logarithm",
+    "modulus",
+    "inequalities",
+    "functions"
+  ]
+}

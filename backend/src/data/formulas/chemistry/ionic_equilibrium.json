@@ -1,0 +1,248 @@
+{
+  "chapterId": "chem_ionic_equilibrium_006",
+  "fileName": "ionic_equilibrium.json",
+  "chapterName": "Ionic Equilibrium",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "ionic-equilibrium",
+    "ph",
+    "buffer-solution",
+    "solubility-product",
+    "hydrolysis",
+    "acid-base"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_ionic_001",
+      "conceptName": "Acids and Bases",
+      "description": "Basic concepts of acids and bases.",
+      "formulaType": "acid-base-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ionic_001_f1",
+          "name": "Ionic Product of Water",
+          "equation": "Kw = [H⁺][OH⁻]",
+          "latex": "K_w=[H^+][OH^-]",
+          "meaning": "Ionic product constant of water.",
+          "variables": {
+            "Kw": {
+              "meaning": "Ionic product constant",
+              "unit": "mol²L⁻²"
+            }
+          },
+          "applications": ["pH calculations", "Acid-base equilibrium"]
+        },
+        {
+          "formulaId": "chem_ionic_001_f2",
+          "name": "At 25°C",
+          "equation": "Kw = 1 × 10⁻¹⁴",
+          "latex": "K_w=1\\times10^{-14}",
+          "meaning": "Value of ionic product at room temperature."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ionic_002",
+      "conceptName": "pH and pOH",
+      "description": "Measurement of acidity and basicity.",
+      "formulaType": "ph-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ionic_002_f1",
+          "name": "pH Formula",
+          "equation": "pH = -log[H⁺]",
+          "latex": "pH=-\\log[H^+]",
+          "meaning": "Measure of hydrogen ion concentration."
+        },
+        {
+          "formulaId": "chem_ionic_002_f2",
+          "name": "pOH Formula",
+          "equation": "pOH = -log[OH⁻]",
+          "latex": "pOH=-\\log[OH^-]",
+          "meaning": "Measure of hydroxide ion concentration."
+        },
+        {
+          "formulaId": "chem_ionic_002_f3",
+          "name": "Relation Between pH and pOH",
+          "equation": "pH + pOH = 14",
+          "latex": "pH+pOH=14",
+          "meaning": "Relation at 25°C."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ionic_003",
+      "conceptName": "Weak Acid and Weak Base",
+      "description": "Dissociation of weak electrolytes.",
+      "formulaType": "dissociation-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ionic_003_f1",
+          "name": "Acid Dissociation Constant",
+          "equation": "Ka = [H⁺][A⁻]/[HA]",
+          "latex": "K_a=\\frac{[H^+][A^-]}{[HA]}",
+          "meaning": "Equilibrium constant for weak acid."
+        },
+        {
+          "formulaId": "chem_ionic_003_f2",
+          "name": "Base Dissociation Constant",
+          "equation": "Kb = [BH⁺][OH⁻]/[B]",
+          "latex": "K_b=\\frac{[BH^+][OH^-]}{[B]}",
+          "meaning": "Equilibrium constant for weak base."
+        },
+        {
+          "formulaId": "chem_ionic_003_f3",
+          "name": "Relation Between Ka and Kb",
+          "equation": "Ka × Kb = Kw",
+          "latex": "K_a\\times K_b=K_w",
+          "meaning": "Relation for conjugate acid-base pair."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ionic_004",
+      "conceptName": "Degree of Dissociation",
+      "description": "Extent of ionization of weak electrolytes.",
+      "formulaType": "dissociation-degree-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ionic_004_f1",
+          "name": "Degree of Dissociation",
+          "equation": "α = Ionized moles / Initial moles",
+          "latex": "\\alpha=\\frac{\\text{Ionized moles}}{\\text{Initial moles}}",
+          "meaning": "Fraction of electrolyte ionized."
+        },
+        {
+          "formulaId": "chem_ionic_004_f2",
+          "name": "Ostwald Dilution Law",
+          "equation": "Ka = Cα²/(1-α)",
+          "latex": "K_a=\\frac{C\\alpha^2}{1-\\alpha}",
+          "meaning": "Relation for weak electrolytes."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ionic_005",
+      "conceptName": "Buffer Solution",
+      "description": "Solutions resisting change in pH.",
+      "formulaType": "buffer-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ionic_005_f1",
+          "name": "Henderson Equation for Acidic Buffer",
+          "equation": "pH = pKa + log([Salt]/[Acid])",
+          "latex": "pH=pK_a+\\log\\left(\\frac{[Salt]}{[Acid]}\\right)",
+          "meaning": "pH of acidic buffer."
+        },
+        {
+          "formulaId": "chem_ionic_005_f2",
+          "name": "Henderson Equation for Basic Buffer",
+          "equation": "pOH = pKb + log([Salt]/[Base])",
+          "latex": "pOH=pK_b+\\log\\left(\\frac{[Salt]}{[Base]}\\right)",
+          "meaning": "pOH of basic buffer."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ionic_006",
+      "conceptName": "Salt Hydrolysis",
+      "description": "Reaction of salt ions with water.",
+      "formulaType": "hydrolysis-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ionic_006_f1",
+          "name": "Hydrolysis Constant",
+          "equation": "Kh = Kw/KaKb",
+          "latex": "K_h=\\frac{K_w}{K_aK_b}",
+          "meaning": "Hydrolysis constant for salt."
+        },
+        {
+          "formulaId": "chem_ionic_006_f2",
+          "name": "Degree of Hydrolysis",
+          "equation": "h = √(Kh/C)",
+          "latex": "h=\\sqrt{\\frac{K_h}{C}}",
+          "meaning": "Extent of hydrolysis."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ionic_007",
+      "conceptName": "Solubility Product",
+      "description": "Equilibrium in sparingly soluble salts.",
+      "formulaType": "solubility-product-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ionic_007_f1",
+          "name": "Solubility Product",
+          "equation": "Ksp = [M⁺]^m[A⁻]^n",
+          "latex": "K_{sp}=[M^+]^m[A^-]^n",
+          "meaning": "Equilibrium constant for sparingly soluble salt."
+        },
+        {
+          "formulaId": "chem_ionic_007_f2",
+          "name": "Solubility of AB Type Salt",
+          "equation": "Ksp = s²",
+          "latex": "K_{sp}=s^2",
+          "meaning": "Solubility relation for 1:1 electrolyte."
+        },
+        {
+          "formulaId": "chem_ionic_007_f3",
+          "name": "Solubility of AB₂ Type Salt",
+          "equation": "Ksp = 4s³",
+          "latex": "K_{sp}=4s^3",
+          "meaning": "Solubility relation for 1:2 electrolyte."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ionic_008",
+      "conceptName": "Common Ion Effect",
+      "description": "Suppression of ionization by common ion.",
+      "formulaType": "common-ion-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ionic_008_f1",
+          "name": "Suppression Relation",
+          "equation": "Ionization decreases in presence of common ion",
+          "latex": "\\text{Ionization decreases in presence of common ion}",
+          "meaning": "Effect of common ion on equilibrium."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Strong acids and bases ionize completely.",
+    "pH less than 7 indicates acidic solution.",
+    "Buffer solutions resist change in pH.",
+    "Common ion decreases solubility of sparingly soluble salts."
+  ],
+  "commonMistakes": [
+    "Using natural log instead of common log",
+    "Confusing Ka and Kb",
+    "Wrong pH calculation for weak acids",
+    "Incorrect Ksp expressions"
+  ],
+  "jeeAdvancedFocus": [
+    "Buffer calculations",
+    "Salt hydrolysis numericals",
+    "Solubility product problems",
+    "Mixed equilibrium concepts"
+  ],
+  "neetFocus": [
+    "pH calculations",
+    "Buffer solutions",
+    "Ka and Kb relations",
+    "Solubility product"
+  ],
+  "keywords": [
+    "ionic equilibrium",
+    "pH",
+    "buffer solution",
+    "solubility product",
+    "salt hydrolysis",
+    "common ion effect",
+    "acid base equilibrium",
+    "Ka and Kb"
+  ]
+}

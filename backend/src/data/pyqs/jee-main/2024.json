@@ -1,0 +1,577 @@
+{
+  "questions": [
+    {
+      "questionId": "JM2024_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Units and Measurements",
+      "topic": "Error Analysis",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "The resistance R = V/I where V=(200±5)V and I=(20±0.2)A. Percentage error in R is",
+      "options": {
+        "A": "3.5%",
+        "B": "7%",
+        "C": "3%",
+        "D": "5.5%"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Kinematics",
+      "topic": "Equations of Motion",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A body starts from rest with constant acceleration. It covers displacement S1 in first (p−1)s and S2 in first ps. Time in which S1+S2 is covered is",
+      "options": {
+        "A": "(2p+1)s",
+        "B": "√(2p²−2p+1)s",
+        "C": "(2p−1)s",
+        "D": "(2p²−2p+1)s"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Circular Motion",
+      "topic": "Centripetal Force",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "If radius of curvature of two particles are in ratio 3:4 and centripetal force is same, ratio of velocities is",
+      "options": {
+        "A": "√3:2",
+        "B": "1:√3",
+        "C": "√3:1",
+        "D": "2:√3"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Work Power and Energy",
+      "topic": "Friction",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "A 100 kg block slides 10 m on rough horizontal surface with coefficient of friction 0.4. Work done against friction is",
+      "options": {
+        "A": "4200 J",
+        "B": "3900 J",
+        "C": "4000 J",
+        "D": "4500 J"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "Work Power and Energy",
+      "topic": "Potential Energy",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Potential energy function is U=(2x²+3y³+2z). Magnitude of x-component of force at (1,2,3) is",
+      "options": {
+        "A": "2 N",
+        "B": "6 N",
+        "C": "4 N",
+        "D": "8 N"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Gravitation",
+      "topic": "Variation of g",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "At what distance above and below earth surface will body have same weight?",
+      "options": {
+        "A": "√5R−R",
+        "B": "√3R−R",
+        "C": "R/2",
+        "D": "(√5R−R)/2"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "Mechanical Properties of Fluids",
+      "topic": "Capillarity",
+      "difficulty": "easy",
+      "questionType": "assertion_reason",
+      "questionText": "Statement I: Capillary rise is smaller in hot water. Statement II: Capillary rise is smaller in cold water.",
+      "options": {
+        "A": "Both true",
+        "B": "Both false",
+        "C": "I true II false",
+        "D": "I false II true"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "Thermodynamics",
+      "topic": "PV Work",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Total work done by gas in given thermodynamic cycle is",
+      "options": {
+        "A": "33800 J",
+        "B": "2200 J",
+        "C": "600 J",
+        "D": "800 J"
+      },
+      "correctAnswer": "D",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "Kinetic Theory of Gases",
+      "topic": "Ideal Gas Equation",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Two vessels contain 1 g H₂ and 1 g O₂ at same temperature and volume. Ratio of pressures PA/PB is",
+      "options": {
+        "A": "16",
+        "B": "8",
+        "C": "4",
+        "D": "32"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Electrostatics",
+      "topic": "Electric Flux",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Charges 5Q and −2Q are at (3a,0) and (−5a,0). Electric flux through sphere radius 4a centred at origin is",
+      "options": {
+        "A": "2Q/ε₀",
+        "B": "5Q/ε₀",
+        "C": "7Q/ε₀",
+        "D": "3Q/ε₀"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+
+    {
+      "questionId": "JM2024_CHEM_1",
+      "questionNumber": 31,
+      "subject": "Chemistry",
+      "chapter": "Atomic Structure",
+      "topic": "Quantum Numbers",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Maximum number of electrons in n=4 shell is",
+      "options": {
+        "A": "16",
+        "B": "18",
+        "C": "32",
+        "D": "8"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_CHEM_2",
+      "questionNumber": 32,
+      "subject": "Chemistry",
+      "chapter": "Chemical Bonding",
+      "topic": "Hybridisation",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Hybridisation and geometry of XeF₄ are",
+      "options": {
+        "A": "sp³d², square planar",
+        "B": "sp³d, trigonal bipyramidal",
+        "C": "sp³, tetrahedral",
+        "D": "dsp², square planar"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_CHEM_3",
+      "questionNumber": 33,
+      "subject": "Chemistry",
+      "chapter": "Thermodynamics",
+      "topic": "Enthalpy",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "For exothermic reaction, ΔH is",
+      "options": {
+        "A": "Positive",
+        "B": "Negative",
+        "C": "Zero",
+        "D": "Infinite"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_CHEM_4",
+      "questionNumber": 34,
+      "subject": "Chemistry",
+      "chapter": "Equilibrium",
+      "topic": "Le Chatelier Principle",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Increase in pressure favors reaction having",
+      "options": {
+        "A": "More gaseous moles",
+        "B": "Less gaseous moles",
+        "C": "Equal gaseous moles",
+        "D": "No gases"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_CHEM_5",
+      "questionNumber": 35,
+      "subject": "Chemistry",
+      "chapter": "Electrochemistry",
+      "topic": "Electrochemical Cell",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Standard EMF of Daniell cell is",
+      "options": {
+        "A": "0.34 V",
+        "B": "1.10 V",
+        "C": "1.50 V",
+        "D": "2.20 V"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_CHEM_6",
+      "questionNumber": 36,
+      "subject": "Chemistry",
+      "chapter": "Coordination Compounds",
+      "topic": "Ligands",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which ligand is ambidentate?",
+      "options": {
+        "A": "NH₃",
+        "B": "NO₂⁻",
+        "C": "H₂O",
+        "D": "en"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_CHEM_7",
+      "questionNumber": 37,
+      "subject": "Chemistry",
+      "chapter": "Haloalkanes and Haloarenes",
+      "topic": "SN1 Reaction",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Tertiary alkyl halides generally undergo",
+      "options": {
+        "A": "SN2",
+        "B": "SN1",
+        "C": "E2 only",
+        "D": "No reaction"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_CHEM_8",
+      "questionNumber": 38,
+      "subject": "Chemistry",
+      "chapter": "Alcohols Phenols and Ethers",
+      "topic": "Acidity",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Phenol is more acidic than ethanol because",
+      "options": {
+        "A": "Phenoxide ion is resonance stabilized",
+        "B": "Phenol has higher molar mass",
+        "C": "Phenol has hydrogen bonding",
+        "D": "Ethanol is volatile"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_CHEM_9",
+      "questionNumber": 39,
+      "subject": "Chemistry",
+      "chapter": "Biomolecules",
+      "topic": "Proteins",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Proteins are polymers of",
+      "options": {
+        "A": "Glucose",
+        "B": "Fatty acids",
+        "C": "Amino acids",
+        "D": "Nucleotides"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_CHEM_10",
+      "questionNumber": 40,
+      "subject": "Chemistry",
+      "chapter": "Polymers",
+      "topic": "Synthetic Polymers",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Nylon-6,6 is formed by condensation of",
+      "options": {
+        "A": "Styrene",
+        "B": "Caprolactam",
+        "C": "Hexamethylene diamine and adipic acid",
+        "D": "Ethylene glycol and terephthalic acid"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+
+    {
+      "questionId": "JM2024_MATH_1",
+      "questionNumber": 61,
+      "subject": "Mathematics",
+      "chapter": "Functions",
+      "topic": "Basic Functions",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "If f(x)=x²+1 then f(2)=",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "5",
+        "D": "4"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_MATH_2",
+      "questionNumber": 62,
+      "subject": "Mathematics",
+      "chapter": "Quadratic Equations",
+      "topic": "Roots",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Roots of x²−5x+6=0 are",
+      "options": {
+        "A": "2,3",
+        "B": "1,6",
+        "C": "-2,-3",
+        "D": "0,6"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_MATH_3",
+      "questionNumber": 63,
+      "subject": "Mathematics",
+      "chapter": "Matrices",
+      "topic": "Determinants",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "If determinant of matrix [[a,b],[c,d]] is zero then",
+      "options": {
+        "A": "ad−bc=0",
+        "B": "ab−cd=0",
+        "C": "ac−bd=0",
+        "D": "a+b+c+d=0"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_MATH_4",
+      "questionNumber": 64,
+      "subject": "Mathematics",
+      "chapter": "Differentiation",
+      "topic": "Derivatives",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Derivative of sinx is",
+      "options": {
+        "A": "cosx",
+        "B": "-cosx",
+        "C": "sinx",
+        "D": "-sinx"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_MATH_5",
+      "questionNumber": 65,
+      "subject": "Mathematics",
+      "chapter": "Application of Derivatives",
+      "topic": "Maxima Minima",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Maximum value of sinx is",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "π"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_MATH_6",
+      "questionNumber": 66,
+      "subject": "Mathematics",
+      "chapter": "Integrals",
+      "topic": "Indefinite Integration",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "∫x²dx equals",
+      "options": {
+        "A": "x³/3 + C",
+        "B": "x²/2 + C",
+        "C": "2x + C",
+        "D": "3x² + C"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_MATH_7",
+      "questionNumber": 67,
+      "subject": "Mathematics",
+      "chapter": "Coordinate Geometry",
+      "topic": "Straight Line",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Slope of line y=2x+3 is",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "-2",
+        "D": "1"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_MATH_8",
+      "questionNumber": 68,
+      "subject": "Mathematics",
+      "chapter": "Probability",
+      "topic": "Basic Probability",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Probability of getting head in fair coin toss is",
+      "options": {
+        "A": "0",
+        "B": "1/4",
+        "C": "1/2",
+        "D": "1"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_MATH_9",
+      "questionNumber": 69,
+      "subject": "Mathematics",
+      "chapter": "Complex Numbers",
+      "topic": "Imaginary Unit",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Value of i² is",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "i",
+        "D": "0"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    },
+    {
+      "questionId": "JM2024_MATH_10",
+      "questionNumber": 70,
+      "subject": "Mathematics",
+      "chapter": "Vectors",
+      "topic": "Dot Product",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Dot product of perpendicular vectors is",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "0",
+        "D": "∞"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2024
+    }
+  ]
+}

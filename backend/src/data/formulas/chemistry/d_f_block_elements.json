@@ -1,0 +1,232 @@
+{
+  "chapterId": "chem_d_f_block_elements_017",
+  "fileName": "d_f_block_elements.json",
+  "chapterName": "d & f Block Elements",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "d-block-elements",
+    "f-block-elements",
+    "transition-elements",
+    "lanthanides",
+    "actinides",
+    "magnetic-properties"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_df_001",
+      "conceptName": "Transition Elements",
+      "description": "Elements having partially filled d-orbitals.",
+      "formulaType": "transition-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_df_001_f1",
+          "name": "Transition Element Condition",
+          "equation": "(n-1)d orbital partially filled",
+          "latex": "(n-1)d\\text{ orbital partially filled}",
+          "meaning": "Characteristic condition for transition elements.",
+          "applications": [
+            "Electronic configuration",
+            "Oxidation state analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_df_002",
+      "conceptName": "Electronic Configuration",
+      "description": "General electronic configuration of d-block elements.",
+      "formulaType": "configuration-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_df_002_f1",
+          "name": "General Configuration",
+          "equation": "(n-1)d¹⁻¹⁰ ns⁰⁻²",
+          "latex": "(n-1)d^{1-10}ns^{0-2}",
+          "meaning": "General electronic configuration of d-block elements."
+        },
+        {
+          "formulaId": "chem_df_002_f2",
+          "name": "Lanthanide Configuration",
+          "equation": "[Xe] 4f¹⁻¹⁴ 5d⁰⁻¹ 6s²",
+          "latex": "[Xe]\\,4f^{1-14}5d^{0-1}6s^2",
+          "meaning": "General electronic configuration of lanthanides."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_df_003",
+      "conceptName": "Oxidation States",
+      "description": "Variable oxidation states of transition elements.",
+      "formulaType": "oxidation-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_df_003_f1",
+          "name": "Maximum Oxidation State",
+          "equation": "Maximum oxidation state = Total ns + (n-1)d electrons",
+          "latex": "\\text{Maximum oxidation state}=\\text{Total }ns+(n-1)d\\text{ electrons}",
+          "meaning": "Highest oxidation state possible."
+        },
+        {
+          "formulaId": "chem_df_003_f2",
+          "name": "Mn Highest Oxidation State",
+          "equation": "Mn → +7",
+          "latex": "Mn\\rightarrow+7",
+          "meaning": "Highest oxidation state in first transition series."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_df_004",
+      "conceptName": "Magnetic Properties",
+      "description": "Magnetic behavior due to unpaired electrons.",
+      "formulaType": "magnetic-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_df_004_f1",
+          "name": "Magnetic Moment",
+          "equation": "μ = √n(n+2) BM",
+          "latex": "\\mu=\\sqrt{n(n+2)}\\,BM",
+          "meaning": "Spin only magnetic moment formula."
+        },
+        {
+          "formulaId": "chem_df_004_f2",
+          "name": "Paramagnetic Condition",
+          "equation": "Presence of unpaired electrons → Paramagnetism",
+          "latex": "\\text{Presence of unpaired electrons}\\rightarrow\\text{Paramagnetism}",
+          "meaning": "Condition for paramagnetism."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_df_005",
+      "conceptName": "Color of Transition Elements",
+      "description": "Origin of color in transition compounds.",
+      "formulaType": "color-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_df_005_f1",
+          "name": "Color Origin",
+          "equation": "Color due to d-d electronic transitions",
+          "latex": "\\text{Color due to }d-d\\text{ electronic transitions}",
+          "meaning": "Cause of color in transition compounds."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_df_006",
+      "conceptName": "Catalytic Activity",
+      "description": "Catalytic properties of transition elements.",
+      "formulaType": "catalysis-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_df_006_f1",
+          "name": "Catalytic Principle",
+          "equation": "Variable oxidation states facilitate catalysis",
+          "latex": "\\text{Variable oxidation states facilitate catalysis}",
+          "meaning": "Reason for catalytic behavior."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_df_007",
+      "conceptName": "Lanthanide Contraction",
+      "description": "Gradual decrease in atomic size across lanthanides.",
+      "formulaType": "lanthanide-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_df_007_f1",
+          "name": "Lanthanide Contraction",
+          "equation": "Atomic radius decreases from La to Lu",
+          "latex": "\\text{Atomic radius decreases from La to Lu}",
+          "meaning": "Effect due to poor shielding by 4f electrons."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_df_008",
+      "conceptName": "Actinides",
+      "description": "Properties of actinide series elements.",
+      "formulaType": "actinide-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_df_008_f1",
+          "name": "Actinide Configuration",
+          "equation": "[Rn] 5f¹⁻¹⁴ 6d⁰⁻¹ 7s²",
+          "latex": "[Rn]\\,5f^{1-14}6d^{0-1}7s^2",
+          "meaning": "General electronic configuration of actinides."
+        },
+        {
+          "formulaId": "chem_df_008_f2",
+          "name": "Radioactivity Trend",
+          "equation": "All actinides are radioactive",
+          "latex": "\\text{All actinides are radioactive}",
+          "meaning": "Characteristic property of actinides."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_df_009",
+      "conceptName": "Important Compounds",
+      "description": "Key compounds of transition elements.",
+      "formulaType": "compound-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_df_009_f1",
+          "name": "Potassium Permanganate",
+          "equation": "KMnO₄",
+          "latex": "KMnO_4",
+          "meaning": "Strong oxidizing agent."
+        },
+        {
+          "formulaId": "chem_df_009_f2",
+          "name": "Potassium Dichromate",
+          "equation": "K₂Cr₂O₇",
+          "latex": "K_2Cr_2O_7",
+          "meaning": "Important oxidizing agent."
+        },
+        {
+          "formulaId": "chem_df_009_f3",
+          "name": "Chromyl Chloride",
+          "equation": "CrO₂Cl₂",
+          "latex": "CrO_2Cl_2",
+          "meaning": "Used in chromyl chloride test."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Transition elements show variable oxidation states.",
+    "Lanthanide contraction affects atomic size and properties.",
+    "Transition metals form colored compounds.",
+    "Actinides are radioactive in nature."
+  ],
+  "commonMistakes": [
+    "Incorrect electronic configuration",
+    "Wrong oxidation state assignment",
+    "Confusing lanthanides and actinides",
+    "Wrong magnetic moment calculation"
+  ],
+  "jeeAdvancedFocus": [
+    "Magnetic moment calculations",
+    "Lanthanide contraction effects",
+    "Oxidation state trends",
+    "Color and catalytic properties"
+  ],
+  "neetFocus": [
+    "Transition element properties",
+    "Lanthanide contraction",
+    "Important compounds",
+    "Magnetic properties"
+  ],
+  "keywords": [
+    "d block elements",
+    "f block elements",
+    "transition metals",
+    "lanthanide contraction",
+    "magnetic moment",
+    "oxidation states",
+    "KMnO4",
+    "K2Cr2O7"
+  ]
+}

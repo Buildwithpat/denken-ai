@@ -1,0 +1,226 @@
+{
+  "chapterId": "physics_principle_of_communication_028",
+  "fileName": "principle_of_communication.json",
+  "chapterName": "Principle of Communication",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "NEET"],
+  "tags": [
+    "communication-system",
+    "modulation",
+    "amplitude-modulation",
+    "bandwidth",
+    "signal-transmission",
+    "wave-propagation"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_comm_001",
+      "conceptName": "Communication System Basics",
+      "description": "Fundamental blocks and parameters of communication systems.",
+      "formulaType": "basic-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_comm_001_f1",
+          "name": "Bandwidth",
+          "equation": "BW = fH - fL",
+          "latex": "BW=f_H-f_L",
+          "meaning": "Difference between highest and lowest frequency.",
+          "variables": {
+            "BW": {
+              "meaning": "Bandwidth",
+              "unit": "Hz"
+            },
+            "fH": {
+              "meaning": "Highest frequency",
+              "unit": "Hz"
+            },
+            "fL": {
+              "meaning": "Lowest frequency",
+              "unit": "Hz"
+            }
+          },
+          "applications": ["Signal transmission", "Communication channels"]
+        },
+        {
+          "formulaId": "phy_comm_001_f2",
+          "name": "Time Period Relation",
+          "equation": "T = 1/f",
+          "latex": "T=\\frac{1}{f}",
+          "meaning": "Relation between frequency and time period."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_comm_002",
+      "conceptName": "Amplitude Modulation",
+      "description": "Variation of carrier amplitude according to message signal.",
+      "formulaType": "am-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_comm_002_f1",
+          "name": "Modulation Index",
+          "equation": "m = Am/Ac",
+          "latex": "m=\\frac{A_m}{A_c}",
+          "meaning": "Ratio of message amplitude to carrier amplitude."
+        },
+        {
+          "formulaId": "phy_comm_002_f2",
+          "name": "Alternative Modulation Index Formula",
+          "equation": "m = (Amax - Amin)/(Amax + Amin)",
+          "latex": "m=\\frac{A_{max}-A_{min}}{A_{max}+A_{min}}",
+          "meaning": "Modulation index from AM wave envelope."
+        },
+        {
+          "formulaId": "phy_comm_002_f3",
+          "name": "AM Wave Equation",
+          "equation": "y = Ac(1 + m cosωmt)cosωct",
+          "latex": "y=A_c(1+m\\cos\\omega_mt)\\cos\\omega_ct",
+          "meaning": "Expression for amplitude modulated wave."
+        },
+        {
+          "formulaId": "phy_comm_002_f4",
+          "name": "Bandwidth of AM Wave",
+          "equation": "BW = 2fm",
+          "latex": "BW=2f_m",
+          "meaning": "Bandwidth required for AM transmission."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_comm_003",
+      "conceptName": "Power in AM Wave",
+      "description": "Distribution of power in carrier and sidebands.",
+      "formulaType": "power-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_comm_003_f1",
+          "name": "Carrier Power",
+          "equation": "Pc = Ac²/2R",
+          "latex": "P_c=\\frac{A_c^2}{2R}",
+          "meaning": "Power carried by carrier wave."
+        },
+        {
+          "formulaId": "phy_comm_003_f2",
+          "name": "Total Power in AM Wave",
+          "equation": "Pt = Pc(1 + m²/2)",
+          "latex": "P_t=P_c\\left(1+\\frac{m^2}{2}\\right)",
+          "meaning": "Total transmitted power."
+        },
+        {
+          "formulaId": "phy_comm_003_f3",
+          "name": "Power in Sidebands",
+          "equation": "Ps = Pc(m²/2)",
+          "latex": "P_s=P_c\\frac{m^2}{2}",
+          "meaning": "Power in both sidebands together."
+        },
+        {
+          "formulaId": "phy_comm_003_f4",
+          "name": "Transmission Efficiency",
+          "equation": "η = m²/(m² + 2)",
+          "latex": "\\eta=\\frac{m^2}{m^2+2}",
+          "meaning": "Efficiency of AM transmission."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_comm_004",
+      "conceptName": "Propagation of Electromagnetic Waves",
+      "description": "Modes of propagation used in communication.",
+      "formulaType": "propagation-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_comm_004_f1",
+          "name": "Maximum Line of Sight Distance",
+          "equation": "d = √(2Rh)",
+          "latex": "d=\\sqrt{2Rh}",
+          "meaning": "Distance to horizon for antenna."
+        },
+        {
+          "formulaId": "phy_comm_004_f2",
+          "name": "Range Between Two Antennas",
+          "equation": "d = √(2Rh₁) + √(2Rh₂)",
+          "latex": "d=\\sqrt{2Rh_1}+\\sqrt{2Rh_2}",
+          "meaning": "Maximum communication range."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_comm_005",
+      "conceptName": "Signal Transmission",
+      "description": "Transmission and reception of signals.",
+      "formulaType": "signal-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_comm_005_f1",
+          "name": "Frequency Relation",
+          "equation": "ω = 2πf",
+          "latex": "\\omega=2\\pi f",
+          "meaning": "Angular frequency relation."
+        },
+        {
+          "formulaId": "phy_comm_005_f2",
+          "name": "Wave Speed Relation",
+          "equation": "v = fλ",
+          "latex": "v=f\\lambda",
+          "meaning": "Relation between wave speed, frequency and wavelength."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_comm_006",
+      "conceptName": "Digital Communication Basics",
+      "description": "Basic binary signal representation.",
+      "formulaType": "digital-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_comm_006_f1",
+          "name": "Bit Rate",
+          "equation": "Bit Rate = 1/Tb",
+          "latex": "\\text{Bit Rate}=\\frac{1}{T_b}",
+          "meaning": "Bits transmitted per second."
+        },
+        {
+          "formulaId": "phy_comm_006_f2",
+          "name": "Nyquist Sampling Criterion",
+          "equation": "fs ≥ 2fm",
+          "latex": "f_s\\geq2f_m",
+          "meaning": "Minimum sampling frequency."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Modulation is necessary for efficient long-distance transmission.",
+    "Bandwidth of AM wave is twice the message frequency.",
+    "Sky wave propagation is used for long-distance radio communication.",
+    "Line of sight communication is used for TV and microwave transmission."
+  ],
+  "commonMistakes": [
+    "Using wrong modulation index formula",
+    "Confusing carrier and message frequencies",
+    "Ignoring units in bandwidth calculation",
+    "Wrong AM power relations"
+  ],
+  "jeeAdvancedFocus": [
+    "AM wave equations",
+    "Transmission efficiency",
+    "Bandwidth calculations",
+    "Communication range problems"
+  ],
+  "neetFocus": [
+    "Modulation basics",
+    "AM formulas",
+    "Bandwidth",
+    "Wave propagation"
+  ],
+  "keywords": [
+    "communication system",
+    "modulation",
+    "amplitude modulation",
+    "bandwidth",
+    "carrier wave",
+    "signal transmission",
+    "wave propagation",
+    "digital communication"
+  ]
+}

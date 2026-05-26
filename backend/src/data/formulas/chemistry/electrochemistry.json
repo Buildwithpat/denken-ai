@@ -1,0 +1,248 @@
+{
+  "chapterId": "chem_electrochemistry_007",
+  "fileName": "electrochemistry.json",
+  "chapterName": "Electrochemistry",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "electrochemistry",
+    "electrochemical-cell",
+    "nernst-equation",
+    "conductance",
+    "electrolysis",
+    "faraday-law"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_elec_001",
+      "conceptName": "Electrochemical Cell",
+      "description": "Cells converting chemical energy into electrical energy.",
+      "formulaType": "cell-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_elec_001_f1",
+          "name": "Cell Potential",
+          "equation": "Ecell = Ecathode - Eanode",
+          "latex": "E_{cell}=E_{cathode}-E_{anode}",
+          "meaning": "EMF of electrochemical cell.",
+          "variables": {
+            "Ecell": {
+              "meaning": "Cell potential",
+              "unit": "V"
+            }
+          },
+          "applications": ["Galvanic cells", "Electrode potential calculations"]
+        },
+        {
+          "formulaId": "chem_elec_001_f2",
+          "name": "Standard Cell Potential",
+          "equation": "E°cell = E°cathode - E°anode",
+          "latex": "E^\\circ_{cell}=E^\\circ_{cathode}-E^\\circ_{anode}",
+          "meaning": "Standard EMF of cell."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_elec_002",
+      "conceptName": "Nernst Equation",
+      "description": "Dependence of electrode potential on concentration.",
+      "formulaType": "nernst-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_elec_002_f1",
+          "name": "Nernst Equation",
+          "equation": "E = E° - (RT/nF) lnQ",
+          "latex": "E=E^\\circ-\\frac{RT}{nF}\\ln Q",
+          "meaning": "Electrode potential under non-standard conditions."
+        },
+        {
+          "formulaId": "chem_elec_002_f2",
+          "name": "Nernst Equation at 298K",
+          "equation": "E = E° - (0.0591/n) logQ",
+          "latex": "E=E^\\circ-\\frac{0.0591}{n}\\log Q",
+          "meaning": "Simplified Nernst equation at room temperature."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_elec_003",
+      "conceptName": "Gibbs Energy and Cell Potential",
+      "description": "Relation between free energy and EMF.",
+      "formulaType": "gibbs-electrochemistry-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_elec_003_f1",
+          "name": "Gibbs Free Energy Relation",
+          "equation": "ΔG = -nFEcell",
+          "latex": "\\Delta G=-nFE_{cell}",
+          "meaning": "Relation between Gibbs energy and cell potential."
+        },
+        {
+          "formulaId": "chem_elec_003_f2",
+          "name": "Standard Gibbs Energy",
+          "equation": "ΔG° = -nFE°cell",
+          "latex": "\\Delta G^\\circ=-nFE^\\circ_{cell}",
+          "meaning": "Standard free energy relation."
+        },
+        {
+          "formulaId": "chem_elec_003_f3",
+          "name": "Equilibrium Constant Relation",
+          "equation": "E°cell = (0.0591/n) logK",
+          "latex": "E^\\circ_{cell}=\\frac{0.0591}{n}\\log K",
+          "meaning": "Relation between equilibrium constant and EMF."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_elec_004",
+      "conceptName": "Conductance",
+      "description": "Ability of electrolyte solution to conduct electricity.",
+      "formulaType": "conductance-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_elec_004_f1",
+          "name": "Conductance",
+          "equation": "G = 1/R",
+          "latex": "G=\\frac{1}{R}",
+          "meaning": "Reciprocal of resistance."
+        },
+        {
+          "formulaId": "chem_elec_004_f2",
+          "name": "Specific Conductance",
+          "equation": "κ = G(l/A)",
+          "latex": "\\kappa=G\\left(\\frac{l}{A}\\right)",
+          "meaning": "Conductance of unit cube of solution."
+        },
+        {
+          "formulaId": "chem_elec_004_f3",
+          "name": "Molar Conductivity",
+          "equation": "Λm = κ × 1000/C",
+          "latex": "\\Lambda_m=\\frac{\\kappa\\times1000}{C}",
+          "meaning": "Conductivity of one mole electrolyte."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_elec_005",
+      "conceptName": "Kohlrausch Law",
+      "description": "Independent migration of ions.",
+      "formulaType": "kohlrausch-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_elec_005_f1",
+          "name": "Kohlrausch Law",
+          "equation": "Λ°m = λ°+ + λ°−",
+          "latex": "\\Lambda_m^\\circ=\\lambda_+^\\circ+\\lambda_-^\\circ",
+          "meaning": "Limiting molar conductivity."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_elec_006",
+      "conceptName": "Faraday Laws of Electrolysis",
+      "description": "Mass deposited during electrolysis.",
+      "formulaType": "faraday-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_elec_006_f1",
+          "name": "First Faraday Law",
+          "equation": "W ∝ It",
+          "latex": "W\\propto It",
+          "meaning": "Mass deposited proportional to charge passed."
+        },
+        {
+          "formulaId": "chem_elec_006_f2",
+          "name": "Electrolysis Equation",
+          "equation": "W = Zit",
+          "latex": "W=Zit",
+          "meaning": "Mass deposited during electrolysis."
+        },
+        {
+          "formulaId": "chem_elec_006_f3",
+          "name": "Faraday Constant Relation",
+          "equation": "W = (MIt)/(nF)",
+          "latex": "W=\\frac{MIt}{nF}",
+          "meaning": "Mass deposited using Faraday constant."
+        },
+        {
+          "formulaId": "chem_elec_006_f4",
+          "name": "Faraday Constant",
+          "equation": "F = 96500 C mol⁻¹",
+          "latex": "F=96500\\,C\\,mol^{-1}",
+          "meaning": "Charge carried by one mole of electrons."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_elec_007",
+      "conceptName": "Electrolysis",
+      "description": "Chemical decomposition using electricity.",
+      "formulaType": "electrolysis-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_elec_007_f1",
+          "name": "Charge Relation",
+          "equation": "Q = It",
+          "latex": "Q=It",
+          "meaning": "Total charge passed."
+        },
+        {
+          "formulaId": "chem_elec_007_f2",
+          "name": "Number of Moles of Electrons",
+          "equation": "moles of e⁻ = Q/F",
+          "latex": "\\text{moles of }e^- = \\frac{Q}{F}",
+          "meaning": "Moles of electrons transferred."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_elec_008",
+      "conceptName": "Battery and Fuel Cell",
+      "description": "Devices producing electrical energy.",
+      "formulaType": "battery-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_elec_008_f1",
+          "name": "Efficiency of Fuel Cell",
+          "equation": "Efficiency = Useful energy output / Total chemical energy",
+          "latex": "\\text{Efficiency}=\\frac{\\text{Useful energy output}}{\\text{Total chemical energy}}",
+          "meaning": "Efficiency relation for fuel cells."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Oxidation occurs at anode and reduction at cathode.",
+    "Cell potential must be positive for spontaneous reaction.",
+    "Conductivity decreases with dilution while molar conductivity increases.",
+    "Faraday constant is approximately 96500 C/mol."
+  ],
+  "commonMistakes": [
+    "Wrong sign in cell potential calculation",
+    "Confusing conductance and conductivity",
+    "Incorrect use of Nernst equation",
+    "Wrong electron balancing in electrolysis"
+  ],
+  "jeeAdvancedFocus": [
+    "Nernst equation numericals",
+    "Electrolysis calculations",
+    "Conductivity problems",
+    "Electrochemical cell derivations"
+  ],
+  "neetFocus": [
+    "Electrochemical cells",
+    "Faraday laws",
+    "Nernst equation",
+    "Conductance"
+  ],
+  "keywords": [
+    "electrochemistry",
+    "nernst equation",
+    "electrochemical cell",
+    "conductance",
+    "electrolysis",
+    "faraday laws",
+    "cell potential",
+    "kohlrausch law"
+  ]
+}

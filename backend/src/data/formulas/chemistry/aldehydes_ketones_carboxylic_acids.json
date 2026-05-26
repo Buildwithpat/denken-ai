@@ -1,0 +1,273 @@
+{
+  "chapterId": "chem_aldehydes_ketones_carboxylic_acids_025",
+  "fileName": "aldehydes_ketones_carboxylic_acids.json",
+  "chapterName": "Aldehydes, Ketones & Carboxylic Acids",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "aldehydes",
+    "ketones",
+    "carboxylic-acids",
+    "carbonyl-compounds",
+    "named-reactions",
+    "acidity"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_akca_001",
+      "conceptName": "Carbonyl Compounds",
+      "description": "Compounds containing carbonyl group.",
+      "formulaType": "carbonyl-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_akca_001_f1",
+          "name": "Aldehyde General Formula",
+          "equation": "R-CHO",
+          "latex": "R-CHO",
+          "meaning": "General formula of aldehydes.",
+          "applications": [
+            "Organic synthesis",
+            "Functional group identification"
+          ]
+        },
+        {
+          "formulaId": "chem_akca_001_f2",
+          "name": "Ketone General Formula",
+          "equation": "R-CO-R'",
+          "latex": "R-CO-R'",
+          "meaning": "General formula of ketones."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_akca_002",
+      "conceptName": "Preparation of Aldehydes and Ketones",
+      "description": "Methods of preparing carbonyl compounds.",
+      "formulaType": "preparation-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_akca_002_f1",
+          "name": "Oxidation of Primary Alcohol",
+          "equation": "RCH₂OH → RCHO",
+          "latex": "RCH_2OH\\rightarrow RCHO",
+          "meaning": "Primary alcohol forms aldehyde on oxidation."
+        },
+        {
+          "formulaId": "chem_akca_002_f2",
+          "name": "Oxidation of Secondary Alcohol",
+          "equation": "R₂CHOH → R₂CO",
+          "latex": "R_2CHOH\\rightarrow R_2CO",
+          "meaning": "Secondary alcohol forms ketone on oxidation."
+        },
+        {
+          "formulaId": "chem_akca_002_f3",
+          "name": "Rosenmund Reduction",
+          "equation": "RCOCl + H₂ → RCHO + HCl",
+          "latex": "RCOCl+H_2\\rightarrow RCHO+HCl",
+          "meaning": "Preparation of aldehydes from acid chlorides."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_akca_003",
+      "conceptName": "Nucleophilic Addition Reactions",
+      "description": "Characteristic reactions of carbonyl compounds.",
+      "formulaType": "addition-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_akca_003_f1",
+          "name": "HCN Addition",
+          "equation": "RCHO + HCN → RCH(OH)CN",
+          "latex": "RCHO+HCN\\rightarrow RCH(OH)CN",
+          "meaning": "Formation of cyanohydrin."
+        },
+        {
+          "formulaId": "chem_akca_003_f2",
+          "name": "NaHSO₃ Addition",
+          "equation": "RCHO + NaHSO₃ → Addition product",
+          "latex": "RCHO+NaHSO_3\\rightarrow\\text{Addition product}",
+          "meaning": "Bisulphite addition reaction."
+        },
+        {
+          "formulaId": "chem_akca_003_f3",
+          "name": "Grignard Reaction",
+          "equation": "RCHO + RMgX → Alcohol",
+          "latex": "RCHO+RMgX\\rightarrow\\text{Alcohol}",
+          "meaning": "Formation of alcohol using Grignard reagent."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_akca_004",
+      "conceptName": "Oxidation and Reduction",
+      "description": "Redox reactions of aldehydes and ketones.",
+      "formulaType": "redox-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_akca_004_f1",
+          "name": "Oxidation of Aldehyde",
+          "equation": "RCHO + [O] → RCOOH",
+          "latex": "RCHO+[O]\\rightarrow RCOOH",
+          "meaning": "Aldehyde oxidizes to carboxylic acid."
+        },
+        {
+          "formulaId": "chem_akca_004_f2",
+          "name": "Reduction of Carbonyl Compound",
+          "equation": "RCHO + H₂ → RCH₂OH",
+          "latex": "RCHO+H_2\\rightarrow RCH_2OH",
+          "meaning": "Reduction of aldehyde to alcohol."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_akca_005",
+      "conceptName": "Important Named Reactions",
+      "description": "Special reactions of aldehydes and ketones.",
+      "formulaType": "named-reaction-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_akca_005_f1",
+          "name": "Aldol Condensation",
+          "equation": "2CH₃CHO → CH₃CH(OH)CH₂CHO",
+          "latex": "2CH_3CHO\\rightarrow CH_3CH(OH)CH_2CHO",
+          "meaning": "Condensation of aldehydes containing α-H."
+        },
+        {
+          "formulaId": "chem_akca_005_f2",
+          "name": "Cannizzaro Reaction",
+          "equation": "2HCHO + NaOH → HCOONa + CH₃OH",
+          "latex": "2HCHO+NaOH\\rightarrow HCOONa+CH_3OH",
+          "meaning": "Reaction of aldehydes without α-H."
+        },
+        {
+          "formulaId": "chem_akca_005_f3",
+          "name": "Clemmensen Reduction",
+          "equation": "RCOR' → RCH₂R'",
+          "latex": "RCOR'\\rightarrow RCH_2R'",
+          "meaning": "Reduction of carbonyl group to hydrocarbon."
+        },
+        {
+          "formulaId": "chem_akca_005_f4",
+          "name": "Wolff-Kishner Reduction",
+          "equation": "RCOR' → RCH₂R'",
+          "latex": "RCOR'\\rightarrow RCH_2R'",
+          "meaning": "Reduction using hydrazine."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_akca_006",
+      "conceptName": "Carboxylic Acids",
+      "description": "Compounds containing carboxyl group.",
+      "formulaType": "carboxylic-acid-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_akca_006_f1",
+          "name": "General Formula",
+          "equation": "R-COOH",
+          "latex": "R-COOH",
+          "meaning": "General formula of carboxylic acids."
+        },
+        {
+          "formulaId": "chem_akca_006_f2",
+          "name": "Acidic Dissociation",
+          "equation": "RCOOH ⇌ RCOO⁻ + H⁺",
+          "latex": "RCOOH\\rightleftharpoons RCOO^-+H^+",
+          "meaning": "Acidic nature of carboxylic acids."
+        },
+        {
+          "formulaId": "chem_akca_006_f3",
+          "name": "Reaction with Sodium Bicarbonate",
+          "equation": "RCOOH + NaHCO₃ → RCOONa + CO₂ + H₂O",
+          "latex": "RCOOH+NaHCO_3\\rightarrow RCOONa+CO_2+H_2O",
+          "meaning": "Test for carboxylic acids."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_akca_007",
+      "conceptName": "Derivatives of Carboxylic Acids",
+      "description": "Compounds derived from carboxylic acids.",
+      "formulaType": "derivative-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_akca_007_f1",
+          "name": "Esterification",
+          "equation": "RCOOH + R'OH ⇌ RCOOR' + H₂O",
+          "latex": "RCOOH+R'OH\\rightleftharpoons RCOOR'+H_2O",
+          "meaning": "Formation of ester."
+        },
+        {
+          "formulaId": "chem_akca_007_f2",
+          "name": "Acid Chloride Formation",
+          "equation": "RCOOH + SOCl₂ → RCOCl + SO₂ + HCl",
+          "latex": "RCOOH+SOCl_2\\rightarrow RCOCl+SO_2+HCl",
+          "meaning": "Preparation of acid chloride."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_akca_008",
+      "conceptName": "Tests for Carbonyl Compounds",
+      "description": "Qualitative tests for aldehydes and ketones.",
+      "formulaType": "test-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_akca_008_f1",
+          "name": "Tollen's Test",
+          "equation": "RCHO + [Ag(NH₃)₂]⁺ → Silver mirror",
+          "latex": "RCHO+[Ag(NH_3)_2]^+\\rightarrow\\text{Silver mirror}",
+          "meaning": "Test for aldehydes."
+        },
+        {
+          "formulaId": "chem_akca_008_f2",
+          "name": "Fehling's Test",
+          "equation": "RCHO + Cu²⁺ → Cu₂O",
+          "latex": "RCHO+Cu^{2+}\\rightarrow Cu_2O",
+          "meaning": "Formation of red precipitate."
+        },
+        {
+          "formulaId": "chem_akca_008_f3",
+          "name": "Iodoform Test",
+          "equation": "CH₃CO- + I₂ + NaOH → CHI₃",
+          "latex": "CH_3CO-+I_2+NaOH\\rightarrow CHI_3",
+          "meaning": "Test for methyl ketones."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Aldehydes are generally more reactive than ketones.",
+    "Carboxylic acids are acidic due to resonance stabilization.",
+    "Aldol condensation requires α-hydrogen.",
+    "Tollen's reagent gives silver mirror with aldehydes."
+  ],
+  "commonMistakes": [
+    "Confusing aldehyde and ketone reactions",
+    "Wrong product prediction in named reactions",
+    "Ignoring α-hydrogen requirement",
+    "Incorrect acidity comparison"
+  ],
+  "jeeAdvancedFocus": [
+    "Named reaction mechanisms",
+    "Nucleophilic addition reactions",
+    "Acidity and reactivity trends",
+    "Carbonyl compound tests"
+  ],
+  "neetFocus": [
+    "Important reactions",
+    "Tests of aldehydes and ketones",
+    "Preparation methods",
+    "Carboxylic acid properties"
+  ],
+  "keywords": [
+    "aldehydes",
+    "ketones",
+    "carboxylic acids",
+    "aldol condensation",
+    "cannizzaro reaction",
+    "tollens test",
+    "iodoform test",
+    "esterification"
+  ]
+}

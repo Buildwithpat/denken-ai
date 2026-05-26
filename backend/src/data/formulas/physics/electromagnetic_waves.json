@@ -1,0 +1,262 @@
+{
+  "chapterId": "physics_electromagnetic_waves_025",
+  "fileName": "electromagnetic_waves.json",
+  "chapterName": "Electromagnetic Waves",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "electromagnetic-waves",
+    "maxwell-equations",
+    "em-spectrum",
+    "wave-propagation",
+    "radiation-pressure",
+    "electromagnetic-radiation"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_emw_001",
+      "conceptName": "Electromagnetic Wave Basics",
+      "description": "Oscillating electric and magnetic fields propagating through space.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emw_001_f1",
+          "name": "Speed of Electromagnetic Waves",
+          "equation": "c = 1/√(μ₀ϵ₀)",
+          "latex": "c=\\frac{1}{\\sqrt{\\mu_0\\epsilon_0}}",
+          "meaning": "Speed of electromagnetic waves in vacuum.",
+          "variables": {
+            "c": {
+              "meaning": "Speed of light",
+              "unit": "m/s"
+            },
+            "μ₀": {
+              "meaning": "Permeability of free space",
+              "unit": "H/m"
+            },
+            "ϵ₀": {
+              "meaning": "Permittivity of free space",
+              "unit": "F/m"
+            }
+          },
+          "applications": ["Wave propagation", "Electromagnetic theory"]
+        },
+        {
+          "formulaId": "phy_emw_001_f2",
+          "name": "Wave Relation",
+          "equation": "c = νλ",
+          "latex": "c=\\nu\\lambda",
+          "meaning": "Relation between speed, frequency and wavelength."
+        },
+        {
+          "formulaId": "phy_emw_001_f3",
+          "name": "Angular Frequency",
+          "equation": "ω = 2πν",
+          "latex": "\\omega=2\\pi\\nu",
+          "meaning": "Angular frequency relation."
+        },
+        {
+          "formulaId": "phy_emw_001_f4",
+          "name": "Wave Number",
+          "equation": "k = 2π/λ",
+          "latex": "k=\\frac{2\\pi}{\\lambda}",
+          "meaning": "Wave number of EM wave."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emw_002",
+      "conceptName": "Electric and Magnetic Field Relation",
+      "description": "Relationship between electric and magnetic fields in EM waves.",
+      "formulaType": "field-relation-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emw_002_f1",
+          "name": "Field Relation",
+          "equation": "E₀ = cB₀",
+          "latex": "E_0=cB_0",
+          "meaning": "Relation between electric and magnetic field amplitudes."
+        },
+        {
+          "formulaId": "phy_emw_002_f2",
+          "name": "Field Ratio",
+          "equation": "E/B = c",
+          "latex": "\\frac{E}{B}=c",
+          "meaning": "Ratio of electric to magnetic field."
+        },
+        {
+          "formulaId": "phy_emw_002_f3",
+          "name": "Magnetic Field Amplitude",
+          "equation": "B₀ = E₀/c",
+          "latex": "B_0=\\frac{E_0}{c}",
+          "meaning": "Magnetic field amplitude from electric field."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emw_003",
+      "conceptName": "Energy in Electromagnetic Waves",
+      "description": "Energy carried by electromagnetic radiation.",
+      "formulaType": "energy-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emw_003_f1",
+          "name": "Electric Energy Density",
+          "equation": "uE = (1/2)ϵ₀E²",
+          "latex": "u_E=\\frac{1}{2}\\epsilon_0E^2",
+          "meaning": "Energy density due to electric field."
+        },
+        {
+          "formulaId": "phy_emw_003_f2",
+          "name": "Magnetic Energy Density",
+          "equation": "uB = B²/2μ₀",
+          "latex": "u_B=\\frac{B^2}{2\\mu_0}",
+          "meaning": "Energy density due to magnetic field."
+        },
+        {
+          "formulaId": "phy_emw_003_f3",
+          "name": "Total Energy Density",
+          "equation": "u = ϵ₀E²",
+          "latex": "u=\\epsilon_0E^2",
+          "meaning": "Total energy density in electromagnetic wave."
+        },
+        {
+          "formulaId": "phy_emw_003_f4",
+          "name": "Intensity of EM Wave",
+          "equation": "I = cϵ₀E₀²/2",
+          "latex": "I=\\frac{c\\epsilon_0E_0^2}{2}",
+          "meaning": "Average intensity of electromagnetic wave."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emw_004",
+      "conceptName": "Radiation Pressure",
+      "description": "Pressure exerted by electromagnetic radiation.",
+      "formulaType": "radiation-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emw_004_f1",
+          "name": "Radiation Pressure on Absorbing Surface",
+          "equation": "P = I/c",
+          "latex": "P=\\frac{I}{c}",
+          "meaning": "Radiation pressure on perfectly absorbing surface."
+        },
+        {
+          "formulaId": "phy_emw_004_f2",
+          "name": "Radiation Pressure on Reflecting Surface",
+          "equation": "P = 2I/c",
+          "latex": "P=\\frac{2I}{c}",
+          "meaning": "Radiation pressure on perfectly reflecting surface."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emw_005",
+      "conceptName": "Poynting Vector",
+      "description": "Rate of energy transfer per unit area in EM waves.",
+      "formulaType": "poynting-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emw_005_f1",
+          "name": "Poynting Vector",
+          "equation": "S = E × H",
+          "latex": "S=E\\times H",
+          "meaning": "Energy flux of electromagnetic wave."
+        },
+        {
+          "formulaId": "phy_emw_005_f2",
+          "name": "Magnitude of Poynting Vector",
+          "equation": "S = EH",
+          "latex": "S=EH",
+          "meaning": "Magnitude of energy flux."
+        },
+        {
+          "formulaId": "phy_emw_005_f3",
+          "name": "Average Intensity",
+          "equation": "I = <S>",
+          "latex": "I=\\langle S\\rangle",
+          "meaning": "Average value of Poynting vector."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emw_006",
+      "conceptName": "Electromagnetic Spectrum",
+      "description": "Range of electromagnetic waves arranged by wavelength or frequency.",
+      "formulaType": "spectrum-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emw_006_f1",
+          "name": "Photon Energy",
+          "equation": "E = hν",
+          "latex": "E=h\\nu",
+          "meaning": "Energy of electromagnetic radiation photon."
+        },
+        {
+          "formulaId": "phy_emw_006_f2",
+          "name": "Photon Momentum",
+          "equation": "p = h/λ",
+          "latex": "p=\\frac{h}{\\lambda}",
+          "meaning": "Momentum carried by photon."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_emw_007",
+      "conceptName": "Plane Electromagnetic Waves",
+      "description": "Equations describing sinusoidal EM waves.",
+      "formulaType": "wave-equation-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_emw_007_f1",
+          "name": "Electric Field Wave Equation",
+          "equation": "E = E₀ sin(kx - ωt)",
+          "latex": "E=E_0\\sin(kx-\\omega t)",
+          "meaning": "Electric field variation in plane EM wave."
+        },
+        {
+          "formulaId": "phy_emw_007_f2",
+          "name": "Magnetic Field Wave Equation",
+          "equation": "B = B₀ sin(kx - ωt)",
+          "latex": "B=B_0\\sin(kx-\\omega t)",
+          "meaning": "Magnetic field variation in plane EM wave."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Electromagnetic waves are transverse in nature.",
+    "Electric and magnetic fields are perpendicular to each other and direction of propagation.",
+    "EM waves do not require material medium for propagation.",
+    "Electric and magnetic energy densities are equal in EM waves."
+  ],
+  "commonMistakes": [
+    "Confusing E and B field relations",
+    "Using wrong intensity formula",
+    "Ignoring vector nature of Poynting vector",
+    "Mixing up absorbing and reflecting surface radiation pressure"
+  ],
+  "jeeAdvancedFocus": [
+    "Energy density derivations",
+    "Radiation pressure problems",
+    "Poynting vector applications",
+    "Field relation numericals"
+  ],
+  "neetFocus": [
+    "Properties of EM waves",
+    "EM spectrum",
+    "Field relations",
+    "Wave propagation"
+  ],
+  "keywords": [
+    "electromagnetic waves",
+    "em spectrum",
+    "poynting vector",
+    "radiation pressure",
+    "wave propagation",
+    "electric field",
+    "magnetic field",
+    "intensity"
+  ]
+}

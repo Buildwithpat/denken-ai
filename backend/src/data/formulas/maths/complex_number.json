@@ -1,0 +1,233 @@
+{
+  "chapterId": "math_complex_number_017",
+  "fileName": "complex_number.json",
+  "chapterName": "Complex Number",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "complex-number",
+    "imaginary-number",
+    "argand-plane",
+    "modulus",
+    "de-moivre"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_complex_001",
+      "conceptName": "Basic Definition",
+      "description": "Representation of complex numbers.",
+      "formulaType": "basic-complex-formula",
+      "formulas": [
+        {
+          "formulaId": "math_complex_001_f1",
+          "name": "Complex Number Form",
+          "equation": "z = a + ib",
+          "latex": "z=a+ib",
+          "meaning": "General form of complex number.",
+          "applications": ["Algebra", "Electrical engineering"]
+        },
+        {
+          "formulaId": "math_complex_001_f2",
+          "name": "Imaginary Unit",
+          "equation": "i² = -1",
+          "latex": "i^2=-1",
+          "meaning": "Fundamental property of imaginary unit."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_complex_002",
+      "conceptName": "Real and Imaginary Parts",
+      "description": "Components of complex number.",
+      "formulaType": "parts-formula",
+      "formulas": [
+        {
+          "formulaId": "math_complex_002_f1",
+          "name": "Real Part",
+          "equation": "Re(z) = a",
+          "latex": "Re(z)=a",
+          "meaning": "Real component of z."
+        },
+        {
+          "formulaId": "math_complex_002_f2",
+          "name": "Imaginary Part",
+          "equation": "Im(z) = b",
+          "latex": "Im(z)=b",
+          "meaning": "Imaginary component of z."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_complex_003",
+      "conceptName": "Modulus and Argument",
+      "description": "Magnitude and angle of complex number.",
+      "formulaType": "modulus-argument-formula",
+      "formulas": [
+        {
+          "formulaId": "math_complex_003_f1",
+          "name": "Modulus",
+          "equation": "|z| = √(a²+b²)",
+          "latex": "|z|=\\sqrt{a^2+b^2}",
+          "meaning": "Magnitude of complex number."
+        },
+        {
+          "formulaId": "math_complex_003_f2",
+          "name": "Argument",
+          "equation": "tanθ = b/a",
+          "latex": "\\tan\\theta=\\frac{b}{a}",
+          "meaning": "Angle made with positive real axis."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_complex_004",
+      "conceptName": "Conjugate of Complex Number",
+      "description": "Reflection across real axis.",
+      "formulaType": "conjugate-formula",
+      "formulas": [
+        {
+          "formulaId": "math_complex_004_f1",
+          "name": "Complex Conjugate",
+          "equation": "z̄ = a - ib",
+          "latex": "\\bar z=a-ib",
+          "meaning": "Conjugate of complex number."
+        },
+        {
+          "formulaId": "math_complex_004_f2",
+          "name": "Product with Conjugate",
+          "equation": "z·z̄ = |z|²",
+          "latex": "z\\bar z=|z|^2",
+          "meaning": "Product gives square of modulus."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_complex_005",
+      "conceptName": "Polar Form",
+      "description": "Trigonometric representation of complex number.",
+      "formulaType": "polar-formula",
+      "formulas": [
+        {
+          "formulaId": "math_complex_005_f1",
+          "name": "Polar Form",
+          "equation": "z = r(cosθ + i sinθ)",
+          "latex": "z=r(\\cos\\theta+i\\sin\\theta)",
+          "meaning": "Trigonometric representation."
+        },
+        {
+          "formulaId": "math_complex_005_f2",
+          "name": "Euler Form",
+          "equation": "z = re^(iθ)",
+          "latex": "z=re^{i\\theta}",
+          "meaning": "Exponential form of complex number."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_complex_006",
+      "conceptName": "De Moivre's Theorem",
+      "description": "Power of complex numbers in polar form.",
+      "formulaType": "de-moivre-formula",
+      "formulas": [
+        {
+          "formulaId": "math_complex_006_f1",
+          "name": "De Moivre's Theorem",
+          "equation": "[r(cosθ+i sinθ)]ⁿ = rⁿ(cosnθ+i sinnθ)",
+          "latex": "[r(\\cos\\theta+i\\sin\\theta)]^n=r^n(\\cos n\\theta+i\\sin n\\theta)",
+          "meaning": "Used for powers of complex numbers."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_complex_007",
+      "conceptName": "Roots of Complex Numbers",
+      "description": "Finding nth roots.",
+      "formulaType": "roots-formula",
+      "formulas": [
+        {
+          "formulaId": "math_complex_007_f1",
+          "name": "nth Root Formula",
+          "equation": "z_k = r^(1/n)[cos((θ+2kπ)/n)+i sin((θ+2kπ)/n)]",
+          "latex": "z_k=r^{1/n}\\left[\\cos\\left(\\frac{\\theta+2k\\pi}{n}\\right)+i\\sin\\left(\\frac{\\theta+2k\\pi}{n}\\right)\\right]",
+          "meaning": "Formula for nth roots."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_complex_008",
+      "conceptName": "Properties of Complex Numbers",
+      "description": "Important algebraic properties.",
+      "formulaType": "properties-formula",
+      "formulas": [
+        {
+          "formulaId": "math_complex_008_f1",
+          "name": "Triangle Inequality",
+          "equation": "|z₁+z₂| ≤ |z₁|+|z₂|",
+          "latex": "|z_1+z_2|\\le|z_1|+|z_2|",
+          "meaning": "Important modulus inequality."
+        },
+        {
+          "formulaId": "math_complex_008_f2",
+          "name": "Modulus Multiplication",
+          "equation": "|z₁z₂| = |z₁||z₂|",
+          "latex": "|z_1z_2|=|z_1||z_2|",
+          "meaning": "Property of modulus under multiplication."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_complex_009",
+      "conceptName": "Argand Plane",
+      "description": "Geometrical representation of complex numbers.",
+      "formulaType": "argand-formula",
+      "formulas": [
+        {
+          "formulaId": "math_complex_009_f1",
+          "name": "Distance Formula",
+          "equation": "|z₁-z₂|",
+          "latex": "|z_1-z_2|",
+          "meaning": "Distance between two complex numbers."
+        },
+        {
+          "formulaId": "math_complex_009_f2",
+          "name": "Midpoint Formula",
+          "equation": "(z₁+z₂)/2",
+          "latex": "\\frac{z_1+z_2}{2}",
+          "meaning": "Midpoint in Argand plane."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Complex numbers are represented on Argand plane.",
+    "Modulus represents distance from origin.",
+    "Argument gives direction angle.",
+    "De Moivre's theorem simplifies powers and roots."
+  ],
+  "commonMistakes": [
+    "Wrong sign in conjugate",
+    "Incorrect argument quadrant",
+    "Mistakes in De Moivre expansion",
+    "Ignoring multiple roots"
+  ],
+  "jeeAdvancedFocus": [
+    "Roots of unity",
+    "Locus problems",
+    "Advanced polar form manipulations",
+    "Complex transformations"
+  ],
+  "neetFocus": [
+    "Basic complex form",
+    "Modulus and argument",
+    "Conjugate properties",
+    "Polar form"
+  ],
+  "keywords": [
+    "complex number",
+    "argand plane",
+    "modulus",
+    "argument",
+    "de moivre theorem",
+    "imaginary numbers"
+  ]
+}

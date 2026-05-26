@@ -1,0 +1,251 @@
+{
+  "chapterId": "physics_work_power_energy_007",
+  "fileName": "work_power_energy.json",
+  "chapterName": "Work, Power and Energy",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "work",
+    "power",
+    "energy",
+    "kinetic-energy",
+    "potential-energy",
+    "conservative-force",
+    "work-energy-theorem"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_wpe_001",
+      "conceptName": "Work Done",
+      "description": "Energy transferred when force causes displacement.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wpe_001_f1",
+          "name": "Basic Work Formula",
+          "equation": "W = Fs cosθ",
+          "latex": "W=Fs\\cos\\theta",
+          "meaning": "Work done by constant force.",
+          "variables": {
+            "F": {
+              "meaning": "Applied force",
+              "unit": "N"
+            },
+            "s": {
+              "meaning": "Displacement",
+              "unit": "m"
+            },
+            "θ": {
+              "meaning": "Angle between force and displacement",
+              "unit": "degree/radian"
+            }
+          },
+          "applications": [
+            "Linear motion",
+            "Inclined plane",
+            "Force-displacement systems"
+          ],
+          "commonMistakes": [
+            "Ignoring angle",
+            "Using wrong displacement direction"
+          ]
+        },
+        {
+          "formulaId": "phy_wpe_001_f2",
+          "name": "Variable Force Work",
+          "equation": "W = ∫F·dx",
+          "latex": "W=\\int F\\cdot dx",
+          "meaning": "Work done by variable force.",
+          "applications": [
+            "Spring systems",
+            "Force-position graphs",
+            "Advanced mechanics"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wpe_002",
+      "conceptName": "Kinetic Energy",
+      "description": "Energy possessed due to motion.",
+      "formulaType": "energy-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wpe_002_f1",
+          "name": "Kinetic Energy",
+          "equation": "KE = 1/2 mv²",
+          "latex": "KE=\\frac12 mv^2",
+          "meaning": "Energy associated with moving body.",
+          "applications": [
+            "Collision problems",
+            "Motion analysis",
+            "Energy conservation"
+          ]
+        },
+        {
+          "formulaId": "phy_wpe_002_f2",
+          "name": "Work-Energy Theorem",
+          "equation": "Wnet = ΔKE",
+          "latex": "W_{net}=\\Delta KE",
+          "meaning": "Net work equals change in kinetic energy.",
+          "applications": [
+            "Variable force systems",
+            "Dynamics",
+            "Motion calculations"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wpe_003",
+      "conceptName": "Potential Energy",
+      "description": "Stored energy due to position or configuration.",
+      "formulaType": "potential-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wpe_003_f1",
+          "name": "Gravitational Potential Energy",
+          "equation": "PE = mgh",
+          "latex": "PE=mgh",
+          "meaning": "Energy due to height in gravitational field.",
+          "applications": [
+            "Vertical motion",
+            "Energy conservation",
+            "Gravitational systems"
+          ]
+        },
+        {
+          "formulaId": "phy_wpe_003_f2",
+          "name": "Spring Potential Energy",
+          "equation": "PE = 1/2 kx²",
+          "latex": "PE=\\frac12 kx^2",
+          "meaning": "Energy stored in spring deformation.",
+          "applications": ["SHM", "Spring-block systems", "Elastic collisions"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wpe_004",
+      "conceptName": "Power",
+      "description": "Rate of doing work.",
+      "formulaType": "power-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wpe_004_f1",
+          "name": "Average Power",
+          "equation": "P = W/t",
+          "latex": "P=\\frac{W}{t}",
+          "meaning": "Average rate of work done."
+        },
+        {
+          "formulaId": "phy_wpe_004_f2",
+          "name": "Instantaneous Power",
+          "equation": "P = F·v",
+          "latex": "P=\\vec{F}\\cdot\\vec{v}",
+          "meaning": "Instantaneous power delivered by force.",
+          "applications": [
+            "Vehicle engines",
+            "Mechanical systems",
+            "Motion under force"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wpe_005",
+      "conceptName": "Conservation of Mechanical Energy",
+      "description": "Total mechanical energy remains constant in conservative systems.",
+      "formulaType": "conservation-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wpe_005_f1",
+          "name": "Mechanical Energy Conservation",
+          "equation": "KE₁ + PE₁ = KE₂ + PE₂",
+          "latex": "KE_1+PE_1=KE_2+PE_2",
+          "meaning": "Total mechanical energy remains constant.",
+          "conditions": ["Only conservative forces act"],
+          "applications": ["Pendulum", "Roller coaster", "Projectile motion"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wpe_006",
+      "conceptName": "Conservative and Non-Conservative Forces",
+      "description": "Classification based on path dependence of work.",
+      "formulaType": "force-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wpe_006_f1",
+          "name": "Work by Conservative Force",
+          "equation": "W = -ΔPE",
+          "latex": "W=-\\Delta PE",
+          "meaning": "Work done equals negative change in potential energy."
+        },
+        {
+          "formulaId": "phy_wpe_006_f2",
+          "name": "Efficiency",
+          "equation": "η = Output/Input × 100",
+          "latex": "\\eta=\\frac{Output}{Input}\\times100",
+          "meaning": "Ratio of useful work output to input."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_wpe_007",
+      "conceptName": "Spring Systems",
+      "description": "Energy and work in elastic systems.",
+      "formulaType": "spring-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_wpe_007_f1",
+          "name": "Hooke's Law",
+          "equation": "F = -kx",
+          "latex": "F=-kx",
+          "meaning": "Restoring force in spring.",
+          "applications": ["SHM", "Elastic systems", "Spring motion"]
+        },
+        {
+          "formulaId": "phy_wpe_007_f2",
+          "name": "Work Done by Spring",
+          "equation": "W = 1/2 k(x₁² - x₂²)",
+          "latex": "W=\\frac12 k(x_1^2-x_2^2)",
+          "meaning": "Work done during spring extension/compression."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Work can be positive, negative, or zero.",
+    "Kinetic energy is always positive.",
+    "Conservative forces depend only on initial and final positions.",
+    "Power is scalar quantity."
+  ],
+  "commonMistakes": [
+    "Ignoring angle in work formula",
+    "Wrong sign for work done",
+    "Mixing conservative and non-conservative forces",
+    "Using constant force equations for variable force"
+  ],
+  "jeeAdvancedFocus": [
+    "Variable force work",
+    "Spring-block systems",
+    "Advanced conservation problems",
+    "Power-force relations"
+  ],
+  "neetFocus": [
+    "Basic work formula",
+    "Kinetic and potential energy",
+    "Power",
+    "Conservation of energy"
+  ],
+  "keywords": [
+    "work",
+    "energy",
+    "power",
+    "kinetic energy",
+    "potential energy",
+    "spring energy",
+    "work-energy theorem",
+    "conservation of energy"
+  ]
+}

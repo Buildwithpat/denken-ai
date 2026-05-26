@@ -1,0 +1,272 @@
+{
+  "chapterId": "physics_wave_optics_023",
+  "fileName": "wave_optics.json",
+  "chapterName": "Wave Optics",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "wave-optics",
+    "interference",
+    "diffraction",
+    "polarization",
+    "young-double-slit",
+    "resolving-power"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_waveopt_001",
+      "conceptName": "Interference of Light",
+      "description": "Superposition of light waves producing intensity variations.",
+      "formulaType": "interference-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_waveopt_001_f1",
+          "name": "Path Difference",
+          "equation": "Δx = d sinθ",
+          "latex": "\\Delta x=d\\sin\\theta",
+          "meaning": "Path difference between two coherent waves.",
+          "variables": {
+            "Δx": {
+              "meaning": "Path difference",
+              "unit": "m"
+            },
+            "d": {
+              "meaning": "Separation between sources",
+              "unit": "m"
+            },
+            "θ": {
+              "meaning": "Angle of observation",
+              "unit": "rad"
+            }
+          },
+          "applications": [
+            "Young double slit experiment",
+            "Interference calculations"
+          ]
+        },
+        {
+          "formulaId": "phy_waveopt_001_f2",
+          "name": "Constructive Interference",
+          "equation": "Δx = nλ",
+          "latex": "\\Delta x=n\\lambda",
+          "meaning": "Condition for bright fringe."
+        },
+        {
+          "formulaId": "phy_waveopt_001_f3",
+          "name": "Destructive Interference",
+          "equation": "Δx = (2n+1)λ/2",
+          "latex": "\\Delta x=\\frac{(2n+1)\\lambda}{2}",
+          "meaning": "Condition for dark fringe."
+        },
+        {
+          "formulaId": "phy_waveopt_001_f4",
+          "name": "Fringe Width",
+          "equation": "β = λD/d",
+          "latex": "\\beta=\\frac{\\lambda D}{d}",
+          "meaning": "Distance between consecutive fringes."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_waveopt_002",
+      "conceptName": "Young's Double Slit Experiment",
+      "description": "Interference pattern produced by two coherent light sources.",
+      "formulaType": "ydse-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_waveopt_002_f1",
+          "name": "Position of Bright Fringe",
+          "equation": "yn = nλD/d",
+          "latex": "y_n=\\frac{n\\lambda D}{d}",
+          "meaning": "Position of nth bright fringe."
+        },
+        {
+          "formulaId": "phy_waveopt_002_f2",
+          "name": "Position of Dark Fringe",
+          "equation": "yn = (2n-1)λD/2d",
+          "latex": "y_n=\\frac{(2n-1)\\lambda D}{2d}",
+          "meaning": "Position of nth dark fringe."
+        },
+        {
+          "formulaId": "phy_waveopt_002_f3",
+          "name": "Intensity in Interference",
+          "equation": "I = I₁ + I₂ + 2√(I₁I₂)cosφ",
+          "latex": "I=I_1+I_2+2\\sqrt{I_1I_2}\\cos\\phi",
+          "meaning": "Resultant intensity due to interference."
+        },
+        {
+          "formulaId": "phy_waveopt_002_f4",
+          "name": "Maximum Intensity",
+          "equation": "Imax = (√I₁ + √I₂)²",
+          "latex": "I_{max}=(\\sqrt{I_1}+\\sqrt{I_2})^2",
+          "meaning": "Maximum intensity in interference."
+        },
+        {
+          "formulaId": "phy_waveopt_002_f5",
+          "name": "Minimum Intensity",
+          "equation": "Imin = (√I₁ - √I₂)²",
+          "latex": "I_{min}=(\\sqrt{I_1}-\\sqrt{I_2})^2",
+          "meaning": "Minimum intensity in interference."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_waveopt_003",
+      "conceptName": "Diffraction",
+      "description": "Bending of light around obstacles and apertures.",
+      "formulaType": "diffraction-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_waveopt_003_f1",
+          "name": "Single Slit Diffraction Condition",
+          "equation": "a sinθ = nλ",
+          "latex": "a\\sin\\theta=n\\lambda",
+          "meaning": "Condition for minima in single slit diffraction."
+        },
+        {
+          "formulaId": "phy_waveopt_003_f2",
+          "name": "Angular Width of Central Maximum",
+          "equation": "θ = 2λ/a",
+          "latex": "\\theta=\\frac{2\\lambda}{a}",
+          "meaning": "Angular width of central maximum."
+        },
+        {
+          "formulaId": "phy_waveopt_003_f3",
+          "name": "Linear Width of Central Maximum",
+          "equation": "W = 2Dλ/a",
+          "latex": "W=\\frac{2D\\lambda}{a}",
+          "meaning": "Linear width of central bright fringe."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_waveopt_004",
+      "conceptName": "Diffraction Grating",
+      "description": "Interference pattern produced by multiple slits.",
+      "formulaType": "grating-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_waveopt_004_f1",
+          "name": "Grating Equation",
+          "equation": "d sinθ = nλ",
+          "latex": "d\\sin\\theta=n\\lambda",
+          "meaning": "Condition for principal maxima."
+        },
+        {
+          "formulaId": "phy_waveopt_004_f2",
+          "name": "Grating Element",
+          "equation": "d = a + b",
+          "latex": "d=a+b",
+          "meaning": "Distance between adjacent slits."
+        },
+        {
+          "formulaId": "phy_waveopt_004_f3",
+          "name": "Resolving Power of Grating",
+          "equation": "RP = nN",
+          "latex": "RP=nN",
+          "meaning": "Resolving power of diffraction grating."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_waveopt_005",
+      "conceptName": "Polarization",
+      "description": "Restriction of vibrations of light waves to one plane.",
+      "formulaType": "polarization-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_waveopt_005_f1",
+          "name": "Malus Law",
+          "equation": "I = I₀ cos²θ",
+          "latex": "I=I_0\\cos^2\\theta",
+          "meaning": "Intensity after passing through analyzer."
+        },
+        {
+          "formulaId": "phy_waveopt_005_f2",
+          "name": "Brewster Law",
+          "equation": "μ = tanip",
+          "latex": "\\mu=\\tan i_p",
+          "meaning": "Relation for polarizing angle."
+        },
+        {
+          "formulaId": "phy_waveopt_005_f3",
+          "name": "Intensity After Polarizer",
+          "equation": "I = I₀/2",
+          "latex": "I=\\frac{I_0}{2}",
+          "meaning": "Intensity of unpolarized light after polarizer."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_waveopt_006",
+      "conceptName": "Resolving Power",
+      "description": "Ability of optical instruments to distinguish close objects.",
+      "formulaType": "resolving-power-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_waveopt_006_f1",
+          "name": "Resolving Power of Microscope",
+          "equation": "RP = 2μ sinθ/1.22λ",
+          "latex": "RP=\\frac{2\\mu\\sin\\theta}{1.22\\lambda}",
+          "meaning": "Resolving power of microscope."
+        },
+        {
+          "formulaId": "phy_waveopt_006_f2",
+          "name": "Resolving Power of Telescope",
+          "equation": "θmin = 1.22λ/D",
+          "latex": "\\theta_{min}=\\frac{1.22\\lambda}{D}",
+          "meaning": "Minimum angular separation resolved by telescope."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_waveopt_007",
+      "conceptName": "Coherent Sources",
+      "description": "Sources maintaining constant phase difference.",
+      "formulaType": "coherence-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_waveopt_007_f1",
+          "name": "Phase Difference",
+          "equation": "φ = 2πΔx/λ",
+          "latex": "\\phi=\\frac{2\\pi\\Delta x}{\\lambda}",
+          "meaning": "Phase difference due to path difference."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Interference requires coherent sources.",
+    "Diffraction occurs significantly when aperture size is comparable to wavelength.",
+    "Polarization proves transverse nature of light.",
+    "Fringe width is independent of fringe order."
+  ],
+  "commonMistakes": [
+    "Confusing interference and diffraction conditions",
+    "Wrong unit conversion in wavelength",
+    "Using incorrect path difference formula",
+    "Ignoring phase difference sign"
+  ],
+  "jeeAdvancedFocus": [
+    "YDSE intensity problems",
+    "Diffraction derivations",
+    "Polarization numericals",
+    "Resolving power applications"
+  ],
+  "neetFocus": [
+    "Interference conditions",
+    "Fringe width",
+    "Diffraction basics",
+    "Polarization laws"
+  ],
+  "keywords": [
+    "wave optics",
+    "interference",
+    "diffraction",
+    "polarization",
+    "young double slit experiment",
+    "malus law",
+    "resolving power",
+    "coherent sources"
+  ]
+}

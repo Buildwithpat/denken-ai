@@ -1,0 +1,238 @@
+{
+  "chapterId": "chem_alcohols_phenols_ethers_024",
+  "fileName": "alcohols_phenols_ethers.json",
+  "chapterName": "Alcohols, Phenols & Ethers",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "alcohols",
+    "phenols",
+    "ethers",
+    "dehydration",
+    "williamson-synthesis",
+    "acidity"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_ape_001",
+      "conceptName": "Alcohols",
+      "description": "Organic compounds containing hydroxyl group.",
+      "formulaType": "alcohol-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ape_001_f1",
+          "name": "General Formula of Alcohols",
+          "equation": "R-OH",
+          "latex": "R-OH",
+          "meaning": "General formula of monohydric alcohols.",
+          "applications": [
+            "Organic synthesis",
+            "Functional group identification"
+          ]
+        },
+        {
+          "formulaId": "chem_ape_001_f2",
+          "name": "Preparation from Alkene",
+          "equation": "CH₂=CH₂ + H₂O → CH₃CH₂OH",
+          "latex": "CH_2=CH_2+H_2O\\rightarrow CH_3CH_2OH",
+          "meaning": "Hydration of alkene forms alcohol."
+        },
+        {
+          "formulaId": "chem_ape_001_f3",
+          "name": "Reaction with Sodium",
+          "equation": "2ROH + 2Na → 2RONa + H₂",
+          "latex": "2ROH+2Na\\rightarrow2RONa+H_2",
+          "meaning": "Alcohol reacts with sodium forming alkoxide."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ape_002",
+      "conceptName": "Dehydration of Alcohols",
+      "description": "Removal of water from alcohols.",
+      "formulaType": "dehydration-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ape_002_f1",
+          "name": "Alcohol to Alkene",
+          "equation": "CH₃CH₂OH → CH₂=CH₂ + H₂O",
+          "latex": "CH_3CH_2OH\\rightarrow CH_2=CH_2+H_2O",
+          "meaning": "Dehydration of ethanol forms ethene."
+        },
+        {
+          "formulaId": "chem_ape_002_f2",
+          "name": "Ease of Dehydration",
+          "equation": "3° > 2° > 1°",
+          "latex": "3^\\circ>2^\\circ>1^\\circ",
+          "meaning": "Order of dehydration based on carbocation stability."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ape_003",
+      "conceptName": "Oxidation of Alcohols",
+      "description": "Oxidation reactions of alcohols.",
+      "formulaType": "oxidation-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ape_003_f1",
+          "name": "Primary Alcohol Oxidation",
+          "equation": "RCH₂OH → RCHO → RCOOH",
+          "latex": "RCH_2OH\\rightarrow RCHO\\rightarrow RCOOH",
+          "meaning": "Primary alcohol oxidizes to aldehyde and acid."
+        },
+        {
+          "formulaId": "chem_ape_003_f2",
+          "name": "Secondary Alcohol Oxidation",
+          "equation": "R₂CHOH → R₂CO",
+          "latex": "R_2CHOH\\rightarrow R_2CO",
+          "meaning": "Secondary alcohol oxidizes to ketone."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ape_004",
+      "conceptName": "Phenols",
+      "description": "Compounds with hydroxyl group attached to aromatic ring.",
+      "formulaType": "phenol-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ape_004_f1",
+          "name": "Phenol Formula",
+          "equation": "C₆H₅OH",
+          "latex": "C_6H_5OH",
+          "meaning": "Formula of phenol."
+        },
+        {
+          "formulaId": "chem_ape_004_f2",
+          "name": "Phenol Acidity",
+          "equation": "C₆H₅OH + NaOH → C₆H₅ONa + H₂O",
+          "latex": "C_6H_5OH+NaOH\\rightarrow C_6H_5ONa+H_2O",
+          "meaning": "Phenol reacts with NaOH due to acidic nature."
+        },
+        {
+          "formulaId": "chem_ape_004_f3",
+          "name": "Bromination of Phenol",
+          "equation": "C₆H₅OH + 3Br₂ → C₆H₂Br₃OH + 3HBr",
+          "latex": "C_6H_5OH+3Br_2\\rightarrow C_6H_2Br_3OH+3HBr",
+          "meaning": "Formation of tribromophenol."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ape_005",
+      "conceptName": "Kolbe and Reimer-Tiemann Reactions",
+      "description": "Important reactions of phenols.",
+      "formulaType": "named-reaction-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ape_005_f1",
+          "name": "Kolbe Reaction",
+          "equation": "C₆H₅ONa + CO₂ → Salicylic acid",
+          "latex": "C_6H_5ONa+CO_2\\rightarrow\\text{Salicylic acid}",
+          "meaning": "Carboxylation of sodium phenoxide."
+        },
+        {
+          "formulaId": "chem_ape_005_f2",
+          "name": "Reimer-Tiemann Reaction",
+          "equation": "Phenol + CHCl₃ + NaOH → Salicylaldehyde",
+          "latex": "\\text{Phenol}+CHCl_3+NaOH\\rightarrow\\text{Salicylaldehyde}",
+          "meaning": "Formylation of phenol."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ape_006",
+      "conceptName": "Ethers",
+      "description": "Compounds containing oxygen atom between two alkyl/aryl groups.",
+      "formulaType": "ether-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ape_006_f1",
+          "name": "General Formula of Ether",
+          "equation": "R-O-R'",
+          "latex": "R-O-R'",
+          "meaning": "General formula of ethers."
+        },
+        {
+          "formulaId": "chem_ape_006_f2",
+          "name": "Williamson Ether Synthesis",
+          "equation": "RONa + R'X → ROR' + NaX",
+          "latex": "RONa+R'X\\rightarrow ROR'+NaX",
+          "meaning": "Preparation of ethers from alkoxide."
+        },
+        {
+          "formulaId": "chem_ape_006_f3",
+          "name": "Ether Cleavage",
+          "equation": "ROR' + HI → RI + ROH",
+          "latex": "ROR'+HI\\rightarrow RI+ROH",
+          "meaning": "Cleavage of ether using HI."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ape_007",
+      "conceptName": "Acidity Order",
+      "description": "Comparison of acidic strengths.",
+      "formulaType": "acidity-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ape_007_f1",
+          "name": "Acidity Order",
+          "equation": "Phenol > Alcohol > Water",
+          "latex": "\\text{Phenol} > \\text{Alcohol} > \\text{Water}",
+          "meaning": "Order based on stability of conjugate base."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_ape_008",
+      "conceptName": "Lucas Test",
+      "description": "Test to distinguish alcohols.",
+      "formulaType": "test-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_ape_008_f1",
+          "name": "Lucas Test Order",
+          "equation": "3° > 2° > 1°",
+          "latex": "3^\\circ>2^\\circ>1^\\circ",
+          "meaning": "Reactivity order in Lucas test."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Phenols are more acidic than alcohols due to resonance stabilization.",
+    "Primary alcohols oxidize to aldehydes and acids.",
+    "Ethers are less reactive than alcohols.",
+    "Williamson synthesis is best for primary alkyl halides."
+  ],
+  "commonMistakes": [
+    "Confusing alcohol and phenol acidity",
+    "Incorrect oxidation products",
+    "Wrong Williamson synthesis substrate",
+    "Ignoring carbocation stability in dehydration"
+  ],
+  "jeeAdvancedFocus": [
+    "Named reactions",
+    "Reaction mechanisms",
+    "Acidity comparisons",
+    "Oxidation and dehydration reactions"
+  ],
+  "neetFocus": [
+    "Important reactions",
+    "Phenol acidity",
+    "Preparation methods",
+    "Lucas test"
+  ],
+  "keywords": [
+    "alcohols",
+    "phenols",
+    "ethers",
+    "williamson synthesis",
+    "kolbe reaction",
+    "reimer tiemann reaction",
+    "dehydration",
+    "lucas test"
+  ]
+}

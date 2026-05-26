@@ -1,0 +1,256 @@
+{
+  "chapterId": "chem_haloalkanes_haloarenes_023",
+  "fileName": "haloalkanes_haloarenes.json",
+  "chapterName": "Haloalkanes & Haloarenes",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "haloalkanes",
+    "haloarenes",
+    "sn1",
+    "sn2",
+    "elimination-reactions",
+    "aryl-halides"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_halo_001",
+      "conceptName": "Haloalkanes",
+      "description": "Compounds containing halogen attached to alkyl group.",
+      "formulaType": "haloalkane-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_halo_001_f1",
+          "name": "General Formula",
+          "equation": "R-X",
+          "latex": "R-X",
+          "meaning": "General formula of haloalkanes.",
+          "applications": ["Organic synthesis", "Substitution reactions"]
+        },
+        {
+          "formulaId": "chem_halo_001_f2",
+          "name": "Wurtz Reaction",
+          "equation": "2R-X + 2Na → R-R + 2NaX",
+          "latex": "2R-X+2Na\\rightarrow R-R+2NaX",
+          "meaning": "Preparation of higher alkanes."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_halo_002",
+      "conceptName": "Haloarenes",
+      "description": "Compounds containing halogen attached to aromatic ring.",
+      "formulaType": "haloarene-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_halo_002_f1",
+          "name": "General Formula",
+          "equation": "Ar-X",
+          "latex": "Ar-X",
+          "meaning": "General formula of haloarenes."
+        },
+        {
+          "formulaId": "chem_halo_002_f2",
+          "name": "Chlorobenzene Formula",
+          "equation": "C₆H₅Cl",
+          "latex": "C_6H_5Cl",
+          "meaning": "Formula of chlorobenzene."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_halo_003",
+      "conceptName": "Nucleophilic Substitution Reactions",
+      "description": "Replacement of halogen by nucleophile.",
+      "formulaType": "substitution-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_halo_003_f1",
+          "name": "SN2 Reaction",
+          "equation": "R-X + OH⁻ → R-OH + X⁻",
+          "latex": "R-X+OH^-\\rightarrow R-OH+X^-",
+          "meaning": "Bimolecular nucleophilic substitution."
+        },
+        {
+          "formulaId": "chem_halo_003_f2",
+          "name": "SN1 Reaction",
+          "equation": "R-X → R⁺ + X⁻",
+          "latex": "R-X\\rightarrow R^+ + X^-",
+          "meaning": "Formation of carbocation intermediate."
+        },
+        {
+          "formulaId": "chem_halo_003_f3",
+          "name": "Rate of SN1",
+          "equation": "Rate = k[R-X]",
+          "latex": "\\text{Rate}=k[R-X]",
+          "meaning": "Rate depends only on substrate concentration."
+        },
+        {
+          "formulaId": "chem_halo_003_f4",
+          "name": "Rate of SN2",
+          "equation": "Rate = k[R-X][Nu⁻]",
+          "latex": "\\text{Rate}=k[R-X][Nu^-]",
+          "meaning": "Rate depends on substrate and nucleophile."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_halo_004",
+      "conceptName": "Elimination Reactions",
+      "description": "Removal of HX forming alkene.",
+      "formulaType": "elimination-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_halo_004_f1",
+          "name": "Dehydrohalogenation",
+          "equation": "R-CH₂-CH₂-X + KOH → Alkene + KX + H₂O",
+          "latex": "R-CH_2-CH_2-X+KOH\\rightarrow\\text{Alkene}+KX+H_2O",
+          "meaning": "Elimination of HX using alcoholic KOH."
+        },
+        {
+          "formulaId": "chem_halo_004_f2",
+          "name": "Saytzeff Rule",
+          "equation": "More substituted alkene is major product",
+          "latex": "\\text{More substituted alkene is major product}",
+          "meaning": "Rule governing elimination products."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_halo_005",
+      "conceptName": "Reactivity of Haloalkanes",
+      "description": "Factors affecting reactivity.",
+      "formulaType": "reactivity-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_halo_005_f1",
+          "name": "Leaving Group Order",
+          "equation": "RI > RBr > RCl > RF",
+          "latex": "RI>RBr>RCl>RF",
+          "meaning": "Reactivity order of haloalkanes."
+        },
+        {
+          "formulaId": "chem_halo_005_f2",
+          "name": "SN1 Stability Order",
+          "equation": "3° > 2° > 1° > CH₃",
+          "latex": "3^\\circ>2^\\circ>1^\\circ>CH_3",
+          "meaning": "Order based on carbocation stability."
+        },
+        {
+          "formulaId": "chem_halo_005_f3",
+          "name": "SN2 Reactivity Order",
+          "equation": "CH₃ > 1° > 2° > 3°",
+          "latex": "CH_3>1^\\circ>2^\\circ>3^\\circ",
+          "meaning": "Order based on steric hindrance."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_halo_006",
+      "conceptName": "Preparation of Haloalkanes",
+      "description": "Methods of preparing alkyl halides.",
+      "formulaType": "preparation-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_halo_006_f1",
+          "name": "Alcohol to Haloalkane",
+          "equation": "ROH + HX → RX + H₂O",
+          "latex": "ROH+HX\\rightarrow RX+H_2O",
+          "meaning": "Conversion of alcohol to haloalkane."
+        },
+        {
+          "formulaId": "chem_halo_006_f2",
+          "name": "Free Radical Halogenation",
+          "equation": "RH + Cl₂ → RCl + HCl",
+          "latex": "RH+Cl_2\\rightarrow RCl+HCl",
+          "meaning": "Preparation by halogenation of alkanes."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_halo_007",
+      "conceptName": "Aryl Halide Reactions",
+      "description": "Characteristic reactions of haloarenes.",
+      "formulaType": "aryl-halide-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_halo_007_f1",
+          "name": "Dow Process",
+          "equation": "C₆H₅Cl + NaOH → C₆H₅OH + NaCl",
+          "latex": "C_6H_5Cl+NaOH\\rightarrow C_6H_5OH+NaCl",
+          "meaning": "Preparation of phenol from chlorobenzene."
+        },
+        {
+          "formulaId": "chem_halo_007_f2",
+          "name": "Fittig Reaction",
+          "equation": "2Ar-X + 2Na → Ar-Ar + 2NaX",
+          "latex": "2Ar-X+2Na\\rightarrow Ar-Ar+2NaX",
+          "meaning": "Coupling reaction forming biaryl."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_halo_008",
+      "conceptName": "Polyhalogen Compounds",
+      "description": "Important compounds containing multiple halogens.",
+      "formulaType": "polyhalogen-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_halo_008_f1",
+          "name": "Chloroform Formula",
+          "equation": "CHCl₃",
+          "latex": "CHCl_3",
+          "meaning": "Formula of chloroform."
+        },
+        {
+          "formulaId": "chem_halo_008_f2",
+          "name": "DDT Formula",
+          "equation": "C₁₄H₉Cl₅",
+          "latex": "C_{14}H_9Cl_5",
+          "meaning": "Formula of DDT insecticide."
+        },
+        {
+          "formulaId": "chem_halo_008_f3",
+          "name": "Carbon Tetrachloride",
+          "equation": "CCl₄",
+          "latex": "CCl_4",
+          "meaning": "Formula of carbon tetrachloride."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Haloalkanes undergo nucleophilic substitution easily.",
+    "Haloarenes are less reactive due to resonance stabilization.",
+    "SN1 reactions proceed via carbocation intermediate.",
+    "SN2 reactions involve backside attack."
+  ],
+  "commonMistakes": [
+    "Confusing SN1 and SN2 mechanisms",
+    "Incorrect reactivity order",
+    "Wrong application of Saytzeff rule",
+    "Ignoring resonance in haloarenes"
+  ],
+  "jeeAdvancedFocus": [
+    "Reaction mechanisms",
+    "SN1 vs SN2 comparison",
+    "Elimination reactions",
+    "Haloarene reactivity"
+  ],
+  "neetFocus": [
+    "Important reactions",
+    "Preparation methods",
+    "SN1 and SN2 basics",
+    "Polyhalogen compounds"
+  ],
+  "keywords": [
+    "haloalkanes",
+    "haloarenes",
+    "SN1 reaction",
+    "SN2 reaction",
+    "elimination reaction",
+    "aryl halides",
+    "wurtz reaction",
+    "saytzeff rule"
+  ]
+}

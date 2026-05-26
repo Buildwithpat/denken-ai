@@ -1,0 +1,270 @@
+{
+  "chapterId": "physics_geometrical_optics_021",
+  "fileName": "geometrical_optics.json",
+  "chapterName": "Geometrical Optics",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "geometrical-optics",
+    "reflection",
+    "refraction",
+    "lenses",
+    "mirrors",
+    "optical-instruments"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_opt_001",
+      "conceptName": "Reflection from Mirrors",
+      "description": "Formation of images due to reflection from mirrors.",
+      "formulaType": "mirror-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_opt_001_f1",
+          "name": "Mirror Formula",
+          "equation": "1/f = 1/v + 1/u",
+          "latex": "\\frac{1}{f}=\\frac{1}{v}+\\frac{1}{u}",
+          "meaning": "Relation between focal length, image distance and object distance.",
+          "variables": {
+            "f": {
+              "meaning": "Focal length",
+              "unit": "m"
+            },
+            "v": {
+              "meaning": "Image distance",
+              "unit": "m"
+            },
+            "u": {
+              "meaning": "Object distance",
+              "unit": "m"
+            }
+          },
+          "applications": ["Image formation", "Mirror problems"]
+        },
+        {
+          "formulaId": "phy_opt_001_f2",
+          "name": "Magnification in Mirror",
+          "equation": "m = -v/u",
+          "latex": "m=-\\frac{v}{u}",
+          "meaning": "Linear magnification produced by mirror."
+        },
+        {
+          "formulaId": "phy_opt_001_f3",
+          "name": "Relation Between Radius and Focal Length",
+          "equation": "f = R/2",
+          "latex": "f=\\frac{R}{2}",
+          "meaning": "Focal length relation for spherical mirrors."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_opt_002",
+      "conceptName": "Refraction of Light",
+      "description": "Bending of light while passing between media.",
+      "formulaType": "refraction-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_opt_002_f1",
+          "name": "Snell's Law",
+          "equation": "n₁ sinθ₁ = n₂ sinθ₂",
+          "latex": "n_1\\sin\\theta_1=n_2\\sin\\theta_2",
+          "meaning": "Law of refraction."
+        },
+        {
+          "formulaId": "phy_opt_002_f2",
+          "name": "Refractive Index",
+          "equation": "n = c/v",
+          "latex": "n=\\frac{c}{v}",
+          "meaning": "Absolute refractive index."
+        },
+        {
+          "formulaId": "phy_opt_002_f3",
+          "name": "Critical Angle",
+          "equation": "sinC = 1/n",
+          "latex": "\\sin C=\\frac{1}{n}",
+          "meaning": "Critical angle for total internal reflection."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_opt_003",
+      "conceptName": "Refraction Through Spherical Surfaces",
+      "description": "Image formation due to spherical refracting surfaces.",
+      "formulaType": "spherical-surface-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_opt_003_f1",
+          "name": "Refraction Formula",
+          "equation": "n₂/v - n₁/u = (n₂ - n₁)/R",
+          "latex": "\\frac{n_2}{v}-\\frac{n_1}{u}=\\frac{n_2-n_1}{R}",
+          "meaning": "Refraction at spherical surface."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_opt_004",
+      "conceptName": "Thin Lens Formula",
+      "description": "Image formation by thin lenses.",
+      "formulaType": "lens-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_opt_004_f1",
+          "name": "Lens Formula",
+          "equation": "1/f = 1/v - 1/u",
+          "latex": "\\frac{1}{f}=\\frac{1}{v}-\\frac{1}{u}",
+          "meaning": "Relation between object distance, image distance and focal length."
+        },
+        {
+          "formulaId": "phy_opt_004_f2",
+          "name": "Magnification in Lens",
+          "equation": "m = v/u",
+          "latex": "m=\\frac{v}{u}",
+          "meaning": "Magnification produced by lens."
+        },
+        {
+          "formulaId": "phy_opt_004_f3",
+          "name": "Power of Lens",
+          "equation": "P = 1/f",
+          "latex": "P=\\frac{1}{f}",
+          "meaning": "Power of lens in diopters."
+        },
+        {
+          "formulaId": "phy_opt_004_f4",
+          "name": "Combination of Lenses",
+          "equation": "P = P₁ + P₂ + ...",
+          "latex": "P=P_1+P_2+...",
+          "meaning": "Equivalent power of lenses in contact."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_opt_005",
+      "conceptName": "Lens Maker Formula",
+      "description": "Relation between focal length and radii of curvature.",
+      "formulaType": "lens-maker-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_opt_005_f1",
+          "name": "Lens Maker Formula",
+          "equation": "1/f = (n - 1)(1/R₁ - 1/R₂)",
+          "latex": "\\frac{1}{f}=(n-1)\\left(\\frac{1}{R_1}-\\frac{1}{R_2}\\right)",
+          "meaning": "Focal length of lens."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_opt_006",
+      "conceptName": "Prism",
+      "description": "Deviation and dispersion of light through prism.",
+      "formulaType": "prism-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_opt_006_f1",
+          "name": "Prism Formula",
+          "equation": "δ = i + e - A",
+          "latex": "\\delta=i+e-A",
+          "meaning": "Angle of deviation through prism."
+        },
+        {
+          "formulaId": "phy_opt_006_f2",
+          "name": "Refractive Index of Prism",
+          "equation": "n = sin[(A + δm)/2]/sin(A/2)",
+          "latex": "n=\\frac{\\sin\\left(\\frac{A+\\delta_m}{2}\\right)}{\\sin\\left(\\frac{A}{2}\\right)}",
+          "meaning": "Refractive index of prism material."
+        },
+        {
+          "formulaId": "phy_opt_006_f3",
+          "name": "Small Angle Prism Formula",
+          "equation": "δ = (n - 1)A",
+          "latex": "\\delta=(n-1)A",
+          "meaning": "Deviation for thin prism."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_opt_007",
+      "conceptName": "Optical Instruments",
+      "description": "Magnifying power and resolving power of optical devices.",
+      "formulaType": "instrument-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_opt_007_f1",
+          "name": "Magnifying Power of Simple Microscope",
+          "equation": "M = 1 + D/f",
+          "latex": "M=1+\\frac{D}{f}",
+          "meaning": "Magnifying power of simple microscope."
+        },
+        {
+          "formulaId": "phy_opt_007_f2",
+          "name": "Magnifying Power of Compound Microscope",
+          "equation": "M = (L/f₀)(D/fe)",
+          "latex": "M=\\left(\\frac{L}{f_o}\\right)\\left(\\frac{D}{f_e}\\right)",
+          "meaning": "Magnifying power of compound microscope."
+        },
+        {
+          "formulaId": "phy_opt_007_f3",
+          "name": "Magnifying Power of Telescope",
+          "equation": "M = fo/fe",
+          "latex": "M=\\frac{f_o}{f_e}",
+          "meaning": "Magnifying power of telescope."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_opt_008",
+      "conceptName": "Total Internal Reflection",
+      "description": "Complete reflection of light inside denser medium.",
+      "formulaType": "tir-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_opt_008_f1",
+          "name": "Condition for Total Internal Reflection",
+          "equation": "θ > C",
+          "latex": "\\theta>C",
+          "meaning": "Angle of incidence must exceed critical angle."
+        },
+        {
+          "formulaId": "phy_opt_008_f2",
+          "name": "Optical Fiber Numerical Aperture",
+          "equation": "NA = √(n₁² - n₂²)",
+          "latex": "NA=\\sqrt{n_1^2-n_2^2}",
+          "meaning": "Numerical aperture of optical fiber."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Sign convention must be followed carefully in optics.",
+    "Convex lens has positive focal length while concave lens has negative focal length.",
+    "Power of converging lens is positive.",
+    "Total internal reflection occurs only from denser to rarer medium."
+  ],
+  "commonMistakes": [
+    "Wrong sign convention",
+    "Confusing mirror and lens formulas",
+    "Using degree instead of radians incorrectly",
+    "Ignoring unit of focal length in power calculation"
+  ],
+  "jeeAdvancedFocus": [
+    "Multi-lens systems",
+    "Prism minimum deviation",
+    "Optical instruments",
+    "Sign convention applications"
+  ],
+  "neetFocus": [
+    "Lens formula",
+    "Mirror formula",
+    "Prism relations",
+    "Total internal reflection"
+  ],
+  "keywords": [
+    "geometrical optics",
+    "lens formula",
+    "mirror formula",
+    "refraction",
+    "prism",
+    "optical instruments",
+    "total internal reflection",
+    "power of lens"
+  ]
+}

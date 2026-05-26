@@ -1,0 +1,581 @@
+{
+  "questions": [
+    {
+      "questionId": "NEET2025_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Mechanical Properties of Fluids",
+      "topic": "Surface Tension",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Consider a water tank shown in the figure. It has one wall at x = L and can be taken to be very wide in the z direction. When filled with a liquid of surface tension S and density ρ, the liquid surface makes angle θ0 (θ0 << 1) with the x-axis at x = L. If y(x) is the height of the surface then the equation for y(x) is:",
+      "options": {
+        "A": "d²y/dx² = (ρg/S)x",
+        "B": "d²y/dx² = (ρg/S)y",
+        "C": "d²y/dx² = √(ρg/S)",
+        "D": "dy/dx = √(ρg/S)x"
+      },
+      "correctAnswer": "B",
+      "diagramRequired": true,
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Ray Optics and Optical Instruments",
+      "topic": "Microscope",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A microscope has an objective of focal length 2 cm, eyepiece of focal length 4 cm and tube length of 40 cm. If the distance of distinct vision is 25 cm, the magnification of the microscope is:",
+      "options": {
+        "A": "100",
+        "B": "125",
+        "C": "150",
+        "D": "250"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Moving Charges and Magnetism",
+      "topic": "Velocity Selector",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "An electron moving with speed c/100 is injected into a magnetic field B = 9 × 10⁻⁴ T perpendicular to its motion. To ensure the electron remains undeflected, an electric field E is applied together with B. Find the correct statement.",
+      "options": {
+        "A": "E ⟂ B and magnitude = 27 × 10⁴ Vm⁻¹",
+        "B": "E ⟂ B and magnitude = 27 × 10² Vm⁻¹",
+        "C": "E ∥ B and magnitude = 27 × 10² Vm⁻¹",
+        "D": "E ∥ B and magnitude = 27 × 10⁴ Vm⁻¹"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Laws of Motion",
+      "topic": "Friction on Inclined Plane",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Two inclined planes each make an angle of 45° with horizontal. One is smooth and the other rough. A body takes twice as much time to slide down the rough plane compared to the smooth one. The coefficient of kinetic friction is closest to:",
+      "options": {
+        "A": "0.25",
+        "B": "0.40",
+        "C": "0.50",
+        "D": "0.75"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "Work Energy and Power",
+      "topic": "Work Energy Theorem",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "The kinetic energies of two similar cars A and B are 100 J and 225 J respectively. On applying brakes, car A stops after 1000 m and car B after 1500 m. If FA and FB are braking forces, then FA/FB is:",
+      "options": {
+        "A": "3/2",
+        "B": "2/3",
+        "C": "1/3",
+        "D": "1/2"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Current Electricity",
+      "topic": "Combination of Resistors",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "The current passing through the battery in the given circuit is:",
+      "options": {
+        "A": "2.0 A",
+        "B": "0.5 A",
+        "C": "2.5 A",
+        "D": "1.5 A"
+      },
+      "correctAnswer": "A",
+      "diagramRequired": true,
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "Work Energy and Power",
+      "topic": "Circular Motion",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "A bob of mass m suspended by a string of length l is projected horizontally with speed v₀. If the string becomes slack at point P making angle θ from the horizontal, the ratio v/v₀ is:",
+      "options": {
+        "A": "(sinθ)^(1/2)",
+        "B": "[1/(2+3sinθ)]^(1/2)",
+        "C": "[cosθ/(2+3sinθ)]^(1/2)",
+        "D": "[sinθ/(2+3sinθ)]^(1/2)"
+      },
+      "correctAnswer": "D",
+      "diagramRequired": true,
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "Semiconductor Electronics",
+      "topic": "Logic Gates",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "The output Y of the given logic implementation is similar to the output of which logic gate?",
+      "options": {
+        "A": "AND",
+        "B": "NAND",
+        "C": "OR",
+        "D": "NOR"
+      },
+      "correctAnswer": "B",
+      "diagramRequired": true,
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "Electromagnetic Waves",
+      "topic": "Electric and Magnetic Fields",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "The electric field in a plane electromagnetic wave is given by Ez = 60 cos(5x + 1.5 × 10⁹ t) V/m. Expression for the corresponding magnetic field is:",
+      "options": {
+        "A": "By = 2 × 10⁻⁷ cos(5x + 1.5 × 10⁹ t) T",
+        "B": "Bx = 2 × 10⁻⁷ cos(5x + 1.5 × 10⁹ t) T",
+        "C": "Bz = 60 cos(5x + 1.5 × 10⁹ t) T",
+        "D": "By = 60 sin(5x + 1.5 × 10⁹ t) T"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Laws of Motion",
+      "topic": "Impulse",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "A ball of mass 0.5 kg is dropped from height 40 m and rebounds to height 10 m. The impulse imparted during collision with ground is:",
+      "options": {
+        "A": "21 Ns",
+        "B": "7 Ns",
+        "C": "0",
+        "D": "84 Ns"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2025
+    },
+
+    {
+      "questionId": "NEET2025_CHEM_1",
+      "questionNumber": 46,
+      "subject": "Chemistry",
+      "chapter": "Structure of Atom",
+      "topic": "Hydrogen Spectrum",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "The ratio of wavelengths absorbed by a hydrogen atom during transitions n=2→3 and n=4→6 respectively is:",
+      "options": {
+        "A": "1/36",
+        "B": "1/16",
+        "C": "1/9",
+        "D": "1/4"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_CHEM_2",
+      "questionNumber": 47,
+      "subject": "Chemistry",
+      "chapter": "Classification of Elements and Periodicity",
+      "topic": "Periodic Trends",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "Choose the correct statements regarding periodic properties and isoelectronic species.",
+      "options": {
+        "A": "Ga has very high melting point while Cs has very low melting point",
+        "B": "Electronegativity values of N and Cl are not same",
+        "C": "Ar, K+, Cl−, Ca²+ and S²− are isoelectronic",
+        "D": "Atomic radius of Cs is greater than Li and Rb"
+      },
+      "correctAnswer": "A,C,D",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_CHEM_3",
+      "questionNumber": 48,
+      "subject": "Chemistry",
+      "chapter": "Qualitative Analysis",
+      "topic": "Cation Analysis",
+      "difficulty": "medium",
+      "questionType": "match_list",
+      "questionText": "Match ions with their group numbers in cation analysis.",
+      "options": {
+        "A": "Co²+ → Group IV",
+        "B": "Mg²+ → Group VI",
+        "C": "Pb²+ → Group I",
+        "D": "Al³+ → Group III"
+      },
+      "correctAnswer": "A,B,C,D",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_CHEM_4",
+      "questionNumber": 49,
+      "subject": "Chemistry",
+      "chapter": "Haloalkanes and Haloarenes",
+      "topic": "Reaction Mechanism",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Predict the major product P formed in the given sequence of reactions.",
+      "options": {
+        "A": "Product 1",
+        "B": "Product 2",
+        "C": "Product 3",
+        "D": "Product 4"
+      },
+      "correctAnswer": "B",
+      "diagramRequired": true,
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_CHEM_5",
+      "questionNumber": 50,
+      "subject": "Chemistry",
+      "chapter": "Structure of Atom",
+      "topic": "Bohr Model",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Energy and radius of first Bohr orbit of He+ and Li²+ are:",
+      "options": {
+        "A": "Li²+: -19.62×10⁻¹⁸ J, 17.6 pm ; He+: -8.72×10⁻¹⁸ J, 26.4 pm",
+        "B": "Li²+: -8.72×10⁻¹⁸ J, 26.4 pm ; He+: -19.62×10⁻¹⁸ J, 17.6 pm",
+        "C": "Li²+: -19.62×10⁻¹⁶ J, 17.6 pm ; He+: -8.72×10⁻¹⁶ J, 26.4 pm",
+        "D": "Li²+: -8.72×10⁻¹⁶ J, 17.6 pm ; He²+: -19.62×10⁻¹⁶ J, 17.6 pm"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_CHEM_6",
+      "questionNumber": 51,
+      "subject": "Chemistry",
+      "chapter": "Coordination Compounds",
+      "topic": "Magnetic Properties",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "Which among the following complexes are paramagnetic?",
+      "options": {
+        "A": "[NiCl4]²−",
+        "B": "Ni(CO)4",
+        "C": "[Ni(CN)4]²−",
+        "D": "[Ni(H2O)6]²+"
+      },
+      "correctAnswer": "A,D",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_CHEM_7",
+      "questionNumber": 52,
+      "subject": "Chemistry",
+      "chapter": "P Block Elements",
+      "topic": "Group 15 Elements",
+      "difficulty": "easy",
+      "questionType": "assertion_reason",
+      "questionText": "Assertion: Like nitrogen forms ammonia, arsenic forms arsine. Reason: Antimony cannot form antimony pentoxide.",
+      "options": {
+        "A": "Both correct",
+        "B": "Both incorrect",
+        "C": "Assertion correct but Reason incorrect",
+        "D": "Assertion incorrect but Reason correct"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_CHEM_8",
+      "questionNumber": 53,
+      "subject": "Chemistry",
+      "chapter": "Classification of Elements and Periodicity",
+      "topic": "Main Group Elements",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "Which electronic configurations belong to main group elements?",
+      "options": {
+        "A": "[Ne]3s¹",
+        "B": "[Ar]3d³4s²",
+        "C": "[Kr]4d¹⁰5s²5p⁵",
+        "D": "[Ar]3d¹⁰4s¹"
+      },
+      "correctAnswer": "A,C",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_CHEM_9",
+      "questionNumber": 54,
+      "subject": "Chemistry",
+      "chapter": "Some Basic Concepts of Chemistry",
+      "topic": "Dalton Atomic Theory",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Dalton’s atomic theory could not explain:",
+      "options": {
+        "A": "Law of conservation of mass",
+        "B": "Law of constant proportion",
+        "C": "Law of multiple proportion",
+        "D": "Law of gaseous volume"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_CHEM_10",
+      "questionNumber": 55,
+      "subject": "Chemistry",
+      "chapter": "Redox Reactions",
+      "topic": "Oxidation Number",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Oxidation states of underlined elements in KO₂, H₂O₂ and H₂SO₄ respectively are:",
+      "options": {
+        "A": "+1, -1, +6",
+        "B": "+2, -2, +6",
+        "C": "+1, -2, +4",
+        "D": "+4, -4, +6"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2025
+    },
+
+    {
+      "questionId": "NEET2025_BIO_1",
+      "questionNumber": 91,
+      "subject": "Biology",
+      "chapter": "Cell Respiration",
+      "topic": "Electron Transport Chain",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Complex II of mitochondrial electron transport chain is also known as:",
+      "options": {
+        "A": "Cytochrome bc1",
+        "B": "Succinate dehydrogenase",
+        "C": "Cytochrome c oxidase",
+        "D": "NADH dehydrogenase"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_BIO_2",
+      "questionNumber": 92,
+      "subject": "Biology",
+      "chapter": "Biotechnology Principles and Processes",
+      "topic": "PCR",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Polymerase chain reaction amplifies DNA according to equation:",
+      "options": {
+        "A": "N²",
+        "B": "2ⁿ",
+        "C": "2ⁿ + 1",
+        "D": "2N²"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_BIO_3",
+      "questionNumber": 93,
+      "subject": "Biology",
+      "chapter": "Reproductive Health",
+      "topic": "IVF",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "Identify potential drawbacks in adoption of IVF method.",
+      "options": {
+        "A": "Expensive instruments and reagents",
+        "B": "Less adoption of orphans",
+        "C": "Possibility of embryo not surviving",
+        "D": "Not available in India"
+      },
+      "correctAnswer": "A,B,C",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_BIO_4",
+      "questionNumber": 94,
+      "subject": "Biology",
+      "chapter": "Structural Organisation in Animals",
+      "topic": "Frog Circulation",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "The blood vessel carrying deoxygenated blood from body to heart in frog is:",
+      "options": {
+        "A": "Aorta",
+        "B": "Pulmonary artery",
+        "C": "Pulmonary vein",
+        "D": "Vena cava"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_BIO_5",
+      "questionNumber": 95,
+      "subject": "Biology",
+      "chapter": "The Living World",
+      "topic": "Reductionist Biology",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Reductionist Biology refers to:",
+      "options": {
+        "A": "Physico-chemical approach to study organisms",
+        "B": "Physiological approach",
+        "C": "Chemical approach",
+        "D": "Behavioural approach"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_BIO_6",
+      "questionNumber": 96,
+      "subject": "Biology",
+      "chapter": "Molecular Basis of Inheritance",
+      "topic": "RNA World",
+      "difficulty": "medium",
+      "questionType": "assertion_reason",
+      "questionText": "Statement I: RNA was first genetic material and acts both as catalyst and genetic material. Statement II: DNA evolved later and is more stable due to complementary strands and repair mechanism.",
+      "options": {
+        "A": "Both statements correct",
+        "B": "Both statements incorrect",
+        "C": "Statement I correct, Statement II incorrect",
+        "D": "Statement I incorrect, Statement II correct"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_BIO_7",
+      "questionNumber": 97,
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "topic": "Population Interactions",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Epiphytes growing on mango branch is an example of:",
+      "options": {
+        "A": "Commensalism",
+        "B": "Mutualism",
+        "C": "Predation",
+        "D": "Amensalism"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_BIO_8",
+      "questionNumber": 98,
+      "subject": "Biology",
+      "chapter": "Cell The Unit of Life",
+      "topic": "Ribosomes",
+      "difficulty": "easy",
+      "questionType": "multiple_correct",
+      "questionText": "Choose the correct statements regarding ribosomes.",
+      "options": {
+        "A": "Eukaryotic ribosomes are 80S",
+        "B": "Each ribosome has two subunits",
+        "C": "80S ribosome consists of 60S and 40S",
+        "D": "70S ribosome consists of 50S and 30S"
+      },
+      "correctAnswer": "A,B,C,D",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_BIO_9",
+      "questionNumber": 99,
+      "subject": "Biology",
+      "chapter": "Biodiversity and Conservation",
+      "topic": "Ex Situ Conservation",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which is an example of ex-situ conservation?",
+      "options": {
+        "A": "National Park",
+        "B": "Wildlife Sanctuary",
+        "C": "Zoos and Botanical gardens",
+        "D": "Protected areas"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2025
+    },
+    {
+      "questionId": "NEET2025_BIO_10",
+      "questionNumber": 100,
+      "subject": "Biology",
+      "chapter": "Ecosystem",
+      "topic": "Primary Productivity",
+      "difficulty": "medium",
+      "questionType": "assertion_reason",
+      "questionText": "Statement I: Solar energy is the primary energy source in ecosystem. Statement II: Rate of production of organic matter during photosynthesis is called net primary productivity.",
+      "options": {
+        "A": "Both statements correct",
+        "B": "Both statements incorrect",
+        "C": "Statement I correct, Statement II incorrect",
+        "D": "Statement I incorrect, Statement II correct"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2025
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "chapterId": "math_binomial_theorem_014",
+  "fileName": "binomial_theorem.json",
+  "chapterName": "Binomial Theorem",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "binomial-theorem",
+    "expansion",
+    "combinations",
+    "middle-term",
+    "general-term"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_binom_001",
+      "conceptName": "Binomial Expansion",
+      "description": "Expansion of powers of binomial expression.",
+      "formulaType": "binomial-expansion-formula",
+      "formulas": [
+        {
+          "formulaId": "math_binom_001_f1",
+          "name": "Binomial Theorem",
+          "equation": "(a+b)ⁿ = Σ[r=0→n] ⁿCᵣ aⁿ⁻ʳbʳ",
+          "latex": "(a+b)^n=\\sum_{r=0}^{n}{}^nC_r a^{n-r}b^r",
+          "meaning": "General expansion formula for binomial expression.",
+          "applications": ["Algebraic expansion", "Probability"]
+        }
+      ]
+    },
+    {
+      "conceptId": "math_binom_002",
+      "conceptName": "General Term",
+      "description": "Formula for general term in expansion.",
+      "formulaType": "general-term-formula",
+      "formulas": [
+        {
+          "formulaId": "math_binom_002_f1",
+          "name": "General Term",
+          "equation": "Tᵣ₊₁ = ⁿCᵣ aⁿ⁻ʳbʳ",
+          "latex": "T_{r+1}={}^nC_r a^{n-r}b^r",
+          "meaning": "Formula for (r+1)th term."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_binom_003",
+      "conceptName": "Middle Terms",
+      "description": "Middle term formulas in binomial expansion.",
+      "formulaType": "middle-term-formula",
+      "formulas": [
+        {
+          "formulaId": "math_binom_003_f1",
+          "name": "Middle Term for Even n",
+          "equation": "(n/2 + 1)th term",
+          "latex": "\\left(\\frac{n}{2}+1\\right)^{th}\\text{ term}",
+          "meaning": "Single middle term when n is even."
+        },
+        {
+          "formulaId": "math_binom_003_f2",
+          "name": "Middle Terms for Odd n",
+          "equation": "((n+1)/2)th and ((n+3)/2)th terms",
+          "latex": "\\left(\\frac{n+1}{2}\\right)^{th}\\text{ and }\\left(\\frac{n+3}{2}\\right)^{th}\\text{ terms}",
+          "meaning": "Two middle terms when n is odd."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_binom_004",
+      "conceptName": "Properties of Binomial Coefficients",
+      "description": "Important properties of combinations.",
+      "formulaType": "binomial-coefficient-formula",
+      "formulas": [
+        {
+          "formulaId": "math_binom_004_f1",
+          "name": "Symmetry Property",
+          "equation": "ⁿCᵣ = ⁿCₙ₋ᵣ",
+          "latex": "{}^nC_r={}^nC_{n-r}",
+          "meaning": "Symmetry property of combinations."
+        },
+        {
+          "formulaId": "math_binom_004_f2",
+          "name": "Pascal Identity",
+          "equation": "ⁿCᵣ + ⁿCᵣ₋₁ = ⁿ⁺¹Cᵣ",
+          "latex": "{}^nC_r+{}^nC_{r-1}={} ^{n+1}C_r",
+          "meaning": "Pascal triangle relation."
+        },
+        {
+          "formulaId": "math_binom_004_f3",
+          "name": "Sum of Coefficients",
+          "equation": "Σ ⁿCᵣ = 2ⁿ",
+          "latex": "\\sum {}^nC_r=2^n",
+          "meaning": "Sum of all binomial coefficients."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_binom_005",
+      "conceptName": "Greatest Binomial Coefficient",
+      "description": "Largest coefficient in expansion.",
+      "formulaType": "greatest-coefficient-formula",
+      "formulas": [
+        {
+          "formulaId": "math_binom_005_f1",
+          "name": "Greatest Coefficient for Even n",
+          "equation": "ⁿCₙ⁄₂",
+          "latex": "{}^nC_{n/2}",
+          "meaning": "Greatest coefficient when n is even."
+        },
+        {
+          "formulaId": "math_binom_005_f2",
+          "name": "Greatest Coefficients for Odd n",
+          "equation": "ⁿC(n-1)/2 and ⁿC(n+1)/2",
+          "latex": "{}^nC_{(n-1)/2}\\text{ and }{}^nC_{(n+1)/2}",
+          "meaning": "Two equal greatest coefficients for odd n."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_binom_006",
+      "conceptName": "Independent Term",
+      "description": "Finding term independent of variable.",
+      "formulaType": "independent-term-formula",
+      "formulas": [
+        {
+          "formulaId": "math_binom_006_f1",
+          "name": "Independent Term Condition",
+          "equation": "Power of variable = 0",
+          "latex": "\\text{Power of variable}=0",
+          "meaning": "Condition for constant term."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_binom_007",
+      "conceptName": "Binomial Approximation",
+      "description": "Approximation for small values.",
+      "formulaType": "approximation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_binom_007_f1",
+          "name": "Approximation Formula",
+          "equation": "(1+x)ⁿ ≈ 1 + nx",
+          "latex": "(1+x)^n\\approx1+nx",
+          "meaning": "Approximation when |x| is very small."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_binom_008",
+      "conceptName": "Negative and Fractional Index Expansion",
+      "description": "Expansion for non-natural exponents.",
+      "formulaType": "negative-index-formula",
+      "formulas": [
+        {
+          "formulaId": "math_binom_008_f1",
+          "name": "Negative Index Expansion",
+          "equation": "(1+x)⁻¹ = 1 - x + x² - x³ + ...",
+          "latex": "(1+x)^{-1}=1-x+x^2-x^3+\\cdots",
+          "meaning": "Expansion for reciprocal."
+        },
+        {
+          "formulaId": "math_binom_008_f2",
+          "name": "Square Root Expansion",
+          "equation": "(1+x)¹⁄² = 1 + x/2 - x²/8 + ...",
+          "latex": "(1+x)^{1/2}=1+\\frac{x}{2}-\\frac{x^2}{8}+\\cdots",
+          "meaning": "Expansion for square root."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Binomial theorem applies directly for positive integers.",
+    "General term is essential in coefficient problems.",
+    "Middle term depends on parity of n.",
+    "Approximation works only for small x."
+  ],
+  "commonMistakes": [
+    "Wrong value of r in general term",
+    "Mistakes in combination calculations",
+    "Incorrect middle term identification",
+    "Ignoring sign changes in expansion"
+  ],
+  "jeeAdvancedFocus": [
+    "Coefficient problems",
+    "Independent term questions",
+    "Fractional index expansions",
+    "Advanced binomial identities"
+  ],
+  "neetFocus": [
+    "Basic expansion",
+    "General term",
+    "Middle terms",
+    "Combination properties"
+  ],
+  "keywords": [
+    "binomial theorem",
+    "general term",
+    "middle term",
+    "expansion",
+    "combinations",
+    "coefficients"
+  ]
+}

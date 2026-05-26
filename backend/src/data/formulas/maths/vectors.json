@@ -1,0 +1,255 @@
+{
+  "chapterId": "math_vectors_021",
+  "fileName": "vectors.json",
+  "chapterName": "Vectors",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "vectors",
+    "3d-geometry",
+    "dot-product",
+    "cross-product",
+    "direction-cosines"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_vector_001",
+      "conceptName": "Basic Vector Representation",
+      "description": "Representation and magnitude of vectors.",
+      "formulaType": "basic-vector-formula",
+      "formulas": [
+        {
+          "formulaId": "math_vector_001_f1",
+          "name": "Vector Form",
+          "equation": "a = ai + bj + ck",
+          "latex": "\\vec a=a\\hat i+b\\hat j+c\\hat k",
+          "meaning": "Cartesian representation of vector.",
+          "applications": ["3D geometry", "Physics"]
+        },
+        {
+          "formulaId": "math_vector_001_f2",
+          "name": "Magnitude of Vector",
+          "equation": "|a| = √(a²+b²+c²)",
+          "latex": "|\\vec a|=\\sqrt{a^2+b^2+c^2}",
+          "meaning": "Length or magnitude of vector."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_vector_002",
+      "conceptName": "Unit Vector",
+      "description": "Vector with magnitude 1.",
+      "formulaType": "unit-vector-formula",
+      "formulas": [
+        {
+          "formulaId": "math_vector_002_f1",
+          "name": "Unit Vector Formula",
+          "equation": "â = a/|a|",
+          "latex": "\\hat a=\\frac{\\vec a}{|\\vec a|}",
+          "meaning": "Unit vector in direction of given vector."
+        },
+        {
+          "formulaId": "math_vector_002_f2",
+          "name": "Standard Unit Vectors",
+          "equation": "î, ĵ, k̂",
+          "latex": "\\hat i,\\hat j,\\hat k",
+          "meaning": "Unit vectors along x, y and z axes."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_vector_003",
+      "conceptName": "Addition and Subtraction of Vectors",
+      "description": "Basic vector operations.",
+      "formulaType": "vector-operation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_vector_003_f1",
+          "name": "Vector Addition",
+          "equation": "a+b = (a₁+b₁)i + (a₂+b₂)j + (a₃+b₃)k",
+          "latex": "\\vec a+\\vec b=(a_1+b_1)\\hat i+(a_2+b_2)\\hat j+(a_3+b_3)\\hat k",
+          "meaning": "Component-wise vector addition."
+        },
+        {
+          "formulaId": "math_vector_003_f2",
+          "name": "Vector Subtraction",
+          "equation": "a-b = a+(-b)",
+          "latex": "\\vec a-\\vec b=\\vec a+(-\\vec b)",
+          "meaning": "Difference of vectors."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_vector_004",
+      "conceptName": "Position Vector",
+      "description": "Vector representing point position.",
+      "formulaType": "position-vector-formula",
+      "formulas": [
+        {
+          "formulaId": "math_vector_004_f1",
+          "name": "Position Vector",
+          "equation": "r = xi + yj + zk",
+          "latex": "\\vec r=x\\hat i+y\\hat j+z\\hat k",
+          "meaning": "Vector from origin to point."
+        },
+        {
+          "formulaId": "math_vector_004_f2",
+          "name": "Distance Between Two Points",
+          "equation": "|AB| = √[(x₂-x₁)²+(y₂-y₁)²+(z₂-z₁)²]",
+          "latex": "|AB|=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}",
+          "meaning": "Distance formula in 3D."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_vector_005",
+      "conceptName": "Dot Product",
+      "description": "Scalar product of vectors.",
+      "formulaType": "dot-product-formula",
+      "formulas": [
+        {
+          "formulaId": "math_vector_005_f1",
+          "name": "Dot Product Formula",
+          "equation": "a·b = |a||b|cosθ",
+          "latex": "\\vec a\\cdot\\vec b=|\\vec a||\\vec b|\\cos\\theta",
+          "meaning": "Scalar product of two vectors."
+        },
+        {
+          "formulaId": "math_vector_005_f2",
+          "name": "Cartesian Dot Product",
+          "equation": "a·b = a₁b₁+a₂b₂+a₃b₃",
+          "latex": "\\vec a\\cdot\\vec b=a_1b_1+a_2b_2+a_3b_3",
+          "meaning": "Dot product using components."
+        },
+        {
+          "formulaId": "math_vector_005_f3",
+          "name": "Perpendicular Condition",
+          "equation": "a·b = 0",
+          "latex": "\\vec a\\cdot\\vec b=0",
+          "meaning": "Condition for perpendicular vectors."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_vector_006",
+      "conceptName": "Cross Product",
+      "description": "Vector product of vectors.",
+      "formulaType": "cross-product-formula",
+      "formulas": [
+        {
+          "formulaId": "math_vector_006_f1",
+          "name": "Cross Product Formula",
+          "equation": "|a×b| = |a||b|sinθ",
+          "latex": "|\\vec a\\times\\vec b|=|\\vec a||\\vec b|\\sin\\theta",
+          "meaning": "Magnitude of vector product."
+        },
+        {
+          "formulaId": "math_vector_006_f2",
+          "name": "Cross Product Determinant",
+          "equation": "| i  j  k ; a₁ a₂ a₃ ; b₁ b₂ b₃ |",
+          "latex": "\\begin{vmatrix}\\hat i&\\hat j&\\hat k\\\\a_1&a_2&a_3\\\\b_1&b_2&b_3\\end{vmatrix}",
+          "meaning": "Determinant form of cross product."
+        },
+        {
+          "formulaId": "math_vector_006_f3",
+          "name": "Parallel Condition",
+          "equation": "a×b = 0",
+          "latex": "\\vec a\\times\\vec b=0",
+          "meaning": "Condition for parallel vectors."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_vector_007",
+      "conceptName": "Direction Cosines and Ratios",
+      "description": "Direction measurements of vectors.",
+      "formulaType": "direction-formula",
+      "formulas": [
+        {
+          "formulaId": "math_vector_007_f1",
+          "name": "Direction Cosines",
+          "equation": "l = cosα, m = cosβ, n = cosγ",
+          "latex": "l=\\cos\\alpha,\\ m=\\cos\\beta,\\ n=\\cos\\gamma",
+          "meaning": "Cosines of angles with coordinate axes."
+        },
+        {
+          "formulaId": "math_vector_007_f2",
+          "name": "Direction Cosine Relation",
+          "equation": "l²+m²+n² = 1",
+          "latex": "l^2+m^2+n^2=1",
+          "meaning": "Fundamental relation of direction cosines."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_vector_008",
+      "conceptName": "Projection of Vector",
+      "description": "Projection formulas.",
+      "formulaType": "projection-formula",
+      "formulas": [
+        {
+          "formulaId": "math_vector_008_f1",
+          "name": "Scalar Projection",
+          "equation": "(a·b)/|b|",
+          "latex": "\\frac{\\vec a\\cdot\\vec b}{|\\vec b|}",
+          "meaning": "Scalar projection of a on b."
+        },
+        {
+          "formulaId": "math_vector_008_f2",
+          "name": "Vector Projection",
+          "equation": "[(a·b)/|b|²]b",
+          "latex": "\\left(\\frac{\\vec a\\cdot\\vec b}{|\\vec b|^2}\\right)\\vec b",
+          "meaning": "Vector projection formula."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_vector_009",
+      "conceptName": "Area Using Cross Product",
+      "description": "Area formulas using vectors.",
+      "formulaType": "area-vector-formula",
+      "formulas": [
+        {
+          "formulaId": "math_vector_009_f1",
+          "name": "Area of Parallelogram",
+          "equation": "|a×b|",
+          "latex": "|\\vec a\\times\\vec b|",
+          "meaning": "Area formed by two vectors."
+        },
+        {
+          "formulaId": "math_vector_009_f2",
+          "name": "Area of Triangle",
+          "equation": "(1/2)|a×b|",
+          "latex": "\\frac12|\\vec a\\times\\vec b|",
+          "meaning": "Area of triangle formed by vectors."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Dot product gives scalar quantity.",
+    "Cross product gives vector quantity.",
+    "Cross product direction follows right-hand rule.",
+    "Direction cosines satisfy l²+m²+n² = 1."
+  ],
+  "commonMistakes": [
+    "Confusing dot and cross product",
+    "Wrong determinant expansion in cross product",
+    "Ignoring vector direction",
+    "Mistakes in unit vector calculation"
+  ],
+  "jeeAdvancedFocus": [
+    "Vector projections",
+    "Cross product geometry",
+    "Direction cosines",
+    "Mixed vector algebra problems"
+  ],
+  "keywords": [
+    "vectors",
+    "dot product",
+    "cross product",
+    "direction cosines",
+    "unit vector",
+    "3D geometry"
+  ]
+}

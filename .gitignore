@@ -1,0 +1,116 @@
+# =========================
+# ROOT .gitignore — DenkenAI
+# =========================
+
+# -------------------------
+# Node / Next.js
+# -------------------------
+node_modules/
+.next/
+out/
+build/
+dist/
+coverage/
+
+# -------------------------
+# Python / AI Service
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Python virtual envs
+.venv/
+venv/
+env/
+
+# -------------------------
+# Environment Variables
+# -------------------------
+.env
+.env.*
+!.env.example
+
+# -------------------------
+# Logs
+# -------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -------------------------
+# Cache / Temp
+# -------------------------
+.cache/
+tmp/
+temp/
+uploads/
+data/temp/
+
+# -------------------------
+# AI / Vector DB
+# -------------------------
+chroma_db/
+*.sqlite3
+*.db
+
+# -------------------------
+# Vercel / Render
+# -------------------------
+.vercel/
+
+# -------------------------
+# TypeScript
+# -------------------------
+*.tsbuildinfo
+next-env.d.ts
+
+# -------------------------
+# OS / Editor Files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+# -------------------------
+# Security
+# -------------------------
+*.pem
+*.key
+
+# -------------------------
+# Yarn / PnP
+# -------------------------
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# -------------------------
+# Optional Generated Files
+# -------------------------
+*.tgz
+
+# =========================
+# KEEP THESE TRACKED
+# =========================
+# pyqs/
+# question-bank/
+# formulas/
+# important-topics/
+# syllabus/
+# weightage/
+#
+# These are core academic datasets
+# and SHOULD remain in Git.
+# =========================

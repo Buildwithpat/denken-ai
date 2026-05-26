@@ -1,0 +1,220 @@
+{
+  "chapterId": "math_ellipse_004",
+  "fileName": "ellipse.json",
+  "chapterName": "Ellipse",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": ["ellipse", "conic-sections", "eccentricity", "focus", "tangent"],
+  "concepts": [
+    {
+      "conceptId": "math_ellipse_001",
+      "conceptName": "Standard Equation of Ellipse",
+      "description": "Basic equation of ellipse in standard position.",
+      "formulaType": "ellipse-equation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_ellipse_001_f1",
+          "name": "Horizontal Major Axis",
+          "equation": "x²/a² + y²/b² = 1",
+          "latex": "\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1",
+          "meaning": "Standard equation when major axis is along x-axis.",
+          "applications": ["Coordinate geometry", "Conic sections"]
+        },
+        {
+          "formulaId": "math_ellipse_001_f2",
+          "name": "Vertical Major Axis",
+          "equation": "x²/b² + y²/a² = 1",
+          "latex": "\\frac{x^2}{b^2}+\\frac{y^2}{a^2}=1",
+          "meaning": "Standard equation when major axis is along y-axis."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_ellipse_002",
+      "conceptName": "Basic Parameters",
+      "description": "Important terms associated with ellipse.",
+      "formulaType": "ellipse-parameter-formula",
+      "formulas": [
+        {
+          "formulaId": "math_ellipse_002_f1",
+          "name": "Relation Between a, b and c",
+          "equation": "c² = a² - b²",
+          "latex": "c^2=a^2-b^2",
+          "meaning": "Relation among semi-major axis, semi-minor axis and focal length."
+        },
+        {
+          "formulaId": "math_ellipse_002_f2",
+          "name": "Eccentricity",
+          "equation": "e = c/a",
+          "latex": "e=\\frac{c}{a}",
+          "meaning": "Measure of elongation of ellipse."
+        },
+        {
+          "formulaId": "math_ellipse_002_f3",
+          "name": "Length of Latus Rectum",
+          "equation": "2b²/a",
+          "latex": "\\frac{2b^2}{a}",
+          "meaning": "Length of latus rectum."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_ellipse_003",
+      "conceptName": "Focus and Directrix",
+      "description": "Geometrical properties of ellipse.",
+      "formulaType": "focus-directrix-formula",
+      "formulas": [
+        {
+          "formulaId": "math_ellipse_003_f1",
+          "name": "Focus Coordinates",
+          "equation": "(±c,0)",
+          "latex": "(\\pm c,0)",
+          "meaning": "Coordinates of foci for horizontal ellipse."
+        },
+        {
+          "formulaId": "math_ellipse_003_f2",
+          "name": "Directrix Equation",
+          "equation": "x = ±a/e",
+          "latex": "x=\\pm\\frac{a}{e}",
+          "meaning": "Equation of directrices."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_ellipse_004",
+      "conceptName": "Parametric Coordinates",
+      "description": "Coordinates of general point on ellipse.",
+      "formulaType": "parametric-formula",
+      "formulas": [
+        {
+          "formulaId": "math_ellipse_004_f1",
+          "name": "Parametric Point",
+          "equation": "(a cosθ, b sinθ)",
+          "latex": "(a\\cos\\theta,b\\sin\\theta)",
+          "meaning": "General point on ellipse."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_ellipse_005",
+      "conceptName": "Tangent to Ellipse",
+      "description": "Equations of tangent in different forms.",
+      "formulaType": "tangent-formula",
+      "formulas": [
+        {
+          "formulaId": "math_ellipse_005_f1",
+          "name": "Tangent at Point",
+          "equation": "xx₁/a² + yy₁/b² = 1",
+          "latex": "\\frac{xx_1}{a^2}+\\frac{yy_1}{b^2}=1",
+          "meaning": "Tangent at point (x₁,y₁)."
+        },
+        {
+          "formulaId": "math_ellipse_005_f2",
+          "name": "Parametric Tangent",
+          "equation": "x cosθ/a + y sinθ/b = 1",
+          "latex": "\\frac{x\\cos\\theta}{a}+\\frac{y\\sin\\theta}{b}=1",
+          "meaning": "Tangent at parametric point."
+        },
+        {
+          "formulaId": "math_ellipse_005_f3",
+          "name": "Slope Form Tangent",
+          "equation": "y = mx ± √(a²m² + b²)",
+          "latex": "y=mx\\pm\\sqrt{a^2m^2+b^2}",
+          "meaning": "Equation of tangent with slope m."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_ellipse_006",
+      "conceptName": "Normal to Ellipse",
+      "description": "Equation of normal at a point.",
+      "formulaType": "normal-formula",
+      "formulas": [
+        {
+          "formulaId": "math_ellipse_006_f1",
+          "name": "Normal Equation",
+          "equation": "ax/secθ - by/cosecθ = a² - b²",
+          "latex": "\\frac{ax}{\\sec\\theta}-\\frac{by}{\\cosec\\theta}=a^2-b^2",
+          "meaning": "Normal at parametric point."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_ellipse_007",
+      "conceptName": "Chord of Contact",
+      "description": "Equation joining points of contact.",
+      "formulaType": "chord-contact-formula",
+      "formulas": [
+        {
+          "formulaId": "math_ellipse_007_f1",
+          "name": "Chord of Contact",
+          "equation": "T = 0",
+          "latex": "T=0",
+          "meaning": "Equation of chord of contact."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_ellipse_008",
+      "conceptName": "Director Circle",
+      "description": "Locus of intersection of perpendicular tangents.",
+      "formulaType": "director-circle-formula",
+      "formulas": [
+        {
+          "formulaId": "math_ellipse_008_f1",
+          "name": "Director Circle Equation",
+          "equation": "x² + y² = a² + b²",
+          "latex": "x^2+y^2=a^2+b^2",
+          "meaning": "Equation of director circle."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_ellipse_009",
+      "conceptName": "Auxiliary Circle",
+      "description": "Circle associated with ellipse.",
+      "formulaType": "auxiliary-circle-formula",
+      "formulas": [
+        {
+          "formulaId": "math_ellipse_009_f1",
+          "name": "Auxiliary Circle Equation",
+          "equation": "x² + y² = a²",
+          "latex": "x^2+y^2=a^2",
+          "meaning": "Equation of auxiliary circle."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Ellipse is locus of point where sum of distances from two foci is constant.",
+    "Eccentricity of ellipse is always less than 1.",
+    "Major axis length is 2a and minor axis length is 2b.",
+    "Director circle exists only when a ≠ b."
+  ],
+  "commonMistakes": [
+    "Using wrong focus coordinates",
+    "Confusing ellipse and hyperbola equations",
+    "Incorrect eccentricity calculation",
+    "Mistakes in tangent formulas"
+  ],
+  "jeeAdvancedFocus": [
+    "Director circle",
+    "Parametric problems",
+    "Chord of contact",
+    "Advanced tangent and normal problems"
+  ],
+  "neetFocus": [
+    "Standard equation",
+    "Focus and directrix",
+    "Eccentricity",
+    "Latus rectum"
+  ],
+  "keywords": [
+    "ellipse",
+    "eccentricity",
+    "focus",
+    "directrix",
+    "tangent",
+    "director circle"
+  ]
+}

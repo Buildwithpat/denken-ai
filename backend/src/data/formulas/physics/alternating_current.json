@@ -1,0 +1,359 @@
+{
+  "chapterId": "physics_alternating_current_018",
+  "fileName": "alternating_current.json",
+  "chapterName": "Alternating Current",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "alternating-current",
+    "ac-circuits",
+    "reactance",
+    "transformer",
+    "rms-value",
+    "resonance"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_ac_001",
+      "conceptName": "Alternating Current Basics",
+      "description": "Current that changes magnitude and direction periodically.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_ac_001_f1",
+          "name": "Instantaneous Current",
+          "equation": "i = I₀ sin(ωt)",
+          "latex": "i=I_0\\sin(\\omega t)",
+          "meaning": "Instantaneous value of alternating current.",
+          "variables": {
+            "i": {
+              "meaning": "Instantaneous current",
+              "unit": "A"
+            },
+            "I0": {
+              "meaning": "Peak current",
+              "unit": "A"
+            },
+            "ω": {
+              "meaning": "Angular frequency",
+              "unit": "rad/s"
+            },
+            "t": {
+              "meaning": "Time",
+              "unit": "s"
+            }
+          },
+          "applications": ["AC circuit analysis", "Waveform calculations"]
+        },
+        {
+          "formulaId": "phy_ac_001_f2",
+          "name": "Instantaneous Voltage",
+          "equation": "v = V₀ sin(ωt)",
+          "latex": "v=V_0\\sin(\\omega t)",
+          "meaning": "Instantaneous alternating voltage."
+        },
+        {
+          "formulaId": "phy_ac_001_f3",
+          "name": "Angular Frequency",
+          "equation": "ω = 2πf",
+          "latex": "\\omega=2\\pi f",
+          "meaning": "Relation between angular frequency and frequency."
+        },
+        {
+          "formulaId": "phy_ac_001_f4",
+          "name": "Time Period",
+          "equation": "T = 1/f",
+          "latex": "T=\\frac{1}{f}",
+          "meaning": "Time taken for one complete cycle."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ac_002",
+      "conceptName": "RMS and Average Values",
+      "description": "Effective and average values of alternating current and voltage.",
+      "formulaType": "rms-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_ac_002_f1",
+          "name": "RMS Current",
+          "equation": "Irms = I₀/√2",
+          "latex": "I_{rms}=\\frac{I_0}{\\sqrt{2}}",
+          "meaning": "Root mean square value of AC current."
+        },
+        {
+          "formulaId": "phy_ac_002_f2",
+          "name": "RMS Voltage",
+          "equation": "Vrms = V₀/√2",
+          "latex": "V_{rms}=\\frac{V_0}{\\sqrt{2}}",
+          "meaning": "Root mean square value of AC voltage."
+        },
+        {
+          "formulaId": "phy_ac_002_f3",
+          "name": "Average Current",
+          "equation": "Iavg = 2I₀/π",
+          "latex": "I_{avg}=\\frac{2I_0}{\\pi}",
+          "meaning": "Average value over half cycle."
+        },
+        {
+          "formulaId": "phy_ac_002_f4",
+          "name": "Average Voltage",
+          "equation": "Vavg = 2V₀/π",
+          "latex": "V_{avg}=\\frac{2V_0}{\\pi}",
+          "meaning": "Average voltage over half cycle."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ac_003",
+      "conceptName": "AC Through Resistor",
+      "description": "Behavior of pure resistive AC circuits.",
+      "formulaType": "resistor-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_ac_003_f1",
+          "name": "Ohm's Law in AC",
+          "equation": "V = IR",
+          "latex": "V=IR",
+          "meaning": "Voltage-current relation in resistor."
+        },
+        {
+          "formulaId": "phy_ac_003_f2",
+          "name": "Power in Resistive Circuit",
+          "equation": "P = VrmsIrms",
+          "latex": "P=V_{rms}I_{rms}",
+          "meaning": "Average power consumed in resistor."
+        },
+        {
+          "formulaId": "phy_ac_003_f3",
+          "name": "Instantaneous Power",
+          "equation": "P = vi",
+          "latex": "P=vi",
+          "meaning": "Instantaneous power in AC circuit."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ac_004",
+      "conceptName": "AC Through Inductor",
+      "description": "Behavior of pure inductive AC circuits.",
+      "formulaType": "inductor-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_ac_004_f1",
+          "name": "Inductive Reactance",
+          "equation": "XL = ωL",
+          "latex": "X_L=\\omega L",
+          "meaning": "Opposition offered by inductor to AC."
+        },
+        {
+          "formulaId": "phy_ac_004_f2",
+          "name": "Current in Inductor",
+          "equation": "I = V/XL",
+          "latex": "I=\\frac{V}{X_L}",
+          "meaning": "Current through pure inductive circuit."
+        },
+        {
+          "formulaId": "phy_ac_004_f3",
+          "name": "Phase Difference",
+          "equation": "Current lags voltage by π/2",
+          "latex": "\\phi=\\frac{\\pi}{2}",
+          "meaning": "Current lags voltage in inductor."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ac_005",
+      "conceptName": "AC Through Capacitor",
+      "description": "Behavior of pure capacitive AC circuits.",
+      "formulaType": "capacitor-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_ac_005_f1",
+          "name": "Capacitive Reactance",
+          "equation": "XC = 1/ωC",
+          "latex": "X_C=\\frac{1}{\\omega C}",
+          "meaning": "Opposition offered by capacitor to AC."
+        },
+        {
+          "formulaId": "phy_ac_005_f2",
+          "name": "Current in Capacitor",
+          "equation": "I = V/XC",
+          "latex": "I=\\frac{V}{X_C}",
+          "meaning": "Current through pure capacitive circuit."
+        },
+        {
+          "formulaId": "phy_ac_005_f3",
+          "name": "Phase Difference",
+          "equation": "Current leads voltage by π/2",
+          "latex": "\\phi=\\frac{\\pi}{2}",
+          "meaning": "Current leads voltage in capacitor."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ac_006",
+      "conceptName": "Series LCR Circuit",
+      "description": "AC circuit containing resistor, inductor and capacitor.",
+      "formulaType": "lcr-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_ac_006_f1",
+          "name": "Impedance",
+          "equation": "Z = √(R² + (XL - XC)²)",
+          "latex": "Z=\\sqrt{R^2+(X_L-X_C)^2}",
+          "meaning": "Total opposition in LCR circuit."
+        },
+        {
+          "formulaId": "phy_ac_006_f2",
+          "name": "Current in LCR Circuit",
+          "equation": "I = V/Z",
+          "latex": "I=\\frac{V}{Z}",
+          "meaning": "Current flowing in LCR circuit."
+        },
+        {
+          "formulaId": "phy_ac_006_f3",
+          "name": "Phase Angle",
+          "equation": "tanφ = (XL - XC)/R",
+          "latex": "\\tan\\phi=\\frac{X_L-X_C}{R}",
+          "meaning": "Phase difference between voltage and current."
+        },
+        {
+          "formulaId": "phy_ac_006_f4",
+          "name": "Power Factor",
+          "equation": "cosφ = R/Z",
+          "latex": "\\cos\\phi=\\frac{R}{Z}",
+          "meaning": "Power factor of AC circuit."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ac_007",
+      "conceptName": "Resonance in LCR Circuit",
+      "description": "Condition when inductive and capacitive reactances become equal.",
+      "formulaType": "resonance-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_ac_007_f1",
+          "name": "Resonant Frequency",
+          "equation": "f₀ = 1/(2π√LC)",
+          "latex": "f_0=\\frac{1}{2\\pi\\sqrt{LC}}",
+          "meaning": "Frequency at resonance."
+        },
+        {
+          "formulaId": "phy_ac_007_f2",
+          "name": "Condition of Resonance",
+          "equation": "XL = XC",
+          "latex": "X_L=X_C",
+          "meaning": "Condition for resonance."
+        },
+        {
+          "formulaId": "phy_ac_007_f3",
+          "name": "Impedance at Resonance",
+          "equation": "Z = R",
+          "latex": "Z=R",
+          "meaning": "Impedance becomes minimum at resonance."
+        },
+        {
+          "formulaId": "phy_ac_007_f4",
+          "name": "Maximum Current",
+          "equation": "Imax = V/R",
+          "latex": "I_{max}=\\frac{V}{R}",
+          "meaning": "Current becomes maximum at resonance."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ac_008",
+      "conceptName": "AC Power",
+      "description": "Power consumed in AC circuits.",
+      "formulaType": "power-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_ac_008_f1",
+          "name": "Average AC Power",
+          "equation": "P = VrmsIrms cosφ",
+          "latex": "P=V_{rms}I_{rms}\\cos\\phi",
+          "meaning": "Average power consumed in AC circuit."
+        },
+        {
+          "formulaId": "phy_ac_008_f2",
+          "name": "Reactive Power",
+          "equation": "Q = VrmsIrms sinφ",
+          "latex": "Q=V_{rms}I_{rms}\\sin\\phi",
+          "meaning": "Reactive power in AC circuit."
+        },
+        {
+          "formulaId": "phy_ac_008_f3",
+          "name": "Apparent Power",
+          "equation": "S = VrmsIrms",
+          "latex": "S=V_{rms}I_{rms}",
+          "meaning": "Apparent power in AC circuit."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ac_009",
+      "conceptName": "Transformer",
+      "description": "Device used to step up or step down AC voltage.",
+      "formulaType": "transformer-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_ac_009_f1",
+          "name": "Transformer Voltage Relation",
+          "equation": "Vs/Vp = Ns/Np",
+          "latex": "\\frac{V_s}{V_p}=\\frac{N_s}{N_p}",
+          "meaning": "Relation between voltage and number of turns."
+        },
+        {
+          "formulaId": "phy_ac_009_f2",
+          "name": "Current Relation",
+          "equation": "Is/Ip = Np/Ns",
+          "latex": "\\frac{I_s}{I_p}=\\frac{N_p}{N_s}",
+          "meaning": "Current relation in ideal transformer."
+        },
+        {
+          "formulaId": "phy_ac_009_f3",
+          "name": "Efficiency",
+          "equation": "η = (Output Power/Input Power) × 100",
+          "latex": "\\eta=\\frac{P_{out}}{P_{in}}\\times100",
+          "meaning": "Efficiency of transformer."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "RMS value gives effective DC equivalent value.",
+    "Current lags voltage in inductors and leads in capacitors.",
+    "At resonance, impedance is minimum and current is maximum.",
+    "Transformer works only on alternating current."
+  ],
+  "commonMistakes": [
+    "Confusing RMS and peak values",
+    "Wrong phase relation in L and C circuits",
+    "Using DC formulas directly in AC circuits",
+    "Ignoring power factor"
+  ],
+  "jeeAdvancedFocus": [
+    "Phasor diagrams",
+    "LCR resonance",
+    "Power factor correction",
+    "Transformer efficiency"
+  ],
+  "neetFocus": [
+    "RMS values",
+    "Reactance formulas",
+    "LCR circuit basics",
+    "Transformer relations"
+  ],
+  "keywords": [
+    "alternating current",
+    "AC circuits",
+    "reactance",
+    "impedance",
+    "transformer",
+    "resonance",
+    "RMS value",
+    "power factor"
+  ]
+}

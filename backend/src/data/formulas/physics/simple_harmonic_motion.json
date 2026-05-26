@@ -1,0 +1,264 @@
+{
+  "chapterId": "physics_simple_harmonic_motion_011",
+  "fileName": "simple_harmonic_motion.json",
+  "chapterName": "Simple Harmonic Motion",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "shm",
+    "oscillation",
+    "spring-motion",
+    "pendulum",
+    "angular-frequency",
+    "harmonic-motion"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_shm_001",
+      "conceptName": "Basic SHM Equation",
+      "description": "Periodic motion where restoring force is proportional to displacement and directed toward mean position.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_shm_001_f1",
+          "name": "SHM Condition",
+          "equation": "F = -kx",
+          "latex": "F=-kx",
+          "meaning": "Restoring force proportional to displacement.",
+          "applications": [
+            "Spring systems",
+            "Oscillatory motion",
+            "Pendulum approximations"
+          ],
+          "commonMistakes": [
+            "Ignoring negative sign",
+            "Confusing restoring force direction"
+          ]
+        },
+        {
+          "formulaId": "phy_shm_001_f2",
+          "name": "Acceleration in SHM",
+          "equation": "a = -ω²x",
+          "latex": "a=-\\omega^2 x",
+          "meaning": "Acceleration proportional to displacement toward mean position."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_shm_002",
+      "conceptName": "Displacement Equation",
+      "description": "Mathematical representation of SHM displacement.",
+      "formulaType": "motion-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_shm_002_f1",
+          "name": "Displacement Function",
+          "equation": "x = A sin(ωt + φ)",
+          "latex": "x=A\\sin(\\omega t+\\phi)",
+          "meaning": "Position of oscillating particle at time t.",
+          "variables": {
+            "A": {
+              "meaning": "Amplitude",
+              "unit": "m"
+            },
+            "ω": {
+              "meaning": "Angular frequency",
+              "unit": "rad/s"
+            },
+            "φ": {
+              "meaning": "Phase constant",
+              "unit": "radian"
+            }
+          },
+          "applications": ["Oscillation graphs", "Wave motion", "Spring motion"]
+        },
+        {
+          "formulaId": "phy_shm_002_f2",
+          "name": "Alternative Displacement Form",
+          "equation": "x = A cos(ωt + φ)",
+          "latex": "x=A\\cos(\\omega t+\\phi)",
+          "meaning": "Alternative SHM displacement representation."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_shm_003",
+      "conceptName": "Velocity and Acceleration",
+      "description": "Velocity and acceleration relations in SHM.",
+      "formulaType": "velocity-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_shm_003_f1",
+          "name": "Velocity in SHM",
+          "equation": "v = ±ω√(A² - x²)",
+          "latex": "v=\\pm\\omega\\sqrt{A^2-x^2}",
+          "meaning": "Velocity at displacement x.",
+          "applications": ["Maximum velocity problems", "Energy calculations"]
+        },
+        {
+          "formulaId": "phy_shm_003_f2",
+          "name": "Maximum Velocity",
+          "equation": "vmax = Aω",
+          "latex": "v_{max}=A\\omega",
+          "meaning": "Maximum speed at mean position."
+        },
+        {
+          "formulaId": "phy_shm_003_f3",
+          "name": "Maximum Acceleration",
+          "equation": "amax = Aω²",
+          "latex": "a_{max}=A\\omega^2",
+          "meaning": "Maximum acceleration at extreme position."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_shm_004",
+      "conceptName": "Time Period and Frequency",
+      "description": "Oscillation timing relations.",
+      "formulaType": "time-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_shm_004_f1",
+          "name": "Angular Frequency",
+          "equation": "ω = 2π/T",
+          "latex": "\\omega=\\frac{2\\pi}{T}",
+          "meaning": "Angular frequency relation."
+        },
+        {
+          "formulaId": "phy_shm_004_f2",
+          "name": "Frequency Relation",
+          "equation": "f = 1/T",
+          "latex": "f=\\frac{1}{T}",
+          "meaning": "Frequency of oscillation."
+        },
+        {
+          "formulaId": "phy_shm_004_f3",
+          "name": "Time Period of Spring Mass System",
+          "equation": "T = 2π√(m/k)",
+          "latex": "T=2\\pi\\sqrt{\\frac{m}{k}}",
+          "meaning": "Time period of spring block system.",
+          "applications": ["Spring oscillators", "Mechanical oscillations"]
+        },
+        {
+          "formulaId": "phy_shm_004_f4",
+          "name": "Angular Frequency of Spring",
+          "equation": "ω = √(k/m)",
+          "latex": "\\omega=\\sqrt{\\frac{k}{m}}",
+          "meaning": "Angular frequency for spring oscillation."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_shm_005",
+      "conceptName": "Simple Pendulum",
+      "description": "Oscillation of pendulum under small-angle approximation.",
+      "formulaType": "pendulum-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_shm_005_f1",
+          "name": "Time Period of Simple Pendulum",
+          "equation": "T = 2π√(L/g)",
+          "latex": "T=2\\pi\\sqrt{\\frac{L}{g}}",
+          "meaning": "Time period of simple pendulum.",
+          "conditions": [
+            "Small angle approximation",
+            "Negligible air resistance"
+          ],
+          "applications": ["Pendulum clocks", "Gravitational experiments"]
+        },
+        {
+          "formulaId": "phy_shm_005_f2",
+          "name": "Angular Frequency of Pendulum",
+          "equation": "ω = √(g/L)",
+          "latex": "\\omega=\\sqrt{\\frac{g}{L}}",
+          "meaning": "Angular frequency of pendulum oscillation."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_shm_006",
+      "conceptName": "Energy in SHM",
+      "description": "Energy transformations during oscillation.",
+      "formulaType": "energy-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_shm_006_f1",
+          "name": "Total Energy in SHM",
+          "equation": "E = 1/2 kA²",
+          "latex": "E=\\frac12 kA^2",
+          "meaning": "Constant total mechanical energy."
+        },
+        {
+          "formulaId": "phy_shm_006_f2",
+          "name": "Potential Energy in SHM",
+          "equation": "PE = 1/2 kx²",
+          "latex": "PE=\\frac12 kx^2",
+          "meaning": "Potential energy at displacement x."
+        },
+        {
+          "formulaId": "phy_shm_006_f3",
+          "name": "Kinetic Energy in SHM",
+          "equation": "KE = 1/2 k(A² - x²)",
+          "latex": "KE=\\frac12 k(A^2-x^2)",
+          "meaning": "Kinetic energy at displacement x."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_shm_007",
+      "conceptName": "Phase and Phase Difference",
+      "description": "Relative oscillation state of SHM particles.",
+      "formulaType": "phase-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_shm_007_f1",
+          "name": "Phase",
+          "equation": "Phase = ωt + φ",
+          "latex": "\\text{Phase}=\\omega t+\\phi",
+          "meaning": "State of oscillation at a given instant."
+        },
+        {
+          "formulaId": "phy_shm_007_f2",
+          "name": "Phase Difference",
+          "equation": "Δφ = 2πΔt/T",
+          "latex": "\\Delta\\phi=\\frac{2\\pi\\Delta t}{T}",
+          "meaning": "Difference in oscillation phase."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Restoring force always acts toward mean position.",
+    "Velocity is maximum at mean position.",
+    "Acceleration is maximum at extreme positions.",
+    "Total mechanical energy remains constant in ideal SHM."
+  ],
+  "commonMistakes": [
+    "Ignoring negative sign in restoring force",
+    "Confusing phase and phase difference",
+    "Using pendulum formula for large angles",
+    "Wrong energy distribution in SHM"
+  ],
+  "jeeAdvancedFocus": [
+    "Combined SHM systems",
+    "Energy-based SHM problems",
+    "Phase analysis",
+    "Advanced pendulum systems"
+  ],
+  "neetFocus": [
+    "Basic SHM equations",
+    "Pendulum formulas",
+    "Velocity and acceleration",
+    "Energy in SHM"
+  ],
+  "keywords": [
+    "simple harmonic motion",
+    "oscillation",
+    "pendulum",
+    "spring motion",
+    "angular frequency",
+    "time period",
+    "phase difference",
+    "restoring force"
+  ]
+}

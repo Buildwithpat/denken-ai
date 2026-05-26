@@ -1,0 +1,216 @@
+{
+  "chapterId": "chem_surface_chemistry_020",
+  "fileName": "surface_chemistry.json",
+  "chapterName": "Surface Chemistry",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "NEET"],
+  "tags": [
+    "surface-chemistry",
+    "adsorption",
+    "catalysis",
+    "colloids",
+    "emulsions",
+    "freundlich-isotherm"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_surface_001",
+      "conceptName": "Adsorption",
+      "description": "Accumulation of particles on the surface of a substance.",
+      "formulaType": "adsorption-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_surface_001_f1",
+          "name": "Freundlich Adsorption Isotherm",
+          "equation": "x/m = kP^(1/n)",
+          "latex": "\\frac{x}{m}=kP^{1/n}",
+          "meaning": "Relation between pressure and adsorption.",
+          "applications": ["Gas adsorption studies", "Surface reactions"]
+        },
+        {
+          "formulaId": "chem_surface_001_f2",
+          "name": "Logarithmic Form",
+          "equation": "log(x/m) = log k + (1/n) log P",
+          "latex": "\\log\\left(\\frac{x}{m}\\right)=\\log k+\\frac{1}{n}\\log P",
+          "meaning": "Linear form of Freundlich isotherm."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_surface_002",
+      "conceptName": "Types of Adsorption",
+      "description": "Physical and chemical adsorption.",
+      "formulaType": "adsorption-type-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_surface_002_f1",
+          "name": "Physisorption",
+          "equation": "Weak van der Waals forces",
+          "latex": "\\text{Weak van der Waals forces}",
+          "meaning": "Adsorption due to weak intermolecular forces."
+        },
+        {
+          "formulaId": "chem_surface_002_f2",
+          "name": "Chemisorption",
+          "equation": "Strong chemical bond formation",
+          "latex": "\\text{Strong chemical bond formation}",
+          "meaning": "Adsorption involving chemical bond formation."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_surface_003",
+      "conceptName": "Catalysis",
+      "description": "Acceleration of reaction by catalyst.",
+      "formulaType": "catalysis-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_surface_003_f1",
+          "name": "Catalytic Principle",
+          "equation": "Catalyst lowers activation energy",
+          "latex": "\\text{Catalyst lowers activation energy}",
+          "meaning": "Basic principle of catalysis."
+        },
+        {
+          "formulaId": "chem_surface_003_f2",
+          "name": "Activation Energy Relation",
+          "equation": "k = Ae^(-Ea/RT)",
+          "latex": "k=Ae^{-E_a/RT}",
+          "meaning": "Rate constant depends on activation energy."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_surface_004",
+      "conceptName": "Types of Catalysis",
+      "description": "Homogeneous and heterogeneous catalysis.",
+      "formulaType": "catalysis-type-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_surface_004_f1",
+          "name": "Haber Process",
+          "equation": "N₂ + 3H₂ ⇌ 2NH₃",
+          "latex": "N_2+3H_2\\rightleftharpoons2NH_3",
+          "meaning": "Example of heterogeneous catalysis."
+        },
+        {
+          "formulaId": "chem_surface_004_f2",
+          "name": "Contact Process",
+          "equation": "2SO₂ + O₂ ⇌ 2SO₃",
+          "latex": "2SO_2+O_2\\rightleftharpoons2SO_3",
+          "meaning": "Catalytic oxidation in contact process."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_surface_005",
+      "conceptName": "Colloids",
+      "description": "Heterogeneous mixtures with dispersed particles.",
+      "formulaType": "colloid-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_surface_005_f1",
+          "name": "Tyndall Effect",
+          "equation": "Scattering of light by colloidal particles",
+          "latex": "\\text{Scattering of light by colloidal particles}",
+          "meaning": "Characteristic property of colloids."
+        },
+        {
+          "formulaId": "chem_surface_005_f2",
+          "name": "Brownian Motion",
+          "equation": "Random zig-zag motion of colloidal particles",
+          "latex": "\\text{Random zig-zag motion of colloidal particles}",
+          "meaning": "Movement due to collision with medium particles."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_surface_006",
+      "conceptName": "Charge on Colloids",
+      "description": "Electrical properties of colloidal particles.",
+      "formulaType": "charge-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_surface_006_f1",
+          "name": "Electrophoresis",
+          "equation": "Charged colloidal particles move in electric field",
+          "latex": "\\text{Charged colloidal particles move in electric field}",
+          "meaning": "Movement of colloidal particles under electric field."
+        },
+        {
+          "formulaId": "chem_surface_006_f2",
+          "name": "Coagulation Rule",
+          "equation": "Higher valency ion → Greater coagulating power",
+          "latex": "\\text{Higher valency ion}\\rightarrow\\text{Greater coagulating power}",
+          "meaning": "Hardy-Schulze rule."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_surface_007",
+      "conceptName": "Emulsions",
+      "description": "Colloidal systems of two immiscible liquids.",
+      "formulaType": "emulsion-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_surface_007_f1",
+          "name": "Oil in Water Emulsion",
+          "equation": "Oil droplets dispersed in water",
+          "latex": "\\text{Oil droplets dispersed in water}",
+          "meaning": "Example: milk."
+        },
+        {
+          "formulaId": "chem_surface_007_f2",
+          "name": "Water in Oil Emulsion",
+          "equation": "Water droplets dispersed in oil",
+          "latex": "\\text{Water droplets dispersed in oil}",
+          "meaning": "Example: butter."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_surface_008",
+      "conceptName": "Micelles",
+      "description": "Aggregates formed by surfactants in solution.",
+      "formulaType": "micelle-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_surface_008_f1",
+          "name": "Critical Micelle Concentration",
+          "equation": "CMC = Minimum concentration for micelle formation",
+          "latex": "CMC=\\text{Minimum concentration for micelle formation}",
+          "meaning": "Concentration above which micelles form."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Adsorption is a surface phenomenon.",
+    "Catalysts do not change equilibrium constant.",
+    "Colloidal particles show Tyndall effect.",
+    "Micelles form only above critical micelle concentration."
+  ],
+  "commonMistakes": [
+    "Confusing adsorption and absorption",
+    "Incorrect identification of colloids",
+    "Ignoring catalyst specificity",
+    "Confusing physisorption and chemisorption"
+  ],
+  "jeeAdvancedFocus": [
+    "Freundlich isotherm derivation",
+    "Catalysis mechanisms",
+    "Colloidal properties",
+    "Micelle formation"
+  ],
+  "neetFocus": ["Adsorption", "Catalysis", "Colloids", "Emulsions"],
+  "keywords": [
+    "surface chemistry",
+    "adsorption",
+    "freundlich isotherm",
+    "catalysis",
+    "colloids",
+    "tyndall effect",
+    "emulsions",
+    "micelles"
+  ]
+}

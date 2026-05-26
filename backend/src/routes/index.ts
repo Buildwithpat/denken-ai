@@ -1,0 +1,42 @@
+import { Router } from 'express';
+import testRouter        from './test';
+import authRouter        from './auth';
+import analyticsRouter   from './analytics';
+import revisionRouter    from './revision';
+import notesRouter       from './notes';
+import plannerRouter     from './planner';
+import readinessRouter   from './readiness';
+import subscriptionRouter from './subscription';
+import accessRouter      from './access';
+import ocrRouter         from './ocr';
+import devRouter         from './dev';
+import formulaRouter     from './formula';
+import mistakeRouter     from './mistake';
+import roadmapRouter      from './roadmap';
+import mentorRouter       from './mentor';
+import questionBankRouter from './questionBank';
+import explanationRouter       from './explanation';
+import adaptivePracticeRouter  from './adaptivePractice';
+
+const router = Router();
+
+router.use('/auth',         authRouter);
+router.use('/test',         testRouter);
+router.use('/analytics',    analyticsRouter);
+router.use('/revision',     revisionRouter);
+router.use('/notes',        notesRouter);
+router.use('/planner',      plannerRouter);
+router.use('/readiness',    readinessRouter);
+router.use('/subscription', subscriptionRouter);
+router.use('/access',       accessRouter);
+router.use('/ocr',          ocrRouter);
+router.use('/dev',          devRouter);
+router.use('/formula',      formulaRouter);
+router.use('/mistakes',     mistakeRouter);
+router.use('/roadmap',       roadmapRouter);
+router.use('/mentor',        mentorRouter);
+router.use('/question-bank', questionBankRouter);
+router.use('/explanation',        explanationRouter);
+router.use('/adaptive-practice',  adaptivePracticeRouter);
+
+export default router;

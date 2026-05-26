@@ -1,0 +1,249 @@
+{
+  "chapterId": "chem_biomolecules_027",
+  "fileName": "biomolecules.json",
+  "chapterName": "Biomolecules",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "NEET"],
+  "tags": [
+    "biomolecules",
+    "carbohydrates",
+    "proteins",
+    "amino-acids",
+    "enzymes",
+    "nucleic-acids"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_bio_001",
+      "conceptName": "Carbohydrates",
+      "description": "Polyhydroxy aldehydes or ketones.",
+      "formulaType": "carbohydrate-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bio_001_f1",
+          "name": "General Formula of Carbohydrates",
+          "equation": "Cx(H₂O)y",
+          "latex": "C_x(H_2O)_y",
+          "meaning": "Empirical formula of carbohydrates.",
+          "applications": ["Biochemistry", "Nutrition chemistry"]
+        },
+        {
+          "formulaId": "chem_bio_001_f2",
+          "name": "Glucose Formula",
+          "equation": "C₆H₁₂O₆",
+          "latex": "C_6H_{12}O_6",
+          "meaning": "Molecular formula of glucose."
+        },
+        {
+          "formulaId": "chem_bio_001_f3",
+          "name": "Sucrose Hydrolysis",
+          "equation": "C₁₂H₂₂O₁₁ + H₂O → Glucose + Fructose",
+          "latex": "C_{12}H_{22}O_{11}+H_2O\\rightarrow\\text{Glucose}+\\text{Fructose}",
+          "meaning": "Hydrolysis of sucrose."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bio_002",
+      "conceptName": "Monosaccharides",
+      "description": "Simplest carbohydrates that cannot be hydrolyzed further.",
+      "formulaType": "monosaccharide-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bio_002_f1",
+          "name": "Glucose Open Chain Formula",
+          "equation": "CHO-(CHOH)₄-CH₂OH",
+          "latex": "CHO-(CHOH)_4-CH_2OH",
+          "meaning": "Open chain structure of glucose."
+        },
+        {
+          "formulaId": "chem_bio_002_f2",
+          "name": "Fructose Formula",
+          "equation": "CH₂OH-CO-(CHOH)₃-CH₂OH",
+          "latex": "CH_2OH-CO-(CHOH)_3-CH_2OH",
+          "meaning": "Open chain structure of fructose."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bio_003",
+      "conceptName": "Proteins",
+      "description": "Polymers of amino acids.",
+      "formulaType": "protein-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bio_003_f1",
+          "name": "General Formula of Amino Acid",
+          "equation": "NH₂-CHR-COOH",
+          "latex": "NH_2-CHR-COOH",
+          "meaning": "General structure of amino acids."
+        },
+        {
+          "formulaId": "chem_bio_003_f2",
+          "name": "Peptide Bond Formation",
+          "equation": "NH₂CHRCOOH + NH₂CHRCOOH → Peptide bond + H₂O",
+          "latex": "NH_2CHRCOOH+NH_2CHRCOOH\\rightarrow\\text{Peptide bond}+H_2O",
+          "meaning": "Formation of peptide linkage."
+        },
+        {
+          "formulaId": "chem_bio_003_f3",
+          "name": "Protein Hydrolysis",
+          "equation": "Protein + H₂O → Amino acids",
+          "latex": "\\text{Protein}+H_2O\\rightarrow\\text{Amino acids}",
+          "meaning": "Hydrolysis of proteins."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bio_004",
+      "conceptName": "Amino Acids",
+      "description": "Building blocks of proteins.",
+      "formulaType": "amino-acid-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bio_004_f1",
+          "name": "Zwitter Ion Formation",
+          "equation": "NH₂CHRCOOH ⇌ NH₃⁺CHRCOO⁻",
+          "latex": "NH_2CHRCOOH\\rightleftharpoons NH_3^+CHRCOO^-",
+          "meaning": "Amino acids exist as zwitter ions."
+        },
+        {
+          "formulaId": "chem_bio_004_f2",
+          "name": "Isoelectric Point",
+          "equation": "pH at which amino acid has no net charge",
+          "latex": "pH\\text{ at which amino acid has no net charge}",
+          "meaning": "Characteristic pH of amino acid."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bio_005",
+      "conceptName": "Enzymes",
+      "description": "Biological catalysts made of proteins.",
+      "formulaType": "enzyme-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bio_005_f1",
+          "name": "Enzyme-Substrate Complex",
+          "equation": "E + S ⇌ ES → E + P",
+          "latex": "E+S\\rightleftharpoons ES\\rightarrow E+P",
+          "meaning": "General mechanism of enzyme action."
+        },
+        {
+          "formulaId": "chem_bio_005_f2",
+          "name": "Lock and Key Model",
+          "equation": "Specific substrate fits active site",
+          "latex": "\\text{Specific substrate fits active site}",
+          "meaning": "Model explaining enzyme specificity."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bio_006",
+      "conceptName": "Nucleic Acids",
+      "description": "Biomolecules responsible for genetic information.",
+      "formulaType": "nucleic-acid-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bio_006_f1",
+          "name": "Nucleotide Components",
+          "equation": "Nitrogen base + Sugar + Phosphate",
+          "latex": "\\text{Nitrogen base}+\\text{Sugar}+\\text{Phosphate}",
+          "meaning": "Basic components of nucleotide."
+        },
+        {
+          "formulaId": "chem_bio_006_f2",
+          "name": "DNA Base Pairing",
+          "equation": "A=T, G≡C",
+          "latex": "A=T,\\ G\\equiv C",
+          "meaning": "Complementary base pairing in DNA."
+        },
+        {
+          "formulaId": "chem_bio_006_f3",
+          "name": "RNA Sugar",
+          "equation": "Ribose sugar present in RNA",
+          "latex": "\\text{Ribose sugar present in RNA}",
+          "meaning": "Sugar component of RNA."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bio_007",
+      "conceptName": "Vitamins",
+      "description": "Essential micronutrients required for metabolism.",
+      "formulaType": "vitamin-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bio_007_f1",
+          "name": "Water Soluble Vitamins",
+          "equation": "Vitamin B and C",
+          "latex": "\\text{Vitamin B and C}",
+          "meaning": "Water soluble vitamins."
+        },
+        {
+          "formulaId": "chem_bio_007_f2",
+          "name": "Fat Soluble Vitamins",
+          "equation": "Vitamin A, D, E, K",
+          "latex": "\\text{Vitamin A, D, E, K}",
+          "meaning": "Fat soluble vitamins."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_bio_008",
+      "conceptName": "Tests for Biomolecules",
+      "description": "Qualitative tests for carbohydrates and proteins.",
+      "formulaType": "test-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_bio_008_f1",
+          "name": "Tollen's Test for Glucose",
+          "equation": "Glucose + Tollen's reagent → Silver mirror",
+          "latex": "\\text{Glucose}+\\text{Tollen's reagent}\\rightarrow\\text{Silver mirror}",
+          "meaning": "Glucose reduces Tollen's reagent."
+        },
+        {
+          "formulaId": "chem_bio_008_f2",
+          "name": "Biuret Test",
+          "equation": "Protein + Cu²⁺ → Violet color",
+          "latex": "\\text{Protein}+Cu^{2+}\\rightarrow\\text{Violet color}",
+          "meaning": "Test for proteins."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Glucose is an aldohexose while fructose is a ketohexose.",
+    "Proteins are polymers of α-amino acids.",
+    "Enzymes are highly specific biological catalysts.",
+    "DNA stores genetic information."
+  ],
+  "commonMistakes": [
+    "Confusing glucose and fructose structures",
+    "Incorrect base pairing in DNA",
+    "Wrong classification of vitamins",
+    "Ignoring zwitter ion nature of amino acids"
+  ],
+  "jeeAdvancedFocus": [
+    "Structure and reactions of carbohydrates",
+    "Protein structure and peptide bond",
+    "DNA and RNA differences",
+    "Enzyme mechanisms"
+  ],
+  "neetFocus": [
+    "Biomolecule classification",
+    "Proteins and amino acids",
+    "DNA and RNA",
+    "Vitamin classification"
+  ],
+  "keywords": [
+    "biomolecules",
+    "carbohydrates",
+    "proteins",
+    "amino acids",
+    "enzymes",
+    "DNA",
+    "RNA",
+    "vitamins"
+  ]
+}

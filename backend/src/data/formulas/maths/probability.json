@@ -1,0 +1,233 @@
+{
+  "chapterId": "math_probability_016",
+  "fileName": "probability.json",
+  "chapterName": "Probability",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "probability",
+    "conditional-probability",
+    "bayes-theorem",
+    "random-variable",
+    "events"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_prob_001",
+      "conceptName": "Basic Probability",
+      "description": "Fundamental probability definition.",
+      "formulaType": "basic-probability-formula",
+      "formulas": [
+        {
+          "formulaId": "math_prob_001_f1",
+          "name": "Probability Formula",
+          "equation": "P(E) = n(E)/n(S)",
+          "latex": "P(E)=\\frac{n(E)}{n(S)}",
+          "meaning": "Probability equals favorable outcomes divided by total outcomes.",
+          "applications": ["Statistics", "Random experiments"]
+        },
+        {
+          "formulaId": "math_prob_001_f2",
+          "name": "Complementary Probability",
+          "equation": "P(E') = 1 - P(E)",
+          "latex": "P(E')=1-P(E)",
+          "meaning": "Probability of complement event."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_prob_002",
+      "conceptName": "Addition Theorem",
+      "description": "Probability of union of events.",
+      "formulaType": "addition-theorem-formula",
+      "formulas": [
+        {
+          "formulaId": "math_prob_002_f1",
+          "name": "Addition Theorem",
+          "equation": "P(A∪B) = P(A)+P(B)-P(A∩B)",
+          "latex": "P(A\\cup B)=P(A)+P(B)-P(A\\cap B)",
+          "meaning": "Probability of union of two events."
+        },
+        {
+          "formulaId": "math_prob_002_f2",
+          "name": "Mutually Exclusive Events",
+          "equation": "P(A∪B) = P(A)+P(B)",
+          "latex": "P(A\\cup B)=P(A)+P(B)",
+          "meaning": "For mutually exclusive events."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_prob_003",
+      "conceptName": "Conditional Probability",
+      "description": "Probability under given condition.",
+      "formulaType": "conditional-probability-formula",
+      "formulas": [
+        {
+          "formulaId": "math_prob_003_f1",
+          "name": "Conditional Probability",
+          "equation": "P(A|B) = P(A∩B)/P(B)",
+          "latex": "P(A|B)=\\frac{P(A\\cap B)}{P(B)}",
+          "meaning": "Probability of A given B."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_prob_004",
+      "conceptName": "Multiplication Theorem",
+      "description": "Probability of simultaneous occurrence.",
+      "formulaType": "multiplication-theorem-formula",
+      "formulas": [
+        {
+          "formulaId": "math_prob_004_f1",
+          "name": "Multiplication Theorem",
+          "equation": "P(A∩B) = P(A)P(B|A)",
+          "latex": "P(A\\cap B)=P(A)P(B|A)",
+          "meaning": "Joint probability formula."
+        },
+        {
+          "formulaId": "math_prob_004_f2",
+          "name": "Independent Events",
+          "equation": "P(A∩B) = P(A)P(B)",
+          "latex": "P(A\\cap B)=P(A)P(B)",
+          "meaning": "For independent events."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_prob_005",
+      "conceptName": "Bayes Theorem",
+      "description": "Reversal of conditional probability.",
+      "formulaType": "bayes-theorem-formula",
+      "formulas": [
+        {
+          "formulaId": "math_prob_005_f1",
+          "name": "Bayes Theorem",
+          "equation": "P(A|B) = [P(B|A)P(A)]/P(B)",
+          "latex": "P(A|B)=\\frac{P(B|A)P(A)}{P(B)}",
+          "meaning": "Formula for posterior probability."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_prob_006",
+      "conceptName": "Independent Events",
+      "description": "Events not affecting each other.",
+      "formulaType": "independent-events-formula",
+      "formulas": [
+        {
+          "formulaId": "math_prob_006_f1",
+          "name": "Independent Events Condition",
+          "equation": "P(A|B) = P(A)",
+          "latex": "P(A|B)=P(A)",
+          "meaning": "Condition for independence."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_prob_007",
+      "conceptName": "Random Variable",
+      "description": "Variable associated with random outcomes.",
+      "formulaType": "random-variable-formula",
+      "formulas": [
+        {
+          "formulaId": "math_prob_007_f1",
+          "name": "Expectation",
+          "equation": "E(X) = ΣxᵢP(xᵢ)",
+          "latex": "E(X)=\\sum x_iP(x_i)",
+          "meaning": "Mean or expected value."
+        },
+        {
+          "formulaId": "math_prob_007_f2",
+          "name": "Variance",
+          "equation": "Var(X) = E(X²)-[E(X)]²",
+          "latex": "Var(X)=E(X^2)-[E(X)]^2",
+          "meaning": "Measure of spread."
+        },
+        {
+          "formulaId": "math_prob_007_f3",
+          "name": "Standard Deviation",
+          "equation": "σ = √Var(X)",
+          "latex": "\\sigma=\\sqrt{Var(X)}",
+          "meaning": "Square root of variance."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_prob_008",
+      "conceptName": "Binomial Distribution",
+      "description": "Probability distribution for repeated trials.",
+      "formulaType": "binomial-distribution-formula",
+      "formulas": [
+        {
+          "formulaId": "math_prob_008_f1",
+          "name": "Binomial Probability",
+          "equation": "P(X=r) = ⁿCᵣ pʳqⁿ⁻ʳ",
+          "latex": "P(X=r)={}^nC_r p^rq^{n-r}",
+          "meaning": "Probability of r successes in n trials."
+        },
+        {
+          "formulaId": "math_prob_008_f2",
+          "name": "Mean of Binomial Distribution",
+          "equation": "Mean = np",
+          "latex": "\\text{Mean}=np",
+          "meaning": "Expected value of binomial distribution."
+        },
+        {
+          "formulaId": "math_prob_008_f3",
+          "name": "Variance of Binomial Distribution",
+          "equation": "Variance = npq",
+          "latex": "\\text{Variance}=npq",
+          "meaning": "Variance formula."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_prob_009",
+      "conceptName": "Total Probability Theorem",
+      "description": "Overall probability using partitions.",
+      "formulaType": "total-probability-formula",
+      "formulas": [
+        {
+          "formulaId": "math_prob_009_f1",
+          "name": "Total Probability Formula",
+          "equation": "P(B)=ΣP(Aᵢ)P(B|Aᵢ)",
+          "latex": "P(B)=\\sum P(A_i)P(B|A_i)",
+          "meaning": "Probability using exhaustive events."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Probability always lies between 0 and 1.",
+    "Independent events satisfy P(A∩B)=P(A)P(B).",
+    "Bayes theorem reverses conditional probability.",
+    "Expectation gives average outcome over many trials."
+  ],
+  "commonMistakes": [
+    "Confusing mutually exclusive and independent events",
+    "Wrong denominator in conditional probability",
+    "Errors in Bayes theorem substitution",
+    "Incorrect variance calculations"
+  ],
+  "jeeAdvancedFocus": [
+    "Conditional probability",
+    "Bayes theorem",
+    "Random variables",
+    "Advanced probability distributions"
+  ],
+  "neetFocus": [
+    "Basic probability",
+    "Addition and multiplication theorem",
+    "Conditional probability",
+    "Binomial distribution basics"
+  ],
+  "keywords": [
+    "probability",
+    "conditional probability",
+    "bayes theorem",
+    "random variable",
+    "binomial distribution",
+    "events"
+  ]
+}

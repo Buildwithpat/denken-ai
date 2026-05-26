@@ -1,0 +1,284 @@
+{
+  "chapterId": "physics_fluid_mechanics_properties_of_matter_024",
+  "fileName": "fluid_mechanics_properties_of_matter.json",
+  "chapterName": "Fluid Mechanics & Properties of Matter",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "fluid-mechanics",
+    "properties-of-matter",
+    "surface-tension",
+    "viscosity",
+    "elasticity",
+    "bernoulli-principle"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_fluid_001",
+      "conceptName": "Density and Pressure",
+      "description": "Basic properties of fluids related to mass and force.",
+      "formulaType": "basic-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fluid_001_f1",
+          "name": "Density",
+          "equation": "ρ = m/V",
+          "latex": "\\rho=\\frac{m}{V}",
+          "meaning": "Mass per unit volume.",
+          "variables": {
+            "ρ": {
+              "meaning": "Density",
+              "unit": "kg/m³"
+            },
+            "m": {
+              "meaning": "Mass",
+              "unit": "kg"
+            },
+            "V": {
+              "meaning": "Volume",
+              "unit": "m³"
+            }
+          },
+          "applications": ["Fluid calculations", "Buoyancy problems"]
+        },
+        {
+          "formulaId": "phy_fluid_001_f2",
+          "name": "Pressure",
+          "equation": "P = F/A",
+          "latex": "P=\\frac{F}{A}",
+          "meaning": "Force acting per unit area."
+        },
+        {
+          "formulaId": "phy_fluid_001_f3",
+          "name": "Hydrostatic Pressure",
+          "equation": "P = hρg",
+          "latex": "P=h\\rho g",
+          "meaning": "Pressure at depth h in fluid."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_fluid_002",
+      "conceptName": "Pascal's Law",
+      "description": "Pressure applied to enclosed fluid is transmitted equally.",
+      "formulaType": "pascal-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fluid_002_f1",
+          "name": "Hydraulic Lift Relation",
+          "equation": "F₁/A₁ = F₂/A₂",
+          "latex": "\\frac{F_1}{A_1}=\\frac{F_2}{A_2}",
+          "meaning": "Force relation in hydraulic machines."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_fluid_003",
+      "conceptName": "Archimedes Principle",
+      "description": "Buoyant force acting on immersed bodies.",
+      "formulaType": "buoyancy-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fluid_003_f1",
+          "name": "Buoyant Force",
+          "equation": "Fb = ρVg",
+          "latex": "F_b=\\rho Vg",
+          "meaning": "Upthrust equal to weight of displaced fluid."
+        },
+        {
+          "formulaId": "phy_fluid_003_f2",
+          "name": "Apparent Weight",
+          "equation": "Wapp = W - Fb",
+          "latex": "W_{app}=W-F_b",
+          "meaning": "Apparent weight in fluid."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_fluid_004",
+      "conceptName": "Equation of Continuity",
+      "description": "Conservation of mass in fluid flow.",
+      "formulaType": "continuity-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fluid_004_f1",
+          "name": "Continuity Equation",
+          "equation": "A₁v₁ = A₂v₂",
+          "latex": "A_1v_1=A_2v_2",
+          "meaning": "Volume flow rate remains constant."
+        },
+        {
+          "formulaId": "phy_fluid_004_f2",
+          "name": "Volume Flow Rate",
+          "equation": "Q = Av",
+          "latex": "Q=Av",
+          "meaning": "Volume of fluid flowing per second."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_fluid_005",
+      "conceptName": "Bernoulli's Principle",
+      "description": "Energy conservation in flowing fluids.",
+      "formulaType": "bernoulli-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fluid_005_f1",
+          "name": "Bernoulli Equation",
+          "equation": "P + (1/2)ρv² + ρgh = constant",
+          "latex": "P+\\frac{1}{2}\\rho v^2+\\rho gh=\\text{constant}",
+          "meaning": "Total mechanical energy per unit volume remains constant."
+        },
+        {
+          "formulaId": "phy_fluid_005_f2",
+          "name": "Torricelli Theorem",
+          "equation": "v = √(2gh)",
+          "latex": "v=\\sqrt{2gh}",
+          "meaning": "Speed of efflux from a tank."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_fluid_006",
+      "conceptName": "Surface Tension",
+      "description": "Property causing liquid surfaces to behave like stretched membranes.",
+      "formulaType": "surface-tension-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fluid_006_f1",
+          "name": "Surface Tension",
+          "equation": "T = F/l",
+          "latex": "T=\\frac{F}{l}",
+          "meaning": "Force per unit length on liquid surface."
+        },
+        {
+          "formulaId": "phy_fluid_006_f2",
+          "name": "Excess Pressure in Liquid Drop",
+          "equation": "ΔP = 2T/r",
+          "latex": "\\Delta P=\\frac{2T}{r}",
+          "meaning": "Excess pressure inside liquid drop."
+        },
+        {
+          "formulaId": "phy_fluid_006_f3",
+          "name": "Excess Pressure in Soap Bubble",
+          "equation": "ΔP = 4T/r",
+          "latex": "\\Delta P=\\frac{4T}{r}",
+          "meaning": "Excess pressure inside soap bubble."
+        },
+        {
+          "formulaId": "phy_fluid_006_f4",
+          "name": "Capillary Rise",
+          "equation": "h = 2Tcosθ/rρg",
+          "latex": "h=\\frac{2T\\cos\\theta}{r\\rho g}",
+          "meaning": "Height of liquid rise in capillary tube."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_fluid_007",
+      "conceptName": "Viscosity",
+      "description": "Internal friction in fluids.",
+      "formulaType": "viscosity-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fluid_007_f1",
+          "name": "Viscous Force",
+          "equation": "F = ηA(dv/dx)",
+          "latex": "F=\\eta A\\left(\\frac{dv}{dx}\\right)",
+          "meaning": "Force due to viscosity."
+        },
+        {
+          "formulaId": "phy_fluid_007_f2",
+          "name": "Stoke's Law",
+          "equation": "F = 6πηrv",
+          "latex": "F=6\\pi\\eta rv",
+          "meaning": "Viscous drag on spherical body."
+        },
+        {
+          "formulaId": "phy_fluid_007_f3",
+          "name": "Terminal Velocity",
+          "equation": "v = 2r²(ρ-σ)g/9η",
+          "latex": "v=\\frac{2r^2(\\rho-\\sigma)g}{9\\eta}",
+          "meaning": "Maximum constant velocity in viscous medium."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_fluid_008",
+      "conceptName": "Elasticity",
+      "description": "Property of materials to regain original shape after deformation.",
+      "formulaType": "elasticity-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fluid_008_f1",
+          "name": "Stress",
+          "equation": "Stress = F/A",
+          "latex": "\\text{Stress}=\\frac{F}{A}",
+          "meaning": "Force applied per unit area."
+        },
+        {
+          "formulaId": "phy_fluid_008_f2",
+          "name": "Strain",
+          "equation": "Strain = ΔL/L",
+          "latex": "\\text{Strain}=\\frac{\\Delta L}{L}",
+          "meaning": "Fractional deformation."
+        },
+        {
+          "formulaId": "phy_fluid_008_f3",
+          "name": "Young's Modulus",
+          "equation": "Y = Stress/Strain",
+          "latex": "Y=\\frac{\\text{Stress}}{\\text{Strain}}",
+          "meaning": "Ratio of longitudinal stress to strain."
+        },
+        {
+          "formulaId": "phy_fluid_008_f4",
+          "name": "Bulk Modulus",
+          "equation": "K = -P/(ΔV/V)",
+          "latex": "K=-\\frac{P}{\\Delta V/V}",
+          "meaning": "Resistance to volume compression."
+        },
+        {
+          "formulaId": "phy_fluid_008_f5",
+          "name": "Shear Modulus",
+          "equation": "η = Shear Stress/Shear Strain",
+          "latex": "\\eta=\\frac{\\text{Shear Stress}}{\\text{Shear Strain}}",
+          "meaning": "Resistance to shear deformation."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Pressure in fluid increases with depth.",
+    "Surface tension decreases with temperature.",
+    "Viscosity opposes relative motion between fluid layers.",
+    "Bernoulli equation is valid for ideal fluids."
+  ],
+  "commonMistakes": [
+    "Using wrong radius in capillary formulas",
+    "Confusing viscosity and surface tension",
+    "Ignoring unit consistency",
+    "Wrong application of Bernoulli principle"
+  ],
+  "jeeAdvancedFocus": [
+    "Bernoulli applications",
+    "Viscosity numericals",
+    "Surface tension derivations",
+    "Elasticity relations"
+  ],
+  "neetFocus": [
+    "Pressure and buoyancy",
+    "Surface tension",
+    "Viscosity",
+    "Elasticity basics"
+  ],
+  "keywords": [
+    "fluid mechanics",
+    "surface tension",
+    "viscosity",
+    "bernoulli principle",
+    "elasticity",
+    "buoyancy",
+    "continuity equation",
+    "capillary rise"
+  ]
+}

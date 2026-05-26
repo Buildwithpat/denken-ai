@@ -1,0 +1,223 @@
+{
+  "chapterId": "chem_nomenclature_019",
+  "fileName": "points_to_remember_in_nomenclature.json",
+  "chapterName": "Points to Remember in Nomenclature",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "nomenclature",
+    "iupac",
+    "organic-chemistry",
+    "naming-rules",
+    "functional-groups"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_nom_001",
+      "conceptName": "Basic IUPAC Rules",
+      "description": "Fundamental rules for naming organic compounds.",
+      "formulaType": "iupac-rule-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_nom_001_f1",
+          "name": "Longest Chain Rule",
+          "equation": "Choose longest continuous carbon chain",
+          "latex": "\\text{Choose longest continuous carbon chain}",
+          "meaning": "Parent chain must contain maximum carbons."
+        },
+        {
+          "formulaId": "chem_nom_001_f2",
+          "name": "Lowest Locant Rule",
+          "equation": "Substituents get minimum possible numbers",
+          "latex": "\\text{Substituents get minimum possible numbers}",
+          "meaning": "Numbering starts from nearest substituent."
+        },
+        {
+          "formulaId": "chem_nom_001_f3",
+          "name": "Priority Rule",
+          "equation": "Highest priority functional group gets suffix",
+          "latex": "\\text{Highest priority functional group gets suffix}",
+          "meaning": "Main functional group determines suffix."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_nom_002",
+      "conceptName": "Prefixes and Suffixes",
+      "description": "Naming components in IUPAC nomenclature.",
+      "formulaType": "prefix-suffix-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_nom_002_f1",
+          "name": "Alkane Suffix",
+          "equation": "-ane",
+          "latex": "-ane",
+          "meaning": "Used for saturated hydrocarbons."
+        },
+        {
+          "formulaId": "chem_nom_002_f2",
+          "name": "Alkene Suffix",
+          "equation": "-ene",
+          "latex": "-ene",
+          "meaning": "Used for compounds containing double bond."
+        },
+        {
+          "formulaId": "chem_nom_002_f3",
+          "name": "Alkyne Suffix",
+          "equation": "-yne",
+          "latex": "-yne",
+          "meaning": "Used for compounds containing triple bond."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_nom_003",
+      "conceptName": "Functional Group Priority Order",
+      "description": "Priority sequence used in nomenclature.",
+      "formulaType": "priority-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_nom_003_f1",
+          "name": "Highest Priority Group",
+          "equation": "COOH > SO₃H > COOR > COCl > CONH₂",
+          "latex": "COOH>SO_3H>COOR>COCl>CONH_2",
+          "meaning": "Order of important functional groups."
+        },
+        {
+          "formulaId": "chem_nom_003_f2",
+          "name": "Alcohol vs Amine Priority",
+          "equation": "OH > NH₂",
+          "latex": "OH>NH_2",
+          "meaning": "Alcohol gets suffix priority over amine."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_nom_004",
+      "conceptName": "Common Prefixes",
+      "description": "Important substituent prefixes.",
+      "formulaType": "substituent-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_nom_004_f1",
+          "name": "Methyl Group",
+          "equation": "-CH₃",
+          "latex": "-CH_3",
+          "meaning": "One carbon alkyl substituent."
+        },
+        {
+          "formulaId": "chem_nom_004_f2",
+          "name": "Ethyl Group",
+          "equation": "-C₂H₅",
+          "latex": "-C_2H_5",
+          "meaning": "Two carbon alkyl substituent."
+        },
+        {
+          "formulaId": "chem_nom_004_f3",
+          "name": "Phenyl Group",
+          "equation": "-C₆H₅",
+          "latex": "-C_6H_5",
+          "meaning": "Aromatic substituent derived from benzene."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_nom_005",
+      "conceptName": "Cyclic Compound Nomenclature",
+      "description": "Naming rules for cyclic compounds.",
+      "formulaType": "cyclic-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_nom_005_f1",
+          "name": "Cyclo Prefix",
+          "equation": "cyclo + alkane name",
+          "latex": "cyclo+\\text{alkane name}",
+          "meaning": "Used for cyclic hydrocarbons."
+        },
+        {
+          "formulaId": "chem_nom_005_f2",
+          "name": "Benzene Ring Naming",
+          "equation": "C₆H₆ → Benzene",
+          "latex": "C_6H_6\\rightarrow\\text{Benzene}",
+          "meaning": "Simplest aromatic compound."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_nom_006",
+      "conceptName": "Alphabetical Order Rule",
+      "description": "Arrangement of substituents in names.",
+      "formulaType": "alphabet-rule-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_nom_006_f1",
+          "name": "Alphabetical Arrangement",
+          "equation": "Ethyl before methyl",
+          "latex": "\\text{Ethyl before methyl}",
+          "meaning": "Substituents written alphabetically."
+        },
+        {
+          "formulaId": "chem_nom_006_f2",
+          "name": "Ignoring Multipliers",
+          "equation": "di-, tri-, tetra- ignored in alphabetization",
+          "latex": "\\text{di-, tri-, tetra- ignored in alphabetization}",
+          "meaning": "Prefixes not considered while ordering."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_nom_007",
+      "conceptName": "Special Naming Rules",
+      "description": "Important special cases in nomenclature.",
+      "formulaType": "special-rule-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_nom_007_f1",
+          "name": "Numbering Double Bond",
+          "equation": "Double bond gets lowest locant",
+          "latex": "\\text{Double bond gets lowest locant}",
+          "meaning": "Priority over alkyl substituent."
+        },
+        {
+          "formulaId": "chem_nom_007_f2",
+          "name": "Multiple Bonds Rule",
+          "equation": "ene before yne",
+          "latex": "ene\\text{ before }yne",
+          "meaning": "Naming order in compounds with multiple bonds."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Functional group with highest priority gets suffix.",
+    "Parent chain should contain maximum functional groups and multiple bonds.",
+    "Substituents are written alphabetically.",
+    "Lowest locant rule is very important in IUPAC naming."
+  ],
+  "commonMistakes": [
+    "Incorrect parent chain selection",
+    "Wrong numbering direction",
+    "Ignoring functional group priority",
+    "Wrong alphabetical ordering"
+  ],
+  "jeeAdvancedFocus": [
+    "Complex IUPAC naming",
+    "Priority order problems",
+    "Polyfunctional compounds",
+    "Cyclic compound nomenclature"
+  ],
+  "neetFocus": [
+    "Basic nomenclature rules",
+    "Functional group priorities",
+    "Common prefixes and suffixes",
+    "Simple IUPAC naming"
+  ],
+  "keywords": [
+    "nomenclature",
+    "iupac naming",
+    "organic nomenclature",
+    "functional groups",
+    "prefix suffix",
+    "priority order"
+  ]
+}

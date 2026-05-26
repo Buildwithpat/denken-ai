@@ -1,0 +1,262 @@
+{
+  "chapterId": "chem_thermodynamics_004",
+  "fileName": "thermodynamics.json",
+  "chapterName": "Thermodynamics",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "thermodynamics",
+    "enthalpy",
+    "entropy",
+    "gibbs-energy",
+    "heat-capacity",
+    "thermochemistry"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_thermo_001",
+      "conceptName": "Basic Thermodynamic Terms",
+      "description": "Fundamental concepts of heat, work and energy.",
+      "formulaType": "basic-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_thermo_001_f1",
+          "name": "First Law of Thermodynamics",
+          "equation": "ΔU = q + w",
+          "latex": "\\Delta U=q+w",
+          "meaning": "Change in internal energy equals heat supplied plus work done.",
+          "variables": {
+            "ΔU": {
+              "meaning": "Change in internal energy",
+              "unit": "J"
+            },
+            "q": {
+              "meaning": "Heat",
+              "unit": "J"
+            },
+            "w": {
+              "meaning": "Work",
+              "unit": "J"
+            }
+          },
+          "applications": ["Energy balance", "Thermodynamic processes"]
+        },
+        {
+          "formulaId": "chem_thermo_001_f2",
+          "name": "Expansion Work",
+          "equation": "w = -PextΔV",
+          "latex": "w=-P_{ext}\\Delta V",
+          "meaning": "Work done during expansion or compression."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_thermo_002",
+      "conceptName": "Internal Energy and Enthalpy",
+      "description": "Energy changes in chemical processes.",
+      "formulaType": "enthalpy-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_thermo_002_f1",
+          "name": "Enthalpy Definition",
+          "equation": "H = U + PV",
+          "latex": "H=U+PV",
+          "meaning": "Relation between enthalpy and internal energy."
+        },
+        {
+          "formulaId": "chem_thermo_002_f2",
+          "name": "Enthalpy Change",
+          "equation": "ΔH = ΔU + ΔnRT",
+          "latex": "\\Delta H=\\Delta U+\\Delta nRT",
+          "meaning": "Relation between enthalpy and internal energy change."
+        },
+        {
+          "formulaId": "chem_thermo_002_f3",
+          "name": "Heat at Constant Pressure",
+          "equation": "qp = ΔH",
+          "latex": "q_p=\\Delta H",
+          "meaning": "Heat absorbed at constant pressure."
+        },
+        {
+          "formulaId": "chem_thermo_002_f4",
+          "name": "Heat at Constant Volume",
+          "equation": "qv = ΔU",
+          "latex": "q_v=\\Delta U",
+          "meaning": "Heat absorbed at constant volume."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_thermo_003",
+      "conceptName": "Heat Capacity",
+      "description": "Amount of heat required to raise temperature.",
+      "formulaType": "heat-capacity-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_thermo_003_f1",
+          "name": "Heat Equation",
+          "equation": "q = mcΔT",
+          "latex": "q=mc\\Delta T",
+          "meaning": "Heat absorbed or released."
+        },
+        {
+          "formulaId": "chem_thermo_003_f2",
+          "name": "Molar Heat Capacity",
+          "equation": "Cm = q/nΔT",
+          "latex": "C_m=\\frac{q}{n\\Delta T}",
+          "meaning": "Heat capacity per mole."
+        },
+        {
+          "formulaId": "chem_thermo_003_f3",
+          "name": "Relation Between Cp and Cv",
+          "equation": "Cp - Cv = R",
+          "latex": "C_p-C_v=R",
+          "meaning": "Mayer's relation for ideal gases."
+        },
+        {
+          "formulaId": "chem_thermo_003_f4",
+          "name": "Heat Capacity Ratio",
+          "equation": "γ = Cp/Cv",
+          "latex": "\\gamma=\\frac{C_p}{C_v}",
+          "meaning": "Ratio of heat capacities."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_thermo_004",
+      "conceptName": "Thermochemical Equations",
+      "description": "Heat changes in chemical reactions.",
+      "formulaType": "thermochemical-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_thermo_004_f1",
+          "name": "Standard Enthalpy Change",
+          "equation": "ΔH° = ΣΔHf°(products) - ΣΔHf°(reactants)",
+          "latex": "\\Delta H^\\circ=\\sum\\Delta H_f^\\circ(\\text{products})-\\sum\\Delta H_f^\\circ(\\text{reactants})",
+          "meaning": "Calculation of standard enthalpy change."
+        },
+        {
+          "formulaId": "chem_thermo_004_f2",
+          "name": "Hess Law",
+          "equation": "ΔHtotal = ΣΔHsteps",
+          "latex": "\\Delta H_{total}=\\sum \\Delta H_{steps}",
+          "meaning": "Total enthalpy change is path independent."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_thermo_005",
+      "conceptName": "Entropy",
+      "description": "Measure of randomness or disorder.",
+      "formulaType": "entropy-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_thermo_005_f1",
+          "name": "Entropy Change",
+          "equation": "ΔS = qrev/T",
+          "latex": "\\Delta S=\\frac{q_{rev}}{T}",
+          "meaning": "Entropy change for reversible process."
+        },
+        {
+          "formulaId": "chem_thermo_005_f2",
+          "name": "Second Law Condition",
+          "equation": "ΔSuniverse > 0",
+          "latex": "\\Delta S_{universe}>0",
+          "meaning": "Criterion for spontaneous process."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_thermo_006",
+      "conceptName": "Gibbs Free Energy",
+      "description": "Criterion for spontaneity of reactions.",
+      "formulaType": "gibbs-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_thermo_006_f1",
+          "name": "Gibbs Free Energy",
+          "equation": "G = H - TS",
+          "latex": "G=H-TS",
+          "meaning": "Definition of Gibbs free energy."
+        },
+        {
+          "formulaId": "chem_thermo_006_f2",
+          "name": "Free Energy Change",
+          "equation": "ΔG = ΔH - TΔS",
+          "latex": "\\Delta G=\\Delta H-T\\Delta S",
+          "meaning": "Criterion for spontaneity."
+        },
+        {
+          "formulaId": "chem_thermo_006_f3",
+          "name": "Equilibrium Condition",
+          "equation": "ΔG = 0",
+          "latex": "\\Delta G=0",
+          "meaning": "Condition at equilibrium."
+        },
+        {
+          "formulaId": "chem_thermo_006_f4",
+          "name": "Relation with Equilibrium Constant",
+          "equation": "ΔG° = -RT lnK",
+          "latex": "\\Delta G^\\circ=-RT\\ln K",
+          "meaning": "Relation between Gibbs energy and equilibrium constant."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_thermo_007",
+      "conceptName": "Spontaneity",
+      "description": "Conditions determining spontaneous processes.",
+      "formulaType": "spontaneity-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_thermo_007_f1",
+          "name": "Spontaneous Process Condition",
+          "equation": "ΔG < 0",
+          "latex": "\\Delta G<0",
+          "meaning": "Condition for spontaneity."
+        },
+        {
+          "formulaId": "chem_thermo_007_f2",
+          "name": "Non-Spontaneous Process Condition",
+          "equation": "ΔG > 0",
+          "latex": "\\Delta G>0",
+          "meaning": "Condition for non-spontaneous process."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Enthalpy is a state function.",
+    "Negative ΔH indicates exothermic reaction.",
+    "Negative ΔG indicates spontaneous process.",
+    "Entropy generally increases with randomness."
+  ],
+  "commonMistakes": [
+    "Wrong sign convention in work calculation",
+    "Confusing ΔH and ΔU",
+    "Using Celsius instead of Kelvin",
+    "Incorrect spontaneity conditions"
+  ],
+  "jeeAdvancedFocus": [
+    "Hess law problems",
+    "Entropy and spontaneity numericals",
+    "Gibbs free energy applications",
+    "Thermodynamic derivations"
+  ],
+  "neetFocus": [
+    "First law of thermodynamics",
+    "Enthalpy changes",
+    "Entropy",
+    "Gibbs free energy"
+  ],
+  "keywords": [
+    "thermodynamics",
+    "enthalpy",
+    "entropy",
+    "gibbs free energy",
+    "heat capacity",
+    "hess law",
+    "spontaneity",
+    "thermochemistry"
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "chapterId": "chem_periodic_table_periodicity_011",
+  "fileName": "periodic_table_periodicity.json",
+  "chapterName": "Periodic Table & Periodicity",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "periodic-table",
+    "periodicity",
+    "atomic-radius",
+    "ionization-energy",
+    "electron-affinity",
+    "electronegativity"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_periodic_001",
+      "conceptName": "Modern Periodic Law",
+      "description": "Properties of elements are periodic functions of atomic number.",
+      "formulaType": "periodic-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_periodic_001_f1",
+          "name": "Atomic Number Relation",
+          "equation": "Z = Number of protons",
+          "latex": "Z=\\text{Number of protons}",
+          "meaning": "Atomic number defines element identity.",
+          "applications": [
+            "Electronic configuration",
+            "Periodic classification"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_periodic_002",
+      "conceptName": "Effective Nuclear Charge",
+      "description": "Net positive charge experienced by valence electrons.",
+      "formulaType": "effective-charge-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_periodic_002_f1",
+          "name": "Effective Nuclear Charge",
+          "equation": "Zeff = Z - S",
+          "latex": "Z_{eff}=Z-S",
+          "meaning": "Net attraction experienced by electron."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_periodic_003",
+      "conceptName": "Atomic Radius",
+      "description": "Distance between nucleus and outermost electron.",
+      "formulaType": "atomic-radius-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_periodic_003_f1",
+          "name": "Trend Across Period",
+          "equation": "Atomic radius decreases across a period",
+          "latex": "\\text{Atomic radius decreases across a period}",
+          "meaning": "Due to increase in effective nuclear charge."
+        },
+        {
+          "formulaId": "chem_periodic_003_f2",
+          "name": "Trend Down Group",
+          "equation": "Atomic radius increases down the group",
+          "latex": "\\text{Atomic radius increases down the group}",
+          "meaning": "Due to increase in number of shells."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_periodic_004",
+      "conceptName": "Ionization Enthalpy",
+      "description": "Energy required to remove outermost electron.",
+      "formulaType": "ionization-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_periodic_004_f1",
+          "name": "Ionization Process",
+          "equation": "X(g) → X⁺(g) + e⁻",
+          "latex": "X(g)\\rightarrow X^+(g)+e^-",
+          "meaning": "Removal of electron from gaseous atom."
+        },
+        {
+          "formulaId": "chem_periodic_004_f2",
+          "name": "Trend Across Period",
+          "equation": "Ionization enthalpy increases across period",
+          "latex": "\\text{Ionization enthalpy increases across period}",
+          "meaning": "Due to stronger nuclear attraction."
+        },
+        {
+          "formulaId": "chem_periodic_004_f3",
+          "name": "Trend Down Group",
+          "equation": "Ionization enthalpy decreases down group",
+          "latex": "\\text{Ionization enthalpy decreases down group}",
+          "meaning": "Due to increase in atomic size."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_periodic_005",
+      "conceptName": "Electron Gain Enthalpy",
+      "description": "Energy change when electron is added.",
+      "formulaType": "electron-affinity-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_periodic_005_f1",
+          "name": "Electron Gain Process",
+          "equation": "X(g) + e⁻ → X⁻(g)",
+          "latex": "X(g)+e^-\\rightarrow X^-(g)",
+          "meaning": "Addition of electron to gaseous atom."
+        },
+        {
+          "formulaId": "chem_periodic_005_f2",
+          "name": "Trend Across Period",
+          "equation": "Electron gain enthalpy becomes more negative across period",
+          "latex": "\\text{Electron gain enthalpy becomes more negative across period}",
+          "meaning": "Due to increase in nuclear attraction."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_periodic_006",
+      "conceptName": "Electronegativity",
+      "description": "Tendency of atom to attract bonded electrons.",
+      "formulaType": "electronegativity-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_periodic_006_f1",
+          "name": "Pauling Relation",
+          "equation": "Δ = XA - XB",
+          "latex": "\\Delta=X_A-X_B",
+          "meaning": "Difference in electronegativity."
+        },
+        {
+          "formulaId": "chem_periodic_006_f2",
+          "name": "Trend Across Period",
+          "equation": "Electronegativity increases across period",
+          "latex": "\\text{Electronegativity increases across period}",
+          "meaning": "Due to increase in effective nuclear charge."
+        },
+        {
+          "formulaId": "chem_periodic_006_f3",
+          "name": "Trend Down Group",
+          "equation": "Electronegativity decreases down group",
+          "latex": "\\text{Electronegativity decreases down group}",
+          "meaning": "Due to increase in atomic size."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_periodic_007",
+      "conceptName": "Periodic Trends",
+      "description": "Variation of physical and chemical properties.",
+      "formulaType": "trend-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_periodic_007_f1",
+          "name": "Metallic Character Trend",
+          "equation": "Metallic character decreases across period",
+          "latex": "\\text{Metallic character decreases across period}",
+          "meaning": "Due to increasing ionization enthalpy."
+        },
+        {
+          "formulaId": "chem_periodic_007_f2",
+          "name": "Non-Metallic Character Trend",
+          "equation": "Non-metallic character increases across period",
+          "latex": "\\text{Non-metallic character increases across period}",
+          "meaning": "Due to increasing electronegativity."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_periodic_008",
+      "conceptName": "Oxidation State",
+      "description": "Charge assigned to atom in compound.",
+      "formulaType": "oxidation-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_periodic_008_f1",
+          "name": "Sum Rule",
+          "equation": "Sum of oxidation numbers = Net charge",
+          "latex": "\\text{Sum of oxidation numbers}=\\text{Net charge}",
+          "meaning": "Oxidation state balancing rule."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Atomic radius decreases across a period.",
+    "Ionization enthalpy generally increases across period.",
+    "Fluorine has highest electronegativity.",
+    "Noble gases have stable electronic configuration."
+  ],
+  "commonMistakes": [
+    "Confusing electron affinity and electronegativity",
+    "Ignoring exceptions in ionization enthalpy",
+    "Wrong periodic trend interpretation",
+    "Incorrect oxidation number calculation"
+  ],
+  "jeeAdvancedFocus": [
+    "Periodic trend exceptions",
+    "Effective nuclear charge",
+    "Successive ionization enthalpy",
+    "Comparative property analysis"
+  ],
+  "neetFocus": [
+    "Periodic trends",
+    "Atomic radius",
+    "Ionization enthalpy",
+    "Electronegativity"
+  ],
+  "keywords": [
+    "periodic table",
+    "periodicity",
+    "atomic radius",
+    "ionization enthalpy",
+    "electron affinity",
+    "electronegativity",
+    "effective nuclear charge",
+    "oxidation state"
+  ]
+}

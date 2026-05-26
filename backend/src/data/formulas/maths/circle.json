@@ -1,0 +1,227 @@
+{
+  "chapterId": "math_circle_002",
+  "fileName": "circle.json",
+  "chapterName": "Circle",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": ["circle", "coordinate-geometry", "tangent", "normal", "chord"],
+  "concepts": [
+    {
+      "conceptId": "math_circle_001",
+      "conceptName": "Standard Equation of Circle",
+      "description": "Basic equation of circle with center and radius.",
+      "formulaType": "circle-equation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_circle_001_f1",
+          "name": "Standard Form",
+          "equation": "(x-h)² + (y-k)² = r²",
+          "latex": "(x-h)^2+(y-k)^2=r^2",
+          "meaning": "Equation of circle with center (h,k) and radius r.",
+          "applications": ["Coordinate geometry", "Conic sections"]
+        },
+        {
+          "formulaId": "math_circle_001_f2",
+          "name": "Circle at Origin",
+          "equation": "x² + y² = r²",
+          "latex": "x^2+y^2=r^2",
+          "meaning": "Equation of circle centered at origin."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_circle_002",
+      "conceptName": "General Equation of Circle",
+      "description": "Expanded form of circle equation.",
+      "formulaType": "general-circle-formula",
+      "formulas": [
+        {
+          "formulaId": "math_circle_002_f1",
+          "name": "General Form",
+          "equation": "x² + y² + 2gx + 2fy + c = 0",
+          "latex": "x^2+y^2+2gx+2fy+c=0",
+          "meaning": "General equation of circle."
+        },
+        {
+          "formulaId": "math_circle_002_f2",
+          "name": "Center of Circle",
+          "equation": "(-g,-f)",
+          "latex": "(-g,-f)",
+          "meaning": "Coordinates of center from general equation."
+        },
+        {
+          "formulaId": "math_circle_002_f3",
+          "name": "Radius Formula",
+          "equation": "r = √(g² + f² - c)",
+          "latex": "r=\\sqrt{g^2+f^2-c}",
+          "meaning": "Radius from general equation."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_circle_003",
+      "conceptName": "Condition for Circle",
+      "description": "Conditions for existence of real circle.",
+      "formulaType": "condition-formula",
+      "formulas": [
+        {
+          "formulaId": "math_circle_003_f1",
+          "name": "Real Circle Condition",
+          "equation": "g² + f² - c > 0",
+          "latex": "g^2+f^2-c>0",
+          "meaning": "Condition for real circle."
+        },
+        {
+          "formulaId": "math_circle_003_f2",
+          "name": "Point Circle Condition",
+          "equation": "g² + f² - c = 0",
+          "latex": "g^2+f^2-c=0",
+          "meaning": "Circle reduces to a point."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_circle_004",
+      "conceptName": "Tangent to Circle",
+      "description": "Equation of tangent at a point.",
+      "formulaType": "tangent-formula",
+      "formulas": [
+        {
+          "formulaId": "math_circle_004_f1",
+          "name": "Tangent at Point",
+          "equation": "xx₁ + yy₁ = r²",
+          "latex": "xx_1+yy_1=r^2",
+          "meaning": "Tangent to x²+y²=r² at point (x₁,y₁)."
+        },
+        {
+          "formulaId": "math_circle_004_f2",
+          "name": "Condition of Tangency",
+          "equation": "Distance from center = radius",
+          "latex": "\\text{Distance from center}=\\text{radius}",
+          "meaning": "Condition for line to touch circle."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_circle_005",
+      "conceptName": "Length of Tangent",
+      "description": "Length of tangent from external point.",
+      "formulaType": "length-tangent-formula",
+      "formulas": [
+        {
+          "formulaId": "math_circle_005_f1",
+          "name": "Length of Tangent",
+          "equation": "√(S₁)",
+          "latex": "\\sqrt{S_1}",
+          "meaning": "Length of tangent from external point."
+        },
+        {
+          "formulaId": "math_circle_005_f2",
+          "name": "Power of Point",
+          "equation": "S₁ = x₁² + y₁² + 2gx₁ + 2fy₁ + c",
+          "latex": "S_1=x_1^2+y_1^2+2gx_1+2fy_1+c",
+          "meaning": "Power of point relative to circle."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_circle_006",
+      "conceptName": "Chord of Contact",
+      "description": "Equation joining points of contact of tangents.",
+      "formulaType": "chord-contact-formula",
+      "formulas": [
+        {
+          "formulaId": "math_circle_006_f1",
+          "name": "Chord of Contact",
+          "equation": "T = 0",
+          "latex": "T=0",
+          "meaning": "Equation of chord of contact."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_circle_007",
+      "conceptName": "Pair of Tangents",
+      "description": "Equation of pair of tangents from external point.",
+      "formulaType": "pair-tangent-formula",
+      "formulas": [
+        {
+          "formulaId": "math_circle_007_f1",
+          "name": "Pair of Tangents Equation",
+          "equation": "SS₁ = T²",
+          "latex": "SS_1=T^2",
+          "meaning": "Combined equation of pair of tangents."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_circle_008",
+      "conceptName": "Chord Properties",
+      "description": "Properties related to chords.",
+      "formulaType": "chord-formula",
+      "formulas": [
+        {
+          "formulaId": "math_circle_008_f1",
+          "name": "Length of Chord",
+          "equation": "2√(r²-d²)",
+          "latex": "2\\sqrt{r^2-d^2}",
+          "meaning": "Length of chord at distance d from center."
+        },
+        {
+          "formulaId": "math_circle_008_f2",
+          "name": "Perpendicular from Center",
+          "equation": "Perpendicular bisects chord",
+          "latex": "\\text{Perpendicular bisects chord}",
+          "meaning": "Property of chord and center."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_circle_009",
+      "conceptName": "Radical Axis",
+      "description": "Common chord of two circles.",
+      "formulaType": "radical-axis-formula",
+      "formulas": [
+        {
+          "formulaId": "math_circle_009_f1",
+          "name": "Radical Axis Equation",
+          "equation": "S₁ - S₂ = 0",
+          "latex": "S_1-S_2=0",
+          "meaning": "Equation of radical axis."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Tangent is perpendicular to radius at point of contact.",
+    "Chord joining center is diameter.",
+    "Radical axis is perpendicular to line joining centers.",
+    "Distance from center to tangent equals radius."
+  ],
+  "commonMistakes": [
+    "Wrong center coordinates from general equation",
+    "Mistakes in tangent equation",
+    "Incorrect radius calculation",
+    "Confusing tangent and normal"
+  ],
+  "jeeAdvancedFocus": [
+    "Pair of tangents",
+    "Chord of contact",
+    "Radical axis",
+    "Advanced tangent problems"
+  ],
+  "neetFocus": [
+    "Standard equation",
+    "General equation",
+    "Tangent formulas",
+    "Chord properties"
+  ],
+  "keywords": [
+    "circle",
+    "tangent",
+    "chord",
+    "radius",
+    "radical axis",
+    "coordinate geometry"
+  ]
+}

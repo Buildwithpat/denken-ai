@@ -1,0 +1,224 @@
+{
+  "chapterId": "physics_relative_motion_004",
+  "fileName": "relative_motion.json",
+  "chapterName": "Relative Motion",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "relative-motion",
+    "boats-rivers",
+    "rain-man",
+    "velocity",
+    "frames-of-reference",
+    "motion-analysis"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_rel_001",
+      "conceptName": "Relative Velocity",
+      "description": "Velocity of one object with respect to another.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rel_001_f1",
+          "name": "Relative Velocity Formula",
+          "equation": "Vab = Va - Vb",
+          "latex": "\\vec{V}_{ab}=\\vec{V}_a-\\vec{V}_b",
+          "meaning": "Velocity of object A with respect to object B.",
+          "variables": {
+            "Va": {
+              "meaning": "Velocity of object A",
+              "unit": "m/s"
+            },
+            "Vb": {
+              "meaning": "Velocity of object B",
+              "unit": "m/s"
+            }
+          },
+          "applications": [
+            "Train problems",
+            "Rain-man problems",
+            "Boat-river problems",
+            "Pursuit motion"
+          ],
+          "commonMistakes": [
+            "Wrong subtraction order",
+            "Ignoring vector direction"
+          ]
+        },
+        {
+          "formulaId": "phy_rel_001_f2",
+          "name": "Magnitude of Relative Velocity",
+          "equation": "|Vab| = √(Va² + Vb² - 2VaVb cosθ)",
+          "latex": "|\\vec{V}_{ab}|=\\sqrt{V_a^2+V_b^2-2V_aV_b\\cos\\theta}",
+          "meaning": "Magnitude of relative velocity between two moving objects.",
+          "applications": ["2D motion problems", "Angle-based motion analysis"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rel_002",
+      "conceptName": "Motion in One Dimension",
+      "description": "Relative motion along a straight line.",
+      "formulaType": "motion-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rel_002_f1",
+          "name": "Approaching Relative Speed",
+          "equation": "Vrelative = Va + Vb",
+          "latex": "V_{relative}=V_a+V_b",
+          "meaning": "Relative speed when two bodies move towards each other.",
+          "applications": ["Collision problems", "Train crossing problems"]
+        },
+        {
+          "formulaId": "phy_rel_002_f2",
+          "name": "Separating Relative Speed",
+          "equation": "Vrelative = |Va - Vb|",
+          "latex": "V_{relative}=|V_a-V_b|",
+          "meaning": "Relative speed when two bodies move in same direction."
+        },
+        {
+          "formulaId": "phy_rel_002_f3",
+          "name": "Time to Cross",
+          "equation": "t = Distance / Relative Speed",
+          "latex": "t=\\frac{d}{V_{relative}}",
+          "meaning": "Time taken during crossing problems."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rel_003",
+      "conceptName": "Boat and River Problems",
+      "description": "Relative motion involving flowing water.",
+      "formulaType": "application-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rel_003_f1",
+          "name": "Downstream Velocity",
+          "equation": "Vdown = Vboat + Vriver",
+          "latex": "V_{down}=V_b+V_r",
+          "meaning": "Net velocity when moving along river flow."
+        },
+        {
+          "formulaId": "phy_rel_003_f2",
+          "name": "Upstream Velocity",
+          "equation": "Vup = Vboat - Vriver",
+          "latex": "V_{up}=V_b-V_r",
+          "meaning": "Net velocity when moving opposite to river flow."
+        },
+        {
+          "formulaId": "phy_rel_003_f3",
+          "name": "Minimum Time Crossing",
+          "equation": "t = Width / Vboat",
+          "latex": "t=\\frac{w}{V_b}",
+          "meaning": "Minimum time to cross river when heading perpendicular.",
+          "conditions": ["Boat aimed perpendicular to river flow"]
+        },
+        {
+          "formulaId": "phy_rel_003_f4",
+          "name": "Shortest Path Condition",
+          "equation": "sinθ = Vriver / Vboat",
+          "latex": "\\sin\\theta=\\frac{V_r}{V_b}",
+          "meaning": "Condition for shortest path crossing."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rel_004",
+      "conceptName": "Rain Man Problems",
+      "description": "Apparent direction of rain due to relative motion.",
+      "formulaType": "application-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rel_004_f1",
+          "name": "Angle of Rain",
+          "equation": "tanθ = Vhorizontal / Vvertical",
+          "latex": "\\tan\\theta=\\frac{V_h}{V_v}",
+          "meaning": "Angle made by rain with vertical.",
+          "applications": [
+            "Rain-man umbrella problems",
+            "Relative velocity direction"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rel_005",
+      "conceptName": "Projectile Relative Motion",
+      "description": "Relative motion involving projectiles.",
+      "formulaType": "advanced-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rel_005_f1",
+          "name": "Relative Acceleration",
+          "equation": "Aab = Aa - Ab",
+          "latex": "\\vec{A}_{ab}=\\vec{A}_a-\\vec{A}_b",
+          "meaning": "Acceleration of object A relative to object B."
+        },
+        {
+          "formulaId": "phy_rel_005_f2",
+          "name": "Independent Vertical Motion",
+          "equation": "Relative acceleration due to gravity = 0",
+          "latex": "g_{relative}=0",
+          "meaning": "Both projectiles experience same gravitational acceleration.",
+          "applications": ["Projectile collision problems", "Pursuit motion"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rel_006",
+      "conceptName": "Frame of Reference",
+      "description": "Observation of motion from different coordinate systems.",
+      "formulaType": "conceptual-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rel_006_f1",
+          "name": "Galilean Transformation",
+          "equation": "x' = x - vt",
+          "latex": "x'=x-vt",
+          "meaning": "Transformation between inertial frames."
+        },
+        {
+          "formulaId": "phy_rel_006_f2",
+          "name": "Velocity Transformation",
+          "equation": "u' = u - v",
+          "latex": "u'=u-v",
+          "meaning": "Velocity transformation between reference frames."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Relative velocity is always vector subtraction.",
+    "Direction matters significantly in relative motion.",
+    "Boat-river problems depend on frame of reference.",
+    "Projectile relative acceleration becomes zero if both bodies are under gravity."
+  ],
+  "commonMistakes": [
+    "Using scalar subtraction instead of vectors",
+    "Incorrect sign convention",
+    "Ignoring frame of reference",
+    "Wrong angle interpretation in rain problems"
+  ],
+  "jeeAdvancedFocus": [
+    "2D relative motion",
+    "Projectile interception",
+    "Boat-river optimization",
+    "Reference frame transformations"
+  ],
+  "neetFocus": [
+    "Basic relative velocity",
+    "Boat and river problems",
+    "Rain-man problems",
+    "Simple frame of reference"
+  ],
+  "keywords": [
+    "relative velocity",
+    "boat river",
+    "rain man",
+    "frame of reference",
+    "crossing problems",
+    "projectile relative motion",
+    "galilean transformation"
+  ]
+}

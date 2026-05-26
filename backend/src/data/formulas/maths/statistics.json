@@ -1,0 +1,214 @@
+{
+  "chapterId": "math_statistics_023",
+  "fileName": "statistics.json",
+  "chapterName": "Statistics",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": ["statistics", "mean", "median", "mode", "standard-deviation"],
+  "concepts": [
+    {
+      "conceptId": "math_stats_001",
+      "conceptName": "Measures of Central Tendency",
+      "description": "Basic averages used in statistics.",
+      "formulaType": "central-tendency-formula",
+      "formulas": [
+        {
+          "formulaId": "math_stats_001_f1",
+          "name": "Arithmetic Mean",
+          "equation": "x̄ = (Σx)/n",
+          "latex": "\\bar{x}=\\frac{\\sum x}{n}",
+          "meaning": "Average of observations.",
+          "applications": ["Data analysis", "Statistical calculations"]
+        },
+        {
+          "formulaId": "math_stats_001_f2",
+          "name": "Mean for Frequency Distribution",
+          "equation": "x̄ = (Σfx)/(Σf)",
+          "latex": "\\bar{x}=\\frac{\\sum fx}{\\sum f}",
+          "meaning": "Mean for grouped data."
+        },
+        {
+          "formulaId": "math_stats_001_f3",
+          "name": "Weighted Mean",
+          "equation": "x̄ = (Σwx)/(Σw)",
+          "latex": "\\bar{x}=\\frac{\\sum wx}{\\sum w}",
+          "meaning": "Weighted average formula."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_stats_002",
+      "conceptName": "Median",
+      "description": "Middle value of ordered data.",
+      "formulaType": "median-formula",
+      "formulas": [
+        {
+          "formulaId": "math_stats_002_f1",
+          "name": "Median for Odd n",
+          "equation": "(n+1)/2 th observation",
+          "latex": "\\left(\\frac{n+1}{2}\\right)^{th}\\ observation",
+          "meaning": "Middle observation for odd number of terms."
+        },
+        {
+          "formulaId": "math_stats_002_f2",
+          "name": "Median for Even n",
+          "equation": "Average of (n/2)th and (n/2+1)th observations",
+          "latex": "\\text{Average of }\\left(\\frac{n}{2}\\right)^{th}\\text{ and }\\left(\\frac{n}{2}+1\\right)^{th}\\ observations",
+          "meaning": "Median for even number of observations."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_stats_003",
+      "conceptName": "Mode",
+      "description": "Most frequently occurring observation.",
+      "formulaType": "mode-formula",
+      "formulas": [
+        {
+          "formulaId": "math_stats_003_f1",
+          "name": "Empirical Relation",
+          "equation": "Mode = 3Median - 2Mean",
+          "latex": "\\text{Mode}=3\\text{Median}-2\\text{Mean}",
+          "meaning": "Relation among mean, median and mode."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_stats_004",
+      "conceptName": "Variance",
+      "description": "Measure of spread of data.",
+      "formulaType": "variance-formula",
+      "formulas": [
+        {
+          "formulaId": "math_stats_004_f1",
+          "name": "Variance Formula",
+          "equation": "σ² = Σ(x-x̄)²/n",
+          "latex": "\\sigma^2=\\frac{\\sum (x-\\bar{x})^2}{n}",
+          "meaning": "Variance of observations."
+        },
+        {
+          "formulaId": "math_stats_004_f2",
+          "name": "Alternative Variance Formula",
+          "equation": "σ² = (Σx²/n) - x̄²",
+          "latex": "\\sigma^2=\\frac{\\sum x^2}{n}-\\bar{x}^2",
+          "meaning": "Simplified variance formula."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_stats_005",
+      "conceptName": "Standard Deviation",
+      "description": "Square root of variance.",
+      "formulaType": "standard-deviation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_stats_005_f1",
+          "name": "Standard Deviation",
+          "equation": "σ = √Variance",
+          "latex": "\\sigma=\\sqrt{\\text{Variance}}",
+          "meaning": "Measure of data dispersion."
+        },
+        {
+          "formulaId": "math_stats_005_f2",
+          "name": "Standard Deviation Formula",
+          "equation": "σ = √[Σ(x-x̄)²/n]",
+          "latex": "\\sigma=\\sqrt{\\frac{\\sum (x-\\bar{x})^2}{n}}",
+          "meaning": "Direct formula for standard deviation."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_stats_006",
+      "conceptName": "Coefficient of Variation",
+      "description": "Relative measure of dispersion.",
+      "formulaType": "cv-formula",
+      "formulas": [
+        {
+          "formulaId": "math_stats_006_f1",
+          "name": "Coefficient of Variation",
+          "equation": "CV = (σ/x̄) × 100",
+          "latex": "CV=\\left(\\frac{\\sigma}{\\bar{x}}\\right)\\times100",
+          "meaning": "Relative variation percentage."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_stats_007",
+      "conceptName": "Step Deviation Method",
+      "description": "Simplified method for grouped data.",
+      "formulaType": "step-deviation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_stats_007_f1",
+          "name": "Mean by Step Deviation",
+          "equation": "x̄ = a + h(Σfu/Σf)",
+          "latex": "\\bar{x}=a+h\\left(\\frac{\\sum fu}{\\sum f}\\right)",
+          "meaning": "Shortcut method for mean."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_stats_008",
+      "conceptName": "Combined Mean",
+      "description": "Mean of multiple groups.",
+      "formulaType": "combined-mean-formula",
+      "formulas": [
+        {
+          "formulaId": "math_stats_008_f1",
+          "name": "Combined Mean",
+          "equation": "x̄ = (n₁x̄₁+n₂x̄₂)/(n₁+n₂)",
+          "latex": "\\bar{x}=\\frac{n_1\\bar{x}_1+n_2\\bar{x}_2}{n_1+n_2}",
+          "meaning": "Mean of combined datasets."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_stats_009",
+      "conceptName": "Frequency Distribution",
+      "description": "Data representation formulas.",
+      "formulaType": "frequency-formula",
+      "formulas": [
+        {
+          "formulaId": "math_stats_009_f1",
+          "name": "Class Mark",
+          "equation": "(Upper Limit + Lower Limit)/2",
+          "latex": "\\frac{\\text{Upper Limit}+\\text{Lower Limit}}{2}",
+          "meaning": "Midpoint of class interval."
+        },
+        {
+          "formulaId": "math_stats_009_f2",
+          "name": "Cumulative Frequency",
+          "equation": "Running total of frequencies",
+          "latex": "\\text{Running total of frequencies}",
+          "meaning": "Accumulated frequency count."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Mean is sensitive to extreme values.",
+    "Median is preferred for skewed data.",
+    "Standard deviation measures spread around mean.",
+    "Lower CV indicates greater consistency."
+  ],
+  "commonMistakes": [
+    "Wrong frequency summation",
+    "Mistakes in variance calculations",
+    "Confusing variance and standard deviation",
+    "Incorrect median position"
+  ],
+  "jeeAdvancedFocus": [
+    "Variance and standard deviation",
+    "Coefficient of variation",
+    "Grouped data problems",
+    "Combined mean calculations"
+  ],
+  "keywords": [
+    "statistics",
+    "mean",
+    "median",
+    "mode",
+    "variance",
+    "standard deviation"
+  ]
+}

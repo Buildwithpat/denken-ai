@@ -1,0 +1,342 @@
+{
+  "chapterId": "physics_heat_thermodynamics_014",
+  "fileName": "heat_thermodynamics.json",
+  "chapterName": "Heat & Thermodynamics",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "heat",
+    "thermodynamics",
+    "kinetic-theory",
+    "gas-laws",
+    "calorimetry",
+    "heat-transfer"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_heat_001",
+      "conceptName": "Kinetic Theory of Gases",
+      "description": "Relations between pressure, temperature and molecular motion of gases.",
+      "formulaType": "kinetic-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_heat_001_f1",
+          "name": "Translational Kinetic Energy",
+          "equation": "KE = (3/2)nRT",
+          "latex": "KE=\\frac{3}{2}nRT",
+          "meaning": "Total translational kinetic energy of gas molecules.",
+          "variables": {
+            "KE": {
+              "meaning": "Kinetic energy",
+              "unit": "J"
+            },
+            "n": {
+              "meaning": "Number of moles",
+              "unit": "mol"
+            },
+            "R": {
+              "meaning": "Universal gas constant",
+              "unit": "J/mol·K"
+            },
+            "T": {
+              "meaning": "Absolute temperature",
+              "unit": "K"
+            }
+          },
+          "applications": ["Ideal gas problems", "Thermal energy calculations"]
+        },
+        {
+          "formulaId": "phy_heat_001_f2",
+          "name": "Root Mean Square Speed",
+          "equation": "Vrms = √(3RT/M)",
+          "latex": "V_{rms}=\\sqrt{\\frac{3RT}{M}}",
+          "meaning": "Root mean square speed of gas molecules."
+        },
+        {
+          "formulaId": "phy_heat_001_f3",
+          "name": "Most Probable Speed",
+          "equation": "Vp = √(2RT/M)",
+          "latex": "V_p=\\sqrt{\\frac{2RT}{M}}",
+          "meaning": "Most probable molecular speed."
+        },
+        {
+          "formulaId": "phy_heat_001_f4",
+          "name": "Average Speed",
+          "equation": "Vavg = √(8RT/πM)",
+          "latex": "V_{avg}=\\sqrt{\\frac{8RT}{\\pi M}}",
+          "meaning": "Average molecular speed."
+        },
+        {
+          "formulaId": "phy_heat_001_f5",
+          "name": "Ideal Gas Equation",
+          "equation": "PV = nRT",
+          "latex": "PV=nRT",
+          "meaning": "Equation of state for ideal gas."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_heat_002",
+      "conceptName": "Specific Heat and Calorimetry",
+      "description": "Heat required to change temperature of substances.",
+      "formulaType": "heat-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_heat_002_f1",
+          "name": "Heat Equation",
+          "equation": "Q = mcΔT",
+          "latex": "Q=mc\\Delta T",
+          "meaning": "Heat required to raise temperature.",
+          "variables": {
+            "Q": {
+              "meaning": "Heat supplied",
+              "unit": "J"
+            },
+            "m": {
+              "meaning": "Mass",
+              "unit": "kg"
+            },
+            "c": {
+              "meaning": "Specific heat capacity",
+              "unit": "J/kg·K"
+            },
+            "ΔT": {
+              "meaning": "Change in temperature",
+              "unit": "K"
+            }
+          },
+          "applications": ["Calorimetry", "Heat transfer"]
+        },
+        {
+          "formulaId": "phy_heat_002_f2",
+          "name": "Latent Heat",
+          "equation": "Q = mL",
+          "latex": "Q=mL",
+          "meaning": "Heat absorbed or released during phase change."
+        },
+        {
+          "formulaId": "phy_heat_002_f3",
+          "name": "Calorimetry Principle",
+          "equation": "Heat lost = Heat gained",
+          "latex": "Q_{lost}=Q_{gained}",
+          "meaning": "Conservation of heat energy in isolated systems."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_heat_003",
+      "conceptName": "Thermal Expansion",
+      "description": "Expansion of materials due to increase in temperature.",
+      "formulaType": "expansion-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_heat_003_f1",
+          "name": "Linear Expansion",
+          "equation": "ΔL = αLΔT",
+          "latex": "\\Delta L=\\alpha L\\Delta T",
+          "meaning": "Change in length due to heating."
+        },
+        {
+          "formulaId": "phy_heat_003_f2",
+          "name": "Area Expansion",
+          "equation": "ΔA = βAΔT",
+          "latex": "\\Delta A=\\beta A\\Delta T",
+          "meaning": "Change in area due to heating."
+        },
+        {
+          "formulaId": "phy_heat_003_f3",
+          "name": "Volume Expansion",
+          "equation": "ΔV = γVΔT",
+          "latex": "\\Delta V=\\gamma V\\Delta T",
+          "meaning": "Change in volume due to heating."
+        },
+        {
+          "formulaId": "phy_heat_003_f4",
+          "name": "Relation Between Coefficients",
+          "equation": "β = 2α, γ = 3α",
+          "latex": "\\beta=2\\alpha,\\gamma=3\\alpha",
+          "meaning": "Relation between expansion coefficients."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_heat_004",
+      "conceptName": "First Law of Thermodynamics",
+      "description": "Relation between heat, work and internal energy.",
+      "formulaType": "thermodynamic-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_heat_004_f1",
+          "name": "First Law",
+          "equation": "ΔQ = ΔU + W",
+          "latex": "\\Delta Q=\\Delta U+W",
+          "meaning": "Heat supplied equals increase in internal energy plus work done.",
+          "applications": ["Thermodynamic processes", "Heat engines"]
+        },
+        {
+          "formulaId": "phy_heat_004_f2",
+          "name": "Work Done in Isobaric Process",
+          "equation": "W = PΔV",
+          "latex": "W=P\\Delta V",
+          "meaning": "Work done at constant pressure."
+        },
+        {
+          "formulaId": "phy_heat_004_f3",
+          "name": "Internal Energy of Ideal Gas",
+          "equation": "U = (f/2)nRT",
+          "latex": "U=\\frac{f}{2}nRT",
+          "meaning": "Internal energy depends only on temperature."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_heat_005",
+      "conceptName": "Thermodynamic Processes",
+      "description": "Different thermodynamic transformations of gases.",
+      "formulaType": "process-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_heat_005_f1",
+          "name": "Isothermal Process",
+          "equation": "PV = constant",
+          "latex": "PV=\\text{constant}",
+          "meaning": "Temperature remains constant."
+        },
+        {
+          "formulaId": "phy_heat_005_f2",
+          "name": "Work Done in Isothermal Process",
+          "equation": "W = nRT ln(V₂/V₁)",
+          "latex": "W=nRT\\ln\\left(\\frac{V_2}{V_1}\\right)",
+          "meaning": "Work done during isothermal expansion/compression."
+        },
+        {
+          "formulaId": "phy_heat_005_f3",
+          "name": "Adiabatic Equation",
+          "equation": "PVᵞ = constant",
+          "latex": "PV^{\\gamma}=\\text{constant}",
+          "meaning": "No heat exchange with surroundings."
+        },
+        {
+          "formulaId": "phy_heat_005_f4",
+          "name": "Relation in Adiabatic Process",
+          "equation": "TVᵞ⁻¹ = constant",
+          "latex": "TV^{\\gamma-1}=\\text{constant}",
+          "meaning": "Temperature-volume relation for adiabatic process."
+        },
+        {
+          "formulaId": "phy_heat_005_f5",
+          "name": "Work Done in Adiabatic Process",
+          "equation": "W = (P₁V₁ - P₂V₂)/(γ - 1)",
+          "latex": "W=\\frac{P_1V_1-P_2V_2}{\\gamma-1}",
+          "meaning": "Work done in adiabatic process."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_heat_006",
+      "conceptName": "Specific Heat Capacities",
+      "description": "Heat capacities of gases at constant pressure and volume.",
+      "formulaType": "specific-heat-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_heat_006_f1",
+          "name": "Mayer's Relation",
+          "equation": "Cp - Cv = R",
+          "latex": "C_p-C_v=R",
+          "meaning": "Relation between molar heat capacities."
+        },
+        {
+          "formulaId": "phy_heat_006_f2",
+          "name": "Gamma Relation",
+          "equation": "γ = Cp/Cv",
+          "latex": "\\gamma=\\frac{C_p}{C_v}",
+          "meaning": "Ratio of specific heats."
+        },
+        {
+          "formulaId": "phy_heat_006_f3",
+          "name": "Cp in terms of γ",
+          "equation": "Cp = γR/(γ - 1)",
+          "latex": "C_p=\\frac{\\gamma R}{\\gamma-1}",
+          "meaning": "Specific heat at constant pressure."
+        },
+        {
+          "formulaId": "phy_heat_006_f4",
+          "name": "Cv in terms of γ",
+          "equation": "Cv = R/(γ - 1)",
+          "latex": "C_v=\\frac{R}{\\gamma-1}",
+          "meaning": "Specific heat at constant volume."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_heat_007",
+      "conceptName": "Heat Transfer",
+      "description": "Modes of transfer of heat energy.",
+      "formulaType": "transfer-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_heat_007_f1",
+          "name": "Conduction Formula",
+          "equation": "Q/t = kA(T₁ - T₂)/L",
+          "latex": "\\frac{Q}{t}=\\frac{kA(T_1-T_2)}{L}",
+          "meaning": "Rate of heat conduction."
+        },
+        {
+          "formulaId": "phy_heat_007_f2",
+          "name": "Stefan Boltzmann Law",
+          "equation": "P = σεAT⁴",
+          "latex": "P=\\sigma\\epsilon AT^4",
+          "meaning": "Power radiated by a body."
+        },
+        {
+          "formulaId": "phy_heat_007_f3",
+          "name": "Newton's Law of Cooling",
+          "equation": "dT/dt ∝ (T - Ts)",
+          "latex": "\\frac{dT}{dt}\\propto(T-T_s)",
+          "meaning": "Rate of cooling proportional to temperature difference."
+        },
+        {
+          "formulaId": "phy_heat_007_f4",
+          "name": "Wien's Displacement Law",
+          "equation": "λmT = constant",
+          "latex": "\\lambda_mT=\\text{constant}",
+          "meaning": "Peak wavelength inversely proportional to temperature."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Kelvin scale must be used in thermodynamics formulas.",
+    "Adiabatic process has no heat exchange.",
+    "Internal energy of ideal gas depends only on temperature.",
+    "Vrms is always greater than average speed and most probable speed."
+  ],
+  "commonMistakes": [
+    "Using Celsius instead of Kelvin",
+    "Wrong sign convention in thermodynamics",
+    "Confusing Cp and Cv",
+    "Using incorrect γ value"
+  ],
+  "jeeAdvancedFocus": [
+    "Adiabatic processes",
+    "Heat engine efficiency",
+    "Kinetic theory derivations",
+    "Thermodynamic cycles"
+  ],
+  "neetFocus": [
+    "Gas laws",
+    "Calorimetry",
+    "First law of thermodynamics",
+    "Thermal expansion"
+  ],
+  "keywords": [
+    "thermodynamics",
+    "heat",
+    "specific heat",
+    "ideal gas",
+    "adiabatic",
+    "isothermal",
+    "kinetic theory",
+    "heat transfer"
+  ]
+}

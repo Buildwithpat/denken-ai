@@ -1,0 +1,235 @@
+{
+  "chapterId": "chem_metallurgy_014",
+  "fileName": "metallurgy.json",
+  "chapterName": "Metallurgy",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "metallurgy",
+    "ore-concentration",
+    "reduction",
+    "electrolytic-refining",
+    "thermodynamics",
+    "ellingham-diagram"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_met_001",
+      "conceptName": "Concentration of Ore",
+      "description": "Methods used to remove gangue from ores.",
+      "formulaType": "ore-concentration-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_met_001_f1",
+          "name": "Magnetic Separation Principle",
+          "equation": "Magnetic ore separated using magnetic field",
+          "latex": "\\text{Magnetic ore separated using magnetic field}",
+          "meaning": "Method based on magnetic properties.",
+          "applications": ["Ore purification", "Mineral separation"]
+        },
+        {
+          "formulaId": "chem_met_001_f2",
+          "name": "Froth Flotation Principle",
+          "equation": "Sulphide ores attach to froth due to oil wettability",
+          "latex": "\\text{Sulphide ores attach to froth due to oil wettability}",
+          "meaning": "Method used for sulphide ores."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_met_002",
+      "conceptName": "Calcination and Roasting",
+      "description": "Thermal treatment of ores.",
+      "formulaType": "thermal-process-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_met_002_f1",
+          "name": "Calcination",
+          "equation": "MCO₃ → MO + CO₂",
+          "latex": "MCO_3\\rightarrow MO+CO_2",
+          "meaning": "Heating carbonate ores in limited air."
+        },
+        {
+          "formulaId": "chem_met_002_f2",
+          "name": "Roasting",
+          "equation": "2MS + 3O₂ → 2MO + 2SO₂",
+          "latex": "2MS+3O_2\\rightarrow2MO+2SO_2",
+          "meaning": "Heating sulphide ores in excess air."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_met_003",
+      "conceptName": "Reduction of Metal Oxides",
+      "description": "Extraction of metals from oxides.",
+      "formulaType": "reduction-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_met_003_f1",
+          "name": "Reduction by Carbon",
+          "equation": "MO + C → M + CO",
+          "latex": "MO+C\\rightarrow M+CO",
+          "meaning": "Reduction of metal oxide using carbon."
+        },
+        {
+          "formulaId": "chem_met_003_f2",
+          "name": "Reduction by Carbon Monoxide",
+          "equation": "MO + CO → M + CO₂",
+          "latex": "MO+CO\\rightarrow M+CO_2",
+          "meaning": "Reduction using carbon monoxide."
+        },
+        {
+          "formulaId": "chem_met_003_f3",
+          "name": "Aluminothermic Reduction",
+          "equation": "Cr₂O₃ + 2Al → Al₂O₃ + 2Cr",
+          "latex": "Cr_2O_3+2Al\\rightarrow Al_2O_3+2Cr",
+          "meaning": "Reduction using aluminium powder."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_met_004",
+      "conceptName": "Ellingham Diagram",
+      "description": "Graphical representation of oxide stability.",
+      "formulaType": "ellingham-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_met_004_f1",
+          "name": "Gibbs Energy Relation",
+          "equation": "ΔG = ΔH - TΔS",
+          "latex": "\\Delta G=\\Delta H-T\\Delta S",
+          "meaning": "Basis of Ellingham diagram."
+        },
+        {
+          "formulaId": "chem_met_004_f2",
+          "name": "Spontaneous Reduction Condition",
+          "equation": "ΔG < 0",
+          "latex": "\\Delta G<0",
+          "meaning": "Condition for feasible reduction."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_met_005",
+      "conceptName": "Electrolytic Reduction",
+      "description": "Extraction of highly reactive metals.",
+      "formulaType": "electrolytic-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_met_005_f1",
+          "name": "Cathode Reaction",
+          "equation": "Mⁿ⁺ + ne⁻ → M",
+          "latex": "M^{n+}+ne^-\\rightarrow M",
+          "meaning": "Reduction at cathode."
+        },
+        {
+          "formulaId": "chem_met_005_f2",
+          "name": "Anode Reaction",
+          "equation": "2X⁻ → X₂ + 2e⁻",
+          "latex": "2X^-\\rightarrow X_2+2e^-",
+          "meaning": "Oxidation at anode."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_met_006",
+      "conceptName": "Refining of Metals",
+      "description": "Purification methods for metals.",
+      "formulaType": "refining-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_met_006_f1",
+          "name": "Electrolytic Refining",
+          "equation": "Impure metal → Anode, Pure metal → Cathode",
+          "latex": "\\text{Impure metal}\\rightarrow\\text{Anode, Pure metal}\\rightarrow\\text{Cathode}",
+          "meaning": "Purification by electrolysis."
+        },
+        {
+          "formulaId": "chem_met_006_f2",
+          "name": "Zone Refining Principle",
+          "equation": "Impurities concentrate in molten zone",
+          "latex": "\\text{Impurities concentrate in molten zone}",
+          "meaning": "Purification based on impurity distribution."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_met_007",
+      "conceptName": "Thermodynamic Principles",
+      "description": "Thermodynamic feasibility of extraction.",
+      "formulaType": "thermodynamic-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_met_007_f1",
+          "name": "Equilibrium Constant Relation",
+          "equation": "ΔG° = -RT lnK",
+          "latex": "\\Delta G^\\circ=-RT\\ln K",
+          "meaning": "Relation between Gibbs energy and equilibrium."
+        },
+        {
+          "formulaId": "chem_met_007_f2",
+          "name": "Feasibility Condition",
+          "equation": "Higher affinity metal reduces lower affinity metal oxide",
+          "latex": "\\text{Higher affinity metal reduces lower affinity metal oxide}",
+          "meaning": "Principle of metallurgical reduction."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_met_008",
+      "conceptName": "Extraction Examples",
+      "description": "Important extraction reactions.",
+      "formulaType": "extraction-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_met_008_f1",
+          "name": "Iron Extraction",
+          "equation": "Fe₂O₃ + 3CO → 2Fe + 3CO₂",
+          "latex": "Fe_2O_3+3CO\\rightarrow2Fe+3CO_2",
+          "meaning": "Reduction of iron oxide in blast furnace."
+        },
+        {
+          "formulaId": "chem_met_008_f2",
+          "name": "Copper Extraction",
+          "equation": "2Cu₂O + Cu₂S → 6Cu + SO₂",
+          "latex": "2Cu_2O+Cu_2S\\rightarrow6Cu+SO_2",
+          "meaning": "Self reduction in copper extraction."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Highly reactive metals are extracted by electrolysis.",
+    "Roasting is generally used for sulphide ores.",
+    "Ellingham diagram predicts reduction feasibility.",
+    "Flux combines with gangue to form slag."
+  ],
+  "commonMistakes": [
+    "Confusing calcination and roasting",
+    "Wrong reducing agent selection",
+    "Incorrect slag formation concepts",
+    "Ignoring thermodynamic feasibility"
+  ],
+  "jeeAdvancedFocus": [
+    "Ellingham diagram interpretation",
+    "Thermodynamic reduction problems",
+    "Extraction process mechanisms",
+    "Electrolytic refining"
+  ],
+  "neetFocus": [
+    "Ore concentration methods",
+    "Calcination and roasting",
+    "Refining methods",
+    "Extraction principles"
+  ],
+  "keywords": [
+    "metallurgy",
+    "ellingham diagram",
+    "calcination",
+    "roasting",
+    "electrolytic refining",
+    "ore concentration",
+    "reduction",
+    "slag"
+  ]
+}

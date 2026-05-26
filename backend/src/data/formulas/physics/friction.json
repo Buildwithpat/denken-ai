@@ -1,0 +1,208 @@
+{
+  "chapterId": "physics_friction_006",
+  "fileName": "friction.json",
+  "chapterName": "Friction",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "friction",
+    "static-friction",
+    "kinetic-friction",
+    "limiting-friction",
+    "inclined-plane",
+    "dynamics"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_fric_001",
+      "conceptName": "Basic Friction",
+      "description": "Force opposing relative motion between surfaces.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fric_001_f1",
+          "name": "Static Friction",
+          "equation": "fs ≤ μsN",
+          "latex": "f_s\\leq\\mu_s N",
+          "meaning": "Static friction adjusts itself until limiting value.",
+          "variables": {
+            "fs": {
+              "meaning": "Static friction",
+              "unit": "N"
+            },
+            "μs": {
+              "meaning": "Coefficient of static friction",
+              "unit": "dimensionless"
+            },
+            "N": {
+              "meaning": "Normal reaction",
+              "unit": "N"
+            }
+          },
+          "applications": [
+            "Body at rest",
+            "Block on rough surface",
+            "Inclined plane equilibrium"
+          ],
+          "commonMistakes": [
+            "Always taking fs = μsN",
+            "Ignoring self-adjusting nature"
+          ]
+        },
+        {
+          "formulaId": "phy_fric_001_f2",
+          "name": "Limiting Friction",
+          "equation": "fmax = μsN",
+          "latex": "f_{max}=\\mu_s N",
+          "meaning": "Maximum possible static friction."
+        },
+        {
+          "formulaId": "phy_fric_001_f3",
+          "name": "Kinetic Friction",
+          "equation": "fk = μkN",
+          "latex": "f_k=\\mu_k N",
+          "meaning": "Friction during sliding motion.",
+          "applications": [
+            "Sliding blocks",
+            "Motion on rough surfaces",
+            "Braking systems"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_fric_002",
+      "conceptName": "Angle of Friction",
+      "description": "Angle between resultant reaction and normal reaction.",
+      "formulaType": "angle-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fric_002_f1",
+          "name": "Angle of Friction",
+          "equation": "tanλ = μ",
+          "latex": "\\tan\\lambda=\\mu",
+          "meaning": "Relation between coefficient of friction and angle of friction.",
+          "applications": ["Inclined plane", "Equilibrium analysis"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_fric_003",
+      "conceptName": "Angle of Repose",
+      "description": "Maximum inclination angle before body starts sliding.",
+      "formulaType": "inclined-plane-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fric_003_f1",
+          "name": "Angle of Repose",
+          "equation": "tanθ = μ",
+          "latex": "\\tan\\theta=\\mu",
+          "meaning": "Angle where limiting friction acts.",
+          "importantNotes": ["Angle of repose equals angle of friction."]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_fric_004",
+      "conceptName": "Motion on Rough Inclined Plane",
+      "description": "Dynamics of bodies moving on rough inclined surfaces.",
+      "formulaType": "application-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fric_004_f1",
+          "name": "Acceleration Down Incline",
+          "equation": "a = g(sinθ - μ cosθ)",
+          "latex": "a=g(\\sin\\theta-\\mu\\cos\\theta)",
+          "meaning": "Acceleration of body sliding downward.",
+          "applications": ["Inclined plane motion", "Sliding body analysis"]
+        },
+        {
+          "formulaId": "phy_fric_004_f2",
+          "name": "Acceleration Up Incline",
+          "equation": "a = g(sinθ + μ cosθ)",
+          "latex": "a=g(\\sin\\theta+\\mu\\cos\\theta)",
+          "meaning": "Retardation while moving upward on incline."
+        },
+        {
+          "formulaId": "phy_fric_004_f3",
+          "name": "Normal Reaction on Incline",
+          "equation": "N = mg cosθ",
+          "latex": "N=mg\\cos\\theta",
+          "meaning": "Normal force on inclined plane."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_fric_005",
+      "conceptName": "Rolling Friction",
+      "description": "Friction during rolling motion.",
+      "formulaType": "rolling-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fric_005_f1",
+          "name": "Rolling Friction",
+          "equation": "Fr = μrN",
+          "latex": "F_r=\\mu_r N",
+          "meaning": "Force opposing rolling motion.",
+          "applications": ["Wheel dynamics", "Vehicle motion"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_fric_006",
+      "conceptName": "Friction on Connected Bodies",
+      "description": "Friction effects in multi-body systems.",
+      "formulaType": "constraint-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_fric_006_f1",
+          "name": "Maximum Pull Before Motion",
+          "equation": "Fmax = μN",
+          "latex": "F_{max}=\\mu N",
+          "meaning": "Maximum external force before slipping starts."
+        },
+        {
+          "formulaId": "phy_fric_006_f2",
+          "name": "Pseudo Friction in Accelerated Frame",
+          "equation": "Fpseudo = ma",
+          "latex": "F_{pseudo}=ma",
+          "meaning": "Pseudo force in non-inertial frames with friction."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Static friction is self-adjusting.",
+    "Kinetic friction is generally less than limiting friction.",
+    "Friction always opposes relative motion or tendency of motion.",
+    "Angle of repose equals angle of friction."
+  ],
+  "commonMistakes": [
+    "Using kinetic friction instead of static friction",
+    "Ignoring direction of friction",
+    "Confusing angle of friction and incline angle",
+    "Incorrect free body diagrams"
+  ],
+  "jeeAdvancedFocus": [
+    "Variable friction systems",
+    "Multi-block friction problems",
+    "Pseudo force with friction",
+    "Rolling motion dynamics"
+  ],
+  "neetFocus": [
+    "Basic friction laws",
+    "Inclined plane friction",
+    "Angle of repose",
+    "Static vs kinetic friction"
+  ],
+  "keywords": [
+    "friction",
+    "static friction",
+    "kinetic friction",
+    "limiting friction",
+    "angle of repose",
+    "rough incline",
+    "rolling friction",
+    "coefficient of friction"
+  ]
+}

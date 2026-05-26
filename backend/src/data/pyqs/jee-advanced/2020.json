@@ -1,0 +1,536 @@
+{
+  "questions": [
+    {
+      "questionId": "JADV2020_P1_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Rotational Motion",
+      "topic": "Rolling Equilibrium",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A football of radius R is kept on a hole of radius r (r<R) made on a plank. One end of the plank is lifted making angle θ from horizontal. Maximum value of θ such that football does not roll satisfies",
+      "options": {
+        "A": "sinθ = r/R",
+        "B": "tanθ = r/R",
+        "C": "sinθ = r/2R",
+        "D": "cosθ = r/2R"
+      },
+      "correctAnswer": "C",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Electromagnetic Induction",
+      "topic": "Eddy Currents",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "A light aluminium disc is free to rotate. A strong magnet is revolved above it about disc axis. The disc will",
+      "options": {
+        "A": "rotate opposite to magnet motion",
+        "B": "rotate in same direction as magnet motion",
+        "C": "not rotate and temperature unchanged",
+        "D": "not rotate but temperature slowly rises"
+      },
+      "correctAnswer": "B",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Rotational Motion",
+      "topic": "Rolling Without Slipping",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "A roller of diameter 20 cm has an axle of diameter 10 cm. A meter scale is pushed on axle without slipping and roller rolls without slipping. After roller moves 50 cm, final position corresponds to",
+      "options": {
+        "A": "x=50 cm",
+        "B": "x=75 cm",
+        "C": "x=25 cm",
+        "D": "x=100 cm"
+      },
+      "correctAnswer": "B",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Magnetic Effects of Current",
+      "topic": "Torque on Current Loop",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A circular coil of radius R and N turns connected to charged capacitor is placed in magnetic field B₀ parallel to plane. Angular momentum gained after capacitor discharges fully is",
+      "options": {
+        "A": "(π/2)NQB₀R²",
+        "B": "πNQB₀R²",
+        "C": "2πNQB₀R²",
+        "D": "4πNQB₀R²"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "Wave Optics",
+      "topic": "Wavefront",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A parallel beam strikes a transparent glass section. Correct shape of emergent wavefront is",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "correctAnswer": "C",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Fluid Mechanics",
+      "topic": "U Tube",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "An open ended U-tube contains water. Kerosene is added to left arm. Ratio h₁/h₂ of liquid heights is",
+      "options": {
+        "A": "15/14",
+        "B": "35/33",
+        "C": "7/6",
+        "D": "5/4"
+      },
+      "correctAnswer": "B",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "Atomic Physics",
+      "topic": "Bohr Model",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "A particle moves in circular orbits under potential V(r)=Fr. Using Bohr model choose correct statements.",
+      "options": {
+        "A": "R∝n^(1/3), v∝n^(2/3)",
+        "B": "R∝n^(2/3), v∝n^(1/3)",
+        "C": "E=(3/2)(n²h²F²/4π²m)^(1/3)",
+        "D": "E=2(n²h²F²/4π²m)^(1/3)"
+      },
+      "correctAnswer": "B,C",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "Thermal Physics",
+      "topic": "Black Body Radiation",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "A bulb filament behaves as black body at 2500 K. Choose correct statements.",
+      "options": {
+        "A": "Power radiated lies between 642 W and 645 W",
+        "B": "Power entering one eye lies between 3.15×10⁻⁸ W and 3.25×10⁻⁸ W",
+        "C": "Wavelength of maximum intensity is 1160 nm",
+        "D": "Photon count entering eye per second lies between 2.75×10¹¹ and 2.85×10¹¹"
+      },
+      "correctAnswer": "A,B,D",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "Units and Dimensions",
+      "topic": "Dimensional Analysis",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "Dimensions of physical quantities are expressed in terms of quantity X. Choose correct relations.",
+      "options": {
+        "A": "α+p=2β",
+        "B": "p+q−r=β",
+        "C": "p−q+r=α",
+        "D": "p+q+r=β"
+      },
+      "correctAnswer": "A,B,C",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Electrostatics",
+      "topic": "Projectile in Electric Field",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "A charged particle is projected in uniform electric field E=-400√3ŷ NC⁻¹. Choose correct statements.",
+      "options": {
+        "A": "Particle hits target if projected at 45°",
+        "B": "Particle hits target if projected at 30° or 60°",
+        "C": "Time taken can be √5/6 μs as well as √5/2 μs",
+        "D": "Time taken is √5/3 μs"
+      },
+      "correctAnswer": "B,C",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+
+    {
+      "questionId": "JADV2020_P1_CHEM_1",
+      "questionNumber": 1,
+      "subject": "Chemistry",
+      "chapter": "Kinetic Theory",
+      "topic": "Maxwell Distribution",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "For Maxwell speed distribution, ratio of most probable, average and rms speeds is",
+      "options": {
+        "A": "1:1:1",
+        "B": "1:1:1.224",
+        "C": "1:1.128:1.224",
+        "D": "1:1.128:1"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_CHEM_2",
+      "questionNumber": 2,
+      "subject": "Chemistry",
+      "chapter": "s Block",
+      "topic": "Peroxides and Superoxides",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which compound liberates O₂ upon hydrolysis?",
+      "options": {
+        "A": "Pb₃O₄",
+        "B": "KO₂",
+        "C": "Na₂O₂",
+        "D": "Li₂O₂"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_CHEM_3",
+      "questionNumber": 3,
+      "subject": "Chemistry",
+      "chapter": "Qualitative Analysis",
+      "topic": "Salt Analysis",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A nitrate solution gives precipitate with NaCl. Residue dissolves in NH₃ and thiosulfate while hot filtrate gives yellow precipitate with KI. Metals X and Y are",
+      "options": {
+        "A": "Ag and Pb",
+        "B": "Ag and Cd",
+        "C": "Cd and Pb",
+        "D": "Cd and Zn"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_CHEM_4",
+      "questionNumber": 4,
+      "subject": "Chemistry",
+      "chapter": "Stereochemistry",
+      "topic": "Newman Projection",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Newman projections P,Q,R,S are given. Identical molecules are",
+      "options": {
+        "A": "P and Q",
+        "B": "Q and S",
+        "C": "Q and R",
+        "D": "R and S"
+      },
+      "correctAnswer": "C",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_CHEM_5",
+      "questionNumber": 5,
+      "subject": "Chemistry",
+      "chapter": "IUPAC Nomenclature",
+      "topic": "Organic Naming",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Which structure has IUPAC name 3-ethynyl-2-hydroxy-4-methylhex-3-en-5-ynoic acid?",
+      "options": {
+        "A": "Structure A",
+        "B": "Structure B",
+        "C": "Structure C",
+        "D": "Structure D"
+      },
+      "correctAnswer": "B",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_CHEM_6",
+      "questionNumber": 6,
+      "subject": "Chemistry",
+      "chapter": "Biomolecules",
+      "topic": "Stereoisomerism",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Relationship of compounds P,Q,R,S with D-erythrose is asked.",
+      "options": {
+        "A": "P→2,Q→3,R→2,S→2",
+        "B": "P→3,Q→1,R→1,S→2",
+        "C": "P→2,Q→1,R→1,S→3",
+        "D": "P→2,Q→3,R→3,S→1"
+      },
+      "correctAnswer": "C",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_CHEM_7",
+      "questionNumber": 7,
+      "subject": "Chemistry",
+      "chapter": "Thermodynamics",
+      "topic": "Van der Waals Gas",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "Given work expression w=-∫[(RT/(V-b))-(a/V²)]dV. Choose correct statements.",
+      "options": {
+        "A": "Applicable to van der Waals gas",
+        "B": "Process is reversible and isothermal",
+        "C": "Process is reversible and adiabatic",
+        "D": "Process is irreversible at constant pressure"
+      },
+      "correctAnswer": "A,B",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_CHEM_8",
+      "questionNumber": 8,
+      "subject": "Chemistry",
+      "chapter": "Organic Chemistry",
+      "topic": "Acidity",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "With respect to compounds I-V choose correct statements regarding acidity.",
+      "options": {
+        "A": "Acidity of I due to delocalization in conjugate base",
+        "B": "Conjugate base of IV is aromatic",
+        "C": "II becomes more acidic with NO₂ substituent",
+        "D": "Acidity order I>IV>V>II>III"
+      },
+      "correctAnswer": "A,B,C,D",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_CHEM_9",
+      "questionNumber": 9,
+      "subject": "Chemistry",
+      "chapter": "Organic Chemistry",
+      "topic": "Reaction Mechanism",
+      "difficulty": "hard",
+      "questionType": "multiple_correct",
+      "questionText": "In reaction scheme involving compounds P,Q,R,S choose correct structures.",
+      "options": {
+        "A": "S is shown structure",
+        "B": "Q is shown structure",
+        "C": "R is shown structure",
+        "D": "S is shown structure"
+      },
+      "correctAnswer": "B,C",
+      "diagramRequired": true,
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_CHEM_10",
+      "questionNumber": 10,
+      "subject": "Chemistry",
+      "chapter": "Coordination Compounds",
+      "topic": "Geometry and Magnetism",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "Choose correct statements among coordination compounds.",
+      "options": {
+        "A": "[FeCl₄]⁻ has tetrahedral geometry",
+        "B": "[Co(en)(NH₃)₂Cl₂]⁺ has 2 geometrical isomers",
+        "C": "[FeCl₄]⁻ has higher spin-only magnetic moment",
+        "D": "Cobalt ion has sp³d² hybridization"
+      },
+      "correctAnswer": "A,C",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+
+    {
+      "questionId": "JADV2020_P1_MATH_1",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "chapter": "Quadratic Equations",
+      "topic": "Roots",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "If a,b are roots of x²+20x−2020 and c,d are roots of x²−20x+2020 then value of ac(a−c)+ad(a−d)+bc(b−c)+bd(b−d) is",
+      "options": {
+        "A": "0",
+        "B": "8000",
+        "C": "8080",
+        "D": "16000"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_MATH_2",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "chapter": "Functions",
+      "topic": "One-One and Onto",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "If f(x)=|x|(x−sinx), then",
+      "options": {
+        "A": "one-one but not onto",
+        "B": "onto but not one-one",
+        "C": "both one-one and onto",
+        "D": "neither one-one nor onto"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_MATH_3",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "chapter": "Definite Integration",
+      "topic": "Area Bounded by Curves",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Functions f(x)=e^(x−1)−e^(−|x−1|) and g(x)=1/2(e^(x−1)+e^(1−x)). Area in first quadrant bounded by y=f(x), y=g(x), x=0 is",
+      "options": {
+        "A": "(2−√3)+(e−e⁻¹)/2",
+        "B": "(2+√3)+(e−e⁻¹)/2",
+        "C": "(2−√3)+(e+e⁻¹)/2",
+        "D": "(2+√3)+(e+e⁻¹)/2"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_MATH_4",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "chapter": "Conic Sections",
+      "topic": "Parabola and Ellipse",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "P is endpoint of latus rectum of parabola y²=4λx. Ellipse x²/a²+y²/b²=1 passes through P and tangents are perpendicular. Eccentricity of ellipse is",
+      "options": {
+        "A": "1/√2",
+        "B": "1/2",
+        "C": "1/3",
+        "D": "2/5"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_MATH_5",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "chapter": "Probability",
+      "topic": "Biased Coins",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "C₁ and C₂ are biased coins with head probabilities 2/3 and 1/3. α and β are number of heads in two tosses. Probability that roots of x²−αx+β are real and equal is",
+      "options": {
+        "A": "40/81",
+        "B": "20/81",
+        "C": "1/2",
+        "D": "1/4"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    },
+    {
+      "questionId": "JADV2020_P1_MATH_6",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "chapter": "Applications of Derivatives",
+      "topic": "Maxima Minima",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Among rectangles in region 0≤x≤π/2 and 0≤y≤2sin(2x), rectangle with maximum perimeter has area",
+      "options": {
+        "A": "3π/2",
+        "B": "π",
+        "C": "π/2√3",
+        "D": "π√3/2"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_ADVANCED",
+      "year": 2020,
+      "paper": 1
+    }
+  ]
+}

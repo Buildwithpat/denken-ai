@@ -1,0 +1,269 @@
+{
+  "chapterId": "physics_capacitance_017",
+  "fileName": "capacitance.json",
+  "chapterName": "Capacitance",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "capacitance",
+    "capacitor",
+    "dielectric",
+    "electrostatic-energy",
+    "parallel-plate-capacitor",
+    "combination-of-capacitors"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_cap_001",
+      "conceptName": "Capacitance Basics",
+      "description": "Ability of a conductor to store electric charge.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cap_001_f1",
+          "name": "Capacitance Definition",
+          "equation": "C = Q/V",
+          "latex": "C=\\frac{Q}{V}",
+          "meaning": "Capacitance is charge stored per unit potential difference.",
+          "variables": {
+            "C": {
+              "meaning": "Capacitance",
+              "unit": "F"
+            },
+            "Q": {
+              "meaning": "Charge",
+              "unit": "C"
+            },
+            "V": {
+              "meaning": "Potential difference",
+              "unit": "V"
+            }
+          },
+          "applications": ["Charge storage", "Electronic circuits"]
+        },
+        {
+          "formulaId": "phy_cap_001_f2",
+          "name": "Unit of Capacitance",
+          "equation": "1 F = 1 C/V",
+          "latex": "1\\,F=1\\,\\frac{C}{V}",
+          "meaning": "SI unit of capacitance."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_cap_002",
+      "conceptName": "Parallel Plate Capacitor",
+      "description": "Capacitance of two parallel conducting plates.",
+      "formulaType": "parallel-plate-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cap_002_f1",
+          "name": "Parallel Plate Capacitance",
+          "equation": "C = ϵ₀A/d",
+          "latex": "C=\\frac{\\epsilon_0A}{d}",
+          "meaning": "Capacitance of air-filled parallel plate capacitor."
+        },
+        {
+          "formulaId": "phy_cap_002_f2",
+          "name": "Capacitance with Dielectric",
+          "equation": "C = Kϵ₀A/d",
+          "latex": "C=\\frac{K\\epsilon_0A}{d}",
+          "meaning": "Capacitance after inserting dielectric."
+        },
+        {
+          "formulaId": "phy_cap_002_f3",
+          "name": "Electric Field Between Plates",
+          "equation": "E = σ/ϵ₀",
+          "latex": "E=\\frac{\\sigma}{\\epsilon_0}",
+          "meaning": "Electric field between capacitor plates."
+        },
+        {
+          "formulaId": "phy_cap_002_f4",
+          "name": "Potential Difference",
+          "equation": "V = Ed",
+          "latex": "V=Ed",
+          "meaning": "Potential difference across plates."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_cap_003",
+      "conceptName": "Combination of Capacitors",
+      "description": "Equivalent capacitance in circuits.",
+      "formulaType": "combination-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cap_003_f1",
+          "name": "Series Combination",
+          "equation": "1/Ceq = 1/C₁ + 1/C₂ + ...",
+          "latex": "\\frac{1}{C_{eq}}=\\frac{1}{C_1}+\\frac{1}{C_2}+...",
+          "meaning": "Equivalent capacitance in series."
+        },
+        {
+          "formulaId": "phy_cap_003_f2",
+          "name": "Parallel Combination",
+          "equation": "Ceq = C₁ + C₂ + ...",
+          "latex": "C_{eq}=C_1+C_2+...",
+          "meaning": "Equivalent capacitance in parallel."
+        },
+        {
+          "formulaId": "phy_cap_003_f3",
+          "name": "Charge in Series",
+          "equation": "Q₁ = Q₂ = Q",
+          "latex": "Q_1=Q_2=Q",
+          "meaning": "Charge remains same in series capacitors."
+        },
+        {
+          "formulaId": "phy_cap_003_f4",
+          "name": "Voltage in Parallel",
+          "equation": "V₁ = V₂ = V",
+          "latex": "V_1=V_2=V",
+          "meaning": "Potential difference remains same in parallel capacitors."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_cap_004",
+      "conceptName": "Energy Stored in Capacitor",
+      "description": "Electrostatic energy stored in capacitor.",
+      "formulaType": "energy-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cap_004_f1",
+          "name": "Energy Stored",
+          "equation": "U = (1/2)CV²",
+          "latex": "U=\\frac{1}{2}CV^2",
+          "meaning": "Electrostatic energy stored in capacitor."
+        },
+        {
+          "formulaId": "phy_cap_004_f2",
+          "name": "Energy Using Charge",
+          "equation": "U = Q²/2C",
+          "latex": "U=\\frac{Q^2}{2C}",
+          "meaning": "Energy stored in terms of charge."
+        },
+        {
+          "formulaId": "phy_cap_004_f3",
+          "name": "Energy Using Charge and Voltage",
+          "equation": "U = (1/2)QV",
+          "latex": "U=\\frac{1}{2}QV",
+          "meaning": "Alternative energy formula."
+        },
+        {
+          "formulaId": "phy_cap_004_f4",
+          "name": "Energy Density",
+          "equation": "u = (1/2)ϵ₀E²",
+          "latex": "u=\\frac{1}{2}\\epsilon_0E^2",
+          "meaning": "Electrostatic energy per unit volume."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_cap_005",
+      "conceptName": "Dielectrics",
+      "description": "Insulating materials inserted between capacitor plates.",
+      "formulaType": "dielectric-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cap_005_f1",
+          "name": "Dielectric Constant",
+          "equation": "K = C/C₀",
+          "latex": "K=\\frac{C}{C_0}",
+          "meaning": "Relative permittivity of dielectric."
+        },
+        {
+          "formulaId": "phy_cap_005_f2",
+          "name": "Polarization Vector",
+          "equation": "P = χϵ₀E",
+          "latex": "P=\\chi\\epsilon_0E",
+          "meaning": "Polarization of dielectric material."
+        },
+        {
+          "formulaId": "phy_cap_005_f3",
+          "name": "Effective Electric Field",
+          "equation": "E = E₀/K",
+          "latex": "E=\\frac{E_0}{K}",
+          "meaning": "Reduced electric field inside dielectric."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_cap_006",
+      "conceptName": "Force Between Capacitor Plates",
+      "description": "Attractive force between charged capacitor plates.",
+      "formulaType": "force-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cap_006_f1",
+          "name": "Force Between Plates",
+          "equation": "F = (1/2)ϵ₀AE²",
+          "latex": "F=\\frac{1}{2}\\epsilon_0AE^2",
+          "meaning": "Force of attraction between capacitor plates."
+        },
+        {
+          "formulaId": "phy_cap_006_f2",
+          "name": "Pressure on Plates",
+          "equation": "P = (1/2)ϵ₀E²",
+          "latex": "P=\\frac{1}{2}\\epsilon_0E^2",
+          "meaning": "Electrostatic pressure on capacitor plates."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_cap_007",
+      "conceptName": "Capacitor with Dielectric Slab",
+      "description": "Capacitance modification using dielectric slabs.",
+      "formulaType": "slab-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cap_007_f1",
+          "name": "Capacitance with Partial Dielectric",
+          "equation": "C = ϵ₀A/[d - t + (t/K)]",
+          "latex": "C=\\frac{\\epsilon_0A}{d-t+\\frac{t}{K}}",
+          "meaning": "Capacitance when dielectric slab inserted."
+        },
+        {
+          "formulaId": "phy_cap_007_f2",
+          "name": "Equivalent Separation",
+          "equation": "deff = d - t + t/K",
+          "latex": "d_{eff}=d-t+\\frac{t}{K}",
+          "meaning": "Effective separation between plates."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Capacitance depends on geometry and dielectric medium only.",
+    "In series combination, charge remains same.",
+    "In parallel combination, potential difference remains same.",
+    "Dielectric increases capacitance by reducing electric field."
+  ],
+  "commonMistakes": [
+    "Using resistor formulas for capacitor combinations",
+    "Confusing charge and voltage relations",
+    "Ignoring dielectric effect",
+    "Wrong energy formula selection"
+  ],
+  "jeeAdvancedFocus": [
+    "Dielectric slab problems",
+    "Energy conservation in capacitors",
+    "Variable capacitance systems",
+    "Force between plates"
+  ],
+  "neetFocus": [
+    "Parallel plate capacitor",
+    "Combination of capacitors",
+    "Energy stored",
+    "Dielectric constant"
+  ],
+  "keywords": [
+    "capacitance",
+    "capacitor",
+    "dielectric",
+    "electrostatic energy",
+    "parallel plate capacitor",
+    "series capacitors",
+    "parallel capacitors",
+    "energy density"
+  ]
+}

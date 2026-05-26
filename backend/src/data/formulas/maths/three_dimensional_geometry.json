@@ -1,0 +1,241 @@
+{
+  "chapterId": "math_three_dimensional_geometry_022",
+  "fileName": "three_dimensional_geometry.json",
+  "chapterName": "Three Dimensional Geometry",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "3d-geometry",
+    "direction-cosines",
+    "direction-ratios",
+    "line",
+    "plane"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_3d_001",
+      "conceptName": "Distance Formula in 3D",
+      "description": "Distance between two points in space.",
+      "formulaType": "distance-formula",
+      "formulas": [
+        {
+          "formulaId": "math_3d_001_f1",
+          "name": "Distance Between Two Points",
+          "equation": "d = √[(x₂-x₁)²+(y₂-y₁)²+(z₂-z₁)²]",
+          "latex": "d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}",
+          "meaning": "Distance formula in three dimensions.",
+          "applications": ["Coordinate geometry", "3D distance problems"]
+        }
+      ]
+    },
+    {
+      "conceptId": "math_3d_002",
+      "conceptName": "Section Formula in 3D",
+      "description": "Division of line segment in space.",
+      "formulaType": "section-formula",
+      "formulas": [
+        {
+          "formulaId": "math_3d_002_f1",
+          "name": "Internal Division Formula",
+          "equation": "((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n), (mz₂+nz₁)/(m+n))",
+          "latex": "\\left(\\frac{mx_2+nx_1}{m+n},\\frac{my_2+ny_1}{m+n},\\frac{mz_2+nz_1}{m+n}\\right)",
+          "meaning": "Coordinates dividing line internally."
+        },
+        {
+          "formulaId": "math_3d_002_f2",
+          "name": "Midpoint Formula",
+          "equation": "((x₁+x₂)/2,(y₁+y₂)/2,(z₁+z₂)/2)",
+          "latex": "\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2},\\frac{z_1+z_2}{2}\\right)",
+          "meaning": "Midpoint coordinates in 3D."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_3d_003",
+      "conceptName": "Direction Cosines and Ratios",
+      "description": "Direction measurements in space.",
+      "formulaType": "direction-formula",
+      "formulas": [
+        {
+          "formulaId": "math_3d_003_f1",
+          "name": "Direction Cosines",
+          "equation": "l = cosα, m = cosβ, n = cosγ",
+          "latex": "l=\\cos\\alpha,\\ m=\\cos\\beta,\\ n=\\cos\\gamma",
+          "meaning": "Cosines of angles with coordinate axes."
+        },
+        {
+          "formulaId": "math_3d_003_f2",
+          "name": "Direction Cosine Relation",
+          "equation": "l² + m² + n² = 1",
+          "latex": "l^2+m^2+n^2=1",
+          "meaning": "Fundamental relation."
+        },
+        {
+          "formulaId": "math_3d_003_f3",
+          "name": "Direction Ratios",
+          "equation": "a:b:c",
+          "latex": "a:b:c",
+          "meaning": "Ratios proportional to direction cosines."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_3d_004",
+      "conceptName": "Equation of Line",
+      "description": "Different forms of line equation in 3D.",
+      "formulaType": "line-equation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_3d_004_f1",
+          "name": "Vector Form",
+          "equation": "r = a + λb",
+          "latex": "\\vec r=\\vec a+\\lambda\\vec b",
+          "meaning": "Vector equation of line."
+        },
+        {
+          "formulaId": "math_3d_004_f2",
+          "name": "Cartesian Form",
+          "equation": "(x-x₁)/a = (y-y₁)/b = (z-z₁)/c",
+          "latex": "\\frac{x-x_1}{a}=\\frac{y-y_1}{b}=\\frac{z-z_1}{c}",
+          "meaning": "Cartesian equation of line."
+        },
+        {
+          "formulaId": "math_3d_004_f3",
+          "name": "Parametric Form",
+          "equation": "x=x₁+aλ, y=y₁+bλ, z=z₁+cλ",
+          "latex": "x=x_1+a\\lambda,\\ y=y_1+b\\lambda,\\ z=z_1+c\\lambda",
+          "meaning": "Parametric equation of line."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_3d_005",
+      "conceptName": "Angle Between Lines",
+      "description": "Angle calculation between two lines.",
+      "formulaType": "angle-line-formula",
+      "formulas": [
+        {
+          "formulaId": "math_3d_005_f1",
+          "name": "Angle Between Lines",
+          "equation": "cosθ = (a₁a₂+b₁b₂+c₁c₂)/(√(a₁²+b₁²+c₁²)√(a₂²+b₂²+c₂²))",
+          "latex": "\\cos\\theta=\\frac{a_1a_2+b_1b_2+c_1c_2}{\\sqrt{a_1^2+b_1^2+c_1^2}\\sqrt{a_2^2+b_2^2+c_2^2}}",
+          "meaning": "Angle between two lines."
+        },
+        {
+          "formulaId": "math_3d_005_f2",
+          "name": "Parallel Lines Condition",
+          "equation": "a₁/a₂ = b₁/b₂ = c₁/c₂",
+          "latex": "\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}",
+          "meaning": "Condition for parallel lines."
+        },
+        {
+          "formulaId": "math_3d_005_f3",
+          "name": "Perpendicular Lines Condition",
+          "equation": "a₁a₂+b₁b₂+c₁c₂ = 0",
+          "latex": "a_1a_2+b_1b_2+c_1c_2=0",
+          "meaning": "Condition for perpendicular lines."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_3d_006",
+      "conceptName": "Equation of Plane",
+      "description": "Different forms of plane equation.",
+      "formulaType": "plane-formula",
+      "formulas": [
+        {
+          "formulaId": "math_3d_006_f1",
+          "name": "General Equation of Plane",
+          "equation": "Ax + By + Cz + D = 0",
+          "latex": "Ax+By+Cz+D=0",
+          "meaning": "General equation of plane."
+        },
+        {
+          "formulaId": "math_3d_006_f2",
+          "name": "Intercept Form",
+          "equation": "x/a + y/b + z/c = 1",
+          "latex": "\\frac{x}{a}+\\frac{y}{b}+\\frac{z}{c}=1",
+          "meaning": "Plane intercept form."
+        },
+        {
+          "formulaId": "math_3d_006_f3",
+          "name": "Normal Form",
+          "equation": "lx + my + nz = p",
+          "latex": "lx+my+nz=p",
+          "meaning": "Plane equation using normal vector."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_3d_007",
+      "conceptName": "Angle Between Planes",
+      "description": "Angle between two planes.",
+      "formulaType": "plane-angle-formula",
+      "formulas": [
+        {
+          "formulaId": "math_3d_007_f1",
+          "name": "Angle Between Planes",
+          "equation": "cosθ = (A₁A₂+B₁B₂+C₁C₂)/(√(A₁²+B₁²+C₁²)√(A₂²+B₂²+C₂²))",
+          "latex": "\\cos\\theta=\\frac{A_1A_2+B_1B_2+C_1C_2}{\\sqrt{A_1^2+B_1^2+C_1^2}\\sqrt{A_2^2+B_2^2+C_2^2}}",
+          "meaning": "Angle between two planes."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_3d_008",
+      "conceptName": "Distance of Point from Plane",
+      "description": "Shortest distance from point to plane.",
+      "formulaType": "point-plane-distance-formula",
+      "formulas": [
+        {
+          "formulaId": "math_3d_008_f1",
+          "name": "Distance Formula",
+          "equation": "d = |Ax₁+By₁+Cz₁+D|/√(A²+B²+C²)",
+          "latex": "d=\\frac{|Ax_1+By_1+Cz_1+D|}{\\sqrt{A^2+B^2+C^2}}",
+          "meaning": "Perpendicular distance from point to plane."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_3d_009",
+      "conceptName": "Shortest Distance Between Two Skew Lines",
+      "description": "Distance between non-intersecting non-parallel lines.",
+      "formulaType": "skew-line-formula",
+      "formulas": [
+        {
+          "formulaId": "math_3d_009_f1",
+          "name": "Shortest Distance Formula",
+          "equation": "|(a₂-a₁)·(b₁×b₂)|/|b₁×b₂|",
+          "latex": "\\frac{|(\\vec a_2-\\vec a_1)\\cdot(\\vec b_1\\times\\vec b_2)|}{|\\vec b_1\\times\\vec b_2|}",
+          "meaning": "Shortest distance between skew lines."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Direction cosines satisfy l²+m²+n² = 1.",
+    "Plane equation requires normal vector.",
+    "Shortest distance is always perpendicular.",
+    "Skew lines are neither parallel nor intersecting."
+  ],
+  "commonMistakes": [
+    "Wrong direction ratios",
+    "Sign mistakes in plane equation",
+    "Incorrect distance calculations",
+    "Confusing skew and parallel lines"
+  ],
+  "jeeAdvancedFocus": [
+    "Skew lines",
+    "Angle between planes",
+    "Shortest distance problems",
+    "Advanced vector-plane geometry"
+  ],
+  "keywords": [
+    "3D geometry",
+    "plane",
+    "line",
+    "direction cosines",
+    "skew lines",
+    "distance in space"
+  ]
+}

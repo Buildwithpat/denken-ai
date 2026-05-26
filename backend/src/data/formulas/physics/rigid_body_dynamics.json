@@ -1,0 +1,284 @@
+{
+  "chapterId": "physics_rigid_body_dynamics_010",
+  "fileName": "rigid_body_dynamics.json",
+  "chapterName": "Rigid Body Dynamics",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "rotational-motion",
+    "torque",
+    "angular-momentum",
+    "moment-of-inertia",
+    "rolling-motion",
+    "rigid-body"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_rbd_001",
+      "conceptName": "Angular Kinematics",
+      "description": "Rotational analogs of linear motion equations.",
+      "formulaType": "angular-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rbd_001_f1",
+          "name": "Angular Velocity",
+          "equation": "ω = ω₀ + αt",
+          "latex": "\\omega=\\omega_0+\\alpha t",
+          "meaning": "Angular velocity under constant angular acceleration."
+        },
+        {
+          "formulaId": "phy_rbd_001_f2",
+          "name": "Angular Displacement",
+          "equation": "θ = ω₀t + 1/2 αt²",
+          "latex": "\\theta=\\omega_0 t+\\frac12\\alpha t^2",
+          "meaning": "Angular displacement during rotational motion."
+        },
+        {
+          "formulaId": "phy_rbd_001_f3",
+          "name": "Angular Motion Relation",
+          "equation": "ω² = ω₀² + 2αθ",
+          "latex": "\\omega^2=\\omega_0^2+2\\alpha\\theta",
+          "meaning": "Angular equation independent of time."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rbd_002",
+      "conceptName": "Torque",
+      "description": "Rotational effect of force.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rbd_002_f1",
+          "name": "Torque Formula",
+          "equation": "τ = rF sinθ",
+          "latex": "\\tau=rF\\sin\\theta",
+          "meaning": "Turning effect produced by force.",
+          "variables": {
+            "τ": {
+              "meaning": "Torque",
+              "unit": "N·m"
+            },
+            "r": {
+              "meaning": "Perpendicular distance",
+              "unit": "m"
+            },
+            "F": {
+              "meaning": "Applied force",
+              "unit": "N"
+            }
+          },
+          "applications": [
+            "Rotational equilibrium",
+            "Lever systems",
+            "Rolling motion"
+          ],
+          "commonMistakes": [
+            "Using wrong perpendicular distance",
+            "Ignoring direction of torque"
+          ]
+        },
+        {
+          "formulaId": "phy_rbd_002_f2",
+          "name": "Rotational Newton's Second Law",
+          "equation": "τ = Iα",
+          "latex": "\\tau=I\\alpha",
+          "meaning": "Torque equals moment of inertia times angular acceleration."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rbd_003",
+      "conceptName": "Moment of Inertia",
+      "description": "Rotational inertia of a body.",
+      "formulaType": "inertia-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rbd_003_f1",
+          "name": "General Moment of Inertia",
+          "equation": "I = Σmr²",
+          "latex": "I=\\Sigma mr^2",
+          "meaning": "Resistance to rotational motion."
+        },
+        {
+          "formulaId": "phy_rbd_003_f2",
+          "name": "Ring About Center",
+          "equation": "I = MR²",
+          "latex": "I=MR^2",
+          "meaning": "Moment of inertia of ring about central axis."
+        },
+        {
+          "formulaId": "phy_rbd_003_f3",
+          "name": "Disc About Center",
+          "equation": "I = 1/2 MR²",
+          "latex": "I=\\frac12 MR^2",
+          "meaning": "Moment of inertia of solid disc."
+        },
+        {
+          "formulaId": "phy_rbd_003_f4",
+          "name": "Rod About Center",
+          "equation": "I = 1/12 ML²",
+          "latex": "I=\\frac1{12}ML^2",
+          "meaning": "Moment of inertia of rod about center."
+        },
+        {
+          "formulaId": "phy_rbd_003_f5",
+          "name": "Rod About End",
+          "equation": "I = 1/3 ML²",
+          "latex": "I=\\frac13 ML^2",
+          "meaning": "Moment of inertia of rod about one end."
+        },
+        {
+          "formulaId": "phy_rbd_003_f6",
+          "name": "Solid Sphere",
+          "equation": "I = 2/5 MR²",
+          "latex": "I=\\frac25 MR^2",
+          "meaning": "Moment of inertia of solid sphere."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rbd_004",
+      "conceptName": "Theorems of Moment of Inertia",
+      "description": "Useful theorems for calculating MOI.",
+      "formulaType": "theorem-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rbd_004_f1",
+          "name": "Parallel Axis Theorem",
+          "equation": "I = Icm + Md²",
+          "latex": "I=I_{cm}+Md^2",
+          "meaning": "MOI about parallel axis."
+        },
+        {
+          "formulaId": "phy_rbd_004_f2",
+          "name": "Perpendicular Axis Theorem",
+          "equation": "Iz = Ix + Iy",
+          "latex": "I_z=I_x+I_y",
+          "meaning": "Applicable for planar bodies."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rbd_005",
+      "conceptName": "Angular Momentum",
+      "description": "Rotational equivalent of linear momentum.",
+      "formulaType": "momentum-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rbd_005_f1",
+          "name": "Angular Momentum",
+          "equation": "L = Iω",
+          "latex": "L=I\\omega",
+          "meaning": "Angular momentum of rotating body."
+        },
+        {
+          "formulaId": "phy_rbd_005_f2",
+          "name": "Torque Angular Momentum Relation",
+          "equation": "τ = dL/dt",
+          "latex": "\\tau=\\frac{dL}{dt}",
+          "meaning": "Torque equals rate of change of angular momentum."
+        },
+        {
+          "formulaId": "phy_rbd_005_f3",
+          "name": "Conservation of Angular Momentum",
+          "equation": "I₁ω₁ = I₂ω₂",
+          "latex": "I_1\\omega_1=I_2\\omega_2",
+          "meaning": "Angular momentum remains conserved without external torque."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rbd_006",
+      "conceptName": "Rotational Energy",
+      "description": "Energy associated with rotational motion.",
+      "formulaType": "energy-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rbd_006_f1",
+          "name": "Rotational Kinetic Energy",
+          "equation": "KE = 1/2 Iω²",
+          "latex": "KE=\\frac12 I\\omega^2",
+          "meaning": "Energy due to rotational motion."
+        },
+        {
+          "formulaId": "phy_rbd_006_f2",
+          "name": "Rotational Work",
+          "equation": "W = τθ",
+          "latex": "W=\\tau\\theta",
+          "meaning": "Work done by torque."
+        },
+        {
+          "formulaId": "phy_rbd_006_f3",
+          "name": "Rotational Power",
+          "equation": "P = τω",
+          "latex": "P=\\tau\\omega",
+          "meaning": "Power in rotational systems."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rbd_007",
+      "conceptName": "Rolling Motion",
+      "description": "Combined translational and rotational motion.",
+      "formulaType": "rolling-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rbd_007_f1",
+          "name": "Rolling Condition",
+          "equation": "v = Rω",
+          "latex": "v=R\\omega",
+          "meaning": "Condition for pure rolling without slipping."
+        },
+        {
+          "formulaId": "phy_rbd_007_f2",
+          "name": "Total Kinetic Energy in Rolling",
+          "equation": "KE = 1/2 Mv² + 1/2 Iω²",
+          "latex": "KE=\\frac12 Mv^2+\\frac12 I\\omega^2",
+          "meaning": "Total energy of rolling body."
+        },
+        {
+          "formulaId": "phy_rbd_007_f3",
+          "name": "Acceleration of Rolling Body",
+          "equation": "a = g sinθ / (1 + I/MR²)",
+          "latex": "a=\\frac{g\\sin\\theta}{1+\\frac{I}{MR^2}}",
+          "meaning": "Acceleration of body rolling down incline."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Torque is vector quantity.",
+    "Moment of inertia depends on axis of rotation.",
+    "Angular momentum is conserved without external torque.",
+    "Pure rolling requires no slipping."
+  ],
+  "commonMistakes": [
+    "Using wrong axis for MOI",
+    "Ignoring rotational kinetic energy",
+    "Wrong torque direction",
+    "Confusing rolling and sliding"
+  ],
+  "jeeAdvancedFocus": [
+    "Rolling motion dynamics",
+    "Composite bodies",
+    "Angular momentum conservation",
+    "Advanced torque systems"
+  ],
+  "neetFocus": [
+    "Moment of inertia formulas",
+    "Torque basics",
+    "Angular momentum",
+    "Rolling motion"
+  ],
+  "keywords": [
+    "rotational motion",
+    "torque",
+    "moment of inertia",
+    "angular momentum",
+    "rolling motion",
+    "rotational kinetic energy",
+    "parallel axis theorem",
+    "rigid body"
+  ]
+}

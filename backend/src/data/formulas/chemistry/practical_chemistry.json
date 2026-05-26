@@ -1,0 +1,263 @@
+{
+  "chapterId": "chem_practical_chemistry_030",
+  "fileName": "practical_chemistry.json",
+  "chapterName": "Practical Chemistry",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "NEET"],
+  "tags": [
+    "practical-chemistry",
+    "salt-analysis",
+    "qualitative-analysis",
+    "organic-tests",
+    "inorganic-tests",
+    "laboratory-chemistry"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_practical_001",
+      "conceptName": "Salt Analysis",
+      "description": "Qualitative analysis of acidic and basic radicals.",
+      "formulaType": "salt-analysis-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_practical_001_f1",
+          "name": "Carbonate Test",
+          "equation": "CO₃²⁻ + 2HCl → CO₂ + H₂O + 2Cl⁻",
+          "latex": "CO_3^{2-}+2HCl\\rightarrow CO_2+H_2O+2Cl^-",
+          "meaning": "Effervescence due to CO₂ confirms carbonate ion.",
+          "applications": ["Salt analysis", "Qualitative inorganic analysis"]
+        },
+        {
+          "formulaId": "chem_practical_001_f2",
+          "name": "Sulphide Test",
+          "equation": "S²⁻ + 2HCl → H₂S + 2Cl⁻",
+          "latex": "S^{2-}+2HCl\\rightarrow H_2S+2Cl^-",
+          "meaning": "Rotten egg smell confirms sulphide ion."
+        },
+        {
+          "formulaId": "chem_practical_001_f3",
+          "name": "Sulphate Test",
+          "equation": "SO₄²⁻ + BaCl₂ → BaSO₄↓ + 2Cl⁻",
+          "latex": "SO_4^{2-}+BaCl_2\\rightarrow BaSO_4\\downarrow+2Cl^-",
+          "meaning": "White precipitate confirms sulphate ion."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_practical_002",
+      "conceptName": "Cation Analysis",
+      "description": "Detection of basic radicals in salts.",
+      "formulaType": "cation-analysis-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_practical_002_f1",
+          "name": "Copper Ion Test",
+          "equation": "Cu²⁺ + 2OH⁻ → Cu(OH)₂↓",
+          "latex": "Cu^{2+}+2OH^-\\rightarrow Cu(OH)_2\\downarrow",
+          "meaning": "Blue precipitate confirms copper ion."
+        },
+        {
+          "formulaId": "chem_practical_002_f2",
+          "name": "Iron(III) Ion Test",
+          "equation": "Fe³⁺ + 3OH⁻ → Fe(OH)₃↓",
+          "latex": "Fe^{3+}+3OH^-\\rightarrow Fe(OH)_3\\downarrow",
+          "meaning": "Reddish brown precipitate confirms Fe³⁺ ion."
+        },
+        {
+          "formulaId": "chem_practical_002_f3",
+          "name": "Ammonium Ion Test",
+          "equation": "NH₄⁺ + OH⁻ → NH₃ + H₂O",
+          "latex": "NH_4^++OH^-\\rightarrow NH_3+H_2O",
+          "meaning": "Ammonia smell confirms ammonium ion."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_practical_003",
+      "conceptName": "Flame Tests",
+      "description": "Identification of metal ions using flame color.",
+      "formulaType": "flame-test-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_practical_003_f1",
+          "name": "Sodium Flame Color",
+          "equation": "Na⁺ → Golden yellow flame",
+          "latex": "Na^+\\rightarrow\\text{Golden yellow flame}",
+          "meaning": "Characteristic flame color of sodium."
+        },
+        {
+          "formulaId": "chem_practical_003_f2",
+          "name": "Potassium Flame Color",
+          "equation": "K⁺ → Violet flame",
+          "latex": "K^+\\rightarrow\\text{Violet flame}",
+          "meaning": "Characteristic flame color of potassium."
+        },
+        {
+          "formulaId": "chem_practical_003_f3",
+          "name": "Calcium Flame Color",
+          "equation": "Ca²⁺ → Brick red flame",
+          "latex": "Ca^{2+}\\rightarrow\\text{Brick red flame}",
+          "meaning": "Characteristic flame color of calcium."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_practical_004",
+      "conceptName": "Organic Compound Tests",
+      "description": "Tests for functional groups in organic compounds.",
+      "formulaType": "organic-test-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_practical_004_f1",
+          "name": "Tollen's Test",
+          "equation": "RCHO + [Ag(NH₃)₂]⁺ → Silver mirror",
+          "latex": "RCHO+[Ag(NH_3)_2]^+\\rightarrow\\text{Silver mirror}",
+          "meaning": "Test for aldehydes."
+        },
+        {
+          "formulaId": "chem_practical_004_f2",
+          "name": "Fehling's Test",
+          "equation": "RCHO + Cu²⁺ → Cu₂O↓",
+          "latex": "RCHO+Cu^{2+}\\rightarrow Cu_2O\\downarrow",
+          "meaning": "Brick red precipitate confirms aldehyde."
+        },
+        {
+          "formulaId": "chem_practical_004_f3",
+          "name": "Iodoform Test",
+          "equation": "CH₃CO- + I₂ + NaOH → CHI₃↓",
+          "latex": "CH_3CO-+I_2+NaOH\\rightarrow CHI_3\\downarrow",
+          "meaning": "Yellow precipitate confirms methyl ketone."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_practical_005",
+      "conceptName": "Chromatography",
+      "description": "Technique for separation of mixture components.",
+      "formulaType": "chromatography-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_practical_005_f1",
+          "name": "Rf Value",
+          "equation": "Rf = Distance travelled by solute / Distance travelled by solvent",
+          "latex": "R_f=\\frac{\\text{Distance travelled by solute}}{\\text{Distance travelled by solvent}}",
+          "meaning": "Retention factor in chromatography."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_practical_006",
+      "conceptName": "pH Measurement",
+      "description": "Determination of acidity or basicity.",
+      "formulaType": "ph-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_practical_006_f1",
+          "name": "pH Formula",
+          "equation": "pH = -log[H⁺]",
+          "latex": "pH=-\\log[H^+]",
+          "meaning": "Mathematical expression for pH."
+        },
+        {
+          "formulaId": "chem_practical_006_f2",
+          "name": "pOH Formula",
+          "equation": "pOH = -log[OH⁻]",
+          "latex": "pOH=-\\log[OH^-]",
+          "meaning": "Expression for pOH."
+        },
+        {
+          "formulaId": "chem_practical_006_f3",
+          "name": "pH + pOH Relation",
+          "equation": "pH + pOH = 14",
+          "latex": "pH+pOH=14",
+          "meaning": "Relation at 25°C."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_practical_007",
+      "conceptName": "Titration Principles",
+      "description": "Quantitative chemical analysis using titration.",
+      "formulaType": "titration-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_practical_007_f1",
+          "name": "Normality Equation",
+          "equation": "N₁V₁ = N₂V₂",
+          "latex": "N_1V_1=N_2V_2",
+          "meaning": "Basic titration formula."
+        },
+        {
+          "formulaId": "chem_practical_007_f2",
+          "name": "Molarity Formula",
+          "equation": "M = Moles of solute / Volume of solution in litres",
+          "latex": "M=\\frac{\\text{Moles of solute}}{\\text{Volume of solution in litres}}",
+          "meaning": "Definition of molarity."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_practical_008",
+      "conceptName": "Gas Tests",
+      "description": "Identification of common laboratory gases.",
+      "formulaType": "gas-test-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_practical_008_f1",
+          "name": "Hydrogen Test",
+          "equation": "H₂ burns with pop sound",
+          "latex": "H_2\\text{ burns with pop sound}",
+          "meaning": "Identification of hydrogen gas."
+        },
+        {
+          "formulaId": "chem_practical_008_f2",
+          "name": "Carbon Dioxide Test",
+          "equation": "CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O",
+          "latex": "CO_2+Ca(OH)_2\\rightarrow CaCO_3\\downarrow+H_2O",
+          "meaning": "Turns lime water milky."
+        },
+        {
+          "formulaId": "chem_practical_008_f3",
+          "name": "Ammonia Test",
+          "equation": "NH₃ + HCl → NH₄Cl",
+          "latex": "NH_3+HCl\\rightarrow NH_4Cl",
+          "meaning": "Dense white fumes confirm ammonia gas."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Flame tests help identify alkali and alkaline earth metals.",
+    "Tollen's reagent gives silver mirror with aldehydes.",
+    "Chromatography separates components based on adsorption differences.",
+    "pH scale ranges from 0 to 14."
+  ],
+  "commonMistakes": [
+    "Confusing precipitate colors in salt analysis",
+    "Wrong interpretation of flame test colors",
+    "Incorrect pH calculations",
+    "Mixing aldehyde and ketone test results"
+  ],
+  "jeeAdvancedFocus": [
+    "Salt analysis reactions",
+    "Chromatography calculations",
+    "Titration numericals",
+    "Functional group tests"
+  ],
+  "neetFocus": [
+    "Qualitative analysis",
+    "Flame tests",
+    "Organic compound tests",
+    "pH and titration basics"
+  ],
+  "keywords": [
+    "practical chemistry",
+    "salt analysis",
+    "qualitative analysis",
+    "flame test",
+    "tollen test",
+    "chromatography",
+    "titration",
+    "pH"
+  ]
+}

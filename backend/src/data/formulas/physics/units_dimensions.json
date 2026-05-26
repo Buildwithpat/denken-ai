@@ -1,0 +1,349 @@
+{
+  "chapterId": "physics_units_dimensions_001",
+  "chapterName": "Units and Dimensions",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "source": "Gyaan Sutra Formula Booklet",
+  "difficulty": "Foundation",
+  "tags": [
+    "units",
+    "dimensions",
+    "si-units",
+    "dimensional-analysis",
+    "measurement",
+    "fundamental-units",
+    "derived-units",
+    "physics-basics"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_ud_001",
+      "conceptName": "Fundamental Quantities",
+      "description": "Basic independent physical quantities from which all other physical quantities are derived.",
+      "formulaType": "definition",
+      "formulas": [
+        {
+          "formulaId": "phy_ud_001_f1",
+          "name": "Length SI Unit",
+          "equation": "metre (m)",
+          "latex": "m",
+          "quantity": "Length",
+          "unit": "metre",
+          "symbol": "m",
+          "dimension": "[L]",
+          "meaning": "Measures distance or displacement.",
+          "applications": [
+            "Distance measurement",
+            "Motion calculations",
+            "Geometry and mechanics"
+          ]
+        },
+        {
+          "formulaId": "phy_ud_001_f2",
+          "name": "Mass SI Unit",
+          "equation": "kilogram (kg)",
+          "latex": "kg",
+          "quantity": "Mass",
+          "unit": "kilogram",
+          "symbol": "kg",
+          "dimension": "[M]",
+          "meaning": "Measures amount of matter.",
+          "applications": ["Newton's laws", "Momentum", "Gravitation"]
+        },
+        {
+          "formulaId": "phy_ud_001_f3",
+          "name": "Time SI Unit",
+          "equation": "second (s)",
+          "latex": "s",
+          "quantity": "Time",
+          "unit": "second",
+          "symbol": "s",
+          "dimension": "[T]",
+          "meaning": "Measures duration of events.",
+          "applications": ["Motion", "Oscillations", "Wave mechanics"]
+        },
+        {
+          "formulaId": "phy_ud_001_f4",
+          "name": "Electric Current SI Unit",
+          "equation": "ampere (A)",
+          "latex": "A",
+          "quantity": "Electric Current",
+          "unit": "ampere",
+          "symbol": "A",
+          "dimension": "[I]",
+          "meaning": "Measures flow of electric charge.",
+          "applications": ["Current electricity", "Magnetism", "Electronics"]
+        },
+        {
+          "formulaId": "phy_ud_001_f5",
+          "name": "Temperature SI Unit",
+          "equation": "kelvin (K)",
+          "latex": "K",
+          "quantity": "Temperature",
+          "unit": "kelvin",
+          "symbol": "K",
+          "dimension": "[\\Theta]",
+          "meaning": "Measures thermal state of matter.",
+          "applications": ["Thermodynamics", "Gas laws", "Heat transfer"]
+        },
+        {
+          "formulaId": "phy_ud_001_f6",
+          "name": "Amount of Substance SI Unit",
+          "equation": "mole (mol)",
+          "latex": "mol",
+          "quantity": "Amount of Substance",
+          "unit": "mole",
+          "symbol": "mol",
+          "dimension": "[N]",
+          "meaning": "Measures quantity of particles.",
+          "applications": [
+            "Mole concept",
+            "Chemistry calculations",
+            "Gas equations"
+          ]
+        },
+        {
+          "formulaId": "phy_ud_001_f7",
+          "name": "Luminous Intensity SI Unit",
+          "equation": "candela (cd)",
+          "latex": "cd",
+          "quantity": "Luminous Intensity",
+          "unit": "candela",
+          "symbol": "cd",
+          "dimension": "[J]",
+          "meaning": "Measures luminous power emitted.",
+          "applications": ["Optics", "Light intensity", "Photometry"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ud_002",
+      "conceptName": "Supplementary Units",
+      "description": "Units used for angular measurements.",
+      "formulaType": "definition",
+      "formulas": [
+        {
+          "formulaId": "phy_ud_002_f1",
+          "name": "Plane Angle",
+          "equation": "radian (rad)",
+          "latex": "rad",
+          "quantity": "Plane Angle",
+          "dimension": "[M^0L^0T^0]",
+          "meaning": "Angle subtended by arc equal to radius."
+        },
+        {
+          "formulaId": "phy_ud_002_f2",
+          "name": "Solid Angle",
+          "equation": "steradian (sr)",
+          "latex": "sr",
+          "quantity": "Solid Angle",
+          "dimension": "[M^0L^0T^0]",
+          "meaning": "3D angular spread measurement."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ud_003",
+      "conceptName": "Metric Prefixes",
+      "description": "Prefixes used for expressing powers of ten.",
+      "formulaType": "table",
+      "formulas": [
+        {
+          "formulaId": "phy_ud_003_f1",
+          "name": "Centi",
+          "equation": "10^-2",
+          "latex": "10^{-2}",
+          "symbol": "c",
+          "meaning": "One hundredth"
+        },
+        {
+          "formulaId": "phy_ud_003_f2",
+          "name": "Milli",
+          "equation": "10^-3",
+          "latex": "10^{-3}",
+          "symbol": "m",
+          "meaning": "One thousandth"
+        },
+        {
+          "formulaId": "phy_ud_003_f3",
+          "name": "Micro",
+          "equation": "10^-6",
+          "latex": "10^{-6}",
+          "symbol": "µ",
+          "meaning": "One millionth"
+        },
+        {
+          "formulaId": "phy_ud_003_f4",
+          "name": "Nano",
+          "equation": "10^-9",
+          "latex": "10^{-9}",
+          "symbol": "n",
+          "meaning": "One billionth"
+        },
+        {
+          "formulaId": "phy_ud_003_f5",
+          "name": "Pico",
+          "equation": "10^-12",
+          "latex": "10^{-12}",
+          "symbol": "p",
+          "meaning": "One trillionth"
+        },
+        {
+          "formulaId": "phy_ud_003_f6",
+          "name": "Kilo",
+          "equation": "10^3",
+          "latex": "10^{3}",
+          "symbol": "k",
+          "meaning": "One thousand times"
+        },
+        {
+          "formulaId": "phy_ud_003_f7",
+          "name": "Mega",
+          "equation": "10^6",
+          "latex": "10^{6}",
+          "symbol": "M",
+          "meaning": "One million times"
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ud_004",
+      "conceptName": "Dimensional Formula",
+      "description": "Representation of physical quantities using powers of fundamental quantities.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_ud_004_f1",
+          "name": "General Dimensional Formula",
+          "equation": "[M^aL^bT^c]",
+          "latex": "[M^aL^bT^c]",
+          "meaning": "Represents dimensions in terms of mass, length, and time.",
+          "applications": [
+            "Checking equation correctness",
+            "Unit derivation",
+            "Formula derivation"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ud_005",
+      "conceptName": "Common Dimensional Formulae",
+      "description": "Important dimensional expressions used frequently in mechanics and physics.",
+      "formulaType": "formula-list",
+      "formulas": [
+        {
+          "formulaId": "phy_ud_005_f1",
+          "name": "Velocity",
+          "equation": "[LT^-1]",
+          "latex": "[LT^{-1}]",
+          "derivedFrom": "Velocity = displacement/time"
+        },
+        {
+          "formulaId": "phy_ud_005_f2",
+          "name": "Acceleration",
+          "equation": "[LT^-2]",
+          "latex": "[LT^{-2}]",
+          "derivedFrom": "Acceleration = velocity/time"
+        },
+        {
+          "formulaId": "phy_ud_005_f3",
+          "name": "Force",
+          "equation": "[MLT^-2]",
+          "latex": "[MLT^{-2}]",
+          "derivedFrom": "Force = mass × acceleration"
+        },
+        {
+          "formulaId": "phy_ud_005_f4",
+          "name": "Work / Energy",
+          "equation": "[ML^2T^-2]",
+          "latex": "[ML^{2}T^{-2}]",
+          "derivedFrom": "Work = force × displacement"
+        },
+        {
+          "formulaId": "phy_ud_005_f5",
+          "name": "Power",
+          "equation": "[ML^2T^-3]",
+          "latex": "[ML^{2}T^{-3}]",
+          "derivedFrom": "Power = work/time"
+        },
+        {
+          "formulaId": "phy_ud_005_f6",
+          "name": "Momentum",
+          "equation": "[MLT^-1]",
+          "latex": "[MLT^{-1}]",
+          "derivedFrom": "Momentum = mass × velocity"
+        },
+        {
+          "formulaId": "phy_ud_005_f7",
+          "name": "Pressure",
+          "equation": "[ML^-1T^-2]",
+          "latex": "[ML^{-1}T^{-2}]",
+          "derivedFrom": "Pressure = force/area"
+        },
+        {
+          "formulaId": "phy_ud_005_f8",
+          "name": "Gravitational Constant",
+          "equation": "[M^-1L^3T^-2]",
+          "latex": "[M^{-1}L^{3}T^{-2}]"
+        },
+        {
+          "formulaId": "phy_ud_005_f9",
+          "name": "Planck Constant",
+          "equation": "[ML^2T^-1]",
+          "latex": "[ML^{2}T^{-1}]"
+        },
+        {
+          "formulaId": "phy_ud_005_f10",
+          "name": "Surface Tension",
+          "equation": "[MT^-2]",
+          "latex": "[MT^{-2}]"
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_ud_006",
+      "conceptName": "Dimensional Analysis",
+      "description": "Technique used to verify equations and derive relations.",
+      "formulaType": "methodology",
+      "formulas": [
+        {
+          "formulaId": "phy_ud_006_f1",
+          "name": "Principle of Homogeneity",
+          "equation": "Dimensions on both sides must be equal",
+          "latex": "[LHS] = [RHS]",
+          "meaning": "Every valid physical equation must have identical dimensions on both sides.",
+          "applications": [
+            "Checking formula correctness",
+            "Deriving unknown powers",
+            "Finding relations between variables"
+          ]
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Dimensions do not depend on numerical constants.",
+    "Trigonometric, exponential, and logarithmic arguments are dimensionless.",
+    "Physical equations must satisfy dimensional homogeneity.",
+    "Two quantities with same dimensions may represent different physical quantities."
+  ],
+  "commonMistakes": [
+    "Confusing units with dimensions",
+    "Ignoring dimensionless quantities",
+    "Using dimensional analysis for vector equations",
+    "Assuming same dimensions imply same quantity"
+  ],
+  "jeeAdvancedFocus": [
+    "Dimensional derivation questions",
+    "Error detection in formulas",
+    "Dimension of constants",
+    "Unit conversion logic"
+  ],
+  "neetFocus": [
+    "SI units",
+    "Dimensional formulas",
+    "Basic measurement concepts",
+    "Fundamental quantities"
+  ]
+}

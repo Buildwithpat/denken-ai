@@ -1,0 +1,256 @@
+{
+  "chapterId": "chem_stoichiometry_002",
+  "fileName": "stoichiometry.json",
+  "chapterName": "Stoichiometry",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "stoichiometry",
+    "mole-concept",
+    "empirical-formula",
+    "limiting-reagent",
+    "concentration",
+    "chemical-calculations"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_sto_001",
+      "conceptName": "Mole Concept",
+      "description": "Basic relations involving mole and Avogadro number.",
+      "formulaType": "mole-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sto_001_f1",
+          "name": "Number of Moles",
+          "equation": "n = W/M",
+          "latex": "n=\\frac{W}{M}",
+          "meaning": "Number of moles from mass.",
+          "variables": {
+            "n": {
+              "meaning": "Number of moles",
+              "unit": "mol"
+            },
+            "W": {
+              "meaning": "Mass of substance",
+              "unit": "g"
+            },
+            "M": {
+              "meaning": "Molar mass",
+              "unit": "g/mol"
+            }
+          },
+          "applications": ["Chemical calculations", "Reaction stoichiometry"]
+        },
+        {
+          "formulaId": "chem_sto_001_f2",
+          "name": "Number of Particles",
+          "equation": "N = nNA",
+          "latex": "N=nN_A",
+          "meaning": "Relation between moles and particles."
+        },
+        {
+          "formulaId": "chem_sto_001_f3",
+          "name": "Moles from Number of Particles",
+          "equation": "n = N/NA",
+          "latex": "n=\\frac{N}{N_A}",
+          "meaning": "Number of moles from particles."
+        },
+        {
+          "formulaId": "chem_sto_001_f4",
+          "name": "Gas Volume at STP",
+          "equation": "1 mole gas = 22.4 L",
+          "latex": "1\\text{ mole gas}=22.4\\text{ L}",
+          "meaning": "Molar volume at STP."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sto_002",
+      "conceptName": "Percentage Composition",
+      "description": "Percentage composition of elements in compounds.",
+      "formulaType": "percentage-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sto_002_f1",
+          "name": "Percentage Composition",
+          "equation": "% Element = (Mass of element/Molar mass) × 100",
+          "latex": "\\%\\text{ Element}=\\left(\\frac{\\text{Mass of element}}{\\text{Molar mass}}\\right)\\times100",
+          "meaning": "Percentage of element in compound."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sto_003",
+      "conceptName": "Empirical and Molecular Formula",
+      "description": "Determination of formulas from composition data.",
+      "formulaType": "formula-calculation",
+      "formulas": [
+        {
+          "formulaId": "chem_sto_003_f1",
+          "name": "Molecular Formula Relation",
+          "equation": "Molecular Formula = (Empirical Formula)n",
+          "latex": "\\text{Molecular Formula}=(\\text{Empirical Formula})n",
+          "meaning": "Relation between empirical and molecular formula."
+        },
+        {
+          "formulaId": "chem_sto_003_f2",
+          "name": "Value of n",
+          "equation": "n = Molecular Mass/Empirical Formula Mass",
+          "latex": "n=\\frac{\\text{Molecular Mass}}{\\text{Empirical Formula Mass}}",
+          "meaning": "Determination of molecular formula."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sto_004",
+      "conceptName": "Stoichiometric Calculations",
+      "description": "Calculations based on balanced chemical equations.",
+      "formulaType": "stoichiometric-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sto_004_f1",
+          "name": "Mole Ratio",
+          "equation": "Required mole ratio from balanced equation",
+          "latex": "\\text{Mole ratio from balanced equation}",
+          "meaning": "Basis of stoichiometric calculations."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sto_005",
+      "conceptName": "Limiting Reagent",
+      "description": "Reactant consumed completely first in reaction.",
+      "formulaType": "limiting-reagent-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sto_005_f1",
+          "name": "Limiting Reagent Determination",
+          "equation": "Least value of n/coefficient",
+          "latex": "\\text{Least value of }\\frac{n}{\\text{coefficient}}",
+          "meaning": "Determination of limiting reagent."
+        },
+        {
+          "formulaId": "chem_sto_005_f2",
+          "name": "Excess Reagent Left",
+          "equation": "Initial moles - reacted moles",
+          "latex": "\\text{Initial moles}-\\text{reacted moles}",
+          "meaning": "Amount of excess reagent remaining."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sto_006",
+      "conceptName": "Yield of Reaction",
+      "description": "Actual and theoretical product formation.",
+      "formulaType": "yield-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sto_006_f1",
+          "name": "Percentage Yield",
+          "equation": "% Yield = (Actual Yield/Theoretical Yield) × 100",
+          "latex": "\\%\\text{ Yield}=\\left(\\frac{\\text{Actual Yield}}{\\text{Theoretical Yield}}\\right)\\times100",
+          "meaning": "Efficiency of chemical reaction."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sto_007",
+      "conceptName": "Concentration Terms",
+      "description": "Different methods of expressing concentration.",
+      "formulaType": "concentration-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sto_007_f1",
+          "name": "Molarity",
+          "equation": "M = n/V",
+          "latex": "M=\\frac{n}{V}",
+          "meaning": "Moles of solute per litre of solution."
+        },
+        {
+          "formulaId": "chem_sto_007_f2",
+          "name": "Molality",
+          "equation": "m = n/W",
+          "latex": "m=\\frac{n}{W}",
+          "meaning": "Moles of solute per kg of solvent."
+        },
+        {
+          "formulaId": "chem_sto_007_f3",
+          "name": "Normality",
+          "equation": "N = gram equivalents/L",
+          "latex": "N=\\frac{\\text{gram equivalents}}{L}",
+          "meaning": "Gram equivalents per litre solution."
+        },
+        {
+          "formulaId": "chem_sto_007_f4",
+          "name": "Mole Fraction",
+          "equation": "χA = nA/ntotal",
+          "latex": "\\chi_A=\\frac{n_A}{n_{total}}",
+          "meaning": "Ratio of moles of component to total moles."
+        },
+        {
+          "formulaId": "chem_sto_007_f5",
+          "name": "Parts Per Million",
+          "equation": "ppm = (Mass of solute/Mass of solution) × 10⁶",
+          "latex": "ppm=\\left(\\frac{\\text{Mass of solute}}{\\text{Mass of solution}}\\right)\\times10^6",
+          "meaning": "Concentration in ppm."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_sto_008",
+      "conceptName": "Equivalent Concept",
+      "description": "Equivalent mass and gram equivalent calculations.",
+      "formulaType": "equivalent-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_sto_008_f1",
+          "name": "Equivalent Mass",
+          "equation": "Equivalent Mass = Molar Mass/n-factor",
+          "latex": "\\text{Equivalent Mass}=\\frac{\\text{Molar Mass}}{n\\text{-factor}}",
+          "meaning": "Equivalent mass relation."
+        },
+        {
+          "formulaId": "chem_sto_008_f2",
+          "name": "Number of Gram Equivalents",
+          "equation": "Gram Equivalents = Mass/Equivalent Mass",
+          "latex": "\\text{Gram Equivalents}=\\frac{\\text{Mass}}{\\text{Equivalent Mass}}",
+          "meaning": "Calculation of gram equivalents."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Balanced chemical equations are essential for stoichiometric calculations.",
+    "Limiting reagent determines maximum product formed.",
+    "1 mole contains Avogadro number of particles.",
+    "Molality is temperature independent while molarity depends on temperature."
+  ],
+  "commonMistakes": [
+    "Using wrong molar mass",
+    "Ignoring balanced equation coefficients",
+    "Confusing molarity and molality",
+    "Incorrect limiting reagent identification"
+  ],
+  "jeeAdvancedFocus": [
+    "Limiting reagent numericals",
+    "Concentration conversions",
+    "Equivalent concept",
+    "Complex stoichiometric calculations"
+  ],
+  "neetFocus": [
+    "Mole concept",
+    "Molarity and molality",
+    "Percentage yield",
+    "Empirical formula"
+  ],
+  "keywords": [
+    "stoichiometry",
+    "mole concept",
+    "molarity",
+    "molality",
+    "limiting reagent",
+    "empirical formula",
+    "molecular formula",
+    "percentage yield"
+  ]
+}

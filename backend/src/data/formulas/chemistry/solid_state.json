@@ -1,0 +1,279 @@
+{
+  "chapterId": "chem_solid_state_009",
+  "fileName": "solid_state.json",
+  "chapterName": "Solid State",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "solid-state",
+    "crystal-structure",
+    "unit-cell",
+    "packing-efficiency",
+    "density-of-crystal",
+    "imperfections"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_solid_001",
+      "conceptName": "Crystal Lattice and Unit Cell",
+      "description": "Basic structure of crystalline solids.",
+      "formulaType": "unit-cell-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_solid_001_f1",
+          "name": "Number of Atoms in Unit Cell",
+          "equation": "Z = Corner + Face + Body contribution",
+          "latex": "Z=\\text{Corner}+\\text{Face}+\\text{Body contribution}",
+          "meaning": "Effective atoms present in a unit cell.",
+          "applications": [
+            "Crystal structure calculations",
+            "Packing efficiency problems"
+          ]
+        },
+        {
+          "formulaId": "chem_solid_001_f2",
+          "name": "Simple Cubic Unit Cell",
+          "equation": "Z = 1",
+          "latex": "Z=1",
+          "meaning": "Atoms per simple cubic cell."
+        },
+        {
+          "formulaId": "chem_solid_001_f3",
+          "name": "Body Centered Cubic",
+          "equation": "Z = 2",
+          "latex": "Z=2",
+          "meaning": "Atoms per BCC unit cell."
+        },
+        {
+          "formulaId": "chem_solid_001_f4",
+          "name": "Face Centered Cubic",
+          "equation": "Z = 4",
+          "latex": "Z=4",
+          "meaning": "Atoms per FCC unit cell."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_solid_002",
+      "conceptName": "Edge Length Relations",
+      "description": "Relation between atomic radius and edge length.",
+      "formulaType": "edge-length-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_solid_002_f1",
+          "name": "Simple Cubic Relation",
+          "equation": "a = 2r",
+          "latex": "a=2r",
+          "meaning": "Edge length relation for simple cubic."
+        },
+        {
+          "formulaId": "chem_solid_002_f2",
+          "name": "BCC Relation",
+          "equation": "a = 4r/√3",
+          "latex": "a=\\frac{4r}{\\sqrt{3}}",
+          "meaning": "Edge length relation for BCC."
+        },
+        {
+          "formulaId": "chem_solid_002_f3",
+          "name": "FCC Relation",
+          "equation": "a = 2√2r",
+          "latex": "a=2\\sqrt{2}r",
+          "meaning": "Edge length relation for FCC."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_solid_003",
+      "conceptName": "Density of Unit Cell",
+      "description": "Density calculation for crystalline solids.",
+      "formulaType": "density-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_solid_003_f1",
+          "name": "Density Formula",
+          "equation": "ρ = ZM/a³NA",
+          "latex": "\\rho=\\frac{ZM}{a^3N_A}",
+          "meaning": "Density of crystalline solid.",
+          "variables": {
+            "ρ": {
+              "meaning": "Density",
+              "unit": "g/cm³"
+            },
+            "Z": {
+              "meaning": "Number of atoms per unit cell"
+            },
+            "M": {
+              "meaning": "Molar mass",
+              "unit": "g/mol"
+            },
+            "a": {
+              "meaning": "Edge length",
+              "unit": "cm"
+            },
+            "NA": {
+              "meaning": "Avogadro number"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_solid_004",
+      "conceptName": "Packing Efficiency",
+      "description": "Fraction of space occupied by particles.",
+      "formulaType": "packing-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_solid_004_f1",
+          "name": "Packing Efficiency",
+          "equation": "Packing Efficiency = (Volume occupied/Total volume) × 100",
+          "latex": "\\text{Packing Efficiency}=\\left(\\frac{\\text{Volume occupied}}{\\text{Total volume}}\\right)\\times100",
+          "meaning": "Percentage space occupied in crystal."
+        },
+        {
+          "formulaId": "chem_solid_004_f2",
+          "name": "Simple Cubic Packing Efficiency",
+          "equation": "52.4%",
+          "latex": "52.4\\%",
+          "meaning": "Packing efficiency of SC structure."
+        },
+        {
+          "formulaId": "chem_solid_004_f3",
+          "name": "BCC Packing Efficiency",
+          "equation": "68%",
+          "latex": "68\\%",
+          "meaning": "Packing efficiency of BCC."
+        },
+        {
+          "formulaId": "chem_solid_004_f4",
+          "name": "FCC Packing Efficiency",
+          "equation": "74%",
+          "latex": "74\\%",
+          "meaning": "Packing efficiency of FCC."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_solid_005",
+      "conceptName": "Voids in Crystal Structure",
+      "description": "Empty spaces present in close packing.",
+      "formulaType": "void-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_solid_005_f1",
+          "name": "Tetrahedral Voids",
+          "equation": "Number of tetrahedral voids = 2N",
+          "latex": "\\text{Number of tetrahedral voids}=2N",
+          "meaning": "Voids in close-packed structure."
+        },
+        {
+          "formulaId": "chem_solid_005_f2",
+          "name": "Octahedral Voids",
+          "equation": "Number of octahedral voids = N",
+          "latex": "\\text{Number of octahedral voids}=N",
+          "meaning": "Octahedral voids in packing."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_solid_006",
+      "conceptName": "Bragg Equation",
+      "description": "Condition for X-ray diffraction.",
+      "formulaType": "bragg-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_solid_006_f1",
+          "name": "Bragg Equation",
+          "equation": "2d sinθ = nλ",
+          "latex": "2d\\sin\\theta=n\\lambda",
+          "meaning": "Condition for constructive interference."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_solid_007",
+      "conceptName": "Defects in Solids",
+      "description": "Imperfections present in crystal structures.",
+      "formulaType": "defect-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_solid_007_f1",
+          "name": "Schottky Defect Density Relation",
+          "equation": "Density decreases due to Schottky defect",
+          "latex": "\\text{Density decreases due to Schottky defect}",
+          "meaning": "Effect of Schottky defect on density."
+        },
+        {
+          "formulaId": "chem_solid_007_f2",
+          "name": "Frenkel Defect Density Relation",
+          "equation": "Density remains unchanged in Frenkel defect",
+          "latex": "\\text{Density remains unchanged in Frenkel defect}",
+          "meaning": "Effect of Frenkel defect on density."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_solid_008",
+      "conceptName": "Coordination Number",
+      "description": "Number of nearest neighboring particles.",
+      "formulaType": "coordination-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_solid_008_f1",
+          "name": "Coordination Number of SC",
+          "equation": "CN = 6",
+          "latex": "CN=6",
+          "meaning": "Coordination number in simple cubic."
+        },
+        {
+          "formulaId": "chem_solid_008_f2",
+          "name": "Coordination Number of BCC",
+          "equation": "CN = 8",
+          "latex": "CN=8",
+          "meaning": "Coordination number in BCC."
+        },
+        {
+          "formulaId": "chem_solid_008_f3",
+          "name": "Coordination Number of FCC",
+          "equation": "CN = 12",
+          "latex": "CN=12",
+          "meaning": "Coordination number in FCC."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "FCC and HCP have maximum packing efficiency.",
+    "BCC is less closely packed than FCC.",
+    "Schottky defect decreases density.",
+    "FCC structures are generally more stable."
+  ],
+  "commonMistakes": [
+    "Wrong atom contribution counting",
+    "Confusing FCC and BCC relations",
+    "Incorrect edge length formulas",
+    "Using wrong packing efficiency values"
+  ],
+  "jeeAdvancedFocus": [
+    "Density numericals",
+    "Packing efficiency derivations",
+    "Crystal defect problems",
+    "Void calculations"
+  ],
+  "neetFocus": [
+    "Unit cell basics",
+    "Packing efficiency",
+    "Crystal defects",
+    "Coordination number"
+  ],
+  "keywords": [
+    "solid state",
+    "unit cell",
+    "packing efficiency",
+    "density of crystal",
+    "bragg equation",
+    "crystal defects",
+    "fcc",
+    "bcc"
+  ]
+}

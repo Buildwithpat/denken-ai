@@ -1,0 +1,226 @@
+{
+  "chapterId": "math_sequence_and_series_013",
+  "fileName": "sequence_and_series.json",
+  "chapterName": "Sequence and Series",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": ["sequence", "series", "ap", "gp", "hp", "summation"],
+  "concepts": [
+    {
+      "conceptId": "math_seq_001",
+      "conceptName": "Arithmetic Progression",
+      "description": "Sequence with constant difference.",
+      "formulaType": "ap-formula",
+      "formulas": [
+        {
+          "formulaId": "math_seq_001_f1",
+          "name": "nth Term of AP",
+          "equation": "aₙ = a + (n-1)d",
+          "latex": "a_n=a+(n-1)d",
+          "meaning": "Formula for nth term of arithmetic progression.",
+          "applications": ["Number patterns", "Series problems"]
+        },
+        {
+          "formulaId": "math_seq_001_f2",
+          "name": "Sum of n Terms of AP",
+          "equation": "Sₙ = n/2 [2a + (n-1)d]",
+          "latex": "S_n=\\frac{n}{2}[2a+(n-1)d]",
+          "meaning": "Sum formula of arithmetic progression."
+        },
+        {
+          "formulaId": "math_seq_001_f3",
+          "name": "Alternative Sum Formula",
+          "equation": "Sₙ = n(a+l)/2",
+          "latex": "S_n=\\frac{n(a+l)}{2}",
+          "meaning": "Sum formula using first and last term."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_seq_002",
+      "conceptName": "Geometric Progression",
+      "description": "Sequence with constant ratio.",
+      "formulaType": "gp-formula",
+      "formulas": [
+        {
+          "formulaId": "math_seq_002_f1",
+          "name": "nth Term of GP",
+          "equation": "aₙ = arⁿ⁻¹",
+          "latex": "a_n=ar^{n-1}",
+          "meaning": "Formula for nth term of geometric progression."
+        },
+        {
+          "formulaId": "math_seq_002_f2",
+          "name": "Sum of n Terms of GP",
+          "equation": "Sₙ = a(rⁿ-1)/(r-1)",
+          "latex": "S_n=\\frac{a(r^n-1)}{r-1}",
+          "meaning": "Sum formula when r ≠ 1."
+        },
+        {
+          "formulaId": "math_seq_002_f3",
+          "name": "Infinite GP Sum",
+          "equation": "S∞ = a/(1-r)",
+          "latex": "S_\\infty=\\frac{a}{1-r}",
+          "meaning": "Sum of infinite GP for |r| < 1."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_seq_003",
+      "conceptName": "Harmonic Progression",
+      "description": "Sequence formed by reciprocals of AP.",
+      "formulaType": "hp-formula",
+      "formulas": [
+        {
+          "formulaId": "math_seq_003_f1",
+          "name": "Definition of HP",
+          "equation": "If 1/a, 1/b, 1/c are in AP then a,b,c are in HP",
+          "latex": "\\text{If }\\frac1a,\\frac1b,\\frac1c\\text{ are in AP then }a,b,c\\text{ are in HP}",
+          "meaning": "Definition of harmonic progression."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_seq_004",
+      "conceptName": "Means Between Numbers",
+      "description": "Arithmetic, geometric and harmonic means.",
+      "formulaType": "means-formula",
+      "formulas": [
+        {
+          "formulaId": "math_seq_004_f1",
+          "name": "Arithmetic Mean",
+          "equation": "AM = (a+b)/2",
+          "latex": "AM=\\frac{a+b}{2}",
+          "meaning": "Arithmetic mean of two numbers."
+        },
+        {
+          "formulaId": "math_seq_004_f2",
+          "name": "Geometric Mean",
+          "equation": "GM = √ab",
+          "latex": "GM=\\sqrt{ab}",
+          "meaning": "Geometric mean of two numbers."
+        },
+        {
+          "formulaId": "math_seq_004_f3",
+          "name": "Harmonic Mean",
+          "equation": "HM = 2ab/(a+b)",
+          "latex": "HM=\\frac{2ab}{a+b}",
+          "meaning": "Harmonic mean of two numbers."
+        },
+        {
+          "formulaId": "math_seq_004_f4",
+          "name": "Relation Between Means",
+          "equation": "AM × HM = GM²",
+          "latex": "AM\\times HM=GM^2",
+          "meaning": "Relationship among AM, GM and HM."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_seq_005",
+      "conceptName": "Special Series",
+      "description": "Important summation formulas.",
+      "formulaType": "special-series-formula",
+      "formulas": [
+        {
+          "formulaId": "math_seq_005_f1",
+          "name": "Sum of Natural Numbers",
+          "equation": "1+2+3+...+n = n(n+1)/2",
+          "latex": "1+2+3+\\cdots+n=\\frac{n(n+1)}{2}",
+          "meaning": "Sum of first n natural numbers."
+        },
+        {
+          "formulaId": "math_seq_005_f2",
+          "name": "Sum of Squares",
+          "equation": "1²+2²+3²+...+n² = n(n+1)(2n+1)/6",
+          "latex": "1^2+2^2+3^2+\\cdots+n^2=\\frac{n(n+1)(2n+1)}{6}",
+          "meaning": "Sum of squares of first n natural numbers."
+        },
+        {
+          "formulaId": "math_seq_005_f3",
+          "name": "Sum of Cubes",
+          "equation": "1³+2³+3³+...+n³ = [n(n+1)/2]²",
+          "latex": "1^3+2^3+3^3+\\cdots+n^3=\\left(\\frac{n(n+1)}{2}\\right)^2",
+          "meaning": "Sum of cubes formula."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_seq_006",
+      "conceptName": "Sigma Notation",
+      "description": "Compact notation for summation.",
+      "formulaType": "sigma-formula",
+      "formulas": [
+        {
+          "formulaId": "math_seq_006_f1",
+          "name": "General Sigma Notation",
+          "equation": "∑ᵢ₌₁ⁿ aᵢ",
+          "latex": "\\sum_{i=1}^{n}a_i",
+          "meaning": "Represents sum of sequence terms."
+        },
+        {
+          "formulaId": "math_seq_006_f2",
+          "name": "Linearity Property",
+          "equation": "∑(aᵢ+bᵢ) = ∑aᵢ + ∑bᵢ",
+          "latex": "\\sum(a_i+b_i)=\\sum a_i+\\sum b_i",
+          "meaning": "Summation distributive property."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_seq_007",
+      "conceptName": "Arithmetic-Geometric Series",
+      "description": "Series combining AP and GP.",
+      "formulaType": "ag-series-formula",
+      "formulas": [
+        {
+          "formulaId": "math_seq_007_f1",
+          "name": "General AG Series",
+          "equation": "a+(a+d)r+(a+2d)r²+...",
+          "latex": "a+(a+d)r+(a+2d)r^2+\\cdots",
+          "meaning": "Arithmetic-geometric progression."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_seq_008",
+      "conceptName": "Convergence of Infinite GP",
+      "description": "Condition for convergence.",
+      "formulaType": "convergence-formula",
+      "formulas": [
+        {
+          "formulaId": "math_seq_008_f1",
+          "name": "Convergence Condition",
+          "equation": "|r| < 1",
+          "latex": "|r|<1",
+          "meaning": "Infinite GP converges only for |r| less than 1."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "AP has constant difference.",
+    "GP has constant ratio.",
+    "Infinite GP exists only for |r| < 1.",
+    "AM ≥ GM ≥ HM for positive numbers."
+  ],
+  "commonMistakes": [
+    "Wrong common difference or ratio",
+    "Using infinite GP formula when |r| ≥ 1",
+    "Mistakes in summation formulas",
+    "Incorrect mean calculations"
+  ],
+  "jeeAdvancedFocus": [
+    "Advanced series summation",
+    "AG progression",
+    "Convergence problems",
+    "Mixed progression questions"
+  ],
+  "neetFocus": [
+    "AP formulas",
+    "GP formulas",
+    "Means formulas",
+    "Basic summations"
+  ],
+  "keywords": ["sequence and series", "AP", "GP", "HP", "summation", "means"]
+}

@@ -1,0 +1,252 @@
+{
+  "chapterId": "chem_hydrocarbons_022",
+  "fileName": "hydrocarbons.json",
+  "chapterName": "Hydrocarbons",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "hydrocarbons",
+    "alkanes",
+    "alkenes",
+    "alkynes",
+    "aromatic-compounds",
+    "benzene"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_hydro_001",
+      "conceptName": "Alkanes",
+      "description": "Saturated hydrocarbons containing single bonds.",
+      "formulaType": "alkane-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_hydro_001_f1",
+          "name": "General Formula of Alkanes",
+          "equation": "CnH2n+2",
+          "latex": "C_nH_{2n+2}",
+          "meaning": "General molecular formula of open chain alkanes.",
+          "applications": [
+            "Hydrocarbon identification",
+            "Organic reaction calculations"
+          ]
+        },
+        {
+          "formulaId": "chem_hydro_001_f2",
+          "name": "Halogenation of Methane",
+          "equation": "CH₄ + Cl₂ → CH₃Cl + HCl",
+          "latex": "CH_4+Cl_2\\rightarrow CH_3Cl+HCl",
+          "meaning": "Free radical substitution reaction."
+        },
+        {
+          "formulaId": "chem_hydro_001_f3",
+          "name": "Combustion of Alkane",
+          "equation": "CnH2n+2 + (3n+1)/2 O₂ → nCO₂ + (n+1)H₂O",
+          "latex": "C_nH_{2n+2}+\\frac{3n+1}{2}O_2\\rightarrow nCO_2+(n+1)H_2O",
+          "meaning": "Complete combustion of alkane."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_hydro_002",
+      "conceptName": "Alkenes",
+      "description": "Unsaturated hydrocarbons containing double bond.",
+      "formulaType": "alkene-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_hydro_002_f1",
+          "name": "General Formula of Alkenes",
+          "equation": "CnH2n",
+          "latex": "C_nH_{2n}",
+          "meaning": "General formula of alkenes."
+        },
+        {
+          "formulaId": "chem_hydro_002_f2",
+          "name": "Hydrogenation of Alkene",
+          "equation": "CH₂=CH₂ + H₂ → CH₃-CH₃",
+          "latex": "CH_2=CH_2+H_2\\rightarrow CH_3-CH_3",
+          "meaning": "Addition of hydrogen across double bond."
+        },
+        {
+          "formulaId": "chem_hydro_002_f3",
+          "name": "Markovnikov Addition",
+          "equation": "CH₃-CH=CH₂ + HBr → CH₃-CHBr-CH₃",
+          "latex": "CH_3-CH=CH_2+HBr\\rightarrow CH_3-CHBr-CH_3",
+          "meaning": "Addition according to Markovnikov rule."
+        },
+        {
+          "formulaId": "chem_hydro_002_f4",
+          "name": "Polymerization of Ethene",
+          "equation": "nCH₂=CH₂ → (-CH₂-CH₂-)n",
+          "latex": "nCH_2=CH_2\\rightarrow(-CH_2-CH_2-)_n",
+          "meaning": "Formation of polyethylene."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_hydro_003",
+      "conceptName": "Alkynes",
+      "description": "Unsaturated hydrocarbons containing triple bond.",
+      "formulaType": "alkyne-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_hydro_003_f1",
+          "name": "General Formula of Alkynes",
+          "equation": "CnH2n-2",
+          "latex": "C_nH_{2n-2}",
+          "meaning": "General formula of alkynes."
+        },
+        {
+          "formulaId": "chem_hydro_003_f2",
+          "name": "Preparation of Ethyne",
+          "equation": "CaC₂ + 2H₂O → C₂H₂ + Ca(OH)₂",
+          "latex": "CaC_2+2H_2O\\rightarrow C_2H_2+Ca(OH)_2",
+          "meaning": "Laboratory preparation of acetylene."
+        },
+        {
+          "formulaId": "chem_hydro_003_f3",
+          "name": "Hydrogenation of Alkyne",
+          "equation": "C₂H₂ + 2H₂ → C₂H₆",
+          "latex": "C_2H_2+2H_2\\rightarrow C_2H_6",
+          "meaning": "Complete hydrogenation of alkyne."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_hydro_004",
+      "conceptName": "Aromatic Hydrocarbons",
+      "description": "Compounds containing benzene ring.",
+      "formulaType": "aromatic-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_hydro_004_f1",
+          "name": "Benzene Formula",
+          "equation": "C₆H₆",
+          "latex": "C_6H_6",
+          "meaning": "Molecular formula of benzene."
+        },
+        {
+          "formulaId": "chem_hydro_004_f2",
+          "name": "Kekule Structure",
+          "equation": "Alternating single and double bonds",
+          "latex": "\\text{Alternating single and double bonds}",
+          "meaning": "Structure representation of benzene."
+        },
+        {
+          "formulaId": "chem_hydro_004_f3",
+          "name": "Huckel Rule",
+          "equation": "(4n + 2)π electrons",
+          "latex": "(4n+2)\\pi\\text{ electrons}",
+          "meaning": "Condition for aromaticity."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_hydro_005",
+      "conceptName": "Electrophilic Substitution",
+      "description": "Characteristic reactions of benzene.",
+      "formulaType": "electrophilic-substitution-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_hydro_005_f1",
+          "name": "Nitration of Benzene",
+          "equation": "C₆H₆ + HNO₃ → C₆H₅NO₂ + H₂O",
+          "latex": "C_6H_6+HNO_3\\rightarrow C_6H_5NO_2+H_2O",
+          "meaning": "Formation of nitrobenzene."
+        },
+        {
+          "formulaId": "chem_hydro_005_f2",
+          "name": "Halogenation of Benzene",
+          "equation": "C₆H₆ + Cl₂ → C₆H₅Cl + HCl",
+          "latex": "C_6H_6+Cl_2\\rightarrow C_6H_5Cl+HCl",
+          "meaning": "Formation of chlorobenzene."
+        },
+        {
+          "formulaId": "chem_hydro_005_f3",
+          "name": "Friedel-Crafts Alkylation",
+          "equation": "C₆H₆ + CH₃Cl → C₆H₅CH₃ + HCl",
+          "latex": "C_6H_6+CH_3Cl\\rightarrow C_6H_5CH_3+HCl",
+          "meaning": "Formation of toluene."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_hydro_006",
+      "conceptName": "Ozonolysis",
+      "description": "Oxidative cleavage of multiple bonds.",
+      "formulaType": "ozonolysis-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_hydro_006_f1",
+          "name": "Ozonolysis Reaction",
+          "equation": "Alkene + O₃ → Carbonyl compounds",
+          "latex": "\\text{Alkene}+O_3\\rightarrow\\text{Carbonyl compounds}",
+          "meaning": "Cleavage of double bond using ozone."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_hydro_007",
+      "conceptName": "Baeyer Test",
+      "description": "Test for unsaturation.",
+      "formulaType": "test-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_hydro_007_f1",
+          "name": "Baeyer Reagent Reaction",
+          "equation": "Alkene + KMnO₄ → Vicinal glycol",
+          "latex": "\\text{Alkene}+KMnO_4\\rightarrow\\text{Vicinal glycol}",
+          "meaning": "Test for double bond."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_hydro_008",
+      "conceptName": "Acidity of Hydrocarbons",
+      "description": "Acidic character of terminal alkynes.",
+      "formulaType": "acidity-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_hydro_008_f1",
+          "name": "Terminal Alkyne Reaction",
+          "equation": "RC≡CH + Na → RC≡CNa + H₂",
+          "latex": "RC\\equiv CH+Na\\rightarrow RC\\equiv CNa+H_2",
+          "meaning": "Formation of sodium acetylide."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Alkanes mainly undergo substitution reactions.",
+    "Alkenes and alkynes mainly undergo addition reactions.",
+    "Benzene prefers substitution over addition to retain aromaticity.",
+    "Terminal alkynes are weakly acidic."
+  ],
+  "commonMistakes": [
+    "Confusing alkene and alkyne formulas",
+    "Wrong application of Markovnikov rule",
+    "Ignoring aromatic stability of benzene",
+    "Incorrect product prediction in electrophilic substitution"
+  ],
+  "jeeAdvancedFocus": [
+    "Reaction mechanisms",
+    "Aromaticity and Huckel rule",
+    "Ozonolysis product prediction",
+    "Electrophilic substitution orientation"
+  ],
+  "neetFocus": [
+    "General formulas",
+    "Important reactions",
+    "Benzene reactions",
+    "Tests for unsaturation"
+  ],
+  "keywords": [
+    "hydrocarbons",
+    "alkanes",
+    "alkenes",
+    "alkynes",
+    "benzene",
+    "aromaticity",
+    "markovnikov rule",
+    "ozonolysis"
+  ]
+}

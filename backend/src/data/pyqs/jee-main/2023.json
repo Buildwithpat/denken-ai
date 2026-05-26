@@ -1,0 +1,561 @@
+{
+  "questions": [
+    {
+      "questionId": "JM2023_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Ray Optics",
+      "topic": "Refractive Index",
+      "difficulty": "easy",
+      "questionType": "integer_type",
+      "questionText": "In an experiment of measuring refractive index of a glass slab using travelling microscope, real thickness is 5.25 mm and apparent thickness is 5.00 mm. Estimated uncertainty in refractive index is x × 10⁻³. Find x.",
+      "options": {},
+      "correctAnswer": "3",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Units and Dimensions",
+      "topic": "Dimensional Analysis",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "For equation (x−At)² + (y−t/B)² = a², dimensions of A and B respectively are",
+      "options": {
+        "A": "[L⁻¹T], [LT⁻¹]",
+        "B": "[LT], [L⁻¹T⁻¹]",
+        "C": "[L⁻¹T⁻¹], [LT⁻¹]",
+        "D": "[L⁻¹T⁻¹], [LT]"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Circular Motion",
+      "topic": "Uniform Circular Motion",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "An object moves in circular path. At x=+2m its velocity is −4ĵ m/s. Velocity and acceleration at x=−2m are",
+      "options": {
+        "A": "4î, 8ĵ",
+        "B": "−4ĵ, −8î",
+        "C": "−4ĵ, 8î",
+        "D": "−4î, −8ĵ"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Circular Motion",
+      "topic": "Tangential Acceleration",
+      "difficulty": "hard",
+      "questionType": "integer_type",
+      "questionText": "A car moves in circular path of radius 600m with equal tangential and centripetal accelerations. Time for quarter revolution is t(1−e^(−π/2)). Find t.",
+      "options": {},
+      "correctAnswer": "41",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "Rotational Motion",
+      "topic": "Angular Momentum",
+      "difficulty": "medium",
+      "questionType": "integer_type",
+      "questionText": "A particle of mass 100 g is projected with speed 20 m/s at 45°. Angular momentum about origin at t=2s is √K kgm²/s. Find K.",
+      "options": {},
+      "correctAnswer": "800",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Friction",
+      "topic": "Inclined Plane",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Time taken to slide down rough incline is n times the time taken on smooth incline. Coefficient of friction is",
+      "options": {
+        "A": "√(1/(1−n²))",
+        "B": "√(1−1/n²)",
+        "C": "1+1/n²",
+        "D": "1−1/n²"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "Laws of Motion",
+      "topic": "Force and Motion",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "A force acts for 20 s on 20 kg body starting from rest. After force ceases body moves 50 m in next 10 s. Force is",
+      "options": {
+        "A": "40 N",
+        "B": "5 N",
+        "C": "20 N",
+        "D": "10 N"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "Work Power Energy",
+      "topic": "Work Done",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "Identify correct statements regarding work done by forces.",
+      "options": {
+        "A": "B and E only",
+        "B": "A and C only",
+        "C": "B,D,E only",
+        "D": "B and D only"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "Gravitation",
+      "topic": "Satellite Motion",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "A satellite has time period 24 h. If orbital radius becomes one fourth, new time period is",
+      "options": {
+        "A": "4 h",
+        "B": "6 h",
+        "C": "12 h",
+        "D": "3 h"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Mechanical Properties of Fluids",
+      "topic": "Bernoulli Principle",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "A boeing aircraft of mass 5.4×10⁵ kg flies at 1080 km/h. Fractional increase in air speed over upper wing surface is",
+      "options": {
+        "A": "16%",
+        "B": "6%",
+        "C": "8%",
+        "D": "10%"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+
+    {
+      "questionId": "JM2023_CHEM_1",
+      "questionNumber": 31,
+      "subject": "Chemistry",
+      "chapter": "Atomic Structure",
+      "topic": "Quantum Numbers",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Maximum number of electrons with n=5 and l=3 is",
+      "options": {
+        "A": "14",
+        "B": "10",
+        "C": "7",
+        "D": "28"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_CHEM_2",
+      "questionNumber": 32,
+      "subject": "Chemistry",
+      "chapter": "Chemical Bonding",
+      "topic": "Molecular Geometry",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Shape of XeF₂ molecule is",
+      "options": {
+        "A": "Bent",
+        "B": "Trigonal planar",
+        "C": "Linear",
+        "D": "Tetrahedral"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_CHEM_3",
+      "questionNumber": 33,
+      "subject": "Chemistry",
+      "chapter": "Thermodynamics",
+      "topic": "Enthalpy",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "For an exothermic reaction, enthalpy change is",
+      "options": {
+        "A": "Positive",
+        "B": "Negative",
+        "C": "Zero",
+        "D": "Infinite"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_CHEM_4",
+      "questionNumber": 34,
+      "subject": "Chemistry",
+      "chapter": "Electrochemistry",
+      "topic": "Nernst Equation",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "EMF of Daniell cell under standard conditions is",
+      "options": {
+        "A": "1.1 V",
+        "B": "0.34 V",
+        "C": "2.0 V",
+        "D": "1.5 V"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_CHEM_5",
+      "questionNumber": 35,
+      "subject": "Chemistry",
+      "chapter": "Chemical Kinetics",
+      "topic": "Order of Reaction",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Units of rate constant for first order reaction are",
+      "options": {
+        "A": "mol L⁻¹ s⁻¹",
+        "B": "s⁻¹",
+        "C": "L mol⁻¹ s⁻¹",
+        "D": "mol² L⁻² s⁻¹"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_CHEM_6",
+      "questionNumber": 36,
+      "subject": "Chemistry",
+      "chapter": "Coordination Compounds",
+      "topic": "Ligands",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which ligand is ambidentate?",
+      "options": {
+        "A": "NH₃",
+        "B": "H₂O",
+        "C": "NO₂⁻",
+        "D": "en"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_CHEM_7",
+      "questionNumber": 37,
+      "subject": "Chemistry",
+      "chapter": "Haloalkanes and Haloarenes",
+      "topic": "SN1 Reaction",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Tertiary alkyl halides generally undergo",
+      "options": {
+        "A": "SN2",
+        "B": "SN1",
+        "C": "E1 only",
+        "D": "No reaction"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_CHEM_8",
+      "questionNumber": 38,
+      "subject": "Chemistry",
+      "chapter": "Alcohols Phenols and Ethers",
+      "topic": "Acidity",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Phenol is more acidic than ethanol because",
+      "options": {
+        "A": "Phenoxide ion is resonance stabilized",
+        "B": "Phenol has larger size",
+        "C": "Phenol is aromatic",
+        "D": "Ethanol is volatile"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_CHEM_9",
+      "questionNumber": 39,
+      "subject": "Chemistry",
+      "chapter": "Biomolecules",
+      "topic": "Proteins",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Proteins are polymers of",
+      "options": {
+        "A": "Glucose",
+        "B": "Amino acids",
+        "C": "Fatty acids",
+        "D": "Nucleotides"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_CHEM_10",
+      "questionNumber": 40,
+      "subject": "Chemistry",
+      "chapter": "Polymers",
+      "topic": "Synthetic Polymers",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Nylon-6,6 is formed from",
+      "options": {
+        "A": "Styrene",
+        "B": "Caprolactam",
+        "C": "Hexamethylene diamine and adipic acid",
+        "D": "Ethylene glycol and terephthalic acid"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+
+    {
+      "questionId": "JM2023_MATH_1",
+      "questionNumber": 61,
+      "subject": "Mathematics",
+      "chapter": "Functions",
+      "topic": "Basic Functions",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "If f(x)=x²+1, then f(2) equals",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "5",
+        "D": "4"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_MATH_2",
+      "questionNumber": 62,
+      "subject": "Mathematics",
+      "chapter": "Quadratic Equations",
+      "topic": "Roots",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Roots of equation x²−5x+6=0 are",
+      "options": {
+        "A": "2,3",
+        "B": "1,6",
+        "C": "-2,-3",
+        "D": "0,6"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_MATH_3",
+      "questionNumber": 63,
+      "subject": "Mathematics",
+      "chapter": "Matrices",
+      "topic": "Determinants",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "If determinant of matrix [[a,b],[c,d]] is zero then",
+      "options": {
+        "A": "ad−bc=0",
+        "B": "ab−cd=0",
+        "C": "ac−bd=0",
+        "D": "a+b+c+d=0"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_MATH_4",
+      "questionNumber": 64,
+      "subject": "Mathematics",
+      "chapter": "Differentiation",
+      "topic": "Derivatives",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Derivative of sinx is",
+      "options": {
+        "A": "cosx",
+        "B": "-cosx",
+        "C": "sinx",
+        "D": "-sinx"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_MATH_5",
+      "questionNumber": 65,
+      "subject": "Mathematics",
+      "chapter": "Application of Derivatives",
+      "topic": "Maxima and Minima",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Maximum value of sinx is",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "π"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_MATH_6",
+      "questionNumber": 66,
+      "subject": "Mathematics",
+      "chapter": "Integrals",
+      "topic": "Indefinite Integration",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "∫x²dx equals",
+      "options": {
+        "A": "x³/3 + C",
+        "B": "x²/2 + C",
+        "C": "2x + C",
+        "D": "3x² + C"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_MATH_7",
+      "questionNumber": 67,
+      "subject": "Mathematics",
+      "chapter": "Coordinate Geometry",
+      "topic": "Straight Line",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Slope of line y=2x+3 is",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "-2",
+        "D": "1"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_MATH_8",
+      "questionNumber": 68,
+      "subject": "Mathematics",
+      "chapter": "Probability",
+      "topic": "Basic Probability",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Probability of getting head in fair coin toss is",
+      "options": {
+        "A": "0",
+        "B": "1/4",
+        "C": "1/2",
+        "D": "1"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_MATH_9",
+      "questionNumber": 69,
+      "subject": "Mathematics",
+      "chapter": "Complex Numbers",
+      "topic": "Imaginary Unit",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Value of i² is",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "i",
+        "D": "0"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    },
+    {
+      "questionId": "JM2023_MATH_10",
+      "questionNumber": 70,
+      "subject": "Mathematics",
+      "chapter": "Vectors",
+      "topic": "Dot Product",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Dot product of two perpendicular vectors is",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "0",
+        "D": "∞"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2023
+    }
+  ]
+}

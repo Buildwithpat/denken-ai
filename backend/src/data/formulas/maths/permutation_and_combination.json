@@ -1,0 +1,247 @@
+{
+  "chapterId": "math_permutation_and_combination_015",
+  "fileName": "permutation_and_combination.json",
+  "chapterName": "Permutation and Combination",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "permutation",
+    "combination",
+    "factorial",
+    "counting",
+    "probability"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_pnc_001",
+      "conceptName": "Factorial",
+      "description": "Basic factorial definition and properties.",
+      "formulaType": "factorial-formula",
+      "formulas": [
+        {
+          "formulaId": "math_pnc_001_f1",
+          "name": "Factorial Definition",
+          "equation": "n! = n(n-1)(n-2)...1",
+          "latex": "n!=n(n-1)(n-2)\\cdots1",
+          "meaning": "Product of first n natural numbers.",
+          "applications": ["Permutations", "Combinations"]
+        },
+        {
+          "formulaId": "math_pnc_001_f2",
+          "name": "Zero Factorial",
+          "equation": "0! = 1",
+          "latex": "0!=1",
+          "meaning": "Special factorial value."
+        },
+        {
+          "formulaId": "math_pnc_001_f3",
+          "name": "Recursive Formula",
+          "equation": "n! = n(n-1)!",
+          "latex": "n!=n(n-1)!",
+          "meaning": "Recursive property of factorial."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_pnc_002",
+      "conceptName": "Permutations",
+      "description": "Arrangements where order matters.",
+      "formulaType": "permutation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_pnc_002_f1",
+          "name": "Permutation Formula",
+          "equation": "ⁿPᵣ = n!/(n-r)!",
+          "latex": "{}^nP_r=\\frac{n!}{(n-r)!}",
+          "meaning": "Number of arrangements of r objects from n."
+        },
+        {
+          "formulaId": "math_pnc_002_f2",
+          "name": "Permutation Relation",
+          "equation": "ⁿPᵣ = ⁿCᵣ·r!",
+          "latex": "{}^nP_r={}^nC_r\\cdot r!",
+          "meaning": "Relation between permutations and combinations."
+        },
+        {
+          "formulaId": "math_pnc_002_f3",
+          "name": "Circular Permutation",
+          "equation": "(n-1)!",
+          "latex": "(n-1)!",
+          "meaning": "Arrangements in a circle."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_pnc_003",
+      "conceptName": "Combinations",
+      "description": "Selections where order does not matter.",
+      "formulaType": "combination-formula",
+      "formulas": [
+        {
+          "formulaId": "math_pnc_003_f1",
+          "name": "Combination Formula",
+          "equation": "ⁿCᵣ = n!/[r!(n-r)!]",
+          "latex": "{}^nC_r=\\frac{n!}{r!(n-r)!}",
+          "meaning": "Number of selections of r objects from n."
+        },
+        {
+          "formulaId": "math_pnc_003_f2",
+          "name": "Symmetry Property",
+          "equation": "ⁿCᵣ = ⁿCₙ₋ᵣ",
+          "latex": "{}^nC_r={}^nC_{n-r}",
+          "meaning": "Combination symmetry property."
+        },
+        {
+          "formulaId": "math_pnc_003_f3",
+          "name": "Pascal Identity",
+          "equation": "ⁿCᵣ + ⁿCᵣ₋₁ = ⁿ⁺¹Cᵣ",
+          "latex": "{}^nC_r+{}^nC_{r-1}={} ^{n+1}C_r",
+          "meaning": "Important recursive identity."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_pnc_004",
+      "conceptName": "Special Counting Principles",
+      "description": "Basic counting techniques.",
+      "formulaType": "counting-formula",
+      "formulas": [
+        {
+          "formulaId": "math_pnc_004_f1",
+          "name": "Fundamental Principle of Counting",
+          "equation": "m × n",
+          "latex": "m\\times n",
+          "meaning": "If one task can be done in m ways and another in n ways."
+        },
+        {
+          "formulaId": "math_pnc_004_f2",
+          "name": "Addition Principle",
+          "equation": "m + n",
+          "latex": "m+n",
+          "meaning": "Total ways when tasks are mutually exclusive."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_pnc_005",
+      "conceptName": "Permutations with Repetition",
+      "description": "Arrangements when repetition occurs.",
+      "formulaType": "repetition-formula",
+      "formulas": [
+        {
+          "formulaId": "math_pnc_005_f1",
+          "name": "Permutation with Repetition",
+          "equation": "n!/(p!q!r!)",
+          "latex": "\\frac{n!}{p!q!r!}",
+          "meaning": "Permutations when objects repeat."
+        },
+        {
+          "formulaId": "math_pnc_005_f2",
+          "name": "Repeated Selection",
+          "equation": "nʳ",
+          "latex": "n^r",
+          "meaning": "Ways when repetition allowed."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_pnc_006",
+      "conceptName": "Combinations with Repetition",
+      "description": "Selections allowing repetition.",
+      "formulaType": "repeated-combination-formula",
+      "formulas": [
+        {
+          "formulaId": "math_pnc_006_f1",
+          "name": "Combination with Repetition",
+          "equation": "ⁿ⁺ʳ⁻¹Cᵣ",
+          "latex": "{}^{n+r-1}C_r",
+          "meaning": "Selections with repetition allowed."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_pnc_007",
+      "conceptName": "Restricted Arrangements",
+      "description": "Arrangements under restrictions.",
+      "formulaType": "restricted-formula",
+      "formulas": [
+        {
+          "formulaId": "math_pnc_007_f1",
+          "name": "Objects Always Together",
+          "equation": "(n-r+1)! × r!",
+          "latex": "(n-r+1)!\\times r!",
+          "meaning": "When r objects remain together."
+        },
+        {
+          "formulaId": "math_pnc_007_f2",
+          "name": "Objects Never Together",
+          "equation": "Total arrangements - together arrangements",
+          "latex": "\\text{Total arrangements}-\\text{together arrangements}",
+          "meaning": "Restriction counting technique."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_pnc_008",
+      "conceptName": "Distribution Problems",
+      "description": "Distribution of objects into groups.",
+      "formulaType": "distribution-formula",
+      "formulas": [
+        {
+          "formulaId": "math_pnc_008_f1",
+          "name": "Distribution into Identical Groups",
+          "equation": "n!/(p!q!r!)",
+          "latex": "\\frac{n!}{p!q!r!}",
+          "meaning": "Distribution among identical groups."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_pnc_009",
+      "conceptName": "Derangements",
+      "description": "Permutations where no object remains in original position.",
+      "formulaType": "derangement-formula",
+      "formulas": [
+        {
+          "formulaId": "math_pnc_009_f1",
+          "name": "Derangement Formula",
+          "equation": "!n = n![1 - 1/1! + 1/2! - 1/3! + ...]",
+          "latex": "!n=n!\\left[1-\\frac1{1!}+\\frac1{2!}-\\frac1{3!}+\\cdots\\right]",
+          "meaning": "Formula for derangements."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Permutation depends on order.",
+    "Combination does not depend on order.",
+    "Circular arrangements reduce one degree of freedom.",
+    "Factorial grows very rapidly."
+  ],
+  "commonMistakes": [
+    "Using permutation instead of combination",
+    "Ignoring repeated objects",
+    "Mistakes in factorial simplification",
+    "Wrong interpretation of restrictions"
+  ],
+  "jeeAdvancedFocus": [
+    "Restricted arrangements",
+    "Derangements",
+    "Repeated combinations",
+    "Advanced counting problems"
+  ],
+  "neetFocus": [
+    "Basic permutations",
+    "Basic combinations",
+    "Factorial formulas",
+    "Simple counting principles"
+  ],
+  "keywords": [
+    "permutation",
+    "combination",
+    "factorial",
+    "counting",
+    "arrangements",
+    "selection"
+  ]
+}

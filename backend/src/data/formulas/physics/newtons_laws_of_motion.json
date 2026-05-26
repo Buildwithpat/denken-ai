@@ -1,0 +1,246 @@
+{
+  "chapterId": "physics_newtons_laws_of_motion_005",
+  "fileName": "newtons_laws_of_motion.json",
+  "chapterName": "Newton's Laws of Motion",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "newtons-laws",
+    "force",
+    "dynamics",
+    "motion",
+    "pseudo-force",
+    "constraint-motion",
+    "pulley-system"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_nlm_001",
+      "conceptName": "Newton's First Law",
+      "description": "A body remains at rest or in uniform motion unless acted upon by an external force.",
+      "formulaType": "law",
+      "formulas": [
+        {
+          "formulaId": "phy_nlm_001_f1",
+          "name": "Equilibrium Condition",
+          "equation": "ΣF = 0",
+          "latex": "\\Sigma F=0",
+          "meaning": "Net external force on body is zero.",
+          "applications": [
+            "Static equilibrium",
+            "Balanced force systems",
+            "Rest conditions"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_nlm_002",
+      "conceptName": "Newton's Second Law",
+      "description": "Rate of change of momentum is proportional to applied force.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_nlm_002_f1",
+          "name": "Force Equation",
+          "equation": "F = ma",
+          "latex": "F=ma",
+          "meaning": "Force equals mass multiplied by acceleration.",
+          "variables": {
+            "F": {
+              "meaning": "Net force",
+              "unit": "N"
+            },
+            "m": {
+              "meaning": "Mass",
+              "unit": "kg"
+            },
+            "a": {
+              "meaning": "Acceleration",
+              "unit": "m/s²"
+            }
+          },
+          "applications": [
+            "Pulley systems",
+            "Elevator motion",
+            "Connected bodies",
+            "Inclined planes"
+          ],
+          "commonMistakes": [
+            "Ignoring direction",
+            "Missing friction force",
+            "Wrong sign convention"
+          ]
+        },
+        {
+          "formulaId": "phy_nlm_002_f2",
+          "name": "Momentum Form",
+          "equation": "F = dp/dt",
+          "latex": "F=\\frac{dp}{dt}",
+          "meaning": "Force is rate of change of momentum.",
+          "applications": [
+            "Variable mass systems",
+            "Rocket propulsion",
+            "Impulse problems"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_nlm_003",
+      "conceptName": "Newton's Third Law",
+      "description": "Every action has an equal and opposite reaction.",
+      "formulaType": "law",
+      "formulas": [
+        {
+          "formulaId": "phy_nlm_003_f1",
+          "name": "Action Reaction Pair",
+          "equation": "Fab = -Fba",
+          "latex": "F_{ab}=-F_{ba}",
+          "meaning": "Forces between interacting bodies are equal and opposite.",
+          "applications": ["Normal reaction", "Walking", "Rocket motion"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_nlm_004",
+      "conceptName": "Momentum and Impulse",
+      "description": "Concepts involving motion and collision.",
+      "formulaType": "momentum-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_nlm_004_f1",
+          "name": "Linear Momentum",
+          "equation": "p = mv",
+          "latex": "p=mv",
+          "meaning": "Momentum of moving object.",
+          "applications": [
+            "Collisions",
+            "Impulse problems",
+            "Rocket propulsion"
+          ]
+        },
+        {
+          "formulaId": "phy_nlm_004_f2",
+          "name": "Impulse",
+          "equation": "J = FΔt",
+          "latex": "J=F\\Delta t",
+          "meaning": "Impulse due to force over time."
+        },
+        {
+          "formulaId": "phy_nlm_004_f3",
+          "name": "Impulse Momentum Theorem",
+          "equation": "J = Δp",
+          "latex": "J=\\Delta p",
+          "meaning": "Impulse equals change in momentum."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_nlm_005",
+      "conceptName": "Pseudo Force",
+      "description": "Fictitious force observed in non-inertial frames.",
+      "formulaType": "non-inertial-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_nlm_005_f1",
+          "name": "Pseudo Force",
+          "equation": "Fp = ma",
+          "latex": "F_p=ma",
+          "meaning": "Pseudo force acts opposite to frame acceleration.",
+          "applications": [
+            "Accelerating lift",
+            "Non-inertial frame analysis",
+            "Train problems"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_nlm_006",
+      "conceptName": "Connected Bodies and Pulley Systems",
+      "description": "Systems involving multiple masses.",
+      "formulaType": "constraint-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_nlm_006_f1",
+          "name": "Acceleration of Two Block System",
+          "equation": "a = (m1 - m2)g / (m1 + m2)",
+          "latex": "a=\\frac{(m_1-m_2)g}{m_1+m_2}",
+          "meaning": "Acceleration of Atwood machine.",
+          "conditions": ["Ideal pulley", "Massless string", "No friction"]
+        },
+        {
+          "formulaId": "phy_nlm_006_f2",
+          "name": "Tension in String",
+          "equation": "T = 2m1m2g / (m1 + m2)",
+          "latex": "T=\\frac{2m_1m_2g}{m_1+m_2}",
+          "meaning": "Tension in connected body system."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_nlm_007",
+      "conceptName": "Elevator Motion",
+      "description": "Apparent weight changes in accelerating lifts.",
+      "formulaType": "application-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_nlm_007_f1",
+          "name": "Apparent Weight Upward",
+          "equation": "N = m(g + a)",
+          "latex": "N=m(g+a)",
+          "meaning": "Normal reaction when lift accelerates upward."
+        },
+        {
+          "formulaId": "phy_nlm_007_f2",
+          "name": "Apparent Weight Downward",
+          "equation": "N = m(g - a)",
+          "latex": "N=m(g-a)",
+          "meaning": "Normal reaction when lift accelerates downward."
+        },
+        {
+          "formulaId": "phy_nlm_007_f3",
+          "name": "Weightlessness Condition",
+          "equation": "N = 0",
+          "latex": "N=0",
+          "meaning": "Occurs when downward acceleration equals g."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Newton's laws are valid only in inertial frames.",
+    "Action and reaction act on different bodies.",
+    "Pseudo force appears only in non-inertial frames.",
+    "Momentum is always conserved in isolated systems."
+  ],
+  "commonMistakes": [
+    "Applying action-reaction on same body",
+    "Ignoring pseudo force",
+    "Wrong free body diagram",
+    "Incorrect tension direction"
+  ],
+  "jeeAdvancedFocus": [
+    "Constraint motion",
+    "Advanced pulley systems",
+    "Pseudo force applications",
+    "Variable acceleration systems"
+  ],
+  "neetFocus": [
+    "Newton's laws basics",
+    "Free body diagrams",
+    "Momentum",
+    "Elevator problems"
+  ],
+  "keywords": [
+    "newtons laws",
+    "force",
+    "momentum",
+    "pseudo force",
+    "elevator motion",
+    "pulley system",
+    "constraint motion",
+    "impulse"
+  ]
+}

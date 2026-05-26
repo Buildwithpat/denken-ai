@@ -1,0 +1,240 @@
+{
+  "chapterId": "math_method_of_differentiation_007",
+  "fileName": "method_of_differentiation.json",
+  "chapterName": "Method of Differentiation",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "differentiation",
+    "derivatives",
+    "calculus",
+    "chain-rule",
+    "product-rule"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_diff_001",
+      "conceptName": "Definition of Derivative",
+      "description": "Fundamental definition of differentiation.",
+      "formulaType": "derivative-definition-formula",
+      "formulas": [
+        {
+          "formulaId": "math_diff_001_f1",
+          "name": "First Principle Definition",
+          "equation": "f'(x) = lim(h→0) [f(x+h)-f(x)]/h",
+          "latex": "f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}",
+          "meaning": "Derivative from first principle.",
+          "applications": ["Slope calculation", "Rate of change"]
+        }
+      ]
+    },
+    {
+      "conceptId": "math_diff_002",
+      "conceptName": "Basic Differentiation Formulas",
+      "description": "Standard derivative formulas.",
+      "formulaType": "basic-derivative-formula",
+      "formulas": [
+        {
+          "formulaId": "math_diff_002_f1",
+          "name": "Derivative of Constant",
+          "equation": "d(c)/dx = 0",
+          "latex": "\\frac{d(c)}{dx}=0",
+          "meaning": "Derivative of constant is zero."
+        },
+        {
+          "formulaId": "math_diff_002_f2",
+          "name": "Power Rule",
+          "equation": "d(xⁿ)/dx = nxⁿ⁻¹",
+          "latex": "\\frac{d(x^n)}{dx}=nx^{n-1}",
+          "meaning": "Derivative of power function."
+        },
+        {
+          "formulaId": "math_diff_002_f3",
+          "name": "Derivative of eˣ",
+          "equation": "d(eˣ)/dx = eˣ",
+          "latex": "\\frac{d(e^x)}{dx}=e^x",
+          "meaning": "Derivative of exponential function."
+        },
+        {
+          "formulaId": "math_diff_002_f4",
+          "name": "Derivative of logx",
+          "equation": "d(logx)/dx = 1/x",
+          "latex": "\\frac{d(\\log x)}{dx}=\\frac1x",
+          "meaning": "Derivative of logarithmic function."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_diff_003",
+      "conceptName": "Trigonometric Derivatives",
+      "description": "Derivatives of trigonometric functions.",
+      "formulaType": "trigonometric-derivative-formula",
+      "formulas": [
+        {
+          "formulaId": "math_diff_003_f1",
+          "name": "Derivative of sinx",
+          "equation": "d(sinx)/dx = cosx",
+          "latex": "\\frac{d(\\sin x)}{dx}=\\cos x",
+          "meaning": "Derivative of sine function."
+        },
+        {
+          "formulaId": "math_diff_003_f2",
+          "name": "Derivative of cosx",
+          "equation": "d(cosx)/dx = -sinx",
+          "latex": "\\frac{d(\\cos x)}{dx}=-\\sin x",
+          "meaning": "Derivative of cosine function."
+        },
+        {
+          "formulaId": "math_diff_003_f3",
+          "name": "Derivative of tanx",
+          "equation": "d(tanx)/dx = sec²x",
+          "latex": "\\frac{d(\\tan x)}{dx}=\\sec^2x",
+          "meaning": "Derivative of tangent function."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_diff_004",
+      "conceptName": "Inverse Trigonometric Derivatives",
+      "description": "Derivatives of inverse trigonometric functions.",
+      "formulaType": "inverse-trig-derivative-formula",
+      "formulas": [
+        {
+          "formulaId": "math_diff_004_f1",
+          "name": "Derivative of sin⁻¹x",
+          "equation": "d(sin⁻¹x)/dx = 1/√(1-x²)",
+          "latex": "\\frac{d(\\sin^{-1}x)}{dx}=\\frac1{\\sqrt{1-x^2}}",
+          "meaning": "Derivative of inverse sine."
+        },
+        {
+          "formulaId": "math_diff_004_f2",
+          "name": "Derivative of tan⁻¹x",
+          "equation": "d(tan⁻¹x)/dx = 1/(1+x²)",
+          "latex": "\\frac{d(\\tan^{-1}x)}{dx}=\\frac1{1+x^2}",
+          "meaning": "Derivative of inverse tangent."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_diff_005",
+      "conceptName": "Product and Quotient Rule",
+      "description": "Differentiation rules for products and quotients.",
+      "formulaType": "product-quotient-formula",
+      "formulas": [
+        {
+          "formulaId": "math_diff_005_f1",
+          "name": "Product Rule",
+          "equation": "d(uv)/dx = u(dv/dx) + v(du/dx)",
+          "latex": "\\frac{d(uv)}{dx}=u\\frac{dv}{dx}+v\\frac{du}{dx}",
+          "meaning": "Derivative of product of functions."
+        },
+        {
+          "formulaId": "math_diff_005_f2",
+          "name": "Quotient Rule",
+          "equation": "d(u/v)/dx = [v(du/dx)-u(dv/dx)]/v²",
+          "latex": "\\frac{d(u/v)}{dx}=\\frac{v\\frac{du}{dx}-u\\frac{dv}{dx}}{v^2}",
+          "meaning": "Derivative of quotient of functions."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_diff_006",
+      "conceptName": "Chain Rule",
+      "description": "Differentiation of composite functions.",
+      "formulaType": "chain-rule-formula",
+      "formulas": [
+        {
+          "formulaId": "math_diff_006_f1",
+          "name": "Chain Rule",
+          "equation": "d(f(g(x)))/dx = f'(g(x))·g'(x)",
+          "latex": "\\frac{d(f(g(x)))}{dx}=f'(g(x))\\cdot g'(x)",
+          "meaning": "Derivative of composite function."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_diff_007",
+      "conceptName": "Implicit Differentiation",
+      "description": "Differentiation when variables are mixed.",
+      "formulaType": "implicit-differentiation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_diff_007_f1",
+          "name": "Implicit Differentiation",
+          "equation": "Differentiate both sides w.r.t x",
+          "latex": "\\text{Differentiate both sides with respect to }x",
+          "meaning": "Method for implicit functions."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_diff_008",
+      "conceptName": "Parametric Differentiation",
+      "description": "Derivative for parametric equations.",
+      "formulaType": "parametric-differentiation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_diff_008_f1",
+          "name": "Parametric Derivative",
+          "equation": "dy/dx = (dy/dt)/(dx/dt)",
+          "latex": "\\frac{dy}{dx}=\\frac{dy/dt}{dx/dt}",
+          "meaning": "Derivative in parametric form."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_diff_009",
+      "conceptName": "Higher Order Derivatives",
+      "description": "Second and higher derivatives.",
+      "formulaType": "higher-derivative-formula",
+      "formulas": [
+        {
+          "formulaId": "math_diff_009_f1",
+          "name": "Second Derivative",
+          "equation": "d²y/dx²",
+          "latex": "\\frac{d^2y}{dx^2}",
+          "meaning": "Derivative of first derivative."
+        },
+        {
+          "formulaId": "math_diff_009_f2",
+          "name": "nth Derivative",
+          "equation": "dⁿy/dxⁿ",
+          "latex": "\\frac{d^ny}{dx^n}",
+          "meaning": "nth order derivative."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Chain rule is essential for composite functions.",
+    "Product rule applies only to multiplication of functions.",
+    "Implicit differentiation is used when y is not isolated.",
+    "Higher derivatives help analyze curvature and acceleration."
+  ],
+  "commonMistakes": [
+    "Forgetting chain rule",
+    "Wrong sign in trigonometric derivatives",
+    "Errors in quotient rule",
+    "Incorrect implicit differentiation"
+  ],
+  "jeeAdvancedFocus": [
+    "Implicit differentiation",
+    "Higher order derivatives",
+    "Parametric differentiation",
+    "Composite function problems"
+  ],
+  "neetFocus": [
+    "Basic derivative formulas",
+    "Trigonometric derivatives",
+    "Chain rule",
+    "Product and quotient rule"
+  ],
+  "keywords": [
+    "differentiation",
+    "derivatives",
+    "chain rule",
+    "product rule",
+    "implicit differentiation",
+    "calculus"
+  ]
+}

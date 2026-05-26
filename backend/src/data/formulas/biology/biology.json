@@ -1,0 +1,245 @@
+{
+  "fileName": "neet_biology_complete_formula_sheet.json",
+  "subject": "Biology",
+  "exam": "NEET UG",
+  "description": "Complete NEET UG Biology formula and equation collection including Genetics, Ecology, Human Physiology, Plant Physiology, Biotechnology and Population studies.",
+  "chapters": [
+    {
+      "chapterName": "Plant Growth and Development",
+      "formulas": [
+        {
+          "name": "Arithmetic Growth",
+          "equation": "Lt = L0 + rt",
+          "latex": "L_t = L_0 + rt",
+          "meaning": "Linear growth over time."
+        },
+        {
+          "name": "Exponential Growth",
+          "equation": "Wt = W0 e^(rt)",
+          "latex": "W_t = W_0 e^{rt}",
+          "meaning": "Exponential increase in size."
+        },
+        {
+          "name": "Growth Rate",
+          "equation": "Growth Rate = Change in size / Time",
+          "latex": "\\text{Growth Rate}=\\frac{\\text{Change in size}}{\\text{Time}}",
+          "meaning": "Rate of increase in growth."
+        }
+      ]
+    },
+    {
+      "chapterName": "Respiration in Plants",
+      "formulas": [
+        {
+          "name": "Respiratory Quotient",
+          "equation": "RQ = CO2 released / O2 consumed",
+          "latex": "RQ=\\frac{CO_2\\ released}{O_2\\ consumed}",
+          "meaning": "Ratio of carbon dioxide evolved to oxygen consumed."
+        }
+      ]
+    },
+    {
+      "chapterName": "Human Circulatory System",
+      "formulas": [
+        {
+          "name": "Cardiac Output",
+          "equation": "Cardiac Output = Stroke Volume × Heart Rate",
+          "latex": "CO = SV \\times HR",
+          "meaning": "Blood pumped by heart per minute."
+        },
+        {
+          "name": "Renal Blood Flow",
+          "equation": "Renal Blood Flow = 1/5 × Cardiac Output",
+          "latex": "RBF = \\frac{1}{5}CO",
+          "meaning": "Blood supplied to kidneys."
+        },
+        {
+          "name": "Number of Cardiac Cycles",
+          "equation": "Number of Cardiac Cycles = Number of Heart Beats",
+          "latex": "\\text{Cardiac Cycles} = \\text{Heart Beats}",
+          "meaning": "One cardiac cycle per heartbeat."
+        }
+      ]
+    },
+    {
+      "chapterName": "Human Reproduction",
+      "formulas": [
+        {
+          "name": "Day of Ovulation",
+          "equation": "Ovulation Day = n - 14",
+          "latex": "\\text{Ovulation Day}=n-14",
+          "meaning": "Ovulation occurs 14 days before next menstruation."
+        }
+      ]
+    },
+    {
+      "chapterName": "Mendelian Genetics",
+      "formulas": [
+        {
+          "name": "Number of Gametes",
+          "equation": "2^n",
+          "latex": "2^n",
+          "meaning": "n is number of heterozygous pairs."
+        },
+        {
+          "name": "Number of Genotypes",
+          "equation": "3^n",
+          "latex": "3^n",
+          "meaning": "Possible genotype combinations."
+        },
+        {
+          "name": "Number of Phenotypes",
+          "equation": "2^n",
+          "latex": "2^n",
+          "meaning": "Possible phenotype combinations."
+        },
+        {
+          "name": "Number of Offspring Combinations",
+          "equation": "(Gametes of Parent 1) × (Gametes of Parent 2)",
+          "latex": "(G_1)(G_2)",
+          "meaning": "Total zygotic combinations."
+        }
+      ]
+    },
+    {
+      "chapterName": "Cell Division",
+      "formulas": [
+        {
+          "name": "Mitotic Generations",
+          "equation": "x = 2^n",
+          "latex": "x=2^n",
+          "meaning": "x cells formed after n generations."
+        },
+        {
+          "name": "Number of Mitosis",
+          "equation": "x - 1",
+          "latex": "x-1",
+          "meaning": "Mitosis required for x cells."
+        }
+      ]
+    },
+    {
+      "chapterName": "Molecular Basis of Inheritance",
+      "formulas": [
+        {
+          "name": "Chargaff's Rule",
+          "equation": "A + G = T + C",
+          "latex": "A+G=T+C",
+          "meaning": "Purine equals pyrimidine."
+        },
+        {
+          "name": "Base Pair Ratio",
+          "equation": "(A + G)/(T + C) = 1",
+          "latex": "\\frac{A+G}{T+C}=1",
+          "meaning": "Ratio of bases."
+        },
+        {
+          "name": "DNA Length",
+          "equation": "DNA Length = Number of Base Pairs × 0.34 nm",
+          "latex": "\\text{DNA Length}=\\text{Base Pairs}\\times0.34\\ nm",
+          "meaning": "Distance between consecutive base pairs."
+        }
+      ]
+    },
+    {
+      "chapterName": "Evolution",
+      "formulas": [
+        {
+          "name": "Hardy-Weinberg Principle",
+          "equation": "p^2 + 2pq + q^2 = 1",
+          "latex": "p^2+2pq+q^2=1",
+          "meaning": "Allelic frequency equilibrium."
+        },
+        {
+          "name": "Allelic Frequency",
+          "equation": "p + q = 1",
+          "latex": "p+q=1",
+          "meaning": "Frequency of dominant and recessive alleles."
+        }
+      ]
+    },
+    {
+      "chapterName": "Organisms and Populations",
+      "formulas": [
+        {
+          "name": "Population Density",
+          "equation": "Nt+1 = Nt + [(B + I) - (D + E)]",
+          "latex": "N_{t+1}=N_t+[(B+I)-(D+E)]",
+          "meaning": "Population change equation."
+        },
+        {
+          "name": "Exponential Population Growth",
+          "equation": "Nt = N0 e^(rt)",
+          "latex": "N_t=N_0e^{rt}",
+          "meaning": "Exponential population increase."
+        },
+        {
+          "name": "Logistic Growth Equation",
+          "equation": "dN/dt = rN[(K-N)/K]",
+          "latex": "\\frac{dN}{dt}=rN\\left(\\frac{K-N}{K}\\right)",
+          "meaning": "Verhulst-Pearl logistic growth."
+        }
+      ]
+    },
+    {
+      "chapterName": "Biotechnology",
+      "formulas": [
+        {
+          "name": "Centrifugation Relation",
+          "equation": "RCF = 1.118 × 10^-5 × r × RPM^2",
+          "latex": "RCF=1.118\\times10^{-5}\\times r\\times RPM^2",
+          "meaning": "Relative centrifugal force."
+        }
+      ]
+    },
+    {
+      "chapterName": "Ecology",
+      "formulas": [
+        {
+          "name": "Population Growth Rate",
+          "equation": "dN/dt = rN",
+          "latex": "\\frac{dN}{dt}=rN",
+          "meaning": "Population growth relation."
+        },
+        {
+          "name": "Natality Rate",
+          "equation": "Natality = Number of births / Population",
+          "latex": "\\text{Natality}=\\frac{\\text{Births}}{\\text{Population}}",
+          "meaning": "Birth rate."
+        },
+        {
+          "name": "Mortality Rate",
+          "equation": "Mortality = Number of deaths / Population",
+          "latex": "\\text{Mortality}=\\frac{\\text{Deaths}}{\\text{Population}}",
+          "meaning": "Death rate."
+        }
+      ]
+    },
+    {
+      "chapterName": "Microbes in Human Welfare",
+      "formulas": [
+        {
+          "name": "Biogas Composition",
+          "equation": "CH4 ≈ 50-70%",
+          "latex": "CH_4\\approx50-70\\%",
+          "meaning": "Methane content in biogas."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "NEET Biology is concept and NCERT focused rather than formula heavy.",
+    "Hardy-Weinberg equation is one of the most important biology equations.",
+    "Population ecology equations are frequently asked.",
+    "Genetics formulas are very important for MCQs.",
+    "Most biology formulas are directly NCERT based."
+  ],
+  "mostImportantForNEET": [
+    "Hardy-Weinberg Principle",
+    "Respiratory Quotient",
+    "Cardiac Output",
+    "Population Growth Equations",
+    "Mendelian Genetics formulas",
+    "DNA Length formula"
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "chapterId": "chem_general_organic_chemistry_021",
+  "fileName": "general_organic_chemistry.json",
+  "chapterName": "General Organic Chemistry",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "general-organic-chemistry",
+    "reaction-intermediates",
+    "inductive-effect",
+    "resonance",
+    "hyperconjugation",
+    "acidity-basicity"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_goc_001",
+      "conceptName": "Bond Fission",
+      "description": "Breaking of covalent bonds in organic compounds.",
+      "formulaType": "bond-fission-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_goc_001_f1",
+          "name": "Homolytic Cleavage",
+          "equation": "A:B → A· + B·",
+          "latex": "A:B\\rightarrow A\\cdot+B\\cdot",
+          "meaning": "Equal bond breaking forming free radicals.",
+          "applications": [
+            "Free radical reactions",
+            "Organic reaction mechanisms"
+          ]
+        },
+        {
+          "formulaId": "chem_goc_001_f2",
+          "name": "Heterolytic Cleavage",
+          "equation": "A:B → A⁺ + :B⁻",
+          "latex": "A:B\\rightarrow A^+ + :B^-",
+          "meaning": "Unequal bond breaking forming ions."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_goc_002",
+      "conceptName": "Reaction Intermediates",
+      "description": "Short-lived species formed during reactions.",
+      "formulaType": "intermediate-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_goc_002_f1",
+          "name": "Carbocation",
+          "equation": "R₃C⁺",
+          "latex": "R_3C^+",
+          "meaning": "Positively charged carbon species."
+        },
+        {
+          "formulaId": "chem_goc_002_f2",
+          "name": "Carbanion",
+          "equation": "R₃C⁻",
+          "latex": "R_3C^-",
+          "meaning": "Negatively charged carbon species."
+        },
+        {
+          "formulaId": "chem_goc_002_f3",
+          "name": "Free Radical",
+          "equation": "R·",
+          "latex": "R\\cdot",
+          "meaning": "Neutral species with unpaired electron."
+        },
+        {
+          "formulaId": "chem_goc_002_f4",
+          "name": "Carbene",
+          "equation": ":CR₂",
+          "latex": ":CR_2",
+          "meaning": "Neutral divalent carbon species."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_goc_003",
+      "conceptName": "Inductive Effect",
+      "description": "Permanent displacement of sigma electrons.",
+      "formulaType": "inductive-effect-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_goc_003_f1",
+          "name": "+I Effect Order",
+          "equation": "(CH₃)₃C− > (CH₃)₂CH− > C₂H₅− > CH₃−",
+          "latex": "(CH_3)_3C^->(CH_3)_2CH^->C_2H_5^->CH_3^-",
+          "meaning": "Order of electron donating inductive effect."
+        },
+        {
+          "formulaId": "chem_goc_003_f2",
+          "name": "-I Effect Order",
+          "equation": "NO₂ > CN > COOH > F > Cl > Br > I",
+          "latex": "NO_2>CN>COOH>F>Cl>Br>I",
+          "meaning": "Order of electron withdrawing inductive effect."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_goc_004",
+      "conceptName": "Resonance Effect",
+      "description": "Delocalization of electrons in conjugated systems.",
+      "formulaType": "resonance-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_goc_004_f1",
+          "name": "Resonance Hybrid",
+          "equation": "Actual structure = Resonance hybrid",
+          "latex": "\\text{Actual structure}=\\text{Resonance hybrid}",
+          "meaning": "Real molecule is hybrid of resonance structures."
+        },
+        {
+          "formulaId": "chem_goc_004_f2",
+          "name": "Resonance Energy",
+          "equation": "Resonance energy = Hybrid energy - Canonical structure energy",
+          "latex": "\\text{Resonance energy}=\\text{Hybrid energy}-\\text{Canonical structure energy}",
+          "meaning": "Extra stability due to resonance."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_goc_005",
+      "conceptName": "Hyperconjugation",
+      "description": "Delocalization involving sigma electrons.",
+      "formulaType": "hyperconjugation-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_goc_005_f1",
+          "name": "Hyperconjugative Structures",
+          "equation": "Number of α-H = Number of hyperconjugative structures",
+          "latex": "\\text{Number of }\\alpha-H=\\text{Number of hyperconjugative structures}",
+          "meaning": "Hyperconjugation depends on alpha hydrogens."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_goc_006",
+      "conceptName": "Acidity and Basicity",
+      "description": "Strength of acids and bases in organic chemistry.",
+      "formulaType": "acidity-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_goc_006_f1",
+          "name": "Acid Dissociation",
+          "equation": "HA ⇌ H⁺ + A⁻",
+          "latex": "HA\\rightleftharpoons H^+ + A^-",
+          "meaning": "General acid dissociation equation."
+        },
+        {
+          "formulaId": "chem_goc_006_f2",
+          "name": "Acidity Order",
+          "equation": "Higher stability of conjugate base → Higher acidity",
+          "latex": "\\text{Higher stability of conjugate base}\\rightarrow\\text{Higher acidity}",
+          "meaning": "Acidity depends on conjugate base stability."
+        },
+        {
+          "formulaId": "chem_goc_006_f3",
+          "name": "Basicity Order",
+          "equation": "Higher availability of lone pair → Higher basicity",
+          "latex": "\\text{Higher availability of lone pair}\\rightarrow\\text{Higher basicity}",
+          "meaning": "Basicity depends on lone pair availability."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_goc_007",
+      "conceptName": "Electrophiles and Nucleophiles",
+      "description": "Reactive species in organic reactions.",
+      "formulaType": "reaction-species-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_goc_007_f1",
+          "name": "Electrophile",
+          "equation": "Electron pair acceptor",
+          "latex": "\\text{Electron pair acceptor}",
+          "meaning": "Species deficient in electrons."
+        },
+        {
+          "formulaId": "chem_goc_007_f2",
+          "name": "Nucleophile",
+          "equation": "Electron pair donor",
+          "latex": "\\text{Electron pair donor}",
+          "meaning": "Species rich in electrons."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_goc_008",
+      "conceptName": "Organic Reaction Mechanisms",
+      "description": "Types of organic reactions.",
+      "formulaType": "mechanism-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_goc_008_f1",
+          "name": "Substitution Reaction",
+          "equation": "R-X + Y⁻ → R-Y + X⁻",
+          "latex": "R-X+Y^-\\rightarrow R-Y+X^-",
+          "meaning": "Replacement of one group by another."
+        },
+        {
+          "formulaId": "chem_goc_008_f2",
+          "name": "Addition Reaction",
+          "equation": "C=C + X-Y → X-C-C-Y",
+          "latex": "C=C+X-Y\\rightarrow X-C-C-Y",
+          "meaning": "Addition across multiple bond."
+        },
+        {
+          "formulaId": "chem_goc_008_f3",
+          "name": "Elimination Reaction",
+          "equation": "R-CH₂-CH₂-X → Alkene + HX",
+          "latex": "R-CH_2-CH_2-X\\rightarrow\\text{Alkene}+HX",
+          "meaning": "Removal of atoms/groups forming multiple bond."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Carbocation stability order: 3° > 2° > 1° > CH₃⁺.",
+    "Resonance stabilizes molecules and intermediates.",
+    "Electron withdrawing groups increase acidity.",
+    "Hyperconjugation is also called no-bond resonance."
+  ],
+  "commonMistakes": [
+    "Confusing inductive and resonance effects",
+    "Wrong carbocation stability order",
+    "Incorrect acidity/basicity trends",
+    "Ignoring resonance stabilization"
+  ],
+  "jeeAdvancedFocus": [
+    "Reaction intermediate stability",
+    "Resonance and hyperconjugation",
+    "Acidity/basicity comparisons",
+    "Organic reaction mechanisms"
+  ],
+  "neetFocus": [
+    "Inductive effect",
+    "Resonance",
+    "Reaction intermediates",
+    "Electrophiles and nucleophiles"
+  ],
+  "keywords": [
+    "general organic chemistry",
+    "inductive effect",
+    "resonance",
+    "hyperconjugation",
+    "carbocation",
+    "carbanion",
+    "electrophile",
+    "nucleophile"
+  ]
+}

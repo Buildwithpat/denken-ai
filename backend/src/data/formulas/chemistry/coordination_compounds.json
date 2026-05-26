@@ -1,0 +1,221 @@
+{
+  "chapterId": "chem_coordination_compounds_013",
+  "fileName": "coordination_compounds.json",
+  "chapterName": "Coordination Compounds",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "coordination-compounds",
+    "werner-theory",
+    "crystal-field-theory",
+    "ligands",
+    "isomerism",
+    "magnetic-moment"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_coord_001",
+      "conceptName": "Basic Terminology",
+      "description": "Important terms used in coordination chemistry.",
+      "formulaType": "coordination-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_coord_001_f1",
+          "name": "Coordination Number",
+          "equation": "CN = Number of donor atoms attached to central metal",
+          "latex": "CN=\\text{Number of donor atoms attached to central metal}",
+          "meaning": "Total number of coordinate bonds formed by central atom.",
+          "applications": ["Geometry prediction", "Hybridization determination"]
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_coord_002",
+      "conceptName": "Werner Theory",
+      "description": "Explains primary and secondary valencies.",
+      "formulaType": "werner-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_coord_002_f1",
+          "name": "Primary Valency",
+          "equation": "Primary valency = Oxidation state",
+          "latex": "\\text{Primary valency}=\\text{Oxidation state}",
+          "meaning": "Ionizable valency satisfied by negative ions."
+        },
+        {
+          "formulaId": "chem_coord_002_f2",
+          "name": "Secondary Valency",
+          "equation": "Secondary valency = Coordination number",
+          "latex": "\\text{Secondary valency}=\\text{Coordination number}",
+          "meaning": "Non-ionizable valency satisfied by ligands."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_coord_003",
+      "conceptName": "Oxidation Number",
+      "description": "Charge on central metal atom.",
+      "formulaType": "oxidation-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_coord_003_f1",
+          "name": "Oxidation State Rule",
+          "equation": "Oxidation state + ligand charges = complex charge",
+          "latex": "\\text{Oxidation state}+\\text{ligand charges}=\\text{complex charge}",
+          "meaning": "Used to determine oxidation number of metal."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_coord_004",
+      "conceptName": "Effective Atomic Number",
+      "description": "Total electrons around central metal.",
+      "formulaType": "ean-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_coord_004_f1",
+          "name": "EAN Formula",
+          "equation": "EAN = Z - Oxidation state + electrons donated by ligands",
+          "latex": "EAN=Z-\\text{Oxidation state}+\\text{electrons donated by ligands}",
+          "meaning": "Effective atomic number calculation."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_coord_005",
+      "conceptName": "Valence Bond Theory",
+      "description": "Hybridization and geometry of complexes.",
+      "formulaType": "vbt-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_coord_005_f1",
+          "name": "Magnetic Moment",
+          "equation": "μ = √n(n+2) BM",
+          "latex": "\\mu=\\sqrt{n(n+2)}\\,BM",
+          "meaning": "Magnetic moment of coordination compounds."
+        },
+        {
+          "formulaId": "chem_coord_005_f2",
+          "name": "Square Planar Hybridization",
+          "equation": "dsp²",
+          "latex": "dsp^2",
+          "meaning": "Hybridization for square planar geometry."
+        },
+        {
+          "formulaId": "chem_coord_005_f3",
+          "name": "Octahedral Inner Orbital Complex",
+          "equation": "d²sp³",
+          "latex": "d^2sp^3",
+          "meaning": "Hybridization for inner orbital octahedral complex."
+        },
+        {
+          "formulaId": "chem_coord_005_f4",
+          "name": "Octahedral Outer Orbital Complex",
+          "equation": "sp³d²",
+          "latex": "sp^3d^2",
+          "meaning": "Hybridization for outer orbital octahedral complex."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_coord_006",
+      "conceptName": "Crystal Field Theory",
+      "description": "Splitting of d-orbitals in ligand field.",
+      "formulaType": "cft-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_coord_006_f1",
+          "name": "Crystal Field Splitting Energy",
+          "equation": "Δ₀ = Energy gap between t₂g and eg orbitals",
+          "latex": "\\Delta_0=\\text{Energy gap between }t_{2g}\\text{ and }e_g\\text{ orbitals}",
+          "meaning": "Octahedral crystal field splitting."
+        },
+        {
+          "formulaId": "chem_coord_006_f2",
+          "name": "Tetrahedral Splitting",
+          "equation": "Δt = (4/9)Δ₀",
+          "latex": "\\Delta_t=\\frac{4}{9}\\Delta_0",
+          "meaning": "Relation between tetrahedral and octahedral splitting."
+        },
+        {
+          "formulaId": "chem_coord_006_f3",
+          "name": "CFSE Formula",
+          "equation": "CFSE = (-0.4 × nₜ₂g + 0.6 × neg)Δ₀",
+          "latex": "CFSE=(-0.4\\times n_{t_{2g}}+0.6\\times n_{e_g})\\Delta_0",
+          "meaning": "Crystal field stabilization energy."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_coord_007",
+      "conceptName": "Isomerism",
+      "description": "Different arrangements in coordination compounds.",
+      "formulaType": "isomerism-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_coord_007_f1",
+          "name": "Geometrical Isomerism",
+          "equation": "cis ↔ trans",
+          "latex": "cis\\leftrightarrow trans",
+          "meaning": "Different spatial arrangement of ligands."
+        },
+        {
+          "formulaId": "chem_coord_007_f2",
+          "name": "Optical Isomerism",
+          "equation": "d-form ≠ l-form",
+          "latex": "d\\text{-form}\\neq l\\text{-form}",
+          "meaning": "Non-superimposable mirror images."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_coord_008",
+      "conceptName": "Stability Constant",
+      "description": "Measure of complex stability.",
+      "formulaType": "stability-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_coord_008_f1",
+          "name": "Formation Constant",
+          "equation": "Kf = [Complex]/([Metal][Ligand])",
+          "latex": "K_f=\\frac{[Complex]}{[Metal][Ligand]}",
+          "meaning": "Equilibrium constant for complex formation."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Ligands donate lone pair electrons to central metal atom.",
+    "Strong field ligands cause electron pairing.",
+    "Coordination compounds exhibit various types of isomerism.",
+    "Magnetic moment depends on number of unpaired electrons."
+  ],
+  "commonMistakes": [
+    "Incorrect oxidation state calculation",
+    "Wrong hybridization assignment",
+    "Confusing inner and outer orbital complexes",
+    "Incorrect CFSE calculation"
+  ],
+  "jeeAdvancedFocus": [
+    "CFT splitting calculations",
+    "Magnetic moment numericals",
+    "Hybridization and geometry",
+    "Coordination isomerism"
+  ],
+  "neetFocus": [
+    "Werner theory",
+    "Ligands and coordination number",
+    "Magnetic properties",
+    "Crystal field theory basics"
+  ],
+  "keywords": [
+    "coordination compounds",
+    "crystal field theory",
+    "ligands",
+    "coordination number",
+    "magnetic moment",
+    "CFSE",
+    "hybridization",
+    "isomerism"
+  ]
+}

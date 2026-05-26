@@ -1,0 +1,263 @@
+{
+  "chapterId": "physics_circular_motion_008",
+  "fileName": "circular_motion.json",
+  "chapterName": "Circular Motion",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "circular-motion",
+    "centripetal-force",
+    "angular-motion",
+    "banking",
+    "vertical-circle",
+    "rotational-dynamics"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_cm_001",
+      "conceptName": "Angular Quantities",
+      "description": "Basic rotational and angular motion parameters.",
+      "formulaType": "angular-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cm_001_f1",
+          "name": "Angular Displacement",
+          "equation": "θ = s/r",
+          "latex": "\\theta=\\frac{s}{r}",
+          "meaning": "Angle subtended by arc length.",
+          "variables": {
+            "θ": {
+              "meaning": "Angular displacement",
+              "unit": "radian"
+            },
+            "s": {
+              "meaning": "Arc length",
+              "unit": "m"
+            },
+            "r": {
+              "meaning": "Radius",
+              "unit": "m"
+            }
+          }
+        },
+        {
+          "formulaId": "phy_cm_001_f2",
+          "name": "Angular Velocity",
+          "equation": "ω = dθ/dt",
+          "latex": "\\omega=\\frac{d\\theta}{dt}",
+          "meaning": "Rate of change of angular displacement."
+        },
+        {
+          "formulaId": "phy_cm_001_f3",
+          "name": "Angular Acceleration",
+          "equation": "α = dω/dt",
+          "latex": "\\alpha=\\frac{d\\omega}{dt}",
+          "meaning": "Rate of change of angular velocity."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_cm_002",
+      "conceptName": "Linear and Angular Relations",
+      "description": "Relations between translational and rotational quantities.",
+      "formulaType": "relation-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cm_002_f1",
+          "name": "Linear Velocity Relation",
+          "equation": "v = rω",
+          "latex": "v=r\\omega",
+          "meaning": "Relation between linear and angular velocity.",
+          "applications": [
+            "Rotating bodies",
+            "Circular tracks",
+            "Wheels and gears"
+          ]
+        },
+        {
+          "formulaId": "phy_cm_002_f2",
+          "name": "Tangential Acceleration",
+          "equation": "at = rα",
+          "latex": "a_t=r\\alpha",
+          "meaning": "Acceleration along tangent."
+        },
+        {
+          "formulaId": "phy_cm_002_f3",
+          "name": "Centripetal Acceleration",
+          "equation": "ac = v²/r",
+          "latex": "a_c=\\frac{v^2}{r}",
+          "meaning": "Acceleration towards center of circular path.",
+          "relatedFormulas": ["ac = rω²"]
+        },
+        {
+          "formulaId": "phy_cm_002_f4",
+          "name": "Angular Form of Centripetal Acceleration",
+          "equation": "ac = rω²",
+          "latex": "a_c=r\\omega^2",
+          "meaning": "Centripetal acceleration in angular terms."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_cm_003",
+      "conceptName": "Centripetal Force",
+      "description": "Force required to maintain circular motion.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cm_003_f1",
+          "name": "Centripetal Force",
+          "equation": "Fc = mv²/r",
+          "latex": "F_c=\\frac{mv^2}{r}",
+          "meaning": "Force acting towards center of circular path.",
+          "applications": [
+            "Planetary motion",
+            "Vehicle turning",
+            "Vertical circular motion"
+          ],
+          "commonMistakes": [
+            "Treating centripetal force as separate force",
+            "Ignoring direction toward center"
+          ]
+        },
+        {
+          "formulaId": "phy_cm_003_f2",
+          "name": "Angular Form of Centripetal Force",
+          "equation": "Fc = mrω²",
+          "latex": "F_c=mr\\omega^2",
+          "meaning": "Centripetal force in angular form."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_cm_004",
+      "conceptName": "Time Period and Frequency",
+      "description": "Circular motion timing relations.",
+      "formulaType": "time-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cm_004_f1",
+          "name": "Time Period",
+          "equation": "T = 2π/ω",
+          "latex": "T=\\frac{2\\pi}{\\omega}",
+          "meaning": "Time taken for one complete revolution."
+        },
+        {
+          "formulaId": "phy_cm_004_f2",
+          "name": "Frequency",
+          "equation": "f = 1/T",
+          "latex": "f=\\frac{1}{T}",
+          "meaning": "Number of revolutions per second."
+        },
+        {
+          "formulaId": "phy_cm_004_f3",
+          "name": "Angular Velocity Frequency Relation",
+          "equation": "ω = 2πf",
+          "latex": "\\omega=2\\pi f",
+          "meaning": "Relation between angular velocity and frequency."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_cm_005",
+      "conceptName": "Banking of Roads",
+      "description": "Circular motion on inclined roads.",
+      "formulaType": "banking-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cm_005_f1",
+          "name": "Ideal Banking Condition",
+          "equation": "tanθ = v²/rg",
+          "latex": "\\tan\\theta=\\frac{v^2}{rg}",
+          "meaning": "Condition for safe turning without friction.",
+          "applications": ["Road design", "Vehicle dynamics"]
+        },
+        {
+          "formulaId": "phy_cm_005_f2",
+          "name": "Maximum Safe Speed",
+          "equation": "vmax = √(rg(tanθ + μ)/(1 - μtanθ))",
+          "latex": "v_{max}=\\sqrt{\\frac{rg(\\tan\\theta+\\mu)}{1-\\mu\\tan\\theta}}",
+          "meaning": "Maximum speed before skidding outward."
+        },
+        {
+          "formulaId": "phy_cm_005_f3",
+          "name": "Minimum Safe Speed",
+          "equation": "vmin = √(rg(tanθ - μ)/(1 + μtanθ))",
+          "latex": "v_{min}=\\sqrt{\\frac{rg(\\tan\\theta-\\mu)}{1+\\mu\\tan\\theta}}",
+          "meaning": "Minimum speed before skidding inward."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_cm_006",
+      "conceptName": "Vertical Circular Motion",
+      "description": "Motion in vertical circular paths.",
+      "formulaType": "vertical-circle-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_cm_006_f1",
+          "name": "Minimum Velocity at Top",
+          "equation": "vmin = √(rg)",
+          "latex": "v_{min}=\\sqrt{rg}",
+          "meaning": "Minimum speed required at highest point.",
+          "applications": ["Loop-the-loop", "Roller coaster", "String motion"]
+        },
+        {
+          "formulaId": "phy_cm_006_f2",
+          "name": "Minimum Velocity at Bottom",
+          "equation": "vbottom = √(5rg)",
+          "latex": "v_{bottom}=\\sqrt{5rg}",
+          "meaning": "Minimum speed at bottom to complete vertical circle."
+        },
+        {
+          "formulaId": "phy_cm_006_f3",
+          "name": "Tension at Top",
+          "equation": "T + mg = mv²/r",
+          "latex": "T+mg=\\frac{mv^2}{r}",
+          "meaning": "Force balance at highest point."
+        },
+        {
+          "formulaId": "phy_cm_006_f4",
+          "name": "Tension at Bottom",
+          "equation": "T - mg = mv²/r",
+          "latex": "T-mg=\\frac{mv^2}{r}",
+          "meaning": "Force balance at lowest point."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Centripetal force is not a separate force; it is the net inward force.",
+    "Centripetal acceleration always acts toward the center.",
+    "Velocity direction changes continuously in circular motion.",
+    "Uniform circular motion has constant speed but changing velocity."
+  ],
+  "commonMistakes": [
+    "Confusing centripetal and centrifugal force",
+    "Ignoring radial direction",
+    "Using tangential velocity incorrectly",
+    "Wrong force balance in vertical circles"
+  ],
+  "jeeAdvancedFocus": [
+    "Vertical circular motion",
+    "Advanced banking problems",
+    "Variable speed circular motion",
+    "Constraint force analysis"
+  ],
+  "neetFocus": [
+    "Centripetal force",
+    "Angular velocity relations",
+    "Banking basics",
+    "Time period and frequency"
+  ],
+  "keywords": [
+    "circular motion",
+    "centripetal force",
+    "angular velocity",
+    "banking of roads",
+    "vertical circle",
+    "centripetal acceleration",
+    "frequency",
+    "time period"
+  ]
+}

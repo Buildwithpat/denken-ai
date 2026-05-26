@@ -1,0 +1,249 @@
+{
+  "chapterId": "chem_polymers_028",
+  "fileName": "polymers.json",
+  "chapterName": "Polymers",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "NEET"],
+  "tags": [
+    "polymers",
+    "addition-polymerization",
+    "condensation-polymerization",
+    "copolymers",
+    "biodegradable-polymers",
+    "synthetic-rubber"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_poly_001",
+      "conceptName": "Basic Terms in Polymer Chemistry",
+      "description": "Fundamental concepts related to polymers.",
+      "formulaType": "polymer-basics-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_poly_001_f1",
+          "name": "Monomer Definition",
+          "equation": "Small repeating unit → Polymer",
+          "latex": "\\text{Small repeating unit}\\rightarrow\\text{Polymer}",
+          "meaning": "Monomers combine to form polymers.",
+          "applications": ["Polymer synthesis", "Industrial chemistry"]
+        },
+        {
+          "formulaId": "chem_poly_001_f2",
+          "name": "Degree of Polymerization",
+          "equation": "n = Molecular mass of polymer / Molecular mass of monomer",
+          "latex": "n=\\frac{\\text{Molecular mass of polymer}}{\\text{Molecular mass of monomer}}",
+          "meaning": "Number of repeating monomer units."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_poly_002",
+      "conceptName": "Addition Polymerization",
+      "description": "Polymerization without elimination of small molecules.",
+      "formulaType": "addition-polymer-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_poly_002_f1",
+          "name": "Polyethylene Formation",
+          "equation": "nCH₂=CH₂ → (-CH₂-CH₂-)n",
+          "latex": "nCH_2=CH_2\\rightarrow(-CH_2-CH_2-)_n",
+          "meaning": "Formation of polyethylene from ethene."
+        },
+        {
+          "formulaId": "chem_poly_002_f2",
+          "name": "PVC Formation",
+          "equation": "nCH₂=CHCl → (-CH₂-CHCl-)n",
+          "latex": "nCH_2=CHCl\\rightarrow(-CH_2-CHCl-)_n",
+          "meaning": "Formation of polyvinyl chloride."
+        },
+        {
+          "formulaId": "chem_poly_002_f3",
+          "name": "Teflon Formation",
+          "equation": "nCF₂=CF₂ → (-CF₂-CF₂-)n",
+          "latex": "nCF_2=CF_2\\rightarrow(-CF_2-CF_2-)_n",
+          "meaning": "Formation of Teflon."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_poly_003",
+      "conceptName": "Condensation Polymerization",
+      "description": "Polymerization involving elimination of small molecules.",
+      "formulaType": "condensation-polymer-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_poly_003_f1",
+          "name": "Nylon-6,6 Formation",
+          "equation": "Hexamethylene diamine + Adipic acid → Nylon-6,6 + H₂O",
+          "latex": "\\text{Hexamethylene diamine}+\\text{Adipic acid}\\rightarrow\\text{Nylon-6,6}+H_2O",
+          "meaning": "Formation of nylon-6,6."
+        },
+        {
+          "formulaId": "chem_poly_003_f2",
+          "name": "Bakelite Formation",
+          "equation": "Phenol + Formaldehyde → Bakelite",
+          "latex": "\\text{Phenol}+\\text{Formaldehyde}\\rightarrow\\text{Bakelite}",
+          "meaning": "Formation of thermosetting polymer."
+        },
+        {
+          "formulaId": "chem_poly_003_f3",
+          "name": "Dacron Formation",
+          "equation": "Ethylene glycol + Terephthalic acid → Dacron + H₂O",
+          "latex": "\\text{Ethylene glycol}+\\text{Terephthalic acid}\\rightarrow\\text{Dacron}+H_2O",
+          "meaning": "Formation of polyester."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_poly_004",
+      "conceptName": "Classification of Polymers",
+      "description": "Different types of polymers based on structure and behavior.",
+      "formulaType": "classification-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_poly_004_f1",
+          "name": "Thermoplastics",
+          "equation": "Linear or slightly branched polymers",
+          "latex": "\\text{Linear or slightly branched polymers}",
+          "meaning": "Can be reshaped on heating."
+        },
+        {
+          "formulaId": "chem_poly_004_f2",
+          "name": "Thermosetting Polymers",
+          "equation": "Cross-linked polymers",
+          "latex": "\\text{Cross-linked polymers}",
+          "meaning": "Cannot be reshaped after heating."
+        },
+        {
+          "formulaId": "chem_poly_004_f3",
+          "name": "Elastomers",
+          "equation": "Lightly cross-linked polymers",
+          "latex": "\\text{Lightly cross-linked polymers}",
+          "meaning": "Show elastic properties."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_poly_005",
+      "conceptName": "Copolymers",
+      "description": "Polymers formed using more than one monomer.",
+      "formulaType": "copolymer-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_poly_005_f1",
+          "name": "Buna-S Rubber",
+          "equation": "1,3-Butadiene + Styrene → Buna-S",
+          "latex": "1,3\\text{-Butadiene}+\\text{Styrene}\\rightarrow\\text{Buna-S}",
+          "meaning": "Synthetic rubber copolymer."
+        },
+        {
+          "formulaId": "chem_poly_005_f2",
+          "name": "Buna-N Rubber",
+          "equation": "1,3-Butadiene + Acrylonitrile → Buna-N",
+          "latex": "1,3\\text{-Butadiene}+\\text{Acrylonitrile}\\rightarrow\\text{Buna-N}",
+          "meaning": "Oil resistant synthetic rubber."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_poly_006",
+      "conceptName": "Natural and Synthetic Rubbers",
+      "description": "Types and properties of rubbers.",
+      "formulaType": "rubber-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_poly_006_f1",
+          "name": "Natural Rubber Monomer",
+          "equation": "Isoprene",
+          "latex": "\\text{Isoprene}",
+          "meaning": "Monomer unit of natural rubber."
+        },
+        {
+          "formulaId": "chem_poly_006_f2",
+          "name": "Vulcanization",
+          "equation": "Rubber + Sulphur → Vulcanized rubber",
+          "latex": "\\text{Rubber}+\\text{Sulphur}\\rightarrow\\text{Vulcanized rubber}",
+          "meaning": "Improves elasticity and strength."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_poly_007",
+      "conceptName": "Biodegradable Polymers",
+      "description": "Environment friendly polymers.",
+      "formulaType": "biodegradable-polymer-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_poly_007_f1",
+          "name": "PHBV Formation",
+          "equation": "3-Hydroxybutanoic acid + 3-Hydroxypentanoic acid → PHBV",
+          "latex": "3\\text{-Hydroxybutanoic acid}+3\\text{-Hydroxypentanoic acid}\\rightarrow PHBV",
+          "meaning": "Biodegradable copolymer."
+        },
+        {
+          "formulaId": "chem_poly_007_f2",
+          "name": "Nylon-2-Nylon-6",
+          "equation": "Biodegradable polyamide",
+          "latex": "\\text{Biodegradable polyamide}",
+          "meaning": "Environment friendly polymer."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_poly_008",
+      "conceptName": "Important Commercial Polymers",
+      "description": "Widely used industrial polymers.",
+      "formulaType": "commercial-polymer-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_poly_008_f1",
+          "name": "Polystyrene Formation",
+          "equation": "nC₆H₅CH=CH₂ → Polystyrene",
+          "latex": "nC_6H_5CH=CH_2\\rightarrow\\text{Polystyrene}",
+          "meaning": "Formation of polystyrene."
+        },
+        {
+          "formulaId": "chem_poly_008_f2",
+          "name": "Neoprene Formation",
+          "equation": "Chloroprene → Neoprene",
+          "latex": "\\text{Chloroprene}\\rightarrow\\text{Neoprene}",
+          "meaning": "Synthetic rubber formation."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Addition polymers form without elimination of molecules.",
+    "Condensation polymers eliminate small molecules like water.",
+    "Bakelite is a thermosetting polymer.",
+    "Vulcanization increases strength and elasticity of rubber."
+  ],
+  "commonMistakes": [
+    "Confusing addition and condensation polymers",
+    "Wrong monomer identification",
+    "Incorrect classification of polymers",
+    "Ignoring properties of thermoplastics and thermosets"
+  ],
+  "jeeAdvancedFocus": [
+    "Polymerization mechanisms",
+    "Commercial polymer structures",
+    "Copolymers and elastomers",
+    "Biodegradable polymers"
+  ],
+  "neetFocus": [
+    "Types of polymers",
+    "Important commercial polymers",
+    "Synthetic rubbers",
+    "Biodegradable polymers"
+  ],
+  "keywords": [
+    "polymers",
+    "addition polymerization",
+    "condensation polymerization",
+    "nylon",
+    "bakelite",
+    "teflon",
+    "buna-s",
+    "vulcanization"
+  ]
+}

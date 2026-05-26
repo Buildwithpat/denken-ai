@@ -1,0 +1,234 @@
+{
+  "chapterId": "physics_error_measurement_029",
+  "fileName": "error_measurement.json",
+  "chapterName": "Error & Measurement",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "error-measurement",
+    "significant-figures",
+    "dimensional-analysis",
+    "percentage-error",
+    "least-count",
+    "measurement"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_err_001",
+      "conceptName": "Basic Measurement",
+      "description": "Fundamental concepts of measurement and accuracy.",
+      "formulaType": "measurement-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_err_001_f1",
+          "name": "Least Count",
+          "equation": "LC = Value of 1 MSD / Number of divisions",
+          "latex": "LC=\\frac{\\text{Value of 1 MSD}}{\\text{Number of divisions}}",
+          "meaning": "Smallest measurable value by an instrument.",
+          "applications": ["Vernier calipers", "Screw gauge measurements"]
+        },
+        {
+          "formulaId": "phy_err_001_f2",
+          "name": "Measurement Reading",
+          "equation": "Reading = MSR + (VSR × LC)",
+          "latex": "\\text{Reading}=MSR+(VSR\\times LC)",
+          "meaning": "Total reading in vernier calipers."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_err_002",
+      "conceptName": "Types of Errors",
+      "description": "Errors occurring during measurements.",
+      "formulaType": "error-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_err_002_f1",
+          "name": "Absolute Error",
+          "equation": "Δa = |ameasured - atrue|",
+          "latex": "\\Delta a=|a_{measured}-a_{true}|",
+          "meaning": "Magnitude of difference between measured and true value."
+        },
+        {
+          "formulaId": "phy_err_002_f2",
+          "name": "Mean Absolute Error",
+          "equation": "Δamean = (ΣΔa)/n",
+          "latex": "\\Delta a_{mean}=\\frac{\\sum \\Delta a}{n}",
+          "meaning": "Average of absolute errors."
+        },
+        {
+          "formulaId": "phy_err_002_f3",
+          "name": "Relative Error",
+          "equation": "Relative Error = Δa/amean",
+          "latex": "\\text{Relative Error}=\\frac{\\Delta a}{a_{mean}}",
+          "meaning": "Ratio of absolute error to mean value."
+        },
+        {
+          "formulaId": "phy_err_002_f4",
+          "name": "Percentage Error",
+          "equation": "% Error = (Δa/amean) × 100",
+          "latex": "\\%\\text{ Error}=\\left(\\frac{\\Delta a}{a_{mean}}\\right)\\times100",
+          "meaning": "Relative error expressed in percentage."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_err_003",
+      "conceptName": "Propagation of Errors",
+      "description": "Rules for combining errors in calculations.",
+      "formulaType": "propagation-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_err_003_f1",
+          "name": "Error in Addition/Subtraction",
+          "equation": "ΔZ = ΔA + ΔB",
+          "latex": "\\Delta Z=\\Delta A+\\Delta B",
+          "meaning": "Absolute errors add in addition/subtraction."
+        },
+        {
+          "formulaId": "phy_err_003_f2",
+          "name": "Error in Multiplication/Division",
+          "equation": "ΔZ/Z = ΔA/A + ΔB/B",
+          "latex": "\\frac{\\Delta Z}{Z}=\\frac{\\Delta A}{A}+\\frac{\\Delta B}{B}",
+          "meaning": "Relative errors add in multiplication/division."
+        },
+        {
+          "formulaId": "phy_err_003_f3",
+          "name": "Error in Power",
+          "equation": "ΔZ/Z = n(ΔA/A)",
+          "latex": "\\frac{\\Delta Z}{Z}=n\\left(\\frac{\\Delta A}{A}\\right)",
+          "meaning": "Relative error in powers."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_err_004",
+      "conceptName": "Significant Figures",
+      "description": "Meaningful digits in measured quantities.",
+      "formulaType": "significant-figure-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_err_004_f1",
+          "name": "Rounding Rule",
+          "equation": "If digit ≥ 5, increase preceding digit by 1",
+          "latex": "\\text{If digit}\\geq5,\\text{increase preceding digit by 1}",
+          "meaning": "Rule for rounding off numbers."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_err_005",
+      "conceptName": "Dimensional Analysis",
+      "description": "Checking correctness of physical equations.",
+      "formulaType": "dimension-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_err_005_f1",
+          "name": "Force Dimension",
+          "equation": "[F] = [MLT⁻²]",
+          "latex": "[F]=[MLT^{-2}]",
+          "meaning": "Dimension formula of force."
+        },
+        {
+          "formulaId": "phy_err_005_f2",
+          "name": "Energy Dimension",
+          "equation": "[E] = [ML²T⁻²]",
+          "latex": "[E]=[ML^2T^{-2}]",
+          "meaning": "Dimension formula of energy."
+        },
+        {
+          "formulaId": "phy_err_005_f3",
+          "name": "Pressure Dimension",
+          "equation": "[P] = [ML⁻¹T⁻²]",
+          "latex": "[P]=[ML^{-1}T^{-2}]",
+          "meaning": "Dimension formula of pressure."
+        },
+        {
+          "formulaId": "phy_err_005_f4",
+          "name": "Universal Gravitational Constant",
+          "equation": "[G] = [M⁻¹L³T⁻²]",
+          "latex": "[G]=[M^{-1}L^3T^{-2}]",
+          "meaning": "Dimension formula of gravitational constant."
+        },
+        {
+          "formulaId": "phy_err_005_f5",
+          "name": "Planck Constant",
+          "equation": "[h] = [ML²T⁻¹]",
+          "latex": "[h]=[ML^2T^{-1}]",
+          "meaning": "Dimension formula of Planck constant."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_err_006",
+      "conceptName": "Vernier Calipers",
+      "description": "Precision instrument for measuring length.",
+      "formulaType": "vernier-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_err_006_f1",
+          "name": "Least Count of Vernier Calipers",
+          "equation": "LC = 1 MSD - 1 VSD",
+          "latex": "LC=1\\,MSD-1\\,VSD",
+          "meaning": "Least count relation for vernier calipers."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_err_007",
+      "conceptName": "Screw Gauge",
+      "description": "Instrument used for measuring small thickness.",
+      "formulaType": "screw-gauge-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_err_007_f1",
+          "name": "Pitch",
+          "equation": "Pitch = Distance moved / Number of rotations",
+          "latex": "\\text{Pitch}=\\frac{\\text{Distance moved}}{\\text{Number of rotations}}",
+          "meaning": "Pitch of screw gauge."
+        },
+        {
+          "formulaId": "phy_err_007_f2",
+          "name": "Least Count of Screw Gauge",
+          "equation": "LC = Pitch / Number of circular divisions",
+          "latex": "LC=\\frac{\\text{Pitch}}{\\text{Number of circular divisions}}",
+          "meaning": "Least count of screw gauge."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Every measurement contains some uncertainty.",
+    "Percentage error gives accuracy of measurement.",
+    "Dimensional analysis cannot determine numerical constants.",
+    "Significant figures indicate precision of measurement."
+  ],
+  "commonMistakes": [
+    "Adding percentage errors directly in addition",
+    "Ignoring units in dimensional analysis",
+    "Incorrect rounding of significant figures",
+    "Wrong least count calculation"
+  ],
+  "jeeAdvancedFocus": [
+    "Propagation of errors",
+    "Dimensional analysis applications",
+    "Instrument-based numericals",
+    "Significant figure calculations"
+  ],
+  "neetFocus": [
+    "Percentage error",
+    "Least count",
+    "Dimensional formulas",
+    "Significant figures"
+  ],
+  "keywords": [
+    "measurement",
+    "error analysis",
+    "significant figures",
+    "percentage error",
+    "dimensional analysis",
+    "least count",
+    "vernier calipers",
+    "screw gauge"
+  ]
+}

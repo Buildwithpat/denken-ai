@@ -1,0 +1,225 @@
+{
+  "chapterId": "math_indefinite_integration_009",
+  "fileName": "indefinite_integration.json",
+  "chapterName": "Indefinite Integration",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "integration",
+    "indefinite-integration",
+    "integrals",
+    "substitution",
+    "partial-fractions"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_int_001",
+      "conceptName": "Basic Definition of Integration",
+      "description": "Integration as inverse process of differentiation.",
+      "formulaType": "integration-definition-formula",
+      "formulas": [
+        {
+          "formulaId": "math_int_001_f1",
+          "name": "Basic Integration Formula",
+          "equation": "∫f'(x)dx = f(x) + C",
+          "latex": "\\int f'(x)dx=f(x)+C",
+          "meaning": "Integration reverses differentiation.",
+          "applications": ["Area calculation", "Differential equations"]
+        }
+      ]
+    },
+    {
+      "conceptId": "math_int_002",
+      "conceptName": "Standard Integration Formulas",
+      "description": "Basic formulas of integration.",
+      "formulaType": "standard-integration-formula",
+      "formulas": [
+        {
+          "formulaId": "math_int_002_f1",
+          "name": "Power Rule",
+          "equation": "∫xⁿdx = xⁿ⁺¹/(n+1) + C",
+          "latex": "\\int x^ndx=\\frac{x^{n+1}}{n+1}+C",
+          "meaning": "Integration of power function."
+        },
+        {
+          "formulaId": "math_int_002_f2",
+          "name": "Integration of 1/x",
+          "equation": "∫(1/x)dx = log|x| + C",
+          "latex": "\\int\\frac1xdx=\\log|x|+C",
+          "meaning": "Special logarithmic integral."
+        },
+        {
+          "formulaId": "math_int_002_f3",
+          "name": "Integration of eˣ",
+          "equation": "∫eˣdx = eˣ + C",
+          "latex": "\\int e^xdx=e^x+C",
+          "meaning": "Integral of exponential function."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_int_003",
+      "conceptName": "Trigonometric Integrals",
+      "description": "Integration formulas of trigonometric functions.",
+      "formulaType": "trigonometric-integration-formula",
+      "formulas": [
+        {
+          "formulaId": "math_int_003_f1",
+          "name": "Integration of sinx",
+          "equation": "∫sinxdx = -cosx + C",
+          "latex": "\\int\\sin xdx=-\\cos x+C",
+          "meaning": "Integral of sine function."
+        },
+        {
+          "formulaId": "math_int_003_f2",
+          "name": "Integration of cosx",
+          "equation": "∫cosxdx = sinx + C",
+          "latex": "\\int\\cos xdx=\\sin x+C",
+          "meaning": "Integral of cosine function."
+        },
+        {
+          "formulaId": "math_int_003_f3",
+          "name": "Integration of sec²x",
+          "equation": "∫sec²xdx = tanx + C",
+          "latex": "\\int\\sec^2xdx=\\tan x+C",
+          "meaning": "Integral of sec square."
+        },
+        {
+          "formulaId": "math_int_003_f4",
+          "name": "Integration of 1/√(1-x²)",
+          "equation": "∫dx/√(1-x²) = sin⁻¹x + C",
+          "latex": "\\int\\frac{dx}{\\sqrt{1-x^2}}=\\sin^{-1}x+C",
+          "meaning": "Inverse trigonometric integral."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_int_004",
+      "conceptName": "Methods of Integration",
+      "description": "Techniques used in integration.",
+      "formulaType": "integration-method-formula",
+      "formulas": [
+        {
+          "formulaId": "math_int_004_f1",
+          "name": "Substitution Method",
+          "equation": "∫f(g(x))g'(x)dx = ∫f(t)dt",
+          "latex": "\\int f(g(x))g'(x)dx=\\int f(t)dt",
+          "meaning": "Method using variable substitution."
+        },
+        {
+          "formulaId": "math_int_004_f2",
+          "name": "Integration by Parts",
+          "equation": "∫udv = uv - ∫vdu",
+          "latex": "\\int udv=uv-\\int vdu",
+          "meaning": "Formula for product integration."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_int_005",
+      "conceptName": "Partial Fraction Integration",
+      "description": "Method for rational functions.",
+      "formulaType": "partial-fraction-formula",
+      "formulas": [
+        {
+          "formulaId": "math_int_005_f1",
+          "name": "Partial Fraction Form",
+          "equation": "P(x)/Q(x) = A/(x-a) + B/(x-b)",
+          "latex": "\\frac{P(x)}{Q(x)}=\\frac{A}{x-a}+\\frac{B}{x-b}",
+          "meaning": "Decomposition of rational function."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_int_006",
+      "conceptName": "Reduction Formulas",
+      "description": "Recursive integration formulas.",
+      "formulaType": "reduction-formula",
+      "formulas": [
+        {
+          "formulaId": "math_int_006_f1",
+          "name": "Reduction Formula for sinⁿx",
+          "equation": "Iₙ = -(sinⁿ⁻¹x cosx)/n + ((n-1)/n)Iₙ₋₂",
+          "latex": "I_n=-\\frac{\\sin^{n-1}x\\cos x}{n}+\\frac{n-1}{n}I_{n-2}",
+          "meaning": "Reduction formula for powers of sine."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_int_007",
+      "conceptName": "Special Integrals",
+      "description": "Important special integration results.",
+      "formulaType": "special-integral-formula",
+      "formulas": [
+        {
+          "formulaId": "math_int_007_f1",
+          "name": "Integral of tanx",
+          "equation": "∫tanxdx = log|secx| + C",
+          "latex": "\\int\\tan xdx=\\log|\\sec x|+C",
+          "meaning": "Standard tangent integral."
+        },
+        {
+          "formulaId": "math_int_007_f2",
+          "name": "Integral of cotx",
+          "equation": "∫cotxdx = log|sinx| + C",
+          "latex": "\\int\\cot xdx=\\log|\\sin x|+C",
+          "meaning": "Standard cotangent integral."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_int_008",
+      "conceptName": "Properties of Integration",
+      "description": "Basic properties of indefinite integrals.",
+      "formulaType": "integration-properties-formula",
+      "formulas": [
+        {
+          "formulaId": "math_int_008_f1",
+          "name": "Constant Multiple Rule",
+          "equation": "∫kf(x)dx = k∫f(x)dx",
+          "latex": "\\int kf(x)dx=k\\int f(x)dx",
+          "meaning": "Constant can be taken outside integral."
+        },
+        {
+          "formulaId": "math_int_008_f2",
+          "name": "Sum Rule",
+          "equation": "∫(f(x)+g(x))dx = ∫f(x)dx + ∫g(x)dx",
+          "latex": "\\int(f(x)+g(x))dx=\\int f(x)dx+\\int g(x)dx",
+          "meaning": "Integral distributes over addition."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Integration is inverse process of differentiation.",
+    "Always add constant of integration C.",
+    "Substitution method simplifies complicated integrals.",
+    "Integration by parts is useful for product functions."
+  ],
+  "commonMistakes": [
+    "Forgetting constant of integration",
+    "Wrong substitution differentiation",
+    "Incorrect sign in trigonometric integrals",
+    "Mistakes in partial fraction decomposition"
+  ],
+  "jeeAdvancedFocus": [
+    "Reduction formulas",
+    "Advanced substitution problems",
+    "Partial fractions",
+    "Complex trigonometric integrals"
+  ],
+  "neetFocus": [
+    "Basic integration formulas",
+    "Trigonometric integrals",
+    "Substitution method",
+    "Integration by parts"
+  ],
+  "keywords": [
+    "integration",
+    "indefinite integration",
+    "integrals",
+    "substitution",
+    "integration by parts",
+    "partial fractions"
+  ]
+}

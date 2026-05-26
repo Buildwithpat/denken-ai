@@ -1,0 +1,238 @@
+{
+  "chapterId": "physics_projectile_motion_vectors_003",
+  "fileName": "projectile_motion_vectors.json",
+  "chapterName": "Projectile Motion & Vectors",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "vectors",
+    "projectile-motion",
+    "2d-motion",
+    "relative-components",
+    "trajectory",
+    "kinematics"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_pmv_001",
+      "conceptName": "Vector Basics",
+      "description": "Fundamental vector operations and properties.",
+      "formulaType": "vector-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_pmv_001_f1",
+          "name": "Vector Magnitude",
+          "equation": "|A| = √(Ax² + Ay²)",
+          "latex": "|A|=\\sqrt{A_x^2+A_y^2}",
+          "meaning": "Magnitude of a 2D vector.",
+          "applications": [
+            "Resultant vectors",
+            "Projectile velocity",
+            "Force systems"
+          ]
+        },
+        {
+          "formulaId": "phy_pmv_001_f2",
+          "name": "Unit Vector",
+          "equation": "Â = A / |A|",
+          "latex": "\\hat{A}=\\frac{\\vec{A}}{|A|}",
+          "meaning": "Vector with magnitude 1 in the direction of A."
+        },
+        {
+          "formulaId": "phy_pmv_001_f3",
+          "name": "Vector Addition",
+          "equation": "R = A + B",
+          "latex": "\\vec{R}=\\vec{A}+\\vec{B}",
+          "meaning": "Resultant vector obtained by vector addition."
+        },
+        {
+          "formulaId": "phy_pmv_001_f4",
+          "name": "Resultant Magnitude",
+          "equation": "R = √(A² + B² + 2ABcosθ)",
+          "latex": "R=\\sqrt{A^2+B^2+2AB\\cos\\theta}",
+          "meaning": "Magnitude of resultant of two vectors."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_pmv_002",
+      "conceptName": "Resolution of Vectors",
+      "description": "Breaking vectors into horizontal and vertical components.",
+      "formulaType": "component-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_pmv_002_f1",
+          "name": "Horizontal Component",
+          "equation": "Ax = A cosθ",
+          "latex": "A_x=A\\cos\\theta",
+          "meaning": "Horizontal projection of vector."
+        },
+        {
+          "formulaId": "phy_pmv_002_f2",
+          "name": "Vertical Component",
+          "equation": "Ay = A sinθ",
+          "latex": "A_y=A\\sin\\theta",
+          "meaning": "Vertical projection of vector."
+        },
+        {
+          "formulaId": "phy_pmv_002_f3",
+          "name": "Direction of Vector",
+          "equation": "tanθ = Ay / Ax",
+          "latex": "\\tan\\theta=\\frac{A_y}{A_x}",
+          "meaning": "Angle made by vector with horizontal axis."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_pmv_003",
+      "conceptName": "Dot Product",
+      "description": "Scalar product of vectors.",
+      "formulaType": "vector-operation",
+      "formulas": [
+        {
+          "formulaId": "phy_pmv_003_f1",
+          "name": "Dot Product Formula",
+          "equation": "A·B = AB cosθ",
+          "latex": "\\vec{A}\\cdot\\vec{B}=AB\\cos\\theta",
+          "meaning": "Scalar quantity representing projection.",
+          "applications": ["Work done", "Projection", "Angle between vectors"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_pmv_004",
+      "conceptName": "Cross Product",
+      "description": "Vector product of vectors.",
+      "formulaType": "vector-operation",
+      "formulas": [
+        {
+          "formulaId": "phy_pmv_004_f1",
+          "name": "Cross Product Formula",
+          "equation": "|A × B| = AB sinθ",
+          "latex": "|\\vec{A}\\times\\vec{B}|=AB\\sin\\theta",
+          "meaning": "Magnitude of vector perpendicular to plane of vectors.",
+          "applications": ["Torque", "Angular momentum", "Magnetic force"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_pmv_005",
+      "conceptName": "Projectile Motion",
+      "description": "Two-dimensional motion under gravity.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_pmv_005_f1",
+          "name": "Time of Flight",
+          "equation": "T = 2u sinθ / g",
+          "latex": "T=\\frac{2u\\sin\\theta}{g}",
+          "variables": {
+            "u": {
+              "meaning": "Initial velocity",
+              "unit": "m/s"
+            },
+            "θ": {
+              "meaning": "Projection angle",
+              "unit": "degree/radian"
+            },
+            "g": {
+              "meaning": "Acceleration due to gravity",
+              "unit": "m/s²"
+            }
+          },
+          "meaning": "Total time projectile remains in air.",
+          "applications": ["Trajectory analysis", "Projectile problems"],
+          "commonMistakes": ["Wrong angle mode", "Using cos instead of sin"]
+        },
+        {
+          "formulaId": "phy_pmv_005_f2",
+          "name": "Maximum Height",
+          "equation": "H = u² sin²θ / 2g",
+          "latex": "H=\\frac{u^2\\sin^2\\theta}{2g}",
+          "meaning": "Highest vertical position reached."
+        },
+        {
+          "formulaId": "phy_pmv_005_f3",
+          "name": "Horizontal Range",
+          "equation": "R = u² sin2θ / g",
+          "latex": "R=\\frac{u^2\\sin2\\theta}{g}",
+          "meaning": "Maximum horizontal distance traveled.",
+          "importantNotes": ["Maximum range occurs at 45°."]
+        },
+        {
+          "formulaId": "phy_pmv_005_f4",
+          "name": "Trajectory Equation",
+          "equation": "y = x tanθ - gx²/(2u²cos²θ)",
+          "latex": "y=x\\tan\\theta-\\frac{gx^2}{2u^2\\cos^2\\theta}",
+          "meaning": "Equation of projectile path.",
+          "applications": ["Trajectory analysis", "Projectile graphs"]
+        },
+        {
+          "formulaId": "phy_pmv_005_f5",
+          "name": "Horizontal Velocity",
+          "equation": "vx = u cosθ",
+          "latex": "v_x=u\\cos\\theta",
+          "meaning": "Constant horizontal velocity component."
+        },
+        {
+          "formulaId": "phy_pmv_005_f6",
+          "name": "Vertical Velocity",
+          "equation": "vy = u sinθ - gt",
+          "latex": "v_y=u\\sin\\theta-gt",
+          "meaning": "Vertical velocity under gravity."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_pmv_006",
+      "conceptName": "Projectile on Inclined Plane",
+      "description": "Projectile motion on inclined surfaces.",
+      "formulaType": "advanced-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_pmv_006_f1",
+          "name": "Range on Inclined Plane",
+          "equation": "R = (2u² cosθ sin(θ-α)) / g cos²α",
+          "latex": "R=\\frac{2u^2\\cos\\theta\\sin(\\theta-\\alpha)}{g\\cos^2\\alpha}",
+          "meaning": "Projectile range along inclined surface.",
+          "applications": ["JEE Advanced problems", "Hill trajectory motion"]
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Horizontal acceleration in projectile motion is zero.",
+    "Vertical motion behaves independently of horizontal motion.",
+    "Projectile path is always parabolic.",
+    "Range is maximum at 45° projection angle."
+  ],
+  "commonMistakes": [
+    "Mixing vector and scalar quantities",
+    "Wrong trigonometric decomposition",
+    "Using degrees/radians incorrectly",
+    "Ignoring sign conventions"
+  ],
+  "jeeAdvancedFocus": [
+    "Projectile on inclined plane",
+    "Relative projectile motion",
+    "Vector geometry",
+    "Advanced trajectory analysis"
+  ],
+  "neetFocus": [
+    "Basic projectile formulas",
+    "Vector resolution",
+    "Range and height formulas",
+    "Horizontal and vertical motion"
+  ],
+  "keywords": [
+    "vectors",
+    "projectile",
+    "trajectory",
+    "range",
+    "maximum height",
+    "time of flight",
+    "vector addition",
+    "dot product",
+    "cross product"
+  ]
+}

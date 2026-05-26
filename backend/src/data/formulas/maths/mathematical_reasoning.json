@@ -1,0 +1,269 @@
+{
+  "chapterId": "math_mathematical_reasoning_026",
+  "fileName": "mathematical_reasoning.json",
+  "chapterName": "Mathematical Reasoning",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "mathematical-reasoning",
+    "logic",
+    "statements",
+    "truth-table",
+    "implication"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_reason_001",
+      "conceptName": "Statements",
+      "description": "Basic logical statements and truth values.",
+      "formulaType": "statement-formula",
+      "formulas": [
+        {
+          "formulaId": "math_reason_001_f1",
+          "name": "Statement Definition",
+          "equation": "A declarative sentence having truth value",
+          "latex": "\\text{Declarative sentence having truth value}",
+          "meaning": "Statement can be true or false.",
+          "applications": ["Logic", "Proofs"]
+        },
+        {
+          "formulaId": "math_reason_001_f2",
+          "name": "Negation",
+          "equation": "¬p",
+          "latex": "\\neg p",
+          "meaning": "Opposite truth value of statement p."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_reason_002",
+      "conceptName": "Logical Connectives",
+      "description": "Operations between statements.",
+      "formulaType": "logical-connective-formula",
+      "formulas": [
+        {
+          "formulaId": "math_reason_002_f1",
+          "name": "Conjunction",
+          "equation": "p ∧ q",
+          "latex": "p\\land q",
+          "meaning": "True only when both p and q are true."
+        },
+        {
+          "formulaId": "math_reason_002_f2",
+          "name": "Disjunction",
+          "equation": "p ∨ q",
+          "latex": "p\\lor q",
+          "meaning": "True when at least one statement is true."
+        },
+        {
+          "formulaId": "math_reason_002_f3",
+          "name": "Implication",
+          "equation": "p → q",
+          "latex": "p\\to q",
+          "meaning": "If p then q."
+        },
+        {
+          "formulaId": "math_reason_002_f4",
+          "name": "Bi-conditional",
+          "equation": "p ↔ q",
+          "latex": "p\\leftrightarrow q",
+          "meaning": "p if and only if q."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_reason_003",
+      "conceptName": "Truth Tables",
+      "description": "Truth values of compound statements.",
+      "formulaType": "truth-table-formula",
+      "formulas": [
+        {
+          "formulaId": "math_reason_003_f1",
+          "name": "Conjunction Truth Condition",
+          "equation": "T ∧ T = T",
+          "latex": "T\\land T=T",
+          "meaning": "Conjunction true only if both are true."
+        },
+        {
+          "formulaId": "math_reason_003_f2",
+          "name": "Disjunction Truth Condition",
+          "equation": "F ∨ T = T",
+          "latex": "F\\lor T=T",
+          "meaning": "Disjunction true if one is true."
+        },
+        {
+          "formulaId": "math_reason_003_f3",
+          "name": "Implication False Condition",
+          "equation": "T → F = F",
+          "latex": "T\\to F=F",
+          "meaning": "Implication false only in this case."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_reason_004",
+      "conceptName": "Tautology and Contradiction",
+      "description": "Always true or always false statements.",
+      "formulaType": "tautology-formula",
+      "formulas": [
+        {
+          "formulaId": "math_reason_004_f1",
+          "name": "Tautology",
+          "equation": "p ∨ ¬p",
+          "latex": "p\\lor\\neg p",
+          "meaning": "Always true statement."
+        },
+        {
+          "formulaId": "math_reason_004_f2",
+          "name": "Contradiction",
+          "equation": "p ∧ ¬p",
+          "latex": "p\\land\\neg p",
+          "meaning": "Always false statement."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_reason_005",
+      "conceptName": "Logical Equivalence",
+      "description": "Equivalent logical statements.",
+      "formulaType": "equivalence-formula",
+      "formulas": [
+        {
+          "formulaId": "math_reason_005_f1",
+          "name": "Implication Equivalence",
+          "equation": "p → q ≡ ¬p ∨ q",
+          "latex": "p\\to q\\equiv\\neg p\\lor q",
+          "meaning": "Equivalent form of implication."
+        },
+        {
+          "formulaId": "math_reason_005_f2",
+          "name": "Double Negation",
+          "equation": "¬(¬p) ≡ p",
+          "latex": "\\neg(\\neg p)\\equiv p",
+          "meaning": "Negation of negation."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_reason_006",
+      "conceptName": "De Morgan's Laws",
+      "description": "Important logical identities.",
+      "formulaType": "de-morgan-formula",
+      "formulas": [
+        {
+          "formulaId": "math_reason_006_f1",
+          "name": "First De Morgan Law",
+          "equation": "¬(p ∧ q) ≡ ¬p ∨ ¬q",
+          "latex": "\\neg(p\\land q)\\equiv\\neg p\\lor\\neg q",
+          "meaning": "Negation of conjunction."
+        },
+        {
+          "formulaId": "math_reason_006_f2",
+          "name": "Second De Morgan Law",
+          "equation": "¬(p ∨ q) ≡ ¬p ∧ ¬q",
+          "latex": "\\neg(p\\lor q)\\equiv\\neg p\\land\\neg q",
+          "meaning": "Negation of disjunction."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_reason_007",
+      "conceptName": "Quantifiers",
+      "description": "Statements involving variables.",
+      "formulaType": "quantifier-formula",
+      "formulas": [
+        {
+          "formulaId": "math_reason_007_f1",
+          "name": "Universal Quantifier",
+          "equation": "∀x P(x)",
+          "latex": "\\forall x\\ P(x)",
+          "meaning": "P(x) true for all x."
+        },
+        {
+          "formulaId": "math_reason_007_f2",
+          "name": "Existential Quantifier",
+          "equation": "∃x P(x)",
+          "latex": "\\exists x\\ P(x)",
+          "meaning": "There exists x such that P(x) is true."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_reason_008",
+      "conceptName": "Converse, Inverse and Contrapositive",
+      "description": "Transformations of implication statements.",
+      "formulaType": "implication-transform-formula",
+      "formulas": [
+        {
+          "formulaId": "math_reason_008_f1",
+          "name": "Converse",
+          "equation": "q → p",
+          "latex": "q\\to p",
+          "meaning": "Converse of implication."
+        },
+        {
+          "formulaId": "math_reason_008_f2",
+          "name": "Inverse",
+          "equation": "¬p → ¬q",
+          "latex": "\\neg p\\to\\neg q",
+          "meaning": "Inverse of implication."
+        },
+        {
+          "formulaId": "math_reason_008_f3",
+          "name": "Contrapositive",
+          "equation": "¬q → ¬p",
+          "latex": "\\neg q\\to\\neg p",
+          "meaning": "Contrapositive of implication."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_reason_009",
+      "conceptName": "Validating Statements",
+      "description": "Logical argument structures.",
+      "formulaType": "argument-formula",
+      "formulas": [
+        {
+          "formulaId": "math_reason_009_f1",
+          "name": "Modus Ponens",
+          "equation": "p→q, p ⟹ q",
+          "latex": "p\\to q,\\ p\\Rightarrow q",
+          "meaning": "Valid argument form."
+        },
+        {
+          "formulaId": "math_reason_009_f2",
+          "name": "Modus Tollens",
+          "equation": "p→q, ¬q ⟹ ¬p",
+          "latex": "p\\to q,\\ \\neg q\\Rightarrow\\neg p",
+          "meaning": "Another valid argument form."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Statements must have definite truth values.",
+    "Implication is false only when T → F.",
+    "Contrapositive is logically equivalent to implication.",
+    "Tautology is always true."
+  ],
+  "commonMistakes": [
+    "Confusing converse with contrapositive",
+    "Wrong implication truth values",
+    "Errors in De Morgan's laws",
+    "Misinterpreting quantifiers"
+  ],
+  "jeeAdvancedFocus": [
+    "Truth table problems",
+    "Logical equivalence",
+    "Quantifier transformations",
+    "Advanced logical reasoning"
+  ],
+  "keywords": [
+    "mathematical reasoning",
+    "logic",
+    "truth table",
+    "tautology",
+    "implication",
+    "quantifiers"
+  ]
+}

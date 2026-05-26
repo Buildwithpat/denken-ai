@@ -1,0 +1,181 @@
+{
+  "chapterId": "chem_structure_isomerism_020",
+  "fileName": "20_structure_isomerism.json",
+  "chapterName": "Structure Isomerism",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "isomerism",
+    "structural-isomerism",
+    "chain-isomerism",
+    "position-isomerism",
+    "functional-isomerism"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_iso_001",
+      "conceptName": "Introduction to Isomerism",
+      "description": "Compounds with same molecular formula but different structures.",
+      "formulaType": "isomerism-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_iso_001_f1",
+          "name": "Definition of Isomerism",
+          "equation": "Same molecular formula, different arrangement",
+          "latex": "\\text{Same molecular formula, different arrangement}",
+          "meaning": "Basic definition of isomerism."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_iso_002",
+      "conceptName": "Chain Isomerism",
+      "description": "Difference in carbon chain arrangement.",
+      "formulaType": "chain-isomerism-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_iso_002_f1",
+          "name": "n-Butane",
+          "equation": "CH₃-CH₂-CH₂-CH₃",
+          "latex": "CH_3-CH_2-CH_2-CH_3",
+          "meaning": "Straight chain butane."
+        },
+        {
+          "formulaId": "chem_iso_002_f2",
+          "name": "Isobutane",
+          "equation": "(CH₃)₃CH",
+          "latex": "(CH_3)_3CH",
+          "meaning": "Branched chain isomer of butane."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_iso_003",
+      "conceptName": "Position Isomerism",
+      "description": "Difference in position of substituent or functional group.",
+      "formulaType": "position-isomerism-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_iso_003_f1",
+          "name": "1-Propanol",
+          "equation": "CH₃CH₂CH₂OH",
+          "latex": "CH_3CH_2CH_2OH",
+          "meaning": "OH group at carbon-1."
+        },
+        {
+          "formulaId": "chem_iso_003_f2",
+          "name": "2-Propanol",
+          "equation": "CH₃CHOHCH₃",
+          "latex": "CH_3CHOHCH_3",
+          "meaning": "OH group at carbon-2."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_iso_004",
+      "conceptName": "Functional Group Isomerism",
+      "description": "Different functional groups with same molecular formula.",
+      "formulaType": "functional-isomerism-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_iso_004_f1",
+          "name": "Ethanol",
+          "equation": "C₂H₅OH",
+          "latex": "C_2H_5OH",
+          "meaning": "Alcohol functional group."
+        },
+        {
+          "formulaId": "chem_iso_004_f2",
+          "name": "Dimethyl Ether",
+          "equation": "CH₃OCH₃",
+          "latex": "CH_3OCH_3",
+          "meaning": "Ether functional group."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_iso_005",
+      "conceptName": "Metamerism",
+      "description": "Different alkyl groups around same functional group.",
+      "formulaType": "metamerism-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_iso_005_f1",
+          "name": "Ether Metamers",
+          "equation": "CH₃OCH₂CH₂CH₃ and C₂H₅OC₂H₅",
+          "latex": "CH_3OCH_2CH_2CH_3\\text{ and }C_2H_5OC_2H_5",
+          "meaning": "Metamers of ether."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_iso_006",
+      "conceptName": "Tautomerism",
+      "description": "Dynamic equilibrium between two structural isomers.",
+      "formulaType": "tautomerism-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_iso_006_f1",
+          "name": "Keto-Enol Tautomerism",
+          "equation": "CH₃CHO ⇌ CH₂=CHOH",
+          "latex": "CH_3CHO\\rightleftharpoons CH_2=CHOH",
+          "meaning": "Interconversion of keto and enol forms."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_iso_007",
+      "conceptName": "Ring-Chain Isomerism",
+      "description": "Open chain and cyclic compounds with same formula.",
+      "formulaType": "ring-chain-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_iso_007_f1",
+          "name": "Propene",
+          "equation": "CH₃-CH=CH₂",
+          "latex": "CH_3-CH=CH_2",
+          "meaning": "Open chain structure."
+        },
+        {
+          "formulaId": "chem_iso_007_f2",
+          "name": "Cyclopropane",
+          "equation": "C₃H₆ ring",
+          "latex": "C_3H_6\\text{ ring}",
+          "meaning": "Cyclic isomer of propene."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Isomers have same molecular formula but different properties.",
+    "Chain isomerism occurs due to branching.",
+    "Functional isomerism involves different functional groups.",
+    "Tautomerism is a dynamic equilibrium phenomenon."
+  ],
+  "commonMistakes": [
+    "Confusing chain and position isomerism",
+    "Incorrect identification of functional isomers",
+    "Ignoring tautomeric equilibrium",
+    "Wrong molecular formula comparison"
+  ],
+  "jeeAdvancedFocus": [
+    "Advanced isomer counting",
+    "Functional and tautomeric isomerism",
+    "Ring-chain isomerism",
+    "Mixed isomerism problems"
+  ],
+  "neetFocus": [
+    "Types of structural isomerism",
+    "Examples of isomers",
+    "Functional isomerism",
+    "Basic tautomerism"
+  ],
+  "keywords": [
+    "isomerism",
+    "structural isomerism",
+    "chain isomerism",
+    "position isomerism",
+    "functional isomerism",
+    "tautomerism"
+  ]
+}

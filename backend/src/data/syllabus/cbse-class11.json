@@ -1,0 +1,84 @@
+{
+  "exam": "CBSE",
+  "class": "11",
+  "subjects": [
+    {
+      "name": "Physics",
+      "chapters": [
+        "Units and Measurement",
+        "Motion in a Straight Line",
+        "Motion in a Plane",
+        "Laws of Motion",
+        "Work, Energy and Power",
+        "System of Particles and Rotational Motion",
+        "Gravitation",
+        "Mechanical Properties of Solids",
+        "Mechanical Properties of Fluids",
+        "Thermal Properties of Matter",
+        "Thermodynamics",
+        "Kinetic Theory",
+        "Oscillations",
+        "Waves"
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "chapters": [
+        "Some Basic Concepts of Chemistry",
+        "Structure of Atom",
+        "Classification of Elements and Periodicity in Properties",
+        "Chemical Bonding and Molecular Structure",
+        "Chemical Thermodynamics",
+        "Equilibrium",
+        "Redox Reactions",
+        "Organic Chemistry – Some Basic Principles and Techniques",
+        "Hydrocarbons"
+      ]
+    },
+    {
+      "name": "Biology",
+      "chapters": [
+        "The Living World",
+        "Biological Classification",
+        "Plant Kingdom",
+        "Animal Kingdom",
+        "Morphology of Flowering Plants",
+        "Anatomy of Flowering Plants",
+        "Structural Organisation in Animals",
+        "Cell: The Unit of Life",
+        "Biomolecules",
+        "Cell Cycle and Cell Division",
+        "Photosynthesis in Higher Plants",
+        "Respiration in Plants",
+        "Plant Growth and Development",
+        "Breathing and Exchange of Gases",
+        "Body Fluids and Circulation",
+        "Excretory Products and their Elimination",
+        "Locomotion and Movement",
+        "Neural Control and Coordination",
+        "Chemical Coordination and Integration"
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "chapters": [
+        "Sets",
+        "Relations and Functions",
+        "Trigonometric Functions",
+        "Principle of Mathematical Induction",
+        "Complex Numbers and Quadratic Equations",
+        "Linear Inequalities",
+        "Permutations and Combinations",
+        "Binomial Theorem",
+        "Sequences and Series",
+        "Straight Lines",
+        "Conic Sections",
+        "Introduction to Three Dimensional Geometry",
+        "Limits and Derivatives",
+        "Mathematical Reasoning",
+        "Statistics",
+        "Probability"
+      ]
+    }
+  ]
+}

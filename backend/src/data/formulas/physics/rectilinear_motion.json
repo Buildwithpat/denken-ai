@@ -1,0 +1,224 @@
+{
+  "chapterId": "physics_rectilinear_motion_002",
+  "fileName": "rectilinear_motion.json",
+  "chapterName": "Rectilinear Motion",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "kinematics",
+    "motion-in-1d",
+    "velocity",
+    "acceleration",
+    "displacement",
+    "graphs",
+    "equations-of-motion"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_rm_001",
+      "conceptName": "Basic Definitions",
+      "description": "Fundamental quantities used in rectilinear motion.",
+      "formulaType": "definition",
+      "formulas": [
+        {
+          "formulaId": "phy_rm_001_f1",
+          "name": "Average Speed",
+          "equation": "Average Speed = Total Distance / Total Time",
+          "latex": "v_{avg}=\\frac{\\text{Total Distance}}{\\text{Total Time}}",
+          "meaning": "Scalar quantity representing total path covered per unit time.",
+          "applications": [
+            "Travel calculations",
+            "Relative motion",
+            "Race problems"
+          ]
+        },
+        {
+          "formulaId": "phy_rm_001_f2",
+          "name": "Average Velocity",
+          "equation": "Average Velocity = Displacement / Time",
+          "latex": "\\vec{v}_{avg}=\\frac{\\Delta x}{\\Delta t}",
+          "meaning": "Vector quantity representing displacement per unit time.",
+          "commonMistakes": [
+            "Using distance instead of displacement",
+            "Ignoring direction"
+          ]
+        },
+        {
+          "formulaId": "phy_rm_001_f3",
+          "name": "Instantaneous Velocity",
+          "equation": "v = dx/dt",
+          "latex": "v=\\frac{dx}{dt}",
+          "meaning": "Velocity at a specific instant.",
+          "applications": ["Graph analysis", "Calculus-based motion"]
+        },
+        {
+          "formulaId": "phy_rm_001_f4",
+          "name": "Acceleration",
+          "equation": "a = dv/dt",
+          "latex": "a=\\frac{dv}{dt}",
+          "meaning": "Rate of change of velocity with time."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rm_002",
+      "conceptName": "Equations of Motion",
+      "description": "Core equations for uniformly accelerated motion.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rm_002_f1",
+          "name": "First Equation of Motion",
+          "equation": "v = u + at",
+          "latex": "v=u+at",
+          "variables": {
+            "u": {
+              "meaning": "Initial velocity",
+              "unit": "m/s"
+            },
+            "v": {
+              "meaning": "Final velocity",
+              "unit": "m/s"
+            },
+            "a": {
+              "meaning": "Acceleration",
+              "unit": "m/s²"
+            },
+            "t": {
+              "meaning": "Time",
+              "unit": "s"
+            }
+          },
+          "conditions": ["Acceleration must remain constant"],
+          "applications": [
+            "Free fall",
+            "Vehicle acceleration",
+            "Linear motion"
+          ],
+          "commonMistakes": [
+            "Using for variable acceleration",
+            "Wrong sign convention"
+          ],
+          "relatedFormulas": ["v²=u²+2as", "s=ut+1/2at²"]
+        },
+        {
+          "formulaId": "phy_rm_002_f2",
+          "name": "Second Equation of Motion",
+          "equation": "s = ut + 1/2 at²",
+          "latex": "s=ut+\\frac12 at^2",
+          "meaning": "Displacement in uniformly accelerated motion.",
+          "applications": [
+            "Displacement calculation",
+            "Projectile motion",
+            "Vertical motion"
+          ]
+        },
+        {
+          "formulaId": "phy_rm_002_f3",
+          "name": "Third Equation of Motion",
+          "equation": "v² = u² + 2as",
+          "latex": "v^2=u^2+2as",
+          "meaning": "Relates velocity and displacement without time."
+        },
+        {
+          "formulaId": "phy_rm_002_f4",
+          "name": "Displacement in nth Second",
+          "equation": "sₙ = u + a/2 (2n - 1)",
+          "latex": "s_n=u+\\frac{a}{2}(2n-1)",
+          "meaning": "Distance covered during nth second."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rm_003",
+      "conceptName": "Free Fall Motion",
+      "description": "Special case of rectilinear motion under gravity.",
+      "formulaType": "application-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_rm_003_f1",
+          "name": "Free Fall Velocity",
+          "equation": "v = u + gt",
+          "latex": "v=u+gt",
+          "meaning": "Velocity under gravity."
+        },
+        {
+          "formulaId": "phy_rm_003_f2",
+          "name": "Free Fall Displacement",
+          "equation": "h = ut + 1/2 gt²",
+          "latex": "h=ut+\\frac12 gt^2",
+          "meaning": "Vertical displacement under gravity."
+        },
+        {
+          "formulaId": "phy_rm_003_f3",
+          "name": "Velocity-Height Relation",
+          "equation": "v² = u² + 2gh",
+          "latex": "v^2=u^2+2gh",
+          "meaning": "Velocity relation in vertical motion."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_rm_004",
+      "conceptName": "Graph Analysis",
+      "description": "Interpretation of motion graphs.",
+      "formulaType": "graph-relations",
+      "formulas": [
+        {
+          "formulaId": "phy_rm_004_f1",
+          "name": "Slope of Position-Time Graph",
+          "equation": "Slope = Velocity",
+          "latex": "\\text{Slope}=v",
+          "meaning": "Slope gives instantaneous velocity."
+        },
+        {
+          "formulaId": "phy_rm_004_f2",
+          "name": "Slope of Velocity-Time Graph",
+          "equation": "Slope = Acceleration",
+          "latex": "\\text{Slope}=a",
+          "meaning": "Slope gives acceleration."
+        },
+        {
+          "formulaId": "phy_rm_004_f3",
+          "name": "Area Under Velocity-Time Graph",
+          "equation": "Area = Displacement",
+          "latex": "\\text{Area}=s",
+          "meaning": "Area under v-t graph gives displacement."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Equations of motion are valid only for constant acceleration.",
+    "Displacement can be positive, negative, or zero.",
+    "Distance is always positive.",
+    "Velocity may change sign depending on direction."
+  ],
+  "commonMistakes": [
+    "Confusing speed and velocity",
+    "Using distance instead of displacement",
+    "Ignoring negative acceleration",
+    "Applying equations in non-uniform acceleration"
+  ],
+  "jeeAdvancedFocus": [
+    "Graph interpretation",
+    "Relative acceleration",
+    "Variable acceleration",
+    "Piecewise motion problems"
+  ],
+  "neetFocus": [
+    "Basic equations of motion",
+    "Free fall",
+    "Graph basics",
+    "Average velocity"
+  ],
+  "keywords": [
+    "1d motion",
+    "kinematics",
+    "velocity",
+    "acceleration",
+    "free fall",
+    "motion graph",
+    "equations of motion"
+  ]
+}

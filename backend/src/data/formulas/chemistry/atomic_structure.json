@@ -1,0 +1,267 @@
+{
+  "chapterId": "chem_atomic_structure_001",
+  "fileName": "atomic_structure.json",
+  "chapterName": "Atomic Structure",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "atomic-structure",
+    "bohr-model",
+    "quantum-theory",
+    "photoelectric-effect",
+    "de-broglie",
+    "electronic-configuration"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_atom_001",
+      "conceptName": "Planck Quantum Theory",
+      "description": "Energy is emitted or absorbed in discrete packets called quanta.",
+      "formulaType": "quantum-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_atom_001_f1",
+          "name": "Photon Energy",
+          "equation": "E = hν = hc/λ",
+          "latex": "E=h\\nu=\\frac{hc}{\\lambda}",
+          "meaning": "Energy of one photon.",
+          "variables": {
+            "E": {
+              "meaning": "Energy",
+              "unit": "J"
+            },
+            "h": {
+              "meaning": "Planck constant",
+              "unit": "J·s"
+            },
+            "ν": {
+              "meaning": "Frequency",
+              "unit": "Hz"
+            },
+            "λ": {
+              "meaning": "Wavelength",
+              "unit": "m"
+            }
+          },
+          "applications": ["Photoelectric effect", "Atomic spectra"]
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_atom_002",
+      "conceptName": "Photoelectric Effect",
+      "description": "Emission of electrons from metal surface when light falls on it.",
+      "formulaType": "photoelectric-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_atom_002_f1",
+          "name": "Einstein Photoelectric Equation",
+          "equation": "hν = hν₀ + (1/2)mv²",
+          "latex": "h\\nu=h\\nu_0+\\frac{1}{2}mv^2",
+          "meaning": "Energy conservation in photoelectric effect."
+        },
+        {
+          "formulaId": "chem_atom_002_f2",
+          "name": "Threshold Frequency",
+          "equation": "ν₀ = ϕ/h",
+          "latex": "\\nu_0=\\frac{\\phi}{h}",
+          "meaning": "Minimum frequency required for emission."
+        },
+        {
+          "formulaId": "chem_atom_002_f3",
+          "name": "Maximum Kinetic Energy",
+          "equation": "KEmax = h(ν - ν₀)",
+          "latex": "KE_{max}=h(\\nu-\\nu_0)",
+          "meaning": "Maximum kinetic energy of emitted electron."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_atom_003",
+      "conceptName": "Bohr Model of Atom",
+      "description": "Quantized model for hydrogen-like atoms.",
+      "formulaType": "bohr-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_atom_003_f1",
+          "name": "Angular Momentum Quantization",
+          "equation": "mvr = nh/2π",
+          "latex": "mvr=\\frac{nh}{2\\pi}",
+          "meaning": "Angular momentum is quantized."
+        },
+        {
+          "formulaId": "chem_atom_003_f2",
+          "name": "Energy of nth Orbit",
+          "equation": "En = -2.178 × 10⁻¹⁸ (Z²/n²) J",
+          "latex": "E_n=-2.178\\times10^{-18}\\frac{Z^2}{n^2}\\,J",
+          "meaning": "Energy of electron in nth orbit."
+        },
+        {
+          "formulaId": "chem_atom_003_f3",
+          "name": "Energy in Electron Volt",
+          "equation": "En = -13.6(Z²/n²) eV",
+          "latex": "E_n=-13.6\\frac{Z^2}{n^2}\\,eV",
+          "meaning": "Energy expressed in eV."
+        },
+        {
+          "formulaId": "chem_atom_003_f4",
+          "name": "Radius of nth Orbit",
+          "equation": "rn = 0.529(n²/Z) Å",
+          "latex": "r_n=0.529\\frac{n^2}{Z}\\,\\AA",
+          "meaning": "Radius of nth Bohr orbit."
+        },
+        {
+          "formulaId": "chem_atom_003_f5",
+          "name": "Velocity of Electron",
+          "equation": "v = 2.18 × 10⁶(Z/n) m/s",
+          "latex": "v=2.18\\times10^6\\frac{Z}{n}\\,m/s",
+          "meaning": "Velocity of electron in orbit."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_atom_004",
+      "conceptName": "de Broglie Theory",
+      "description": "Matter exhibits wave nature.",
+      "formulaType": "matter-wave-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_atom_004_f1",
+          "name": "de Broglie Wavelength",
+          "equation": "λ = h/p",
+          "latex": "\\lambda=\\frac{h}{p}",
+          "meaning": "Wavelength associated with moving particle."
+        },
+        {
+          "formulaId": "chem_atom_004_f2",
+          "name": "Matter Wave Relation",
+          "equation": "λ = h/mv",
+          "latex": "\\lambda=\\frac{h}{mv}",
+          "meaning": "de Broglie wavelength for particle."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_atom_005",
+      "conceptName": "Hydrogen Spectrum",
+      "description": "Spectral lines produced due to electron transitions.",
+      "formulaType": "spectrum-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_atom_005_f1",
+          "name": "Rydberg Equation",
+          "equation": "1/λ = RZ²[(1/n₁²) - (1/n₂²)]",
+          "latex": "\\frac{1}{\\lambda}=RZ^2\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right)",
+          "meaning": "Wavelength of emitted radiation."
+        },
+        {
+          "formulaId": "chem_atom_005_f2",
+          "name": "Frequency Relation",
+          "equation": "ν = c/λ",
+          "latex": "\\nu=\\frac{c}{\\lambda}",
+          "meaning": "Frequency-wavelength relation."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_atom_006",
+      "conceptName": "Heisenberg Uncertainty Principle",
+      "description": "Position and momentum cannot be simultaneously measured accurately.",
+      "formulaType": "uncertainty-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_atom_006_f1",
+          "name": "Uncertainty Principle",
+          "equation": "Δx·Δp ≥ h/4π",
+          "latex": "\\Delta x\\cdot\\Delta p\\geq\\frac{h}{4\\pi}",
+          "meaning": "Limitation in simultaneous measurement."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_atom_007",
+      "conceptName": "Quantum Numbers",
+      "description": "Set of numbers describing electron state.",
+      "formulaType": "quantum-number-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_atom_007_f1",
+          "name": "Maximum Electrons in Shell",
+          "equation": "2n²",
+          "latex": "2n^2",
+          "meaning": "Maximum electrons in principal shell."
+        },
+        {
+          "formulaId": "chem_atom_007_f2",
+          "name": "Maximum Orbitals in Shell",
+          "equation": "n²",
+          "latex": "n^2",
+          "meaning": "Maximum orbitals in a shell."
+        },
+        {
+          "formulaId": "chem_atom_007_f3",
+          "name": "Maximum Electrons in Orbital",
+          "equation": "2",
+          "latex": "2",
+          "meaning": "Maximum electrons in one orbital."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_atom_008",
+      "conceptName": "Electronic Configuration",
+      "description": "Arrangement of electrons in orbitals.",
+      "formulaType": "configuration-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_atom_008_f1",
+          "name": "Aufbau Principle Order",
+          "equation": "(n + l) Rule",
+          "latex": "(n+l)\\text{ rule}",
+          "meaning": "Orbital filling order."
+        },
+        {
+          "formulaId": "chem_atom_008_f2",
+          "name": "Maximum Electrons in Subshell",
+          "equation": "2(2l + 1)",
+          "latex": "2(2l+1)",
+          "meaning": "Maximum electrons in subshell."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Energy of electron in Bohr model is always negative.",
+    "de Broglie hypothesis proves wave nature of matter.",
+    "Heisenberg principle applies to microscopic particles.",
+    "Photoelectric effect proves particle nature of light."
+  ],
+  "commonMistakes": [
+    "Wrong sign in Bohr energy equation",
+    "Confusing wavelength and frequency relation",
+    "Incorrect orbital filling order",
+    "Using wrong units in de Broglie equation"
+  ],
+  "jeeAdvancedFocus": [
+    "Bohr model derivations",
+    "Hydrogen spectrum numericals",
+    "Quantum numbers",
+    "Electronic configuration exceptions"
+  ],
+  "neetFocus": [
+    "Photoelectric effect",
+    "Bohr model",
+    "Quantum numbers",
+    "Electronic configuration"
+  ],
+  "keywords": [
+    "atomic structure",
+    "bohr model",
+    "photoelectric effect",
+    "de broglie wavelength",
+    "rydberg equation",
+    "quantum numbers",
+    "electronic configuration",
+    "uncertainty principle"
+  ]
+}

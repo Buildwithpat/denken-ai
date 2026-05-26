@@ -1,0 +1,71 @@
+{
+  "exam": "JEE_ADVANCED",
+  "subjects": [
+    {
+      "name": "Mathematics",
+      "units": [
+        "Sets, Relations and Functions",
+        "Algebra",
+        "Matrices",
+        "Probability and Statistics",
+        "Trigonometry",
+        "Analytical Geometry",
+        "Three Dimensional Geometry",
+        "Differential Calculus",
+        "Integral Calculus",
+        "Vectors"
+      ]
+    },
+    {
+      "name": "Physics",
+      "units": [
+        "General Physics",
+        "Mechanics",
+        "Thermal Physics",
+        "Electricity and Magnetism",
+        "Electromagnetic Waves",
+        "Optics",
+        "Modern Physics"
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "units": [
+        "General Chemistry",
+        "States of Matter",
+        "Atomic Structure",
+        "Chemical Bonding",
+        "Thermodynamics",
+        "Chemical Equilibrium",
+        "Electrochemistry",
+        "Chemical Kinetics",
+        "Solid State",
+        "Solutions",
+        "Surface Chemistry",
+        "Periodic Table",
+        "Hydrogen",
+        "s-Block Elements",
+        "p-Block Elements",
+        "d and f Block Elements",
+        "Coordination Compounds",
+        "Metallurgy",
+        "Qualitative Analysis",
+        "Environmental Chemistry",
+        "Organic Chemistry Basics",
+        "Hydrocarbons",
+        "Benzene and Aromatic Compounds",
+        "Phenols",
+        "Alkyl Halides",
+        "Alcohols and Ethers",
+        "Aldehydes and Ketones",
+        "Carboxylic Acids",
+        "Amines",
+        "Haloarenes",
+        "Biomolecules",
+        "Polymers",
+        "Chemistry in Everyday Life",
+        "Practical Organic Chemistry"
+      ]
+    }
+  ]
+}

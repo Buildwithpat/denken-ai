@@ -1,0 +1,577 @@
+{
+  "questions": [
+    {
+      "questionId": "JM2021S2_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Vectors",
+      "topic": "Vector Algebra",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Two vectors P and Q have equal magnitudes. If |P+Q| is n times |P−Q| then the angle between P and Q is",
+      "options": {
+        "A": "sin⁻¹((n−1)/(n+1))",
+        "B": "cos⁻¹((n−1)/(n+1))",
+        "C": "sin⁻¹((n²−1)/(n²+1))",
+        "D": "cos⁻¹((n²−1)/(n²+1))"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Units and Dimensions",
+      "topic": "Dimensional Formula",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "If time t, velocity v and angular momentum l are taken as fundamental units then dimension of mass m in terms of t,v,l is",
+      "options": {
+        "A": "[t⁻¹v¹l⁻²]",
+        "B": "[t¹v²l⁻¹]",
+        "C": "[t⁻²v⁻¹l¹]",
+        "D": "[t⁻¹v⁻²l¹]"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Work Power and Energy",
+      "topic": "Constant Power Motion",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A body at rest is moved along a horizontal straight line by a machine delivering constant power. Distance moved in time t is proportional to",
+      "options": {
+        "A": "t³/²",
+        "B": "t¹/²",
+        "C": "t¹/⁴",
+        "D": "t³/⁴"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Relative Motion",
+      "topic": "Escalator Problem",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "A boy walks up a stationary escalator in time t1. If he remains stationary on moving escalator then escalator takes time t2. Time taken to walk up on moving escalator is",
+      "options": {
+        "A": "t1t2/(t1+t2)",
+        "B": "t2−t1",
+        "C": "2t1t2/(t1+t2)",
+        "D": "t1t2/(t2−t1)"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "Work Power and Energy",
+      "topic": "Momentum and Kinetic Energy",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "If kinetic energy of a moving body becomes four times its initial kinetic energy then percentage change in momentum is",
+      "options": {
+        "A": "100%",
+        "B": "200%",
+        "C": "300%",
+        "D": "400%"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Rotational Motion",
+      "topic": "Rolling Motion",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A body rolls down inclined plane without slipping. Rotational kinetic energy is 50% of translational kinetic energy. The body is",
+      "options": {
+        "A": "Solid sphere",
+        "B": "Solid cylinder",
+        "C": "Hollow cylinder",
+        "D": "Ring"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "Gravitation",
+      "topic": "Satellite Motion",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A satellite is launched into circular orbit of radius R while another into radius 1.02R. Percentage difference in their time periods is",
+      "options": {
+        "A": "1.5",
+        "B": "2.0",
+        "C": "0.7",
+        "D": "3.0"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "Gravitation",
+      "topic": "Binary Stars",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "In a binary star system of stars A and B with masses mA and mB revolving in circular orbits of radii rA and rB, if TA and TB are time periods respectively then",
+      "options": {
+        "A": "TA/TB=(rA/rB)³/²",
+        "B": "TA=TB",
+        "C": "TA>TB if mA>mB",
+        "D": "TA>TB if rA>rB"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "Mechanical Properties of Solids",
+      "topic": "Stress and Strain",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Length of metal wire is l1 at tension T1 and l2 at tension T2. Natural length of wire is",
+      "options": {
+        "A": "√(l1l2)",
+        "B": "(l1T2−l2T1)/(T2−T1)",
+        "C": "(l1T2+l2T1)/(T2+T1)",
+        "D": "(l1+l2)/2"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Surface Tension",
+      "topic": "Surface Energy",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Two small drops of mercury each of radius R coalesce to form single large drop. Ratio of total surface energy before and after change is",
+      "options": {
+        "A": "2^(1/3):1",
+        "B": "1:2",
+        "C": "1:2^(1/3)",
+        "D": "2:1"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+
+    {
+      "questionId": "JM2021S2_CHEM_1",
+      "questionNumber": 11,
+      "subject": "Chemistry",
+      "chapter": "Periodic Table",
+      "topic": "Electronic Configuration",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Outermost electronic configuration of group 13 element E is 4s²4p¹. Electronic configuration of p-block period-5 element placed diagonally to E is",
+      "options": {
+        "A": "[Kr]3d¹⁰4s²4p²",
+        "B": "[Ar]3d¹⁰4s²4p²",
+        "C": "[Xe]5d¹⁰6s²6p²",
+        "D": "[Kr]4d¹⁰5s²5p²"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_CHEM_2",
+      "questionNumber": 12,
+      "subject": "Chemistry",
+      "chapter": "Coordination Compounds",
+      "topic": "Magnetic Moment",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Which species does not have magnetic moment of 1.73 BM?",
+      "options": {
+        "A": "O₂⁺",
+        "B": "CuI",
+        "C": "[Cu(NH₃)₄]Cl₂",
+        "D": "O₂⁻"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_CHEM_3",
+      "questionNumber": 13,
+      "subject": "Chemistry",
+      "chapter": "Chemical Bonding",
+      "topic": "Hybridisation",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Hybridisations of nitrogen in NO₃⁻, NO₂⁺ and NH₄⁺ respectively are",
+      "options": {
+        "A": "sp³,sp,sp²",
+        "B": "sp,sp²,sp³",
+        "C": "sp³,sp,sp³",
+        "D": "sp²,sp,sp³"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_CHEM_4",
+      "questionNumber": 14,
+      "subject": "Chemistry",
+      "chapter": "Ionic Equilibrium",
+      "topic": "Solubility Product",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "A solution is 0.1 M in Cl⁻ and 0.001 M in CrO₄²⁻. AgNO₃ is added gradually. Ksp(AgCl)=1.7×10⁻¹⁰ and Ksp(Ag₂CrO₄)=1.9×10⁻¹². Which precipitates first?",
+      "options": {
+        "A": "AgCl because Ksp is high",
+        "B": "Ag₂CrO₄ because Ksp is low",
+        "C": "Ag₂CrO₄ because Ag⁺ needed is low",
+        "D": "AgCl because Ag⁺ needed is low"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_CHEM_5",
+      "questionNumber": 15,
+      "subject": "Chemistry",
+      "chapter": "d and f Block",
+      "topic": "Copper Compounds",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Cu²⁺ salt reacts with potassium iodide to give",
+      "options": {
+        "A": "CuI₂",
+        "B": "CuI₃",
+        "C": "CuI",
+        "D": "Cu(I₃)₂"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_CHEM_6",
+      "questionNumber": 16,
+      "subject": "Chemistry",
+      "chapter": "Hydrogen",
+      "topic": "Industrial Applications",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Largest industrial application of dihydrogen is",
+      "options": {
+        "A": "Manufacture of metal hydrides",
+        "B": "Rocket fuel",
+        "C": "Synthesis of ammonia",
+        "D": "Synthesis of nitric acid"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_CHEM_7",
+      "questionNumber": 17,
+      "subject": "Chemistry",
+      "chapter": "Hydrocarbons",
+      "topic": "Acidic Nature",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Metallic sodium does not react normally with",
+      "options": {
+        "A": "Gaseous ammonia",
+        "B": "But-2-yne",
+        "C": "Ethyne",
+        "D": "tert-butyl alcohol"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_CHEM_8",
+      "questionNumber": 18,
+      "subject": "Chemistry",
+      "chapter": "General Organic Chemistry",
+      "topic": "Metamerism",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Which pair of isomers is an example of metamerism?",
+      "options": {
+        "A": "Pair 1",
+        "B": "Pair 2",
+        "C": "Pair 3",
+        "D": "Pair 4"
+      },
+      "correctAnswer": "D",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_CHEM_9",
+      "questionNumber": 19,
+      "subject": "Chemistry",
+      "chapter": "Organic Chemistry Practical",
+      "topic": "Carius Method",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "In Carius method, halogen containing organic compound is heated with fuming nitric acid in presence of",
+      "options": {
+        "A": "HNO₃",
+        "B": "AgNO₃",
+        "C": "CuSO₄",
+        "D": "BaSO₄"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_CHEM_10",
+      "questionNumber": 20,
+      "subject": "Chemistry",
+      "chapter": "Hydrocarbons",
+      "topic": "Electrophilic Substitution",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Benzene on nitration gives nitrobenzene in presence of HNO₃ and H₂SO₄ mixture where",
+      "options": {
+        "A": "Both H₂SO₄ and HNO₃ act as bases",
+        "B": "HNO₃ acid and H₂SO₄ base",
+        "C": "Both act as acids",
+        "D": "HNO₃ base and H₂SO₄ acid"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+
+    {
+      "questionId": "JM2021S2_MATH_1",
+      "questionNumber": 21,
+      "subject": "Mathematics",
+      "chapter": "Sequence and Series",
+      "topic": "Logarithmic Series",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "If sum of first 21 terms of series log₉(1/2)x + log₉(1/3)x + ... is 504 then x equals",
+      "options": {
+        "A": "243",
+        "B": "9",
+        "C": "7",
+        "D": "81"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_MATH_2",
+      "questionNumber": 22,
+      "subject": "Mathematics",
+      "chapter": "Binomial Theorem",
+      "topic": "Expansion Coefficients",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "If (1−y)^m(1+y)^n = 1+a1y+a2y²+... and a1=a2=10 then m+n equals",
+      "options": {
+        "A": "88",
+        "B": "64",
+        "C": "100",
+        "D": "80"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_MATH_3",
+      "questionNumber": 23,
+      "subject": "Mathematics",
+      "chapter": "Circle",
+      "topic": "Family of Circles",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "r1 and r2 are radii of largest and smallest circles passing through (-4,1) and having centres on circle x²+y²+2x+4y−4=0. If r1/r2=a+b√2 then a+b equals",
+      "options": {
+        "A": "3",
+        "B": "11",
+        "C": "5",
+        "D": "7"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_MATH_4",
+      "questionNumber": 24,
+      "subject": "Mathematics",
+      "chapter": "Parabola",
+      "topic": "Locus",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "P is variable point on parabola y=4x²+1. Locus of midpoint of P and foot of perpendicular from P to line y=x is",
+      "options": {
+        "A": "(3x−y)²+(x−3y)+2=0",
+        "B": "2(3x−y)²+(x−3y)+2=0",
+        "C": "(3x−y)²+2(x−3y)+2=0",
+        "D": "2(x−3y)²+(3x−y)+2=0"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_MATH_5",
+      "questionNumber": 25,
+      "subject": "Mathematics",
+      "chapter": "Mathematical Reasoning",
+      "topic": "Logic Statements",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Given statements: (A) 3+3=7, (B) 4+3=8, (C) if both A and B are true then 5+6=17. Correct statement is",
+      "options": {
+        "A": "A false but B,C true",
+        "B": "A,C true while B false",
+        "C": "A true while B,C false",
+        "D": "A,B false while C true"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_MATH_6",
+      "questionNumber": 26,
+      "subject": "Mathematics",
+      "chapter": "Statistics",
+      "topic": "Mean and Variance",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Mean and variance of six observations 7,10,11,15,a,b are 10 and 20 respectively. Then |a−b| equals",
+      "options": {
+        "A": "9",
+        "B": "11",
+        "C": "7",
+        "D": "1"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_MATH_7",
+      "questionNumber": 27,
+      "subject": "Mathematics",
+      "chapter": "Trigonometry",
+      "topic": "Right Triangle",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "In a right angled triangle smallest angle is θ. If triangle formed by reciprocal of sides is also right angled then sinθ equals",
+      "options": {
+        "A": "(√5+1)/4",
+        "B": "(√5−1)/2",
+        "C": "(√2−1)/2",
+        "D": "(√5−1)/4"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_MATH_8",
+      "questionNumber": 28,
+      "subject": "Mathematics",
+      "chapter": "Matrices",
+      "topic": "System of Equations",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Value of k for which system 3x−y+4z=3, x+2y−3z=−2, 6x+5y+kz=−3 has infinitely many solutions is",
+      "options": {
+        "A": "3",
+        "B": "-5",
+        "C": "5",
+        "D": "-3"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_MATH_9",
+      "questionNumber": 29,
+      "subject": "Mathematics",
+      "chapter": "Inverse Trigonometric Functions",
+      "topic": "Trigonometric Evaluation",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Value of tan(2tan⁻¹(3/5)+sin⁻¹(5/13)) equals",
+      "options": {
+        "A": "-181/69",
+        "B": "220/21",
+        "C": "-291/76",
+        "D": "151/63"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    },
+    {
+      "questionId": "JM2021S2_MATH_10",
+      "questionNumber": 30,
+      "subject": "Mathematics",
+      "chapter": "Functions",
+      "topic": "Composite Functions",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "If f:R−{α/6}→R is defined by f(x)=(5x+3)/(6x−α) and (f∘f)(x)=x for all x then α equals",
+      "options": {
+        "A": "No such α exists",
+        "B": "5",
+        "C": "8",
+        "D": "6"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2021
+    }
+  ]
+}

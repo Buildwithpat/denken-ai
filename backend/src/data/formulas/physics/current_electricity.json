@@ -1,0 +1,313 @@
+{
+  "chapterId": "physics_current_electricity_016",
+  "fileName": "current_electricity.json",
+  "chapterName": "Current Electricity",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "current-electricity",
+    "ohms-law",
+    "resistance",
+    "kirchhoff-laws",
+    "drift-velocity",
+    "electric-power"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_curr_001",
+      "conceptName": "Electric Current",
+      "description": "Flow of electric charge through a conductor.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_curr_001_f1",
+          "name": "Electric Current",
+          "equation": "I = Q/t",
+          "latex": "I=\\frac{Q}{t}",
+          "meaning": "Rate of flow of charge.",
+          "variables": {
+            "I": {
+              "meaning": "Electric current",
+              "unit": "A"
+            },
+            "Q": {
+              "meaning": "Charge",
+              "unit": "C"
+            },
+            "t": {
+              "meaning": "Time",
+              "unit": "s"
+            }
+          },
+          "applications": ["Charge flow calculations", "Basic circuit analysis"]
+        },
+        {
+          "formulaId": "phy_curr_001_f2",
+          "name": "Current Density",
+          "equation": "J = I/A",
+          "latex": "J=\\frac{I}{A}",
+          "meaning": "Current per unit cross-sectional area."
+        },
+        {
+          "formulaId": "phy_curr_001_f3",
+          "name": "Drift Velocity Relation",
+          "equation": "I = nAeVd",
+          "latex": "I=nAeV_d",
+          "meaning": "Relation between current and drift velocity."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_curr_002",
+      "conceptName": "Ohm's Law",
+      "description": "Relation between voltage, current and resistance.",
+      "formulaType": "ohm-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_curr_002_f1",
+          "name": "Ohm's Law",
+          "equation": "V = IR",
+          "latex": "V=IR",
+          "meaning": "Potential difference across resistor."
+        },
+        {
+          "formulaId": "phy_curr_002_f2",
+          "name": "Resistance Formula",
+          "equation": "R = ρL/A",
+          "latex": "R=\\frac{\\rho L}{A}",
+          "meaning": "Resistance of conductor."
+        },
+        {
+          "formulaId": "phy_curr_002_f3",
+          "name": "Conductivity Relation",
+          "equation": "σ = 1/ρ",
+          "latex": "\\sigma=\\frac{1}{\\rho}",
+          "meaning": "Relation between conductivity and resistivity."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_curr_003",
+      "conceptName": "Temperature Dependence of Resistance",
+      "description": "Variation of resistance with temperature.",
+      "formulaType": "temperature-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_curr_003_f1",
+          "name": "Resistance Variation",
+          "equation": "Rt = R₀(1 + αΔT)",
+          "latex": "R_t=R_0(1+\\alpha\\Delta T)",
+          "meaning": "Resistance at temperature T."
+        },
+        {
+          "formulaId": "phy_curr_003_f2",
+          "name": "Resistivity Variation",
+          "equation": "ρt = ρ₀(1 + αΔT)",
+          "latex": "\\rho_t=\\rho_0(1+\\alpha\\Delta T)",
+          "meaning": "Resistivity variation with temperature."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_curr_004",
+      "conceptName": "Combination of Resistors",
+      "description": "Equivalent resistance in circuits.",
+      "formulaType": "combination-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_curr_004_f1",
+          "name": "Series Combination",
+          "equation": "Req = R₁ + R₂ + ...",
+          "latex": "R_{eq}=R_1+R_2+...",
+          "meaning": "Equivalent resistance in series."
+        },
+        {
+          "formulaId": "phy_curr_004_f2",
+          "name": "Parallel Combination",
+          "equation": "1/Req = 1/R₁ + 1/R₂ + ...",
+          "latex": "\\frac{1}{R_{eq}}=\\frac{1}{R_1}+\\frac{1}{R_2}+...",
+          "meaning": "Equivalent resistance in parallel."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_curr_005",
+      "conceptName": "Electrical Power and Energy",
+      "description": "Power consumed and electrical energy relations.",
+      "formulaType": "power-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_curr_005_f1",
+          "name": "Electric Power",
+          "equation": "P = VI",
+          "latex": "P=VI",
+          "meaning": "Electrical power consumed."
+        },
+        {
+          "formulaId": "phy_curr_005_f2",
+          "name": "Power using Resistance",
+          "equation": "P = I²R",
+          "latex": "P=I^2R",
+          "meaning": "Power dissipated in resistor."
+        },
+        {
+          "formulaId": "phy_curr_005_f3",
+          "name": "Power using Voltage",
+          "equation": "P = V²/R",
+          "latex": "P=\\frac{V^2}{R}",
+          "meaning": "Power relation using voltage."
+        },
+        {
+          "formulaId": "phy_curr_005_f4",
+          "name": "Electrical Energy",
+          "equation": "E = Pt",
+          "latex": "E=Pt",
+          "meaning": "Electrical energy consumed."
+        },
+        {
+          "formulaId": "phy_curr_005_f5",
+          "name": "Joule Heating Law",
+          "equation": "H = I²Rt",
+          "latex": "H=I^2Rt",
+          "meaning": "Heat produced due to current flow."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_curr_006",
+      "conceptName": "Kirchhoff's Laws",
+      "description": "Laws for current and voltage in circuits.",
+      "formulaType": "kirchhoff-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_curr_006_f1",
+          "name": "Kirchhoff Current Law",
+          "equation": "ΣI = 0",
+          "latex": "\\Sigma I=0",
+          "meaning": "Sum of currents at junction is zero."
+        },
+        {
+          "formulaId": "phy_curr_006_f2",
+          "name": "Kirchhoff Voltage Law",
+          "equation": "ΣV = 0",
+          "latex": "\\Sigma V=0",
+          "meaning": "Sum of voltages in closed loop is zero."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_curr_007",
+      "conceptName": "Cells and Internal Resistance",
+      "description": "EMF and internal resistance of cells.",
+      "formulaType": "cell-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_curr_007_f1",
+          "name": "Terminal Voltage",
+          "equation": "V = E - Ir",
+          "latex": "V=E-Ir",
+          "meaning": "Terminal voltage of cell during discharge."
+        },
+        {
+          "formulaId": "phy_curr_007_f2",
+          "name": "Current in Circuit",
+          "equation": "I = E/(R + r)",
+          "latex": "I=\\frac{E}{R+r}",
+          "meaning": "Current in external circuit."
+        },
+        {
+          "formulaId": "phy_curr_007_f3",
+          "name": "Maximum Current",
+          "equation": "Imax = E/r",
+          "latex": "I_{max}=\\frac{E}{r}",
+          "meaning": "Current when external resistance is zero."
+        },
+        {
+          "formulaId": "phy_curr_007_f4",
+          "name": "Cell Efficiency",
+          "equation": "η = R/(R + r)",
+          "latex": "\\eta=\\frac{R}{R+r}",
+          "meaning": "Efficiency of cell."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_curr_008",
+      "conceptName": "Wheatstone Bridge and Meter Bridge",
+      "description": "Balanced bridge circuits for resistance measurement.",
+      "formulaType": "bridge-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_curr_008_f1",
+          "name": "Wheatstone Bridge Balance",
+          "equation": "P/Q = R/S",
+          "latex": "\\frac{P}{Q}=\\frac{R}{S}",
+          "meaning": "Condition for balanced Wheatstone bridge."
+        },
+        {
+          "formulaId": "phy_curr_008_f2",
+          "name": "Meter Bridge Formula",
+          "equation": "X/R = l/(100-l)",
+          "latex": "\\frac{X}{R}=\\frac{l}{100-l}",
+          "meaning": "Unknown resistance using meter bridge."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_curr_009",
+      "conceptName": "Potentiometer",
+      "description": "Device for comparing EMF and measuring potential difference.",
+      "formulaType": "potentiometer-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_curr_009_f1",
+          "name": "Potential Gradient",
+          "equation": "k = V/L",
+          "latex": "k=\\frac{V}{L}",
+          "meaning": "Potential drop per unit length."
+        },
+        {
+          "formulaId": "phy_curr_009_f2",
+          "name": "EMF Comparison",
+          "equation": "E₁/E₂ = l₁/l₂",
+          "latex": "\\frac{E_1}{E_2}=\\frac{l_1}{l_2}",
+          "meaning": "Comparison of EMFs using potentiometer."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Current direction is opposite to electron flow.",
+    "Ohm's law is valid only for ohmic conductors.",
+    "In series combination, current remains same.",
+    "In parallel combination, voltage remains same."
+  ],
+  "commonMistakes": [
+    "Using wrong resistor combination formula",
+    "Ignoring internal resistance of cell",
+    "Wrong sign in Kirchhoff loops",
+    "Confusing EMF and terminal voltage"
+  ],
+  "jeeAdvancedFocus": [
+    "Complex circuit analysis",
+    "Kirchhoff law problems",
+    "Potentiometer applications",
+    "Drift velocity derivations"
+  ],
+  "neetFocus": [
+    "Ohm's law",
+    "Resistor combinations",
+    "Electric power",
+    "Cells and internal resistance"
+  ],
+  "keywords": [
+    "current electricity",
+    "ohms law",
+    "resistance",
+    "kirchhoff laws",
+    "drift velocity",
+    "electric power",
+    "potentiometer",
+    "meter bridge"
+  ]
+}

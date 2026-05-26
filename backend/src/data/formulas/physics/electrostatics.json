@@ -1,0 +1,270 @@
+{
+  "chapterId": "physics_electrostatics_015",
+  "fileName": "electrostatics.json",
+  "chapterName": "Electrostatics",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "electrostatics",
+    "electric-field",
+    "potential",
+    "gauss-law",
+    "coulomb-law",
+    "electric-flux"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_elec_001",
+      "conceptName": "Coulomb's Law",
+      "description": "Force between two stationary point charges.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_elec_001_f1",
+          "name": "Coulomb Force",
+          "equation": "F = kq₁q₂/r²",
+          "latex": "F=\\frac{kq_1q_2}{r^2}",
+          "meaning": "Electrostatic force between two point charges.",
+          "variables": {
+            "F": {
+              "meaning": "Electrostatic force",
+              "unit": "N"
+            },
+            "k": {
+              "meaning": "Electrostatic constant",
+              "unit": "N·m²/C²"
+            },
+            "q1": {
+              "meaning": "First charge",
+              "unit": "C"
+            },
+            "q2": {
+              "meaning": "Second charge",
+              "unit": "C"
+            },
+            "r": {
+              "meaning": "Distance between charges",
+              "unit": "m"
+            }
+          },
+          "applications": ["Force calculations", "Charge interactions"],
+          "commonMistakes": ["Ignoring sign of charges", "Using wrong distance"]
+        },
+        {
+          "formulaId": "phy_elec_001_f2",
+          "name": "Electrostatic Constant",
+          "equation": "k = 1/(4πϵ₀)",
+          "latex": "k=\\frac{1}{4\\pi\\epsilon_0}",
+          "meaning": "Relation between Coulomb constant and permittivity."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_elec_002",
+      "conceptName": "Electric Field",
+      "description": "Force experienced per unit positive charge.",
+      "formulaType": "field-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_elec_002_f1",
+          "name": "Electric Field Intensity",
+          "equation": "E = F/q",
+          "latex": "E=\\frac{F}{q}",
+          "meaning": "Electric field at a point."
+        },
+        {
+          "formulaId": "phy_elec_002_f2",
+          "name": "Field Due to Point Charge",
+          "equation": "E = kq/r²",
+          "latex": "E=\\frac{kq}{r^2}",
+          "meaning": "Electric field due to point charge."
+        },
+        {
+          "formulaId": "phy_elec_002_f3",
+          "name": "Force in Electric Field",
+          "equation": "F = qE",
+          "latex": "F=qE",
+          "meaning": "Force on charge in electric field."
+        },
+        {
+          "formulaId": "phy_elec_002_f4",
+          "name": "Electric Dipole Moment",
+          "equation": "p = q × 2a",
+          "latex": "p=q(2a)",
+          "meaning": "Dipole moment of electric dipole."
+        },
+        {
+          "formulaId": "phy_elec_002_f5",
+          "name": "Torque on Dipole",
+          "equation": "τ = pE sinθ",
+          "latex": "\\tau=pE\\sin\\theta",
+          "meaning": "Torque acting on dipole in electric field."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_elec_003",
+      "conceptName": "Electric Flux and Gauss Law",
+      "description": "Flux associated with electric field through a surface.",
+      "formulaType": "flux-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_elec_003_f1",
+          "name": "Electric Flux",
+          "equation": "Φ = E·A cosθ",
+          "latex": "\\Phi=EA\\cos\\theta",
+          "meaning": "Electric flux through surface."
+        },
+        {
+          "formulaId": "phy_elec_003_f2",
+          "name": "Gauss Law",
+          "equation": "Φ = q/ϵ₀",
+          "latex": "\\Phi=\\frac{q}{\\epsilon_0}",
+          "meaning": "Net electric flux through closed surface."
+        },
+        {
+          "formulaId": "phy_elec_003_f3",
+          "name": "Field Due to Infinite Line Charge",
+          "equation": "E = λ/(2πϵ₀r)",
+          "latex": "E=\\frac{\\lambda}{2\\pi\\epsilon_0r}",
+          "meaning": "Electric field around infinite line charge."
+        },
+        {
+          "formulaId": "phy_elec_003_f4",
+          "name": "Field Due to Infinite Plane Sheet",
+          "equation": "E = σ/(2ϵ₀)",
+          "latex": "E=\\frac{\\sigma}{2\\epsilon_0}",
+          "meaning": "Electric field near infinite sheet."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_elec_004",
+      "conceptName": "Electric Potential",
+      "description": "Work done per unit charge in bringing a test charge.",
+      "formulaType": "potential-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_elec_004_f1",
+          "name": "Electric Potential",
+          "equation": "V = W/q",
+          "latex": "V=\\frac{W}{q}",
+          "meaning": "Electric potential at a point."
+        },
+        {
+          "formulaId": "phy_elec_004_f2",
+          "name": "Potential Due to Point Charge",
+          "equation": "V = kq/r",
+          "latex": "V=\\frac{kq}{r}",
+          "meaning": "Potential due to point charge."
+        },
+        {
+          "formulaId": "phy_elec_004_f3",
+          "name": "Potential Energy of Two Charges",
+          "equation": "U = kq₁q₂/r",
+          "latex": "U=\\frac{kq_1q_2}{r}",
+          "meaning": "Electrostatic potential energy."
+        },
+        {
+          "formulaId": "phy_elec_004_f4",
+          "name": "Relation Between Field and Potential",
+          "equation": "E = -dV/dr",
+          "latex": "E=-\\frac{dV}{dr}",
+          "meaning": "Electric field as negative potential gradient."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_elec_005",
+      "conceptName": "Equipotential Surfaces",
+      "description": "Surfaces with constant electric potential.",
+      "formulaType": "equipotential-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_elec_005_f1",
+          "name": "Work on Equipotential Surface",
+          "equation": "W = 0",
+          "latex": "W=0",
+          "meaning": "No work is done moving charge on equipotential surface."
+        },
+        {
+          "formulaId": "phy_elec_005_f2",
+          "name": "Relation Between E and Potential Difference",
+          "equation": "E = V/d",
+          "latex": "E=\\frac{V}{d}",
+          "meaning": "Uniform electric field relation."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_elec_006",
+      "conceptName": "Electric Dipole",
+      "description": "Pair of equal and opposite charges separated by small distance.",
+      "formulaType": "dipole-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_elec_006_f1",
+          "name": "Potential Due to Dipole",
+          "equation": "V = kp cosθ/r²",
+          "latex": "V=\\frac{kp\\cos\\theta}{r^2}",
+          "meaning": "Potential due to electric dipole."
+        },
+        {
+          "formulaId": "phy_elec_006_f2",
+          "name": "Axial Electric Field of Dipole",
+          "equation": "E = 2kp/r³",
+          "latex": "E=\\frac{2kp}{r^3}",
+          "meaning": "Electric field on axial line."
+        },
+        {
+          "formulaId": "phy_elec_006_f3",
+          "name": "Equatorial Electric Field of Dipole",
+          "equation": "E = kp/r³",
+          "latex": "E=\\frac{kp}{r^3}",
+          "meaning": "Electric field on equatorial line."
+        },
+        {
+          "formulaId": "phy_elec_006_f4",
+          "name": "Potential Energy of Dipole",
+          "equation": "U = -pE cosθ",
+          "latex": "U=-pE\\cos\\theta",
+          "meaning": "Potential energy of dipole in electric field."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Electric field lines never intersect.",
+    "Potential is scalar while electric field is vector.",
+    "Electric field is always perpendicular to equipotential surface.",
+    "Inside conductor in electrostatic equilibrium, electric field is zero."
+  ],
+  "commonMistakes": [
+    "Confusing electric field and force",
+    "Ignoring vector nature of electric field",
+    "Wrong sign in potential energy",
+    "Incorrect dipole field formulas"
+  ],
+  "jeeAdvancedFocus": [
+    "Gauss law applications",
+    "Dipole field derivations",
+    "Potential energy systems",
+    "Electric field graphs"
+  ],
+  "neetFocus": [
+    "Coulomb law",
+    "Electric field",
+    "Electric potential",
+    "Gauss law basics"
+  ],
+  "keywords": [
+    "electrostatics",
+    "electric field",
+    "potential",
+    "dipole",
+    "gauss law",
+    "electric flux",
+    "coulomb law",
+    "equipotential"
+  ]
+}

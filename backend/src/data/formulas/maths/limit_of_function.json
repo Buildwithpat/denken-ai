@@ -1,0 +1,240 @@
+{
+  "chapterId": "math_hyperbola_005",
+  "fileName": "hyperbola.json",
+  "chapterName": "Hyperbola",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "hyperbola",
+    "conic-sections",
+    "asymptotes",
+    "eccentricity",
+    "tangent"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_hyper_001",
+      "conceptName": "Standard Equation of Hyperbola",
+      "description": "Basic equations of hyperbola in standard forms.",
+      "formulaType": "hyperbola-equation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_hyper_001_f1",
+          "name": "Horizontal Transverse Axis",
+          "equation": "x²/a² - y²/b² = 1",
+          "latex": "\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1",
+          "meaning": "Standard hyperbola opening left and right.",
+          "applications": ["Coordinate geometry", "Conic sections"]
+        },
+        {
+          "formulaId": "math_hyper_001_f2",
+          "name": "Vertical Transverse Axis",
+          "equation": "y²/a² - x²/b² = 1",
+          "latex": "\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1",
+          "meaning": "Hyperbola opening upward and downward."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_hyper_002",
+      "conceptName": "Basic Parameters",
+      "description": "Important quantities associated with hyperbola.",
+      "formulaType": "parameter-formula",
+      "formulas": [
+        {
+          "formulaId": "math_hyper_002_f1",
+          "name": "Relation Between a, b and c",
+          "equation": "c² = a² + b²",
+          "latex": "c^2=a^2+b^2",
+          "meaning": "Relation among semi-transverse axis, conjugate axis and focal length."
+        },
+        {
+          "formulaId": "math_hyper_002_f2",
+          "name": "Eccentricity",
+          "equation": "e = c/a",
+          "latex": "e=\\frac{c}{a}",
+          "meaning": "Eccentricity of hyperbola."
+        },
+        {
+          "formulaId": "math_hyper_002_f3",
+          "name": "Condition of Hyperbola",
+          "equation": "e > 1",
+          "latex": "e>1",
+          "meaning": "Hyperbola always has eccentricity greater than 1."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_hyper_003",
+      "conceptName": "Focus and Directrix",
+      "description": "Geometrical parts of hyperbola.",
+      "formulaType": "focus-directrix-formula",
+      "formulas": [
+        {
+          "formulaId": "math_hyper_003_f1",
+          "name": "Focus Coordinates",
+          "equation": "(±c,0)",
+          "latex": "(\\pm c,0)",
+          "meaning": "Coordinates of foci for horizontal hyperbola."
+        },
+        {
+          "formulaId": "math_hyper_003_f2",
+          "name": "Directrix Equation",
+          "equation": "x = ±a/e",
+          "latex": "x=\\pm\\frac{a}{e}",
+          "meaning": "Equation of directrices."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_hyper_004",
+      "conceptName": "Asymptotes",
+      "description": "Lines approached by hyperbola at infinity.",
+      "formulaType": "asymptote-formula",
+      "formulas": [
+        {
+          "formulaId": "math_hyper_004_f1",
+          "name": "Asymptotes of Hyperbola",
+          "equation": "y = ±(b/a)x",
+          "latex": "y=\\pm\\frac{b}{a}x",
+          "meaning": "Equations of asymptotes."
+        },
+        {
+          "formulaId": "math_hyper_004_f2",
+          "name": "Rectangular Hyperbola Condition",
+          "equation": "a = b",
+          "latex": "a=b",
+          "meaning": "Condition for rectangular hyperbola."
+        },
+        {
+          "formulaId": "math_hyper_004_f3",
+          "name": "Rectangular Hyperbola Equation",
+          "equation": "xy = c²",
+          "latex": "xy=c^2",
+          "meaning": "Standard equation of rectangular hyperbola."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_hyper_005",
+      "conceptName": "Parametric Coordinates",
+      "description": "Coordinates of general point on hyperbola.",
+      "formulaType": "parametric-formula",
+      "formulas": [
+        {
+          "formulaId": "math_hyper_005_f1",
+          "name": "Parametric Point",
+          "equation": "(a secθ, b tanθ)",
+          "latex": "(a\\sec\\theta,b\\tan\\theta)",
+          "meaning": "General point on hyperbola."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_hyper_006",
+      "conceptName": "Tangent to Hyperbola",
+      "description": "Equations of tangent in different forms.",
+      "formulaType": "tangent-formula",
+      "formulas": [
+        {
+          "formulaId": "math_hyper_006_f1",
+          "name": "Tangent at Point",
+          "equation": "xx₁/a² - yy₁/b² = 1",
+          "latex": "\\frac{xx_1}{a^2}-\\frac{yy_1}{b^2}=1",
+          "meaning": "Tangent at point (x₁,y₁)."
+        },
+        {
+          "formulaId": "math_hyper_006_f2",
+          "name": "Parametric Tangent",
+          "equation": "x secθ/a - y tanθ/b = 1",
+          "latex": "\\frac{x\\sec\\theta}{a}-\\frac{y\\tan\\theta}{b}=1",
+          "meaning": "Tangent at parametric point."
+        },
+        {
+          "formulaId": "math_hyper_006_f3",
+          "name": "Slope Form Tangent",
+          "equation": "y = mx ± √(a²m² - b²)",
+          "latex": "y=mx\\pm\\sqrt{a^2m^2-b^2}",
+          "meaning": "Equation of tangent with slope m."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_hyper_007",
+      "conceptName": "Normal to Hyperbola",
+      "description": "Equation of normal at a point.",
+      "formulaType": "normal-formula",
+      "formulas": [
+        {
+          "formulaId": "math_hyper_007_f1",
+          "name": "Normal Equation",
+          "equation": "ax/secθ + by/tanθ = a² + b²",
+          "latex": "\\frac{ax}{\\sec\\theta}+\\frac{by}{\\tan\\theta}=a^2+b^2",
+          "meaning": "Normal at parametric point."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_hyper_008",
+      "conceptName": "Director Circle",
+      "description": "Locus of intersection of perpendicular tangents.",
+      "formulaType": "director-circle-formula",
+      "formulas": [
+        {
+          "formulaId": "math_hyper_008_f1",
+          "name": "Director Circle Equation",
+          "equation": "x² + y² = a² - b²",
+          "latex": "x^2+y^2=a^2-b^2",
+          "meaning": "Equation of director circle."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_hyper_009",
+      "conceptName": "Chord of Contact",
+      "description": "Equation joining points of contact.",
+      "formulaType": "chord-contact-formula",
+      "formulas": [
+        {
+          "formulaId": "math_hyper_009_f1",
+          "name": "Chord of Contact",
+          "equation": "T = 0",
+          "latex": "T=0",
+          "meaning": "Equation of chord of contact."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Difference of distances from two foci is constant for hyperbola.",
+    "Eccentricity of hyperbola is always greater than 1.",
+    "Asymptotes intersect at center of hyperbola.",
+    "Rectangular hyperbola has perpendicular asymptotes."
+  ],
+  "commonMistakes": [
+    "Using ellipse formulas in hyperbola",
+    "Wrong asymptote equations",
+    "Mistakes in eccentricity relation",
+    "Incorrect tangent formulas"
+  ],
+  "jeeAdvancedFocus": [
+    "Asymptote problems",
+    "Director circle",
+    "Rectangular hyperbola",
+    "Advanced tangent and normal problems"
+  ],
+  "neetFocus": [
+    "Standard equation",
+    "Asymptotes",
+    "Eccentricity",
+    "Focus and directrix"
+  ],
+  "keywords": [
+    "hyperbola",
+    "asymptotes",
+    "eccentricity",
+    "focus",
+    "tangent",
+    "rectangular hyperbola"
+  ]
+}

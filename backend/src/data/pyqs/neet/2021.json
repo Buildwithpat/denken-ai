@@ -1,0 +1,577 @@
+{
+  "questions": [
+    {
+      "questionId": "NEET2021_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Units and Dimensions",
+      "topic": "Dimensional Analysis",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "If E and G respectively denote energy and gravitational constant, then dimensions of G/E are",
+      "options": {
+        "A": "[M]−1[L]−1[T]2",
+        "B": "[M]−1[L][T]−1",
+        "C": "[M]−2[L]−1[T]2",
+        "D": "[M]2[L]−1[T]1"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Units and Measurements",
+      "topic": "Least Count",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "A screw gauge gives main scale reading 0 mm and circular scale reading 52 divisions. One main scale division corresponds to 100 divisions on circular scale. Pitch is 1 mm. Diameter measured is",
+      "options": {
+        "A": "0.026 cm",
+        "B": "0.26 cm",
+        "C": "0.052 cm",
+        "D": "0.52 cm"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Work Energy Power",
+      "topic": "Dimensions of Physical Quantities",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "If force, acceleration and time are chosen as fundamental units, dimensions of energy are",
+      "options": {
+        "A": "[F][A]−1[T]−1",
+        "B": "[F][A]1[T]−1",
+        "C": "[F]1[A]−1[T]1",
+        "D": "[F][A][T]"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Laws of Motion",
+      "topic": "Friction",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A small block slides down on smooth inclined plane starting from rest. Let Sn be distance travelled in interval t=n−1 to t=n. Ratio S2/S1 is",
+      "options": {
+        "A": "2n−1 / 2n+1",
+        "B": "2n+1 / 2n−1",
+        "C": "2n−1 / 2n",
+        "D": "2n / 2n−1"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "Work Energy Power",
+      "topic": "Power",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Water falls from height 60 m at rate 15 kg/s. Loss due to frictional force is 10%. Power generated is",
+      "options": {
+        "A": "8.1 kW",
+        "B": "12.3 kW",
+        "C": "7.0 kW",
+        "D": "10.2 kW"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Gravitation",
+      "topic": "Escape Velocity",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Escape velocity from Earth's surface is v. Escape velocity from another planet with radius four times Earth and same density is",
+      "options": {
+        "A": "2v",
+        "B": "3v",
+        "C": "4v",
+        "D": "v"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "Mechanical Properties of Fluids",
+      "topic": "Viscosity",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Velocity of small ball of mass M and density d falling in glycerine becomes constant. If density of glycerine is d/2 then viscous force acting on ball is",
+      "options": {
+        "A": "Mg",
+        "B": "3Mg/2",
+        "C": "2Mg",
+        "D": "Mg/2"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "Thermal Properties of Matter",
+      "topic": "Calorimetry",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "A cup of coffee cools from 90°C to 60°C in t minutes. Time taken to cool from 60°C to 30°C is",
+      "options": {
+        "A": "13t/5",
+        "B": "10t/13",
+        "C": "5t/13",
+        "D": "13t/10"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "Kinetic Theory",
+      "topic": "Degrees of Freedom",
+      "difficulty": "medium",
+      "questionType": "match_list",
+      "questionText": "Match physical quantities with expressions.",
+      "options": {
+        "A": "Root mean square speed",
+        "B": "Pressure exerted by ideal gas",
+        "C": "Average kinetic energy",
+        "D": "Total internal energy"
+      },
+      "correctAnswer": "A-Q,B-R,C-S,D-P",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Oscillations",
+      "topic": "SHM",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "A body executing simple harmonic motion with frequency n. Frequency of potential energy is",
+      "options": {
+        "A": "2n",
+        "B": "3n",
+        "C": "4n",
+        "D": "n"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2021
+    },
+
+    {
+      "questionId": "NEET2021_CHEM_1",
+      "questionNumber": 1,
+      "subject": "Chemistry",
+      "chapter": "Some Basic Concepts of Chemistry",
+      "topic": "Empirical Formula",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "An organic compound contains 78% carbon and remaining percentage hydrogen. Empirical formula is",
+      "options": {
+        "A": "CH",
+        "B": "CH2",
+        "C": "CH3",
+        "D": "CH4"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_CHEM_2",
+      "questionNumber": 2,
+      "subject": "Chemistry",
+      "chapter": "Structure of Atom",
+      "topic": "de Broglie Wavelength",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Particle accelerated through 1.58 kHz frequency has wavelength",
+      "options": {
+        "A": "219.2 nm",
+        "B": "2192 m",
+        "C": "21.92 cm",
+        "D": "219.3 m"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_CHEM_3",
+      "questionNumber": 3,
+      "subject": "Chemistry",
+      "chapter": "Chemical Bonding",
+      "topic": "Hybridization",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "In phosphorus deficient compound hybridization around central atom is",
+      "options": {
+        "A": "sp3 and d",
+        "B": "sp and 6",
+        "C": "sp3d",
+        "D": "sp3 and 4"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_CHEM_4",
+      "questionNumber": 4,
+      "subject": "Chemistry",
+      "chapter": "Chemical Bonding",
+      "topic": "Molecular Geometry",
+      "difficulty": "easy",
+      "questionType": "match_list",
+      "questionText": "Match compounds with geometry.",
+      "options": {
+        "A": "PCl5",
+        "B": "SF4",
+        "C": "BrF5",
+        "D": "BF3"
+      },
+      "correctAnswer": "A-ii,B-iv,C-i,D-iii",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_CHEM_5",
+      "questionNumber": 5,
+      "subject": "Chemistry",
+      "chapter": "States of Matter",
+      "topic": "Gas Laws",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Correct graphical representation of Boyle's law is",
+      "options": {
+        "A": "Graph A",
+        "B": "Graph B",
+        "C": "Graph C",
+        "D": "Graph D"
+      },
+      "correctAnswer": "C",
+      "diagramRequired": true,
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_CHEM_6",
+      "questionNumber": 6,
+      "subject": "Chemistry",
+      "chapter": "Thermodynamics",
+      "topic": "Cp and Cv",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Correct relation between Cp and Cv for one mole ideal gas is",
+      "options": {
+        "A": "Cp−Cv = R",
+        "B": "Cv−Cp = R",
+        "C": "Cp+Cv = R",
+        "D": "Cp×Cv = R"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_CHEM_7",
+      "questionNumber": 7,
+      "subject": "Chemistry",
+      "chapter": "Equilibrium",
+      "topic": "Buffer Solution",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "pKb of dimethylamine and pKa of acetic acid are 3.27 and 4.77 respectively at 25°C. pH of dimethylammonium acetate solution is",
+      "options": {
+        "A": "5.50",
+        "B": "7.75",
+        "C": "6.25",
+        "D": "8.50"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_CHEM_8",
+      "questionNumber": 8,
+      "subject": "Chemistry",
+      "chapter": "Redox Reactions",
+      "topic": "Displacement Reaction",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Correct metal displacement reaction is",
+      "options": {
+        "A": "Cr2O3 + 2Al → Al2O3 + 2Cr",
+        "B": "Fe + 2HCl → FeCl2 + H2",
+        "C": "2Pb(NO3)2 → 2PbO + 4NO2 + O2",
+        "D": "Ag + CuSO4 → Ag2SO4 + Cu"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_CHEM_9",
+      "questionNumber": 9,
+      "subject": "Chemistry",
+      "chapter": "Hydrogen",
+      "topic": "Isotopes",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Tritium, radioactive isotope of hydrogen emits",
+      "options": {
+        "A": "Alpha rays",
+        "B": "Gamma rays",
+        "C": "Neutron",
+        "D": "Beta rays"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_CHEM_10",
+      "questionNumber": 10,
+      "subject": "Chemistry",
+      "chapter": "s Block Elements",
+      "topic": "Ionic Solids",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Structures of beryllium chloride in solid state and vapour phase are",
+      "options": {
+        "A": "Linear and bent",
+        "B": "Dimer and linear",
+        "C": "Chain and dimer",
+        "D": "Chain and linear"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2021
+    },
+
+    {
+      "questionId": "NEET2021_BIO_1",
+      "questionNumber": 1,
+      "subject": "Biology",
+      "chapter": "Plant Kingdom",
+      "topic": "Algae",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which algae produce carrageen?",
+      "options": {
+        "A": "Brown algae",
+        "B": "Red algae",
+        "C": "Blue-green algae",
+        "D": "Green algae"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_BIO_2",
+      "questionNumber": 2,
+      "subject": "Biology",
+      "chapter": "Plant Kingdom",
+      "topic": "Classification",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Genera like Selaginella and Salvinia produce two kinds of spores. Such plants are known as",
+      "options": {
+        "A": "Heterosporous",
+        "B": "Homosporous",
+        "C": "Heteroporous",
+        "D": "Homosporous"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_BIO_3",
+      "questionNumber": 3,
+      "subject": "Biology",
+      "chapter": "Plant Kingdom",
+      "topic": "Bryophytes",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Which material remains immotile in reserve food?",
+      "options": {
+        "A": "Gracilaria",
+        "B": "Volvox",
+        "C": "Ulothrix",
+        "D": "Ectocarpus"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_BIO_4",
+      "questionNumber": 4,
+      "subject": "Biology",
+      "chapter": "Morphology of Flowering Plants",
+      "topic": "Inflorescence",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Gemmae are present in",
+      "options": {
+        "A": "Pteridophytes",
+        "B": "Some gymnosperms",
+        "C": "Some liverworts",
+        "D": "Mosses"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_BIO_5",
+      "questionNumber": 5,
+      "subject": "Biology",
+      "chapter": "Morphology of Flowering Plants",
+      "topic": "Flowers",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Dialypetalous flowers are found in",
+      "options": {
+        "A": "Citrus",
+        "B": "Pea",
+        "C": "China rose",
+        "D": "Both A and C"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_BIO_6",
+      "questionNumber": 6,
+      "subject": "Biology",
+      "chapter": "Anatomy of Flowering Plants",
+      "topic": "Plant Tissues",
+      "difficulty": "medium",
+      "questionType": "match_list",
+      "questionText": "Match tissues with functions.",
+      "options": {
+        "A": "Lenticels",
+        "B": "Cork cambium",
+        "C": "Secondary cortex",
+        "D": "Cork"
+      },
+      "correctAnswer": "A-iii,B-i,C-iv,D-ii",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_BIO_7",
+      "questionNumber": 7,
+      "subject": "Biology",
+      "chapter": "Cell The Unit of Life",
+      "topic": "Cell Organelles",
+      "difficulty": "medium",
+      "questionType": "match_list",
+      "questionText": "Match cell structures with corresponding features.",
+      "options": {
+        "A": "Cells with active cell division capacity",
+        "B": "Tissue having all cells similar in structure",
+        "C": "Tissue having different types of cells",
+        "D": "Dead cells with highly thickened walls"
+      },
+      "correctAnswer": "A-ii,B-i,C-iv,D-iii",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_BIO_8",
+      "questionNumber": 8,
+      "subject": "Biology",
+      "chapter": "Cell The Unit of Life",
+      "topic": "Cell Biology",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which statement is incorrect?",
+      "options": {
+        "A": "Microbodies are present in plant and animal cells",
+        "B": "Nuclear pore acts as barrier between nucleus and cytoplasm",
+        "C": "Nuclear pores act as passage for proteins and RNA",
+        "D": "Mature sieve tube elements possess nucleus"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_BIO_9",
+      "questionNumber": 9,
+      "subject": "Biology",
+      "chapter": "Cell Cycle and Cell Division",
+      "topic": "Chromosome Structure",
+      "difficulty": "medium",
+      "questionType": "match_list",
+      "questionText": "Match chromosome structures.",
+      "options": {
+        "A": "Cristae",
+        "B": "Thylakoids",
+        "C": "Centromere",
+        "D": "Cisternae"
+      },
+      "correctAnswer": "A-ii,B-iii,C-iv,D-i",
+      "exam": "NEET",
+      "year": 2021
+    },
+    {
+      "questionId": "NEET2021_BIO_10",
+      "questionNumber": 10,
+      "subject": "Biology",
+      "chapter": "Biomolecules",
+      "topic": "Primary Metabolites",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which of the following are not secondary metabolites in plants?",
+      "options": {
+        "A": "Amino acids and glucose",
+        "B": "Vinblastin and curcumin",
+        "C": "Rubber and gums",
+        "D": "Morphine and codeine"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2021
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "chapterId": "physics_centre_of_mass_009",
+  "fileName": "centre_of_mass.json",
+  "chapterName": "Centre of Mass",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "centre-of-mass",
+    "momentum",
+    "collision",
+    "system-of-particles",
+    "conservation-of-momentum",
+    "impulse"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_com_001",
+      "conceptName": "Centre of Mass Basics",
+      "description": "Point representing average position of mass distribution.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_com_001_f1",
+          "name": "Centre of Mass in One Dimension",
+          "equation": "Xcm = (m₁x₁ + m₂x₂ + ...)/(m₁ + m₂ + ...)",
+          "latex": "X_{cm}=\\frac{m_1x_1+m_2x_2+...}{m_1+m_2+...}",
+          "meaning": "Position of center of mass for particle system.",
+          "variables": {
+            "mi": {
+              "meaning": "Mass of particle",
+              "unit": "kg"
+            },
+            "xi": {
+              "meaning": "Position coordinate",
+              "unit": "m"
+            }
+          },
+          "applications": [
+            "Particle systems",
+            "Rigid body analysis",
+            "Balance problems"
+          ],
+          "commonMistakes": [
+            "Ignoring coordinate signs",
+            "Using arithmetic average instead of weighted average"
+          ]
+        },
+        {
+          "formulaId": "phy_com_001_f2",
+          "name": "Centre of Mass Vector Form",
+          "equation": "Rcm = (ΣmiRi)/(Σmi)",
+          "latex": "\\vec{R}_{cm}=\\frac{\\Sigma m_i\\vec{R}_i}{\\Sigma m_i}",
+          "meaning": "Vector form of center of mass."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_com_002",
+      "conceptName": "Centre of Mass Velocity",
+      "description": "Velocity of center of mass for moving systems.",
+      "formulaType": "motion-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_com_002_f1",
+          "name": "Velocity of Centre of Mass",
+          "equation": "Vcm = (Σmivi)/(Σmi)",
+          "latex": "\\vec{V}_{cm}=\\frac{\\Sigma m_i\\vec{v}_i}{\\Sigma m_i}",
+          "meaning": "Velocity of COM of system.",
+          "applications": [
+            "Collision analysis",
+            "Explosion problems",
+            "System motion"
+          ]
+        },
+        {
+          "formulaId": "phy_com_002_f2",
+          "name": "Acceleration of Centre of Mass",
+          "equation": "Acm = Fext / M",
+          "latex": "\\vec{A}_{cm}=\\frac{\\vec{F}_{ext}}{M}",
+          "meaning": "Acceleration depends only on external force."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_com_003",
+      "conceptName": "Linear Momentum",
+      "description": "Momentum of particle systems.",
+      "formulaType": "momentum-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_com_003_f1",
+          "name": "Linear Momentum",
+          "equation": "p = mv",
+          "latex": "p=mv",
+          "meaning": "Momentum of moving body.",
+          "applications": [
+            "Collision problems",
+            "Impulse calculations",
+            "Rocket motion"
+          ]
+        },
+        {
+          "formulaId": "phy_com_003_f2",
+          "name": "System Momentum",
+          "equation": "P = Σpi",
+          "latex": "\\vec{P}=\\Sigma \\vec{p}_i",
+          "meaning": "Total momentum of particle system."
+        },
+        {
+          "formulaId": "phy_com_003_f3",
+          "name": "Momentum-COM Relation",
+          "equation": "P = MVcm",
+          "latex": "\\vec{P}=M\\vec{V}_{cm}",
+          "meaning": "Total momentum equals total mass times COM velocity."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_com_004",
+      "conceptName": "Impulse",
+      "description": "Effect of force over time interval.",
+      "formulaType": "impulse-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_com_004_f1",
+          "name": "Impulse",
+          "equation": "J = FΔt",
+          "latex": "J=F\\Delta t",
+          "meaning": "Impulse delivered by force."
+        },
+        {
+          "formulaId": "phy_com_004_f2",
+          "name": "Impulse Momentum Theorem",
+          "equation": "J = Δp",
+          "latex": "J=\\Delta p",
+          "meaning": "Impulse equals change in momentum."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_com_005",
+      "conceptName": "Conservation of Momentum",
+      "description": "Momentum remains conserved in isolated systems.",
+      "formulaType": "conservation-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_com_005_f1",
+          "name": "Conservation of Linear Momentum",
+          "equation": "ΣPi = ΣPf",
+          "latex": "\\Sigma P_i=\\Sigma P_f",
+          "meaning": "Initial momentum equals final momentum.",
+          "conditions": ["No external force acts"],
+          "applications": ["Collisions", "Explosions", "Rocket propulsion"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_com_006",
+      "conceptName": "Collisions",
+      "description": "Interaction between moving bodies.",
+      "formulaType": "collision-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_com_006_f1",
+          "name": "Coefficient of Restitution",
+          "equation": "e = Relative velocity of separation / Relative velocity of approach",
+          "latex": "e=\\frac{v_2-v_1}{u_1-u_2}",
+          "meaning": "Measure of elasticity of collision.",
+          "applications": [
+            "Elastic collisions",
+            "Inelastic collisions",
+            "Impact analysis"
+          ]
+        },
+        {
+          "formulaId": "phy_com_006_f2",
+          "name": "Perfectly Elastic Collision",
+          "equation": "KE before = KE after",
+          "latex": "KE_i=KE_f",
+          "meaning": "Kinetic energy conserved."
+        },
+        {
+          "formulaId": "phy_com_006_f3",
+          "name": "Perfectly Inelastic Collision",
+          "equation": "Bodies move together after collision",
+          "latex": "v_1=v_2",
+          "meaning": "Maximum kinetic energy loss."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_com_007",
+      "conceptName": "Rocket Motion",
+      "description": "Motion due to momentum conservation with variable mass.",
+      "formulaType": "advanced-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_com_007_f1",
+          "name": "Rocket Equation",
+          "equation": "v = ve ln(m₀/m)",
+          "latex": "v=v_e\\ln\\left(\\frac{m_0}{m}\\right)",
+          "meaning": "Velocity of rocket during fuel ejection.",
+          "variables": {
+            "ve": {
+              "meaning": "Exhaust velocity",
+              "unit": "m/s"
+            },
+            "m0": {
+              "meaning": "Initial mass",
+              "unit": "kg"
+            },
+            "m": {
+              "meaning": "Final mass",
+              "unit": "kg"
+            }
+          },
+          "applications": ["Rocket propulsion", "Space mechanics"]
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Internal forces cannot change center of mass motion.",
+    "Momentum is conserved only when external force is zero.",
+    "Centre of mass may lie outside body.",
+    "Impulse changes momentum."
+  ],
+  "commonMistakes": [
+    "Ignoring vector nature of momentum",
+    "Using wrong sign convention",
+    "Applying momentum conservation with external force",
+    "Confusing elastic and inelastic collisions"
+  ],
+  "jeeAdvancedFocus": [
+    "2D collisions",
+    "Explosions",
+    "Variable mass systems",
+    "Rocket motion"
+  ],
+  "neetFocus": [
+    "Momentum conservation",
+    "Impulse",
+    "Centre of mass basics",
+    "Collision formulas"
+  ],
+  "keywords": [
+    "centre of mass",
+    "momentum",
+    "collision",
+    "impulse",
+    "rocket motion",
+    "elastic collision",
+    "inelastic collision",
+    "conservation of momentum"
+  ]
+}

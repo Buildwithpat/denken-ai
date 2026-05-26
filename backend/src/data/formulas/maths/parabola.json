@@ -1,0 +1,234 @@
+{
+  "chapterId": "math_parabola_003",
+  "fileName": "parabola.json",
+  "chapterName": "Parabola",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": ["parabola", "conic-sections", "focus", "directrix", "tangent"],
+  "concepts": [
+    {
+      "conceptId": "math_para_001",
+      "conceptName": "Standard Equation of Parabola",
+      "description": "Basic equations of parabola in standard positions.",
+      "formulaType": "parabola-equation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_para_001_f1",
+          "name": "Right Opening Parabola",
+          "equation": "y² = 4ax",
+          "latex": "y^2=4ax",
+          "meaning": "Standard parabola opening right.",
+          "applications": ["Coordinate geometry", "Conic sections"]
+        },
+        {
+          "formulaId": "math_para_001_f2",
+          "name": "Left Opening Parabola",
+          "equation": "y² = -4ax",
+          "latex": "y^2=-4ax",
+          "meaning": "Parabola opening left."
+        },
+        {
+          "formulaId": "math_para_001_f3",
+          "name": "Upward Opening Parabola",
+          "equation": "x² = 4ay",
+          "latex": "x^2=4ay",
+          "meaning": "Parabola opening upward."
+        },
+        {
+          "formulaId": "math_para_001_f4",
+          "name": "Downward Opening Parabola",
+          "equation": "x² = -4ay",
+          "latex": "x^2=-4ay",
+          "meaning": "Parabola opening downward."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_para_002",
+      "conceptName": "Focus and Directrix",
+      "description": "Important geometrical parts of parabola.",
+      "formulaType": "focus-directrix-formula",
+      "formulas": [
+        {
+          "formulaId": "math_para_002_f1",
+          "name": "Focus of y² = 4ax",
+          "equation": "(a,0)",
+          "latex": "(a,0)",
+          "meaning": "Coordinates of focus."
+        },
+        {
+          "formulaId": "math_para_002_f2",
+          "name": "Directrix of y² = 4ax",
+          "equation": "x = -a",
+          "latex": "x=-a",
+          "meaning": "Equation of directrix."
+        },
+        {
+          "formulaId": "math_para_002_f3",
+          "name": "Length of Latus Rectum",
+          "equation": "4a",
+          "latex": "4a",
+          "meaning": "Length of latus rectum."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_para_003",
+      "conceptName": "Parametric Coordinates",
+      "description": "Coordinates of general point on parabola.",
+      "formulaType": "parametric-formula",
+      "formulas": [
+        {
+          "formulaId": "math_para_003_f1",
+          "name": "Parametric Point",
+          "equation": "(at², 2at)",
+          "latex": "(at^2,2at)",
+          "meaning": "General point on y² = 4ax."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_para_004",
+      "conceptName": "Tangent to Parabola",
+      "description": "Equations of tangent in various forms.",
+      "formulaType": "tangent-formula",
+      "formulas": [
+        {
+          "formulaId": "math_para_004_f1",
+          "name": "Tangent at Point",
+          "equation": "yy₁ = 2a(x+x₁)",
+          "latex": "yy_1=2a(x+x_1)",
+          "meaning": "Tangent at point (x₁,y₁)."
+        },
+        {
+          "formulaId": "math_para_004_f2",
+          "name": "Tangent in Slope Form",
+          "equation": "y = mx + a/m",
+          "latex": "y=mx+\\frac{a}{m}",
+          "meaning": "Equation of tangent with slope m."
+        },
+        {
+          "formulaId": "math_para_004_f3",
+          "name": "Parametric Tangent",
+          "equation": "ty = x + at²",
+          "latex": "ty=x+at^2",
+          "meaning": "Tangent at parametric point."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_para_005",
+      "conceptName": "Normal to Parabola",
+      "description": "Equation of normal at a point.",
+      "formulaType": "normal-formula",
+      "formulas": [
+        {
+          "formulaId": "math_para_005_f1",
+          "name": "Normal Equation",
+          "equation": "y = -tx + 2at + at³",
+          "latex": "y=-tx+2at+at^3",
+          "meaning": "Normal at parametric point."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_para_006",
+      "conceptName": "Chord of Contact",
+      "description": "Equation joining points of contact.",
+      "formulaType": "chord-contact-formula",
+      "formulas": [
+        {
+          "formulaId": "math_para_006_f1",
+          "name": "Chord of Contact",
+          "equation": "T = 0",
+          "latex": "T=0",
+          "meaning": "Equation of chord of contact."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_para_007",
+      "conceptName": "Pair of Tangents",
+      "description": "Combined equation of pair of tangents.",
+      "formulaType": "pair-tangent-formula",
+      "formulas": [
+        {
+          "formulaId": "math_para_007_f1",
+          "name": "Pair of Tangents",
+          "equation": "SS₁ = T²",
+          "latex": "SS_1=T^2",
+          "meaning": "Equation of pair of tangents from external point."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_para_008",
+      "conceptName": "Focal Chord",
+      "description": "Chord passing through focus.",
+      "formulaType": "focal-chord-formula",
+      "formulas": [
+        {
+          "formulaId": "math_para_008_f1",
+          "name": "Condition for Focal Chord",
+          "equation": "t₁t₂ = -1",
+          "latex": "t_1t_2=-1",
+          "meaning": "Condition for focal chord endpoints."
+        },
+        {
+          "formulaId": "math_para_008_f2",
+          "name": "Length of Focal Chord",
+          "equation": "a(t₁+t₂)(t₁²+t₂²+2)",
+          "latex": "a(t_1+t_2)(t_1^2+t_2^2+2)",
+          "meaning": "Length formula for focal chord."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_para_009",
+      "conceptName": "Director Circle",
+      "description": "Locus of perpendicular tangents intersection.",
+      "formulaType": "director-circle-formula",
+      "formulas": [
+        {
+          "formulaId": "math_para_009_f1",
+          "name": "Director Circle",
+          "equation": "Not defined for parabola",
+          "latex": "\\text{Not defined for parabola}",
+          "meaning": "Parabola has no director circle."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Parabola is locus of point equidistant from focus and directrix.",
+    "Tangent is perpendicular to radius vector at contact point.",
+    "Latus rectum passes through focus.",
+    "Parabola has eccentricity equal to 1."
+  ],
+  "commonMistakes": [
+    "Confusing tangent and normal equations",
+    "Wrong focus coordinates",
+    "Incorrect parametric substitution",
+    "Mistakes in latus rectum formulas"
+  ],
+  "jeeAdvancedFocus": [
+    "Parametric problems",
+    "Chord of contact",
+    "Focal chord properties",
+    "Advanced tangent and normal problems"
+  ],
+  "neetFocus": [
+    "Standard equations",
+    "Focus and directrix",
+    "Tangent formulas",
+    "Latus rectum"
+  ],
+  "keywords": [
+    "parabola",
+    "focus",
+    "directrix",
+    "tangent",
+    "normal",
+    "latus rectum"
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "exam": "JEE_ADVANCED",
+  "year": 2023,
+  "source": "MathonGo JEE Advanced 2023 Analysis",
+  "topChapters": {
+    "Physics": [
+      {
+        "chapter": "Ray Optics",
+        "priority": 5,
+        "weightageScore": 9,
+        "difficultyScore": 8,
+        "frequencyScore": 9,
+        "revisionValue": 8,
+        "averageWeightage": 9,
+        "tags": [
+          "high-weightage",
+          "advanced-level",
+          "optics-core",
+          "conceptual"
+        ]
+      },
+      {
+        "chapter": "Thermodynamics",
+        "priority": 5,
+        "weightageScore": 8,
+        "difficultyScore": 7,
+        "frequencyScore": 8,
+        "revisionValue": 8,
+        "averageWeightage": 7,
+        "tags": ["physics-core", "formula-heavy", "frequently-asked"]
+      },
+      {
+        "chapter": "Rotational Motion",
+        "priority": 5,
+        "weightageScore": 8,
+        "difficultyScore": 9,
+        "frequencyScore": 8,
+        "revisionValue": 7,
+        "averageWeightage": 7,
+        "tags": ["advanced-level", "mechanics-core", "time-consuming"]
+      },
+      {
+        "chapter": "Electrostatics",
+        "priority": 5,
+        "weightageScore": 8,
+        "difficultyScore": 8,
+        "frequencyScore": 8,
+        "revisionValue": 8,
+        "averageWeightage": 7,
+        "tags": ["electrodynamics", "high-scoring", "conceptual"]
+      },
+      {
+        "chapter": "Magnetic Effects of Current",
+        "priority": 5,
+        "weightageScore": 7,
+        "difficultyScore": 7,
+        "frequencyScore": 7,
+        "revisionValue": 7,
+        "averageWeightage": 6,
+        "tags": ["electrodynamics", "formula-heavy", "numerical-based"]
+      },
+      {
+        "chapter": "Nuclear Physics",
+        "priority": 4,
+        "weightageScore": 6,
+        "difficultyScore": 5,
+        "frequencyScore": 7,
+        "revisionValue": 8,
+        "averageWeightage": 5,
+        "tags": ["modern-physics", "easy-win", "high-scoring"]
+      },
+      {
+        "chapter": "Mechanical Properties of Fluids",
+        "priority": 4,
+        "weightageScore": 6,
+        "difficultyScore": 6,
+        "frequencyScore": 6,
+        "revisionValue": 7,
+        "averageWeightage": 5,
+        "tags": ["fluid-mechanics", "moderate-weightage", "formula-heavy"]
+      },
+      {
+        "chapter": "Laws of Motion",
+        "priority": 4,
+        "weightageScore": 6,
+        "difficultyScore": 6,
+        "frequencyScore": 6,
+        "revisionValue": 7,
+        "averageWeightage": 5,
+        "tags": ["foundation-topic", "mechanics-core", "conceptual"]
+      },
+      {
+        "chapter": "Wave Optics",
+        "priority": 4,
+        "weightageScore": 6,
+        "difficultyScore": 7,
+        "frequencyScore": 6,
+        "revisionValue": 7,
+        "averageWeightage": 4,
+        "tags": ["optics-core", "advanced-level", "conceptual"]
+      },
+      {
+        "chapter": "Experimental Physics",
+        "priority": 4,
+        "weightageScore": 5,
+        "difficultyScore": 3,
+        "frequencyScore": 6,
+        "revisionValue": 8,
+        "averageWeightage": 4,
+        "tags": ["easy-win", "memory-based", "high-scoring"]
+      }
+    ],
+    "Chemistry": [
+      {
+        "chapter": "Chemical Bonding and Molecular Structure",
+        "priority": 5,
+        "weightageScore": 9,
+        "difficultyScore": 8,
+        "frequencyScore": 9,
+        "revisionValue": 9,
+        "averageWeightage": 8,
+        "tags": ["foundation-topic", "inorganic-core", "conceptual"]
+      },
+      {
+        "chapter": "General Organic Chemistry",
+        "priority": 5,
+        "weightageScore": 9,
+        "difficultyScore": 9,
+        "frequencyScore": 9,
+        "revisionValue": 10,
+        "averageWeightage": 8,
+        "tags": ["organic-core", "reaction-based", "advanced-level"]
+      },
+      {
+        "chapter": "Thermodynamics",
+        "priority": 5,
+        "weightageScore": 8,
+        "difficultyScore": 8,
+        "frequencyScore": 8,
+        "revisionValue": 8,
+        "averageWeightage": 6,
+        "tags": ["physical-chemistry", "formula-heavy", "numerical-based"]
+      },
+      {
+        "chapter": "Coordination Compounds",
+        "priority": 5,
+        "weightageScore": 8,
+        "difficultyScore": 7,
+        "frequencyScore": 8,
+        "revisionValue": 8,
+        "averageWeightage": 6,
+        "tags": ["high-weightage", "inorganic-core", "frequently-asked"]
+      },
+      {
+        "chapter": "Chemical Kinetics",
+        "priority": 4,
+        "weightageScore": 7,
+        "difficultyScore": 6,
+        "frequencyScore": 7,
+        "revisionValue": 8,
+        "averageWeightage": 5,
+        "tags": ["physical-chemistry", "high-scoring", "easy-win"]
+      },
+      {
+        "chapter": "Amines",
+        "priority": 4,
+        "weightageScore": 7,
+        "difficultyScore": 6,
+        "frequencyScore": 7,
+        "revisionValue": 7,
+        "averageWeightage": 5,
+        "tags": ["organic-core", "reaction-based", "frequently-asked"]
+      },
+      {
+        "chapter": "Chemical Equilibrium",
+        "priority": 4,
+        "weightageScore": 7,
+        "difficultyScore": 7,
+        "frequencyScore": 7,
+        "revisionValue": 7,
+        "averageWeightage": 4,
+        "tags": ["physical-chemistry", "conceptual", "numerical-based"]
+      },
+      {
+        "chapter": "Aldehydes and Ketones",
+        "priority": 4,
+        "weightageScore": 7,
+        "difficultyScore": 6,
+        "frequencyScore": 7,
+        "revisionValue": 7,
+        "averageWeightage": 4,
+        "tags": ["organic-core", "reaction-based", "high-scoring"]
+      },
+      {
+        "chapter": "Alcohols Phenols and Ethers",
+        "priority": 4,
+        "weightageScore": 6,
+        "difficultyScore": 6,
+        "frequencyScore": 6,
+        "revisionValue": 7,
+        "averageWeightage": 4,
+        "tags": ["organic-core", "moderate-difficulty", "conceptual"]
+      },
+      {
+        "chapter": "Electrochemistry",
+        "priority": 4,
+        "weightageScore": 6,
+        "difficultyScore": 7,
+        "frequencyScore": 6,
+        "revisionValue": 7,
+        "averageWeightage": 4,
+        "tags": ["physical-chemistry", "formula-heavy", "numerical-based"]
+      }
+    ],
+    "Mathematics": [
+      {
+        "chapter": "Application of Derivatives",
+        "priority": 5,
+        "weightageScore": 9,
+        "difficultyScore": 9,
+        "frequencyScore": 9,
+        "revisionValue": 8,
+        "averageWeightage": 9,
+        "tags": ["calculus-core", "advanced-level", "conceptual"]
+      },
+      {
+        "chapter": "Definite Integration",
+        "priority": 5,
+        "weightageScore": 8,
+        "difficultyScore": 9,
+        "frequencyScore": 8,
+        "revisionValue": 7,
+        "averageWeightage": 8,
+        "tags": ["calculus-core", "time-consuming", "high-weightage"]
+      },
+      {
+        "chapter": "Probability",
+        "priority": 5,
+        "weightageScore": 8,
+        "difficultyScore": 8,
+        "frequencyScore": 8,
+        "revisionValue": 8,
+        "averageWeightage": 7,
+        "tags": ["high-scoring", "conceptual", "frequently-asked"]
+      },
+      {
+        "chapter": "Three Dimensional Geometry",
+        "priority": 5,
+        "weightageScore": 8,
+        "difficultyScore": 7,
+        "frequencyScore": 8,
+        "revisionValue": 8,
+        "averageWeightage": 5,
+        "tags": ["coordinate-geometry", "high-weightage", "formula-heavy"]
+      },
+      {
+        "chapter": "Vector Algebra",
+        "priority": 4,
+        "weightageScore": 7,
+        "difficultyScore": 5,
+        "frequencyScore": 7,
+        "revisionValue": 8,
+        "averageWeightage": 5,
+        "tags": ["easy-win", "high-scoring", "formula-heavy"]
+      },
+      {
+        "chapter": "Differential Equations",
+        "priority": 4,
+        "weightageScore": 7,
+        "difficultyScore": 7,
+        "frequencyScore": 7,
+        "revisionValue": 7,
+        "averageWeightage": 5,
+        "tags": ["calculus-core", "conceptual", "moderate-weightage"]
+      },
+      {
+        "chapter": "Inverse Trigonometric Functions",
+        "priority": 4,
+        "weightageScore": 6,
+        "difficultyScore": 5,
+        "frequencyScore": 6,
+        "revisionValue": 7,
+        "averageWeightage": 5,
+        "tags": ["easy-win", "formula-heavy", "calculus-support"]
+      },
+      {
+        "chapter": "Sequences and Series",
+        "priority": 4,
+        "weightageScore": 6,
+        "difficultyScore": 7,
+        "frequencyScore": 6,
+        "revisionValue": 7,
+        "averageWeightage": 5,
+        "tags": ["algebra-core", "conceptual", "frequently-asked"]
+      },
+      {
+        "chapter": "Coordinate Geometry",
+        "priority": 4,
+        "weightageScore": 6,
+        "difficultyScore": 7,
+        "frequencyScore": 6,
+        "revisionValue": 6,
+        "averageWeightage": 4,
+        "tags": ["coordinate-geometry", "advanced-level", "moderate-weightage"]
+      },
+      {
+        "chapter": "Permutation and Combination",
+        "priority": 4,
+        "weightageScore": 6,
+        "difficultyScore": 8,
+        "frequencyScore": 6,
+        "revisionValue": 6,
+        "averageWeightage": 4,
+        "tags": ["advanced-level", "logical-thinking", "time-consuming"]
+      }
+    ]
+  }
+}

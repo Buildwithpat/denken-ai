@@ -1,0 +1,239 @@
+{
+  "chapterId": "math_application_of_derivatives_008",
+  "fileName": "application_of_derivatives.json",
+  "chapterName": "Application of Derivatives",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "application-of-derivatives",
+    "maxima-minima",
+    "tangent-normal",
+    "increasing-decreasing",
+    "rate-of-change"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_aod_001",
+      "conceptName": "Rate of Change",
+      "description": "Derivative as rate of change.",
+      "formulaType": "rate-change-formula",
+      "formulas": [
+        {
+          "formulaId": "math_aod_001_f1",
+          "name": "Rate of Change",
+          "equation": "dy/dx",
+          "latex": "\\frac{dy}{dx}",
+          "meaning": "Instantaneous rate of change of y with respect to x.",
+          "applications": ["Physics", "Optimization"]
+        },
+        {
+          "formulaId": "math_aod_001_f2",
+          "name": "Velocity",
+          "equation": "v = ds/dt",
+          "latex": "v=\\frac{ds}{dt}",
+          "meaning": "Rate of change of displacement."
+        },
+        {
+          "formulaId": "math_aod_001_f3",
+          "name": "Acceleration",
+          "equation": "a = dv/dt",
+          "latex": "a=\\frac{dv}{dt}",
+          "meaning": "Rate of change of velocity."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_aod_002",
+      "conceptName": "Increasing and Decreasing Functions",
+      "description": "Conditions using first derivative.",
+      "formulaType": "increasing-decreasing-formula",
+      "formulas": [
+        {
+          "formulaId": "math_aod_002_f1",
+          "name": "Increasing Function",
+          "equation": "f'(x) > 0",
+          "latex": "f'(x)>0",
+          "meaning": "Function increases in interval."
+        },
+        {
+          "formulaId": "math_aod_002_f2",
+          "name": "Decreasing Function",
+          "equation": "f'(x) < 0",
+          "latex": "f'(x)<0",
+          "meaning": "Function decreases in interval."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_aod_003",
+      "conceptName": "Maxima and Minima",
+      "description": "Conditions for local extrema.",
+      "formulaType": "maxima-minima-formula",
+      "formulas": [
+        {
+          "formulaId": "math_aod_003_f1",
+          "name": "Critical Point Condition",
+          "equation": "f'(x) = 0",
+          "latex": "f'(x)=0",
+          "meaning": "Necessary condition for extrema."
+        },
+        {
+          "formulaId": "math_aod_003_f2",
+          "name": "Maxima Condition",
+          "equation": "f''(x) < 0",
+          "latex": "f''(x)<0",
+          "meaning": "Condition for local maximum."
+        },
+        {
+          "formulaId": "math_aod_003_f3",
+          "name": "Minima Condition",
+          "equation": "f''(x) > 0",
+          "latex": "f''(x)>0",
+          "meaning": "Condition for local minimum."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_aod_004",
+      "conceptName": "Tangents and Normals",
+      "description": "Equations using derivatives.",
+      "formulaType": "tangent-normal-formula",
+      "formulas": [
+        {
+          "formulaId": "math_aod_004_f1",
+          "name": "Tangent Equation",
+          "equation": "y-y₁ = m(x-x₁)",
+          "latex": "y-y_1=m(x-x_1)",
+          "meaning": "Equation of tangent line."
+        },
+        {
+          "formulaId": "math_aod_004_f2",
+          "name": "Normal Slope",
+          "equation": "mₙ = -1/m",
+          "latex": "m_n=-\\frac1m",
+          "meaning": "Slope of normal."
+        },
+        {
+          "formulaId": "math_aod_004_f3",
+          "name": "Normal Equation",
+          "equation": "y-y₁ = (-1/m)(x-x₁)",
+          "latex": "y-y_1=-\\frac1m(x-x_1)",
+          "meaning": "Equation of normal."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_aod_005",
+      "conceptName": "Approximation",
+      "description": "Linear approximation using derivatives.",
+      "formulaType": "approximation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_aod_005_f1",
+          "name": "Approximation Formula",
+          "equation": "f(x+h) ≈ f(x) + hf'(x)",
+          "latex": "f(x+h)\\approx f(x)+hf'(x)",
+          "meaning": "Approximate value using derivative."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_aod_006",
+      "conceptName": "Errors and Percentage Error",
+      "description": "Application of derivatives in error estimation.",
+      "formulaType": "error-formula",
+      "formulas": [
+        {
+          "formulaId": "math_aod_006_f1",
+          "name": "Absolute Error",
+          "equation": "Δy = (dy/dx)Δx",
+          "latex": "\\Delta y=\\left(\\frac{dy}{dx}\\right)\\Delta x",
+          "meaning": "Approximate absolute change."
+        },
+        {
+          "formulaId": "math_aod_006_f2",
+          "name": "Percentage Error",
+          "equation": "(Δy/y) × 100",
+          "latex": "\\left(\\frac{\\Delta y}{y}\\right)\\times100",
+          "meaning": "Percentage error formula."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_aod_007",
+      "conceptName": "Monotonicity Test",
+      "description": "Testing intervals of increase and decrease.",
+      "formulaType": "monotonicity-formula",
+      "formulas": [
+        {
+          "formulaId": "math_aod_007_f1",
+          "name": "Strictly Increasing",
+          "equation": "f'(x) ≥ 0",
+          "latex": "f'(x)\\ge0",
+          "meaning": "Function is non-decreasing."
+        },
+        {
+          "formulaId": "math_aod_007_f2",
+          "name": "Strictly Decreasing",
+          "equation": "f'(x) ≤ 0",
+          "latex": "f'(x)\\le0",
+          "meaning": "Function is non-increasing."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_aod_008",
+      "conceptName": "Optimization Problems",
+      "description": "Using derivatives to optimize quantities.",
+      "formulaType": "optimization-formula",
+      "formulas": [
+        {
+          "formulaId": "math_aod_008_f1",
+          "name": "Optimization Condition",
+          "equation": "dQ/dx = 0",
+          "latex": "\\frac{dQ}{dx}=0",
+          "meaning": "Condition for optimum value."
+        },
+        {
+          "formulaId": "math_aod_008_f2",
+          "name": "Second Derivative Test",
+          "equation": "d²Q/dx² > 0 or < 0",
+          "latex": "\\frac{d^2Q}{dx^2}>0\\text{ or }<0",
+          "meaning": "Checks minimum or maximum."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Critical points occur where first derivative is zero or undefined.",
+    "Second derivative helps identify maxima and minima.",
+    "Positive derivative indicates increasing function.",
+    "Optimization problems require practical interpretation."
+  ],
+  "commonMistakes": [
+    "Ignoring critical points where derivative is undefined",
+    "Wrong sign interpretation of derivatives",
+    "Errors in second derivative test",
+    "Incorrect tangent and normal slopes"
+  ],
+  "jeeAdvancedFocus": [
+    "Optimization problems",
+    "Advanced maxima-minima",
+    "Monotonicity analysis",
+    "Approximation and error analysis"
+  ],
+  "neetFocus": [
+    "Tangents and normals",
+    "Increasing-decreasing functions",
+    "Maxima and minima",
+    "Basic rate of change"
+  ],
+  "keywords": [
+    "application of derivatives",
+    "maxima minima",
+    "optimization",
+    "rate of change",
+    "tangent normal",
+    "increasing decreasing"
+  ]
+}

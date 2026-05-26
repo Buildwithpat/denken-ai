@@ -1,0 +1,235 @@
+{
+  "chapterId": "chem_environmental_chemistry_019",
+  "fileName": "environmental_chemistry.json",
+  "chapterName": "Environmental Chemistry",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "NEET"],
+  "tags": [
+    "environmental-chemistry",
+    "pollution",
+    "greenhouse-effect",
+    "ozone-layer",
+    "water-pollution",
+    "acid-rain"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_env_001",
+      "conceptName": "Air Pollution",
+      "description": "Contamination of atmosphere by harmful substances.",
+      "formulaType": "air-pollution-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_env_001_f1",
+          "name": "Carbon Monoxide Formation",
+          "equation": "2C + O₂ → 2CO",
+          "latex": "2C+O_2\\rightarrow2CO",
+          "meaning": "Formation of poisonous carbon monoxide.",
+          "applications": ["Combustion analysis", "Pollution studies"]
+        },
+        {
+          "formulaId": "chem_env_001_f2",
+          "name": "Sulphur Dioxide Formation",
+          "equation": "S + O₂ → SO₂",
+          "latex": "S+O_2\\rightarrow SO_2",
+          "meaning": "Formation of sulphur dioxide pollutant."
+        },
+        {
+          "formulaId": "chem_env_001_f3",
+          "name": "Nitric Oxide Formation",
+          "equation": "N₂ + O₂ → 2NO",
+          "latex": "N_2+O_2\\rightarrow2NO",
+          "meaning": "Formation of nitrogen oxide at high temperature."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_env_002",
+      "conceptName": "Acid Rain",
+      "description": "Rainwater with acidic pH due to pollutants.",
+      "formulaType": "acid-rain-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_env_002_f1",
+          "name": "Sulphuric Acid Formation",
+          "equation": "2SO₂ + O₂ → 2SO₃",
+          "latex": "2SO_2+O_2\\rightarrow2SO_3",
+          "meaning": "Oxidation of sulphur dioxide."
+        },
+        {
+          "formulaId": "chem_env_002_f2",
+          "name": "Acid Rain Formation",
+          "equation": "SO₃ + H₂O → H₂SO₄",
+          "latex": "SO_3+H_2O\\rightarrow H_2SO_4",
+          "meaning": "Formation of sulphuric acid in atmosphere."
+        },
+        {
+          "formulaId": "chem_env_002_f3",
+          "name": "Nitric Acid Formation",
+          "equation": "4NO₂ + O₂ + 2H₂O → 4HNO₃",
+          "latex": "4NO_2+O_2+2H_2O\\rightarrow4HNO_3",
+          "meaning": "Formation of nitric acid causing acid rain."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_env_003",
+      "conceptName": "Greenhouse Effect",
+      "description": "Increase in Earth's temperature due to greenhouse gases.",
+      "formulaType": "greenhouse-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_env_003_f1",
+          "name": "Methane Formation",
+          "equation": "CO₂ + 4H₂ → CH₄ + 2H₂O",
+          "latex": "CO_2+4H_2\\rightarrow CH_4+2H_2O",
+          "meaning": "Formation of methane greenhouse gas."
+        },
+        {
+          "formulaId": "chem_env_003_f2",
+          "name": "Global Warming Gases",
+          "equation": "CO₂, CH₄, N₂O, CFCs",
+          "latex": "CO_2,\\ CH_4,\\ N_2O,\\ CFCs",
+          "meaning": "Major greenhouse gases."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_env_004",
+      "conceptName": "Ozone Layer Depletion",
+      "description": "Destruction of stratospheric ozone layer.",
+      "formulaType": "ozone-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_env_004_f1",
+          "name": "Ozone Formation",
+          "equation": "O₂ + UV → 2O",
+          "latex": "O_2+UV\\rightarrow2O",
+          "meaning": "Photodissociation of oxygen."
+        },
+        {
+          "formulaId": "chem_env_004_f2",
+          "name": "Ozone Formation Step",
+          "equation": "O + O₂ → O₃",
+          "latex": "O+O_2\\rightarrow O_3",
+          "meaning": "Formation of ozone."
+        },
+        {
+          "formulaId": "chem_env_004_f3",
+          "name": "Ozone Destruction by CFC",
+          "equation": "Cl + O₃ → ClO + O₂",
+          "latex": "Cl+O_3\\rightarrow ClO+O_2",
+          "meaning": "Catalytic destruction of ozone."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_env_005",
+      "conceptName": "Water Pollution",
+      "description": "Contamination of water bodies.",
+      "formulaType": "water-pollution-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_env_005_f1",
+          "name": "Biochemical Oxygen Demand",
+          "equation": "BOD ∝ Organic pollutants",
+          "latex": "BOD\\propto\\text{Organic pollutants}",
+          "meaning": "Measure of organic pollution in water."
+        },
+        {
+          "formulaId": "chem_env_005_f2",
+          "name": "Chemical Oxygen Demand",
+          "equation": "COD > BOD",
+          "latex": "COD>BOD",
+          "meaning": "Chemical oxygen demand is generally higher than BOD."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_env_006",
+      "conceptName": "Soil Pollution",
+      "description": "Contamination of soil by harmful chemicals.",
+      "formulaType": "soil-pollution-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_env_006_f1",
+          "name": "Pesticide Persistence",
+          "equation": "DDT → Non-biodegradable pollutant",
+          "latex": "DDT\\rightarrow\\text{Non-biodegradable pollutant}",
+          "meaning": "Persistent soil pollutant."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_env_007",
+      "conceptName": "Smog",
+      "description": "Mixture of smoke and fog.",
+      "formulaType": "smog-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_env_007_f1",
+          "name": "Photochemical Smog Formation",
+          "equation": "NO₂ + hv → NO + O",
+          "latex": "NO_2+h\\nu\\rightarrow NO+O",
+          "meaning": "Initial step in photochemical smog formation."
+        },
+        {
+          "formulaId": "chem_env_007_f2",
+          "name": "Ozone Formation in Smog",
+          "equation": "O + O₂ → O₃",
+          "latex": "O+O_2\\rightarrow O_3",
+          "meaning": "Formation of ozone in photochemical smog."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_env_008",
+      "conceptName": "Green Chemistry",
+      "description": "Environment-friendly chemical processes.",
+      "formulaType": "green-chemistry-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_env_008_f1",
+          "name": "Atom Economy",
+          "equation": "Atom Economy = (Molecular mass of desired product/Total molecular mass) × 100",
+          "latex": "\\text{Atom Economy}=\\left(\\frac{\\text{Molecular mass of desired product}}{\\text{Total molecular mass}}\\right)\\times100",
+          "meaning": "Measure of efficiency of chemical process."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "CFCs are major cause of ozone depletion.",
+    "Greenhouse gases trap infrared radiation.",
+    "BOD indicates organic pollution level.",
+    "Acid rain damages monuments and aquatic life."
+  ],
+  "commonMistakes": [
+    "Confusing BOD and COD",
+    "Incorrect greenhouse gas identification",
+    "Wrong source of acid rain",
+    "Mixing ozone depletion with global warming"
+  ],
+  "jeeAdvancedFocus": [
+    "Atmospheric reaction mechanisms",
+    "Atom economy calculations",
+    "Pollution chemistry",
+    "Environmental impact analysis"
+  ],
+  "neetFocus": [
+    "Greenhouse effect",
+    "Acid rain",
+    "Ozone depletion",
+    "Water pollution"
+  ],
+  "keywords": [
+    "environmental chemistry",
+    "acid rain",
+    "greenhouse effect",
+    "ozone depletion",
+    "BOD",
+    "water pollution",
+    "smog",
+    "green chemistry"
+  ]
+}

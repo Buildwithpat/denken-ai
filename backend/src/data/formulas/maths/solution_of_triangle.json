@@ -1,0 +1,234 @@
+{
+  "chapterId": "math_solution_of_triangle_024",
+  "fileName": "solution_of_triangle.json",
+  "chapterName": "Solution of Triangle",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "solution-of-triangle",
+    "trigonometry",
+    "sine-rule",
+    "cosine-rule",
+    "triangle"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_tri_001",
+      "conceptName": "Basic Triangle Notation",
+      "description": "Standard notation used in triangles.",
+      "formulaType": "triangle-notation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_tri_001_f1",
+          "name": "Triangle Sides",
+          "equation": "a,b,c",
+          "latex": "a,b,c",
+          "meaning": "Sides opposite to angles A,B,C."
+        },
+        {
+          "formulaId": "math_tri_001_f2",
+          "name": "Angle Sum Property",
+          "equation": "A+B+C = π",
+          "latex": "A+B+C=\\pi",
+          "meaning": "Sum of angles in a triangle."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_tri_002",
+      "conceptName": "Sine Rule",
+      "description": "Relationship between sides and sine of opposite angles.",
+      "formulaType": "sine-rule-formula",
+      "formulas": [
+        {
+          "formulaId": "math_tri_002_f1",
+          "name": "Law of Sines",
+          "equation": "a/sinA = b/sinB = c/sinC",
+          "latex": "\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}",
+          "meaning": "Fundamental sine rule.",
+          "applications": ["Finding unknown sides", "Finding unknown angles"]
+        },
+        {
+          "formulaId": "math_tri_002_f2",
+          "name": "Extended Sine Rule",
+          "equation": "a/sinA = 2R",
+          "latex": "\\frac{a}{\\sin A}=2R",
+          "meaning": "Relation with circumradius."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_tri_003",
+      "conceptName": "Cosine Rule",
+      "description": "Generalization of Pythagoras theorem.",
+      "formulaType": "cosine-rule-formula",
+      "formulas": [
+        {
+          "formulaId": "math_tri_003_f1",
+          "name": "Cosine Rule for Side a",
+          "equation": "a² = b²+c²-2bc cosA",
+          "latex": "a^2=b^2+c^2-2bc\\cos A",
+          "meaning": "Relation between sides and included angle."
+        },
+        {
+          "formulaId": "math_tri_003_f2",
+          "name": "Cosine of Angle",
+          "equation": "cosA = (b²+c²-a²)/2bc",
+          "latex": "\\cos A=\\frac{b^2+c^2-a^2}{2bc}",
+          "meaning": "Finding angle using sides."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_tri_004",
+      "conceptName": "Projection Formula",
+      "description": "Projection relation in triangles.",
+      "formulaType": "projection-formula",
+      "formulas": [
+        {
+          "formulaId": "math_tri_004_f1",
+          "name": "Projection Formula",
+          "equation": "a = bcosC + ccosB",
+          "latex": "a=b\\cos C+c\\cos B",
+          "meaning": "Projection relation among sides."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_tri_005",
+      "conceptName": "Area of Triangle",
+      "description": "Different formulas for triangle area.",
+      "formulaType": "triangle-area-formula",
+      "formulas": [
+        {
+          "formulaId": "math_tri_005_f1",
+          "name": "Area Using Two Sides and Included Angle",
+          "equation": "Δ = (1/2)bc sinA",
+          "latex": "\\Delta=\\frac12bc\\sin A",
+          "meaning": "Area formula using trigonometry."
+        },
+        {
+          "formulaId": "math_tri_005_f2",
+          "name": "Heron's Formula",
+          "equation": "Δ = √[s(s-a)(s-b)(s-c)]",
+          "latex": "\\Delta=\\sqrt{s(s-a)(s-b)(s-c)}",
+          "meaning": "Area using all three sides."
+        },
+        {
+          "formulaId": "math_tri_005_f3",
+          "name": "Semi-perimeter",
+          "equation": "s = (a+b+c)/2",
+          "latex": "s=\\frac{a+b+c}{2}",
+          "meaning": "Half of perimeter."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_tri_006",
+      "conceptName": "Circumradius and Inradius",
+      "description": "Radius formulas related to triangle.",
+      "formulaType": "radius-formula",
+      "formulas": [
+        {
+          "formulaId": "math_tri_006_f1",
+          "name": "Circumradius Formula",
+          "equation": "R = a/2sinA",
+          "latex": "R=\\frac{a}{2\\sin A}",
+          "meaning": "Radius of circumcircle."
+        },
+        {
+          "formulaId": "math_tri_006_f2",
+          "name": "Inradius Formula",
+          "equation": "Δ = rs",
+          "latex": "\\Delta=rs",
+          "meaning": "Relation between area and inradius."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_tri_007",
+      "conceptName": "Half Angle Formulas",
+      "description": "Formulas involving half angles.",
+      "formulaType": "half-angle-formula",
+      "formulas": [
+        {
+          "formulaId": "math_tri_007_f1",
+          "name": "Half Angle Formula",
+          "equation": "sin(A/2) = √[(s-b)(s-c)/bc]",
+          "latex": "\\sin\\frac{A}{2}=\\sqrt{\\frac{(s-b)(s-c)}{bc}}",
+          "meaning": "Half-angle relation."
+        },
+        {
+          "formulaId": "math_tri_007_f2",
+          "name": "Cos Half Angle",
+          "equation": "cos(A/2) = √[s(s-a)/bc]",
+          "latex": "\\cos\\frac{A}{2}=\\sqrt{\\frac{s(s-a)}{bc}}",
+          "meaning": "Half-angle cosine formula."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_tri_008",
+      "conceptName": "Triangle Inequality",
+      "description": "Conditions for valid triangle.",
+      "formulaType": "triangle-inequality-formula",
+      "formulas": [
+        {
+          "formulaId": "math_tri_008_f1",
+          "name": "Triangle Inequality",
+          "equation": "a+b>c",
+          "latex": "a+b>c",
+          "meaning": "Sum of any two sides greater than third side."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_tri_009",
+      "conceptName": "Special Triangle Relations",
+      "description": "Important trigonometric identities in triangles.",
+      "formulaType": "special-triangle-formula",
+      "formulas": [
+        {
+          "formulaId": "math_tri_009_f1",
+          "name": "Orthocenter Relation",
+          "equation": "AH = 2R cosA",
+          "latex": "AH=2R\\cos A",
+          "meaning": "Distance of orthocenter from vertex."
+        },
+        {
+          "formulaId": "math_tri_009_f2",
+          "name": "Median Formula",
+          "equation": "mₐ = (1/2)√(2b²+2c²-a²)",
+          "latex": "m_a=\\frac12\\sqrt{2b^2+2c^2-a^2}",
+          "meaning": "Length of median."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Sine rule is useful when angle-side pairs are known.",
+    "Cosine rule is useful for SAS and SSS cases.",
+    "Heron's formula uses only side lengths.",
+    "Circumradius and inradius formulas are important for JEE."
+  ],
+  "commonMistakes": [
+    "Wrong opposite side-angle pairing",
+    "Sign errors in cosine rule",
+    "Incorrect semi-perimeter in Heron's formula",
+    "Using wrong trigonometric ratios"
+  ],
+  "jeeAdvancedFocus": [
+    "Half-angle formulas",
+    "Advanced triangle identities",
+    "Circumradius and inradius problems",
+    "Mixed trigonometric applications"
+  ],
+  "keywords": [
+    "solution of triangle",
+    "sine rule",
+    "cosine rule",
+    "heron formula",
+    "triangle area",
+    "trigonometry"
+  ]
+}

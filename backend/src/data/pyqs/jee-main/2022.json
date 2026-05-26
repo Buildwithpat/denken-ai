@@ -1,0 +1,581 @@
+{
+  "questions": [
+    {
+      "questionId": "JM2022S2_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Electromagnetic Induction",
+      "topic": "Mutual Inductance",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "The dimension of mutual inductance is",
+      "options": {
+        "A": "ML²T⁻²A⁻¹",
+        "B": "ML²T⁻²A⁻²",
+        "C": "ML²T⁻³A⁻¹",
+        "D": "ML²T⁻³A⁻²"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Newton Laws of Motion",
+      "topic": "Constraint Motion",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "In the pulley arrangement shown, a₁,a₂,a₃ and a₄ are accelerations of masses m₁,m₂,m₃ and m₄ respectively. Which relation is true?",
+      "options": {
+        "A": "4a₁+2a₂+a₃+a₄=0",
+        "B": "a₁+4a₂+3a₃+a₄=0",
+        "C": "a₁+4a₂+3a₃+2a₄=0",
+        "D": "2a₁+2a₂+3a₃+a₄=0"
+      },
+      "correctAnswer": "A",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Work Power and Energy",
+      "topic": "Work Done from Graph",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Arrange graphs in descending order of total work done where W₁,W₂,W₃,W₄ correspond to figures a,b,c,d respectively.",
+      "options": {
+        "A": "W₃ > W₂ > W₁ > W₄",
+        "B": "W₃ > W₂ > W₄ > W₁",
+        "C": "W₂ > W₃ > W₄ > W₁",
+        "D": "W₂ > W₃ > W₁ > W₄"
+      },
+      "correctAnswer": "A",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Rotational Motion",
+      "topic": "Rolling Motion",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A solid spherical ball is rolling on a frictionless horizontal plane about its axis of symmetry. Ratio of rotational kinetic energy to total kinetic energy is",
+      "options": {
+        "A": "1/5",
+        "B": "2/5",
+        "C": "2/7",
+        "D": "7/10"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "Gravitation",
+      "topic": "Acceleration due to Gravity",
+      "difficulty": "easy",
+      "questionType": "assertion_reason",
+      "questionText": "Assertion A: If we move from poles to equator, direction of acceleration due to gravity always points towards centre of earth without any variation in magnitude. Reason R: At equator, direction of acceleration due to gravity is towards centre of earth.",
+      "options": {
+        "A": "Both assertion and reason are true and reason is correct explanation",
+        "B": "Both assertion and reason are true but reason is not correct explanation",
+        "C": "Assertion is true but reason is false",
+        "D": "Assertion is false but reason is true"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Mechanical Properties of Fluids",
+      "topic": "Reynolds Number",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "If ρ is density and η is coefficient of viscosity of fluid flowing with speed v in pipe of diameter d, formula for Reynolds number is",
+      "options": {
+        "A": "πdρv/η",
+        "B": "ρv/ηd",
+        "C": "ρvd/η",
+        "D": "η/ρvd"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "Kinetic Theory of Gases",
+      "topic": "Average Kinetic Energy",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "A flask contains argon and oxygen in ratio 3:2 by mass at 27°C. Ratio of average kinetic energy per molecule respectively is",
+      "options": {
+        "A": "3:5",
+        "B": "9:4",
+        "C": "2:3",
+        "D": "1:1"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "Modern Physics",
+      "topic": "Doppler Effect in Light",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "For wavelength 670 nm from a galaxy moving with velocity v, observed wavelength is 670.7 nm. Value of v is",
+      "options": {
+        "A": "3×10⁸ m s⁻¹",
+        "B": "3.13×10⁵ m s⁻¹",
+        "C": "3×10¹⁰ m s⁻¹",
+        "D": "4.48×10⁵ m s⁻¹"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "Electrostatics",
+      "topic": "Charged Drops",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Sixty four conducting drops each of radius 0.02 m carrying charge 5 μC combine to form bigger drop. Ratio of surface charge density of bigger drop to smaller drop is",
+      "options": {
+        "A": "1:4",
+        "B": "4:1",
+        "C": "1:8",
+        "D": "8:1"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Capacitance",
+      "topic": "Capacitor Combination",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Charge on capacitor of capacitance 15 μF in given circuit is",
+      "options": {
+        "A": "60 μC",
+        "B": "130 μC",
+        "C": "260 μC",
+        "D": "585 μC"
+      },
+      "correctAnswer": "A",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+
+    {
+      "questionId": "JM2022S2_CHEM_1",
+      "questionNumber": 11,
+      "subject": "Chemistry",
+      "chapter": "Atomic Structure",
+      "topic": "Orbital Nodes",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Number of radial and angular nodes in 4d orbital respectively are",
+      "options": {
+        "A": "1 & 2",
+        "B": "3 & 2",
+        "C": "1 & 0",
+        "D": "2 & 1"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_CHEM_2",
+      "questionNumber": 12,
+      "subject": "Chemistry",
+      "chapter": "Periodic Table",
+      "topic": "Metalloids",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which of the following is a metalloid?",
+      "options": {
+        "A": "Sc",
+        "B": "Pb",
+        "C": "Bi",
+        "D": "Te"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_CHEM_3",
+      "questionNumber": 13,
+      "subject": "Chemistry",
+      "chapter": "p Block Elements",
+      "topic": "Nitrogen Oxides",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Oxide which contains an odd electron at nitrogen atom is",
+      "options": {
+        "A": "N₂O",
+        "B": "NO₂",
+        "C": "N₂O₃",
+        "D": "N₂O₅"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_CHEM_4",
+      "questionNumber": 14,
+      "subject": "Chemistry",
+      "chapter": "Redox Reactions",
+      "topic": "Disproportionation",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Which reaction is an example of disproportionation reaction?",
+      "options": {
+        "A": "3MnO₄²⁻+4H⁺→2MnO₄⁻+MnO₂+2H₂O",
+        "B": "MnO₄⁻+4H⁺+4e⁻→MnO₂+2H₂O",
+        "C": "10I⁻+2MnO₄⁻+16H⁺→2Mn²⁺+8H₂O+5I₂",
+        "D": "8MnO₄⁻+3S₂O₃²⁻+H₂O→8MnO₂+6SO₄²⁻+2OH⁻"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_CHEM_5",
+      "questionNumber": 15,
+      "subject": "Chemistry",
+      "chapter": "Hydrogen",
+      "topic": "Hard Water",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Boiling hard water removes temporary hardness by converting calcium hydrogen carbonate and magnesium hydrogen carbonate to",
+      "options": {
+        "A": "CaCO₃ and Mg(OH)₂",
+        "B": "CaCO₃ and MgCO₃",
+        "C": "Ca(OH)₂ and MgCO₃",
+        "D": "Ca(OH)₂ and Mg(OH)₂"
+      },
+      "correctAnswer": "A",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_CHEM_6",
+      "questionNumber": 16,
+      "subject": "Chemistry",
+      "chapter": "s Block Elements",
+      "topic": "Flame Test",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "s-block element which cannot be qualitatively confirmed by flame test is",
+      "options": {
+        "A": "Li",
+        "B": "Na",
+        "C": "Rb",
+        "D": "Be"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_CHEM_7",
+      "questionNumber": 17,
+      "subject": "Chemistry",
+      "chapter": "Organic Chemistry",
+      "topic": "Nucleophilicity",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Correct order of nucleophilicity is",
+      "options": {
+        "A": "F⁻ > OH⁻",
+        "B": "H₂O > OH⁻",
+        "C": "ROH > RO⁻",
+        "D": "NH₂⁻ > NH₃"
+      },
+      "correctAnswer": "D",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_CHEM_8",
+      "questionNumber": 18,
+      "subject": "Chemistry",
+      "chapter": "Hydrocarbons",
+      "topic": "Oxymercuration Demercuration",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Identify the major product formed in reaction sequence using Hg(OAc)₂,H₂O followed by NaBH₄.",
+      "options": {
+        "A": "Option 1",
+        "B": "Option 2",
+        "C": "Option 3",
+        "D": "Option 4"
+      },
+      "correctAnswer": "A",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_CHEM_9",
+      "questionNumber": 19,
+      "subject": "Chemistry",
+      "chapter": "Aromatic Compounds",
+      "topic": "Electrophilic Substitution",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Halogenation of which compound yields meta-substituted product with respect to methyl group as major product?",
+      "options": {
+        "A": "Option 1",
+        "B": "Option 2",
+        "C": "Option 3",
+        "D": "Option 4"
+      },
+      "correctAnswer": "C",
+      "diagramRequired": true,
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_CHEM_10",
+      "questionNumber": 20,
+      "subject": "Chemistry",
+      "chapter": "Environmental Chemistry",
+      "topic": "BOD",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Measured BOD values for four water samples are A=3 ppm, B=18 ppm, C=21 ppm, D=4 ppm. Highly polluted samples with organic wastes are",
+      "options": {
+        "A": "A & B",
+        "B": "A & D",
+        "C": "B & C",
+        "D": "B & D"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+
+    {
+      "questionId": "JM2022S2_MATH_1",
+      "questionNumber": 21,
+      "subject": "Mathematics",
+      "chapter": "Series",
+      "topic": "Infinite Series",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "If A=Σ[1/(3+(-1)^n)^n] and B=Σ[(-1)^n/(3+(-1)^n)^n], then A/B equals",
+      "options": {
+        "A": "11/9",
+        "B": "1",
+        "C": "-11/9",
+        "D": "-11/3"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_MATH_2",
+      "questionNumber": 22,
+      "subject": "Mathematics",
+      "chapter": "Trigonometry",
+      "topic": "Product Formula",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "16 sin20° sin40° sin80° equals",
+      "options": {
+        "A": "√3",
+        "B": "2√3",
+        "C": "3",
+        "D": "4√3"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_MATH_3",
+      "questionNumber": 23,
+      "subject": "Mathematics",
+      "chapter": "Coordinate Geometry",
+      "topic": "Common Tangent",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "If m is slope of common tangent to curves x²/16 + y²/9 =1 and x²+y²=12 then 12m² equals",
+      "options": {
+        "A": "6",
+        "B": "9",
+        "C": "10",
+        "D": "12"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_MATH_4",
+      "questionNumber": 24,
+      "subject": "Mathematics",
+      "chapter": "Ellipse",
+      "topic": "Locus",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Locus of midpoint of line segment joining point (4,3) and points on ellipse x²+2y²=4 is an ellipse with eccentricity",
+      "options": {
+        "A": "√3/2",
+        "B": "1/(2√2)",
+        "C": "1/√2",
+        "D": "1/2"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_MATH_5",
+      "questionNumber": 25,
+      "subject": "Mathematics",
+      "chapter": "Hyperbola",
+      "topic": "Normal",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "Normal to hyperbola x²/a² - y²/9 =1 at point (8,3√3) passes through point",
+      "options": {
+        "A": "(15,-2√3)",
+        "B": "(9,2√3)",
+        "C": "(-1,9√3)",
+        "D": "(-1,6√3)"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_MATH_6",
+      "questionNumber": 26,
+      "subject": "Mathematics",
+      "chapter": "Limits",
+      "topic": "Standard Limits",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "lim[x→0]{cos(sin x)-cos x}/x⁴ equals",
+      "options": {
+        "A": "1/3",
+        "B": "1/6",
+        "C": "1/4",
+        "D": "1/12"
+      },
+      "correctAnswer": "B",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_MATH_7",
+      "questionNumber": 27,
+      "subject": "Mathematics",
+      "chapter": "Mathematical Logic",
+      "topic": "Tautology",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Let r be such that logical statement r∨(~p)⇒(p∧q)∨r is tautology. Then r equals",
+      "options": {
+        "A": "p",
+        "B": "q",
+        "C": "~p",
+        "D": "~q"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_MATH_8",
+      "questionNumber": 28,
+      "subject": "Mathematics",
+      "chapter": "Statistics",
+      "topic": "Variance",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Mean of 50 observations is 15 and standard deviation is 2. One observation recorded wrongly. Sum of correct and incorrect observations is 70. If corrected mean is 16, corrected variance equals",
+      "options": {
+        "A": "10",
+        "B": "36",
+        "C": "43",
+        "D": "60"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_MATH_9",
+      "questionNumber": 29,
+      "subject": "Mathematics",
+      "chapter": "Matrices",
+      "topic": "System of Equations",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "If system αx+y+z=5, x+2y+3z=4, x+3y+5z=β has infinitely many solutions, then ordered pair (α,β) is",
+      "options": {
+        "A": "(1,-3)",
+        "B": "(-1,3)",
+        "C": "(1,3)",
+        "D": "(-1,-3)"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    },
+    {
+      "questionId": "JM2022S2_MATH_10",
+      "questionNumber": 30,
+      "subject": "Mathematics",
+      "chapter": "Inverse Trigonometric Functions",
+      "topic": "Principal Values",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "cos⁻¹[(3/10)cos(tan⁻¹(4/3)) + (2/5)sin(tan⁻¹(4/3))] equals",
+      "options": {
+        "A": "0",
+        "B": "π/4",
+        "C": "π/3",
+        "D": "π/6"
+      },
+      "correctAnswer": "C",
+      "exam": "JEE_MAIN",
+      "year": 2022
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "chapterId": "chem_chemical_kinetics_radioactivity_010",
+  "fileName": "chemical_kinetics_radioactivity.json",
+  "chapterName": "Chemical Kinetics & Radioactivity",
+  "subject": "Chemistry",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "chemical-kinetics",
+    "rate-of-reaction",
+    "radioactivity",
+    "half-life",
+    "arrhenius-equation",
+    "nuclear-chemistry"
+  ],
+  "concepts": [
+    {
+      "conceptId": "chem_kin_001",
+      "conceptName": "Rate of Reaction",
+      "description": "Speed at which reactants convert into products.",
+      "formulaType": "rate-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_kin_001_f1",
+          "name": "Average Rate",
+          "equation": "Rate = -Δ[R]/Δt = Δ[P]/Δt",
+          "latex": "\\text{Rate}=-\\frac{\\Delta[R]}{\\Delta t}=\\frac{\\Delta[P]}{\\Delta t}",
+          "meaning": "Rate of disappearance of reactant or appearance of product.",
+          "applications": ["Reaction rate calculations", "Kinetics problems"]
+        },
+        {
+          "formulaId": "chem_kin_001_f2",
+          "name": "Rate Law",
+          "equation": "Rate = k[A]^m[B]^n",
+          "latex": "\\text{Rate}=k[A]^m[B]^n",
+          "meaning": "Dependence of rate on concentration."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_kin_002",
+      "conceptName": "Order and Molecularity",
+      "description": "Characteristics of chemical reactions.",
+      "formulaType": "order-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_kin_002_f1",
+          "name": "Overall Order",
+          "equation": "Order = m + n",
+          "latex": "\\text{Order}=m+n",
+          "meaning": "Sum of powers of concentration terms."
+        },
+        {
+          "formulaId": "chem_kin_002_f2",
+          "name": "Units of Rate Constant",
+          "equation": "Unit of k = (mol L⁻¹)^(1-n) s⁻¹",
+          "latex": "\\text{Unit of }k=(mol\\,L^{-1})^{1-n}s^{-1}",
+          "meaning": "Depends on order of reaction."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_kin_003",
+      "conceptName": "Zero Order Reaction",
+      "description": "Reaction rate independent of concentration.",
+      "formulaType": "zero-order-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_kin_003_f1",
+          "name": "Integrated Rate Law",
+          "equation": "[A]t = [A]0 - kt",
+          "latex": "[A]_t=[A]_0-kt",
+          "meaning": "Concentration relation for zero order reaction."
+        },
+        {
+          "formulaId": "chem_kin_003_f2",
+          "name": "Half Life",
+          "equation": "t1/2 = [A]0/2k",
+          "latex": "t_{1/2}=\\frac{[A]_0}{2k}",
+          "meaning": "Half-life for zero order reaction."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_kin_004",
+      "conceptName": "First Order Reaction",
+      "description": "Reaction rate proportional to concentration.",
+      "formulaType": "first-order-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_kin_004_f1",
+          "name": "Integrated Rate Equation",
+          "equation": "k = (2.303/t) log([A]0/[A]t)",
+          "latex": "k=\\frac{2.303}{t}\\log\\left(\\frac{[A]_0}{[A]_t}\\right)",
+          "meaning": "Integrated equation for first order reaction."
+        },
+        {
+          "formulaId": "chem_kin_004_f2",
+          "name": "Half Life of First Order Reaction",
+          "equation": "t1/2 = 0.693/k",
+          "latex": "t_{1/2}=\\frac{0.693}{k}",
+          "meaning": "Half-life independent of concentration."
+        },
+        {
+          "formulaId": "chem_kin_004_f3",
+          "name": "Mean Life",
+          "equation": "τ = 1/k",
+          "latex": "\\tau=\\frac{1}{k}",
+          "meaning": "Average lifetime of reactant molecules."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_kin_005",
+      "conceptName": "Second Order Reaction",
+      "description": "Reaction involving square dependence on concentration.",
+      "formulaType": "second-order-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_kin_005_f1",
+          "name": "Integrated Rate Equation",
+          "equation": "1/[A]t = 1/[A]0 + kt",
+          "latex": "\\frac{1}{[A]_t}=\\frac{1}{[A]_0}+kt",
+          "meaning": "Integrated equation for second order reaction."
+        },
+        {
+          "formulaId": "chem_kin_005_f2",
+          "name": "Half Life",
+          "equation": "t1/2 = 1/k[A]0",
+          "latex": "t_{1/2}=\\frac{1}{k[A]_0}",
+          "meaning": "Half-life for second order reaction."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_kin_006",
+      "conceptName": "Arrhenius Equation",
+      "description": "Effect of temperature on reaction rate.",
+      "formulaType": "arrhenius-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_kin_006_f1",
+          "name": "Arrhenius Equation",
+          "equation": "k = Ae^(-Ea/RT)",
+          "latex": "k=Ae^{-E_a/RT}",
+          "meaning": "Temperature dependence of rate constant."
+        },
+        {
+          "formulaId": "chem_kin_006_f2",
+          "name": "Logarithmic Form",
+          "equation": "log k = log A - Ea/2.303RT",
+          "latex": "\\log k=\\log A-\\frac{E_a}{2.303RT}",
+          "meaning": "Linear form of Arrhenius equation."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_kin_007",
+      "conceptName": "Radioactive Decay",
+      "description": "Spontaneous disintegration of unstable nuclei.",
+      "formulaType": "radioactivity-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_kin_007_f1",
+          "name": "Radioactive Decay Law",
+          "equation": "N = N0e^(-λt)",
+          "latex": "N=N_0e^{-\\lambda t}",
+          "meaning": "Decay equation for radioactive substances."
+        },
+        {
+          "formulaId": "chem_kin_007_f2",
+          "name": "Decay Constant Relation",
+          "equation": "λ = 0.693/t1/2",
+          "latex": "\\lambda=\\frac{0.693}{t_{1/2}}",
+          "meaning": "Relation between decay constant and half-life."
+        },
+        {
+          "formulaId": "chem_kin_007_f3",
+          "name": "Half Life",
+          "equation": "t1/2 = 0.693/λ",
+          "latex": "t_{1/2}=\\frac{0.693}{\\lambda}",
+          "meaning": "Time required for half the nuclei to decay."
+        },
+        {
+          "formulaId": "chem_kin_007_f4",
+          "name": "Mean Life",
+          "equation": "τ = 1/λ",
+          "latex": "\\tau=\\frac{1}{\\lambda}",
+          "meaning": "Average lifetime of radioactive nuclei."
+        }
+      ]
+    },
+    {
+      "conceptId": "chem_kin_008",
+      "conceptName": "Nuclear Transformations",
+      "description": "Alpha, beta and gamma decay processes.",
+      "formulaType": "nuclear-formula",
+      "formulas": [
+        {
+          "formulaId": "chem_kin_008_f1",
+          "name": "Alpha Decay",
+          "equation": "A → A-4 + α",
+          "latex": "A\\rightarrow A-4+\\alpha",
+          "meaning": "Mass number decreases by 4."
+        },
+        {
+          "formulaId": "chem_kin_008_f2",
+          "name": "Beta Decay",
+          "equation": "A → A + β",
+          "latex": "A\\rightarrow A+\\beta",
+          "meaning": "Atomic number changes by 1."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Half-life of first order reaction is independent of concentration.",
+    "Catalyst changes rate but not equilibrium.",
+    "Radioactive decay is a first order process.",
+    "Activation energy controls reaction speed."
+  ],
+  "commonMistakes": [
+    "Using wrong integrated rate equation",
+    "Confusing order and molecularity",
+    "Incorrect logarithm usage",
+    "Wrong units for rate constant"
+  ],
+  "jeeAdvancedFocus": [
+    "Integrated rate law numericals",
+    "Arrhenius equation problems",
+    "Mixed order kinetics",
+    "Radioactivity decay calculations"
+  ],
+  "neetFocus": [
+    "Order of reactions",
+    "Half-life formulas",
+    "Arrhenius equation",
+    "Radioactive decay"
+  ],
+  "keywords": [
+    "chemical kinetics",
+    "rate law",
+    "arrhenius equation",
+    "half life",
+    "radioactivity",
+    "first order reaction",
+    "activation energy",
+    "decay constant"
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "chapterId": "math_quadratic_equation_012",
+  "fileName": "quadratic_equation.json",
+  "chapterName": "Quadratic Equation",
+  "subject": "Mathematics",
+  "examTargets": ["JEE Main", "JEE Advanced"],
+  "tags": [
+    "quadratic-equation",
+    "roots",
+    "discriminant",
+    "nature-of-roots",
+    "algebra"
+  ],
+  "concepts": [
+    {
+      "conceptId": "math_quad_001",
+      "conceptName": "Standard Form of Quadratic Equation",
+      "description": "General representation of quadratic equation.",
+      "formulaType": "quadratic-standard-formula",
+      "formulas": [
+        {
+          "formulaId": "math_quad_001_f1",
+          "name": "Standard Form",
+          "equation": "ax² + bx + c = 0",
+          "latex": "ax^2+bx+c=0",
+          "meaning": "General quadratic equation where a ≠ 0.",
+          "applications": ["Algebra", "Coordinate geometry"]
+        }
+      ]
+    },
+    {
+      "conceptId": "math_quad_002",
+      "conceptName": "Quadratic Formula",
+      "description": "Formula for roots of quadratic equation.",
+      "formulaType": "quadratic-root-formula",
+      "formulas": [
+        {
+          "formulaId": "math_quad_002_f1",
+          "name": "Roots Formula",
+          "equation": "x = [-b ± √(b²-4ac)]/2a",
+          "latex": "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}",
+          "meaning": "Formula to calculate roots of quadratic equation."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_quad_003",
+      "conceptName": "Discriminant",
+      "description": "Expression determining nature of roots.",
+      "formulaType": "discriminant-formula",
+      "formulas": [
+        {
+          "formulaId": "math_quad_003_f1",
+          "name": "Discriminant",
+          "equation": "D = b² - 4ac",
+          "latex": "D=b^2-4ac",
+          "meaning": "Determines nature of roots."
+        },
+        {
+          "formulaId": "math_quad_003_f2",
+          "name": "Real and Distinct Roots",
+          "equation": "D > 0",
+          "latex": "D>0",
+          "meaning": "Roots are real and unequal."
+        },
+        {
+          "formulaId": "math_quad_003_f3",
+          "name": "Equal Roots",
+          "equation": "D = 0",
+          "latex": "D=0",
+          "meaning": "Roots are equal."
+        },
+        {
+          "formulaId": "math_quad_003_f4",
+          "name": "Imaginary Roots",
+          "equation": "D < 0",
+          "latex": "D<0",
+          "meaning": "Roots are complex."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_quad_004",
+      "conceptName": "Relations Between Roots and Coefficients",
+      "description": "Important root relations.",
+      "formulaType": "roots-coefficients-formula",
+      "formulas": [
+        {
+          "formulaId": "math_quad_004_f1",
+          "name": "Sum of Roots",
+          "equation": "α + β = -b/a",
+          "latex": "\\alpha+\\beta=-\\frac{b}{a}",
+          "meaning": "Sum of roots relation."
+        },
+        {
+          "formulaId": "math_quad_004_f2",
+          "name": "Product of Roots",
+          "equation": "αβ = c/a",
+          "latex": "\\alpha\\beta=\\frac{c}{a}",
+          "meaning": "Product of roots relation."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_quad_005",
+      "conceptName": "Formation of Quadratic Equation",
+      "description": "Equation formed from given roots.",
+      "formulaType": "formation-formula",
+      "formulas": [
+        {
+          "formulaId": "math_quad_005_f1",
+          "name": "Equation from Roots",
+          "equation": "x² - (α+β)x + αβ = 0",
+          "latex": "x^2-(\\alpha+\\beta)x+\\alpha\\beta=0",
+          "meaning": "Quadratic equation with roots α and β."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_quad_006",
+      "conceptName": "Nature of Roots",
+      "description": "Conditions for special roots.",
+      "formulaType": "nature-roots-formula",
+      "formulas": [
+        {
+          "formulaId": "math_quad_006_f1",
+          "name": "Roots of Opposite Signs",
+          "equation": "αβ < 0",
+          "latex": "\\alpha\\beta<0",
+          "meaning": "Roots have opposite signs."
+        },
+        {
+          "formulaId": "math_quad_006_f2",
+          "name": "Both Roots Positive",
+          "equation": "α+β > 0 and αβ > 0",
+          "latex": "\\alpha+\\beta>0\\text{ and }\\alpha\\beta>0",
+          "meaning": "Condition for positive roots."
+        },
+        {
+          "formulaId": "math_quad_006_f3",
+          "name": "Both Roots Negative",
+          "equation": "α+β < 0 and αβ > 0",
+          "latex": "\\alpha+\\beta<0\\text{ and }\\alpha\\beta>0",
+          "meaning": "Condition for negative roots."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_quad_007",
+      "conceptName": "Maximum and Minimum Value",
+      "description": "Vertex form and extrema of quadratic expression.",
+      "formulaType": "max-min-formula",
+      "formulas": [
+        {
+          "formulaId": "math_quad_007_f1",
+          "name": "Vertex Form",
+          "equation": "f(x)=a(x+h)²+k",
+          "latex": "f(x)=a(x+h)^2+k",
+          "meaning": "Vertex form of quadratic."
+        },
+        {
+          "formulaId": "math_quad_007_f2",
+          "name": "Minimum/Maximum Value",
+          "equation": "(4ac-b²)/4a",
+          "latex": "\\frac{4ac-b^2}{4a}",
+          "meaning": "Extreme value of quadratic expression."
+        }
+      ]
+    },
+    {
+      "conceptId": "math_quad_008",
+      "conceptName": "Graph of Quadratic Equation",
+      "description": "Properties of parabola graph.",
+      "formulaType": "graph-formula",
+      "formulas": [
+        {
+          "formulaId": "math_quad_008_f1",
+          "name": "Axis of Symmetry",
+          "equation": "x = -b/2a",
+          "latex": "x=-\\frac{b}{2a}",
+          "meaning": "Axis of parabola symmetry."
+        },
+        {
+          "formulaId": "math_quad_008_f2",
+          "name": "Vertex Coordinates",
+          "equation": "(-b/2a , -D/4a)",
+          "latex": "\\left(-\\frac{b}{2a},-\\frac{D}{4a}\\right)",
+          "meaning": "Coordinates of vertex."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Discriminant determines nature of roots.",
+    "Quadratic graph is always a parabola.",
+    "If a > 0 parabola opens upward.",
+    "If a < 0 parabola opens downward."
+  ],
+  "commonMistakes": [
+    "Wrong sign in quadratic formula",
+    "Mistakes in discriminant calculation",
+    "Incorrect root relations",
+    "Errors in graph interpretation"
+  ],
+  "jeeAdvancedFocus": [
+    "Nature of roots problems",
+    "Parameter-based quadratics",
+    "Maximum-minimum applications",
+    "Advanced root transformations"
+  ],
+  "neetFocus": [
+    "Quadratic formula",
+    "Discriminant",
+    "Root relations",
+    "Basic graph properties"
+  ],
+  "keywords": [
+    "quadratic equation",
+    "discriminant",
+    "roots",
+    "parabola",
+    "nature of roots",
+    "algebra"
+  ]
+}

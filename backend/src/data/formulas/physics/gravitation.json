@@ -1,0 +1,257 @@
+{
+  "chapterId": "physics_gravitation_013",
+  "fileName": "gravitation.json",
+  "chapterName": "Gravitation",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "gravitation",
+    "gravity",
+    "planetary-motion",
+    "satellite-motion",
+    "escape-velocity",
+    "orbital-motion"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_grav_001",
+      "conceptName": "Newton's Law of Gravitation",
+      "description": "Every particle attracts every other particle with gravitational force.",
+      "formulaType": "core-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_grav_001_f1",
+          "name": "Universal Law of Gravitation",
+          "equation": "F = Gm₁m₂/r²",
+          "latex": "F=\\frac{Gm_1m_2}{r^2}",
+          "meaning": "Gravitational force between two masses.",
+          "variables": {
+            "F": {
+              "meaning": "Gravitational force",
+              "unit": "N"
+            },
+            "G": {
+              "meaning": "Universal gravitational constant",
+              "unit": "N·m²/kg²"
+            },
+            "m1": {
+              "meaning": "Mass of first body",
+              "unit": "kg"
+            },
+            "m2": {
+              "meaning": "Mass of second body",
+              "unit": "kg"
+            },
+            "r": {
+              "meaning": "Distance between centers",
+              "unit": "m"
+            }
+          },
+          "applications": [
+            "Planetary motion",
+            "Satellite motion",
+            "Orbital mechanics"
+          ],
+          "commonMistakes": [
+            "Using surface distance instead of center distance",
+            "Incorrect unit conversion"
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_grav_002",
+      "conceptName": "Acceleration Due to Gravity",
+      "description": "Acceleration experienced by body due to Earth's gravity.",
+      "formulaType": "gravity-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_grav_002_f1",
+          "name": "Acceleration Due to Gravity",
+          "equation": "g = GM/R²",
+          "latex": "g=\\frac{GM}{R^2}",
+          "meaning": "Acceleration due to gravity at Earth's surface.",
+          "applications": [
+            "Free fall",
+            "Projectile motion",
+            "Satellite problems"
+          ]
+        },
+        {
+          "formulaId": "phy_grav_002_f2",
+          "name": "Variation of g with Height",
+          "equation": "gh = g(1 - 2h/R)",
+          "latex": "g_h=g\\left(1-\\frac{2h}{R}\\right)",
+          "meaning": "Approximate variation of gravity with height."
+        },
+        {
+          "formulaId": "phy_grav_002_f3",
+          "name": "Variation of g with Depth",
+          "equation": "gd = g(1 - d/R)",
+          "latex": "g_d=g\\left(1-\\frac{d}{R}\\right)",
+          "meaning": "Variation of gravity inside Earth."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_grav_003",
+      "conceptName": "Gravitational Potential Energy",
+      "description": "Energy possessed due to gravitational interaction.",
+      "formulaType": "energy-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_grav_003_f1",
+          "name": "Gravitational Potential Energy",
+          "equation": "U = -GMm/r",
+          "latex": "U=-\\frac{GMm}{r}",
+          "meaning": "Potential energy of body in gravitational field.",
+          "applications": [
+            "Satellite systems",
+            "Orbital mechanics",
+            "Escape velocity"
+          ]
+        },
+        {
+          "formulaId": "phy_grav_003_f2",
+          "name": "Gravitational Potential",
+          "equation": "V = -GM/r",
+          "latex": "V=-\\frac{GM}{r}",
+          "meaning": "Potential per unit mass."
+        },
+        {
+          "formulaId": "phy_grav_003_f3",
+          "name": "Relation Between Field and Potential",
+          "equation": "g = -dV/dr",
+          "latex": "g=-\\frac{dV}{dr}",
+          "meaning": "Gravitational field as potential gradient."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_grav_004",
+      "conceptName": "Escape Velocity",
+      "description": "Minimum velocity needed to escape gravitational field.",
+      "formulaType": "escape-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_grav_004_f1",
+          "name": "Escape Velocity",
+          "equation": "ve = √(2GM/R)",
+          "latex": "v_e=\\sqrt{\\frac{2GM}{R}}",
+          "meaning": "Minimum speed to escape Earth's gravity.",
+          "relatedFormulas": ["ve = √(2gR)"],
+          "applications": ["Rocket launches", "Space missions"]
+        },
+        {
+          "formulaId": "phy_grav_004_f2",
+          "name": "Escape Velocity using g",
+          "equation": "ve = √(2gR)",
+          "latex": "v_e=\\sqrt{2gR}",
+          "meaning": "Escape velocity in terms of g and radius."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_grav_005",
+      "conceptName": "Orbital Velocity",
+      "description": "Velocity required for stable circular orbit.",
+      "formulaType": "orbital-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_grav_005_f1",
+          "name": "Orbital Velocity",
+          "equation": "vo = √(GM/r)",
+          "latex": "v_o=\\sqrt{\\frac{GM}{r}}",
+          "meaning": "Velocity for stable orbit.",
+          "relatedFormulas": ["vo = √(gR)"]
+        },
+        {
+          "formulaId": "phy_grav_005_f2",
+          "name": "Orbital Time Period",
+          "equation": "T = 2π√(r³/GM)",
+          "latex": "T=2\\pi\\sqrt{\\frac{r^3}{GM}}",
+          "meaning": "Time period of satellite orbit."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_grav_006",
+      "conceptName": "Kepler's Laws",
+      "description": "Laws governing planetary motion.",
+      "formulaType": "planetary-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_grav_006_f1",
+          "name": "Kepler's Third Law",
+          "equation": "T² ∝ r³",
+          "latex": "T^2\\propto r^3",
+          "meaning": "Square of orbital period proportional to cube of orbital radius.",
+          "applications": ["Planetary motion", "Satellite systems"]
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_grav_007",
+      "conceptName": "Satellite Motion",
+      "description": "Motion and energy of artificial satellites.",
+      "formulaType": "satellite-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_grav_007_f1",
+          "name": "Total Energy of Satellite",
+          "equation": "E = -GMm/2r",
+          "latex": "E=-\\frac{GMm}{2r}",
+          "meaning": "Total mechanical energy of orbiting satellite."
+        },
+        {
+          "formulaId": "phy_grav_007_f2",
+          "name": "Kinetic Energy of Satellite",
+          "equation": "KE = GMm/2r",
+          "latex": "KE=\\frac{GMm}{2r}",
+          "meaning": "Kinetic energy in orbit."
+        },
+        {
+          "formulaId": "phy_grav_007_f3",
+          "name": "Potential Energy of Satellite",
+          "equation": "PE = -GMm/r",
+          "latex": "PE=-\\frac{GMm}{r}",
+          "meaning": "Potential energy in orbit."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Gravitational force is always attractive.",
+    "Escape velocity does not depend on mass of projectile.",
+    "Orbital velocity is less than escape velocity.",
+    "Gravitational potential is always negative."
+  ],
+  "commonMistakes": [
+    "Using diameter instead of radius",
+    "Ignoring negative sign in potential energy",
+    "Confusing orbital and escape velocity",
+    "Wrong satellite energy relations"
+  ],
+  "jeeAdvancedFocus": [
+    "Satellite energy",
+    "Variation of g",
+    "Orbital mechanics",
+    "Kepler law derivations"
+  ],
+  "neetFocus": [
+    "Newton's law of gravitation",
+    "Escape velocity",
+    "Orbital velocity",
+    "Variation of gravity"
+  ],
+  "keywords": [
+    "gravitation",
+    "gravity",
+    "escape velocity",
+    "orbital velocity",
+    "satellite motion",
+    "kepler laws",
+    "gravitational potential",
+    "planetary motion"
+  ]
+}

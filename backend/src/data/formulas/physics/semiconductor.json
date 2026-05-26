@@ -1,0 +1,295 @@
+{
+  "chapterId": "physics_semiconductor_026",
+  "fileName": "semiconductor.json",
+  "chapterName": "Semiconductor",
+  "subject": "Physics",
+  "examTargets": ["JEE Main", "JEE Advanced", "NEET"],
+  "tags": [
+    "semiconductor",
+    "pn-junction",
+    "diode",
+    "transistor",
+    "logic-gates",
+    "digital-electronics"
+  ],
+  "concepts": [
+    {
+      "conceptId": "phy_semi_001",
+      "conceptName": "Semiconductor Basics",
+      "description": "Properties and behavior of semiconductors.",
+      "formulaType": "basic-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_semi_001_f1",
+          "name": "Current Density",
+          "equation": "J = nevd",
+          "latex": "J=nev_d",
+          "meaning": "Current density in semiconductor.",
+          "variables": {
+            "J": {
+              "meaning": "Current density",
+              "unit": "A/m²"
+            },
+            "n": {
+              "meaning": "Charge carrier density",
+              "unit": "m⁻³"
+            },
+            "e": {
+              "meaning": "Electronic charge",
+              "unit": "C"
+            },
+            "vd": {
+              "meaning": "Drift velocity",
+              "unit": "m/s"
+            }
+          },
+          "applications": ["Semiconductor conduction", "Current analysis"]
+        },
+        {
+          "formulaId": "phy_semi_001_f2",
+          "name": "Conductivity",
+          "equation": "σ = neμ",
+          "latex": "\\sigma=ne\\mu",
+          "meaning": "Conductivity of semiconductor."
+        },
+        {
+          "formulaId": "phy_semi_001_f3",
+          "name": "Resistivity",
+          "equation": "ρ = 1/σ",
+          "latex": "\\rho=\\frac{1}{\\sigma}",
+          "meaning": "Resistivity of semiconductor."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_semi_002",
+      "conceptName": "Drift and Mobility",
+      "description": "Motion of charge carriers under electric field.",
+      "formulaType": "mobility-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_semi_002_f1",
+          "name": "Drift Velocity",
+          "equation": "vd = μE",
+          "latex": "v_d=\\mu E",
+          "meaning": "Drift velocity under electric field."
+        },
+        {
+          "formulaId": "phy_semi_002_f2",
+          "name": "Mobility",
+          "equation": "μ = vd/E",
+          "latex": "\\mu=\\frac{v_d}{E}",
+          "meaning": "Mobility of charge carriers."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_semi_003",
+      "conceptName": "PN Junction Diode",
+      "description": "Behavior and characteristics of PN junction.",
+      "formulaType": "diode-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_semi_003_f1",
+          "name": "Diode Current Equation",
+          "equation": "I = I₀(e^(eV/kT) - 1)",
+          "latex": "I=I_0\\left(e^{\\frac{eV}{kT}}-1\\right)",
+          "meaning": "Current through PN junction diode."
+        },
+        {
+          "formulaId": "phy_semi_003_f2",
+          "name": "Dynamic Resistance",
+          "equation": "rd = ΔV/ΔI",
+          "latex": "r_d=\\frac{\\Delta V}{\\Delta I}",
+          "meaning": "Dynamic resistance of diode."
+        },
+        {
+          "formulaId": "phy_semi_003_f3",
+          "name": "Barrier Potential",
+          "equation": "Vb ≈ 0.7V (Si), 0.3V (Ge)",
+          "latex": "V_b\\approx0.7V\\,(Si),\\,0.3V\\,(Ge)",
+          "meaning": "Typical barrier potential values."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_semi_004",
+      "conceptName": "Rectifiers",
+      "description": "Conversion of AC into DC using diodes.",
+      "formulaType": "rectifier-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_semi_004_f1",
+          "name": "Rectification Efficiency",
+          "equation": "η = Pdc/Pac",
+          "latex": "\\eta=\\frac{P_{dc}}{P_{ac}}",
+          "meaning": "Efficiency of rectifier."
+        },
+        {
+          "formulaId": "phy_semi_004_f2",
+          "name": "Ripple Factor",
+          "equation": "γ = Vac/Vdc",
+          "latex": "\\gamma=\\frac{V_{ac}}{V_{dc}}",
+          "meaning": "Measure of AC content in rectifier output."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_semi_005",
+      "conceptName": "Zener Diode",
+      "description": "Diode operating in reverse breakdown region.",
+      "formulaType": "zener-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_semi_005_f1",
+          "name": "Zener Voltage Relation",
+          "equation": "Vz = constant",
+          "latex": "V_z=\\text{constant}",
+          "meaning": "Voltage remains constant in breakdown region."
+        },
+        {
+          "formulaId": "phy_semi_005_f2",
+          "name": "Load Current",
+          "equation": "IL = VL/RL",
+          "latex": "I_L=\\frac{V_L}{R_L}",
+          "meaning": "Current through load resistor."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_semi_006",
+      "conceptName": "Transistor",
+      "description": "Current amplification using transistor.",
+      "formulaType": "transistor-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_semi_006_f1",
+          "name": "Emitter Current Relation",
+          "equation": "IE = IC + IB",
+          "latex": "I_E=I_C+I_B",
+          "meaning": "Relation between transistor currents."
+        },
+        {
+          "formulaId": "phy_semi_006_f2",
+          "name": "Current Gain in CE Mode",
+          "equation": "β = IC/IB",
+          "latex": "\\beta=\\frac{I_C}{I_B}",
+          "meaning": "Current amplification factor in common emitter."
+        },
+        {
+          "formulaId": "phy_semi_006_f3",
+          "name": "Current Gain in CB Mode",
+          "equation": "α = IC/IE",
+          "latex": "\\alpha=\\frac{I_C}{I_E}",
+          "meaning": "Current gain in common base."
+        },
+        {
+          "formulaId": "phy_semi_006_f4",
+          "name": "Relation Between α and β",
+          "equation": "β = α/(1-α)",
+          "latex": "\\beta=\\frac{\\alpha}{1-\\alpha}",
+          "meaning": "Relation between transistor gains."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_semi_007",
+      "conceptName": "Logic Gates",
+      "description": "Basic digital electronic circuits.",
+      "formulaType": "logic-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_semi_007_f1",
+          "name": "AND Gate",
+          "equation": "Y = A·B",
+          "latex": "Y=A\\cdot B",
+          "meaning": "Output is high only if all inputs are high."
+        },
+        {
+          "formulaId": "phy_semi_007_f2",
+          "name": "OR Gate",
+          "equation": "Y = A + B",
+          "latex": "Y=A+B",
+          "meaning": "Output is high if any input is high."
+        },
+        {
+          "formulaId": "phy_semi_007_f3",
+          "name": "NOT Gate",
+          "equation": "Y = A̅",
+          "latex": "Y=\\bar{A}",
+          "meaning": "Output is complement of input."
+        },
+        {
+          "formulaId": "phy_semi_007_f4",
+          "name": "NAND Gate",
+          "equation": "Y = (A·B)̅",
+          "latex": "Y=\\overline{A\\cdot B}",
+          "meaning": "NOT of AND operation."
+        },
+        {
+          "formulaId": "phy_semi_007_f5",
+          "name": "NOR Gate",
+          "equation": "Y = (A+B)̅",
+          "latex": "Y=\\overline{A+B}",
+          "meaning": "NOT of OR operation."
+        }
+      ]
+    },
+    {
+      "conceptId": "phy_semi_008",
+      "conceptName": "LED and Photodiode",
+      "description": "Special semiconductor devices.",
+      "formulaType": "device-formula",
+      "formulas": [
+        {
+          "formulaId": "phy_semi_008_f1",
+          "name": "Photon Energy in LED",
+          "equation": "E = hν",
+          "latex": "E=h\\nu",
+          "meaning": "Energy of emitted photon."
+        },
+        {
+          "formulaId": "phy_semi_008_f2",
+          "name": "Wavelength Relation",
+          "equation": "λ = hc/E",
+          "latex": "\\lambda=\\frac{hc}{E}",
+          "meaning": "Wavelength of emitted light."
+        }
+      ]
+    }
+  ],
+  "importantNotes": [
+    "Semiconductor conductivity increases with temperature.",
+    "Silicon is preferred over germanium in electronics.",
+    "Zener diode works in reverse bias.",
+    "Transistor acts as amplifier and switch."
+  ],
+  "commonMistakes": [
+    "Confusing forward and reverse bias",
+    "Using wrong transistor current relation",
+    "Incorrect logic gate expressions",
+    "Ignoring units in semiconductor formulas"
+  ],
+  "jeeAdvancedFocus": [
+    "Transistor gain relations",
+    "Logic gate combinations",
+    "Zener diode circuits",
+    "Rectifier numericals"
+  ],
+  "neetFocus": [
+    "PN junction diode",
+    "Transistor basics",
+    "Logic gates",
+    "Semiconductor properties"
+  ],
+  "keywords": [
+    "semiconductor",
+    "pn junction",
+    "diode",
+    "transistor",
+    "logic gates",
+    "zener diode",
+    "rectifier",
+    "digital electronics"
+  ]
+}

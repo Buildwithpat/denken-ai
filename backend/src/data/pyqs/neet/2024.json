@@ -1,0 +1,580 @@
+{
+  "questions": [
+    {
+      "questionId": "NEET2024_PHY_1",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "chapter": "Moving Charges and Magnetism",
+      "topic": "Magnetic Field due to Circular Coil",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A tightly wound 100 turns coil of radius 10 cm carries a current of 7 A. The magnitude of the magnetic field at the centre of the coil is (Take permeability of free space as 4π × 10⁻⁷ SI units)",
+      "options": {
+        "A": "4.4 mT",
+        "B": "44 T",
+        "C": "44 mT",
+        "D": "4.4 T"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_PHY_2",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "chapter": "Magnetism and Matter",
+      "topic": "Magnetic Susceptibility",
+      "difficulty": "medium",
+      "questionType": "match_list",
+      "questionText": "Match List-I with List-II regarding magnetic materials and susceptibility.",
+      "options": {
+        "A": "Diamagnetic → x < 0",
+        "B": "Ferromagnetic → x >> 1",
+        "C": "Paramagnetic → 0 < x << 1",
+        "D": "Non-magnetic → x = 0"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_PHY_3",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "chapter": "Thermodynamics",
+      "topic": "Work Done in Cyclic Process",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A thermodynamic system is taken through the cycle abcda. The work done by the gas along the path bc is:",
+      "options": {
+        "A": "-90 J",
+        "B": "-60 J",
+        "C": "0",
+        "D": "30 J"
+      },
+      "correctAnswer": "D",
+      "diagramRequired": true,
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_PHY_4",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "chapter": "Wave Optics",
+      "topic": "Polarisation",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "An unpolarised light beam strikes a glass surface at Brewster’s angle. Then",
+      "options": {
+        "A": "both reflected and refracted light are completely polarised",
+        "B": "reflected light is completely polarised but refracted light is partially polarised",
+        "C": "reflected light is partially polarised",
+        "D": "refracted light is completely polarised"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_PHY_5",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "chapter": "Alternating Current",
+      "topic": "Transformer",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "In an ideal transformer, the turns ratio is Np/Ns = 1/2. The ratio Vs : Vp is equal to:",
+      "options": {
+        "A": "1 : 1",
+        "B": "1 : 4",
+        "C": "1 : 2",
+        "D": "2 : 1"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_PHY_6",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "chapter": "Semiconductor Electronics",
+      "topic": "Logic Gates",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A logic circuit provides output Y according to the given truth table. Identify the logic expression.",
+      "options": {
+        "A": "B̅",
+        "B": "B",
+        "C": "A + B̅",
+        "D": "A̅ + B"
+      },
+      "correctAnswer": "B",
+      "diagramRequired": true,
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_PHY_7",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "chapter": "Units and Measurements",
+      "topic": "Vernier Calipers",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "In a vernier calipers, (N + 1) divisions of vernier scale coincide with N divisions of main scale. If 1 MSD represents 0.1 mm, the vernier constant (in cm) is:",
+      "options": {
+        "A": "1/100N",
+        "B": "10/(N+1)",
+        "C": "1/10N",
+        "D": "1/[100(N+1)]"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_PHY_8",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "chapter": "Mechanical Properties of Solids",
+      "topic": "Young Modulus",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "The maximum elongation of a steel wire of 1 m length if elastic limit and Young modulus are 8 × 10⁸ N m⁻² and 2 × 10¹¹ N m⁻² respectively is:",
+      "options": {
+        "A": "40 mm",
+        "B": "8 mm",
+        "C": "4 mm",
+        "D": "0.4 mm"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_PHY_9",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "chapter": "Laws of Motion",
+      "topic": "Newton Laws",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "A horizontal force of 10 N is applied on block A. Masses of blocks A and B are 2 kg and 3 kg respectively. The force exerted by block A on block B is:",
+      "options": {
+        "A": "6 N",
+        "B": "10 N",
+        "C": "0",
+        "D": "4 N"
+      },
+      "correctAnswer": "A",
+      "diagramRequired": true,
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_PHY_10",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "chapter": "Wave Optics",
+      "topic": "Young Double Slit Experiment",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "If the monochromatic source in Young’s double slit experiment is replaced by white light, then",
+      "options": {
+        "A": "central bright white fringe surrounded by coloured fringes is formed",
+        "B": "all bright fringes are of equal width",
+        "C": "interference pattern disappears",
+        "D": "central dark fringe surrounded by coloured fringes is formed"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2024
+    },
+
+    {
+      "questionId": "NEET2024_CHEM_1",
+      "questionNumber": 51,
+      "subject": "Chemistry",
+      "chapter": "Electrochemistry",
+      "topic": "Faraday Law",
+      "difficulty": "medium",
+      "questionType": "match_list",
+      "questionText": "Match List-I with List-II regarding number of Faradays required.",
+      "options": {
+        "A": "1 mol H2O to O2",
+        "B": "1 mol MnO4⁻ to Mn²⁺",
+        "C": "1.5 mol Ca from molten CaCl2",
+        "D": "1 mol FeO to Fe2O3"
+      },
+      "correctAnswer": "A-II, B-IV, C-I, D-III",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_CHEM_2",
+      "questionNumber": 52,
+      "subject": "Chemistry",
+      "chapter": "Redox Reactions",
+      "topic": "Oxidation Reduction",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which reaction is NOT a redox reaction?",
+      "options": {
+        "A": "H2 + Cl2 → 2HCl",
+        "B": "BaCl2 + Na2SO4 → BaSO4 + 2NaCl",
+        "C": "Zn + CuSO4 → ZnSO4 + Cu",
+        "D": "2KClO3 + I2 → 2KIO3 + Cl2"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_CHEM_3",
+      "questionNumber": 53,
+      "subject": "Chemistry",
+      "chapter": "Hydrogen",
+      "topic": "Hydrogen Bonding",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "Intramolecular hydrogen bonding is present in:",
+      "options": {
+        "A": "o-Nitrophenol",
+        "B": "HF",
+        "C": "p-Nitrophenol",
+        "D": "Water"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_CHEM_4",
+      "questionNumber": 54,
+      "subject": "Chemistry",
+      "chapter": "Aldehydes Ketones and Carboxylic Acids",
+      "topic": "Fehling Solution",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Fehling’s solution A is",
+      "options": {
+        "A": "alkaline sodium potassium tartrate",
+        "B": "aqueous sodium citrate",
+        "C": "aqueous copper sulphate",
+        "D": "alkaline copper sulphate"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_CHEM_5",
+      "questionNumber": 55,
+      "subject": "Chemistry",
+      "chapter": "Some Basic Concepts of Chemistry",
+      "topic": "Stoichiometry",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "1 gram of NaOH is treated with 25 mL of 0.75 M HCl solution. Mass of NaOH left unreacted is:",
+      "options": {
+        "A": "0 mg",
+        "B": "200 mg",
+        "C": "750 mg",
+        "D": "250 mg"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_CHEM_6",
+      "questionNumber": 56,
+      "subject": "Chemistry",
+      "chapter": "Chemical Bonding",
+      "topic": "Molecular Geometry",
+      "difficulty": "medium",
+      "questionType": "match_list",
+      "questionText": "Match compounds with geometry.",
+      "options": {
+        "A": "NH3",
+        "B": "BrF5",
+        "C": "XeF4",
+        "D": "SF6"
+      },
+      "correctAnswer": "A-I, B-IV, C-II, D-III",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_CHEM_7",
+      "questionNumber": 57,
+      "subject": "Chemistry",
+      "chapter": "d and f Block Elements",
+      "topic": "Magnetic Properties",
+      "difficulty": "hard",
+      "questionType": "single_correct",
+      "questionText": "The E° value for Mn³⁺/Mn²⁺ couple is more positive due to change of",
+      "options": {
+        "A": "d4 to d5",
+        "B": "d3 to d5",
+        "C": "d5 to d4",
+        "D": "d5 to d2"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_CHEM_8",
+      "questionNumber": 58,
+      "subject": "Chemistry",
+      "chapter": "Thermodynamics",
+      "topic": "Thermodynamic Processes",
+      "difficulty": "easy",
+      "questionType": "match_list",
+      "questionText": "Match process with condition.",
+      "options": {
+        "A": "Isothermal",
+        "B": "Isochoric",
+        "C": "Isobaric",
+        "D": "Adiabatic"
+      },
+      "correctAnswer": "A-II, B-III, C-IV, D-I",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_CHEM_9",
+      "questionNumber": 59,
+      "subject": "Chemistry",
+      "chapter": "Chemical Kinetics",
+      "topic": "Activation Energy",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Activation energy of a reaction can be calculated if one knows",
+      "options": {
+        "A": "orientation during collision",
+        "B": "rate constants at two temperatures",
+        "C": "rate constant at standard temperature",
+        "D": "probability of collision"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_CHEM_10",
+      "questionNumber": 60,
+      "subject": "Chemistry",
+      "chapter": "Hydrocarbons",
+      "topic": "IUPAC Nomenclature",
+      "difficulty": "medium",
+      "questionType": "single_correct",
+      "questionText": "A compound with molecular formula C6H14 having two tertiary carbons is",
+      "options": {
+        "A": "2,3-dimethylbutane",
+        "B": "2,2-dimethylbutane",
+        "C": "n-hexane",
+        "D": "2-methylpentane"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2024
+    },
+
+    {
+      "questionId": "NEET2024_BIO_1",
+      "questionNumber": 101,
+      "subject": "Biology",
+      "chapter": "Sexual Reproduction in Flowering Plants",
+      "topic": "Pollination",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "Identify the correct statements regarding water pollination.",
+      "options": {
+        "A": "Flowers of Vallisneria are colourful",
+        "B": "Water lily is not water pollinated",
+        "C": "Pollen grains are protected from wetting",
+        "D": "Some pollen grains are ribbon shaped"
+      },
+      "correctAnswer": "B,C,D",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_BIO_2",
+      "questionNumber": 102,
+      "subject": "Biology",
+      "chapter": "Biodiversity and Conservation",
+      "topic": "Ex Situ Conservation",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Threatened species taken out of natural habitat and protected in special setting is called",
+      "options": {
+        "A": "Semi-conservative method",
+        "B": "Sustainable development",
+        "C": "In-situ conservation",
+        "D": "Ex-situ conservation"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_BIO_3",
+      "questionNumber": 103,
+      "subject": "Biology",
+      "chapter": "Biomolecules",
+      "topic": "Enzyme Inhibition",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Inhibition of succinic dehydrogenase by malonate is example of",
+      "options": {
+        "A": "Competitive inhibition",
+        "B": "Enzyme activation",
+        "C": "Cofactor inhibition",
+        "D": "Feedback inhibition"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_BIO_4",
+      "questionNumber": 104,
+      "subject": "Biology",
+      "chapter": "Morphology of Flowering Plants",
+      "topic": "Seed Structure",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Identify the seed part destined to form root during germination.",
+      "options": {
+        "A": "C",
+        "B": "D",
+        "C": "A",
+        "D": "B"
+      },
+      "correctAnswer": "D",
+      "diagramRequired": true,
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_BIO_5",
+      "questionNumber": 105,
+      "subject": "Biology",
+      "chapter": "Anatomy of Flowering Plants",
+      "topic": "Bulliform Cells",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Bulliform cells are responsible for",
+      "options": {
+        "A": "Increased photosynthesis",
+        "B": "Storage of sugars",
+        "C": "Inward curling of leaves",
+        "D": "Salt stress protection"
+      },
+      "correctAnswer": "C",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_BIO_6",
+      "questionNumber": 106,
+      "subject": "Biology",
+      "chapter": "Photosynthesis in Higher Plants",
+      "topic": "Dark Reaction",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "Which are required for dark reaction of photosynthesis?",
+      "options": {
+        "A": "Light",
+        "B": "Chlorophyll",
+        "C": "CO2",
+        "D": "ATP and NADPH"
+      },
+      "correctAnswer": "C,D",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_BIO_7",
+      "questionNumber": 107,
+      "subject": "Biology",
+      "chapter": "Plant Growth and Development",
+      "topic": "Dedifferentiation",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Formation of interfascicular cambium from parenchyma is example of",
+      "options": {
+        "A": "Dedifferentiation",
+        "B": "Maturation",
+        "C": "Differentiation",
+        "D": "Redifferentiation"
+      },
+      "correctAnswer": "A",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_BIO_8",
+      "questionNumber": 108,
+      "subject": "Biology",
+      "chapter": "Biotechnology Principles and Processes",
+      "topic": "Restriction Enzymes",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Hind II recognition sequence consists of",
+      "options": {
+        "A": "4 bp",
+        "B": "10 bp",
+        "C": "8 bp",
+        "D": "6 bp"
+      },
+      "correctAnswer": "D",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_BIO_9",
+      "questionNumber": 109,
+      "subject": "Biology",
+      "chapter": "Biodiversity and Conservation",
+      "topic": "Species Richness",
+      "difficulty": "medium",
+      "questionType": "multiple_correct",
+      "questionText": "Tropical regions show greatest species richness because",
+      "options": {
+        "A": "undisturbed for millions of years",
+        "B": "more seasonal",
+        "C": "more solar energy available",
+        "D": "constant predictable environment"
+      },
+      "correctAnswer": "A,C,D",
+      "exam": "NEET",
+      "year": 2024
+    },
+    {
+      "questionId": "NEET2024_BIO_10",
+      "questionNumber": 110,
+      "subject": "Biology",
+      "chapter": "Biological Classification",
+      "topic": "Fungi Classification",
+      "difficulty": "easy",
+      "questionType": "single_correct",
+      "questionText": "Which is NOT a criterion for classification of fungi?",
+      "options": {
+        "A": "Mode of spore formation",
+        "B": "Fruiting body",
+        "C": "Morphology of mycelium",
+        "D": "Mode of nutrition"
+      },
+      "correctAnswer": "B",
+      "exam": "NEET",
+      "year": 2024
+    }
+  ]
+}
