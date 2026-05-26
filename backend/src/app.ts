@@ -50,7 +50,7 @@ const corsOptions: cors.CorsOptions = {
 
 // Respond to all OPTIONS preflight requests before any other middleware
 // (rate limiter, auth, etc.) so browsers never get a non-CORS preflight response.
-app.options('*', cors(corsOptions));
+app.options(/.*/, cors(corsOptions));
 app.use(cors(corsOptions));
 
 // ── Global rate limiter ───────────────────────────────────────────────────────
