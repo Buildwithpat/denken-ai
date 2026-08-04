@@ -46,7 +46,8 @@ export default function ContactPage() {
             </p>
 
             <a
-              href="https://www.linkedin.com/in/aakash-pathak-7aa151304/"
+              href=""
+              // href="https://www.linkedin.com/in/aakash-pathak-7aa151304/"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-3 inline-block text-sm text-[#8762F7] hover:underline"

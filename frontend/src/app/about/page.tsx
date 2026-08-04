@@ -501,18 +501,6 @@ export default function AboutPage() {
                   I wish existed when I was preparing — structured, honest about
                   your gaps, and focused on measurable improvement.
                 </p>
-
-                <p className="mt-4 text-xs text-white/40">
-                  Connect with me on{" "}
-                  <a
-                    href="https://www.linkedin.com/in/aakash-pathak-7aa151304/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#8762F7] hover:underline"
-                  >
-                    LinkedIn
-                  </a>
-                </p>
               </div>
             </section>
 
