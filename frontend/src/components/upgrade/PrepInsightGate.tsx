@@ -182,7 +182,7 @@ export default function PrepInsightGate({
                   <span className="text-white/80">
                     {topWeak.length > 0 ? `patterns in ${topWeak[0]?.subject ?? 'your weak areas'}` : 'preparation patterns'}
                   </span>
-                  {' '}and has a personalised study plan ready — subscribe to unlock it.
+                  {' '}and has a personalised study plan ready. Subscribe to unlock it.
                 </p>
               </div>
             </div>

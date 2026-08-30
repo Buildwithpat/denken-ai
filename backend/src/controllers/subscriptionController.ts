@@ -190,6 +190,41 @@ export async function verifyPaymentHandler(req: AuthRequest, res: Response): Pro
     return;
   }
 
+  // The client-supplied planId must match what this specific order was actually
+  // created and charged for — otherwise a user could pay for a cheap plan and
+  // claim a more expensive one by lying about planId here.
+  let order;
+  try {
+    order = await razorpay.orders.fetch(razorpayOrderId);
+  } catch (err) {
+    logger.error('[subscription] Failed to fetch Razorpay order for verification', {
+      userId: req.user!.userId,
+      razorpayOrderId,
+    });
+    res.status(400).json({ error: 'Payment verification failed.' });
+    return;
+  }
+
+  const orderPlanId = order.notes?.planId;
+  const orderUserId = order.notes?.userId;
+
+  if (
+    orderPlanId !== planId ||
+    orderUserId !== req.user!.userId ||
+    !isValidPlanId(String(orderPlanId)) ||
+    order.amount !== PAYMENT_PLANS[planId].amountPaise
+  ) {
+    logger.error('[subscription] Order/plan mismatch during payment verification', {
+      userId: req.user!.userId,
+      razorpayOrderId,
+      claimedPlanId: planId,
+      orderPlanId,
+      orderUserId,
+    });
+    res.status(400).json({ error: 'Payment verification failed.' });
+    return;
+  }
+
   const planDef   = PAYMENT_PLANS[planId];
   const now       = new Date();
   const periodEnd = new Date(now.getTime() + planDef.days * 24 * 60 * 60 * 1000);

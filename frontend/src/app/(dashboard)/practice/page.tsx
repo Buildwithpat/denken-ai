@@ -161,7 +161,7 @@ export default function AdaptivePracticePage() {
             <div>
               <p className="text-[10px] uppercase tracking-widest text-[#8762F7]/50 mb-0.5">Last Session</p>
               <p className="text-sm text-white/80">
-                <span className="font-semibold text-white">{lastSummary.accuracy}%</span> accuracy —{" "}
+                <span className="font-semibold text-white">{lastSummary.accuracy}%</span> accuracy,{" "}
                 {lastSummary.correctCount}/{lastSummary.totalQuestions} correct
               </p>
             </div>

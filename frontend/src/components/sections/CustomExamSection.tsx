@@ -234,7 +234,7 @@ export default function CustomExamSection() {
             <span className="text-[#8762F7]">builder</span>
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm text-white/60 md:text-base">
-            Create tests based on your own syllabus, topics, and difficulty — fully personalized.
+            Create tests based on your own syllabus, topics, and difficulty, fully personalized.
           </p>
         </div>
 

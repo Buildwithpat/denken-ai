@@ -245,7 +245,7 @@ export default function BillingCard() {
           <div className="mb-4 flex items-start gap-2.5 rounded-lg border border-[#f59e0b]/20 bg-[#f59e0b]/[0.05] px-3 py-2.5">
             <Clock size={13} className="mt-0.5 shrink-0 text-[#f59e0b]/70" />
             <p className="text-[11px] leading-relaxed text-[#f59e0b]/80">
-              Your subscription has lapsed. You are in a 3-day grace period — renew to avoid losing access.
+              Your subscription has lapsed. You are in a 3-day grace period, so renew to avoid losing access.
             </p>
           </div>
         )}

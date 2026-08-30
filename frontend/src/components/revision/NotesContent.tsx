@@ -93,7 +93,7 @@ function mockStructuredTheory(chapter: string, depth: Depth): StructuredTheory {
     },
     {
       heading: 'Mechanism and Process',
-      body: `The underlying mechanism involves a chain of cause and effect that can be tracked quantitatively. Understanding why things happen in ${chapter} — not merely that they happen — is what separates strong problem-solvers from rote learners.`,
+      body: `The underlying mechanism involves a chain of cause and effect that can be tracked quantitatively. Understanding why things happen in ${chapter}, not merely that they happen, is what separates strong problem-solvers from rote learners.`,
     },
     {
       heading: 'Mathematical Framework',
@@ -101,12 +101,12 @@ function mockStructuredTheory(chapter: string, depth: Depth): StructuredTheory {
     },
     {
       heading: 'Exam-Relevant Applications',
-      body: `In competitive exams, ${chapter} frequently appears in multi-step questions that combine it with adjacent topics. Recognising which concept applies — and when to switch — is the key differentiator between a good and a great score.`,
+      body: `In competitive exams, ${chapter} frequently appears in multi-step questions that combine it with adjacent topics. Recognising which concept applies, and when to switch, is the key differentiator between a good and a great score.`,
     },
   ];
 
   const allMistakes = [
-    `Confusing sign conventions — always define a positive direction before writing equations`,
+    `Confusing sign conventions: always define a positive direction before writing equations`,
     `Applying a formula outside its stated range or conditions`,
     `Skipping dimensional verification before substituting numerical values`,
     `Mixing SI and CGS units within a single calculation`,
@@ -137,7 +137,7 @@ function mockStructuredFormulas(chapter: string, depth: Depth): StructuredFormul
     {
       name:        'Energy Expression',
       formula:     'E = ½mv²',
-      description: 'Kinetic energy analogue. Note the quadratic dependence on velocity — doubling speed quadruples energy.',
+      description: 'Kinetic energy analogue. Note the quadratic dependence on velocity: doubling speed quadruples energy.',
     },
     {
       name:        'Equilibrium Condition',
@@ -152,7 +152,7 @@ function mockStructuredFormulas(chapter: string, depth: Depth): StructuredFormul
     {
       name:        'Dimensional Identity',
       formula:     '[A] = M¹ L² T⁻²',
-      description: 'Always verify this before finalising an answer — catches unit errors instantly.',
+      description: 'Always verify this before finalising an answer. Catches unit errors instantly.',
     },
     {
       name:        'Efficiency Ratio',
@@ -167,7 +167,7 @@ function mockStructuredFormulas(chapter: string, depth: Depth): StructuredFormul
 function mockPoints(chapter: string): string[] {
   return [
     `${chapter} was developed to explain phenomena that earlier theories could not account for.`,
-    'State every definition with all its conditions — partial definitions lose marks in board exams.',
+    'State every definition with all its conditions. Partial definitions lose marks in board exams.',
     'Draw labelled diagrams wherever relevant; they carry independent marks.',
     'Learn at least two real-world applications for every major concept.',
     'NCERT examples and exercises are the primary source for 1–2 mark questions.',
@@ -702,7 +702,7 @@ export default function NotesContent() {
             <div className="flex h-full flex-col items-center justify-center gap-2 text-center">
               <BookPlaceholder />
               <p className="text-xs text-white/25">
-                Select a subject, chapter, and note type — then click Generate Notes.
+                Select a subject, chapter, and note type, then click Generate Notes.
               </p>
             </div>
           )}

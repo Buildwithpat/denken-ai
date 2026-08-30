@@ -164,7 +164,7 @@ const SUBJECTIVE_BANK: SubjectiveQ[] = [
     text: "State and explain Newton's First Law of Motion with two real-life examples.",
     answer: {
       definition: "A body remains at rest or continues moving in a straight line at constant velocity unless acted upon by a net external force. This is also called the Law of Inertia.",
-      explanation: "This law introduces the concept of inertia — the resistance of any object to a change in its state of motion. Mass is the quantitative measure of inertia: a greater mass means a greater resistance to change. When the net force on an object is zero, its acceleration is zero, so its velocity (speed and direction) remains constant.",
+      explanation: "This law introduces the concept of inertia: the resistance of any object to a change in its state of motion. Mass is the quantitative measure of inertia: a greater mass means a greater resistance to change. When the net force on an object is zero, its acceleration is zero, so its velocity (speed and direction) remains constant.",
       keyPoints: [
         "State the law precisely: zero net force means no change in state of motion",
         "Define inertia: the tendency of a body to resist any change in its state of rest or uniform motion",
@@ -173,11 +173,11 @@ const SUBJECTIVE_BANK: SubjectiveQ[] = [
         "This is a special case of Newton's Second Law (F = ma) when F_net = 0",
       ],
       examples: [
-        "A passenger jerks backward when a stationary bus suddenly accelerates — the body's inertia keeps it momentarily at rest while the bus moves forward",
+        "A passenger jerks backward when a stationary bus suddenly accelerates. The body's inertia keeps it momentarily at rest while the bus moves forward",
         "A book resting on a table stays at rest because the normal force exactly balances gravity (net force = 0)",
-        "A coin placed on a cardboard card falls straight into a glass when the card is pulled rapidly — the coin's inertia keeps it in place",
+        "A coin placed on a cardboard card falls straight into a glass when the card is pulled rapidly. The coin's inertia keeps it in place",
       ],
-      notes: "Newton's First Law also defines inertial frames of reference — frames in which the law holds. It is not derived from the Second Law; it independently asserts the existence of a special class of reference frames.",
+      notes: "Newton's First Law also defines inertial frames of reference: frames in which the law holds. It is not derived from the Second Law; it independently asserts the existence of a special class of reference frames.",
     },
   },
   {
@@ -196,7 +196,7 @@ const SUBJECTIVE_BANK: SubjectiveQ[] = [
       examples: [
         "A 2 kg ball moving at 3 m/s has KE = ½ × 2 × 9 = 9 J",
         "Brakes bring a car to rest by converting its kinetic energy entirely into thermal energy (heat)",
-        "Doubling speed quadruples KE (KE ∝ v²) — a key reason high-speed collisions are far more destructive",
+        "Doubling speed quadruples KE (KE ∝ v²), a key reason high-speed collisions are far more destructive",
       ],
       notes: "KE depends on the square of speed, so doubling velocity quadruples kinetic energy. Unlike velocity, KE is frame-dependent but always non-negative.",
     },
@@ -235,10 +235,10 @@ const SUBJECTIVE_BANK: SubjectiveQ[] = [
         "Limiting factors: light intensity, CO₂ concentration, temperature, and water availability",
       ],
       examples: [
-        "In bright sunlight a leaf produces up to 12× more O₂ than in shade — light intensity directly limits the rate",
+        "In bright sunlight a leaf produces up to 12× more O₂ than in shade. Light intensity directly limits the rate",
         "C4 plants (maize, sugarcane) have a specialised Kranz anatomy that concentrates CO₂ around RuBisCO, minimising photorespiration",
       ],
-      notes: "The O₂ released comes from water, not CO₂ — confirmed by isotopic labelling (¹⁸O) experiments. The overall equation is a simplification of over 50 enzymatic steps.",
+      notes: "The O₂ released comes from water, not CO₂, confirmed by isotopic labelling (¹⁸O) experiments. The overall equation is a simplification of over 50 enzymatic steps.",
     },
   },
   {
@@ -256,16 +256,16 @@ const SUBJECTIVE_BANK: SubjectiveQ[] = [
       ],
       examples: [
         "If one strand is 5'-ATGCTA-3', the complementary strand must be 3'-TACGAT-5'",
-        "Higher GC content increases thermal stability (3 H-bonds vs 2 for AT) — thermophilic bacteria have GC-rich DNA",
+        "Higher GC content increases thermal stability (3 H-bonds vs 2 for AT). Thermophilic bacteria have GC-rich DNA",
       ],
-      notes: "The model was informed by Rosalind Franklin's X-ray diffraction image (Photo 51) and Chargaff's base-ratio data. The antiparallel orientation is essential for semi-conservative replication — each strand acts as a template.",
+      notes: "The model was informed by Rosalind Franklin's X-ray diffraction image (Photo 51) and Chargaff's base-ratio data. The antiparallel orientation is essential for semi-conservative replication: each strand acts as a template.",
     },
   },
   {
     id: 6, marks: MARKS_PER_Q,
     text: "Derive the integrated rate law for a first-order reaction and define its half-life.",
     answer: {
-      definition: "A first-order reaction has a rate proportional to the concentration of one reactant: rate = k[A]. The integrated rate law is [A] = [A]₀e^(−kt), and the half-life is t₁/₂ = 0.693/k — independent of initial concentration.",
+      definition: "A first-order reaction has a rate proportional to the concentration of one reactant: rate = k[A]. The integrated rate law is [A] = [A]₀e^(−kt), and the half-life is t₁/₂ = 0.693/k, independent of initial concentration.",
       explanation: "Integrating the differential rate law −d[A]/dt = k[A] by separating variables gives ln[A] = −kt + ln[A]₀. This linear form means a plot of ln[A] vs time is a straight line with slope −k and y-intercept ln[A]₀. Setting [A] = [A]₀/2 and solving gives the constant half-life formula.",
       keyPoints: [
         "Rate law: −d[A]/dt = k[A]; first-order in reactant A",
@@ -278,7 +278,7 @@ const SUBJECTIVE_BANK: SubjectiveQ[] = [
         "Radioactive decay is always first-order; ¹⁴C has t₁/₂ ≈ 5730 years, giving k = 0.693/5730 yr",
         "Decomposition of N₂O₅ in the gas phase follows first-order kinetics with t₁/₂ independent of initial pressure",
       ],
-      notes: "A second-order reaction has a half-life that depends on initial concentration (t₁/₂ = 1/k[A]₀) — this distinction is used experimentally to determine reaction order.",
+      notes: "A second-order reaction has a half-life that depends on initial concentration (t₁/₂ = 1/k[A]₀). This distinction is used experimentally to determine reaction order.",
     },
   },
   {
@@ -292,7 +292,7 @@ const SUBJECTIVE_BANK: SubjectiveQ[] = [
         "Proof step 1: expand Σmᵢ[(xᵢ − d)² + yᵢ²] = Σmᵢ(xᵢ² + yᵢ²) − 2dΣmᵢxᵢ + Md²",
         "Proof step 2: Σmᵢxᵢ = 0 by definition of CM → cross-term vanishes",
         "Result: I = I_cm + Md²; moment is always greater about a non-CM parallel axis",
-        "Cannot be applied between two non-CM parallel axes directly — must go via the CM axis",
+        "Cannot be applied between two non-CM parallel axes directly: must go via the CM axis",
       ],
       examples: [
         "Uniform rod about one end: I = ML²/12 + M(L/2)² = ML²/12 + ML²/4 = ML²/3",
@@ -316,7 +316,7 @@ const SUBJECTIVE_BANK: SubjectiveQ[] = [
       ],
       examples: [
         "Iron is BCC at room temperature (CN = 8); transforms to FCC (γ-iron, CN = 12) above 912 °C",
-        "NaCl structure: each Na⁺ surrounded by 6 Cl⁻ and each Cl⁻ by 6 Na⁺ — coordination number 6:6",
+        "NaCl structure: each Na⁺ surrounded by 6 Cl⁻ and each Cl⁻ by 6 Na⁺, coordination number 6:6",
       ],
       notes: "Higher CN generally means denser packing and stronger metallic bonding. FCC metals (Al, Cu, Au) are typically more ductile than BCC metals (Fe, W) because FCC has more slip planes for plastic deformation.",
     },
@@ -328,8 +328,8 @@ const SUBJECTIVE_BANK: SubjectiveQ[] = [
       definition: "Electrolysis of dilute H₂SO₄ decomposes water into hydrogen gas at the cathode and oxygen gas at the anode using an electric current. Net reaction: 2H₂O → 2H₂(g) + O₂(g).",
       explanation: "H₂SO₄ dissociates to provide H⁺ and SO₄²⁻ ions, increasing conductivity. At the cathode, H⁺ ions are reduced to H₂. At the anode, OH⁻ ions (from the ionisation of water) are preferentially discharged over SO₄²⁻ (which has a higher discharge potential in dilute solution), producing O₂.",
       keyPoints: [
-        "Cathode (reduction): 2H⁺ + 2e⁻ → H₂(g) — hydrogen collected at the cathode",
-        "Anode (oxidation): 4OH⁻ → 2H₂O + O₂ + 4e⁻ — oxygen collected at the anode",
+        "Cathode (reduction): 2H⁺ + 2e⁻ → H₂(g), hydrogen collected at the cathode",
+        "Anode (oxidation): 4OH⁻ → 2H₂O + O₂ + 4e⁻, oxygen collected at the anode",
         "Net: 2H₂O → 2H₂ + O₂; volume ratio H₂:O₂ = 2:1 (confirmed in Hoffmann's voltameter)",
         "SO₄²⁻ is not discharged in dilute acid (higher discharge potential than OH⁻)",
         "Faraday's first law: mass of product ∝ charge passed (Q = It); 2F of charge → 1 mol H₂",
@@ -338,7 +338,7 @@ const SUBJECTIVE_BANK: SubjectiveQ[] = [
         "In Hoffmann's voltameter: collecting 20 mL H₂ at cathode and 10 mL O₂ at anode confirms the 2:1 ratio",
         "Passing 96,500 C (1 Faraday) deposits 1 g of H₂ (1 mol of H⁺ ions discharged)",
       ],
-      notes: "In concentrated H₂SO₄, SO₄²⁻ can be discharged at the anode, producing SO₂ or persulphate — so 'dilute' is critical. H₂SO₄ acts only as electrolyte; water is the substance electrolysed and consumed.",
+      notes: "In concentrated H₂SO₄, SO₄²⁻ can be discharged at the anode, producing SO₂ or persulphate, so 'dilute' is critical. H₂SO₄ acts only as electrolyte; water is the substance electrolysed and consumed.",
     },
   },
   {
@@ -346,17 +346,17 @@ const SUBJECTIVE_BANK: SubjectiveQ[] = [
     text: "Explain genetic drift and its significance in evolution.",
     answer: {
       definition: "Genetic drift is the random change in allele frequencies in a population caused by chance sampling events during reproduction, not by natural selection. Its effect is most pronounced in small populations.",
-      explanation: "In every generation, only a subset of individuals reproduce. By random chance, certain alleles may be over- or under-represented in the offspring — independent of whether those alleles are beneficial. Over many generations, drift can fix alleles (frequency → 100%) or eliminate them (frequency → 0%), reducing genetic diversity and potentially causing speciation.",
+      explanation: "In every generation, only a subset of individuals reproduce. By random chance, certain alleles may be over- or under-represented in the offspring, independent of whether those alleles are beneficial. Over many generations, drift can fix alleles (frequency → 100%) or eliminate them (frequency → 0%), reducing genetic diversity and potentially causing speciation.",
       keyPoints: [
-        "Drift is random and non-directional — unlike natural selection, which is deterministic",
+        "Drift is random and non-directional, unlike natural selection, which is deterministic",
         "Bottleneck effect: a sudden drastic reduction in population size causes random allele loss",
         "Founder effect: a small group colonising a new area carries an unrepresentative gene sample",
         "Effect is inversely proportional to effective population size (Ne): smaller Ne → stronger drift",
         "Can fix neutral or even mildly deleterious alleles that selection alone would eliminate",
       ],
       examples: [
-        "Cheetahs show extremely low genetic diversity — evidence of a severe historical population bottleneck (possibly ~10,000 years ago)",
-        "High incidence of Ellis-van Creveld syndrome among the Amish — founder effect from a small 18th-century founding community",
+        "Cheetahs show extremely low genetic diversity, evidence of a severe historical population bottleneck (possibly ~10,000 years ago)",
+        "High incidence of Ellis-van Creveld syndrome among the Amish, a founder effect from a small 18th-century founding community",
       ],
       notes: "Drift and selection act simultaneously in real populations. Their relative importance depends on Ne and the selection coefficient s. When Ne is very small, drift can overpower even strong positive selection, explaining why harmful alleles sometimes become fixed in isolated populations.",
     },
@@ -382,10 +382,10 @@ function buildObjectiveResults(subject: string, count: number): ResultQ[] {
         ? `Question ${i + 1}: Find the numerical value of the expression. Enter your answer to two decimal places.`
         : `Question ${i + 1}: Consider the following and select the most appropriate option.`,
       options:       isNum ? [] : [
-        'First option — a plausible but incorrect statement',
-        'Second option — another incorrect interpretation',
-        'Third option — the correct answer with proper justification',
-        'Fourth option — a common misconception',
+        'First option: a plausible but incorrect statement',
+        'Second option: another incorrect interpretation',
+        'Third option: the correct answer with proper justification',
+        'Fourth option: a common misconception',
       ],
       correctOption: isNum ? undefined : 2,
       modelAnswer:   isNum
@@ -690,7 +690,7 @@ function MistakeAnalysisPanel({ resultId }: { resultId: string }) {
           <Brain size={14} className="text-[#22c55e]" />
           <p className="text-xs font-semibold text-[#22c55e]">Mistake Analysis</p>
         </div>
-        <p className="mt-2 text-sm text-white/55">No wrong answers — excellent performance! Keep it up.</p>
+        <p className="mt-2 text-sm text-white/55">No wrong answers. Excellent performance! Keep it up.</p>
       </div>
     );
   }

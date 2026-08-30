@@ -57,7 +57,7 @@ async function request<T>(path: string, options: RequestOptions = {}): Promise<T
     clearTimeout(timeoutId);
     if (err instanceof Error && err.name === 'AbortError') {
       throw new ApiError(
-        'Request timed out — the server took too long to respond. Please try again.',
+        'Request timed out. The server took too long to respond. Please try again.',
         408,
       );
     }

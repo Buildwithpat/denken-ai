@@ -27,5 +27,7 @@ export const razorpay = {
   orders: {
     create: (params: Orders.RazorpayOrderCreateRequestBody): Promise<Orders.RazorpayOrder> =>
       getRazorpay().orders.create(params),
+    fetch: (orderId: string): Promise<Orders.RazorpayOrder> =>
+      getRazorpay().orders.fetch(orderId),
   },
 };

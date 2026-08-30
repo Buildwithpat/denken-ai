@@ -274,7 +274,7 @@ function WeakTopics({ topics }: { topics: WeakTopic[] }) {
     <div>
       <SectionLabel>Topics to Revisit</SectionLabel>
       {topics.length === 0 ? (
-        <EmptySection icon={Target} text="No weak topics detected yet — keep taking tests" />
+        <EmptySection icon={Target} text="No weak topics detected yet. Keep taking tests" />
       ) : (
         <div className="flex flex-wrap gap-2">
           {topics.map(topic => (
@@ -436,7 +436,7 @@ export default function AnalysisPage() {
           )}
         </div>
         <p className="mt-1 text-sm text-white/40">
-          Your progress across all tests — strengths, gaps, and next steps.
+          Your progress across all tests: strengths, gaps, and next steps.
         </p>
       </div>
 

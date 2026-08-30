@@ -24,10 +24,10 @@ function buildObjectiveQuestions() {
         ? `Question ${i + 1}: Find the numerical value of the given expression. Enter your answer correct to two decimal places.`
         : `This is question ${i + 1}. Consider the following scenario and select the most appropriate option from the choices given below.`,
       options: isNumerical ? [] : [
-        'First option — a plausible but incorrect statement about the phenomenon',
-        'Second option — another plausible but incorrect interpretation',
-        'Third option — the correct answer with proper justification',
-        'Fourth option — a common misconception students often select',
+        'First option: a plausible but incorrect statement about the phenomenon',
+        'Second option: another plausible but incorrect interpretation',
+        'Third option: the correct answer with proper justification',
+        'Fourth option: a common misconception students often select',
       ],
     };
   });
@@ -59,10 +59,10 @@ function buildRapidDrillQuestions(subject: string, chapter: string, count: numbe
         ? `Question ${i + 1} [${ctx}]: Find the numerical value of the expression. Enter your answer correct to two decimal places.`
         : `Question ${i + 1} [${ctx}]: Consider the following and select the most appropriate option.`,
       options: isNumerical ? [] : [
-        'First option — a plausible but incorrect statement',
-        'Second option — another plausible interpretation',
-        'Third option — the correct answer with justification',
-        'Fourth option — a common misconception',
+        'First option: a plausible but incorrect statement',
+        'Second option: another plausible interpretation',
+        'Third option: the correct answer with justification',
+        'Fourth option: a common misconception',
       ],
     };
   });
@@ -76,10 +76,10 @@ function buildPYQQuestions(subject: string, chapter: string, year: string, count
     type:    'mcq' as const,
     text:    `[PYQ ${year}] Q${i + 1} [${ctx}]: Select the correct option from the choices below.`,
     options: [
-      'Option A — first choice with explanation',
-      'Option B — second choice with explanation',
-      'Option C — correct answer with justification',
-      'Option D — a common distractor',
+      'Option A: first choice with explanation',
+      'Option B: second choice with explanation',
+      'Option C: correct answer with justification',
+      'Option D: a common distractor',
     ],
   }));
 }
@@ -91,10 +91,10 @@ function buildMistakeQuestions(subject: string, count: number) {
     type:    'mcq' as const,
     text:    `Revision Q${i + 1} [${subject}]: Based on your past mistakes, select the correct answer.`,
     options: [
-      'Option A — a common incorrect approach',
-      'Option B — another incorrect interpretation',
-      'Option C — the correct answer',
-      'Option D — a misconception you previously selected',
+      'Option A: a common incorrect approach',
+      'Option B: another incorrect interpretation',
+      'Option C: the correct answer',
+      'Option D: a misconception you previously selected',
     ],
   }));
 }

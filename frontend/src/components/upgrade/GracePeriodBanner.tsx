@@ -31,7 +31,7 @@ export default function GracePeriodBanner() {
     : 'Your subscription has expired';
 
   const body = isGrace
-    ? 'Renew now to keep your preparation uninterrupted — your data, roadmap, and AI mentor are all intact.'
+    ? 'Renew now to keep your preparation uninterrupted. Your data, roadmap, and AI mentor are all intact.'
     : 'Your access to premium features has ended. Renew to pick up exactly where you left off.';
 
   return (

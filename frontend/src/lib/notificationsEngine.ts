@@ -143,7 +143,7 @@ function genSubscription(deps: NotifBuildDeps): RawNotif[] {
       id: 'pro-grace-period', category: 'subscription', priority: 'urgent',
       icon: Clock, iconColor: 'text-rose-400',
       iconBg: 'bg-rose-400/10 border-rose-400/20',
-      title: 'Pro subscription expired — grace period active',
+      title: 'Pro subscription expired: grace period active',
       message: 'Your subscription has lapsed. You have limited access for the next 3 days. Renew now to restore unlimited tests, AI revision, and analytics.',
       createdAt: now,
       cta: { label: 'Renew Now', href: '/profile' },
@@ -203,7 +203,7 @@ function genPerformance(analytics: AnalyticsData): RawNotif[] {
       title:   `${lastTest.exam} test — ${lastTest.accuracy}% accuracy`,
       message: `Your ${lastTest.subjects.join(' & ')} test is scored. ${
         isGood
-          ? 'Strong result — review the breakdown to defend this performance.'
+          ? 'Strong result. Review the breakdown to defend this performance.'
           : isOk
           ? 'Decent performance. Check the analysis to close any gaps before the next attempt.'
           : 'Below target. Deep-dive the analysis to identify the specific topics dragging your score.'
@@ -221,8 +221,8 @@ function genPerformance(analytics: AnalyticsData): RawNotif[] {
       id: `streak-${milestone}`, category: 'performance', priority: 'normal',
       icon: Flame, iconColor: 'text-[#f97316]',
       iconBg: 'bg-[#f97316]/10 border-[#f97316]/20',
-      title: `${streak}-day streak — keep it going`,
-      message: `You've been active for ${streak} consecutive days${streak >= milestone ? ` — a ${milestone}-day milestone!` : ''}. Consistent daily practice compounds faster than any single cramming session.`,
+      title: `${streak}-day streak: keep it going`,
+      message: `You've been active for ${streak} consecutive days${streak >= milestone ? `, a ${milestone}-day milestone!` : ''}. Consistent daily practice compounds faster than any single cramming session.`,
       createdAt: new Date(),
     });
   }
@@ -343,7 +343,7 @@ function genReminders(deps: NotifBuildDeps, analytics: AnalyticsData | null): Ra
         icon: Zap, iconColor: 'text-[#8762F7]',
         iconBg: 'bg-[#8762F7]/10 border-[#8762F7]/20',
         title: `${daysSinceTest} days since your last test`,
-        message: `Your last test was ${relativeDate(analytics.lastTest.date)}. Consistent practice is the most reliable path to score improvement — even a short session keeps momentum going.`,
+        message: `Your last test was ${relativeDate(analytics.lastTest.date)}. Consistent practice is the most reliable path to score improvement. Even a short session keeps momentum going.`,
         createdAt: new Date(analytics.lastTest.date),
         cta: { label: 'Start a Test', href: '/tests' },
       });

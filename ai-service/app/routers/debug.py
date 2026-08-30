@@ -1,8 +1,9 @@
 """
 Retrieval Debugger and AI Observability endpoints.
 
-All routes are prefixed /debug and are intended for internal dev/eval use only.
-They expose pipeline internals — do NOT mount behind an unauthenticated public URL in prod.
+All routes are prefixed /debug and require the X-Internal-Key header
+(see app.deps.internal_auth.require_internal_key) — they expose pipeline
+internals and must never be reachable without it.
 
 Endpoints
 ---------
@@ -16,9 +17,10 @@ from __future__ import annotations
 import time
 from typing import Optional
 
-from fastapi import APIRouter, File, Form, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
 
 from app.config import settings
+from app.deps.internal_auth import require_internal_key
 from app.rag.context_builder import (
     _THEORY_TYPES, _FORMULA_TYPES, _EXAMPLE_TYPES, _DIAGRAM_TYPES,
     build_context, format_for_prompt,
@@ -40,7 +42,7 @@ from app.schemas.debug import (
     SmokeTestResult,
 )
 
-router = APIRouter(prefix="/debug", tags=["Debug / Observability"])
+router = APIRouter(prefix="/debug", tags=["Debug / Observability"], dependencies=[Depends(require_internal_key)])
 
 _ALLOWED_IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".webp"}
 

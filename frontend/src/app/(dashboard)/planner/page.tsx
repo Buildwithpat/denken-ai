@@ -654,10 +654,10 @@ export default function PlannerPage() {
                   <CalendarDays size={20} className="text-white/15" />
                   <p className="text-xs text-white/25">
                     {activeDay.isRestDay
-                      ? 'Rest day — recovery builds long-term stamina'
+                      ? 'Rest day: recovery builds long-term stamina'
                       : summary.isNewUser
                       ? 'Take a test today to unlock personalised sessions for this day'
-                      : 'No sessions planned — take a test to improve your plan'}
+                      : 'No sessions planned. Take a test to improve your plan'}
                   </p>
                   {summary.isNewUser && (
                     <a

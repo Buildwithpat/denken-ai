@@ -26,7 +26,7 @@ export default function ConsistencyCard({ overview, loading }: Props) {
     streak === 0
       ? 'Start a session today to begin your streak.'
       : streak < 3
-      ? 'Good start — keep going tomorrow.'
+      ? 'Good start. Keep going tomorrow.'
       : streak < 7
       ? 'Building momentum. Stay consistent.'
       : streak < 14

@@ -105,7 +105,7 @@ const MODE_META: Record<StudioMode, {
   revision: {
     icon:        RefreshCw,
     title:       'Revision Boost',
-    description: 'Identify topics your brain has started forgetting using the Ebbinghaus curve — revive them before retention drops further.',
+    description: 'Identify topics your brain has started forgetting using the Ebbinghaus curve, and revive them before retention drops further.',
     buttonLabel: 'Revise Now',
     accentColor: '#8b5cf6',
     isAdaptive:  true,
@@ -130,7 +130,7 @@ const MODE_META: Record<StudioMode, {
   'balanced-mock': {
     icon:        Zap,
     title:       'Balanced Mock Test',
-    description: 'Full exam-pattern simulation with proper subject distribution and mixed difficulty — benchmarks your real readiness.',
+    description: 'Full exam-pattern simulation with proper subject distribution and mixed difficulty. Benchmarks your real readiness.',
     buttonLabel: 'Start Mock',
     accentColor: '#22c55e',
     isAdaptive:  true,
@@ -138,7 +138,7 @@ const MODE_META: Record<StudioMode, {
   surprise: {
     icon:        Shuffle,
     title:       'Surprise Test',
-    description: 'Random balanced selection across all topics — reveals unexpected gaps you didn\'t know existed.',
+    description: 'Random balanced selection across all topics, revealing gaps you didn\'t know existed.',
     buttonLabel: 'Surprise Me',
     accentColor: '#fb923c',
     isAdaptive:  false,
@@ -146,7 +146,7 @@ const MODE_META: Record<StudioMode, {
   'high-roi': {
     icon:        Target,
     title:       'High ROI Focus',
-    description: 'Concentrate on chapters with the highest exam weightage and frequency score — maximum marks for minimum revision time.',
+    description: 'Concentrate on chapters with the highest exam weightage and frequency score, for maximum marks in minimum revision time.',
     buttonLabel: 'Maximise ROI',
     accentColor: '#f43f5e',
     isAdaptive:  true,
@@ -155,7 +155,7 @@ const MODE_META: Record<StudioMode, {
   'crash-course': {
     icon:        Zap,
     title:       'Crash Course',
-    description: 'Last-minute prep strategy: high revision-value topics with manageable difficulty — optimised for rapid score improvement.',
+    description: 'Last-minute prep strategy: high revision-value topics with manageable difficulty, optimised for rapid score improvement.',
     buttonLabel: 'Start Crash Course',
     accentColor: '#f59e0b',
     isAdaptive:  true,
@@ -719,8 +719,8 @@ function StudioView({ exam }: { exam: string }) {
             <h1 className="text-2xl font-bold text-white">Denken Studio</h1>
             <p className="mt-1.5 text-sm text-white/45">
               {recData?.hasData
-                ? `AI-driven test generation — every mode adapts to your actual performance`
-                : `Smart test generation — take your first test to unlock AI recommendations`}
+                ? `AI-driven test generation. Every mode adapts to your actual performance`
+                : `Smart test generation. Take your first test to unlock AI recommendations`}
             </p>
           </div>
           <JeeVariantToggle size="sm" label={null} />

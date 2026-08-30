@@ -39,6 +39,8 @@ async def lifespan(app: FastAPI):
 
 
 def create_app() -> FastAPI:
+    is_prod = settings.environment == "production"
+
     app = FastAPI(
         title="DenkenAI — AI Service",
         description=(
@@ -47,8 +49,9 @@ def create_app() -> FastAPI:
             "Set AI_PROVIDER=gemini in .env to enable Gemini."
         ),
         version="0.3.0",
-        docs_url="/docs",
-        redoc_url="/redoc",
+        docs_url=None if is_prod else "/docs",
+        redoc_url=None if is_prod else "/redoc",
+        openapi_url=None if is_prod else "/openapi.json",
         lifespan=lifespan,
     )
 

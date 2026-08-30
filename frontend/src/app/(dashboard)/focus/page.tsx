@@ -292,7 +292,7 @@ export default function FocusAreasPage() {
           <h1 className="text-2xl font-bold text-white">Focus Areas</h1>
           <p className="mt-1 text-sm text-white/40">
             {hasData
-              ? `Based on your recent performance — ${weakCount} weak area${weakCount !== 1 ? 's' : ''}, ${strongCount} strong chapter${strongCount !== 1 ? 's' : ''}`
+              ? `Based on your recent performance: ${weakCount} weak area${weakCount !== 1 ? 's' : ''}, ${strongCount} strong chapter${strongCount !== 1 ? 's' : ''}`
               : 'Complete a test to generate your personalised focus analysis'}
           </p>
         </div>

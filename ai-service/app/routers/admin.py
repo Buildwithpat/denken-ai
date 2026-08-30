@@ -1,8 +1,8 @@
 """
 Admin / debug endpoints.
 
-All routes are prefixed /admin.  They are NOT protected by auth in this
-phase — add an API-key dependency before exposing to production.
+All routes are prefixed /admin and require the X-Internal-Key header
+(see app.deps.internal_auth.require_internal_key).
 
 Routes
 ------
@@ -23,9 +23,10 @@ POST /admin/validate               — validate content_maps without ingesting
 from __future__ import annotations
 from typing import Optional
 
-from fastapi import APIRouter, File, Form, HTTPException, Query, UploadFile
+from fastapi import APIRouter, Depends, File, Form, HTTPException, Query, UploadFile
 
 from app.config import settings
+from app.deps.internal_auth import require_internal_key
 from app.rag.store import (
     collection_count, delete_by_chapter,
     get_chunk_by_id, get_chunks, get_all_metadata,
@@ -47,7 +48,7 @@ from app.schemas.admin import (
     ValidateRequest, ValidateResponse,
 )
 
-router = APIRouter(prefix="/admin", tags=["admin"])
+router = APIRouter(prefix="/admin", tags=["admin"], dependencies=[Depends(require_internal_key)])
 
 
 # ---------------------------------------------------------------------------

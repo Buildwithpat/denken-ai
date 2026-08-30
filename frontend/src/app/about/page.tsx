@@ -176,7 +176,7 @@ export default function AboutPage() {
             <section className="space-y-5">
               <SectionHeading id="philosophy">Philosophy</SectionHeading>
               <p className="text-base leading-8 text-white/65">
-                Most students prepare the same way — solve questions, move on,
+                Most students prepare the same way: solve questions, move on,
                 and hope things stick. Three problems repeat across almost every
                 student:
               </p>
@@ -351,7 +351,7 @@ export default function AboutPage() {
                     />
                     <span>
                       <span className="font-semibold text-white/85">{title}</span>
-                      <span className="text-white/45"> — {desc}</span>
+                      <span className="text-white/45"> · {desc}</span>
                     </span>
                   </li>
                 ))}
@@ -369,8 +369,8 @@ export default function AboutPage() {
                 <SectionHeading id="analysis">Analysis</SectionHeading>
               </div>
               <p className="text-base leading-8 text-white/65">
-                After each test, DenkenAI updates a full performance dashboard.
-                It is not just a score — it is a map of where you stand.
+                After each test, DenkenAI updates a full performance dashboard
+                showing where you actually stand, not just a score.
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {[
@@ -489,17 +489,18 @@ export default function AboutPage() {
                 </p>
 
                 <p className="mt-3">
-                  I built DenkenAI after noticing a pattern — students,
-                  including myself, put in hours of preparation without a real
-                  system behind it. We solve questions, but rarely stop to
-                  understand why we got something wrong or which areas actually
-                  need more time.
+                  I built DenkenAI after noticing a pattern in how students,
+                  including myself, prepare. We put in hours of practice
+                  without a real system behind it, solving questions but
+                  rarely stopping to understand why we got something wrong or
+                  which areas actually need more time.
                 </p>
 
                 <p className="mt-3">
-                  The result is effort without direction. DenkenAI is the system
-                  I wish existed when I was preparing — structured, honest about
-                  your gaps, and focused on measurable improvement.
+                  The result is effort without direction. DenkenAI is the
+                  system I wish existed when I was preparing: structured,
+                  honest about your gaps, and focused on measurable
+                  improvement.
                 </p>
               </div>
             </section>

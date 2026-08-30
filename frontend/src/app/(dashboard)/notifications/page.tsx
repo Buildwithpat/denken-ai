@@ -103,7 +103,7 @@ function EmptyState({ tab, isNewUser }: { tab: Tab; isNewUser: boolean }) {
         </div>
         <p className="text-sm font-semibold text-white/50">Nothing here yet</p>
         <p className="mt-2 max-w-[300px] text-[12px] leading-relaxed text-white/30">
-          Notifications appear automatically as you use the platform — after your first
+          Notifications appear automatically as you use the platform. After your first
           test you will see performance alerts, weak-topic warnings, streak milestones,
           and subscription updates here.
         </p>
@@ -119,7 +119,7 @@ function EmptyState({ tab, isNewUser }: { tab: Tab; isNewUser: boolean }) {
 
   const msgs: Record<Tab, string> = {
     all:          'No notifications right now.',
-    performance:  'No performance alerts yet — complete a test to see insights here.',
+    performance:  'No performance alerts yet. Complete a test to see insights here.',
     reminder:     'No reminders right now.',
     subscription: 'No subscription alerts.',
   };

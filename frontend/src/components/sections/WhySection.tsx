@@ -31,7 +31,7 @@ const FEATURES = [
     icon: Search,
     accent: '#3B82F6',
     title: 'Clear diagnosis of mistakes',
-    description: "It doesn't just show marks — it explains exactly where you're going wrong.",
+    description: "It doesn't just show marks. It explains exactly where you're going wrong.",
     points: [
       'Understand whether mistakes are conceptual, careless, or time-based',
       'Identify weak topics across all subjects',

@@ -46,7 +46,7 @@ export default function HeroSection() {
           builds a personalized progression path.
         </p>
         <p className="mx-auto mt-2 max-w-xl text-base text-white/60 md:text-lg">
-          Prepare for JEE, NEET, CBSE — or create your own custom exam journey.
+          Prepare for JEE, NEET, CBSE, or create your own custom exam.
         </p>
 
         <motion.a

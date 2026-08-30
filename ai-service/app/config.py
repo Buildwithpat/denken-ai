@@ -44,5 +44,13 @@ class Settings(BaseSettings):
     cache_ttl_mentor:      int = 1800   # 30 min — mentor/concept-guidance responses
     cache_ttl_explanation: int = 86400  # 24 h  — question explanations
 
+    # ── Environment ───────────────────────────────────────────────────────────
+    environment: str = "development"  # set to "production" on the deployed service
+
+    # ── Internal admin/debug auth ────────────────────────────────────────────
+    # Required to access /admin and /debug routes (data ingestion, deletion,
+    # and pipeline internals). Must match the header sent by trusted callers.
+    internal_api_key: str = ""
+
 
 settings = Settings()

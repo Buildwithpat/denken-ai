@@ -177,7 +177,7 @@ export default function ExamModePage() {
               </h2>
               <p className="mt-2.5 max-w-2xl text-sm leading-relaxed text-white/40">
                 Soon you'll be able to attempt any JEE Main, JEE Advanced, or NEET paper by year,
-                shift, and session — with full exam simulation, detailed analytics, adaptive review,
+                shift, and session, with full exam simulation, detailed analytics, adaptive review,
                 and AI-powered performance breakdowns.
               </p>
             </div>

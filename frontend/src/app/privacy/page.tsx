@@ -58,7 +58,7 @@ export default function PrivacyPage() {
 
         {/* Highlight */}
         <div className="mt-10 rounded-xl border border-[#8762F7]/20 bg-[#8762F7]/10 p-5 text-sm text-white/70">
-          Your data is used to improve your preparation — not to exploit it.
+          Your data is used to improve your preparation, not to exploit it.
         </div>
 
         {/* Back */}

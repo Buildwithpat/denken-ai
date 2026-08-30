@@ -68,9 +68,9 @@ const PAID_PLANS: PaidPlan[] = [
 
 const PRO_FEATURES = [
   { icon: Zap,      text: 'Unlimited tests & all exam modes (PYQ, Mistake, Smart)' },
-  { icon: BarChart3, text: 'Advanced analytics — weak topics, AI recommendations'  },
+  { icon: BarChart3, text: 'Advanced analytics with weak topics and AI recommendations' },
   { icon: BookOpen,  text: 'AI revision plans with Ebbinghaus-based prioritization' },
-  { icon: FileText,  text: 'Smart Notes — AI-generated topic summaries'            },
+  { icon: FileText,  text: 'Smart Notes: AI-generated topic summaries'             },
   { icon: Scan,      text: 'OCR question scanner (coming soon)'                    },
 ];
 

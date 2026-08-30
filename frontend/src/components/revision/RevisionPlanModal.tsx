@@ -78,7 +78,7 @@ function buildStaticPlan(examType: ExamKey, weakEntries: WeakEntry[]): PlanSecti
       {
         label: 'Writing Practice',
         items: [
-          { text: 'Practice 5-mark descriptive answers daily — structured paragraphs' },
+          { text: 'Practice 5-mark descriptive answers daily: structured paragraphs' },
           { text: 'Write concise 2-mark answers: one concept, two lines maximum' },
           { text: 'Improve diagram labelling accuracy and neatness for full marks' },
         ],

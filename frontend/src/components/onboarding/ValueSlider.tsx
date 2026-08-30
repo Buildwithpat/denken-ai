@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const SLIDES = [
   {
     headline:    'Create your own exam',
-    description: 'Build tests around your syllabus by uploading units and past questions — no generic test series.',
+    description: 'Build tests around your syllabus by uploading units and past questions, not a generic test series.',
   },
   {
     headline:    'Practice that adapts to you',
@@ -14,7 +14,7 @@ const SLIDES = [
   },
   {
     headline:    'Analyze your results clearly',
-    description: "Understand why you made mistakes — whether it's concepts, accuracy, or time management.",
+    description: "Understand why you made mistakes: concepts, accuracy, or time management.",
   },
   {
     headline:    'Find where you lack',

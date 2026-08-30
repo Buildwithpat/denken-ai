@@ -280,7 +280,7 @@ function SmartRevisionQueue({
     return (
       <div className="flex flex-col items-center gap-2 rounded border border-dashed border-white/[0.07] py-8 text-center">
         <AlertTriangle size={20} className="text-white/15" />
-        <p className="text-xs text-white/25">No mistakes recorded yet — take a test to build your revision queue</p>
+        <p className="text-xs text-white/25">No mistakes recorded yet. Take a test to build your revision queue</p>
       </div>
     );
   }
@@ -667,7 +667,7 @@ export default function RevisionPage() {
                 {[1,2,3].map(i => <div key={i} className="h-16 animate-pulse rounded-lg bg-white/[0.03]" />)}
               </div>
             ) : weakGroups.size === 0 ? (
-              <EmptyState icon={Target} text="No weak areas detected yet — take a test to identify topics that need work" />
+              <EmptyState icon={Target} text="No weak areas detected yet. Take a test to identify topics that need work" />
             ) : (
             <div className="space-y-4">
               {Array.from(weakGroups.entries()).map(([subj, entries]) => {

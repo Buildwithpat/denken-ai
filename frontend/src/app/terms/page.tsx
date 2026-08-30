@@ -54,7 +54,7 @@ export default function TermsPage() {
 
         {/* Highlight */}
         <div className="mt-10 rounded-xl border border-[#8762F7]/20 bg-[#8762F7]/10 p-5 text-sm text-white/70">
-          Use DenkenAI as a guide — your effort is still the key driver of
+          Use DenkenAI as a guide. Your effort is still the key driver of
           success.
         </div>
 
